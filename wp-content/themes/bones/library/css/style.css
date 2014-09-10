@@ -539,15 +539,6 @@ span.amp {
   font-style: italic;
 }
 
-/* ==========================================================================
-   Custom CSS
-   ========================================================================== */
-/* line 506, ../scss/partials/_normalize.scss */
-.footer-cols {
-  display: inline-block;
-  vertical-align: top;
-}
-
 /******************************************************************
 Site Name:
 Author:
@@ -2162,6 +2153,83 @@ override these styles for the desktop
 view.
 */
 /* end .footer-links */
+/* ==========================================================================
+   Custom CSS
+   ========================================================================== */
+/* line 4, ../scss/partials/_custom.scss */
+.footer-cols {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* line 10, ../scss/partials/_custom.scss */
+.biz-content-wrapper {
+  border-bottom: 2px dashed #d8d8d8;
+  padding-bottom: 80px;
+}
+/* line 14, ../scss/partials/_custom.scss */
+.biz-content-wrapper p {
+  margin-top: 80px;
+  margin-left: 10%;
+  color: black;
+  width: 60%;
+  font-size: 1.3em;
+  margin-bottom: 0;
+}
+/* line 23, ../scss/partials/_custom.scss */
+.biz-content-wrapper a {
+  margin-left: 30%;
+  font-size: 1em;
+  color: white !important;
+  white-space: nowrap;
+  text-align: center;
+  background-color: #323944;
+  text-decoration: none;
+  padding: 10px 25px;
+}
+/* line 34, ../scss/partials/_custom.scss */
+.biz-content-wrapper a:visited {
+  color: white;
+}
+/* line 39, ../scss/partials/_custom.scss */
+.biz-content-wrapper div {
+  margin-left: 20px;
+  font-size: 3em;
+  font-style: bold;
+}
+
+/* line 46, ../scss/partials/_custom.scss */
+.programmatic-intro-wrapper a:hover {
+  color: #dd1420 !important;
+}
+
+/* line 50, ../scss/partials/_custom.scss */
+.convergence-intro-wrapper a:hover {
+  color: #f87f13 !important;
+}
+
+/* line 54, ../scss/partials/_custom.scss */
+.reps-intro-wrapper a:hover {
+  color: #039fd3 !important;
+}
+
+/* line 58, ../scss/partials/_custom.scss */
+.reach-intro-wrapper a:hover {
+  color: #8134d9 !important;
+}
+
+/* line 62, ../scss/partials/_custom.scss */
+.arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 0.6em solid transparent;
+  border-bottom: 0.6em solid transparent;
+  border-left: 0.6em solid white;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 3px;
+}
+
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's

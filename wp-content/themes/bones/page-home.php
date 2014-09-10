@@ -17,15 +17,15 @@
 
 			<div id="content">
 
-				<div id="inner-content" class="wrap cf">
+				<div id="inner-content" class="cf">
 
-						<div id="main" class="m-all t-2of3 d-5of7 cf" role="main">
+						<div id="main" class="m-all t-2of3 cf" role="main">
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
-								<header class="article-header">
+<!-- 								<header class="article-header">
 
 									<h1 class="page-title"><?php the_title(); ?></h1>
 
@@ -34,44 +34,11 @@
 									</p>
 
 
-								</header>
+								</header> -->
 
 								<section class="entry-content cf" itemprop="articleBody">
 
-								<?php if( have_rows('carousel') ): ?>
-
-									<ul class="slides">
-
-									<?php while( have_rows('carousel') ): the_row(); 
-
-										// vars
-										$image = get_sub_field('image');
-										$content = get_sub_field('content');
-										$link = get_sub_field('link');
-
-										?>
-
-										<li class="slide">
-
-											<?php if( $link ): ?>
-												<a href="<?php echo $link; ?>">
-											<?php endif; ?>
-
-												<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
-
-											<?php if( $link ): ?>
-												</a>
-											<?php endif; ?>
-
-										    <?php echo $content; ?>
-
-										</li>
-
-									<?php endwhile; ?>
-
-									</ul>
-
-								<?php endif; ?>
+								
 
 
 									<?php
@@ -79,13 +46,117 @@
 										// the_content();
 
 
+									
 
-										$header = get_field('header');
-										echo '<div>'.$header.'</div>';
+										$bg_img = get_field('gamut-defined-bg');
 
+										$gamut_defined_title = get_field('gamut-defined-title');
+
+										$gamut_defined_content = get_field('gamut-defined-content');
+
+
+										$our_solutions_title = get_field('our-solutions-title');
+										$our_solutions_content = get_field('our-solutions-content');
 										
 
-								
+										$programmatic_intro_content = get_field('programmatic-intro-content');
+										$programmatic_intro_title = get_field('programmatic-intro-title');
+
+										$convergence_intro_content = get_field('convergence-intro-content');
+										$convergence_intro_title = get_field('convergence-intro-title');
+
+										$reps_intro_content = get_field('reps-intro-content');
+										$reps_intro_title = get_field('reps-intro-title');
+
+										$reach_intro_content = get_field('reach-intro-content');
+										$reach_intro_title = get_field('reach-intro-title');
+
+										$gamut_difference_title = get_field('gamut-difference-title');
+
+										$gamut_difference_content = get_field('gamut-difference-content');
+
+										$smart_service_title = get_field('smart-service-title');
+
+										$smart_service_content = get_field('smart-service-content');
+
+										$smart_service_image = get_field('smart-service-image');
+
+
+										?>
+											
+											<div class="gamut-defined-wrapper" style="position: relative; height: 400px; background-repeat: no-repeat; background-image: url('<?php echo $bg_img['url'] ?>'); background-size: cover;">
+												<div style="position: absolute; width: 60%; left:20%; top: 100px">
+													<h1 ><?php echo $gamut_defined_title ?></h1>
+													<div style="margin-left: 10%"><?php echo $gamut_defined_content ?></div>
+												</div>
+											</div>
+
+											<div class="our-solutions-wrapper" style="position: relative; height: 400px; background-color: #3d3d3d">
+												<div style="position: absolute; width: 60%; left:20%; top: 100px; color: #ffffff">
+													<h1 ><?php echo $our_solutions_title ?></h1>
+													<div style="margin-left: 10%"><?php echo $our_solutions_content ?></div>
+												</div>
+											</div>
+
+											<!-- Business Units -->
+
+										<div class="business-units-container">
+											<div class="programmatic-intro-wrapper biz-content-wrapper">
+												<p>
+													<?php echo $programmatic_intro_content ?>
+												</p>
+
+												<a href="#">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 0.6em solid #dd1420;"></span></a>
+												<div style="display: inline-block"><?php echo $programmatic_intro_title ?></div>
+											</div>
+											<div class="convergence-intro-wrapper biz-content-wrapper">
+												<p>
+													<?php echo $convergence_intro_content ?>
+												</p>
+
+												<a href="#">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 0.6em solid #f87f13;"></span></a>
+												<div style="display: inline-block"><?php echo $convergence_intro_title ?></div>
+											</div>
+											<div class="reps-intro-wrapper biz-content-wrapper">
+												<p>
+													<?php echo $reps_intro_content ?>
+												</p>
+
+												<a href="#">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 0.6em solid #039fd3;"></span></a>
+												<div style="display: inline-block"><?php echo $reps_intro_title ?></div>
+											</div>
+											<div class="reach-intro-wrapper biz-content-wrapper">
+												<p>
+													<?php echo $reach_intro_content ?>
+												</p>
+
+												<a href="#">LEARN MORE &nbsp;&nbsp;<span class="arrow-right" style="border-left: 0.6em solid #8134d9;"></span></a>
+												<div style="display: inline-block"><?php echo $reach_intro_title ?></div>
+											</div>
+
+										</div>
+
+										<!-- Gamut Difference -->
+										<div class="our-solutions-wrapper" style="position: relative; height: 400px; background-color: #3d3d3d">
+												<div style="position: absolute; width: 60%; left:20%; top: 100px; color: #ffffff">
+													<h1 ><?php echo $gamut_difference_title ?></h1>
+													<div style="margin-left: 10%"><?php echo $gamut_difference_content ?></div>
+												</div>
+										</div>
+											
+										<!-- Smart Service -->
+										<div class="smart-service-wrapper" style="height: 400px;">
+											<!-- image container -->
+											<div style="width: 50%; background-image:url('<?php echo $smart_service_image['url'] ?>'); background-size: cover; display: inline-block">
+												
+											</div>
+											<div style="display: inline-block">
+												<h1 ><?php echo $smart_service_title ?></h1>
+												<p style=""><?php echo $smart_service_content ?></p>
+											</div>
+										</div>
+										
+									<?php
 
 
 										/*
@@ -100,6 +171,7 @@
 										 * http://gizmodo.com/5841121/google-wants-to-help-you-avoid-stupid-annoying-multiple-page-articles
 										 *
 										*/
+
 										wp_link_pages( array(
 											'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'bonestheme' ) . '</span>',
 											'after'       => '</div>',
@@ -140,7 +212,7 @@
 
 						</div>
 
-						<?php get_sidebar(); ?>
+
 
 				</div>
 
