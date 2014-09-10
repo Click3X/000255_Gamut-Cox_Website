@@ -145,11 +145,9 @@
 										</div>
 											
 										<!-- Smart Service -->
-										<div class="smart-service-wrapper" style="height: 400px;">
+										<div class="smart-service-wrapper" style="height: 500px;">
 											<!-- image container -->
-											<div style="width: 50%; background-image:url('<?php echo $smart_service_image['url'] ?>'); background-size: cover; display: inline-block">
-												
-											</div>
+											<div style="height: 500px; width: 50%; background-image:url('<?php echo $smart_service_image['url'] ?>'); background-size: cover; display: inline-block"></div>
 											<div style="display: inline-block">
 												<h1 ><?php echo $smart_service_title ?></h1>
 												<p style=""><?php echo $smart_service_content ?></p>
