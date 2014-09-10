@@ -2230,6 +2230,14 @@ view.
   margin-bottom: 3px;
 }
 
+/* line 73, ../scss/partials/_custom.scss */
+.menu-item a:hover {
+  color: #ed228b !important;
+  text-decoration: none !important;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's

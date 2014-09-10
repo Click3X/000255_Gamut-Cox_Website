@@ -69,3 +69,9 @@
   vertical-align: middle;
   margin-bottom: 3px;
 }
+
+.menu-item a:hover {
+  color: $brand-color !important;
+  text-decoration: none !important;
+  @include transition(all 0.1s ease-in-out);
+}

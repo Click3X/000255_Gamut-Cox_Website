@@ -38,7 +38,7 @@
 
 								<section class="entry-content cf" itemprop="articleBody">
 
-								
+								<?php // layerslider(1) ?>
 
 
 									<?php
@@ -80,6 +80,12 @@
 										$smart_service_content = get_field('smart-service-content');
 
 										$smart_service_image = get_field('smart-service-image');
+
+										$careers_title = get_field('careers-title');
+
+										$careers_content = get_field('careers-content');
+
+										$careers_image = get_field('careers-image');
 
 
 										?>
@@ -147,11 +153,27 @@
 										<!-- Smart Service -->
 										<div class="smart-service-wrapper" style="height: 500px;">
 											<!-- image container -->
-											<div style="height: 500px; width: 50%; background-image:url('<?php echo $smart_service_image['url'] ?>'); background-size: cover; display: inline-block"></div>
-											<div style="display: inline-block">
-												<h1 ><?php echo $smart_service_title ?></h1>
+											<div style="height: 500px; width: 50%; float: left; background-image:url('<?php echo $smart_service_image['url'] ?>'); background-size: cover; display: inline-block"></div>
+											
+											<div style="width: 450px; float: left; margin-left: 8%; padding-top: 10%;">
+												<img src="../../wp-content/img/plus-sign.png" style="display: inline-block; width: 30px; height: 30px; vertical-align: middle; margin-right: 10px"><h1 style="display: inline-block;"> <?php echo $smart_service_title ?></h1>
 												<p style=""><?php echo $smart_service_content ?></p>
 											</div>
+											
+											
+										</div>
+
+										<div style="clear: both"></div>
+
+										<!-- Careers -->
+										<div class="careers-wrapper" style="height: 500px; background-color: #f8f8ef">
+											<div style="width: 450px; float: left; margin-left: 8%; padding-top: 10%;">
+												<h1 ><?php echo $careers_title ?></h1>
+												<p style=""><?php echo $careers_content ?></p>
+											</div>
+											<!-- image container -->
+											<div style="height: 500px; width: 40%; float: right; background-image:url('<?php echo $careers_image['url'] ?>'); background-size: cover; display: inline-block"></div>
+	
 										</div>
 										
 									<?php
