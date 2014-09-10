@@ -15,6 +15,40 @@ and will be used across all viewports.
 GENERAL STYLES
 *********************/
 
+// fonts
+// @font-face {
+// 	font-family: 'Frutiger Light';
+// 	src: url('trashhand.eot');
+// 	src: url('trashhand.eot?#iefix') format('embedded-opentype'),
+// 	url('trashhand.woff') format('woff'),
+// 	url('trashhand.ttf') format('truetype'),
+// 	url('trashhand.svg#trashhandregular') format('svg');
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
+
+// @font-face {
+// 	font-family: 'Frutiger Bold';
+// 	src: url('trashhand.eot');
+// 	src: url('trashhand.eot?#iefix') format('embedded-opentype'),
+// 	url('trashhand.woff') format('woff'),
+// 	url('trashhand.ttf') format('truetype'),
+// 	url('trashhand.svg#trashhandregular') format('svg');
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
+
+// @font-face {
+// 	font-family: 'Frutiger Roman';
+// 	src: url('trashhand.eot');
+// 	src: url('trashhand.eot?#iefix') format('embedded-opentype'),
+// 	url('trashhand.woff') format('woff'),
+// 	url('trashhand.ttf') format('truetype'),
+// 	url('trashhand.svg#trashhandregular') format('svg');
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
+
 body {
 	font-family: $lato;
 	font-size: 100%;

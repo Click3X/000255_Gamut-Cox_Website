@@ -38,7 +38,7 @@
 
 								<section class="entry-content cf" itemprop="articleBody">
 
-								<?php // layerslider(1) ?>
+								<?php layerslider(1) ?>
 
 
 									<?php
