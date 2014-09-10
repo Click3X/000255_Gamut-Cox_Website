@@ -75,3 +75,25 @@
   text-decoration: none !important;
   @include transition(all 0.1s ease-in-out);
 }
+
+#sidebar-title {
+  color: $brand-color;
+  font-weight: 700px;
+}
+
+#sidebar-intro {
+  border-top: 1px solid #626262;
+  border-bottom: 1px solid #626262;
+  padding: 10px 0px;
+  width: 200px;
+  margin-top: 80px;
+
+}
+
+.main-menu-selected a {
+  color: $brand-color !important;
+}
+
+.sidebar-selected a {
+  color: $black;
+}

@@ -112,8 +112,14 @@ jQuery(document).ready(function($) {
    * You can remove this if you don't need it
   */
   loadGravatars();
-  options={};
-var p=$("#sliderContainer").parallaxSlider(options);
+
+// highlight selected menu item
+
+  var url = window.location;
+
+  $('a[href="'+url+'"]').parent('#menu-main-menu li').addClass('main-menu-selected');
+
+  $('a[href="'+url+'"]').parent('.sidebar li').addClass('sidebar-selected');
 
 
 }); /* end of as page load scripts */

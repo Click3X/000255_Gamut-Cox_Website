@@ -1,11 +1,15 @@
 				<div id="sidebar1" class="sidebar m-all t-1of3 d-2of7 cf" role="complementary">
 
+				<?php $parent_title = get_the_title($post->post_parent); ?>
+
+				<h2 id="sidebar-title"><?php echo $parent_title; ?></h2>
+
 					<?php
 					// if ( is_active_sidebar( 'sidebar1' ) ) : ?>
 
 						<?php 
 
-						the_title(); 
+						
 
 						// dynamic_sidebar( 'sidebar1' ); 
 						global $post; // Setup the global variable $post
@@ -24,7 +28,7 @@
 						// add content below sidebar
 						$sidebar_intro = get_field('sidebar-intro');
 						if ($sidebar_intro) {
-							echo '<div>'.$sidebar_intro.'</div>';
+							echo '<div id="sidebar-intro">'.$sidebar_intro.'</div>';
 						}
 
 

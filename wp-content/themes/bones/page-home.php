@@ -153,10 +153,10 @@
 										<!-- Smart Service -->
 										<div class="smart-service-wrapper" style="height: 500px;">
 											<!-- image container -->
-											<div style="height: 500px; width: 50%; float: left; background-image:url('<?php echo $smart_service_image['url'] ?>'); background-size: cover; display: inline-block"></div>
+											<div style="height: 0; width: 50%; padding-bottom: 40%; float: left; background-image:url('<?php echo $smart_service_image['url'] ?>'); background-size: cover; display: inline-block"></div>
 											
 											<div style="width: 450px; float: left; margin-left: 8%; padding-top: 10%;">
-												<img src="../../wp-content/img/plus-sign.png" style="display: inline-block; width: 30px; height: 30px; vertical-align: middle; margin-right: 10px"><h1 style="display: inline-block;"> <?php echo $smart_service_title ?></h1>
+												<img src="<?php bloginfo('url'); ?>/img/plus-sign.png" style="display: inline-block; width: 30px; height: 30px; vertical-align: middle; margin-right: 10px"><h1 style="display: inline-block;"> <?php echo $smart_service_title ?></h1>
 												<p style=""><?php echo $smart_service_content ?></p>
 											</div>
 											
