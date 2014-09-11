@@ -115,7 +115,7 @@
 												</p>
 
 												<a href="#">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
-												<div style="display: inline-block" class="biz-logo-container"><img src="<?php bloginfo('url'); ?>/img/home-logos/programmatic-logo.png">
+												<div style="display: inline-block; height: 1.5em" class="biz-logo-container"><img id="pro-logo" src="<?php bloginfo('url'); ?>/img/home-logos/programmatic-logo.png">
 													
 												</div>
 											</div>
@@ -127,7 +127,7 @@
 												</p>
 
 												<a href="#">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #039fd3;"></span></a>
-												<div style="display: inline-block" class="biz-logo-container"><img src="<?php bloginfo('url'); ?>/img/home-logos/reps-logo.png"></div>
+												<div style="display: inline-block; height: 1.5em" class="biz-logo-container"><img id="rep-logo" src="<?php bloginfo('url'); ?>/img/home-logos/reps-logo.png"></div>
 											</div>
 
 											<!-- Reach -->
@@ -137,7 +137,8 @@
 												</p>
 
 												<a href="#">LEARN MORE &nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #8134d9;"></span></a>
-												<div style="display: inline-block" class="biz-logo-container"><img src="<?php bloginfo('url'); ?>/img/home-logos/reach-logo.png"></div>
+												<div style="display: inline-block; height: 1.2em;" class="biz-logo-container"><img id="rea-logo" src="<?php bloginfo('url'); ?>/img/home-logos/reach-logo.png"></div>
+												<div><img style="width: 100px; height: 10px" class="home-beam" src="<?php bloginfo('url'); ?>/img/home-beams/reach-beam.png"></div>
 											</div>
 
 											<!-- CrossMedia -->
@@ -147,7 +148,7 @@
 												</p>
 
 												<a href="#">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #f87f13;"></span></a>
-												<div style="display: inline-block" class="biz-logo-container"><img src="<?php bloginfo('url'); ?>/img/home-logos/crossmedia-logo.png"></div>
+												<div style="display: inline-block; height: 1.2em;" class="biz-logo-container"><img id="cro-logo" src="<?php bloginfo('url'); ?>/img/home-logos/crossmedia-logo.png"></div>
 											</div>
 
 										</div>
