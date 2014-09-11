@@ -206,5 +206,15 @@ function bones_fonts() {
 add_action('wp_print_styles', 'bones_fonts');
 
 
+// ADD 'CLIENT INFO' TAB TO ADMIN MAIN MENU
+function my_acf_options_page_settings( $settings )
+{
+  $settings['title'] = 'Client Info';
+  $settings['pages'] = array('Contact Information');
+
+  return $settings;
+}
+
+add_filter('acf/options_page/settings', 'my_acf_options_page_settings');
 
 /* DON'T DELETE THIS CLOSING TAG */ ?>

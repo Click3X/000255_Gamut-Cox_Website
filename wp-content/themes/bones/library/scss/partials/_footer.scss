@@ -1,0 +1,64 @@
+.client-info {
+	display: inline-block;
+	margin-right: 2rem;
+	position: relative;
+}
+
+.headline {
+	text-transform: uppercase;
+}
+
+.career-button {
+	position: relative;
+	text-align: center;
+
+	.careers-link {
+		text-transform: uppercase;
+		color: white;
+		background-color: $footer_grey;
+		display: block;
+
+		&:after {
+			content:"";
+			display: block;
+			height: 2px;
+
+			position: absolute;
+			top:0; bottom:0;
+			right:2em;
+			margin: auto;
+
+			border-left:10px solid red;
+			border-bottom: 5px solid transparent;
+			border-top: 5px solid transparent;
+
+		}
+	}
+
+}
+
+
+.footer-logo-holder,
+.social-media-links,
+.social {
+	display: inline-block;
+}
+
+.social {
+	margin:.5rem;	
+}
+
+.footer {
+	background-color: $footer_grey;
+}
+
+.footer-links {
+	background-color:#000000;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+
+.inner-footer {
+	padding-bottom: 40px;
+}
