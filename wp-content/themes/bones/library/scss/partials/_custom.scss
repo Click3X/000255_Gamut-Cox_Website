@@ -58,16 +58,16 @@
   background-color: $programmatic !important;
 }
 
-.convergence-intro-wrapper a:hover {
-  background-color: $convergence !important;
-}
-
 .reps-intro-wrapper a:hover {
   background-color: $reps !important;
 }
 
 .reach-intro-wrapper a:hover {
   background-color: $reach !important;
+}
+
+.crossmedia-intro-wrapper a:hover {
+  background-color: $crossmedia !important;
 }
 
 .arrow-right {
@@ -112,4 +112,9 @@
 
 .slider-text {
   font-family: Sentinel Medium;
+}
+
+// biz units logos
+.biz-logo-container img{
+  margin: 0 0 -0.5em 0;
 }

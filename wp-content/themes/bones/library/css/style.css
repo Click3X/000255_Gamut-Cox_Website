@@ -2243,18 +2243,18 @@ view.
 }
 
 /* line 61, ../scss/partials/_custom.scss */
-.convergence-intro-wrapper a:hover {
-  background-color: #f87f13 !important;
-}
-
-/* line 65, ../scss/partials/_custom.scss */
 .reps-intro-wrapper a:hover {
   background-color: #039fd3 !important;
 }
 
-/* line 69, ../scss/partials/_custom.scss */
+/* line 65, ../scss/partials/_custom.scss */
 .reach-intro-wrapper a:hover {
   background-color: #8134d9 !important;
+}
+
+/* line 69, ../scss/partials/_custom.scss */
+.crossmedia-intro-wrapper a:hover {
+  background-color: #f8ef24 !important;
 }
 
 /* line 73, ../scss/partials/_custom.scss */
@@ -2305,6 +2305,11 @@ view.
 /* line 113, ../scss/partials/_custom.scss */
 .slider-text {
   font-family: Sentinel Medium;
+}
+
+/* line 118, ../scss/partials/_custom.scss */
+.biz-logo-container img {
+  margin: 0 0 -0.5em 0;
 }
 
 /*********************

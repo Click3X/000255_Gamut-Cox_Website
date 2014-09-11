@@ -107,39 +107,47 @@
 											<!-- Business Units -->
 
 										<div class="business-units-container">
+
+										<!-- Programmatic -->
 											<div class="programmatic-intro-wrapper biz-content-wrapper">
 												<p>
 													<?php echo $programmatic_intro_content ?>
 												</p>
 
 												<a href="#">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
-												<div style="display: inline-block" id="programmatic-logo-container">
+												<div style="display: inline-block" class="biz-logo-container"><img src="<?php bloginfo('url'); ?>/img/home-logos/programmatic-logo.png">
 													
 												</div>
 											</div>
-											<div class="convergence-intro-wrapper biz-content-wrapper">
-												<p>
-													<?php echo $convergence_intro_content ?>
-												</p>
 
-												<a href="#">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #f87f13;"></span></a>
-												<div style="display: inline-block"><?php echo $convergence_intro_title ?></div>
-											</div>
+											<!-- Reps -->
 											<div class="reps-intro-wrapper biz-content-wrapper">
 												<p>
 													<?php echo $reps_intro_content ?>
 												</p>
 
 												<a href="#">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #039fd3;"></span></a>
-												<div style="display: inline-block"><?php echo $reps_intro_title ?></div>
+												<div style="display: inline-block" class="biz-logo-container"><img src="<?php bloginfo('url'); ?>/img/home-logos/reps-logo.png"></div>
 											</div>
+
+											<!-- Reach -->
 											<div class="reach-intro-wrapper biz-content-wrapper">
 												<p>
 													<?php echo $reach_intro_content ?>
 												</p>
 
 												<a href="#">LEARN MORE &nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #8134d9;"></span></a>
-												<div style="display: inline-block"><?php echo $reach_intro_title ?></div>
+												<div style="display: inline-block" class="biz-logo-container"><img src="<?php bloginfo('url'); ?>/img/home-logos/reach-logo.png"></div>
+											</div>
+
+											<!-- CrossMedia -->
+											<div class="crossmedia-intro-wrapper biz-content-wrapper">
+												<p>
+													<?php echo $convergence_intro_content ?>
+												</p>
+
+												<a href="#">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #f87f13;"></span></a>
+												<div style="display: inline-block" class="biz-logo-container"><img src="<?php bloginfo('url'); ?>/img/home-logos/crossmedia-logo.png"></div>
 											</div>
 
 										</div>
