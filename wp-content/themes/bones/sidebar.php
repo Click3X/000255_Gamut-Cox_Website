@@ -4,6 +4,8 @@
 
 				<h2 id="sidebar-title"><?php echo $parent_title; ?></h2>
 
+				<?php echo '<h1><a href="'. get_post_type_archive_link( 'team_members' ). '">Team Members</a></h1>'; ?>
+
 					<?php
 					// if ( is_active_sidebar( 'sidebar1' ) ) : ?>
 
@@ -33,6 +35,8 @@
 
 
 						?>
+
+
 
 
 
