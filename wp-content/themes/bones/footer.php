@@ -1,38 +1,95 @@
 			<footer class="footer" role="contentinfo">
 
-				<div id="inner-footer" class="wrap cf">
+				<div id="inner-footer" class="inner-footer cf">
 
-					<nav role="navigation">
-						<?php wp_nav_menu(array(
-    					'container' => '',                              // remove nav container
-    					'container_class' => 'footer-links cf',         // class of container (should you choose to use it)
-    					'menu' => __( 'Footer Links', 'bonestheme' ),   // nav name
-    					'menu_class' => 'nav footer-nav cf',            // adding custom nav class
-    					'theme_location' => 'footer-links',             // where it's located in the theme
-    					'before' => '',                                 // before the menu
-        			'after' => '',                                  // after the menu
-        			'link_before' => '',                            // before each link
-        			'link_after' => '',                             // after each link
-        			'depth' => 0,                                   // limit the depth of the nav
-    					'fallback_cb' => 'bones_footer_links_fallback'  // fallback function
-						)); ?>
-					</nav>
+				   	<?php
+				   		// START FOOTER OPTIONS CODE
+				   		// first reset postdata() as the 'options' word similar as 'pages'
+				   		// and its best to reset data since its likely a loop will already have been run
+				   		// earlier on the page
+				    	wp_reset_postdata();
 
-					<!-- <p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p> -->
-					<?php
-				        $footer_copyright_title = get_field('footer-copyright-title');
-						$footer_copyright_content = get_field('footer-copyright-content');
-						$footer_contact_title = get_field('footer-contact-title');
-						$footer_contact_content = get_field('footer-contact-content');
-						$footer_privacy = get_field('footer-privacy');
-						$footer_terms = get_field('footer-terms');
-						$footer_follow = get_field('footer-follow');
+				    	// LOGO AND SOCIAL LINKS
+				    	echo '<div class="logo-social clearfix">';
+				    		echo '<div class="wrap cf">';
 
-						echo '<div class="footer-cols"><h4>'.$footer_copyright_title.'</h4><span>'.$footer_copyright_content.'</span></div>';
-						echo '<div class="footer-cols"><h4>'.$footer_contact_title.'</h4><span>' . $footer_contact_content.'</span></div>';
-						echo '<div class="footer-cols"><h4>'.$footer_privacy.'</h4><h4>' . $footer_terms.'</h4></div>';
-						echo '<div class="footer-cols"><h4>'.$footer_follow.'</h4></div>';
-				                  ?>
+				    		// SAVE FOOTER LOGO
+				    		$clientLogo = get_field('client_logo', 'options');
+					    	
+					    	// SOCIAL MEDIA LINKS
+					    	if(get_field('social_media_links', 'options')):
+								// SOCIAL MEDIA LINKS
+								echo '<ul class="social-media-links">';
+
+								// CHECK FOR LOGO
+								if($clientLogo) {
+									echo '<li class="footer-logo-holder">';
+						    			echo '<img id="footer-logo" class="footer-logo" src="'.$clientLogo.'" alt="logo">';
+						    		echo '</li>';
+						    	}
+								while(has_sub_field('social_media_links', 'options')): ?>
+									<li class="social">
+										<a href="<?php the_sub_field('link'); ?>" title="<?php the_sub_field('title');?>">
+											<img src="<?php the_sub_field('icon'); ?>" alt="<?php the_sub_field('title');?>">
+										</a>
+									</li>
+								<?php endwhile;
+								echo '</ul>';
+							endif; 
+							echo '</div>'; // .wrap
+				    	echo '</div>';
+
+				    	// CONTACT LINKS
+					    echo '<div class="footer-links">';
+						    	echo '<div class="wrap cf">';
+						    	// LOCATIONS - CITY & ADDRESS
+								if(get_field('locations', 'options')): ?>
+
+									<?php 
+									// EACH LOCATION ('City-Address combo') GETS ITS OWN UL
+									while(has_sub_field('locations', 'options')): ?>
+									<ul class="client-info location">
+										<li class="headline city"><?php the_sub_field('city'); ?></li>
+										<li class="copy address"><?php the_sub_field('address'); ?></li>
+									</ul>
+									<?php endwhile; ?>
+
+								<?php 
+								endif; 
+
+
+								// CAREERS BUTTON
+								$careers = get_field('careers', 'options');
+								
+								// POLICY LINKS - 
+								if(get_field('policy_links', 'options')): ?>
+									
+									<ul class="client-info policy-links">
+
+									<?php 
+									if($careers) {
+										echo '<li class="career-button"><a href="'.$careers.'" id="careers-link" class="careers-link">Careers</a></li>';
+									}
+									?>
+									
+									<?php // EACH LOCATION ('City-Address combo') GETS ITS OWN UL
+										while(has_sub_field('policy_links', 'options')): ?>
+										<li class="copy link"><a href="<?php the_sub_field('link'); ?>"><?php the_sub_field('title'); ?></a></li>
+									<?php endwhile; ?>
+
+									</ul>
+
+								<?php 
+								endif;
+							echo '</div>'; // .wrap
+
+						echo '</div>';
+
+
+						// RESET POST DATA ONE MORE TIME FOR GOOD MEASURE
+						wp_reset_postdata();
+						// END FOOTER OPTIONS CODE
+					?>
 
 				</div>
 
