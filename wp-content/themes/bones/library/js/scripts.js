@@ -113,6 +113,22 @@ jQuery(document).ready(function($) {
   */
   loadGravatars();
 
+  // Waypoints
+  // by default your element will be hidden
+  // $('.gamut-defined-wrapper').hide();
+  // // call waypoint plugin
+  // $('.gamut-defined-wrapper').waypoint(function(event, direction) {
+  //     // do your fade in here
+  //     $('.gamut-defined-wrapper').fadeIn();
+  // }, {
+  //    // offset: function() {
+  //    //     // The bottom of the element is in view
+  //    //     return $.waypoints('viewportHeight') - $(this).outerHeight();
+  //    //  }
+
+  //    offset: '75%'
+  // });
+
   // Debug code
    $('head').append('<style>#outline {position:fixed;z-index:1000;bottom:50px;right:50px;} .outlines {outline:1px solid rgba(255, 0, 0, 0.3);}</style>');
     $('body').append('<input id="outline" type="button">');
@@ -123,8 +139,8 @@ jQuery(document).ready(function($) {
 
   // Beam slide animation
   $('.home-beam').hide();
-  $('#rea-logo').click(function (){
-    $('.home-beam').show('slide', {direction:'right'}, 2000); 
+  $('#pro-logo').click(function (){
+    $('.home-beam').show('slide', {direction:'left'}, 200); 
   });
   
 
