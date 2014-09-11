@@ -142,6 +142,13 @@ jQuery(document).ready(function($) {
   $('#pro-logo').click(function (){
     $('.home-beam').show('slide', {direction:'left'}, 200); 
   });
+
+  // gif only loop once
+//   setTimeout(function() {
+//     setInterval(function() {
+//         $('#home-video').attr('src',$('#home-video').attr('src'))
+//     },1)
+// }, 3000);
   
 
 // highlight selected menu item
