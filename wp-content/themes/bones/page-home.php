@@ -112,15 +112,17 @@
 													<?php echo $programmatic_intro_content ?>
 												</p>
 
-												<a href="#">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 0.6em solid #dd1420;"></span></a>
-												<div style="display: inline-block"><?php echo $programmatic_intro_title ?></div>
+												<a href="#">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
+												<div style="display: inline-block" id="programmatic-logo-container">
+													
+												</div>
 											</div>
 											<div class="convergence-intro-wrapper biz-content-wrapper">
 												<p>
 													<?php echo $convergence_intro_content ?>
 												</p>
 
-												<a href="#">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 0.6em solid #f87f13;"></span></a>
+												<a href="#">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #f87f13;"></span></a>
 												<div style="display: inline-block"><?php echo $convergence_intro_title ?></div>
 											</div>
 											<div class="reps-intro-wrapper biz-content-wrapper">
@@ -128,7 +130,7 @@
 													<?php echo $reps_intro_content ?>
 												</p>
 
-												<a href="#">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 0.6em solid #039fd3;"></span></a>
+												<a href="#">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #039fd3;"></span></a>
 												<div style="display: inline-block"><?php echo $reps_intro_title ?></div>
 											</div>
 											<div class="reach-intro-wrapper biz-content-wrapper">
@@ -136,7 +138,7 @@
 													<?php echo $reach_intro_content ?>
 												</p>
 
-												<a href="#">LEARN MORE &nbsp;&nbsp;<span class="arrow-right" style="border-left: 0.6em solid #8134d9;"></span></a>
+												<a href="#">LEARN MORE &nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #8134d9;"></span></a>
 												<div style="display: inline-block"><?php echo $reach_intro_title ?></div>
 											</div>
 

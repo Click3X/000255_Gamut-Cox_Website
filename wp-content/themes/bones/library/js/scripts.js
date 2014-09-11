@@ -112,6 +112,14 @@ jQuery(document).ready(function($) {
    * You can remove this if you don't need it
   */
   loadGravatars();
+  
+  // Debug code
+   $('head').append('<style>#outline {position:fixed;z-index:1000;bottom:50px;right:50px;} .outlines {outline:1px solid rgba(255, 0, 0, 0.3);}</style>');
+    $('body').append('<input id="outline" type="button">');
+
+    $('#outline').click(function() {
+        $('*').toggleClass('outlines');
+   });
 
 // highlight selected menu item
 
