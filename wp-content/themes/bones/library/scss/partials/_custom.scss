@@ -8,6 +8,7 @@
 }
 
 .biz-content-wrapper {
+  position: relative;
 
   border-bottom: 2px dashed #d8d8d8;
   padding-bottom: 80px;
@@ -30,6 +31,7 @@
     background-color: $black;
     text-decoration: none;
     padding: 8px 15px;
+    @include transition(all 0.2s);
   }
 
   a:visited {
@@ -37,9 +39,9 @@
   }
 
   a:hover {
-    @include transition(all 0.2s ease-in-out);
+    @include transition(all 0.2s);
     .arrow-right {
-      @include transition(all 0.2s ease-in-out);
+      @include transition(all 0.2s);
       border-left: 6px solid white !important;
     }
     
@@ -79,6 +81,7 @@
   display: inline-block;
   vertical-align: middle;
   margin-bottom: 3px;
+  @include transition(all 0.2s);
 }
 
 
@@ -116,5 +119,68 @@
 
 // biz units logos
 .biz-logo-container img{
-  margin: 0 0 -0.5em 0;
+  margin: 0 0 0 0;
+
+}
+
+#pro-logo {
+  margin-bottom: -0.8em;
+}
+
+#rep-logo {
+  margin-bottom: -0.75em;
+}
+
+#rea-logo {
+  margin-bottom: -0.35em;
+}
+
+#cro-logo {
+  margin-bottom: -0.3em;
+}
+
+
+// biz units beams
+.home-beam {
+  width: 100%; 
+  height: 7px;  
+  
+  background-size: 1247px 7px; 
+  background-repeat: no-repeat; 
+  background-position: top left;
+}
+
+.home-beam-container {
+  overflow: hidden; 
+  width: 44%; 
+  height: 7px; 
+  white-space: nowrap; 
+  border-radius: 10px;
+  position: absolute;
+  bottom: 112px;
+  right: 0;
+}
+
+.programmatic-intro-wrapper {
+  .home-beam {
+    background-image:url(../../../../../img/home-beams/programmatic-beam.png); 
+  }
+}
+
+.reach-intro-wrapper {
+  .home-beam {
+    background-image:url(../../../../../img/home-beams/reach-beam.png); 
+  }
+}
+
+.reps-intro-wrapper {
+  .home-beam {
+    background-image:url(../../../../../img/home-beams/reps-beam.png); 
+  }
+}
+
+.crossmedia-intro-wrapper {
+  .home-beam {
+    background-image:url(../../../../../img/home-beams/crossmedia-beam.png); 
+  }
 }

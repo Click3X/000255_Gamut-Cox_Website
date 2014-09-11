@@ -108,46 +108,36 @@
 
 										<div class="business-units-container">
 
-										<!-- Programmatic -->
+											<!-- Programmatic -->
 											<div class="programmatic-intro-wrapper biz-content-wrapper">
-												<p>
-													<?php echo $programmatic_intro_content ?>
-												</p>
-
+												<p><?php echo $programmatic_intro_content ?></p>
 												<a href="#">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
-												<div style="display: inline-block" class="biz-logo-container"><img src="<?php bloginfo('url'); ?>/img/home-logos/programmatic-logo.png">
-													
-												</div>
+												<div style="display: inline-block; height: 1.5em" class="biz-logo-container"><img id="pro-logo" src="<?php bloginfo('url'); ?>/img/home-logos/programmatic-logo.png"></div>
+												<div class="home-beam-container"><div class="home-beam"></div></div>
 											</div>
 
 											<!-- Reps -->
 											<div class="reps-intro-wrapper biz-content-wrapper">
-												<p>
-													<?php echo $reps_intro_content ?>
-												</p>
-
+												<p><?php echo $reps_intro_content ?></p>
 												<a href="#">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #039fd3;"></span></a>
-												<div style="display: inline-block" class="biz-logo-container"><img src="<?php bloginfo('url'); ?>/img/home-logos/reps-logo.png"></div>
+												<div style="display: inline-block; height: 1.5em" class="biz-logo-container"><img id="rep-logo" src="<?php bloginfo('url'); ?>/img/home-logos/reps-logo.png"></div>
+												<div class="home-beam-container"><div class="home-beam"></div></div>
 											</div>
 
 											<!-- Reach -->
 											<div class="reach-intro-wrapper biz-content-wrapper">
-												<p>
-													<?php echo $reach_intro_content ?>
-												</p>
-
+												<p><?php echo $reach_intro_content ?></p>
 												<a href="#">LEARN MORE &nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #8134d9;"></span></a>
-												<div style="display: inline-block" class="biz-logo-container"><img src="<?php bloginfo('url'); ?>/img/home-logos/reach-logo.png"></div>
+												<div style="display: inline-block; height: 1.2em;" class="biz-logo-container"><img id="rea-logo" src="<?php bloginfo('url'); ?>/img/home-logos/reach-logo.png"></div>
+												<div class="home-beam-container"><div class="home-beam"></div></div>
 											</div>
 
 											<!-- CrossMedia -->
 											<div class="crossmedia-intro-wrapper biz-content-wrapper">
-												<p>
-													<?php echo $convergence_intro_content ?>
-												</p>
-
+												<p><?php echo $convergence_intro_content ?></p>
 												<a href="#">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #f87f13;"></span></a>
-												<div style="display: inline-block" class="biz-logo-container"><img src="<?php bloginfo('url'); ?>/img/home-logos/crossmedia-logo.png"></div>
+												<div style="display: inline-block; height: 1.2em;" class="biz-logo-container"><img id="cro-logo" src="<?php bloginfo('url'); ?>/img/home-logos/crossmedia-logo.png"></div>
+												<div class="home-beam-container"><div class="home-beam"></div></div>
 											</div>
 
 										</div>
