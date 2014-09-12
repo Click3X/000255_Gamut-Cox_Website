@@ -2431,6 +2431,12 @@ view.
   width: 70%;
 }
 
+/* line 209, ../scss/partials/_custom.scss */
+.our-solutions-list {
+  border-bottom: 1px solid #aaa;
+  padding: 10px 0 30px 0;
+}
+
 /* line 1, ../scss/partials/_footer.scss */
 .client-info {
   display: inline-block;
