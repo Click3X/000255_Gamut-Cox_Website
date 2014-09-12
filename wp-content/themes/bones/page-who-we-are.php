@@ -26,8 +26,8 @@ $the_query = new WP_Query( $args );
 
 							$size = 'thumb';
 							$full = 'large';
-							$thumb = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID) , 'thumb')[0];
-							$largeThumb = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID) , 'full')[0];
+							$thumb = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID) , 'emp-thumb')[0];
+							$largeThumb = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID) , 'emp-large')[0];
 						?>
 
 							<li id="post-<?php the_ID(); ?>" role="article" itemscope itemtype="http://schema.org/BlogPosting">
