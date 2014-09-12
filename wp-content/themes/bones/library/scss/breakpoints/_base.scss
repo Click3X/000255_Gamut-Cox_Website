@@ -188,7 +188,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 h1, .h1 {
 	font-size: 3em;
 	line-height: 1.333em;
-	font-family: Sentinel Medium;
+	font-family: 'Sentinel Medium';
 }
 
 h2, .h2 {
@@ -261,7 +261,7 @@ and more scalable.
 			color: $black;
 			text-decoration: none;
 			padding: 0.75em;
-			font-family: Sentinel Medium;
+			font-family: 'Sentinel Medium';
 			/*
 			remember this is for mobile ONLY, so there's no need
 			to even declare hover styles here, you can do it in
