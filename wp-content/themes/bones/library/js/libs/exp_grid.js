@@ -345,10 +345,11 @@ jQuery(document).ready(function($) {
 		Preview.prototype = {
 			create : function() {
 				// create Preview structure:
-				this.$title = $( '<h3></h3>' );
+				this.$title = $( '<h2 class="medium-name"></h2>' );
+				this.$emptitle = $( '<h3 class="medium-title"></h3>' );
 				this.$description = $( '<p></p>' );
 				this.$href = $( '<a href="#">Visit website</a>' );
-				this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$description, this.$href );
+				this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$emptitle, this.$description, this.$href );
 				this.$loading = $( '<div class="og-loading"></div>' );
 				this.$fullimage = $( '<div class="og-fullimg"></div>' ).append( this.$loading );
 				this.$closePreview = $( '<span class="og-close"></span>' );
@@ -385,12 +386,15 @@ jQuery(document).ready(function($) {
 						href : $itemEl.attr( 'href' ),
 						largesrc : $itemEl.data( 'largesrc' ),
 						title : $itemEl.data( 'title' ),
-						description : $itemEl.data( 'description' )
+						description : $itemEl.data( 'description' ),
+						emptitle: $itemEl.data('etitle'),
 					};
 
 				this.$title.html( eldata.title );
 				this.$description.html( eldata.description );
 				this.$href.attr( 'href', eldata.href );
+				this.$emptitle.html( eldata.emptitle );
+				
 
 				var self = this;
 				

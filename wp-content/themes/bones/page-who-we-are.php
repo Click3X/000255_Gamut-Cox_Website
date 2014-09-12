@@ -31,10 +31,11 @@ $the_query = new WP_Query( $args );
 						?>
 
 							<li id="post-<?php the_ID(); ?>" role="article" itemscope itemtype="http://schema.org/BlogPosting">
-								<a href="<?php the_permalink(); ?>" data-largesrc="<?php echo $largeThumb[0]; ?>" data-title="<?php echo $title; ?>" data-description="<?php echo $content; ?>">
-								<!-- <a href="<?php the_permalink(); ?>" data-largesrc="<?php echo $largeThumb; ?>" data-title="<?php echo $title; ?>" data-description="<?php echo $content; ?>" > -->
+								<a href="<?php the_permalink(); ?>" data-largesrc="<?php echo $largeThumb[0]; ?>" data-title="<?php echo $title; ?>" data-description="<?php echo $content; ?>" data-etitle="<?php echo $emp_title; ?>">
 								<?php echo '<a href="'.get_the_permalink().'">';
 									echo '<img src="'.$thumb[0].'" alt="'.$title.'" class="grid-thumb">';
+									echo '<h2 class="small-name">'.$title.'</h2>';
+									echo '<h3 class="small-title">'.$emp_title.'</h3>';
 									?>
 								</a>
 							</li>

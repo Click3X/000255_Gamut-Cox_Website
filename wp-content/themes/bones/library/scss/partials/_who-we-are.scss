@@ -49,13 +49,53 @@ a {
 	padding: 50px 20px;
 }
 
+
+// EMPLOYEES
+.small-name,
+.small-title {
+	margin:0;
+	font-size: .9rem;
+	line-height: 1.15rem;
+	color:#000;
+}
+
+.small-name {
+	font-weight: bold;
+	margin-top:.5em;
+}
+
+.small-title {
+	margin-bottom: .9rem;
+}
+
+.medium-name,
+.medium-title {
+	margin:0;
+	margin-right: .5em;
+	font-size: 1.3rem;
+	line-height: 1.15rem;
+	margin-bottom: .75rem;
+	margin-top:.75rem;
+	display: inline-block;
+}
+
+.medium-name {
+	color:#ffffff;
+	font-weight: bold;
+}
+
+.medium-title {
+	color:$brand-color;
+	font-weight: normal;
+	font-size: 1.2rem;
+}
+
 /* COMPONENT CSS */
 
 .og-grid {
 	list-style: none;
 	padding: 20px 0;
 	margin: 0 auto;
-	// text-align: center;
 	width: 100%;
 	// CHARLES STYLES
 	position: relative;
@@ -65,9 +105,16 @@ a {
 
 .og-grid li {
 	display: inline-block;
-	margin: 10px 5px 0 5px;
+	margin: 5px 10px 0 0px;
 	vertical-align: top;
-	// height: 250px;
+
+	@media(min-width: 768px) {
+		margin: 5px 22px 0 0px;
+	}
+
+	@media(min-width: 1030px) {
+		margin: 10px 28px 0 0px;
+	}
 }
 
 .og-grid li > a,
@@ -79,8 +126,14 @@ a {
 }
 
 .og-grid li > a img {
-	width:180px;
-	height: 180px;
+	width:140px;
+	height: 140px;
+
+	@media(min-width: 1030px) {
+		width:180px;
+		height: 180px;
+	}
+
 }
 
 .og-grid li.og-expanded > a::after {
@@ -99,7 +152,8 @@ a {
 
 .og-expander {
 	position: absolute;
-	background: #ddd;
+	// background: #ddd;
+	background: rgb(206, 204, 205);
 	top: auto;
 	left: 0;
 	width: 100%;
@@ -111,7 +165,6 @@ a {
 
 .og-expander-inner {
 	padding: 50px 30px;
-	// height: 100%;
 }
 
 .og-close {
@@ -149,15 +202,23 @@ a {
 
 .og-fullimg,
 .og-details {
-	width: 50%;
 	float: left;
-	// height: 100%;
 	overflow: hidden;
 	position: relative;
 }
+.og-fullimg {
+	width: 33.333333%;
+	max-width: 250px;	
+}
 
 .og-details {
-	padding: 0 40px 0 20px;
+	width:66.666666%
+}
+
+
+.og-details {
+	// padding: 0 40px 0 20px;
+	padding: 0 0 0 20px;
 }
 
 .og-fullimg {
@@ -168,20 +229,12 @@ a {
 	display: inline-block;
 	max-height: 100%;
 	max-width: 100%;
-	// max-width: 250px;
-	// max-height: 250px;
 }
 
-.og-details h3 {
-	font-size: 1.5em;
+.og-details p {
+	font-size: 12px;
+	line-height: 17px;
 }
-
-// .og-details p {
-// 	font-weight: 400;
-// 	font-size: 16px;
-// 	line-height: 22px;
-// 	color: #999;
-// }
 
 .og-details a {
 	font-weight: 700;
@@ -240,17 +293,8 @@ a {
 	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
 }
 
-@media screen and (max-width: 830px) {
-
-	.og-expander h3 { font-size: 32px; }
-	.og-expander p { font-size: 13px; }
-	.og-expander a { font-size: 12px; }
-
-}
 
 @media screen and (max-width: 650px) {
-
-	// .og-fullimg { display: none; }
 	.og-details { float: none; width: 100%; }
 	
 }
