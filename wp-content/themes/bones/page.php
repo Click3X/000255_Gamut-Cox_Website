@@ -5,6 +5,11 @@
 				$header_image = get_field('header-image');
 				$sub_page_title = get_field('sub-page-title');
 				$sub_page_content = get_field('sub-page-content');
+				$pro_caption = get_field('pro-caption');
+				$rep_caption = get_field('rep-caption');
+				$rea_caption = get_field('rea-caption');
+				$cro_caption = get_field('cro-caption');
+
 			?>
 				<header class="article-header">
 					<!-- <h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1> -->
@@ -37,7 +42,37 @@
 											<?php echo $sub_page_content ?>
 										</div>
 									</div>
-											
+
+
+									<!-- if statements -->
+									<!-- adding content on Our Solutions page -->
+									<?php if (is_page(184)) { ?>
+									   
+									   <div class="our-solutions-list">
+										   	<img src="<?php bloginfo('url'); ?>/img/home-logos/programmatic-logo.png">
+										   	<h2><?php echo $pro_caption ?></h2>
+									   </div>
+
+									   <div class="our-solutions-list">
+										   	<img src="<?php bloginfo('url'); ?>/img/home-logos/reps-logo.png">
+										   	<h2><?php echo $rep_caption ?></h2>
+									   </div>
+
+									   <div class="our-solutions-list">
+										   	<img src="<?php bloginfo('url'); ?>/img/home-logos/reach-logo.png">
+										   	<h2><?php echo $rea_caption ?></h2>
+									   </div>
+
+									   <div class="our-solutions-list">
+										   	<img src="<?php bloginfo('url'); ?>/img/home-logos/crossmedia-logo.png">
+										   	<h2><?php echo $cro_caption ?></h2>
+									   </div>
+
+									<?php } elseif (is_page(8)) { ?>
+									   <!-- <image src="<?php bloginfo('stylesheet_directory'); ?>/images/imagename.jpg" /> -->
+									<?php } elseif (in_category( '5' )) { ?>
+									   <!-- <image src="<?php bloginfo('stylesheet_directory'); ?>/images/imagename.jpg" /> -->
+									<?php } ?>
 
 									<?php
 
