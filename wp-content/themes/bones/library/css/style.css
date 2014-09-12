@@ -2455,10 +2455,32 @@ view.
   width: 70%;
 }
 
+<<<<<<< HEAD
 /* line 228, ../scss/partials/_custom.scss */
+=======
+/* line 209, ../scss/partials/_custom.scss */
+.our-solutions-list-wrapper {
+  margin-left: 90px;
+  border-top: 1px solid #aaa;
+}
+
+/* line 214, ../scss/partials/_custom.scss */
+>>>>>>> 026da621b848ec076de66e15b4b23fefe5331153
 .our-solutions-list {
   border-bottom: 1px solid #aaa;
   padding: 10px 0 30px 0;
+}
+/* line 218, ../scss/partials/_custom.scss */
+.our-solutions-list .logo-larger {
+  height: 3.5em;
+}
+/* line 222, ../scss/partials/_custom.scss */
+.our-solutions-list .logo-smaller {
+  height: 2.9em;
+}
+/* line 226, ../scss/partials/_custom.scss */
+.our-solutions-list h2 {
+  font-size: 1.2em;
 }
 
 /* line 1, ../scss/partials/_footer.scss */
