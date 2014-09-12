@@ -1,10 +1,23 @@
 <?php get_header(); ?>
 
 			<div id="content">
+			<?php
+						$header_image = get_field('header-image');
+						$sub_page_title = get_field('sub-page-title');
+						$sub_page_content = get_field('sub-page-content');
+						?>
+				<header class="article-header">
 
+									<!-- <h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1> -->
+									<div style="background-image: url('<?php echo $header_image['url'] ?>'); background-size: cover; height: 300px; max-width: 1600px"></div>
+
+
+								</header> <?php // end article header ?>
 				<div id="inner-content" class="wrap cf">
 
 						<?php get_sidebar(); ?>
+
+						
 
 						<div id="main" class="m-all t-2of3 d-5of7 cf" role="main">
 
@@ -12,20 +25,23 @@
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
-								<header class="article-header">
-
-									<h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1>
-
-									<!-- <p class="byline vcard">
-										<?php printf( __( 'Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span>', 'bonestheme' ), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), get_the_author_link( get_the_author_meta( 'ID' ) )); ?>
-									</p> -->
-
-								</header> <?php // end article header ?>
+								
 
 								<section class="entry-content cf" itemprop="articleBody">
+
+
+									<div class="sub-page-content-wrapper" style="">
+										<?php echo $sub_page_title 
+										// in back-end the title is wrapped with <h1> already
+										?> 
+										<div style="">
+											<!-- in back-end the title is wrapped with <p> already -->
+											<?php echo $sub_page_content ?>
+										</div>
+									</div>
+											
+
 									<?php
-										// the content (pretty self explanatory huh)
-										the_content();
 
 										/*
 										 * Link Pages is used in case you have posts that are set to break into
