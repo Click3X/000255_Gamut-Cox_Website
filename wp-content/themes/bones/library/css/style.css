@@ -2399,6 +2399,10 @@ view.
   background-color: white;
   padding: 20px 10px 0px 90px;
 }
+/* line 199, ../scss/partials/_custom.scss */
+.sub-page-content-wrapper h1 {
+  width: 70%;
+}
 
 /* line 1, ../scss/partials/_footer.scss */
 .client-info {
