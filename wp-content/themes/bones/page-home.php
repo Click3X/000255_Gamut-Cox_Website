@@ -35,6 +35,9 @@
 										// the content (pretty self explanatory huh)
 										// the_content();
 
+
+									
+
 										$bg_img = get_field('gamut-defined-bg');
 
 										$gamut_defined_title = get_field('gamut-defined-title');
@@ -83,7 +86,7 @@
     	<div class="zPSlideSlider" style="width:100%;position:relative;">
 
 
-    	    	<!-- slide1 -->
+    <!-- slide1 -->
       <div class="zPSlide" data-config="{transition:'horizontal',begin:{duration:2500}}" style="z-index: 1000; position: relative; width: 100%; height: 600px; left: 0px; top: 0px; display: block; opacity: 1; background-image: url(<?php bloginfo('url'); ?>/img/gamut_slide1.png); background-repeat: no-repeat; background-size: cover; background-position: center center">
 
 
