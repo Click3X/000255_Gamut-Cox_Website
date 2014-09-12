@@ -28,7 +28,7 @@
 
 								<section class="entry-content cf" itemprop="articleBody">
 
-								<?php layerslider(1) ?>
+								<?php //layerslider(1) ?>
 
 
 									<?php
@@ -76,6 +76,60 @@
 
 
 										?>
+
+
+
+		<div id="sliderContainer" class="zPSlideContainer" style="width: 100%; height: 600px; position: relative;">
+    	<div class="zPSlideSlider" style="width:100%;position:relative;">
+
+
+    	    	<!-- slide1 -->
+      <div class="zPSlide" data-config="{transition:'horizontal',begin:{duration:2500}}" style="z-index: 1000; position: relative; width: 100%; height: 600px; left: 0px; top: 0px; display: block; opacity: 1; background-image: url(<?php bloginfo('url'); ?>/img/gamut_slide1.png); background-repeat: no-repeat; background-size: cover; background-position: center center">
+
+
+        <div class="zPSlideAnimatedBackground" data-config="{type:'transition',duration:300, animateX:'100%'}" style="z-index: 2000; width: 100%; height: 600px; margin-top: 0px; background-repeat: no-repeat; background-size: cover; background-position: center center;"></div>
+
+        <div class="zPSlideCenter" style="width: 600px; height: 300px; margin: 0px auto; position: relative; top: 0px;">
+          <div class="zPSlideElement" style="opacity: 0;"></div>
+
+        </div>
+      </div>
+
+
+    	<!-- slide2 -->
+      <div class="zPSlide" data-config="{transition:'horizontal',begin:{duration:3000}}" style="z-index: 1001; position: relative; width: 100%; height: 600px; left: 0px; top: 0px; display: block; opacity: 1; background-image: url(<?php bloginfo('url'); ?>/img/gamut_slide2.png); background-repeat: no-repeat; background-size: cover; background-position: center center">
+
+
+        <div class="zPSlideAnimatedBackground" data-config="{type:'transition',duration:300, animateX:'100%'}" style=" z-index: 2000; width: 100%; height: 600px; margin-top: 0px; background-image: url(<?php bloginfo('url'); ?>/img/gamut_slide2_layer.png); background-repeat: no-repeat; background-size: cover; background-position: center center;"></div>
+
+        <div class="zPSlideCenter" style="width: 600px; height: 300px; margin: 0px auto; position: relative; top: 0px;">
+          <div class="zPSlideElement" style="opacity: 0;"></div>
+
+        </div>
+      </div>
+
+      <!-- slide3 -->
+      <div class="zPSlide" data-config="{transition:'horizontal',begin:{duration:3000}}" style=" z-index: 1002; position: relative; width: 100%; height: 600px; left: 0px; top: 0px; display: none; opacity: 0; background-image: url(<?php bloginfo('url'); ?>/img/gamut_slide3.png); background-repeat: no-repeat; background-size: cover; background-position: center center">
+
+        <div class="zPSlideAnimatedBackground" data-config="{type:'transition',duration:300, animateX:'100%'}" style="z-index: 2000; width: 100%; margin-top: 0px; height: 600px; top: 0px; background-image: url(<?php bloginfo('url'); ?>/img/gamut_slide3_layer.png); background-repeat: no-repeat; background-size: cover; background-position: center center;"></div>
+        <div class="zPSlideCenter" style="width: 600px; height: 300px; margin: 0px auto; position: relative; top: -121px;">
+          <div class="zPSlideElement" style="opacity: 0;"></div>
+
+        </div>
+      </div>
+
+      <!-- slide4 -->
+      <div class="zPSlide" data-config="{transition:'horizontal',begin:{duration:4000}, }" style="z-index: 1003; position: relative; width: 100%; left: 0px; top: -600px; height: 600px; display: block; opacity: 1; background-image: url(<?php bloginfo('url'); ?>/img/gamut_slide4.png); background-repeat: no-repeat; background-size: cover; background-position: center center">
+        <div class="zPSlideAnimatedBackground" data-config="{type:'transition',duration:300, animateX:'100%'}" style="width: 100%; height: 600px; top: 0px; margin-top: 0px; background-image: url(<?php bloginfo('url'); ?>/img/gamut_slide4_layer.png); background-repeat: no-repeat; background-size: cover; background-position: center center;"></div>
+        <div class="zPSlideCenter" style="width: 600px; height: 300px; margin: 0px auto; position: relative; top: -300px;">
+          <div class="zPSlideElement" style="opacity: 0;"></div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+										
 											
 											<div class="gamut-defined-wrapper" style="position: relative; height: 400px; background-repeat: no-repeat; background-image: url('<?php echo $bg_img['url'] ?>'); background-size: cover;">
 												<div class="home-wrap">

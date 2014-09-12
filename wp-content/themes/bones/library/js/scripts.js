@@ -113,6 +113,10 @@ jQuery(document).ready(function($) {
   */
   loadGravatars();
 
+  // initiate parallax slider
+  options={};
+var p=$("#sliderContainer").parallaxSlider(options);
+
   // Waypoints
   // by default your element will be hidden
   // $('.gamut-defined-wrapper').hide();
@@ -149,6 +153,9 @@ jQuery(document).ready(function($) {
 //         $('#home-video').attr('src',$('#home-video').attr('src'))
 //     },1)
 // }, 3000);
+
+// test slide
+
   
 
 // highlight selected menu item
