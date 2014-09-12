@@ -154,6 +154,10 @@ function bones_scripts_and_styles() {
 		// waypoints
 		wp_register_script( 'bones-waypoint', get_stylesheet_directory_uri() . '/library/js/libs/waypoints.min.js', array(), '', true );
 
+		// EXP_GRID for 'who-we-are' page
+		wp_register_script( 'exp-grid-js', get_stylesheet_directory_uri() . '/library/js/libs/exp_grid.js', array('jquery'), '', true );
+		wp_register_style( 'exp-grid-css', get_stylesheet_directory_uri() . '/library/css/exp_grid.css', array(), '', true );
+
 		// enqueue styles and scripts
 		wp_enqueue_script( 'bones-modernizr' );
 		wp_enqueue_style( 'bones-stylesheet' );
@@ -171,6 +175,12 @@ function bones_scripts_and_styles() {
 		wp_enqueue_script( 'bones-js' );
 		wp_enqueue_script( 'bones-jqueryui' );
 		wp_enqueue_script( 'bones-waypoint' );
+
+		// CONDITIONAL SCRIPT TO ONLY LOAD EXP-GRID-JS AND EXP-GRID-CSS ON 'WHO-WE-ARE' PAGE id = 45
+		if( is_page(45)) {
+			wp_enqueue_style( 'exp-grid-css' );
+			wp_enqueue_script( 'exp-grid-js' );
+		}
 
 	}
 }
