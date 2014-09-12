@@ -456,8 +456,8 @@ jQuery(document).ready(function($) {
 
 			},
 			calcHeight : function() {
-
-				var heightPreview = winsize.height - this.$item.data( 'height' ) - marginExpanded,
+				// var heightPreview = winsize.height - this.$item.data( 'height' ) - marginExpanded,
+				var heightPreview = this.$item.data( 'height' ) - marginExpanded,
 					itemHeight = winsize.height;
 
 				if( heightPreview < settings.minHeight ) {

@@ -2620,7 +2620,6 @@ a {
 /* line 111, ../scss/partials/_who-we-are.scss */
 .og-expander-inner {
   padding: 50px 30px;
-  height: 100%;
 }
 
 /* line 116, ../scss/partials/_who-we-are.scss */
@@ -2665,7 +2664,6 @@ a {
 .og-details {
   width: 50%;
   float: left;
-  height: 100%;
   overflow: hidden;
   position: relative;
 }
@@ -2689,21 +2687,10 @@ a {
 
 /* line 174, ../scss/partials/_who-we-are.scss */
 .og-details h3 {
-  font-weight: 300;
-  font-size: 52px;
-  padding: 40px 0 10px;
-  margin-bottom: 10px;
+  font-size: 1.5em;
 }
 
-/* line 181, ../scss/partials/_who-we-are.scss */
-.og-details p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #999;
-}
-
-/* line 188, ../scss/partials/_who-we-are.scss */
+/* line 185, ../scss/partials/_who-we-are.scss */
 .og-details a {
   font-weight: 700;
   font-size: 16px;
@@ -2717,20 +2704,20 @@ a {
   outline: none;
 }
 
-/* line 201, ../scss/partials/_who-we-are.scss */
+/* line 198, ../scss/partials/_who-we-are.scss */
 .og-details a::before {
   content: '\2192';
   display: inline-block;
   margin-right: 10px;
 }
 
-/* line 207, ../scss/partials/_who-we-are.scss */
+/* line 204, ../scss/partials/_who-we-are.scss */
 .og-details a:hover {
   border-color: #999;
   color: #999;
 }
 
-/* line 212, ../scss/partials/_who-we-are.scss */
+/* line 209, ../scss/partials/_who-we-are.scss */
 .og-loading {
   width: 20px;
   height: 20px;
@@ -2747,18 +2734,18 @@ a {
 }
 
 @-webkit-keyframes loader {
-  /* line 228, ../scss/partials/_who-we-are.scss */
+  /* line 225, ../scss/partials/_who-we-are.scss */
   0% {
     background: #ddd;
   }
 
-  /* line 229, ../scss/partials/_who-we-are.scss */
+  /* line 226, ../scss/partials/_who-we-are.scss */
   33% {
     background: #ccc;
     box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd;
   }
 
-  /* line 230, ../scss/partials/_who-we-are.scss */
+  /* line 227, ../scss/partials/_who-we-are.scss */
   66% {
     background: #ccc;
     box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc;
@@ -2766,18 +2753,18 @@ a {
 }
 
 @-moz-keyframes loader {
-  /* line 234, ../scss/partials/_who-we-are.scss */
+  /* line 231, ../scss/partials/_who-we-are.scss */
   0% {
     background: #ddd;
   }
 
-  /* line 235, ../scss/partials/_who-we-are.scss */
+  /* line 232, ../scss/partials/_who-we-are.scss */
   33% {
     background: #ccc;
     box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd;
   }
 
-  /* line 236, ../scss/partials/_who-we-are.scss */
+  /* line 233, ../scss/partials/_who-we-are.scss */
   66% {
     background: #ccc;
     box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc;
@@ -2785,18 +2772,18 @@ a {
 }
 
 @keyframes loader {
-  /* line 240, ../scss/partials/_who-we-are.scss */
+  /* line 237, ../scss/partials/_who-we-are.scss */
   0% {
     background: #ddd;
   }
 
-  /* line 241, ../scss/partials/_who-we-are.scss */
+  /* line 238, ../scss/partials/_who-we-are.scss */
   33% {
     background: #ccc;
     box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd;
   }
 
-  /* line 242, ../scss/partials/_who-we-are.scss */
+  /* line 239, ../scss/partials/_who-we-are.scss */
   66% {
     background: #ccc;
     box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc;
@@ -2804,28 +2791,23 @@ a {
 }
 
 @media screen and (max-width: 830px) {
-  /* line 247, ../scss/partials/_who-we-are.scss */
+  /* line 244, ../scss/partials/_who-we-are.scss */
   .og-expander h3 {
     font-size: 32px;
   }
 
-  /* line 248, ../scss/partials/_who-we-are.scss */
+  /* line 245, ../scss/partials/_who-we-are.scss */
   .og-expander p {
     font-size: 13px;
   }
 
-  /* line 249, ../scss/partials/_who-we-are.scss */
+  /* line 246, ../scss/partials/_who-we-are.scss */
   .og-expander a {
     font-size: 12px;
   }
 }
 @media screen and (max-width: 650px) {
-  /* line 255, ../scss/partials/_who-we-are.scss */
-  .og-fullimg {
-    display: none;
-  }
-
-  /* line 256, ../scss/partials/_who-we-are.scss */
+  /* line 253, ../scss/partials/_who-we-are.scss */
   .og-details {
     float: none;
     width: 100%;
