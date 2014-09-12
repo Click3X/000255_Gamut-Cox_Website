@@ -26,15 +26,15 @@ $the_query = new WP_Query( $args );
 
 							$size = 'thumb';
 							$full = 'large';
-							$thumb = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID) , 'emp-thumb')[0];
-							$largeThumb = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID) , 'emp-large')[0];
+							$thumb = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID) , 'emp-thumb');
+							$largeThumb = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID) , 'emp-large');
 						?>
 
 							<li id="post-<?php the_ID(); ?>" role="article" itemscope itemtype="http://schema.org/BlogPosting">
-								<a href="<?php the_permalink(); ?>" data-largesrc="<?php echo $largeThumb; ?>" data-title="<?php echo $title; ?>" data-description="<?php echo $content; ?>">
+								<a href="<?php the_permalink(); ?>" data-largesrc="<?php echo $largeThumb[0]; ?>" data-title="<?php echo $title; ?>" data-description="<?php echo $content; ?>">
 								<!-- <a href="<?php the_permalink(); ?>" data-largesrc="<?php echo $largeThumb; ?>" data-title="<?php echo $title; ?>" data-description="<?php echo $content; ?>" > -->
 								<?php echo '<a href="'.get_the_permalink().'">';
-									echo '<img src="'.$thumb.'" alt="'.$title.'" class="grid-thumb">';
+									echo '<img src="'.$thumb[0].'" alt="'.$title.'" class="grid-thumb">';
 									?>
 								</a>
 							</li>
