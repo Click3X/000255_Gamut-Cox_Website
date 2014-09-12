@@ -1,6 +1,11 @@
 /* ==========================================================================
    Custom CSS
    ========================================================================== */
+
+.highlight {
+  color: $brand-color;
+}
+
 .footer-cols {
   display: inline-block;
   vertical-align: top;
@@ -184,3 +189,6 @@
     background-image:url(../../../../../img/home-beams/crossmedia-beam.png); 
   }
 }
+
+// sub pages - About us
+

@@ -2217,19 +2217,24 @@ view.
 /* ==========================================================================
    Custom CSS
    ========================================================================== */
-/* line 4, ../scss/partials/_custom.scss */
+/* line 5, ../scss/partials/_custom.scss */
+.highlight {
+  color: #ed228b;
+}
+
+/* line 9, ../scss/partials/_custom.scss */
 .footer-cols {
   display: inline-block;
   vertical-align: top;
 }
 
-/* line 10, ../scss/partials/_custom.scss */
+/* line 15, ../scss/partials/_custom.scss */
 .biz-content-wrapper {
   position: relative;
   border-bottom: 2px dashed #d8d8d8;
   padding-bottom: 80px;
 }
-/* line 15, ../scss/partials/_custom.scss */
+/* line 20, ../scss/partials/_custom.scss */
 .biz-content-wrapper p {
   margin-top: 80px;
   margin-left: 10%;
@@ -2238,7 +2243,7 @@ view.
   font-size: 1.3em;
   margin-bottom: 0;
 }
-/* line 24, ../scss/partials/_custom.scss */
+/* line 29, ../scss/partials/_custom.scss */
 .biz-content-wrapper a {
   display: inline-block;
   margin-left: 30%;
@@ -2252,49 +2257,49 @@ view.
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-/* line 37, ../scss/partials/_custom.scss */
+/* line 42, ../scss/partials/_custom.scss */
 .biz-content-wrapper a:visited {
   color: white;
 }
-/* line 41, ../scss/partials/_custom.scss */
+/* line 46, ../scss/partials/_custom.scss */
 .biz-content-wrapper a:hover {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-/* line 43, ../scss/partials/_custom.scss */
+/* line 48, ../scss/partials/_custom.scss */
 .biz-content-wrapper a:hover .arrow-right {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   border-left: 6px solid white !important;
 }
-/* line 51, ../scss/partials/_custom.scss */
+/* line 56, ../scss/partials/_custom.scss */
 .biz-content-wrapper div {
   margin-left: 20px;
   font-size: 3em;
   font-style: bold;
 }
 
-/* line 59, ../scss/partials/_custom.scss */
+/* line 64, ../scss/partials/_custom.scss */
 .programmatic-intro-wrapper a:hover {
   background-color: #dd1420 !important;
 }
 
-/* line 63, ../scss/partials/_custom.scss */
+/* line 68, ../scss/partials/_custom.scss */
 .reps-intro-wrapper a:hover {
   background-color: #039fd3 !important;
 }
 
-/* line 67, ../scss/partials/_custom.scss */
+/* line 72, ../scss/partials/_custom.scss */
 .reach-intro-wrapper a:hover {
   background-color: #8134d9 !important;
 }
 
-/* line 71, ../scss/partials/_custom.scss */
+/* line 76, ../scss/partials/_custom.scss */
 .crossmedia-intro-wrapper a:hover {
   background-color: #fba211 !important;
 }
 
-/* line 75, ../scss/partials/_custom.scss */
+/* line 80, ../scss/partials/_custom.scss */
 .arrow-right {
   width: 0;
   height: 0;
@@ -2308,7 +2313,7 @@ view.
   transition: all 0.2s;
 }
 
-/* line 88, ../scss/partials/_custom.scss */
+/* line 93, ../scss/partials/_custom.scss */
 .menu-item a:hover {
   color: #ed228b !important;
   text-decoration: none !important;
@@ -2316,13 +2321,13 @@ view.
   transition: all 0.1s ease-in-out;
 }
 
-/* line 94, ../scss/partials/_custom.scss */
+/* line 99, ../scss/partials/_custom.scss */
 #sidebar-title {
   color: #ed228b;
   font-weight: 700px;
 }
 
-/* line 99, ../scss/partials/_custom.scss */
+/* line 104, ../scss/partials/_custom.scss */
 #sidebar-intro {
   border-top: 1px solid #626262;
   border-bottom: 1px solid #626262;
@@ -2331,47 +2336,47 @@ view.
   margin-top: 80px;
 }
 
-/* line 108, ../scss/partials/_custom.scss */
+/* line 113, ../scss/partials/_custom.scss */
 .main-menu-selected a {
   color: #ed228b !important;
 }
 
-/* line 112, ../scss/partials/_custom.scss */
+/* line 117, ../scss/partials/_custom.scss */
 .sidebar-selected a {
   color: #323944;
 }
 
-/* line 116, ../scss/partials/_custom.scss */
+/* line 121, ../scss/partials/_custom.scss */
 .slider-text {
   font-family: Sentinel Medium;
 }
 
-/* line 121, ../scss/partials/_custom.scss */
+/* line 126, ../scss/partials/_custom.scss */
 .biz-logo-container img {
   margin: 0 0 0 0;
 }
 
-/* line 126, ../scss/partials/_custom.scss */
+/* line 131, ../scss/partials/_custom.scss */
 #pro-logo {
   margin-bottom: -0.8em;
 }
 
-/* line 130, ../scss/partials/_custom.scss */
+/* line 135, ../scss/partials/_custom.scss */
 #rep-logo {
   margin-bottom: -0.75em;
 }
 
-/* line 134, ../scss/partials/_custom.scss */
+/* line 139, ../scss/partials/_custom.scss */
 #rea-logo {
   margin-bottom: -0.35em;
 }
 
-/* line 138, ../scss/partials/_custom.scss */
+/* line 143, ../scss/partials/_custom.scss */
 #cro-logo {
   margin-bottom: -0.3em;
 }
 
-/* line 144, ../scss/partials/_custom.scss */
+/* line 149, ../scss/partials/_custom.scss */
 .home-beam {
   width: 100%;
   height: 7px;
@@ -2380,7 +2385,7 @@ view.
   background-position: top left;
 }
 
-/* line 153, ../scss/partials/_custom.scss */
+/* line 158, ../scss/partials/_custom.scss */
 .home-beam-container {
   overflow: hidden;
   width: 44%;
@@ -2392,22 +2397,22 @@ view.
   right: 0;
 }
 
-/* line 165, ../scss/partials/_custom.scss */
+/* line 170, ../scss/partials/_custom.scss */
 .programmatic-intro-wrapper .home-beam {
   background-image: url(../../../../../img/home-beams/programmatic-beam.png);
 }
 
-/* line 171, ../scss/partials/_custom.scss */
+/* line 176, ../scss/partials/_custom.scss */
 .reach-intro-wrapper .home-beam {
   background-image: url(../../../../../img/home-beams/reach-beam.png);
 }
 
-/* line 177, ../scss/partials/_custom.scss */
+/* line 182, ../scss/partials/_custom.scss */
 .reps-intro-wrapper .home-beam {
   background-image: url(../../../../../img/home-beams/reps-beam.png);
 }
 
-/* line 183, ../scss/partials/_custom.scss */
+/* line 188, ../scss/partials/_custom.scss */
 .crossmedia-intro-wrapper .home-beam {
   background-image: url(../../../../../img/home-beams/crossmedia-beam.png);
 }
