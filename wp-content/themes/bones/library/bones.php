@@ -156,7 +156,12 @@ function bones_scripts_and_styles() {
 
 		// EXP_GRID for 'who-we-are' page
 		wp_register_script( 'exp-grid-js', get_stylesheet_directory_uri() . '/library/js/libs/exp_grid.js', array('jquery'), '', true );
-		wp_register_style( 'exp-grid-css', get_stylesheet_directory_uri() . '/library/css/exp_grid.css', array(), '', true );
+		// wp_register_style( 'exp-grid-css', get_stylesheet_directory_uri() . '/library/css/exp_grid.css', array(), '', true );
+
+		// ROYALSLIDER
+		wp_register_style( 'rs-css', get_stylesheet_directory_uri() . '/library/js/libs/royalslider/royalslider.css', array(), '', true );
+		wp_register_script( 'jq-easing', get_stylesheet_directory_uri() . '/library/js/libs/royalslider/jquery.easing-1.3.js', array('jquery'), '', true );
+		wp_register_script( 'rs-js', get_stylesheet_directory_uri() . '/library/js/libs/royalslider/jquery.royalslider.min.js', array('jquery', 'jq-easing'), '', true );
 
 		// enqueue styles and scripts
 		wp_enqueue_script( 'bones-modernizr' );
@@ -178,8 +183,15 @@ function bones_scripts_and_styles() {
 
 		// CONDITIONAL SCRIPT TO ONLY LOAD EXP-GRID-JS AND EXP-GRID-CSS ON 'WHO-WE-ARE' PAGE id = 45
 		if( is_page(45)) {
-			wp_enqueue_style( 'exp-grid-css' );
+			// wp_enqueue_style( 'exp-grid-css' );
 			wp_enqueue_script( 'exp-grid-js' );
+		}
+
+		// CONDITIONAL SCRIPT TO LOAD ROYALSLIDER ON HOME PAGE
+		if( is_page(107)) {
+			wp_enqueue_style( 'rs-css' );
+			wp_enqueue_script( 'jq-easing' );
+			wp_enqueue_script( 'rs-js' );
 		}
 
 	}
