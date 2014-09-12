@@ -2,17 +2,15 @@
 
 			<div id="content">
 			<?php
-						$header_image = get_field('header-image');
-						$sub_page_title = get_field('sub-page-title');
-						$sub_page_content = get_field('sub-page-content');
-						?>
+				$header_image = get_field('header-image');
+				$sub_page_title = get_field('sub-page-title');
+				$sub_page_content = get_field('sub-page-content');
+			?>
 				<header class="article-header">
+					<!-- <h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1> -->
+					<div style="background-image: url('<?php echo $header_image['url'] ?>'); background-size: cover; height: 400px; max-width: 1600px; margin: auto"></div>
+				</header>
 
-									<!-- <h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1> -->
-									<div style="background-image: url('<?php echo $header_image['url'] ?>'); background-size: cover; height: 300px; max-width: 1600px"></div>
-
-
-								</header> <?php // end article header ?>
 				<div id="inner-content" class="wrap cf">
 
 						<?php get_sidebar(); ?>

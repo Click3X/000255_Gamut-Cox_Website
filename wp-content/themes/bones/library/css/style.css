@@ -2417,6 +2417,13 @@ view.
   background-image: url(../../../../../img/home-beams/crossmedia-beam.png);
 }
 
+/* line 194, ../scss/partials/_custom.scss */
+.sub-page-content-wrapper {
+  margin-top: -150px;
+  background-color: white;
+  padding: 20px 10px 0px 90px;
+}
+
 /* line 1, ../scss/partials/_footer.scss */
 .client-info {
   display: inline-block;
