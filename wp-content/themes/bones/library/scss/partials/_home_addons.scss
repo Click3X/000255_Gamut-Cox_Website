@@ -1,6 +1,25 @@
 // HOME ADD ONS
-.biz-content-wrapper {
-	> div {
-		max-width: 960px;
+.home-wrap {
+	position: absolute; 
+	width: 90%; 
+	max-width: 960px; 
+	left:0; 
+	right:0; 
+	margin:auto; 
+	// top: 100px;
+	top:9%;
+
+	@media(min-width: 768px) {
+		width: 60%; 
+		top:22%;
 	}
+}
+
+.white {
+	color:#ffffff;
+}
+
+.biz-content-wrapper {
+	max-width: 1600px;
+	margin:0 auto;
 }

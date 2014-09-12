@@ -19,7 +19,7 @@
 
 				<div id="inner-content" class="cf">
 
-						<div id="main" class="m-all t-2of3 cf" role="main">
+						<div id="main" class="m-all cf" role="main">
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -81,14 +81,14 @@
 										?>
 											
 											<div class="gamut-defined-wrapper" style="position: relative; height: 400px; background-repeat: no-repeat; background-image: url('<?php echo $bg_img['url'] ?>'); background-size: cover;">
-												<div style="position: absolute; width: 60%; left:20%; top: 100px">
+												<div class="home-wrap">
 													<h1 ><?php echo $gamut_defined_title ?></h1>
 													<div style="margin-left: 10%"><?php echo $gamut_defined_content ?></div>
 												</div>
 											</div>
 
 											<div class="our-solutions-wrapper" style="position: relative; height: 400px; background-color: #3d3d3d">
-												<div style="position: absolute; width: 60%; left:20%; top: 100px; color: #ffffff">
+												<div class="home-wrap white">
 													<h1 ><?php echo $our_solutions_title ?></h1>
 													<div style="margin-left: 10%"><?php echo $our_solutions_content ?></div>
 												</div>
@@ -134,7 +134,7 @@
 
 										<!-- Gamut Difference -->
 										<div class="our-solutions-wrapper" style="position: relative; height: 400px; background-color: #3d3d3d">
-												<div style="position: absolute; width: 60%; left:20%; top: 100px; color: #ffffff">
+												<div class="home-wrap white">
 													<h1 ><?php echo $gamut_difference_title ?></h1>
 													<div style="margin-left: 10%"><?php echo $gamut_difference_content ?></div>
 												</div>

@@ -24,16 +24,23 @@
   padding-bottom: 80px;
   p {
     margin-top: 80px;
-    margin-left: 10%;
+    // margin-left: 10%;
+    margin-right: auto;
+    margin-left:auto;
     color: black;
-    width: 60%;
+    width: 90%;
     font-size: 1.3em;
     margin-bottom: 0;
+
+    @media(min-width: 768px) {
+      width:60%;
+    }
   }
 
   a {
     display: inline-block;
-    margin-left: 30%;
+    // margin-left: 30%;
+    margin-left: 5%;
     font-size: 1em;
     color: white !important;
     white-space: nowrap;
@@ -42,6 +49,18 @@
     text-decoration: none;
     padding: 8px 15px;
     @include transition(all 0.2s);
+
+    @media(min-width: 768px) {
+      margin-left:10%;
+    }
+
+    @media(min-width: 960px) {
+      margin-left:20%;
+    }
+
+    @media(min-width: 1041px) {
+      margin-left: 30%;
+    }
   }
 
   a:visited {
