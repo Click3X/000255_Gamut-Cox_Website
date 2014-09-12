@@ -206,7 +206,24 @@
   }
 }
 
+.our-solutions-list-wrapper {
+  margin-left: 90px;
+  border-top: 1px solid #aaa;
+}
+
 .our-solutions-list {
   border-bottom: 1px solid #aaa;
   padding: 10px 0 30px 0;
+
+  .logo-larger {
+    height: 3.5em;
+  }
+
+  .logo-smaller {
+    height: 2.9em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
 }

@@ -47,26 +47,30 @@
 									<!-- if statements -->
 									<!-- adding content on Our Solutions page -->
 									<?php if (is_page(184)) { ?>
+
+									<div class="our-solutions-list-wrapper">
 									   
 									   <div class="our-solutions-list">
-										   	<img src="<?php bloginfo('url'); ?>/img/home-logos/programmatic-logo.png">
+										   	<img class="logo-larger" src="<?php bloginfo('url'); ?>/img/home-logos/programmatic-logo.png">
 										   	<h2><?php echo $pro_caption ?></h2>
 									   </div>
 
 									   <div class="our-solutions-list">
-										   	<img src="<?php bloginfo('url'); ?>/img/home-logos/reps-logo.png">
+										   	<img class="logo-larger" src="<?php bloginfo('url'); ?>/img/home-logos/reps-logo.png">
 										   	<h2><?php echo $rep_caption ?></h2>
 									   </div>
 
 									   <div class="our-solutions-list">
-										   	<img src="<?php bloginfo('url'); ?>/img/home-logos/reach-logo.png">
+										   	<img class="logo-smaller" src="<?php bloginfo('url'); ?>/img/home-logos/reach-logo.png">
 										   	<h2><?php echo $rea_caption ?></h2>
 									   </div>
 
 									   <div class="our-solutions-list">
-										   	<img src="<?php bloginfo('url'); ?>/img/home-logos/crossmedia-logo.png">
+										   	<img class="logo-smaller" src="<?php bloginfo('url'); ?>/img/home-logos/crossmedia-logo.png">
 										   	<h2><?php echo $cro_caption ?></h2>
 									   </div>
+
+									 </div>
 
 									<?php } elseif (is_page(8)) { ?>
 									   <!-- <image src="<?php bloginfo('stylesheet_directory'); ?>/images/imagename.jpg" /> -->
