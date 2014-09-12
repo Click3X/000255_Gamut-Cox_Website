@@ -23,3 +23,9 @@
 	max-width: 1600px;
 	margin:0 auto;
 }
+
+#post-107 > section > div.gamut-defined-wrapper {
+	@media(min-width: 1240px) {
+		background-position: 50% 50%;
+	}
+}

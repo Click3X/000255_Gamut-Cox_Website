@@ -68,7 +68,8 @@
 
 									<?php 
 									if($careers) {
-										echo '<li class="career-button"><a href="'.$careers.'" id="careers-link" class="careers-link">Careers</a></li>';
+										echo '<li class="career-button"><a href="'.$careers.'" id="careers-link">Careers&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a></li>';
+										// echo '<li class="career-button"><a href="'.$careers.'" id="careers-link" class="careers-link">Careers</a></li>';
 									}
 									?>
 									

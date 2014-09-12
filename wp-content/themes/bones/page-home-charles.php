@@ -28,12 +28,22 @@
 
 								<section class="entry-content cf" itemprop="articleBody">
 
-								<?php layerslider(1) ?>
+								<?php 
+								// Comment out old slider
+								// layerslider(1)
+								// include new CHARLES SLIDER working file
+								
+								include('php/charles-slider.php'); 
+
+								?>
 
 
 									<?php
 										// the content (pretty self explanatory huh)
 										// the_content();
+
+
+									
 
 										$bg_img = get_field('gamut-defined-bg');
 

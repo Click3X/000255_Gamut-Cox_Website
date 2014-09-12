@@ -35,6 +35,9 @@
 										// the content (pretty self explanatory huh)
 										// the_content();
 
+
+									
+
 										$bg_img = get_field('gamut-defined-bg');
 
 										$gamut_defined_title = get_field('gamut-defined-title');

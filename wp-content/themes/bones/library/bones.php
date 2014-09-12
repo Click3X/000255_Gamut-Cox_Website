@@ -160,8 +160,10 @@ function bones_scripts_and_styles() {
 
 		// ROYALSLIDER
 		wp_register_style( 'rs-css', get_stylesheet_directory_uri() . '/library/js/libs/royalslider/royalslider.css', array(), '', true );
+		wp_register_style( 'rs-skin', get_stylesheet_directory_uri() . '/library/js/libs/royalslider/skins/default/rs-default.css', array(), '', true );
 		wp_register_script( 'jq-easing', get_stylesheet_directory_uri() . '/library/js/libs/royalslider/jquery.easing-1.3.js', array('jquery'), '', true );
 		wp_register_script( 'rs-js', get_stylesheet_directory_uri() . '/library/js/libs/royalslider/jquery.royalslider.min.js', array('jquery', 'jq-easing'), '', true );
+		wp_register_script( 'rs-slider', get_stylesheet_directory_uri() . '/library/js/rs-slider.js', array('jquery', 'jq-easing', 'rs-js'), '', true );
 
 		// enqueue styles and scripts
 		wp_enqueue_script( 'bones-modernizr' );
@@ -192,6 +194,7 @@ function bones_scripts_and_styles() {
 			wp_enqueue_style( 'rs-css' );
 			wp_enqueue_script( 'jq-easing' );
 			wp_enqueue_script( 'rs-js' );
+			wp_enqueue_script( 'rs-slider' );
 		}
 
 	}
