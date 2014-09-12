@@ -1492,7 +1492,6 @@ GENERAL STYLES
 *********************/
 /* line 52, ../scss/breakpoints/_base.scss */
 body {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 100%;
   line-height: 1.5;
   color: #323944;
@@ -1801,7 +1800,6 @@ POSTS & CONTENT STYLES
 /* line 394, ../scss/breakpoints/_base.scss */
 .entry-content p {
   margin: 0 0 1.5em;
-  font-family: Sentinel Light;
 }
 /* line 420, ../scss/breakpoints/_base.scss */
 .entry-content table {

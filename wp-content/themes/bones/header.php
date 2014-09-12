@@ -13,6 +13,10 @@
 
 		<title><?php wp_title(''); ?></title>
 
+		<!-- LOAD TYPEKIT FONTS -->
+		<script src="//use.typekit.net/mno4etl.js"></script>
+		<script>try{Typekit.load();}catch(e){}</script>
+
 		<?php // mobile meta (hooray!) ?>
 		<meta name="HandheldFriendly" content="True">
 		<meta name="MobileOptimized" content="320">
