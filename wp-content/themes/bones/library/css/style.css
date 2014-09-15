@@ -2978,7 +2978,8 @@ a {
   }
 }
 
-/* line 5, ../scss/partials/_sidebar.scss */
+/* line 6, ../scss/partials/_sidebar.scss */
+.page-id-45 .page-item-48 a,
 .current_page_item a,
 .sidebar-selected a {
   color: #ed228b;
