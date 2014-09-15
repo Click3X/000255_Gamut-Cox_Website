@@ -28,7 +28,7 @@
 
 								<section class="entry-content cf" itemprop="articleBody">
 
-								<?php layerslider(1) ?>
+								<?php //layerslider(1) ?>
 
 
 									<?php
@@ -79,6 +79,21 @@
 
 
 										?>
+
+										<div id="homeSliderContainer">
+											<div id="home-slider">
+												<div id="bg">
+													<img src=""/>
+												</div>
+												<div id="fg">
+													<img src="<?php bloginfo('url'); ?>/img/fg-long copy2.png"/>
+												</div> 
+											</div>
+										</div>
+
+
+
+										
 											
 											<div class="gamut-defined-wrapper" style="position: relative; height: 400px; background-repeat: no-repeat; background-image: url('<?php echo $bg_img['url'] ?>'); background-size: cover;">
 												<div class="home-wrap">
