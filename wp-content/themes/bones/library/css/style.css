@@ -2330,22 +2330,21 @@ view.
 .page-header {
   background-size: cover;
   height: 400px;
-  max-width: 1600px;
   margin: auto;
 }
 
-/* line 23, ../scss/partials/_custom.scss */
+/* line 22, ../scss/partials/_custom.scss */
 #sidebar-title {
   font-family: Sentinel Medium;
 }
 
-/* line 27, ../scss/partials/_custom.scss */
+/* line 26, ../scss/partials/_custom.scss */
 .biz-content-wrapper {
   position: relative;
   border-bottom: 2px dashed #d8d8d8;
   padding-bottom: 80px;
 }
-/* line 32, ../scss/partials/_custom.scss */
+/* line 31, ../scss/partials/_custom.scss */
 .biz-content-wrapper p {
   margin-top: 80px;
   margin-right: auto;
@@ -2356,12 +2355,12 @@ view.
   margin-bottom: 0;
 }
 @media (min-width: 768px) {
-  /* line 32, ../scss/partials/_custom.scss */
+  /* line 31, ../scss/partials/_custom.scss */
   .biz-content-wrapper p {
     width: 60%;
   }
 }
-/* line 47, ../scss/partials/_custom.scss */
+/* line 46, ../scss/partials/_custom.scss */
 .biz-content-wrapper a {
   display: inline-block;
   margin-left: 5%;
@@ -2376,66 +2375,66 @@ view.
   transition: all 0.2s;
 }
 @media (min-width: 768px) {
-  /* line 47, ../scss/partials/_custom.scss */
+  /* line 46, ../scss/partials/_custom.scss */
   .biz-content-wrapper a {
     margin-left: 10%;
   }
 }
 @media (min-width: 960px) {
-  /* line 47, ../scss/partials/_custom.scss */
+  /* line 46, ../scss/partials/_custom.scss */
   .biz-content-wrapper a {
     margin-left: 20%;
   }
 }
 @media (min-width: 1041px) {
-  /* line 47, ../scss/partials/_custom.scss */
+  /* line 46, ../scss/partials/_custom.scss */
   .biz-content-wrapper a {
     margin-left: 30%;
   }
 }
-/* line 73, ../scss/partials/_custom.scss */
+/* line 72, ../scss/partials/_custom.scss */
 .biz-content-wrapper a:visited {
   color: white;
 }
-/* line 77, ../scss/partials/_custom.scss */
+/* line 76, ../scss/partials/_custom.scss */
 .biz-content-wrapper a:hover {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-/* line 79, ../scss/partials/_custom.scss */
+/* line 78, ../scss/partials/_custom.scss */
 .biz-content-wrapper a:hover .arrow-right {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   border-left: 6px solid white !important;
 }
-/* line 87, ../scss/partials/_custom.scss */
+/* line 86, ../scss/partials/_custom.scss */
 .biz-content-wrapper div {
   margin-left: 20px;
   font-size: 3em;
   font-style: bold;
 }
 
-/* line 95, ../scss/partials/_custom.scss */
+/* line 94, ../scss/partials/_custom.scss */
 .programmatic-intro-wrapper a:hover {
   background-color: #dd1420 !important;
 }
 
-/* line 99, ../scss/partials/_custom.scss */
+/* line 98, ../scss/partials/_custom.scss */
 .reps-intro-wrapper a:hover {
   background-color: #039fd3 !important;
 }
 
-/* line 103, ../scss/partials/_custom.scss */
+/* line 102, ../scss/partials/_custom.scss */
 .reach-intro-wrapper a:hover {
   background-color: #8134d9 !important;
 }
 
-/* line 107, ../scss/partials/_custom.scss */
+/* line 106, ../scss/partials/_custom.scss */
 .crossmedia-intro-wrapper a:hover {
   background-color: #fba211 !important;
 }
 
-/* line 111, ../scss/partials/_custom.scss */
+/* line 110, ../scss/partials/_custom.scss */
 .arrow-right {
   width: 0;
   height: 0;
@@ -2449,7 +2448,7 @@ view.
   transition: all 0.2s;
 }
 
-/* line 124, ../scss/partials/_custom.scss */
+/* line 123, ../scss/partials/_custom.scss */
 .menu-item a:hover {
   color: #ed228b !important;
   text-decoration: none !important;
@@ -2457,13 +2456,13 @@ view.
   transition: all 0.1s ease-in-out;
 }
 
-/* line 130, ../scss/partials/_custom.scss */
+/* line 129, ../scss/partials/_custom.scss */
 #sidebar-title {
   color: #ed228b;
   font-weight: 700px;
 }
 
-/* line 135, ../scss/partials/_custom.scss */
+/* line 134, ../scss/partials/_custom.scss */
 #sidebar-intro {
   border-top: 1px solid #626262;
   border-bottom: 1px solid #626262;
@@ -2472,47 +2471,47 @@ view.
   margin-top: 80px;
 }
 
-/* line 144, ../scss/partials/_custom.scss */
+/* line 143, ../scss/partials/_custom.scss */
 .main-menu-selected a {
   color: #ed228b !important;
 }
 
-/* line 148, ../scss/partials/_custom.scss */
+/* line 147, ../scss/partials/_custom.scss */
 .sidebar-selected a {
   color: #323944;
 }
 
-/* line 152, ../scss/partials/_custom.scss */
+/* line 151, ../scss/partials/_custom.scss */
 .slider-text {
   font-family: Sentinel Medium;
 }
 
-/* line 157, ../scss/partials/_custom.scss */
+/* line 156, ../scss/partials/_custom.scss */
 .biz-logo-container img {
   margin: 0 0 0 0;
 }
 
-/* line 162, ../scss/partials/_custom.scss */
+/* line 161, ../scss/partials/_custom.scss */
 #pro-logo {
   margin-bottom: -0.8em;
 }
 
-/* line 166, ../scss/partials/_custom.scss */
+/* line 165, ../scss/partials/_custom.scss */
 #rep-logo {
   margin-bottom: -0.75em;
 }
 
-/* line 170, ../scss/partials/_custom.scss */
+/* line 169, ../scss/partials/_custom.scss */
 #rea-logo {
   margin-bottom: -0.35em;
 }
 
-/* line 174, ../scss/partials/_custom.scss */
+/* line 173, ../scss/partials/_custom.scss */
 #cro-logo {
   margin-bottom: -0.3em;
 }
 
-/* line 180, ../scss/partials/_custom.scss */
+/* line 179, ../scss/partials/_custom.scss */
 .home-beam {
   width: 100%;
   height: 7px;
@@ -2521,7 +2520,7 @@ view.
   background-position: top left;
 }
 
-/* line 189, ../scss/partials/_custom.scss */
+/* line 188, ../scss/partials/_custom.scss */
 .home-beam-container {
   overflow: hidden;
   width: 44%;
@@ -2533,105 +2532,105 @@ view.
   right: 0;
 }
 
-/* line 201, ../scss/partials/_custom.scss */
+/* line 200, ../scss/partials/_custom.scss */
 .programmatic-intro-wrapper .home-beam {
   background-image: url(../../../../../img/home-beams/programmatic-beam.png);
 }
 
-/* line 207, ../scss/partials/_custom.scss */
+/* line 206, ../scss/partials/_custom.scss */
 .reach-intro-wrapper .home-beam {
   background-image: url(../../../../../img/home-beams/reach-beam.png);
 }
 
-/* line 213, ../scss/partials/_custom.scss */
+/* line 212, ../scss/partials/_custom.scss */
 .reps-intro-wrapper .home-beam {
   background-image: url(../../../../../img/home-beams/reps-beam.png);
 }
 
-/* line 219, ../scss/partials/_custom.scss */
+/* line 218, ../scss/partials/_custom.scss */
 .crossmedia-intro-wrapper .home-beam {
   background-image: url(../../../../../img/home-beams/crossmedia-beam.png);
 }
 
-/* line 225, ../scss/partials/_custom.scss */
+/* line 224, ../scss/partials/_custom.scss */
 .sub-page-content-wrapper {
   margin-top: -150px;
   background-color: white;
   padding: 20px 8% 0px 8%;
 }
-/* line 230, ../scss/partials/_custom.scss */
+/* line 229, ../scss/partials/_custom.scss */
 .sub-page-content-wrapper h1 {
   width: 70%;
 }
 
-/* line 235, ../scss/partials/_custom.scss */
+/* line 234, ../scss/partials/_custom.scss */
 .our-solutions-list-wrapper {
   margin-left: 90px;
   border-top: 1px solid #aaa;
 }
 
-/* line 240, ../scss/partials/_custom.scss */
+/* line 239, ../scss/partials/_custom.scss */
 .our-solutions-list {
   border-bottom: 1px solid #aaa;
   padding: 10px 0 30px 0;
 }
-/* line 244, ../scss/partials/_custom.scss */
+/* line 243, ../scss/partials/_custom.scss */
 .our-solutions-list .logo-larger {
   height: 3.5em;
 }
-/* line 248, ../scss/partials/_custom.scss */
+/* line 247, ../scss/partials/_custom.scss */
 .our-solutions-list .logo-smaller {
   height: 2.9em;
 }
-/* line 252, ../scss/partials/_custom.scss */
+/* line 251, ../scss/partials/_custom.scss */
 .our-solutions-list h2 {
   font-size: 1.2em;
 }
 
-/* line 260, ../scss/partials/_custom.scss */
+/* line 259, ../scss/partials/_custom.scss */
 #homeSliderContainer {
   width: 1600px;
   overflow: hidden;
   margin: auto;
 }
 
-/* line 266, ../scss/partials/_custom.scss */
+/* line 265, ../scss/partials/_custom.scss */
 #home-slider {
   position: relative;
   height: 820px;
 }
 
-/* line 271, ../scss/partials/_custom.scss */
+/* line 270, ../scss/partials/_custom.scss */
 #bg {
   position: absolute;
 }
-/* line 274, ../scss/partials/_custom.scss */
+/* line 273, ../scss/partials/_custom.scss */
 #bg img {
   max-width: inherit !important;
 }
 
-/* line 280, ../scss/partials/_custom.scss */
+/* line 279, ../scss/partials/_custom.scss */
 #fg {
   position: absolute;
 }
-/* line 283, ../scss/partials/_custom.scss */
+/* line 282, ../scss/partials/_custom.scss */
 #fg img {
   max-width: inherit !important;
 }
 
-/* line 290, ../scss/partials/_custom.scss */
+/* line 289, ../scss/partials/_custom.scss */
 .lower-columns ul li {
   display: inline-block;
   width: 27%;
   margin-right: 5%;
   vertical-align: top;
 }
-/* line 298, ../scss/partials/_custom.scss */
+/* line 297, ../scss/partials/_custom.scss */
 .lower-columns ul h3 {
   color: #e71d2f;
 }
 
-/* line 305, ../scss/partials/_custom.scss */
+/* line 304, ../scss/partials/_custom.scss */
 .lower-columns {
   padding: 20px 0 40px 0;
   border-top: 1px dashed #aaa;
@@ -3150,6 +3149,204 @@ a {
 .current_page_item a,
 .sidebar-selected a {
   color: #ed228b;
+}
+
+/* Parallax base styles
+--------------------------------------------- */
+/* line 8, ../scss/modules/_parallax.scss */
+.parallax {
+  height: 500px;
+  /* fallback for older browsers */
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-perspective: 300px;
+  perspective: 300px;
+}
+
+/* line 18, ../scss/modules/_parallax.scss */
+.parallax__group {
+  position: relative;
+  height: 500px;
+  /* fallback for older browsers */
+  height: 100vh;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+/* line 32, ../scss/modules/_parallax.scss */
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* line 40, ../scss/modules/_parallax.scss */
+.parallax__layer--fore {
+  -webkit-transform: translateZ(90px) scale(0.7);
+  transform: translateZ(90px) scale(0.7);
+  z-index: 1;
+}
+
+/* line 46, ../scss/modules/_parallax.scss */
+.parallax__layer--base {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  z-index: 4;
+}
+
+/* line 52, ../scss/modules/_parallax.scss */
+.parallax__layer--back {
+  -webkit-transform: translateZ(-300px) scale(2);
+  transform: translateZ(-300px) scale(2);
+  z-index: 3;
+}
+
+/* line 58, ../scss/modules/_parallax.scss */
+.parallax__layer--deep {
+  -webkit-transform: translateZ(-600px) scale(3);
+  transform: translateZ(-600px) scale(3);
+  z-index: 2;
+}
+
+/* Debugger styles - used to show the effect
+--------------------------------------------- */
+/* line 68, ../scss/modules/_parallax.scss */
+.debug {
+  position: fixed;
+  top: 0;
+  left: .5em;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  padding: .5em;
+  border-radius: 0 0 5px 5px;
+}
+
+/* line 78, ../scss/modules/_parallax.scss */
+.debug-on .parallax__group {
+  -webkit-transform: translate3d(800px, 0, -800px) rotateY(30deg);
+  transform: translate3d(700px, 0, -800px) rotateY(30deg);
+}
+
+/* line 82, ../scss/modules/_parallax.scss */
+.debug-on .parallax__layer {
+  box-shadow: 0 0 0 2px #000;
+  opacity: 0.9;
+}
+
+/* line 86, ../scss/modules/_parallax.scss */
+.parallax__group {
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+}
+
+/* demo styles
+--------------------------------------------- */
+/* line 95, ../scss/modules/_parallax.scss */
+body, html {
+  overflow: hidden;
+}
+
+/* line 108, ../scss/modules/_parallax.scss */
+.parallax {
+  font-size: 135%;
+}
+
+/* centre the content in the parallax layers */
+/* line 114, ../scss/modules/_parallax.scss */
+.title {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* style the groups
+--------------------------------------------- */
+/* line 128, ../scss/modules/_parallax.scss */
+#group1 {
+  z-index: 5;
+  /* slide over group 2 */
+}
+
+/* line 131, ../scss/modules/_parallax.scss */
+#group1 .parallax__layer--base {
+  background: #66cc66;
+}
+
+/* line 135, ../scss/modules/_parallax.scss */
+#group2 {
+  z-index: 3;
+  /* slide under groups 1 and 3 */
+}
+/* line 141, ../scss/modules/_parallax.scss */
+#group2 .home-wrap {
+  top: 36%;
+}
+
+/* line 145, ../scss/modules/_parallax.scss */
+#group2 .parallax__layer--back {
+  background: #7bd266;
+}
+
+/* line 149, ../scss/modules/_parallax.scss */
+#group3 {
+  z-index: 4;
+  /* slide over group 2 and 4 */
+}
+
+/* line 156, ../scss/modules/_parallax.scss */
+#group3 .parallax__layer--base {
+  background-color: #3d3d3d;
+}
+
+/* line 161, ../scss/modules/_parallax.scss */
+#group4 {
+  z-index: 2;
+  /* slide under group 3 and 5 */
+}
+
+/* line 164, ../scss/modules/_parallax.scss */
+#group4 .parallax__layer--deep {
+  background: #b8df65;
+}
+
+/* line 168, ../scss/modules/_parallax.scss */
+#group5 {
+  z-index: 3;
+  /* slide over group 4 and 6 */
+}
+
+/* line 171, ../scss/modules/_parallax.scss */
+#group5 .parallax__layer--base {
+  background: #d6e564;
+}
+
+/* line 175, ../scss/modules/_parallax.scss */
+#group6 {
+  z-index: 2;
+  /* slide under group 5 and 7 */
+}
+
+/* line 178, ../scss/modules/_parallax.scss */
+#group6 .parallax__layer--back {
+  background: #f5eb64;
+}
+
+/* line 182, ../scss/modules/_parallax.scss */
+#group7 {
+  z-index: 3;
+  /* slide over group 7 */
+}
+
+/* line 185, ../scss/modules/_parallax.scss */
+#group7 .parallax__layer--base {
+  background: #fff164;
 }
 
 /*********************
