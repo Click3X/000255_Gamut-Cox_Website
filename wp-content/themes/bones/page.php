@@ -13,7 +13,7 @@
 			?>
 				<header class="article-header">
 					<!-- <h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1> -->
-					<div style="background-image: url('<?php echo $header_image['url'] ?>'); background-size: cover; height: 400px; max-width: 1600px; margin: auto"></div>
+					<div style="background-image: url('<?php echo $header_image['url'] ?>'); background-size: cover; height: 400px; margin: auto"></div> <!-- Took out 'max-width: 1600px;' -Charles -->
 				</header>
 
 				<div id="inner-content" class="wrap cf">
