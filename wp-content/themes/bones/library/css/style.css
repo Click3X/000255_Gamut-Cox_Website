@@ -2239,6 +2239,8 @@ view.
   background: white;
   z-index: 10;
   position: relative;
+  padding-left: .5rem;
+  padding-right: .5rem;
   -webkit-transform: translateZ(10);
   -moz-transform: translateZ(10);
   -o-transform: translateZ(10);
@@ -2251,6 +2253,8 @@ view.
     display: inline-block;
     float: left;
     z-index: 0;
+    padding-left: 0;
+    padding-right: 0;
     -webkit-transform: translateZ(0);
     -moz-transform: translateZ(0);
     -o-transform: translateZ(0);
@@ -2259,13 +2263,14 @@ view.
   }
 }
 
-/* line 969, ../scss/breakpoints/_base.scss */
+/* line 973, ../scss/breakpoints/_base.scss */
 .main-nav {
   position: absolute;
   width: 100%;
   background: white;
   padding-top: 76px;
   top: -240px;
+  border-bottom: 1px solid #eaedf2;
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
   -o-transform: translateY(0);
@@ -2278,7 +2283,7 @@ view.
   transition: all 250ms;
 }
 @media (min-width: 768px) {
-  /* line 969, ../scss/breakpoints/_base.scss */
+  /* line 973, ../scss/breakpoints/_base.scss */
   .main-nav {
     position: relative;
     width: auto;
@@ -2286,16 +2291,23 @@ view.
     top: auto;
     padding-top: 0;
     float: right;
+    border-bottom: 0;
   }
 }
 
-/* line 992, ../scss/breakpoints/_base.scss */
+/* line 998, ../scss/breakpoints/_base.scss */
 .show-nav {
+  z-index: 9;
   -webkit-transform: translateY(240px);
   -moz-transform: translateY(240px);
   -o-transform: translateY(240px);
   -ms-transform: translateY(240px);
   transform: translateY(240px);
+  -webkit-transform: translateZ(9);
+  -moz-transform: translateZ(9);
+  -o-transform: translateZ(9);
+  -ms-transform: translateZ(9);
+  transform: translateZ(9);
   -webkit-transition: all 250ms;
   -moz-transition: all 250ms;
   -o-transition: all 250ms;
@@ -2303,13 +2315,25 @@ view.
   transition: all 250ms;
 }
 
-/* line 998, ../scss/breakpoints/_base.scss */
+/* line 1005, ../scss/breakpoints/_base.scss */
 .hide-nav {
   -webkit-transition: all 500ms;
   -moz-transition: all 500ms;
   -o-transition: all 500ms;
   -ms-transition: all 500ms;
   transition: all 500ms;
+}
+
+/* line 1010, ../scss/breakpoints/_base.scss */
+#inner-header.wrap {
+  width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  /* line 1010, ../scss/breakpoints/_base.scss */
+  #inner-header.wrap {
+    width: 96%;
+  }
 }
 
 /* ==========================================================================
