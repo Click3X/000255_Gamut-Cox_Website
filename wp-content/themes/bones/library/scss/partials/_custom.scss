@@ -12,6 +12,13 @@
 
 }
 
+.page-header {
+  background-size: cover; 
+  height: 400px; 
+  max-width: 1600px; 
+  margin: auto;
+}
+
 // sidebar
 #sidebar-title {
   font-family: Sentinel Medium;
@@ -218,7 +225,7 @@
 .sub-page-content-wrapper {
   margin-top: -150px;
   background-color: white;
-  padding: 20px 10px 0px 90px;
+  padding: 20px 8% 0px 8%;
 
   h1 {
     width: 70%;
@@ -278,3 +285,26 @@
       }
       
     }
+
+.lower-columns ul {
+  li {
+      display: inline-block;
+      width: 27%;
+      margin-right: 5%;
+      vertical-align: top;
+  }
+
+
+  h3 {
+    color: $red;
+  }
+
+  
+}
+
+.lower-columns {
+  padding: 20px 0 40px 0;
+  border-top: 1px dashed #aaa;
+  border-bottom: 1px dashed #aaa;
+
+}
