@@ -4,15 +4,12 @@
 
 				<h2 id="sidebar-title"><?php echo $parent_title; ?></h2>
 
-				<?php echo '<h3><a href="'. get_post_type_archive_link( 'team_members' ). '">Team Members Archive Test Link</a></h3>'; ?>
-
 					<?php
 					// if ( is_active_sidebar( 'sidebar1' ) ) : ?>
 
 						<?php 
 
-						
-
+			
 						// dynamic_sidebar( 'sidebar1' ); 
 						global $post; // Setup the global variable $post
 						if ( is_page() && $post->post_parent ) // Make sure we are on a page and that the page is a parent
@@ -35,9 +32,6 @@
 
 
 						?>
-
-
-
 
 
 					<?php // else : ?>

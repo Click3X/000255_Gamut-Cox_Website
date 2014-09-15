@@ -2978,6 +2978,12 @@ a {
   }
 }
 
+/* line 5, ../scss/partials/_sidebar.scss */
+.current_page_item a,
+.sidebar-selected a {
+  color: #ed228b;
+}
+
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's

@@ -195,6 +195,20 @@ function bones_comments( $comment, $args, $depth ) {
 } // don't remove this bracket!
 
 
+// CHARLES HELPER FUNCTION
+function helper($var) {
+  $type = gettype ( $var );
+  echo '<h2>Var is type: '.$type.'.</h2>';
+
+  if($type == 'array') {
+    echo '<pre>'.print_r($var).'</pre>';  
+  } elseif($type == 'object') {
+    echo '<pre>'.var_dump($var).'</pre>';  
+  }
+  
+}
+
+
 /*
 This is a modification of a function found in the
 twentythirteen theme where we can declare some
