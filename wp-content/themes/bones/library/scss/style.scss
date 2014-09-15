@@ -84,7 +84,10 @@ the other stylesheets. Remember, keep it light: Speed is Important.
 @import "partials/sidebar";
 
 // PARALLAX FOR HOME PAGE
-@import "modules/parallax";
+// @import "modules/parallax";
+
+// SCROLLORAMA
+@import "partials/scrollorama";
 
 
 /*********************

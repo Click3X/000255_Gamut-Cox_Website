@@ -15,10 +15,6 @@
 
 <?php get_header(); ?>
 
-	<div class="debug">
-		<label><input type="checkbox"> Debug</label>
-	</div>
-
 	<div id="content">
 
 		<div id="inner-content" class="cf">
@@ -61,92 +57,23 @@
 
 				<?php 
 					// WEN'S HOME PAGE FILE
-				//	include('php/home-wen.php');
+					include('php/home-wen.php');
+
+					// include('php/home-charlie.php');
+
 				?>	
 
-				<!-- START CHARLES PARALLAX -->
-				<div class="parallax">
-
-					<div id="group1" class="parallax__group">
-						<div class="parallax__layer parallax__layer--base">
-							<div id="homeSliderContainer">
-								<div id="home-slider">
-									<div id="bg">
-										<img src=""/>
-									</div>
-									<div id="fg">
-										<img src="<?php bloginfo('url'); ?>/img/fg-long copy2.png"/>
-									</div> 
-								</div>
-							</div>
-						</div>
+				<!-- SCROLLORAMA TEST -->
+				<!-- <div id="content-wrapper">
+					<div id="examples-1">
+						<h2 id="fade-it">Fade It</h2>
+						<h2 id="fly-it">Fly It</h2>
+						<h2 id="spin-it">Spin It</h2>
+						<h2 id="scale-it">Scale It</h2>
+						<h2 id="smush-it">Smush It</h2>
 					</div>
+				</div> -->
 					
-
-					<div id="group2" class="parallax__group small">
-						<div class="home-wrap">
-							<h1><?php echo $gamut_defined_title ?></h1>
-							<div style="margin-left: 10%"><?php echo $gamut_defined_content ?></div>
-						</div>
-				
-						<div class="parallax__layer parallax__layer--back" style="background-repeat: no-repeat; background-image: url('<?php echo $bg_img['url'] ?>'); background-size: cover;">
-							<!-- <div class="title">Background Layer</div> -->
-						</div>
-					</div>
-
-
-					<div id="group3" class="parallax__group">
-						<div class="parallax__layer parallax__layer--fore">
-							<!-- <div class="title">Foreground Layer</div> -->
-							<div class="home-wrap white">
-								<h1><?php echo $our_solutions_title ?></h1>
-								<div style="margin-left: 10%"><?php echo $our_solutions_content ?></div>
-							</div>
-						</div>
-						<div class="parallax__layer parallax__layer--base">
-							<div class="title">Base Layer</div>
-						</div>
-					</div>
-					
-
-					<div id="group4" class="parallax__group">
-						<div class="parallax__layer parallax__layer--base">
-							<div class="title">Base Layer</div>
-						</div>
-						<div class="parallax__layer parallax__layer--back">
-							<div class="title">Background Layer</div>
-						</div>
-						<div class="parallax__layer parallax__layer--deep">
-							<div class="title">Deep Background Layer</div>
-						</div>
-					</div>
-					
-
-					<div id="group5" class="parallax__group">
-						<div class="parallax__layer parallax__layer--fore">
-							<div class="title">Foreground Layer</div>
-						</div>
-						<div class="parallax__layer parallax__layer--base">
-							<div class="title">Base Layer</div>
-						</div>
-					</div>
-
-					
-					<div id="group6" class="parallax__group">
-						<div class="parallax__layer parallax__layer--back">
-							<div class="title">Background Layer</div>
-						</div>
-						<div class="parallax__layer parallax__layer--base">
-							<div class="title">Base Layer</div>
-						</div>
-					</div>
-					
-					<div id="group7" class="parallax__group">
-						<div class="parallax__layer parallax__layer--base">
-							<div class="title">Base Layer</div>
-						</div>
-					</div>
-				</div>			
 
 				<?php endwhile; ?>
 
@@ -157,16 +84,5 @@
 		</div>
 
 	</div>
-
-	<script>
-
-    var debugInput = document.querySelector("input");
-    function updateDebugState() {
-        document.body.classList.toggle('debug-on', debugInput.checked);
-    }
-    debugInput.addEventListener("click", updateDebugState);
-    updateDebugState();
-    
-  	</script>
 
 <?php get_footer(); ?>

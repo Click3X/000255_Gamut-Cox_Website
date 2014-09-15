@@ -3151,6 +3151,7 @@ a {
   color: #ed228b;
 }
 
+<<<<<<< HEAD
 /* Parallax base styles
 --------------------------------------------- */
 /* line 8, ../scss/modules/_parallax.scss */
@@ -3347,6 +3348,31 @@ body, html {
 /* line 185, ../scss/modules/_parallax.scss */
 #group7 .parallax__layer--base {
   background: #fff164;
+=======
+/*
+	COLORS
+ 
+	Dark Blue 		#222438
+	Medium Blue		#69697A
+	Light Blue	 	#C5C3DE
+	Yellow			#FFB000
+	Red				#D92B00
+	
+*/
+/* line 16, ../scss/partials/_scrollorama.scss */
+#examples-1 {
+  overflow: hidden;
+}
+
+/* line 17, ../scss/partials/_scrollorama.scss */
+#fly-it {
+  position: relative;
+}
+
+/* line 21, ../scss/partials/_scrollorama.scss */
+#fly-it img {
+  width: 100%;
+>>>>>>> FETCH_HEAD
 }
 
 /*********************
