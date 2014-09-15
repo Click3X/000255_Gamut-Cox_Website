@@ -70,4 +70,10 @@ probably best not to use it. I mean, were you going to anyway? */
 	box-sizing:         $type;
 }
 
+@mixin prefix($property, $value, $prefixes: ("-webkit-","-moz-","-o-","-ms-","")) {
+  @each $prefix in $prefixes {
+    #{$prefix}#{$property}: #{$value};
+  }
+}
+
 
