@@ -12,8 +12,12 @@
 
 			?>
 				<header class="article-header">
+<<<<<<< HEAD
+					<div class="page-header" style="background-image: url('<?php echo $header_image['url'] ?>')"></div>
+=======
 					<!-- <h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1> -->
 					<div style="background-image: url('<?php echo $header_image['url'] ?>'); background-size: cover; height: 400px; margin: auto"></div> <!-- Took out 'max-width: 1600px;' -Charles -->
+>>>>>>> FETCH_HEAD
 				</header>
 
 				<div id="inner-content" class="wrap cf">
