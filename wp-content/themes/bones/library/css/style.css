@@ -2479,6 +2479,37 @@ view.
   font-size: 1.2em;
 }
 
+/* line 253, ../scss/partials/_custom.scss */
+#homeSliderContainer {
+  width: 1600px;
+  overflow: hidden;
+  margin: auto;
+}
+
+/* line 259, ../scss/partials/_custom.scss */
+#home-slider {
+  position: relative;
+  height: 820px;
+}
+
+/* line 264, ../scss/partials/_custom.scss */
+#bg {
+  position: absolute;
+}
+/* line 267, ../scss/partials/_custom.scss */
+#bg img {
+  max-width: inherit !important;
+}
+
+/* line 273, ../scss/partials/_custom.scss */
+#fg {
+  position: absolute;
+}
+/* line 276, ../scss/partials/_custom.scss */
+#fg img {
+  max-width: inherit !important;
+}
+
 /* line 1, ../scss/partials/_footer.scss */
 .client-info {
   display: block;

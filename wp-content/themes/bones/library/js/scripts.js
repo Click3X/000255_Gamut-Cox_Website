@@ -154,7 +154,51 @@ var p=$("#sliderContainer").parallaxSlider(options);
 //     },1)
 // }, 3000);
 
-// test slide
+// home slide
+// load gif
+$('fg').hide();
+$('#bg>img').attr('src', 'img/home-animation.gif');
+
+// load images
+setTimeout(function (){
+  $('#bg>img').attr('src', 'img/bg-long-copy.png');
+  $('fg').show();
+}, 2800);
+
+
+
+
+var $bg = $('#bg');
+      var $fg = $('#fg');
+
+      var bgImageWidth = 1600;
+      var bgNumberOfImages = 4;
+      var bgWidth = bgImageWidth * bgNumberOfImages;
+      
+      var bgShift = 0;
+      var bgShiftDesired = 0;
+
+
+      setInterval(function(){ 
+        bgShift += (bgShiftDesired-bgShift)/8;
+        $bg.css({left:-bgShift});
+        $fg.css({left:-bgShift*1.5});
+      },30);
+
+
+      
+      function forward(){
+        bgShiftDesired += bgImageWidth;
+        if (bgShiftDesired>bgWidth){
+          bgShiftDesired -= bgWidth;
+          bgShift -= bgWidth;
+        }
+      }
+
+      setInterval(function(){ 
+        forward();
+      },5000);
+
 
   
 

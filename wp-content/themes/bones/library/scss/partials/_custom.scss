@@ -246,3 +246,35 @@
     font-size: 1.2em;
   }
 }
+
+
+// test slide
+
+    #homeSliderContainer{
+      width:1600px;
+      overflow: hidden;
+      margin: auto;
+    }
+
+    #home-slider{
+      position:relative;
+      height:820px;
+    }
+
+    #bg{
+      position: absolute;
+
+      img {
+        max-width: inherit !important;
+      }
+      
+    }
+
+    #fg{
+      position: absolute;
+
+      img {
+        max-width: inherit !important;
+      }
+      
+    }
