@@ -1,6 +1,11 @@
 /* ==========================================================================
    Custom CSS
    ========================================================================== */
+hr {
+  border-top:1px dashed #aaa;
+  width: 9999px;
+  margin-left: -1000px;
+}
 
 .highlight {
   color: $brand-color;
@@ -16,12 +21,60 @@
   background-size: cover; 
   height: 400px;  
   margin: auto;
+  min-height: 150px;
 }
 
 // sidebar
 #sidebar-title {
   font-family: 'Sentinel Medium';
 }
+
+#sidebar1 {
+  padding-left: 10px;
+  position: relative;
+}
+
+#sidebar-beam-container {
+  width: 780px; 
+  height: 5px; 
+  overflow: hidden; 
+  position: absolute; 
+  left: -780px; 
+  top: 15px; 
+  border-radius: 10px;
+}
+
+#sidebar-beam {
+  background-size: 783px 5px; 
+  background-repeat: no-repeat; 
+  height: 5px; 
+  background-position: top right;
+}
+
+.footer {
+  position: relative;
+  margin-top: 200px;
+}
+
+// footer beam
+#footer-beam-container {
+  width: 239px; 
+  height: 5px; 
+  overflow: hidden; 
+  position: absolute; 
+  right: 0px; 
+  top: -80px; 
+  border-radius: 10px;
+}
+
+#footer-beam {
+  background-size: 239px 5px; 
+  background-repeat: no-repeat; 
+  height: 5px; 
+  background-position: top right;
+}
+
+
 
 .biz-content-wrapper {
   position: relative;
@@ -232,7 +285,7 @@
 }
 
 .our-solutions-list-wrapper {
-  margin-left: 90px;
+  margin-left: 8%;
   border-top: 1px solid #aaa;
 }
 
@@ -240,12 +293,8 @@
   border-bottom: 1px solid #aaa;
   padding: 30px 0 30px 0;
 
-  .logo-larger {
-    height: 3.5em;
-  }
-
-  .logo-smaller {
-    height: 2.9em;
+  img {
+    height: 3em;
   }
 
   h2 {
@@ -285,25 +334,167 @@
       
     }
 
-.lower-columns ul {
-  li {
-      display: inline-block;
-      width: 27%;
-      margin-right: 5%;
-      vertical-align: top;
-  }
-
-
-  h3 {
-    color: $red;
-  }
-
-  
+.first-p {
+  font-size: 1.5em;
+  font-family: 'Sentinel Medium';
 }
 
 .lower-columns {
   padding: 20px 0 40px 0;
   border-top: 1px dashed #aaa;
-  border-bottom: 1px dashed #aaa;
+  margin-top: 30px;
+}
 
+// four different colors
+.pro-color {
+  color: $programmatic;
+}
+
+.rep-color {
+  color: $reps;
+}
+
+.rea-color {
+  color: $reach;
+}
+
+.cro-color {
+  color: $crossmedia;
+}
+
+
+.lower-columns ul {
+
+  li {
+      display: inline-block;
+      margin-right: 5%;
+      vertical-align: top;
+  }
+  
+}
+
+.lower-contact {
+
+  padding-top:20px; 
+  border-top: 1px dashed #aaa;
+
+  li {
+    display: inline-block;
+    margin-right: 5%;
+    vertical-align: top;
+  }
+
+  h3 {
+    color: $programmatic;
+    width: 80%;
+  }
+}
+
+.highlight-red {
+  color: $programmatic;
+}
+
+// contact page
+.contact-container {
+
+  position: relative;
+
+  #contact-beam-container {
+    width: 780px; 
+    height: 5px; 
+    overflow: hidden; 
+    position: absolute; 
+    left: -780px; 
+    top: 45px; 
+    border-radius: 10px;
+  }
+
+  #contact-beam {
+    background-size: 783px 5px; 
+    background-repeat: no-repeat; 
+    height: 5px; 
+    background-position: top right;
+  }
+
+  h2 {
+    font-size: 3em;
+    width: 70%;
+    padding: 30px 0 30px 0;
+    
+  }
+
+  h3 {
+    margin-top: 30px;
+  }
+
+  li {
+    width: 27%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 5%;
+  }
+
+}
+
+
+@media(max-width: 1600px) {
+    .page-header {
+      height: 300px;
+    }
+
+    // #homeSliderContainer{
+    //   width: 1200px;
+    // }
+
+    // #home-slider{
+      
+    //   height:615px;
+    // }
+}
+
+@media(max-width: 1200px) {
+
+
+    .page-header {
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+    }
+}
+
+@media(max-width: 768px) {
+    .page-header {
+      height: 200px;
+      background-size: cover;
+    }
+
+    #inner-content {
+      width: 80%;
+    }
+
+    #sidebar1 {
+      float: none;
+      margin-top: 80px;
+      text-align: center;   
+    }
+
+    #sidebar-beam-container {
+      // visibility: hidden;
+      left: -600px;
+      top: -30px;
+    }
+    
+
+    .sub-page-content-wrapper {
+      margin-top: 0px;
+    }
+
+
+}
+
+@media(max-width: 500px) {
+
+
+    .our-solutions-list img {
+      height: 2.5em;
+    }
 }

@@ -1,5 +1,11 @@
 				<div id="sidebar1" class="sidebar m-all t-1of3 d-2of7 cf" role="complementary">
 
+				<div id="sidebar-beam-container">
+
+					<div id="sidebar-beam" style="background-image: url(<?php bloginfo('url'); ?>/img/sidebar-beam.png);"></div>
+
+				</div>
+
 				<?php $parent_title = get_the_title($post->post_parent); ?>
 
 				<h2 id="sidebar-title"><?php echo $parent_title; ?></h2>

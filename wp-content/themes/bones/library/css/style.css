@@ -2743,6 +2743,20 @@ hr {
 .lower-contact {
   padding-top: 20px;
   border-top: 1px dashed #aaa;
+<<<<<<< HEAD
+}
+/* line 381, ../scss/partials/_custom.scss */
+.lower-contact li {
+  display: inline-block;
+  margin-right: 5%;
+  vertical-align: top;
+}
+/* line 387, ../scss/partials/_custom.scss */
+.lower-contact h3 {
+  color: #dd1420;
+  width: 80%;
+=======
+>>>>>>> ac372900bc9400df02627a621ea4f7e734a7e90a
 }
 /* line 381, ../scss/partials/_custom.scss */
 .lower-contact li {
@@ -2832,6 +2846,85 @@ hr {
     text-align: center;
   }
 
+<<<<<<< HEAD
+/* line 393, ../scss/partials/_custom.scss */
+.highlight-red {
+  color: #dd1420;
+}
+
+/* line 398, ../scss/partials/_custom.scss */
+.contact-container {
+  position: relative;
+}
+/* line 402, ../scss/partials/_custom.scss */
+.contact-container #contact-beam-container {
+  width: 780px;
+  height: 5px;
+  overflow: hidden;
+  position: absolute;
+  left: -780px;
+  top: 45px;
+  border-radius: 10px;
+}
+/* line 412, ../scss/partials/_custom.scss */
+.contact-container #contact-beam {
+  background-size: 783px 5px;
+  background-repeat: no-repeat;
+  height: 5px;
+  background-position: top right;
+}
+/* line 419, ../scss/partials/_custom.scss */
+.contact-container h2 {
+  font-size: 3em;
+  width: 70%;
+  padding: 30px 0 30px 0;
+}
+/* line 426, ../scss/partials/_custom.scss */
+.contact-container h3 {
+  margin-top: 30px;
+}
+/* line 430, ../scss/partials/_custom.scss */
+.contact-container li {
+  width: 27%;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 5%;
+}
+
+@media (max-width: 1600px) {
+  /* line 441, ../scss/partials/_custom.scss */
+  .page-header {
+    height: 300px;
+  }
+}
+@media (max-width: 1200px) {
+  /* line 458, ../scss/partials/_custom.scss */
+  .page-header {
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 768px) {
+  /* line 465, ../scss/partials/_custom.scss */
+  .page-header {
+    height: 200px;
+    background-size: cover;
+  }
+
+  /* line 470, ../scss/partials/_custom.scss */
+  #inner-content {
+    width: 80%;
+  }
+
+  /* line 474, ../scss/partials/_custom.scss */
+  #sidebar1 {
+    float: none;
+    margin-top: 80px;
+    text-align: center;
+  }
+
+=======
+>>>>>>> ac372900bc9400df02627a621ea4f7e734a7e90a
   /* line 480, ../scss/partials/_custom.scss */
   #sidebar-beam-container {
     left: -600px;

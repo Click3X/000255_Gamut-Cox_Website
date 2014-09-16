@@ -183,6 +183,16 @@ check your menus here. do they look good?
 do they need tweaking?
 */
 /* end .footer-links */
+/* line 119, ../scss/breakpoints/_481up.scss */
+.lower-columns ul li {
+  width: 100%;
+}
+
+/* line 123, ../scss/breakpoints/_481up.scss */
+.lower-contact li {
+  width: 40%;
+}
+
 /******************************************************************
 Site Name:
 Author:
@@ -353,6 +363,19 @@ mobile. Make sure to double check these!
 }
 
 /* end .footer-links */
+/*********************
+CUSTOM STYLES
+*********************/
+/* line 291, ../scss/breakpoints/_768up.scss */
+.lower-columns ul li {
+  width: 100%;
+}
+
+/* line 295, ../scss/breakpoints/_768up.scss */
+.lower-contact li {
+  width: 40%;
+}
+
 /******************************************************************
 Site Name:
 Author:
@@ -365,7 +388,17 @@ be seen on the Desktop.
 ******************************************************************/
 /* line 12, ../scss/breakpoints/_1030up.scss */
 .wrap {
-  width: 1200px;
+  width: 1000px;
+}
+
+/* line 17, ../scss/breakpoints/_1030up.scss */
+.lower-columns ul li {
+  width: 27%;
+}
+
+/* line 21, ../scss/breakpoints/_1030up.scss */
+.lower-contact li {
+  width: 27%;
 }
 
 /*

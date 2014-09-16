@@ -20,6 +20,8 @@ get_header(); ?>
 				$main_p = get_field('main-p');
 
 				$lower_sub_title = get_field('lower-sub-title');
+				$lower_sub_title2 = get_field('lower-sub-title2');
+				$lower_sub_title2_caption = get_field('lower-sub-title2-caption');
 				
 
 			?>
@@ -35,32 +37,32 @@ get_header(); ?>
 
 						
 
-								<section class="entry-content cf" itemprop="articleBody">
+						<section class="entry-content cf" itemprop="articleBody">
 
 
-									<div class="sub-page-content-wrapper">
-										<?php echo $main_sub_title 
-										// in back-end the title is wrapped with <h1> already
-										?> 
-										<div>
-											<!-- in back-end the title is wrapped with <p> already -->
+								<div class="sub-page-content-wrapper">
+									<!-- different pages different logos -->
+									<?php if (is_page(11)) { ?>
+										<img src="<?php bloginfo('url'); ?>/img/home-logos/programmatic-logo.png">
+									<?php } elseif (is_page(15)) { ?>
+										<img src="<?php bloginfo('url'); ?>/img/home-logos/reps-logo.png">
+									<?php } elseif (is_page(24)) { ?>
+										<img src="<?php bloginfo('url'); ?>/img/home-logos/reach-logo.png">
+									<?php } elseif (is_page(13)) { ?>
+										<img src="<?php bloginfo('url'); ?>/img/home-logos/crossmedia-logo.png">
+									<?php } ?>
 
-											<?php 
+										
+										<h2><?php echo $main_sub_title; ?></h2>
+										<p class="first-p"><?php echo $main_first_p; ?></p>
+										<p><?php echo $main_p; ?></p>
 
-											echo $main_first_p;
-											echo $main_p;
-
-											?>
-
-											
-
-										</div>
 
 
 									<!-- if statements -->
 									<!-- adding lower part on 4 product pages -->
 									<div class="lower-content">
-									<?php if (is_page(11)) { 
+									<?php //if (is_page(11)) { 
 										if(get_field('three-column-content')): ?>
 
 										<div class="lower-columns">
@@ -73,7 +75,18 @@ get_header(); ?>
 											<?php while(has_sub_field('three-column-content')): ?>
 
 												<li>
-													<h3><?php the_sub_field('column-title'); ?></h3>
+												<!-- different pages different colors -->
+												<?php if (is_page(11)) { ?>
+													<h3 class="pro-color"><?php the_sub_field('column-title'); ?></h3>
+												<?php } elseif (is_page(15)) { ?>
+													<h3 class="rep-color"><?php the_sub_field('column-title'); ?></h3>
+												<?php } elseif (is_page(24)) { ?>
+													<h3 class="rea-color"><?php the_sub_field('column-title'); ?></h3>
+												<?php } elseif (is_page(13)) { ?>
+													<h3 class="cro-color"><?php the_sub_field('column-title'); ?></h3>
+												<?php } ?>
+
+													
 													<p><?php the_sub_field('column-content'); ?></p>
 												</li>
 
@@ -87,31 +100,44 @@ get_header(); ?>
 
 										if (get_field('three-column-contact')):  ?>
 
-											<!-- <h2><?php echo $lower_sub_title; ?></h2> -->
-											
+											<div class="lower-contact">
+												<!-- different pages different colors -->
+												<?php if (is_page(15)) { ?>
+													<span class="rep-color"><?php echo $lower_sub_title2; //this is already wrapped with h2 tag backend?></span>
+												<?php } elseif (is_page(24)) { ?>
+													<span class="rea-color"><?php echo $lower_sub_title2; //this is already wrapped with h2 tag backend?></span>
+												<?php } elseif (is_page(13)) { ?>
+													<span class="cro-color"><?php echo $lower_sub_title2; //this is already wrapped with h2 tag backend?></span>
+												<?php } ?>
 
-											<ul class="lower-contact">
 
-											<?php while(has_sub_field('three-column-contact')): ?>
+												 
+												<h4><?php echo $lower_sub_title2_caption; ?></h4>
 
-												<li>
-													<h3><?php the_sub_field('column-department'); ?></h3>
-													<p><?php the_sub_field('column-person'); ?></p>
-												</li>
+												<ul>
 
-											<?php endwhile; ?>
+												<?php while(has_sub_field('three-column-contact')): ?>
 
-											</ul>
+													<li>
+														<h3><?php the_sub_field('column-department'); ?></h3>
+														<?php the_sub_field('column-person'); ?>
+													</li>
+
+												<?php endwhile; ?>
+
+												</ul>
+
+											</div>
 
 										<?php endif; ?>
 
 
 
-											<?php } elseif (is_page(8)) { ?>
+											<?php //} elseif (is_page(8)) { ?>
 											   <!-- <image src="<?php bloginfo('stylesheet_directory'); ?>/images/imagename.jpg" /> -->
-											<?php } elseif (in_category( '5' )) { ?>
+											<?php //} elseif (in_category( '5' )) { ?>
 											   <!-- <image src="<?php bloginfo('stylesheet_directory'); ?>/images/imagename.jpg" /> -->
-											<?php } ?>
+											<?php //} ?>
 
 									</div> 
 									<!-- end of lower content -->
@@ -119,8 +145,8 @@ get_header(); ?>
 
 
 
-									</div>
-									<!-- end of content wrapper -->
+								</div>
+								<!-- end of content wrapper -->
 
 
 									

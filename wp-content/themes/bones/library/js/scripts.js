@@ -179,9 +179,19 @@ $('#bg>img').attr('src', 'img/home-animation.gif');
 
 // load images
 setTimeout(function (){
+  // $('#bg>img').css('opacity', 0);
   $('#bg>img').attr('src', 'img/bg-long-copy.png');
+  // $('#bg>img').css('opacity', 1);
   $('fg').show();
-}, 2800);
+}, 2600);
+
+
+
+ // control gif
+ // frame=7;
+ //  var sup1 = new SuperGif({ gif: document.getElementById('marquee') } );
+ //  sup1.load();
+ //  sup1.move_to(frame);
 
 
 
@@ -195,6 +205,20 @@ var bgWidth = bgImageWidth * bgNumberOfImages;
 
 var bgShift = 0;
 var bgShiftDesired = 0;
+
+// if (window.screen.availWidth > 1600) {
+//   alert(window.screen.availWidth);
+//   bgImageWidth = 1600;
+// } else if ((window.screen.availWidth <= 1600) && (window.screen.availWidth > 1200)) {
+//   alert(window.screen.availWidth);
+//   bgImageWidth = 1200;
+// } else {
+//   alert(window.screen.availWidth);
+//   bgImageWidth = 800;
+// }
+
+
+
 
 
 setInterval(function(){ 
@@ -216,6 +240,10 @@ function forward(){
 setInterval(function(){ 
   forward();
 },5000);
+
+
+
+
 
 
   
