@@ -167,6 +167,9 @@ function bones_scripts_and_styles() {
 		wp_register_script( 'exp-grid-js', get_stylesheet_directory_uri() . '/library/js/libs/exp_grid.js', array('jquery'), '', true );
 		// wp_register_style( 'exp-grid-css', get_stylesheet_directory_uri() . '/library/css/exp_grid.css', array(), '', true );
 
+		//gif control
+		wp_register_script( 'gif-js', get_stylesheet_directory_uri() . '/library/js/libs/libgif.js', array('jquery'), '', true );
+
 		// ROYALSLIDER
 		wp_register_style( 'rs-css', get_stylesheet_directory_uri() . '/library/js/libs/royalslider/royalslider.css', array(), '', true );
 		wp_register_style( 'rs-skin', get_stylesheet_directory_uri() . '/library/js/libs/royalslider/skins/default/rs-default.css', array(), '', true );
@@ -202,6 +205,7 @@ function bones_scripts_and_styles() {
 		wp_enqueue_script( 'bones-slider' );
 		wp_enqueue_script( 'bones-easing' );
 		wp_enqueue_script( 'bones-colors' );
+		wp_enqueue_script( 'gif-js' );
 
 		// CONDITIONAL SCRIPT TO ONLY LOAD EXP-GRID-JS AND EXP-GRID-CSS ON 'WHO-WE-ARE' PAGE id = 45
 		if( is_page(45) || is_page(48)) {

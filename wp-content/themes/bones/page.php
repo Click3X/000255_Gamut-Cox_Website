@@ -50,12 +50,12 @@
 									<div class="our-solutions-list-wrapper">
 									   
 									   <div class="our-solutions-list">
-										   	<img class="logo-larger" src="<?php bloginfo('url'); ?>/img/home-logos/programmatic-logo.png">
+										   	<img src="<?php bloginfo('url'); ?>/img/home-logos/programmatic-logo.png">
 										   	<h2><?php echo $pro_caption ?></h2>
 									   </div>
 
 									   <div class="our-solutions-list">
-										   	<img class="logo-larger" src="<?php bloginfo('url'); ?>/img/home-logos/reps-logo.png">
+										   	<img src="<?php bloginfo('url'); ?>/img/home-logos/reps-logo.png">
 										   	<h2><?php echo $rep_caption ?></h2>
 									   </div>
 

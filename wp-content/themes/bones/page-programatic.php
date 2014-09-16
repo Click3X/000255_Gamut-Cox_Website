@@ -20,6 +20,8 @@ get_header(); ?>
 				$main_p = get_field('main-p');
 
 				$lower_sub_title = get_field('lower-sub-title');
+				$lower_sub_title2 = get_field('lower-sub-title2');
+				$lower_sub_title2_caption = get_field('lower-sub-title2-caption');
 				
 
 			?>
@@ -35,26 +37,15 @@ get_header(); ?>
 
 						
 
-								<section class="entry-content cf" itemprop="articleBody">
+						<section class="entry-content cf" itemprop="articleBody">
 
 
-									<div class="sub-page-content-wrapper">
-										<?php echo $main_sub_title 
-										// in back-end the title is wrapped with <h1> already
-										?> 
-										<div>
-											<!-- in back-end the title is wrapped with <p> already -->
+								<div class="sub-page-content-wrapper">
+										<img src="<?php bloginfo('url'); ?>/img/home-logos/programmatic-logo.png">
+										<h2><?php echo $main_sub_title; ?></h2>
+										<p><?php echo $main_first_p; ?></p>
+										<p><?php echo $main_p; ?></p>
 
-											<?php 
-
-											echo $main_first_p;
-											echo $main_p;
-
-											?>
-
-											
-
-										</div>
 
 
 									<!-- if statements -->
@@ -87,21 +78,25 @@ get_header(); ?>
 
 										if (get_field('three-column-contact')):  ?>
 
-											<!-- <h2><?php echo $lower_sub_title; ?></h2> -->
+											<div class="lower-contact">
 											
+												<?php echo $lower_sub_title2; //this is already wrapped with h2 tag backend?> 
+												<h4><?php echo $lower_sub_title2_caption; ?></h4>
 
-											<ul class="lower-contact">
+												<ul>
 
-											<?php while(has_sub_field('three-column-contact')): ?>
+												<?php while(has_sub_field('three-column-contact')): ?>
 
-												<li>
-													<h3><?php the_sub_field('column-department'); ?></h3>
-													<p><?php the_sub_field('column-person'); ?></p>
-												</li>
+													<li>
+														<h3><?php the_sub_field('column-department'); ?></h3>
+														<?php the_sub_field('column-person'); ?>
+													</li>
 
-											<?php endwhile; ?>
+												<?php endwhile; ?>
 
-											</ul>
+												</ul>
+
+											</div>
 
 										<?php endif; ?>
 
@@ -119,8 +114,8 @@ get_header(); ?>
 
 
 
-									</div>
-									<!-- end of content wrapper -->
+								</div>
+								<!-- end of content wrapper -->
 
 
 									

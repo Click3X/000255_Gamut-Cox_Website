@@ -16,12 +16,36 @@
   background-size: cover; 
   height: 400px;  
   margin: auto;
+  min-height: 150px;
 }
 
 // sidebar
 #sidebar-title {
   font-family: 'Sentinel Medium';
 }
+
+#sidebar1 {
+  padding-left: 10px;
+}
+
+#sidebar-beam-container {
+  width: 780px; 
+  height: 5px; 
+  overflow: hidden; 
+  position: absolute; 
+  left: -780px; 
+  top: 15px; 
+  border-radius: 10px;
+}
+
+#sidebar-beam {
+  background-size: 783px 5px; 
+  background-repeat: no-repeat; 
+  height: 5px; 
+  background-position: top right;
+}
+
+
 
 .biz-content-wrapper {
   position: relative;
@@ -240,12 +264,8 @@
   border-bottom: 1px solid #aaa;
   padding: 30px 0 30px 0;
 
-  .logo-larger {
-    height: 3.5em;
-  }
-
-  .logo-smaller {
-    height: 2.9em;
+  img {
+    height: 3.2em;
   }
 
   h2 {
@@ -285,25 +305,101 @@
       
     }
 
+.lower-columns {
+  padding: 20px 0 40px 0;
+  border-top: 1px dashed #aaa;
+  border-bottom: 1px dashed #aaa;
+  margin-top: 30px;
+}
+
 .lower-columns ul {
   li {
       display: inline-block;
-      width: 27%;
+      // width: 27%;
       margin-right: 5%;
       vertical-align: top;
   }
 
 
   h3 {
-    color: $red;
+    color: $programmatic;
   }
 
   
 }
 
-.lower-columns {
-  padding: 20px 0 40px 0;
-  border-top: 1px dashed #aaa;
-  border-bottom: 1px dashed #aaa;
+.lower-contact {
+
+  h2 {
+    margin-top: 30px;
+  }
+
+  li {
+    display: inline-block;
+    // width: 27%;
+    margin-right: 5%;
+    vertical-align: top;
+  }
+
+  h3 {
+    color: $programmatic;
+    width: 80%;
+  }
+}
+
+.highlight-red {
+  color: $programmatic;
+}
+
+
+@media(max-width: 1600px) {
+    .page-header {
+      height: 300px;
+    }
+
+    // #homeSliderContainer{
+    //   width: 1200px;
+    // }
+
+    // #home-slider{
+      
+    //   height:615px;
+    // }
+}
+
+@media(max-width: 1200px) {
+
+
+    .page-header {
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+    }
+}
+
+@media(max-width: 768px) {
+      .page-header {
+      height: 200px;
+      background-size: cover;
+    }
+
+    #inner-content {
+      width: 80%;
+    }
+
+    #sidebar1 {
+      float: none;
+      margin-top: 20px;
+      text-align: center;   
+    }
+
+    #sidebar-beam {
+      visibility: hidden;
+    }
+    
+
+    .sub-page-content-wrapper {
+      margin-top: 0px;
+    }
+
 
 }
