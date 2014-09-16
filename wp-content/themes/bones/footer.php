@@ -1,5 +1,11 @@
 			<footer class="footer" role="contentinfo">
 
+				<div id="footer-beam-container">
+
+					<div id="footer-beam" style="background-image: url(<?php bloginfo('url'); ?>/img/footer-beam.png);"></div>
+
+				</div>
+
 				<div id="inner-footer" class="inner-footer cf">
 
 				   	<?php

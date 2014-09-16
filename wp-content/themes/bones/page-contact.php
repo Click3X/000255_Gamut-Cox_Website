@@ -62,6 +62,10 @@ get_header(); ?>
 
 								<?php endif; ?>
 
+
+								<!-- contact info list -->
+								<!-- something here -->
+
 							</div>
 									
 

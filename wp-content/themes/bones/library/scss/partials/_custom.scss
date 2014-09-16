@@ -51,6 +51,29 @@ hr {
   background-position: top right;
 }
 
+.footer {
+  position: relative;
+  margin-top: 200px;
+}
+
+// footer beam
+#footer-beam-container {
+  width: 239px; 
+  height: 5px; 
+  overflow: hidden; 
+  position: absolute; 
+  right: 0px; 
+  top: -80px; 
+  border-radius: 10px;
+}
+
+#footer-beam {
+  background-size: 239px 5px; 
+  background-repeat: no-repeat; 
+  height: 5px; 
+  background-position: top right;
+}
+
 
 
 .biz-content-wrapper {
