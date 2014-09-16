@@ -1,4 +1,4 @@
-				<div id="sidebar1" class="sidebar m-all t-1of3 d-2of7 cf" style="position: relative" role="complementary">
+				<div id="sidebar1" class="sidebar m-all t-1of3 d-2of7 cf" role="complementary">
 
 				<div id="sidebar-beam-container">
 

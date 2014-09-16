@@ -1,6 +1,11 @@
 /* ==========================================================================
    Custom CSS
    ========================================================================== */
+hr {
+  border-top:1px dashed #aaa;
+  width: 9999px;
+  margin-left: -1000px;
+}
 
 .highlight {
   color: $brand-color;
@@ -26,6 +31,7 @@
 
 #sidebar1 {
   padding-left: 10px;
+  position: relative;
 }
 
 #sidebar-beam-container {
@@ -349,6 +355,48 @@
 
 .highlight-red {
   color: $programmatic;
+}
+
+// contact page
+.contact-container {
+
+  position: relative;
+
+  #contact-beam-container {
+    width: 780px; 
+    height: 5px; 
+    overflow: hidden; 
+    position: absolute; 
+    left: -780px; 
+    top: 45px; 
+    border-radius: 10px;
+  }
+
+  #contact-beam {
+    background-size: 783px 5px; 
+    background-repeat: no-repeat; 
+    height: 5px; 
+    background-position: top right;
+  }
+
+  h2 {
+    font-size: 3em;
+    width: 70%;
+    padding: 30px 0 30px 0;
+    
+  }
+
+  h3 {
+    margin-top: 30px;
+  }
+
+  li {
+    width: 27%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 5%;
+  }
+
 }
 
 
