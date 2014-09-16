@@ -140,7 +140,7 @@
 											<!-- CrossMedia -->
 											<div class="crossmedia-intro-wrapper biz-content-wrapper">
 												<p><?php echo $convergence_intro_content ?></p>
-												<a href="#">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #f87f13;"></span></a>
+												<a href="#">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #8fc73e;"></span></a>
 												<div style="display: inline-block; height: 1.2em;" class="biz-logo-container"><img id="cro-logo" src="<?php bloginfo('url'); ?>/img/home-logos/crossmedia-logo.png"></div>
 												<div class="home-beam-container"><div class="home-beam"></div></div>
 											</div>

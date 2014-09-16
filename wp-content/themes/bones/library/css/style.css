@@ -2752,20 +2752,19 @@ hr {
 }
 /* line 387, ../scss/partials/_custom.scss */
 .lower-contact h3 {
-  color: #dd1420;
   width: 80%;
 }
 
-/* line 393, ../scss/partials/_custom.scss */
+/* line 392, ../scss/partials/_custom.scss */
 .highlight-red {
   color: #dd1420;
 }
 
-/* line 398, ../scss/partials/_custom.scss */
+/* line 397, ../scss/partials/_custom.scss */
 .contact-container {
   position: relative;
 }
-/* line 402, ../scss/partials/_custom.scss */
+/* line 401, ../scss/partials/_custom.scss */
 .contact-container #contact-beam-container {
   width: 780px;
   height: 5px;
@@ -2775,24 +2774,24 @@ hr {
   top: 45px;
   border-radius: 10px;
 }
-/* line 412, ../scss/partials/_custom.scss */
+/* line 411, ../scss/partials/_custom.scss */
 .contact-container #contact-beam {
   background-size: 783px 5px;
   background-repeat: no-repeat;
   height: 5px;
   background-position: top right;
 }
-/* line 419, ../scss/partials/_custom.scss */
+/* line 418, ../scss/partials/_custom.scss */
 .contact-container h2 {
   font-size: 3em;
   width: 70%;
   padding: 30px 0 30px 0;
 }
-/* line 426, ../scss/partials/_custom.scss */
+/* line 425, ../scss/partials/_custom.scss */
 .contact-container h3 {
   margin-top: 30px;
 }
-/* line 430, ../scss/partials/_custom.scss */
+/* line 429, ../scss/partials/_custom.scss */
 .contact-container li {
   width: 27%;
   display: inline-block;
@@ -2801,50 +2800,50 @@ hr {
 }
 
 @media (max-width: 1600px) {
-  /* line 441, ../scss/partials/_custom.scss */
+  /* line 440, ../scss/partials/_custom.scss */
   .page-header {
     height: 300px;
   }
 }
 @media (max-width: 1200px) {
-  /* line 458, ../scss/partials/_custom.scss */
+  /* line 457, ../scss/partials/_custom.scss */
   .page-header {
     background-size: 100% auto;
     background-repeat: no-repeat;
   }
 }
 @media (max-width: 768px) {
-  /* line 465, ../scss/partials/_custom.scss */
+  /* line 464, ../scss/partials/_custom.scss */
   .page-header {
     height: 200px;
     background-size: cover;
   }
 
-  /* line 470, ../scss/partials/_custom.scss */
+  /* line 469, ../scss/partials/_custom.scss */
   #inner-content {
     width: 80%;
   }
 
-  /* line 474, ../scss/partials/_custom.scss */
+  /* line 473, ../scss/partials/_custom.scss */
   #sidebar1 {
     float: none;
     margin-top: 80px;
     text-align: center;
   }
 
-  /* line 480, ../scss/partials/_custom.scss */
+  /* line 479, ../scss/partials/_custom.scss */
   #sidebar-beam-container {
     left: -600px;
     top: -30px;
   }
 
-  /* line 487, ../scss/partials/_custom.scss */
+  /* line 486, ../scss/partials/_custom.scss */
   .sub-page-content-wrapper {
     margin-top: 0px;
   }
 }
 @media (max-width: 500px) {
-  /* line 497, ../scss/partials/_custom.scss */
+  /* line 496, ../scss/partials/_custom.scss */
   .our-solutions-list img {
     height: 2.5em;
   }

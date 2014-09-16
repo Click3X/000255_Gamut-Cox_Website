@@ -119,7 +119,18 @@ get_header(); ?>
 												<?php while(has_sub_field('three-column-contact')): ?>
 
 													<li>
-														<h3><?php the_sub_field('column-department'); ?></h3>
+
+														<!-- different pages different colors -->
+														<?php if (is_page(11)) { ?>
+															<h3 class="pro-color"><?php the_sub_field('column-department'); ?></h3>
+														<?php } elseif (is_page(15)) { ?>
+															<h3 class="rep-color"><?php the_sub_field('column-department'); ?></h3>
+														<?php } elseif (is_page(24)) { ?>
+															<h3 class="rea-color"><?php the_sub_field('column-department'); ?></h3>
+														<?php } elseif (is_page(13)) { ?>
+															<h3 class="cro-color"><?php the_sub_field('column-department'); ?></h3>
+														<?php } ?>
+
 														<?php the_sub_field('column-person'); ?>
 													</li>
 
