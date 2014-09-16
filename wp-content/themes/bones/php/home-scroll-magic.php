@@ -1,15 +1,9 @@
-\<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 	<section class="entry-content cf" itemprop="articleBody">
 
-		<!-- START CHARLES PARALLAX -->
-		<div class="debug">
-			<label><input type="checkbox"> Debug</label>
-		</div>
-
-		<div class="parallax charles-home">
-
-			<div id="group1" class="parallax__group">
-				<div class="parallax__layer parallax__layer--fore">
+		<div class="">
+			<div>
+				<div>
 					<div id="homeSliderContainer">
 						<div id="home-slider">
 							<div id="bg">
@@ -24,35 +18,24 @@
 			</div>
 			
 
-			<div id="group2" class="parallax__group small">
+			<div class="gamut-defined-wrapper" style="position: relative; height: 400px; background-repeat: no-repeat; background-image: url('<?php echo $bg_img['url'] ?>'); background-size: cover;">
 				<div class="home-wrap">
 					<h1><?php echo $gamut_defined_title ?></h1>
 					<div style="margin-left: 10%"><?php echo $gamut_defined_content ?></div>
 				</div>
-
-				<div class="parallax__layer parallax__layer--back" style="height: 70vh; background-repeat: no-repeat; background-image: url('<?php echo $bg_img['url'] ?>'); background-size: cover;"></div>
 			</div>
 
-				
-
-
-			<div id="group3" class="parallax__group">
-				
-				<div class="parallax__layer parallax__layer--fore">
-					<!-- <div class="title">Foreground Layer</div> -->
-					<div class="home-wrap white">
-						<h1><?php echo $our_solutions_title ?></h1>
-						<div style="margin-left: 10%"><?php echo $our_solutions_content ?></div>
-					</div>
+			<div class="our-solutions-wrapper" style="position: relative; height: 400px; background-color: #3d3d3d">
+				<div class="home-wrap white">
+					<h1><?php echo $our_solutions_title ?></h1>
+					<div style="margin-left: 10%"><?php echo $our_solutions_content ?></div>
 				</div>
-
-				<div class="parallax__layer parallax__layer--base"></div>
 			</div>
 
 
 			<!-- SUBPAGE CONTAINER -->
-			<div id="group4" class="subpage-container clearfix parallax__group">
-				<div class="parallax__layer parallax__layer--fore">
+			<div id="" class="subpage-container clearfix ">
+				<div class="">
 					<!-- Programmatic -->
 					<div class="subpage-wrapper clearfix">
 						<div class="p-holder">
@@ -149,16 +132,6 @@
 			</div>
 
 		</div> <!--  END PARALLAX -->
-
-		<script>
-		// PARALLAX DEBUG SCRIPT - DELETE FOR PRODUCTION		
-		var debugInput = document.querySelector("input");
-		function updateDebugState() {
-		    document.body.classList.toggle('debug-on', debugInput.checked);
-		}
-		debugInput.addEventListener("click", updateDebugState);
-		updateDebugState();
-		</script>
 
 	</section>
 </article>

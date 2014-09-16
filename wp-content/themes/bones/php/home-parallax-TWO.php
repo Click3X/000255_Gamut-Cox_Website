@@ -1,4 +1,4 @@
-\<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 	<section class="entry-content cf" itemprop="articleBody">
 
 		<!-- START CHARLES PARALLAX -->
@@ -23,7 +23,7 @@
 				</div>
 			</div>
 			
-
+			<!-- GAMUT DEFINED -->
 			<div id="group2" class="parallax__group small">
 				<div class="home-wrap">
 					<h1><?php echo $gamut_defined_title ?></h1>
@@ -33,11 +33,8 @@
 				<div class="parallax__layer parallax__layer--back" style="height: 70vh; background-repeat: no-repeat; background-image: url('<?php echo $bg_img['url'] ?>'); background-size: cover;"></div>
 			</div>
 
-				
-
-
+			<!-- OUR SOLUTIONS -->	
 			<div id="group3" class="parallax__group">
-				
 				<div class="parallax__layer parallax__layer--fore">
 					<!-- <div class="title">Foreground Layer</div> -->
 					<div class="home-wrap white">
@@ -66,7 +63,6 @@
 							<div id="fly-it" class="bg-img programmatic"></div>
 						</div>
 					</div>
-
 
 
 					<!-- Reps -->
@@ -118,35 +114,49 @@
 			</div> <!-- END SUB PAGE CONTAINER -->
 
 
-			<!-- Gamut Difference -->
-			<div class="our-solutions-wrapper" style="position: relative; height: 400px; background-color: #3d3d3d">
-				<div class="home-wrap white">
-					<h1><?php echo $gamut_difference_title ?></h1>
-					<div style="margin-left: 10%"><?php echo $gamut_difference_content ?></div>
+
+			<!-- OUR SOLUTIONS -->	
+			<div id="group5" class="parallax__group">
+				<div class="parallax__layer parallax__layer--fore">
+					<!-- <div class="title">Foreground Layer</div> -->
+					<div class="home-wrap white">
+						<h1><?php echo $gamut_difference_title; ?></h1>
+						<div style="margin-left: 10%"><?php echo $gamut_difference_content ?></div>
+					</div>
 				</div>
+
+				<div class="parallax__layer parallax__layer--base"></div>
 			</div>
-				
-			<!-- Smart Service -->
-			<div class="smart-service-wrapper" style="height: 500px;">
-				<!-- image container -->
-				<div style="height: 0; width: 50%; padding-bottom: 40%; float: left; background-image:url('<?php echo $smart_service_image['url'] ?>'); background-size: cover; display: inline-block"></div>
-				<div style="width: 450px; float: left; margin-left: 8%; padding-top: 10%;">
+
+
+
+			<!-- SMART SERVICE -->
+			<div id="group6" class="parallax__group small">
+				<div class="home-wrap">
 					<img src="<?php bloginfo('url'); ?>/img/plus-sign.png" style="display: inline-block; width: 30px; height: 30px; vertical-align: middle; margin-right: 10px"><h1 style="display: inline-block;"> <?php echo $smart_service_title ?></h1>
-					<p style=""><?php echo $smart_service_content ?></p>
+					<div style="margin-left: 10%"><?php echo $smart_service_content ?></div>
 				</div>
+
+				<div class="parallax__layer parallax__layer--back bg-img-lax smart-service" style="background-image: url('<?php echo $smart_service_image['url']; ?>');"></div>
 			</div>
 
-			<div style="clear: both"></div>
 
-			<!-- Careers -->
-			<div class="careers-wrapper" style="height: 500px; background-color: #f8f8ef">
-				<div style="width: 450px; float: left; margin-left: 8%; padding-top: 10%;">
+
+
+			<!-- CAREERS -->
+			<div id="group7" class="parallax__group">
+				<div class="beige career"></div>
+				<div class="home-wrap">
 					<h1><?php echo $careers_title ?></h1>
-					<p style=""><?php echo $careers_content ?></p>
+					<div style="margin-left: 10%"><?php echo $careers_content ?></div>
 				</div>
-				<!-- image container -->
-				<div style="height: 500px; width: 40%; float: right; background-image:url('<?php echo $careers_image['url'] ?>'); background-size: cover; display: inline-block"></div>
+
+				<div class="parallax__layer parallax__layer--back bg-img-lax smart-service" style="background-image: url('<?php echo $careers_image['url']; ?>');"></div>
+				
 			</div>
+
+
+
 
 		</div> <!--  END PARALLAX -->
 
