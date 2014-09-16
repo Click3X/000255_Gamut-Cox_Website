@@ -1,17 +1,6 @@
-//BG IMAGES
-.bg-layer {
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-}
+// PARALLAX SCSS
 
-.pull-right {
-  float: right;
-}
 
-.pull-left {
-  float: left;
-}
 
   /* Parallax base styles
   --------------------------------------------- */
@@ -25,6 +14,7 @@
     perspective: 300px;
   }
 
+
   .parallax__group {
     position: relative;
     height: 500px; /* fallback for older browsers */
@@ -32,6 +22,12 @@
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
   }
+
+
+  // .parallax__group.small {
+  //   height: 500px;
+  //   height: 72vh;
+  // }
 
   .parallax__layer {
     position: absolute;
@@ -100,30 +96,10 @@
   //   overflow: hidden;
   // }
 
-  // body {
-  //   font: 100% / 1.5 Arial;
-  // }
-
-  // * {
-  //   margin:0;
-  //   padding:0;
-  // }
 
   .parallax {
     // font-size: 200%;
-    // font-size:135%;
-    font-size:100%;
-  }
-
-  #group4 {
-    .parallax_layer {
-      font-size: 100%;
-    }
-  }
-
-#group4 > div.parallax__layer.parallax__layer--base div div.p-holder p,
-  #group4 > div.parallax__layer.parallax__layer--base {
-    font-size: 100%;
+    font-size: 135%;
   }
 
    /* centre the content in the parallax layers */
@@ -136,61 +112,88 @@
     transform: translate(-50%, -50%);
   }
 
-  .grey-bg {
-    color:#fff;
-    background-color: #3d3d3d;
-  }
+.beam-holder {
 
+}
+
+.home-beam-container {
+  width:1249px;
+  height: 7px;
+  background-image: url(../../../../../img/home-beams/programmatic-beam.png);
+  background-size: cover;
+
+}
 
 
   /* style the groups
   --------------------------------------------- */
 
   #group1 {
-    z-index: 2; /* slide over group 2 */
+    z-index: 5; /* slide over group 2 */
+    height: 68vh;
   }
-  #group1 .parallax__layer--base {
-    // background: rgb(102,204,102);
-  }
+  // #group1 .parallax__layer--base {
+  //   background: rgb(102,204,102);
+  // }
 
   #group2 {
+    height: 45vh;
     z-index: 3; /* slide under groups 1 and 3 */
-    .bg-layer {
-      height: 70vh;
+    margin-top:-15vh;
+    
+    // margin-top: -13%;
+    // margin-bottom: -13%;
+    
+    .home-wrap {
+      top:36%;
     }
   }
   #group2 .parallax__layer--back {
-    // background: rgb(123,210,102);
+    background: rgb(123,210,102);
   }
 
   #group3 {
+    height:45vh;
+    // margin-top: -13%;
+    // margin-bottom: -13%;
+    // height: 50vh;
+
     z-index: 4; /* slide over group 2 and 4 */
   }
+
+  .grey-bg,
   #group3 .parallax__layer--base {
     // background: rgb(153,216,101);
+    background-color: #3d3d3d
   }
 
   #group4 {
-    background-color: white;
     z-index: 5; /* slide under group 3 and 5 */
-    // height: 135vh;
-    height: 145vh;
+    // height: 120vh;
+    height: 180vh;
+    background-color: white;
   }
   #group4 .parallax__layer--deep {
-    // background: rgb(184,223,101);
+    background: rgb(184,223,101);
   }
 
   #group5 {
-    z-index: 6; /* slide over group 4 and 6 */
+    z-index: 3; /* slide over group 4 and 6 */
+    height: 45vh;
   }
   #group5 .parallax__layer--base {
-    // background: rgb(214,229,100);
+    background-color: #3d3d3d
   }
 
   #group6 {
-    z-index: 4; /* slide under group 5 and 7 */
-    .half-mobile {
-      height: 60vh;
+    z-index: 3; /* slide under group 5 and 7 */
+    height: 60vh;
+
+    .smart-service {
+      background-size: 100%;
+      @media(min-width: 768px) {
+        background-size: 50%;
+      }
     }
   }
   #group6 .parallax__layer--back {
@@ -198,14 +201,13 @@
   }
 
   #group7 {
-    z-index: 5; /* slide over group 7 */
-    .half-mobile {
+    z-index: 2; /* slide over group 7 */
+    height: 60vh;
+    .smart-service {
       background-size: 100%;
       @media(min-width: 768px) {
         background-size: 50%;
-        background-position: 100% 50%;  
       }
-      
     }
   }
   #group7 .parallax__layer--base {
@@ -213,28 +215,11 @@
   }
 
 
-  .half-height {
-    height: 50vh;
-  }
-  p.p {
-    font-size: 1em;
-  }
+.beige {
+  background-color: #f8f8ef;
+}
 
-  .half-mobile {
-    background-size: 100%;
-    @media(min-width: 768px) {
-      background-size: 50%;
-    }
-  }
-
-  .text-half {
-    width: 50%;
-
-    p {
-      max-width: 21em;
-    }
-  }
-
-  .white-bg {
-    background-color:white;
-  }
+.bg-img-lax {
+  background-size: cover;
+  background-repeat: no-repeat;
+}

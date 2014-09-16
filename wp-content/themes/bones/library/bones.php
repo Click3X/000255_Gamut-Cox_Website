@@ -150,7 +150,7 @@ function bones_scripts_and_styles() {
     }
 
 		//adding scripts file in the footer
-		wp_register_script( 'bones-js', get_stylesheet_directory_uri() . '/library/js/scripts.js', array( 'jquery' ), '', true );
+		// wp_register_script( 'bones-js', get_stylesheet_directory_uri() . '/library/js/scripts.js', array( 'jquery' ), '', true );
 
 		// jquery ui
 		wp_register_script( 'bones-jqueryui', 'http://code.jquery.com/ui/1.11.1/jquery-ui.js', array('jquery'), true );
@@ -179,9 +179,12 @@ function bones_scripts_and_styles() {
 		wp_register_script( 'timelineMax', get_stylesheet_directory_uri() . '/library/js/libs/scrollorama/js/greensock/TimelineMax.min.js', array(), '', true );
 		wp_register_script( 'tweenMax', get_stylesheet_directory_uri() . '/library/js/libs/scrollorama/js/greensock/TweenMax.min.js', array(), '', true );
 		wp_register_script( 'scrollorama', get_stylesheet_directory_uri() . '/library/js/libs/scrollorama/js/jquery.superscrollorama.js', array('jquery', 'tweenMax'), '', true );
+		wp_register_script( 'scroll-magic', get_stylesheet_directory_uri() . '/library/js/libs/scrollorama/scroll-magic.js', array('jquery', 'tweenMax'), '', true );
 		wp_register_script( 'scroll', get_stylesheet_directory_uri() . '/library/js/scroll.js', array('jquery', 'tweenMax', 'scrollorama'), '', true );
+		wp_register_script( 'scroll-debug', get_stylesheet_directory_uri() . '/library/js/libs/scrollorama/js/greensock/scroll-debug.js', array('jquery', 'tweenMax', 'scrollorama'), '', true );
 
 
+		wp_register_script( 'bones-js', get_stylesheet_directory_uri() . '/library/js/scripts.js', array( 'jquery', 'tweenMax', 'scrollorama' ), '', true );
 		// enqueue styles and scripts
 		wp_enqueue_script( 'bones-modernizr' );
 		wp_enqueue_style( 'bones-stylesheet' );
@@ -220,7 +223,8 @@ function bones_scripts_and_styles() {
 			// wp_enqueue_script( 'tweenMax' );
 			// wp_enqueue_script( 'timelineMax' );
 			// wp_enqueue_script( 'scrollorama' );
-			// wp_enqueue_script( 'scroll' );
+			// wp_enqueue_script( 'scroll-magic' );
+			// wp_enqueue_script( 'scroll-debug');
 		}
 
 	}
