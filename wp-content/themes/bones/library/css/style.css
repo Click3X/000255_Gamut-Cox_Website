@@ -2511,7 +2511,7 @@ hr {
 
 /* line 155, ../scss/partials/_custom.scss */
 .reach-intro-wrapper a:hover {
-  background-color: #8134d9 !important;
+  background-color: #8fc73e !important;
 }
 
 /* line 159, ../scss/partials/_custom.scss */
@@ -2709,47 +2709,63 @@ hr {
 .lower-columns {
   padding: 20px 0 40px 0;
   border-top: 1px dashed #aaa;
-  border-bottom: 1px dashed #aaa;
   margin-top: 30px;
 }
 
-/* line 350, ../scss/partials/_custom.scss */
+/* line 349, ../scss/partials/_custom.scss */
+.pro-color {
+  color: #dd1420;
+}
+
+/* line 353, ../scss/partials/_custom.scss */
+.rep-color {
+  color: #039fd3;
+}
+
+/* line 357, ../scss/partials/_custom.scss */
+.rea-color {
+  color: #8fc73e;
+}
+
+/* line 361, ../scss/partials/_custom.scss */
+.cro-color {
+  color: #fba211;
+}
+
+/* line 368, ../scss/partials/_custom.scss */
 .lower-columns ul li {
   display: inline-block;
   margin-right: 5%;
   vertical-align: top;
 }
-/* line 358, ../scss/partials/_custom.scss */
-.lower-columns ul h3 {
-  color: #dd1420;
-}
 
-/* line 367, ../scss/partials/_custom.scss */
-.lower-contact h2 {
-  margin-top: 30px;
+/* line 376, ../scss/partials/_custom.scss */
+.lower-contact {
+  padding-top: 20px;
+  border-top: 1px dashed #aaa;
 }
-/* line 371, ../scss/partials/_custom.scss */
+/* line 381, ../scss/partials/_custom.scss */
 .lower-contact li {
   display: inline-block;
   margin-right: 5%;
   vertical-align: top;
 }
-/* line 378, ../scss/partials/_custom.scss */
+/* line 387, ../scss/partials/_custom.scss */
 .lower-contact h3 {
   color: #dd1420;
   width: 80%;
 }
 
-/* line 384, ../scss/partials/_custom.scss */
+/* line 393, ../scss/partials/_custom.scss */
 .highlight-red {
   color: #dd1420;
 }
 
-/* line 389, ../scss/partials/_custom.scss */
+/* line 398, ../scss/partials/_custom.scss */
 .contact-container {
   position: relative;
 }
-/* line 393, ../scss/partials/_custom.scss */
+/* line 402, ../scss/partials/_custom.scss */
 .contact-container #contact-beam-container {
   width: 780px;
   height: 5px;
@@ -2759,24 +2775,24 @@ hr {
   top: 45px;
   border-radius: 10px;
 }
-/* line 403, ../scss/partials/_custom.scss */
+/* line 412, ../scss/partials/_custom.scss */
 .contact-container #contact-beam {
   background-size: 783px 5px;
   background-repeat: no-repeat;
   height: 5px;
   background-position: top right;
 }
-/* line 410, ../scss/partials/_custom.scss */
+/* line 419, ../scss/partials/_custom.scss */
 .contact-container h2 {
   font-size: 3em;
   width: 70%;
   padding: 30px 0 30px 0;
 }
-/* line 417, ../scss/partials/_custom.scss */
+/* line 426, ../scss/partials/_custom.scss */
 .contact-container h3 {
   margin-top: 30px;
 }
-/* line 421, ../scss/partials/_custom.scss */
+/* line 430, ../scss/partials/_custom.scss */
 .contact-container li {
   width: 27%;
   display: inline-block;
@@ -2785,50 +2801,50 @@ hr {
 }
 
 @media (max-width: 1600px) {
-  /* line 432, ../scss/partials/_custom.scss */
+  /* line 441, ../scss/partials/_custom.scss */
   .page-header {
     height: 300px;
   }
 }
 @media (max-width: 1200px) {
-  /* line 449, ../scss/partials/_custom.scss */
+  /* line 458, ../scss/partials/_custom.scss */
   .page-header {
     background-size: 100% auto;
     background-repeat: no-repeat;
   }
 }
 @media (max-width: 768px) {
-  /* line 456, ../scss/partials/_custom.scss */
+  /* line 465, ../scss/partials/_custom.scss */
   .page-header {
     height: 200px;
     background-size: cover;
   }
 
-  /* line 461, ../scss/partials/_custom.scss */
+  /* line 470, ../scss/partials/_custom.scss */
   #inner-content {
     width: 80%;
   }
 
-  /* line 465, ../scss/partials/_custom.scss */
+  /* line 474, ../scss/partials/_custom.scss */
   #sidebar1 {
     float: none;
     margin-top: 80px;
     text-align: center;
   }
 
-  /* line 471, ../scss/partials/_custom.scss */
+  /* line 480, ../scss/partials/_custom.scss */
   #sidebar-beam-container {
     left: -600px;
     top: -30px;
   }
 
-  /* line 478, ../scss/partials/_custom.scss */
+  /* line 487, ../scss/partials/_custom.scss */
   .sub-page-content-wrapper {
     margin-top: 0px;
   }
 }
 @media (max-width: 500px) {
-  /* line 488, ../scss/partials/_custom.scss */
+  /* line 497, ../scss/partials/_custom.scss */
   .our-solutions-list img {
     height: 2.5em;
   }

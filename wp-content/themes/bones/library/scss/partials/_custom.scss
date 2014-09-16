@@ -342,35 +342,44 @@ hr {
 .lower-columns {
   padding: 20px 0 40px 0;
   border-top: 1px dashed #aaa;
-  border-bottom: 1px dashed #aaa;
   margin-top: 30px;
 }
 
+// four different colors
+.pro-color {
+  color: $programmatic;
+}
+
+.rep-color {
+  color: $reps;
+}
+
+.rea-color {
+  color: $reach;
+}
+
+.cro-color {
+  color: $crossmedia;
+}
+
+
 .lower-columns ul {
+
   li {
       display: inline-block;
-      // width: 27%;
       margin-right: 5%;
       vertical-align: top;
   }
-
-
-  h3 {
-    color: $programmatic;
-  }
-
   
 }
 
 .lower-contact {
 
-  h2 {
-    margin-top: 30px;
-  }
+  padding-top:20px; 
+  border-top: 1px dashed #aaa;
 
   li {
     display: inline-block;
-    // width: 27%;
     margin-right: 5%;
     vertical-align: top;
   }

@@ -75,7 +75,18 @@ get_header(); ?>
 											<?php while(has_sub_field('three-column-content')): ?>
 
 												<li>
-													<h3><?php the_sub_field('column-title'); ?></h3>
+												<!-- different pages different colors -->
+												<?php if (is_page(11)) { ?>
+													<h3 class="pro-color"><?php the_sub_field('column-title'); ?></h3>
+												<?php } elseif (is_page(15)) { ?>
+													<h3 class="rep-color"><?php the_sub_field('column-title'); ?></h3>
+												<?php } elseif (is_page(24)) { ?>
+													<h3 class="rea-color"><?php the_sub_field('column-title'); ?></h3>
+												<?php } elseif (is_page(13)) { ?>
+													<h3 class="cro-color"><?php the_sub_field('column-title'); ?></h3>
+												<?php } ?>
+
+													
 													<p><?php the_sub_field('column-content'); ?></p>
 												</li>
 
@@ -90,8 +101,17 @@ get_header(); ?>
 										if (get_field('three-column-contact')):  ?>
 
 											<div class="lower-contact">
-											
-												<?php echo $lower_sub_title2; //this is already wrapped with h2 tag backend?> 
+												<!-- different pages different colors -->
+												<?php if (is_page(15)) { ?>
+													<span class="rep-color"><?php echo $lower_sub_title2; //this is already wrapped with h2 tag backend?></span>
+												<?php } elseif (is_page(24)) { ?>
+													<span class="rea-color"><?php echo $lower_sub_title2; //this is already wrapped with h2 tag backend?></span>
+												<?php } elseif (is_page(13)) { ?>
+													<span class="cro-color"><?php echo $lower_sub_title2; //this is already wrapped with h2 tag backend?></span>
+												<?php } ?>
+
+
+												 
 												<h4><?php echo $lower_sub_title2_caption; ?></h4>
 
 												<ul>
