@@ -106,24 +106,14 @@ function loadGravatars() {
  * Put all your regular jQuery in here.
 */
 jQuery(document).ready(function($) {
-
-
-    // CHARLES MOBILE BUTTON TOGGLE-HIDE-SHOW
+  // CHARLES MOBILE BUTTON TOGGLE-HIDE-SHOW
     $('#mobile-btn').click(function(event) {
       event.preventDefault();
-      // TOGGLE SHOW NAV
+      console.log('I am clicked!');
+
       $('#main-nav').toggleClass('show-nav');
 
     });
-
-    // CHARLES SCROLLORAMA - HOME PAGE - color beams tween in from right
-    // var controller = $.superscrollorama();
-    // controller.addTween('#fly-it', TweenMax.from( $('#fly-it'), 0.25, {css:{right:'-200%'}, ease:Quad.easeInOut}));
-    // controller.addTween('#fly-it-2', TweenMax.from( $('#fly-it-2'), 0.25, {css:{right:'-200%'}, ease:Quad.easeInOut}));
-    // controller.addTween('#fly-it-3', TweenMax.from( $('#fly-it-3'), 0.25, {css:{right:'-200%'}, ease:Quad.easeInOut}));
-    // controller.addTween('#fly-it-4', TweenMax.from( $('#fly-it-4'), 0.25, {css:{right:'-200%'}, ease:Quad.easeInOut}));
-    
-
 
   /*
    * Let's fire off the gravatar function

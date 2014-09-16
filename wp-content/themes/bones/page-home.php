@@ -57,14 +57,24 @@
 
 				<?php 
 					// WEN'S HOME PAGE FILE
-					// include('php/home-wen.php');
-					include('php/home-parallax.php');
+					include('php/home-wen.php');
 
 					// include('php/home-charlie.php');
 
-					// include('php/home-scroll-magic.php');
-
 				?>	
+
+				<!-- SCROLLORAMA TEST -->
+				<!-- <div id="content-wrapper">
+					<div id="examples-1">
+						<h2 id="fade-it">Fade It</h2>
+						<h2 id="fly-it">Fly It</h2>
+						<h2 id="spin-it">Spin It</h2>
+						<h2 id="scale-it">Scale It</h2>
+						<h2 id="smush-it">Smush It</h2>
+					</div>
+				</div> -->
+					
+
 				<?php endwhile; ?>
 
 				<?php endif; ?>

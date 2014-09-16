@@ -1,165 +1,24 @@
 // SCROLLORAMA
-.abs-center {
-	position: absolute;
-	top:0;bottom:0;left:0;right:0;
-	margin:auto;
-}
 
-.subpage-container {
-	margin-bottom: 1em;
-}
+/*
+	COLORS
+ 
+	Dark Blue 		#222438
+	Medium Blue		#69697A
+	Light Blue	 	#C5C3DE
+	Yellow			#FFB000
+	Red				#D92B00
+	
+*/
 
-.subpage-wrapper {
-	position: relative;
-	height:auto;
-	width:100%; max-width:1600px;
-	margin:auto;
-	padding:8.25% .5em;
-	border-bottom: 2px dashed #d8d8d8;
 
-	@media(min-width: 1348px) {
-		padding-top: 110px;
-		padding-bottom: 110px;
-	}
 
-	&:last-of-type {
-		border-bottom: 0;
-	}
-}
-
-.subpage-wrapper .gamut-btn,
-.gamut-btn {
-	display: inline-block;
-	margin-left: 5%;
-	font-size: .85em;
-	color: white !important;
-	white-space: nowrap;
-	text-align: center;
-	background-color: #323944;
-	text-decoration: none;
-	padding: 8px 15px;
-
-	@include prefix(transition, all 200ms);
-
-	@media(min-width: 768px) {
-		font-size: 1em;
-	}
-}
-
-.half {
-	float:left;
-	height: auto;
-	padding:0;
-	margin:0;
-	position: relative;
-	padding-bottom: 8%;
-
-	@media(min-width: 1348px) {
-		padding-bottom: 107.6px;
-	}
-}
-
-.blue {
-	// background-color:rgba(0, 0, 255, 0.2);
-	width:42%;
-	text-align: right;
-
-	.gamut-btn {
-		position: absolute;
-		right: 2em; top: 0; bottom: 0; left:auto;
-		height: 38px; width:137px;
-		margin: auto;
-	}
-}
-.red {
-	// background-color:rgba(255, 0, 0, 0.2);
-	width:58%; max-width:768px;
-	text-align: left;
-}
-
-#crossmedia-logo,
-#rep-logo,
-#reach-logo,
-#pro-logo {
-	position: absolute;
-	top: 0; bottom: 0; left: 0; right: auto;
-	margin: auto;
-}
-
-#pro-logo { max-width: 71.1608%; }
-#rep-logo { max-width:25.39%; }
-#reach-logo { max-width:30.73%; }
-#crossmedia-logo { max-width:58.984%;}
-
-// COLOR BARS BG IMAGES
-.bg-img {
-	background-repeat: no-repeat;
-	background-size:cover;
-	width:100%; max-width: 1249px;
-	height: 100%;
-
-	@include prefix(transform-origin, 100%);
-}
-
-.p-holder {
-	max-width: 960px;
-	margin:0 auto;
-}
-
-.p {
-	font-size: 1.1em;
-	line-height: 1.4em;
-	text-align: left;
-	max-width: 27em;
-	margin:0;
-	margin-bottom: .7em;
-
-	@media(min-width: 600px) {
-		font-size: 1.5em;
-	}
-
-}
-
-.programmatic,
-.crossmedia,
-.reach,
-.reps {
-	position: absolute;
-	max-width: 90%;
-	height: 0;
-	padding-bottom: .95%;
-	margin: auto;
-	top: -33%; bottom: 0px;
-}
-
-.programmatic { background-image:url('../../../../../img/home-beams/programmatic-beam.png'); }
-.crossmedia { background-image:url('../../../../../img/home-beams/crossmedia-beam.png'); }
-.reach { background-image:url('../../../../../img/home-beams/reach-beam.png'); }
-.reps { background-image:url('../../../../../img/home-beams/reps-beam.png'); }
+#examples-1 { overflow: hidden; }
+#fly-it { position: relative; }
 
 // CHARLE SCSS
 #fly-it {
-	right: -60%;
-	// @include prefix(transform, translateX(200%));
-}
-#fly-it-2 {
-	right: -14%;
-	top:-36%;
-}
-#fly-it-3 {
-	right: -19.6%;
-	top: -15%;
-}
-#fly-it-4 {
-	right: -48%;
-	top: -14%;
-}
-
-
-.charles-home {
-	#homeSliderContainer {
-		background-color:#ffffff;
+	img {
 		width: 100%;
-		max-width: none;
 	}
 }
