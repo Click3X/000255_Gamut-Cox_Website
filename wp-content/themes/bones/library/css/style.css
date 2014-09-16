@@ -2650,7 +2650,7 @@ hr {
 
 /* line 287, ../scss/partials/_custom.scss */
 .our-solutions-list-wrapper {
-  margin-left: 90px;
+  margin-left: 8%;
   border-top: 1px solid #aaa;
 }
 
@@ -2661,7 +2661,7 @@ hr {
 }
 /* line 296, ../scss/partials/_custom.scss */
 .our-solutions-list img {
-  height: 3.2em;
+  height: 3em;
 }
 /* line 300, ../scss/partials/_custom.scss */
 .our-solutions-list h2 {
@@ -2700,6 +2700,12 @@ hr {
 }
 
 /* line 337, ../scss/partials/_custom.scss */
+.first-p {
+  font-size: 1.5em;
+  font-family: 'Sentinel Medium';
+}
+
+/* line 342, ../scss/partials/_custom.scss */
 .lower-columns {
   padding: 20px 0 40px 0;
   border-top: 1px dashed #aaa;
@@ -2707,43 +2713,43 @@ hr {
   margin-top: 30px;
 }
 
-/* line 345, ../scss/partials/_custom.scss */
+/* line 350, ../scss/partials/_custom.scss */
 .lower-columns ul li {
   display: inline-block;
   margin-right: 5%;
   vertical-align: top;
 }
-/* line 353, ../scss/partials/_custom.scss */
+/* line 358, ../scss/partials/_custom.scss */
 .lower-columns ul h3 {
   color: #dd1420;
 }
 
-/* line 362, ../scss/partials/_custom.scss */
+/* line 367, ../scss/partials/_custom.scss */
 .lower-contact h2 {
   margin-top: 30px;
 }
-/* line 366, ../scss/partials/_custom.scss */
+/* line 371, ../scss/partials/_custom.scss */
 .lower-contact li {
   display: inline-block;
   margin-right: 5%;
   vertical-align: top;
 }
-/* line 373, ../scss/partials/_custom.scss */
+/* line 378, ../scss/partials/_custom.scss */
 .lower-contact h3 {
   color: #dd1420;
   width: 80%;
 }
 
-/* line 379, ../scss/partials/_custom.scss */
+/* line 384, ../scss/partials/_custom.scss */
 .highlight-red {
   color: #dd1420;
 }
 
-/* line 384, ../scss/partials/_custom.scss */
+/* line 389, ../scss/partials/_custom.scss */
 .contact-container {
   position: relative;
 }
-/* line 388, ../scss/partials/_custom.scss */
+/* line 393, ../scss/partials/_custom.scss */
 .contact-container #contact-beam-container {
   width: 780px;
   height: 5px;
@@ -2753,24 +2759,24 @@ hr {
   top: 45px;
   border-radius: 10px;
 }
-/* line 398, ../scss/partials/_custom.scss */
+/* line 403, ../scss/partials/_custom.scss */
 .contact-container #contact-beam {
   background-size: 783px 5px;
   background-repeat: no-repeat;
   height: 5px;
   background-position: top right;
 }
-/* line 405, ../scss/partials/_custom.scss */
+/* line 410, ../scss/partials/_custom.scss */
 .contact-container h2 {
   font-size: 3em;
   width: 70%;
   padding: 30px 0 30px 0;
 }
-/* line 412, ../scss/partials/_custom.scss */
+/* line 417, ../scss/partials/_custom.scss */
 .contact-container h3 {
   margin-top: 30px;
 }
-/* line 416, ../scss/partials/_custom.scss */
+/* line 421, ../scss/partials/_custom.scss */
 .contact-container li {
   width: 27%;
   display: inline-block;
@@ -2779,45 +2785,52 @@ hr {
 }
 
 @media (max-width: 1600px) {
-  /* line 427, ../scss/partials/_custom.scss */
+  /* line 432, ../scss/partials/_custom.scss */
   .page-header {
     height: 300px;
   }
 }
 @media (max-width: 1200px) {
-  /* line 444, ../scss/partials/_custom.scss */
+  /* line 449, ../scss/partials/_custom.scss */
   .page-header {
     background-size: 100% auto;
     background-repeat: no-repeat;
   }
 }
 @media (max-width: 768px) {
-  /* line 451, ../scss/partials/_custom.scss */
+  /* line 456, ../scss/partials/_custom.scss */
   .page-header {
     height: 200px;
     background-size: cover;
   }
 
-  /* line 456, ../scss/partials/_custom.scss */
+  /* line 461, ../scss/partials/_custom.scss */
   #inner-content {
     width: 80%;
   }
 
-  /* line 460, ../scss/partials/_custom.scss */
+  /* line 465, ../scss/partials/_custom.scss */
   #sidebar1 {
     float: none;
-    margin-top: 20px;
+    margin-top: 80px;
     text-align: center;
   }
 
-  /* line 466, ../scss/partials/_custom.scss */
-  #sidebar-beam {
-    visibility: hidden;
+  /* line 471, ../scss/partials/_custom.scss */
+  #sidebar-beam-container {
+    left: -600px;
+    top: -30px;
   }
 
-  /* line 471, ../scss/partials/_custom.scss */
+  /* line 478, ../scss/partials/_custom.scss */
   .sub-page-content-wrapper {
     margin-top: 0px;
+  }
+}
+@media (max-width: 500px) {
+  /* line 488, ../scss/partials/_custom.scss */
+  .our-solutions-list img {
+    height: 2.5em;
   }
 }
 /* line 1, ../scss/partials/_footer.scss */

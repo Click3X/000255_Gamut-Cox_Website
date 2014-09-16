@@ -285,7 +285,7 @@ hr {
 }
 
 .our-solutions-list-wrapper {
-  margin-left: 90px;
+  margin-left: 8%;
   border-top: 1px solid #aaa;
 }
 
@@ -294,7 +294,7 @@ hr {
   padding: 30px 0 30px 0;
 
   img {
-    height: 3.2em;
+    height: 3em;
   }
 
   h2 {
@@ -333,6 +333,11 @@ hr {
       }
       
     }
+
+.first-p {
+  font-size: 1.5em;
+  font-family: 'Sentinel Medium';
+}
 
 .lower-columns {
   padding: 20px 0 40px 0;
@@ -448,7 +453,7 @@ hr {
 }
 
 @media(max-width: 768px) {
-      .page-header {
+    .page-header {
       height: 200px;
       background-size: cover;
     }
@@ -459,12 +464,14 @@ hr {
 
     #sidebar1 {
       float: none;
-      margin-top: 20px;
+      margin-top: 80px;
       text-align: center;   
     }
 
-    #sidebar-beam {
-      visibility: hidden;
+    #sidebar-beam-container {
+      // visibility: hidden;
+      left: -600px;
+      top: -30px;
     }
     
 
@@ -473,4 +480,12 @@ hr {
     }
 
 
+}
+
+@media(max-width: 500px) {
+
+
+    .our-solutions-list img {
+      height: 2.5em;
+    }
 }

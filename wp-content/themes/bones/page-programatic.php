@@ -41,9 +41,20 @@ get_header(); ?>
 
 
 								<div class="sub-page-content-wrapper">
+									<!-- different pages different logos -->
+									<?php if (is_page(11)) { ?>
 										<img src="<?php bloginfo('url'); ?>/img/home-logos/programmatic-logo.png">
+									<?php } elseif (is_page(15)) { ?>
+										<img src="<?php bloginfo('url'); ?>/img/home-logos/reps-logo.png">
+									<?php } elseif (is_page(24)) { ?>
+										<img src="<?php bloginfo('url'); ?>/img/home-logos/reach-logo.png">
+									<?php } elseif (is_page(13)) { ?>
+										<img src="<?php bloginfo('url'); ?>/img/home-logos/crossmedia-logo.png">
+									<?php } ?>
+
+										
 										<h2><?php echo $main_sub_title; ?></h2>
-										<p><?php echo $main_first_p; ?></p>
+										<p class="first-p"><?php echo $main_first_p; ?></p>
 										<p><?php echo $main_p; ?></p>
 
 
@@ -51,7 +62,7 @@ get_header(); ?>
 									<!-- if statements -->
 									<!-- adding lower part on 4 product pages -->
 									<div class="lower-content">
-									<?php if (is_page(11)) { 
+									<?php //if (is_page(11)) { 
 										if(get_field('three-column-content')): ?>
 
 										<div class="lower-columns">
@@ -102,11 +113,11 @@ get_header(); ?>
 
 
 
-											<?php } elseif (is_page(8)) { ?>
+											<?php //} elseif (is_page(8)) { ?>
 											   <!-- <image src="<?php bloginfo('stylesheet_directory'); ?>/images/imagename.jpg" /> -->
-											<?php } elseif (in_category( '5' )) { ?>
+											<?php //} elseif (in_category( '5' )) { ?>
 											   <!-- <image src="<?php bloginfo('stylesheet_directory'); ?>/images/imagename.jpg" /> -->
-											<?php } ?>
+											<?php //} ?>
 
 									</div> 
 									<!-- end of lower content -->
