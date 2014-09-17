@@ -4,7 +4,7 @@
 		<div id="homeSliderContainer">
 			<div id="home-slider">
 				<div id="bg">
-					<!-- <img src=""/> -->
+					<img src=""/>
 				</div>
 				<div id="fg">
 					<img src="<?php bloginfo('url'); ?>/img/fg-long-copy2.png" alt="slide">
