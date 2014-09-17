@@ -2,7 +2,7 @@
 	// display: inline-block;
 	display: block;
 	float:left;
-	margin-right: 2rem;
+	margin-right: 6rem;
 	position: relative;
 }
 
@@ -13,6 +13,7 @@
 .career-button {
 	position: relative;
 	text-align: center;
+	margin-bottom: 40px;
 
 	a {
 		display:block;
@@ -28,7 +29,10 @@
 		transition: all 0.2s;
 
 		&:hover {
-			background-color: #fba211 !important;
+			background-color: $brand-color;
+			.arrow-right {
+				border-left: 6px solid $white !important;
+			}
 		}
 	}
 
@@ -74,11 +78,19 @@
 
 .footer-links {
 	background-color:#000000;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 90px;
+	padding-bottom: 90px;
 }
 
 
 .inner-footer {
 	padding-bottom: 40px;
+}
+
+#policy-links {
+	color: white;
+}
+
+#policy-links:hover {
+	color: $brand-color;
 }

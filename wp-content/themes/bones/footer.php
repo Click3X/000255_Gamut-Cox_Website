@@ -74,14 +74,14 @@
 
 									<?php 
 									if($careers) {
-										echo '<li class="career-button"><a href="'.$careers.'" id="careers-link">Careers&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a></li>';
+										echo '<li class="career-button"><a href="'.$careers.'" id="careers-link">Careers&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #eb0a8e;"></span></a></li>';
 										// echo '<li class="career-button"><a href="'.$careers.'" id="careers-link" class="careers-link">Careers</a></li>';
 									}
 									?>
 									
 									<?php // EACH LOCATION ('City-Address combo') GETS ITS OWN UL
 										while(has_sub_field('policy_links', 'options')): ?>
-										<li class="copy link"><a href="<?php the_sub_field('link'); ?>"><?php the_sub_field('title'); ?></a></li>
+										<li class="copy link"><a id="policy-links" href="<?php the_sub_field('link'); ?>"><?php the_sub_field('title'); ?></a></li>
 									<?php endwhile; ?>
 
 									</ul>

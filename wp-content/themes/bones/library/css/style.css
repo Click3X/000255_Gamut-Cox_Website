@@ -1820,6 +1820,10 @@ POSTS & CONTENT STYLES
   but it's up to you. Feel free to change it up.
   */
 }
+/* line 380, ../scss/breakpoints/_base.scss */
+.entry-content p {
+  margin: 0 0 1.5em;
+}
 /* line 406, ../scss/breakpoints/_base.scss */
 .entry-content table {
   width: 100%;
@@ -1878,6 +1882,7 @@ POSTS & CONTENT STYLES
 }
 /* line 469, ../scss/breakpoints/_base.scss */
 .entry-content img {
+  margin: 0 0 1.5em 0;
   max-width: 100%;
   height: auto;
 }
@@ -2635,7 +2640,7 @@ hr {
 .sub-page-content-wrapper {
   margin-top: -150px;
   background-color: white;
-  padding: 20px 8% 0px 8%;
+  padding: 20px 8% 20px 8%;
 }
 /* line 282, ../scss/partials/_custom.scss */
 .sub-page-content-wrapper h1 {
@@ -2846,7 +2851,7 @@ hr {
 .client-info {
   display: block;
   float: left;
-  margin-right: 2rem;
+  margin-right: 6rem;
   position: relative;
 }
 
@@ -2859,8 +2864,9 @@ hr {
 .career-button {
   position: relative;
   text-align: center;
+  margin-bottom: 40px;
 }
-/* line 17, ../scss/partials/_footer.scss */
+/* line 18, ../scss/partials/_footer.scss */
 .career-button a {
   display: block;
   text-transform: uppercase;
@@ -2874,18 +2880,22 @@ hr {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-/* line 30, ../scss/partials/_footer.scss */
+/* line 31, ../scss/partials/_footer.scss */
 .career-button a:hover {
-  background-color: #fba211 !important;
+  background-color: #ed228b;
 }
-/* line 35, ../scss/partials/_footer.scss */
+/* line 33, ../scss/partials/_footer.scss */
+.career-button a:hover .arrow-right {
+  border-left: 6px solid white !important;
+}
+/* line 39, ../scss/partials/_footer.scss */
 .career-button .careers-link {
   text-transform: uppercase;
   color: white;
   background-color: #3d3d3d;
   display: block;
 }
-/* line 41, ../scss/partials/_footer.scss */
+/* line 45, ../scss/partials/_footer.scss */
 .career-button .careers-link:after {
   content: "";
   display: block;
@@ -2900,33 +2910,43 @@ hr {
   border-top: 5px solid transparent;
 }
 
-/* line 63, ../scss/partials/_footer.scss */
+/* line 67, ../scss/partials/_footer.scss */
 .footer-logo-holder,
 .social-media-links,
 .social {
   display: inline-block;
 }
 
-/* line 67, ../scss/partials/_footer.scss */
+/* line 71, ../scss/partials/_footer.scss */
 .social {
   margin: .5rem;
 }
 
-/* line 71, ../scss/partials/_footer.scss */
+/* line 75, ../scss/partials/_footer.scss */
 .footer {
   background-color: #3d3d3d;
 }
 
-/* line 75, ../scss/partials/_footer.scss */
+/* line 79, ../scss/partials/_footer.scss */
 .footer-links {
   background-color: #000000;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 
-/* line 82, ../scss/partials/_footer.scss */
+/* line 86, ../scss/partials/_footer.scss */
 .inner-footer {
   padding-bottom: 40px;
+}
+
+/* line 90, ../scss/partials/_footer.scss */
+#policy-links {
+  color: white;
+}
+
+/* line 94, ../scss/partials/_footer.scss */
+#policy-links:hover {
+  color: #ed228b;
 }
 
 /* General Demo Style */

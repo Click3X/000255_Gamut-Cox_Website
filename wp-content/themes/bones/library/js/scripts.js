@@ -135,13 +135,6 @@ jQuery(document).ready(function($) {
     $('.home-beam').show('slide', {direction:'left'}, 200); 
   });
 
-  // gif only loop once
-//   setTimeout(function() {
-//     setInterval(function() {
-//         $('#home-video').attr('src',$('#home-video').attr('src'))
-//     },1)
-// }, 3000);
-
 // home slide
 // load gif
 $('fg').hide();
@@ -153,7 +146,7 @@ setTimeout(function (){
   $('#bg>img').attr('src', 'img/bg-long-copy.png');
   // $('#bg>img').css('opacity', 1);
   $('fg').show();
-}, 2600);
+}, 2000);
 
 
 
@@ -175,21 +168,6 @@ var bgWidth = bgImageWidth * bgNumberOfImages;
 
 var bgShift = 0;
 var bgShiftDesired = 0;
-
-// if (window.screen.availWidth > 1600) {
-//   alert(window.screen.availWidth);
-//   bgImageWidth = 1600;
-// } else if ((window.screen.availWidth <= 1600) && (window.screen.availWidth > 1200)) {
-//   alert(window.screen.availWidth);
-//   bgImageWidth = 1200;
-// } else {
-//   alert(window.screen.availWidth);
-//   bgImageWidth = 800;
-// }
-
-
-
-
 
 setInterval(function(){ 
   bgShift += (bgShiftDesired-bgShift)/8;

@@ -39,7 +39,32 @@
 		<?php // end of wordpress head ?>
 
 		<?php // drop Google Analytics Here ?>
-		<?php // end analytics ?>
+		<?php // end analytics 
+
+
+			if(get_field('social_media_links', 'options')):
+				// SOCIAL MEDIA LINKS
+				echo '<ul class="social-media-links">';
+
+								// CHECK FOR LOGO
+								if($clientLogo) {
+									echo '<li class="footer-logo-holder">';
+						    			echo '<img id="footer-logo" class="footer-logo" src="'.$clientLogo.'" alt="logo">';
+						    		echo '</li>';
+						    	}
+								while(has_sub_field('social_media_links', 'options')): ?>
+									
+										<a href="<?php the_sub_field('link'); ?>" title="<?php the_sub_field('title');?>">
+											<img src="<?php the_sub_field('hover'); ?>" alt="<?php the_sub_field('title');?>">
+									
+								<?php endwhile;
+								
+							endif; 
+
+		?>
+
+
+
 
 	</head>
 
