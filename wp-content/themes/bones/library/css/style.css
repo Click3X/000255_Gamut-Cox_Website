@@ -3800,7 +3800,7 @@ a {
 @media (min-width: 768px) {
   /* line 284, ../scss/partials/_home_addons.scss */
   .smart-copy {
-    float: left;
+    float: right;
     width: 50%;
   }
 }

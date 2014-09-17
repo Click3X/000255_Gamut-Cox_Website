@@ -107,13 +107,13 @@
 			
 		<!-- Smart Service -->
 		<div class="smart-service-wrapper">
-			<!-- image container -->
-			<div class="smart-pic" style="background-image:url('<?php echo $careers_image['url'];?>');"></div>
+			<!-- image container -->			
 			<div class="smart-copy">
 				<img src="<?php bloginfo('url'); ?>/img/plus-sign.png" style="display: inline-block; width: 30px; height: 30px; vertical-align: middle; margin-right: 10px" alt="plus">
 				<h1 style="display: inline-block;"> <?php echo $smart_service_title ?></h1>
 				<?php echo $smart_service_content ?>
 			</div>
+			<div class="smart-pic" style="background-image:url('<?php echo $careers_image['url'];?>');"></div>
 		</div>
 
 		<div style="clear: both"></div>
