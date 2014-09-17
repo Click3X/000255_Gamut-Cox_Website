@@ -53,7 +53,7 @@ get_header(); ?>
 									<?php } ?>
 
 										
-										<h2><?php echo $main_sub_title; ?></h2>
+										<h2 class="sub-title"><?php echo $main_sub_title; ?></h2>
 										<p class="first-p"><?php echo $main_first_p; ?></p>
 										<p><?php echo $main_p; ?></p>
 

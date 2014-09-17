@@ -427,7 +427,9 @@ hr {
   }
 
   h3 {
-    margin-top: 30px;
+    margin-top: 3.5em;
+    letter-spacing: .1em;
+    font-size: .91em;
   }
 
   li {
@@ -520,4 +522,12 @@ hr {
 
 .contact-container h2 {
   padding: .65em 0;
+  // font-family: franklin-gothic-urw, sans-serif;
+}
+
+.sub-title {
+  text-transform:lowercase;
+  &:first-letter {
+    text-transform: uppercase;
+  }
 }
