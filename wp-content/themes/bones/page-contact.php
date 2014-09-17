@@ -43,14 +43,14 @@ get_header(); ?>
 							
 								<?php if(get_field('location-list')): ?>
 
-										<h3><?php echo $locations_title; ?></h3>
+										<h3 class="gothic"><?php echo $locations_title; ?></h3>
 													
 											<ul>
 
 												<?php while(has_sub_field('location-list')): ?>
 
 													<li>
-														<h3><?php the_sub_field('city'); ?></h3>
+														<h3 class="gothic"><?php the_sub_field('city'); ?></h3>
 														<?php the_sub_field('address'); ?>
 													</li>
 
