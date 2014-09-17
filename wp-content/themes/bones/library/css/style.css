@@ -1633,7 +1633,7 @@ h1, .h1 {
 
 /* line 160, ../scss/breakpoints/_base.scss */
 h2, .h2 {
-  font-size: 1.15em;
+  font-size: 1.25em;
   line-height: 1.4em;
   margin-bottom: 0.375em;
   font-family: 'Sentinel Medium';
@@ -2867,6 +2867,11 @@ hr {
 /* line 516, ../scss/partials/_custom.scss */
 .secondary li.page_item a {
   color: #626262;
+}
+
+/* line 521, ../scss/partials/_custom.scss */
+.contact-container h2 {
+  padding: .65em 0;
 }
 
 /* line 1, ../scss/partials/_footer.scss */

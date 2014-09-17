@@ -3,3 +3,5 @@
 2014-09-17 15:14:54: Could not save XML file -> Could not save marker XML file (/Users/wen-ws317/Documents/gamut-new/000255_Gamut-Cox_Website/wp-content/uploads/wp-google-maps/1markers.xml) for Map ID 1
 2014-09-17 15:17:35: Could not save XML file -> Could not save marker XML file (/Users/wen-ws317/Documents/gamut-new/000255_Gamut-Cox_Website/wp-content/uploads/wp-google-maps/1markers.xml) for Map ID 1
 2014-09-17 15:37:46: Could not save XML file -> Could not save marker XML file (/Users/wen-ws317/Documents/gamut-new/000255_Gamut-Cox_Website/wp-content/uploads/wp-google-maps/1markers.xml) for Map ID 1
+2014-09-17 15:49:53: Could not save XML file -> Could not save marker XML file (/Users/wen-ws317/Documents/gamut-new/000255_Gamut-Cox_Website/wp-content/uploads/wp-google-maps/1markers.xml) for Map ID 1
+2014-09-17 15:53:03: Could not save XML file -> Could not save marker XML file (/Users/wen-ws317/Documents/gamut-new/000255_Gamut-Cox_Website/wp-content/uploads/wp-google-maps/1markers.xml) for Map ID 1
