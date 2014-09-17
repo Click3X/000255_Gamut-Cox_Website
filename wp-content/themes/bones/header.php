@@ -84,7 +84,11 @@
 
 					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
 					<div class="logo-holder clearfix">
-						<a id="logo" href="<?php echo home_url(); ?>" rel="nofollow"></a>
+						<!-- <div class="logo-holder-new"> -->
+							<a id="logo" href="<?php echo home_url(); ?>" rel="nofollow">
+								<img src="<?php echo bloginfo('url').'/img/gamut_logo.png' ;?>" alt="logo">
+							</a>
+						<!-- </div> -->
 						<!-- // mobile nav -->
 						<a id="mobile-btn" class="mobile-btn" href="#" rel="nofollow">&#9776;</a>
 					</div>

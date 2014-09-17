@@ -192,17 +192,15 @@ HEADER STYLES
 }
 
 #logo {
-	margin: 0.75em 0;
-	  float: left;
-	  background: url('../../../../../img/gamut_logo.png') center center no-repeat;
-	  width: 160px;
-	  height: 52px;
-	  display: block;
-	  background-size: 160px 52px;
+	display: block;
+	width: 100%;
+	max-width: 120px;
+	float: left;
 
-	a {
-		color: $black;
-
+	img {
+		width: 100%;
+		margin:0;
+		padding:1em 0 0 0;
 	}
 }
 
@@ -246,9 +244,10 @@ and more scalable.
 			display: block;
 			color: $black;
 			text-decoration: none;
-			padding: 0.75em;
+			// padding: 0.75em;
+			padding: 1.7em 1.9em;
 
-			font-size:.85em;
+			font-size:.8em;
 			font-weight: 500;
 			letter-spacing: .1em;
 			text-transform: uppercase;
