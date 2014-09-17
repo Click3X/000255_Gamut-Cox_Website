@@ -49,7 +49,7 @@ get_header(); ?>
 
 												<?php while(has_sub_field('location-list')): ?>
 
-													<li class="address">
+													<li class="location">
 														<h3 class="gothic"><?php the_sub_field('city'); ?></h3>
 														<?php the_sub_field('address'); ?>
 													</li>
@@ -60,16 +60,45 @@ get_header(); ?>
 
 									
 
-								<?php endif; ?>
+								<?php endif;
 
 
-								<!-- contact info list -->
-								<!-- something here -->
+								$args = array(
+									'post_type' => 'team_members'
+								);
+																// The Query
+								$query1 = new WP_Query( $args );
 
-							</div>
-									
+								// The Loop
+								while ( $query1->have_posts() ) {
+									$query1->the_post();
 
-									<?
+									// helper($query1);
+
+									// the_title();
+								}
+
+								/* Restore original Post Data 
+								 * NB: Because we are using new WP_Query we aren't stomping on the 
+								 * original $wp_query and it does not need to be reset with 
+								 * wp_reset_query(). We just need to set the post data back up with
+								 * wp_reset_postdata().
+								 */
+								wp_reset_postdata();
+
+
+
+								// $args = array(
+								// 	'post_type' => 'custom_post_type',
+								// 	'posts_per_page' => -1,
+								// 	'meta_key' => '_EventStartDate',
+								// 	'orderby' => 'taxonomy_cat',
+								// 	'order' => asc
+								// 	);
+								// 	$the_query = new WP_Query( $args );
+
+								// 	if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); 
+
 
 										/*
 										 * Link Pages is used in case you have posts that are set to break into

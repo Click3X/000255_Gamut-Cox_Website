@@ -2917,7 +2917,7 @@ hr {
   margin-top: 3.4em;
 }
 /* line 542, ../scss/partials/_custom.scss */
-.contact-container .address p {
+.contact-container .location p {
   margin: .5em 0 1.5em;
   font-size: .87em;
   line-height: 1.5em;
@@ -3750,22 +3750,22 @@ a {
   max-width: none;
 }
 
-/* line 254, ../scss/partials/_home_addons.scss */
+/* line 255, ../scss/partials/_home_addons.scss */
 .difference {
   margin-left: 11%;
 }
-/* line 256, ../scss/partials/_home_addons.scss */
+/* line 257, ../scss/partials/_home_addons.scss */
 .difference p {
   max-width: 38.5em;
   margin-bottom: 1em;
 }
 
-/* line 262, ../scss/partials/_home_addons.scss */
+/* line 263, ../scss/partials/_home_addons.scss */
 .diff {
   margin-left: 11%;
 }
 
-/* line 266, ../scss/partials/_home_addons.scss */
+/* line 267, ../scss/partials/_home_addons.scss */
 .grey-bg-box {
   position: relative;
   background-color: #3d3d3d;

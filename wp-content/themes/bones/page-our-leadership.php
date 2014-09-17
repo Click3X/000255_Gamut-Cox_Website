@@ -20,9 +20,13 @@
 						<ul id="og-grid" class="og-grid">
 
 						<?php 
+						
+
 						if (have_posts()) : while (have_posts()) : the_post(); 
 
 						// GET TEAM MEMBER POSTS RELATIONSHIP FIELD FROM 'OUR-LEADERSHIP' ADMIN PAGE
+						// query_posts('section_name=Team_Member_Reorder');
+						// echo query_posts('section_name=Team_Member_Reorder');
 						if( get_field('team_members') )
 							{
 								while( has_sub_field('team_members') )

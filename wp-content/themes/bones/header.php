@@ -11,7 +11,15 @@
 		<?php // Google Chrome Frame for IE ?>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-		<title><?php wp_title(''); ?></title>
+		<title><?php //wp_title(''); ?>
+
+		<?php
+			echo empty( $post->post_parent ) ? 'Gamut | '. get_the_title( $post->ID ) : 'Gamut | '. get_the_title( $post->post_parent ).' | ' .get_the_title( $post->ID ) ;
+		?>
+
+
+		</title>
+
 
 		<!-- LOAD TYPEKIT FONTS -->
 		<script src="//use.typekit.net/mno4etl.js"></script>
