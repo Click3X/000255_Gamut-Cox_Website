@@ -2900,26 +2900,36 @@ hr {
 .client-info {
   display: block;
   float: left;
-  margin-right: 6rem;
+  margin-right: 3rem;
   position: relative;
+  letter-spacing: .1em;
+  font-size: .91em;
 }
 
-/* line 9, ../scss/partials/_footer.scss */
+/* line 11, ../scss/partials/_footer.scss */
 .headline {
   text-transform: uppercase;
+  font-weight: 500;
 }
 
-/* line 13, ../scss/partials/_footer.scss */
+/* line 16, ../scss/partials/_footer.scss */
+.copy {
+  margin-top: .6em;
+  line-height: 1.6em;
+  font-size: .91em;
+}
+
+/* line 22, ../scss/partials/_footer.scss */
 .career-button {
   position: relative;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 1.9em;
 }
-/* line 18, ../scss/partials/_footer.scss */
+/* line 28, ../scss/partials/_footer.scss */
 .career-button a {
   display: block;
   text-transform: uppercase;
-  font-size: 1em;
+  font-size: .91em;
   color: white !important;
   white-space: nowrap;
   text-align: center;
@@ -2929,22 +2939,22 @@ hr {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-/* line 31, ../scss/partials/_footer.scss */
+/* line 42, ../scss/partials/_footer.scss */
 .career-button a:hover {
   background-color: #ed228b;
 }
-/* line 33, ../scss/partials/_footer.scss */
+/* line 44, ../scss/partials/_footer.scss */
 .career-button a:hover .arrow-right {
   border-left: 6px solid white !important;
 }
-/* line 39, ../scss/partials/_footer.scss */
+/* line 50, ../scss/partials/_footer.scss */
 .career-button .careers-link {
   text-transform: uppercase;
   color: white;
   background-color: #3d3d3d;
   display: block;
 }
-/* line 45, ../scss/partials/_footer.scss */
+/* line 56, ../scss/partials/_footer.scss */
 .career-button .careers-link:after {
   content: "";
   display: block;
@@ -2959,41 +2969,47 @@ hr {
   border-top: 5px solid transparent;
 }
 
-/* line 67, ../scss/partials/_footer.scss */
+/* line 78, ../scss/partials/_footer.scss */
 .footer-logo-holder,
 .social-media-links,
 .social {
   display: inline-block;
 }
 
-/* line 71, ../scss/partials/_footer.scss */
+/* line 82, ../scss/partials/_footer.scss */
 .social {
   margin: .5rem;
 }
 
-/* line 75, ../scss/partials/_footer.scss */
+/* line 86, ../scss/partials/_footer.scss */
 .footer {
   background-color: #3d3d3d;
 }
 
-/* line 79, ../scss/partials/_footer.scss */
+/* line 90, ../scss/partials/_footer.scss */
 .footer-links {
   background-color: #000000;
   padding-top: 90px;
   padding-bottom: 90px;
 }
 
-/* line 86, ../scss/partials/_footer.scss */
+/* line 97, ../scss/partials/_footer.scss */
 .inner-footer {
   padding-bottom: 40px;
 }
 
-/* line 90, ../scss/partials/_footer.scss */
+/* line 101, ../scss/partials/_footer.scss */
 #policy-links {
   color: white;
 }
 
-/* line 94, ../scss/partials/_footer.scss */
+/* line 106, ../scss/partials/_footer.scss */
+.policy-links > .copy {
+  margin-top: 0;
+  font-weight: 500;
+}
+
+/* line 112, ../scss/partials/_footer.scss */
 #policy-links:hover {
   color: #ed228b;
 }
