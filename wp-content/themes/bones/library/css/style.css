@@ -3562,10 +3562,10 @@ a {
 .gamut-btn {
   display: inline-block;
   margin-left: 5%;
-  color: white !important;
+  color: #323944 !important;
   white-space: nowrap;
   text-align: center;
-  background-color: #323944;
+  border: 2px solid #323944;
   text-decoration: none;
   padding: .7em 1.5em .5em 1.85em;
   font-size: .82em;
@@ -3578,7 +3578,7 @@ a {
   transition: all 200ms;
 }
 
-/* line 133, ../scss/partials/_home_addons.scss */
+/* line 134, ../scss/partials/_home_addons.scss */
 .half {
   float: left;
   height: auto;
@@ -3588,18 +3588,18 @@ a {
   padding-bottom: 8%;
 }
 @media (min-width: 1348px) {
-  /* line 133, ../scss/partials/_home_addons.scss */
+  /* line 134, ../scss/partials/_home_addons.scss */
   .half {
     padding-bottom: 88px;
   }
 }
 
-/* line 147, ../scss/partials/_home_addons.scss */
+/* line 148, ../scss/partials/_home_addons.scss */
 .blue {
   width: 42%;
   text-align: right;
 }
-/* line 152, ../scss/partials/_home_addons.scss */
+/* line 153, ../scss/partials/_home_addons.scss */
 .blue .gamut-btn {
   position: absolute;
   right: 2em;
@@ -3610,14 +3610,14 @@ a {
   margin: auto;
 }
 
-/* line 160, ../scss/partials/_home_addons.scss */
+/* line 161, ../scss/partials/_home_addons.scss */
 .red {
   width: 58%;
   max-width: 768px;
   text-align: left;
 }
 
-/* line 169, ../scss/partials/_home_addons.scss */
+/* line 170, ../scss/partials/_home_addons.scss */
 #crossmedia-logo,
 #rep-logo,
 #reach-logo,
@@ -3630,27 +3630,27 @@ a {
   margin: auto;
 }
 
-/* line 175, ../scss/partials/_home_addons.scss */
+/* line 176, ../scss/partials/_home_addons.scss */
 #pro-logo {
   max-width: 71.1608%;
 }
 
-/* line 176, ../scss/partials/_home_addons.scss */
+/* line 177, ../scss/partials/_home_addons.scss */
 #rep-logo {
   max-width: 25.39%;
 }
 
-/* line 177, ../scss/partials/_home_addons.scss */
+/* line 178, ../scss/partials/_home_addons.scss */
 #reach-logo {
   max-width: 30.73%;
 }
 
-/* line 178, ../scss/partials/_home_addons.scss */
+/* line 179, ../scss/partials/_home_addons.scss */
 #crossmedia-logo {
   max-width: 58.984%;
 }
 
-/* line 181, ../scss/partials/_home_addons.scss */
+/* line 182, ../scss/partials/_home_addons.scss */
 .bg-img {
   background-repeat: no-repeat;
   background-size: cover;
@@ -3664,13 +3664,13 @@ a {
   transform-origin: 100%;
 }
 
-/* line 190, ../scss/partials/_home_addons.scss */
+/* line 191, ../scss/partials/_home_addons.scss */
 .p-holder {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* line 196, ../scss/partials/_home_addons.scss */
+/* line 197, ../scss/partials/_home_addons.scss */
 .p {
   font-size: 1.1em;
   line-height: 1.4em;
@@ -3680,13 +3680,13 @@ a {
   margin-bottom: .7em;
 }
 @media (min-width: 600px) {
-  /* line 196, ../scss/partials/_home_addons.scss */
+  /* line 197, ../scss/partials/_home_addons.scss */
   .p {
     font-size: 1.5em;
   }
 }
 
-/* line 213, ../scss/partials/_home_addons.scss */
+/* line 214, ../scss/partials/_home_addons.scss */
 .programmatic,
 .crossmedia,
 .reach,
@@ -3700,50 +3700,50 @@ a {
   bottom: 0px;
 }
 
-/* line 222, ../scss/partials/_home_addons.scss */
+/* line 223, ../scss/partials/_home_addons.scss */
 .programmatic {
   background-image: url("../../../../../img/home-beams/programmatic-beam.png");
 }
 
-/* line 223, ../scss/partials/_home_addons.scss */
+/* line 224, ../scss/partials/_home_addons.scss */
 .crossmedia {
   background-image: url("../../../../../img/home-beams/crossmedia-beam.png");
 }
 
-/* line 224, ../scss/partials/_home_addons.scss */
+/* line 225, ../scss/partials/_home_addons.scss */
 .reach {
   background-image: url("../../../../../img/home-beams/reach-beam.png");
 }
 
-/* line 225, ../scss/partials/_home_addons.scss */
+/* line 226, ../scss/partials/_home_addons.scss */
 .reps {
   background-image: url("../../../../../img/home-beams/reps-beam.png");
 }
 
-/* line 228, ../scss/partials/_home_addons.scss */
+/* line 229, ../scss/partials/_home_addons.scss */
 #fly-it {
   right: -60%;
 }
 
-/* line 232, ../scss/partials/_home_addons.scss */
+/* line 233, ../scss/partials/_home_addons.scss */
 #fly-it-2 {
   right: -14%;
   top: -36%;
 }
 
-/* line 236, ../scss/partials/_home_addons.scss */
+/* line 237, ../scss/partials/_home_addons.scss */
 #fly-it-3 {
   right: -19.6%;
   top: -15%;
 }
 
-/* line 240, ../scss/partials/_home_addons.scss */
+/* line 241, ../scss/partials/_home_addons.scss */
 #fly-it-4 {
   right: -48%;
   top: -14%;
 }
 
-/* line 247, ../scss/partials/_home_addons.scss */
+/* line 248, ../scss/partials/_home_addons.scss */
 .charles-home #homeSliderContainer {
   background-color: #ffffff;
   width: 100%;
