@@ -35,8 +35,8 @@ $the_query = new WP_Query( $args );
 								<a href="<?php the_permalink(); ?>" data-largesrc="<?php echo $largeThumb[0]; ?>" data-title="<?php echo $title; ?>" data-description="<?php echo $content; ?>" data-etitle="<?php echo $emp_title; ?>">
 								<?php echo '<a href="'.get_the_permalink().'">';
 									echo '<img src="'.$thumb[0].'" alt="'.$title.'" class="grid-thumb">';
-									echo '<h2 class="small-name">'.$title.'</h2>';
-									echo '<h3 class="small-title">'.$emp_title.'</h3>';
+									echo '<h2 class="small-name gothic">'.$title.'</h2>';
+									echo '<h3 class="small-title gothic">'.$emp_title.'</h3>';
 									?>
 								</a>
 							</li>

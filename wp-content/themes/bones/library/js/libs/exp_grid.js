@@ -345,8 +345,8 @@ jQuery(document).ready(function($) {
 		Preview.prototype = {
 			create : function() {
 				// create Preview structure:
-				this.$title = $( '<h2 class="medium-name"></h2>' );
-				this.$emptitle = $( '<h3 class="medium-title"></h3>' );
+				this.$title = $( '<h2 class="medium-name gothic"></h2>' );
+				this.$emptitle = $( '<h3 class="medium-title gothic"></h3>' );
 				this.$description = $( '<p></p>' );
 				this.$href = $( '<a href="#">Visit website</a>' );
 				this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$emptitle, this.$description, this.$href );

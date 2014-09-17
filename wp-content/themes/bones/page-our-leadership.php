@@ -58,8 +58,8 @@
 											<a href="<?php echo $link; ?>" data-largesrc="<?php echo $largeThumb[0]; ?>" data-title="<?php echo $name; ?>" data-description="<?php echo $content; ?>" data-etitle="<?php echo $emp_title; ?>">
 											<?php echo '<a href="'.$link.'">';
 												echo '<img src="'.$thumb[0].'" alt="'.$name.'" class="grid-thumb">';
-												echo '<h2 class="small-name">'.$name.'</h2>';
-												echo '<h3 class="small-title">'.$emp_title.'</h3>';
+												echo '<h2 class="small-name gothic">'.$name.'</h2>';
+												echo '<h3 class="small-title gothic">'.$emp_title.'</h3>';
 												?>
 											</a>
 										</li>
