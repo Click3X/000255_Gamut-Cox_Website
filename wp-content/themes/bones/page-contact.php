@@ -49,7 +49,7 @@ get_header(); ?>
 
 												<?php while(has_sub_field('location-list')): ?>
 
-													<li>
+													<li class="address">
 														<h3 class="gothic"><?php the_sub_field('city'); ?></h3>
 														<?php the_sub_field('address'); ?>
 													</li>

@@ -427,7 +427,8 @@ hr {
   }
 
   h3 {
-    margin-top: 3.5em;
+    // margin-top: 3.5em;
+    margin-top: .6em;
     letter-spacing: .1em;
     font-size: .91em;
   }
@@ -522,7 +523,18 @@ hr {
 
 .contact-container h2 {
   padding: .65em 0;
-  // font-family: franklin-gothic-urw, sans-serif;
+}
+
+.contact-container {
+  hr + h3 {
+    margin-top: 3.4em;
+  }
+
+  .address p {
+    margin: .5em 0 1.5em;
+    font-size: .87em;
+    line-height: 1.5em;
+  }
 }
 
 .sub-title {
