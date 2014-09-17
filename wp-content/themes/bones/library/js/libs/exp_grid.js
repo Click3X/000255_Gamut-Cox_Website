@@ -348,7 +348,8 @@ jQuery(document).ready(function($) {
 				this.$title = $( '<h2 class="medium-name gothic"></h2>' );
 				this.$emptitle = $( '<h3 class="medium-title gothic"></h3>' );
 				this.$description = $( '<p></p>' );
-				this.$href = $( '<a href="#">Visit website</a>' );
+				// this.$href = $( '<a href="#">Visit website</a>' );
+				this.$href = $( '' );
 				this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$emptitle, this.$description, this.$href );
 				this.$loading = $( '<div class="og-loading"></div>' );
 				this.$fullimage = $( '<div class="og-fullimg"></div>' ).append( this.$loading );
