@@ -45,23 +45,28 @@
 
 			if(get_field('social_media_links', 'options')):
 				// SOCIAL MEDIA LINKS
-				echo '<ul class="social-media-links">';
+				echo '<style>';
 
-								// CHECK FOR LOGO
-								if($clientLogo) {
-									echo '<li class="footer-logo-holder">';
-						    			echo '<img id="footer-logo" class="footer-logo" src="'.$clientLogo.'" alt="logo">';
-						    		echo '</li>';
-						    	}
-								while(has_sub_field('social_media_links', 'options')): ?>
-									
-										<a href="<?php the_sub_field('link'); ?>" title="<?php the_sub_field('title');?>">
-											<div style=""></div>
-											<img src="<?php the_sub_field('hover'); ?>" alt="<?php the_sub_field('title');?>">
-									
-								<?php endwhile;
-								
-							endif; 
+				while(has_sub_field('social_media_links', 'options')):
+					
+					 $icon = get_sub_field('icon');
+					 $hover = get_sub_field('hover');
+
+					 $class = '.'.cleanString(get_sub_field('title'));
+					 // echo '.twiiter {
+					 // 	background-image:url('.$hover.');
+					 // }';
+					 echo $class.' {background-image:url("'.$icon.'"); background-repeat:no-repeat; display:block; width:44px; height:44px; background-size:cover; }'."\n";
+					 // echo $icon . "\n";
+					 // echo $hover. "\n";
+					
+				endwhile;
+
+				echo '</style>';
+				
+			endif;
+
+			wp_reset_postdata();
 
 		?>
 

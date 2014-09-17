@@ -235,4 +235,15 @@ function my_acf_options_page_settings( $settings )
 
 add_filter('acf/options_page/settings', 'my_acf_options_page_settings');
 
+// CLEAN STING FUNCTION FOR FORMATING STRINGS FOR CSS AND JS USE
+function cleanString($string){
+  $search = ' ';
+  $replace = '-';
+  $newString = str_replace($search, $replace, $string);
+  $newString = strtolower($newString);
+
+  return $newString;
+
+}
+
 /* DON'T DELETE THIS CLOSING TAG */ ?>

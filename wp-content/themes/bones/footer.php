@@ -20,7 +20,7 @@
 				    		echo '<div class="wrap cf">';
 
 				    		// SAVE FOOTER LOGO
-				    		$clientLogo = get_field('client_logo', 'options');
+				    		// $clientLogo = get_field('client_logo', 'options');
 					    	
 					    	// SOCIAL MEDIA LINKS
 					    	if(get_field('social_media_links', 'options')):
@@ -28,15 +28,18 @@
 								echo '<ul class="social-media-links">';
 
 								// CHECK FOR LOGO
-								if($clientLogo) {
-									echo '<li class="footer-logo-holder">';
-						    			echo '<img id="footer-logo" class="footer-logo" src="'.$clientLogo.'" alt="logo">';
-						    		echo '</li>';
-						    	}
-								while(has_sub_field('social_media_links', 'options')): ?>
+								// if($clientLogo) {
+								// 	echo '<li class="footer-logo-holder">';
+						  //   			echo '<img id="footer-logo" class="footer-logo" src="'.$clientLogo.'" alt="logo">';
+						  //   		echo '</li>';
+						  //   	}
+								while(has_sub_field('social_media_links', 'options')): 
+									$socialTitle = cleanString(get_sub_field('title'));
+								
+									?>
 									<li class="social">
-										<a href="<?php the_sub_field('link'); ?>" title="<?php the_sub_field('title');?>">
-											<img src="<?php the_sub_field('icon'); ?>" alt="<?php the_sub_field('title');?>">
+										<a href="<?php the_sub_field('link'); ?>" title="<?php the_sub_field('title');?>" class="<?php echo $socialTitle; ?>">
+											<!-- <img src="<?php the_sub_field('icon'); ?>" alt="<?php the_sub_field('title');?>"> -->
 										</a>
 									</li>
 								<?php endwhile;
