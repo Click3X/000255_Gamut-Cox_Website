@@ -186,9 +186,22 @@ h5, .h5 {
 HEADER STYLES
 *********************/
 
+@media(min-width: 811px) {
+	padding-top:62.5px;
+}
+
 .header {
 	background-color: $white;
 	border-bottom: 1px solid $gray;
+
+
+	@media(min-width: 811px) {
+		position: fixed;
+		width: 100%;
+		z-index: 100;
+
+		@include prefix(translateZ, 100);
+	}
 }
 
 #logo {
