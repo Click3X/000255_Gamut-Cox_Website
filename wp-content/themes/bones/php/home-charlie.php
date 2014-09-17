@@ -24,7 +24,7 @@
 	<div id="group2" class="parallax__group small">
 		<div class="home-wrap">
 			<h1><?php echo $gamut_defined_title ?></h1>
-			<div style="margin-left: 10%"><?php echo $gamut_defined_content ?></div>
+			<div style="margin-left: 9%"><?php echo $gamut_defined_content ?></div>
 		</div>
 
 		<div class="parallax__layer parallax__layer--back" style="background-repeat: no-repeat; background-image: url('<?php echo $bg_img['url'] ?>'); background-size: cover;">
@@ -48,7 +48,7 @@
 			<!-- <div class="title">Base Layer</div> -->
 			<div class="home-wrap white">
 				<h1><?php echo $our_solutions_title ?></h1>
-				<div style="margin-left: 10%"><?php echo $our_solutions_content ?></div>
+				<div style="margin-left: 9%"><?php echo $our_solutions_content ?></div>
 			</div>
 		</div>
 	</div>

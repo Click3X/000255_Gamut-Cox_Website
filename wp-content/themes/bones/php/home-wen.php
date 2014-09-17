@@ -15,50 +15,80 @@
 		<div class="gamut-defined-wrapper" style="position: relative; height: 400px; background-repeat: no-repeat; background-image: url('<?php echo $bg_img['url'] ?>'); background-size: cover;">
 			<div class="home-wrap">
 				<h1><?php echo $gamut_defined_title ?></h1>
-				<div style="margin-left: 10%"><?php echo $gamut_defined_content ?></div>
+				<div style="margin-left: 9%"><?php echo $gamut_defined_content ?></div>
 			</div>
 		</div>
 
 		<div class="our-solutions-wrapper" style="position: relative; height: 400px; background-color: #3d3d3d">
 			<div class="home-wrap white">
 				<h1><?php echo $our_solutions_title ?></h1>
-				<div style="margin-left: 10%"><?php echo $our_solutions_content ?></div>
+				<div style="margin-left: 9%"><?php echo $our_solutions_content ?></div>
 			</div>
 		</div>
 
 		<!-- Business Units -->
 		<div class="business-units-container">
 			<!-- Programmatic -->
-			<div class="programmatic-intro-wrapper biz-content-wrapper">
-				<p><?php echo $programmatic_intro_content ?></p>
-				<a href="#">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
-				<div style="display: inline-block; height: 1.5em" class="biz-logo-container"><img id="pro-logo" src="<?php bloginfo('url'); ?>/img/home-logos/programmatic-logo.png"></div>
-				<div class="home-beam-container"><div class="home-beam"></div></div>
-			</div>
+					<div class="subpage-wrapper clearfix">
+						<div class="p-holder">
+							<p class="p"><?php echo $programmatic_intro_content; ?></p>
+						</div>
+						<div class="half blue">
+							<a href="#" class="gamut-btn abs-center">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
+						</div>
+						<div class="half red">
+							<img id="pro-logo" src="<?php bloginfo('url'); ?>/img/home-logos/programmatic-logo.png">
+							<div id="fly-it" class="bg-img programmatic"></div>
+						</div>
+					</div>
 
-			<!-- Reps -->
-			<div class="reps-intro-wrapper biz-content-wrapper">
-				<p><?php echo $reps_intro_content ?></p>
-				<a href="#">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #039fd3;"></span></a>
-				<div style="display: inline-block; height: 1.5em" class="biz-logo-container"><img id="rep-logo" src="<?php bloginfo('url'); ?>/img/home-logos/reps-logo.png"></div>
-				<div class="home-beam-container"><div class="home-beam"></div></div>
-			</div>
 
-			<!-- Reach -->
-			<div class="reach-intro-wrapper biz-content-wrapper">
-				<p><?php echo $reach_intro_content ?></p>
-				<a href="#">LEARN MORE &nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #8134d9;"></span></a>
-				<div style="display: inline-block; height: 1.2em;" class="biz-logo-container"><img id="rea-logo" src="<?php bloginfo('url'); ?>/img/home-logos/reach-logo.png"></div>
-				<div class="home-beam-container"><div class="home-beam"></div></div>
-			</div>
 
-			<!-- CrossMedia -->
-			<div class="crossmedia-intro-wrapper biz-content-wrapper">
-				<p><?php echo $convergence_intro_content ?></p>
-				<a href="#">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #f87f13;"></span></a>
-				<div style="display: inline-block; height: 1.2em;" class="biz-logo-container"><img id="cro-logo" src="<?php bloginfo('url'); ?>/img/home-logos/crossmedia-logo.png"></div>
-				<div class="home-beam-container"><div class="home-beam"></div></div>
-			</div>
+					<!-- Reps -->
+					<div class="subpage-wrapper clearfix">
+						<div class="p-holder">
+							<p class="p"><?php echo $reps_intro_content; ?></p>
+						</div>
+						<div class="half blue">
+							<a href="#" class="gamut-btn abs-center">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
+						</div>
+						<div class="half red">
+							<img id="rep-logo" src="<?php bloginfo('url'); ?>/img/home-logos/reps-logo.png">
+							<div id="fly-it-2" class="bg-img reps"></div>
+						</div>
+					</div>
+
+
+
+					<!-- Reach -->
+					<div class="subpage-wrapper clearfix">
+						<div class="p-holder">
+							<p class="p"><?php echo $reach_intro_content; ?></p>
+						</div>
+						<div class="half blue">
+							<a href="#" class="gamut-btn abs-center">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
+						</div>
+						<div class="half red">
+							<img id="reach-logo" src="<?php bloginfo('url'); ?>/img/home-logos/reach-logo.png">
+							<div id="fly-it-3" class="bg-img reach"></div>
+						</div>
+					</div>
+
+
+					<!-- Cross Media -->
+					<div class="subpage-wrapper clearfix">
+						<div class="p-holder">
+							<p class="p"><?php echo $convergence_intro_content; ?></p>
+						</div>
+						<div class="half blue">
+							<a href="#" class="gamut-btn abs-center">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
+						</div>
+						<div class="half red">
+							<img id="crossmedia-logo" src="<?php bloginfo('url'); ?>/img/home-logos/crossmedia-logo.png">
+							<div id="fly-it-4" class="bg-img crossmedia"></div>
+						</div>
+					</div>
+				</div>
 		</div>
 
 		<!-- Gamut Difference -->

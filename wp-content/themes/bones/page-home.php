@@ -61,7 +61,7 @@
 
 					// include('php/home-charlie.php');
 
-					include('php/charlie-parallax.php');
+					//include('php/charlie-parallax.php');
 
 				?>	
 
