@@ -17,29 +17,19 @@
 
 				    	// LOGO AND SOCIAL LINKS
 				    	echo '<div class="logo-social clearfix">';
-				    		echo '<div class="wrap cf">';
-
-				    		// SAVE FOOTER LOGO
-				    		// $clientLogo = get_field('client_logo', 'options');
+				    		echo '<div class="footer-links-content wrap cf">';
 					    	
 					    	// SOCIAL MEDIA LINKS
 					    	if(get_field('social_media_links', 'options')):
 								// SOCIAL MEDIA LINKS
 								echo '<ul class="social-media-links">';
 
-								// CHECK FOR LOGO
-								// if($clientLogo) {
-								// 	echo '<li class="footer-logo-holder">';
-						  //   			echo '<img id="footer-logo" class="footer-logo" src="'.$clientLogo.'" alt="logo">';
-						  //   		echo '</li>';
-						  //   	}
 								while(has_sub_field('social_media_links', 'options')): 
 									$socialTitle = cleanString(get_sub_field('title'));
-								
+
 									?>
 									<li class="social">
 										<a href="<?php the_sub_field('link'); ?>" title="<?php the_sub_field('title');?>" class="<?php echo $socialTitle; ?>">
-											<!-- <img src="<?php the_sub_field('icon'); ?>" alt="<?php the_sub_field('title');?>"> -->
 										</a>
 									</li>
 								<?php endwhile;
@@ -50,7 +40,7 @@
 
 				    	// CONTACT LINKS
 					    echo '<div class="footer-links">';
-						    	echo '<div class="wrap cf">';
+						    	echo '<div class="footer-links-content wrap cf">';
 						    	// LOCATIONS - CITY & ADDRESS
 								if(get_field('locations', 'options')): ?>
 
@@ -73,14 +63,14 @@
 								// POLICY LINKS - 
 								if(get_field('policy_links', 'options')): ?>
 									
-									<ul class="client-info policy-links">
+									
 
 									<?php 
 									if($careers) {
-										echo '<li class="career-button"><a href="'.$careers.'" id="careers-link">Careers&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #eb0a8e;"></span></a></li>';
-										// echo '<li class="career-button"><a href="'.$careers.'" id="careers-link" class="careers-link">Careers</a></li>';
-									}
-									?>
+										echo '<ul class="client-info career-button"><li><a href="'.$careers.'" id="careers-link">Careers&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #eb0a8e;"></span></a></li></ul>';
+									}?>
+
+									<ul class="client-info policy-links">
 									
 									<?php // EACH LOCATION ('City-Address combo') GETS ITS OWN UL
 										while(has_sub_field('policy_links', 'options')): ?>

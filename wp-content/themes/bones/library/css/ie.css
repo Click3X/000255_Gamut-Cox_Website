@@ -376,6 +376,11 @@ CUSTOM STYLES
   width: 40%;
 }
 
+/* line 299, ../scss/breakpoints/_768up.scss */
+.footer-links-content {
+  width: 70%;
+}
+
 /******************************************************************
 Site Name:
 Author:
@@ -399,6 +404,11 @@ be seen on the Desktop.
 /* line 21, ../scss/breakpoints/_1030up.scss */
 .lower-contact li {
   width: 27%;
+}
+
+/* line 25, ../scss/breakpoints/_1030up.scss */
+.footer-links-content {
+  width: 70%;
 }
 
 /*

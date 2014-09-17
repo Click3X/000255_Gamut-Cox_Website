@@ -1,11 +1,13 @@
 .client-info {
-	// display: inline-block;
-	display: block;
-	float:left;
-	margin-right: 6em;
+	display: inline-block;
+	// display: block;
+	// float:left;
+	margin-right: 3em;
 	position: relative;
 	letter-spacing: .1em;
 	font-size: .91em;
+	vertical-align: top;
+	//border-right: 1px solid $light-grey;
 }
 
 .headline {
@@ -15,15 +17,14 @@
 
 .copy {
 	margin-top: .6em;
-	line-height: 1.6em;
+	line-height: 1.5em;
 	font-size: .91em;
 }
 
 .career-button {
 	position: relative;
 	text-align: center;
-	// margin-bottom: 40px;
-	margin-bottom: 1.9em;
+	margin-right: 6em;
 
 	a {
 		display:block;
@@ -35,7 +36,7 @@
 		text-align: center;
 		background-color: #323944;
 		text-decoration: none;
-		padding: 8px 15px;
+		padding: 10px 35px;
 		-webkit-transition: all 0.2s;
 		transition: all 0.2s;
 
@@ -111,4 +112,8 @@
 
 #policy-links:hover {
 	color: $brand-color;
+}
+
+.address {
+	color: $light-grey;
 }

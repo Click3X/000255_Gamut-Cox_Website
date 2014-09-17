@@ -2847,89 +2847,94 @@ hr {
   .sub-page-content-wrapper {
     margin-top: 0px;
   }
+
+  /* line 497, ../scss/partials/_custom.scss */
+  .footer-links-content {
+    width: 80%;
+  }
 }
 @media (max-width: 500px) {
-  /* line 503, ../scss/partials/_custom.scss */
+  /* line 507, ../scss/partials/_custom.scss */
   .our-solutions-list img {
     height: 2.5em;
   }
 }
-/* line 509, ../scss/partials/_custom.scss */
+/* line 513, ../scss/partials/_custom.scss */
 .first-p-text {
   font-weight: 500;
   max-width: 26em;
   line-height: 1.45em;
 }
 
-/* line 515, ../scss/partials/_custom.scss */
+/* line 519, ../scss/partials/_custom.scss */
 .secondary li.page_item {
   line-height: 2.2em;
   font-size: .85em;
 }
-/* line 519, ../scss/partials/_custom.scss */
+/* line 523, ../scss/partials/_custom.scss */
 .secondary li.page_item a {
   color: #626262;
 }
-/* line 523, ../scss/partials/_custom.scss */
+/* line 527, ../scss/partials/_custom.scss */
 .secondary li.page_item a:hover {
   color: #ed228b;
 }
 
-/* line 528, ../scss/partials/_custom.scss */
+/* line 532, ../scss/partials/_custom.scss */
 .contact-container h2 {
   padding: .65em 0;
 }
 
-/* line 533, ../scss/partials/_custom.scss */
+/* line 537, ../scss/partials/_custom.scss */
 .contact-container hr + h3 {
   margin-top: 3.4em;
 }
-/* line 537, ../scss/partials/_custom.scss */
+/* line 541, ../scss/partials/_custom.scss */
 .contact-container .address p {
   margin: .5em 0 1.5em;
   font-size: .87em;
   line-height: 1.5em;
 }
 
-/* line 544, ../scss/partials/_custom.scss */
+/* line 548, ../scss/partials/_custom.scss */
 .sub-title {
   text-transform: lowercase;
 }
-/* line 546, ../scss/partials/_custom.scss */
+/* line 550, ../scss/partials/_custom.scss */
 .sub-title:first-letter {
   text-transform: uppercase;
 }
 
 /* line 1, ../scss/partials/_footer.scss */
 .client-info {
-  display: block;
-  float: left;
-  margin-right: 6em;
+  display: inline-block;
+  margin-right: 3em;
   position: relative;
   letter-spacing: .1em;
   font-size: .91em;
+  vertical-align: top;
 }
 
-/* line 11, ../scss/partials/_footer.scss */
+/* line 13, ../scss/partials/_footer.scss */
 .headline {
   text-transform: uppercase;
   font-weight: 500;
 }
 
-/* line 16, ../scss/partials/_footer.scss */
+/* line 18, ../scss/partials/_footer.scss */
 .copy {
   margin-top: .6em;
-  line-height: 1.6em;
+  line-height: 1.5em;
   font-size: .91em;
 }
 
-/* line 22, ../scss/partials/_footer.scss */
+/* line 24, ../scss/partials/_footer.scss */
 .career-button {
   position: relative;
   text-align: center;
-  margin-bottom: 1.9em;
+  margin-right: 6em;
 }
-/* line 28, ../scss/partials/_footer.scss */
+/* line 29, ../scss/partials/_footer.scss */
 .career-button a {
   display: block;
   text-transform: uppercase;
@@ -2939,26 +2944,26 @@ hr {
   text-align: center;
   background-color: #323944;
   text-decoration: none;
-  padding: 8px 15px;
+  padding: 10px 35px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-/* line 42, ../scss/partials/_footer.scss */
+/* line 43, ../scss/partials/_footer.scss */
 .career-button a:hover {
   background-color: #ed228b;
 }
-/* line 44, ../scss/partials/_footer.scss */
+/* line 45, ../scss/partials/_footer.scss */
 .career-button a:hover .arrow-right {
   border-left: 6px solid white !important;
 }
-/* line 50, ../scss/partials/_footer.scss */
+/* line 51, ../scss/partials/_footer.scss */
 .career-button .careers-link {
   text-transform: uppercase;
   color: white;
   background-color: #3d3d3d;
   display: block;
 }
-/* line 56, ../scss/partials/_footer.scss */
+/* line 57, ../scss/partials/_footer.scss */
 .career-button .careers-link:after {
   content: "";
   display: block;
@@ -2973,49 +2978,54 @@ hr {
   border-top: 5px solid transparent;
 }
 
-/* line 78, ../scss/partials/_footer.scss */
+/* line 79, ../scss/partials/_footer.scss */
 .footer-logo-holder,
 .social-media-links,
 .social {
   display: inline-block;
 }
 
-/* line 82, ../scss/partials/_footer.scss */
+/* line 83, ../scss/partials/_footer.scss */
 .social {
   margin: .5rem;
 }
 
-/* line 86, ../scss/partials/_footer.scss */
+/* line 87, ../scss/partials/_footer.scss */
 .footer {
   background-color: #3d3d3d;
 }
 
-/* line 90, ../scss/partials/_footer.scss */
+/* line 91, ../scss/partials/_footer.scss */
 .footer-links {
   background-color: #000000;
   padding-top: 90px;
   padding-bottom: 90px;
 }
 
-/* line 97, ../scss/partials/_footer.scss */
+/* line 98, ../scss/partials/_footer.scss */
 .inner-footer {
   padding-bottom: 40px;
 }
 
-/* line 101, ../scss/partials/_footer.scss */
+/* line 102, ../scss/partials/_footer.scss */
 #policy-links {
   color: white;
 }
 
-/* line 106, ../scss/partials/_footer.scss */
+/* line 107, ../scss/partials/_footer.scss */
 .policy-links > .copy {
   margin-top: 0;
   font-weight: 500;
 }
 
-/* line 112, ../scss/partials/_footer.scss */
+/* line 113, ../scss/partials/_footer.scss */
 #policy-links:hover {
   color: #ed228b;
+}
+
+/* line 117, ../scss/partials/_footer.scss */
+.address {
+  color: #bdbdbd;
 }
 
 /* General Demo Style */
@@ -3739,6 +3749,11 @@ you can add resource intensive styles.
   .lower-contact li {
     width: 40%;
   }
+
+  /* line 299, ../scss/breakpoints/_768up.scss */
+  .footer-links-content {
+    width: 70%;
+  }
 }
 /*********************
 DESKTOP
@@ -3771,6 +3786,11 @@ you can add resource intensive styles.
   .lower-contact li {
     width: 27%;
   }
+
+  /* line 25, ../scss/breakpoints/_1030up.scss */
+  .footer-links-content {
+    width: 70%;
+  }
 }
 /*********************
 LARGE VIEWING SIZE
@@ -3790,6 +3810,11 @@ This is for the larger monitors and possibly full screen viewers.
   /* line 12, ../scss/breakpoints/_1240up.scss */
   .wrap {
     width: 1200px;
+  }
+
+  /* line 17, ../scss/breakpoints/_1240up.scss */
+  .footer-links-content {
+    width: 70%;
   }
 }
 /*********************
