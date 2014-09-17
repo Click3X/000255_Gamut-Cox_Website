@@ -55,6 +55,7 @@
 								while(has_sub_field('social_media_links', 'options')): ?>
 									
 										<a href="<?php the_sub_field('link'); ?>" title="<?php the_sub_field('title');?>">
+											<div style=""></div>
 											<img src="<?php the_sub_field('hover'); ?>" alt="<?php the_sub_field('title');?>">
 									
 								<?php endwhile;
