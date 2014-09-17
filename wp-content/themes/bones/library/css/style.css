@@ -3750,6 +3750,28 @@ a {
   max-width: none;
 }
 
+/* line 254, ../scss/partials/_home_addons.scss */
+.difference {
+  margin-left: 11%;
+}
+/* line 256, ../scss/partials/_home_addons.scss */
+.difference p {
+  max-width: 38.5em;
+  margin-bottom: 1em;
+}
+
+/* line 262, ../scss/partials/_home_addons.scss */
+.diff {
+  margin-left: 11%;
+}
+
+/* line 266, ../scss/partials/_home_addons.scss */
+.grey-bg-box {
+  position: relative;
+  background-color: #3d3d3d;
+  height: 600px;
+}
+
 /* line 6, ../scss/partials/_sidebar.scss */
 .page-id-45 .page-item-48 a,
 .current_page_item a,

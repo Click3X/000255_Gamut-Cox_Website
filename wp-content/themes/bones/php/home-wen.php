@@ -4,10 +4,10 @@
 		<div id="homeSliderContainer">
 			<div id="home-slider">
 				<div id="bg">
-					<img src=""/>
+					<!-- <img src=""/> -->
 				</div>
 				<div id="fg">
-					<img src="<?php bloginfo('url'); ?>/img/fg-long copy2.png"/>
+					<img src="<?php bloginfo('url'); ?>/img/fg-long-copy2.png" alt="slide">
 				</div> 
 			</div>
 		</div>
@@ -37,7 +37,7 @@
 							<a href="#" class="gamut-btn abs-center">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
 						</div>
 						<div class="half red">
-							<img id="pro-logo" src="<?php bloginfo('url'); ?>/img/home-logos/programmatic-logo.png">
+							<img id="pro-logo" src="<?php bloginfo('url'); ?>/img/home-logos/programmatic-logo.png" alt="programmatic">
 							<div id="fly-it" class="bg-img programmatic"></div>
 						</div>
 					</div>
@@ -53,7 +53,7 @@
 							<a href="#" class="gamut-btn abs-center">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
 						</div>
 						<div class="half red">
-							<img id="rep-logo" src="<?php bloginfo('url'); ?>/img/home-logos/reps-logo.png">
+							<img id="rep-logo" src="<?php bloginfo('url'); ?>/img/home-logos/reps-logo.png" alt="reps">
 							<div id="fly-it-2" class="bg-img reps"></div>
 						</div>
 					</div>
@@ -69,7 +69,7 @@
 							<a href="#" class="gamut-btn abs-center">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
 						</div>
 						<div class="half red">
-							<img id="reach-logo" src="<?php bloginfo('url'); ?>/img/home-logos/reach-logo.png">
+							<img id="reach-logo" src="<?php bloginfo('url'); ?>/img/home-logos/reach-logo.png" alt="reach">
 							<div id="fly-it-3" class="bg-img reach"></div>
 						</div>
 					</div>
@@ -84,18 +84,19 @@
 							<a href="#" class="gamut-btn abs-center">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
 						</div>
 						<div class="half red">
-							<img id="crossmedia-logo" src="<?php bloginfo('url'); ?>/img/home-logos/crossmedia-logo.png">
+							<img id="crossmedia-logo" src="<?php bloginfo('url'); ?>/img/home-logos/crossmedia-logo.png" alt="crossmedia">
 							<div id="fly-it-4" class="bg-img crossmedia"></div>
 						</div>
 					</div>
 				</div>
-		</div>
+		<!-- </div> -->
 
 		<!-- Gamut Difference -->
-		<div class="our-solutions-wrapper" style="position: relative; height: 400px; background-color: #3d3d3d">
+		<div class="our-solutions-wrapper grey-bg-box">
 			<div class="home-wrap white">
 				<h1><?php echo $gamut_difference_title ?></h1>
-				<div style="margin-left: 10%"><?php echo $gamut_difference_content ?></div>
+				<div class="difference"><?php echo $gamut_difference_content ?></div>
+				<a href="#" class="gamut-btn diff">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
 			</div>
 		</div>
 			
@@ -104,8 +105,9 @@
 			<!-- image container -->
 			<div style="height: 0; width: 50%; padding-bottom: 40%; float: left; background-image:url('<?php echo $smart_service_image['url'] ?>'); background-size: cover; display: inline-block"></div>
 			<div style="width: 450px; float: left; margin-left: 8%; padding-top: 10%;">
-				<img src="<?php bloginfo('url'); ?>/img/plus-sign.png" style="display: inline-block; width: 30px; height: 30px; vertical-align: middle; margin-right: 10px"><h1 style="display: inline-block;"> <?php echo $smart_service_title ?></h1>
-				<p style=""><?php echo $smart_service_content ?></p>
+				<img src="<?php bloginfo('url'); ?>/img/plus-sign.png" style="display: inline-block; width: 30px; height: 30px; vertical-align: middle; margin-right: 10px" alt="plus">
+				<h1 style="display: inline-block;"> <?php echo $smart_service_title ?></h1>
+				<?php echo $smart_service_content ?>
 			</div>
 		</div>
 
@@ -115,7 +117,7 @@
 		<div class="careers-wrapper" style="height: 500px; background-color: #f8f8ef">
 			<div style="width: 450px; float: left; margin-left: 8%; padding-top: 10%;">
 				<h1><?php echo $careers_title ?></h1>
-				<p style=""><?php echo $careers_content ?></p>
+				<?php echo $careers_content ?>
 			</div>
 			<!-- image container -->
 			<div style="height: 500px; width: 40%; float: right; background-image:url('<?php echo $careers_image['url'] ?>'); background-size: cover; display: inline-block"></div>

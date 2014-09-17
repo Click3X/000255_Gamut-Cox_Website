@@ -97,7 +97,7 @@
 					<?php // bloginfo('description'); ?>
 					
 
-					<nav id="main-nav" class="main-nav" role="navigation clearfix header-nav">
+					<nav id="main-nav" class="main-nav clearfix" role="navigation">
 					<?php wp_nav_menu(array(
 	    					'container' => false,                           // remove nav container
 	    					'container_class' => 'menu cf',                 // class of container (should you choose to use it)
