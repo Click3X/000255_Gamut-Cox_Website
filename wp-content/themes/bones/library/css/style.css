@@ -1740,7 +1740,6 @@ and more scalable.
   color: #323944;
   text-decoration: none;
   padding: 0.75em;
-  font-family: 'Sentinel Medium';
   /*
   remember this is for mobile ONLY, so there's no need
   to even declare hover styles here, you can do it in
@@ -1821,10 +1820,6 @@ POSTS & CONTENT STYLES
   but it's up to you. Feel free to change it up.
   */
 }
-/* line 380, ../scss/breakpoints/_base.scss */
-.entry-content p {
-  margin: 0 0 1.5em;
-}
 /* line 406, ../scss/breakpoints/_base.scss */
 .entry-content table {
   width: 100%;
@@ -1883,7 +1878,6 @@ POSTS & CONTENT STYLES
 }
 /* line 469, ../scss/breakpoints/_base.scss */
 .entry-content img {
-  margin: 0 0 1.5em 0;
   max-width: 100%;
   height: auto;
 }
