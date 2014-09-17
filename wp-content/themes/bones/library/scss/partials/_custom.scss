@@ -519,6 +519,10 @@ hr {
   a {
     color:  rgb(98,98,98);
   }
+
+  a:hover {
+    color: $brand-color;
+  }
 }
 
 .contact-container h2 {

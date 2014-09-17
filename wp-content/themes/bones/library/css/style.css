@@ -2870,28 +2870,32 @@ hr {
 .secondary li.page_item a {
   color: #626262;
 }
+/* line 523, ../scss/partials/_custom.scss */
+.secondary li.page_item a:hover {
+  color: #ed228b;
+}
 
-/* line 524, ../scss/partials/_custom.scss */
+/* line 528, ../scss/partials/_custom.scss */
 .contact-container h2 {
   padding: .65em 0;
 }
 
-/* line 529, ../scss/partials/_custom.scss */
+/* line 533, ../scss/partials/_custom.scss */
 .contact-container hr + h3 {
   margin-top: 3.4em;
 }
-/* line 533, ../scss/partials/_custom.scss */
+/* line 537, ../scss/partials/_custom.scss */
 .contact-container .address p {
   margin: .5em 0 1.5em;
   font-size: .87em;
   line-height: 1.5em;
 }
 
-/* line 540, ../scss/partials/_custom.scss */
+/* line 544, ../scss/partials/_custom.scss */
 .sub-title {
   text-transform: lowercase;
 }
-/* line 542, ../scss/partials/_custom.scss */
+/* line 546, ../scss/partials/_custom.scss */
 .sub-title:first-letter {
   text-transform: uppercase;
 }
@@ -2900,7 +2904,7 @@ hr {
 .client-info {
   display: block;
   float: left;
-  margin-right: 3rem;
+  margin-right: 6em;
   position: relative;
   letter-spacing: .1em;
   font-size: .91em;
@@ -3438,7 +3442,7 @@ a {
 .page-id-45 .page-item-48 a,
 .current_page_item a,
 .sidebar-selected a {
-  color: #ed228b;
+  color: #ed228b !important;
 }
 
 /*********************
