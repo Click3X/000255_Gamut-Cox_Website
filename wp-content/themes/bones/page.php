@@ -19,18 +19,13 @@
 
 						<?php get_sidebar(); ?>
 
-						
-
 						<div id="main" class="m-all t-2of3 d-5of7 cf" role="main">
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
-								
-
 								<section class="entry-content cf" itemprop="articleBody">
-
 
 									<div class="sub-page-content-wrapper" style="">
 										<?php echo $sub_page_title 
