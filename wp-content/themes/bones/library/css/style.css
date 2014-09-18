@@ -3993,6 +3993,17 @@ a {
   width: 100%;
 }
 
+@media (min-width: 811px) {
+  /* line 457, ../scss/partials/_home_addons.scss */
+  body #container {
+    padding-top: 62.5px;
+  }
+
+  /* line 460, ../scss/partials/_home_addons.scss */
+  .header {
+    top: 0px;
+  }
+}
 /* line 6, ../scss/partials/_sidebar.scss */
 .page-id-45 .page-item-48 a,
 .current_page_item a,

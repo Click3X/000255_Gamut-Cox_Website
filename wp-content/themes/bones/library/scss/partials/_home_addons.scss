@@ -451,3 +451,13 @@
 .home #inner-content {
 	width:100%;
 }
+
+
+@media (min-width: 811px) {
+	body #container {
+		padding-top:62.5px;
+	}
+	.header {
+		top:0px;
+	}
+	}
