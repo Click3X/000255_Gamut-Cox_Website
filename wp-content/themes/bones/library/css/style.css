@@ -3983,6 +3983,16 @@ a {
   }
 }
 
+/* line 447, ../scss/partials/_home_addons.scss */
+.home #content {
+  overflow-x: hidden;
+}
+
+/* line 451, ../scss/partials/_home_addons.scss */
+.home #inner-content {
+  width: 100%;
+}
+
 /* line 6, ../scss/partials/_sidebar.scss */
 .page-id-45 .page-item-48 a,
 .current_page_item a,
