@@ -65,6 +65,12 @@ get_header(); ?>
 
 								$args = array(
 									'post_type' => 'team_members'
+									// 'tax_query' => array(
+					    //                array(
+					    //                     'taxonomy' => 'operations',
+					    //                     // 'term' => 'operations'
+					    //                     )
+					    //             ),
 								);
 																// The Query
 								$query1 = new WP_Query( $args );
@@ -86,7 +92,25 @@ get_header(); ?>
 								 */
 								wp_reset_postdata();
 
+								
 
+								// insert tabs first
+								// insert contact forms
+								echo do_shortcode('[tabby title="General"]
+
+								[contact-form-7 id="284" title="General"]
+
+								[tabby title="Advertisers"]
+
+								[contact-form-7 id="285" title="Advertisers"]
+
+								[tabby title="Publishers"]
+
+								[contact-form-7 id="286" title="Publishers"]
+								[tabbyending]');
+
+
+								
 
 								// $args = array(
 								// 	'post_type' => 'custom_post_type',
