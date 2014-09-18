@@ -6,10 +6,14 @@
 // 	);
 
 // $the_query = new WP_Query( $args );
-
+$header = get_field('header-image');
 ?>
 
 			<div id="content">
+
+				<header class="article-header">
+					<div class="page-header" style="background-image: url('<?php echo $header['url'] ?>')"></div>
+				</header>
 
 				<div id="inner-content" class="wrap cf">
 
