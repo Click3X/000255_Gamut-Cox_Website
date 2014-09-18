@@ -59,9 +59,8 @@
 					// WEN'S HOME PAGE FILE
 					include('php/home-wen.php');
 
-					// include('php/home-charlie.php');
 
-					//include('php/charlie-parallax.php');
+					// include('php/parallax.php');
 
 				?>	
 
