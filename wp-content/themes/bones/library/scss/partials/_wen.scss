@@ -1,0 +1,117 @@
+.mail-link {
+	color: $brand-color !important;
+}
+
+.small-title {
+	font-weight: 400;
+}
+
+form {
+
+	input {
+		display: inline;
+		
+	}
+
+	input, textarea {
+		@include transition(all 0.3s ease-in-out);
+		outline: none;
+		font-family: "franklin-gothic-urw",sans-serif !important;
+	}
+
+	::-webkit-input-placeholder, ::-webkit-textarea-placeholder {
+		color: $black;
+		font-weight: 500;
+		text-transform: uppercase;
+	}
+
+	:-moz-placeholder { /* Firefox 18- */
+   		color: $black;
+		font-weight: 500;
+		text-transform: uppercase;
+	}
+
+	::-moz-placeholder {  /* Firefox 19+ */
+	   color: $black;
+		font-weight: 500;
+		text-transform: uppercase;
+	}
+
+	:-ms-input-placeholder {  
+	   color: $black;
+		font-weight: 500;
+		text-transform: uppercase;
+	}
+
+	input:focus, textarea:focus {
+		  box-shadow: 0 0 5px $brand-color;
+		  border: 1px solid $brand-color;
+}
+
+	div {
+		display: inline-block;
+		padding: 10px 10px;
+		color: $black;
+		font-weight: 500;
+		text-transform: uppercase;
+	}
+
+	.full-width {
+		width: 100%;
+	}
+
+	input[type="text"], input[type="email"], input[type="tel"], input[type="url"], textarea {
+		background-color: $white;
+		border: 1px solid $light-grey;
+		border-radius: 0;
+	}
+
+	textarea {
+		resize: none;
+	}
+
+	input[type="radio"] {
+		margin-right: 8px;
+	}
+
+	label {
+		margin-right: 20px;
+	}
+	
+}
+
+.general {
+	float: right;
+}
+
+.wpcf7-captchac {
+	padding-top: 10px;
+}
+
+.form-submit {
+	float: right;
+
+
+	input[type=submit] {
+		color: white;
+		white-space: nowrap;
+		text-align: center;
+		background-color: #323944;
+		text-decoration: none;
+		padding: 10px 35px;
+		-webkit-transition: all 0.2s;
+		transition: all 0.2s;
+		border:0 none;
+		width: 100%;
+
+		&:hover {
+			background-color: $brand-color;
+		}
+	}
+}
+
+@media(max-width: 560px) {
+    .wpcf7-list-item {
+    	display: block;
+    }
+}
