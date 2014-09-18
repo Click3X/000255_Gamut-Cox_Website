@@ -3516,11 +3516,15 @@ a {
   font-weight: 500;
 }
 /* line 70, ../scss/partials/_home_addons.scss */
+.page-id-107 .entry-content .subpage-wrapper {
+  min-height: 250px;
+}
+/* line 72, ../scss/partials/_home_addons.scss */
 .page-id-107 .entry-content .subpage-wrapper p {
   margin: 0 0 .5em;
 }
 
-/* line 82, ../scss/partials/_home_addons.scss */
+/* line 85, ../scss/partials/_home_addons.scss */
 .abs-center {
   position: absolute;
   top: 0;
@@ -3530,12 +3534,12 @@ a {
   margin: auto;
 }
 
-/* line 88, ../scss/partials/_home_addons.scss */
+/* line 91, ../scss/partials/_home_addons.scss */
 .subpage-container {
   margin-bottom: 1em;
 }
 
-/* line 92, ../scss/partials/_home_addons.scss */
+/* line 95, ../scss/partials/_home_addons.scss */
 .subpage-wrapper {
   position: relative;
   height: auto;
@@ -3546,18 +3550,18 @@ a {
   border-bottom: 2px dashed #d8d8d8;
 }
 @media (min-width: 1348px) {
-  /* line 92, ../scss/partials/_home_addons.scss */
+  /* line 95, ../scss/partials/_home_addons.scss */
   .subpage-wrapper {
     padding-top: 130px;
     padding-bottom: 90px;
   }
 }
-/* line 108, ../scss/partials/_home_addons.scss */
+/* line 111, ../scss/partials/_home_addons.scss */
 .subpage-wrapper:last-of-type {
   border-bottom: 0;
 }
 
-/* line 114, ../scss/partials/_home_addons.scss */
+/* line 117, ../scss/partials/_home_addons.scss */
 .subpage-wrapper .gamut-btn,
 .gamut-btn {
   display: inline-block;
@@ -3578,7 +3582,7 @@ a {
   transition: all 200ms;
 }
 
-/* line 134, ../scss/partials/_home_addons.scss */
+/* line 137, ../scss/partials/_home_addons.scss */
 .half {
   float: left;
   height: auto;
@@ -3588,18 +3592,18 @@ a {
   padding-bottom: 8%;
 }
 @media (min-width: 1348px) {
-  /* line 134, ../scss/partials/_home_addons.scss */
+  /* line 137, ../scss/partials/_home_addons.scss */
   .half {
     padding-bottom: 88px;
   }
 }
 
-/* line 148, ../scss/partials/_home_addons.scss */
+/* line 151, ../scss/partials/_home_addons.scss */
 .blue {
   width: 42%;
   text-align: right;
 }
-/* line 153, ../scss/partials/_home_addons.scss */
+/* line 156, ../scss/partials/_home_addons.scss */
 .blue .gamut-btn {
   position: absolute;
   right: 2em;
@@ -3610,14 +3614,14 @@ a {
   margin: auto;
 }
 
-/* line 161, ../scss/partials/_home_addons.scss */
+/* line 164, ../scss/partials/_home_addons.scss */
 .red {
   width: 58%;
   max-width: 768px;
   text-align: left;
 }
 
-/* line 170, ../scss/partials/_home_addons.scss */
+/* line 173, ../scss/partials/_home_addons.scss */
 #crossmedia-logo,
 #rep-logo,
 #reach-logo,
@@ -3630,27 +3634,27 @@ a {
   margin: auto;
 }
 
-/* line 176, ../scss/partials/_home_addons.scss */
+/* line 179, ../scss/partials/_home_addons.scss */
 #pro-logo {
   max-width: 71.1608%;
 }
 
-/* line 177, ../scss/partials/_home_addons.scss */
+/* line 180, ../scss/partials/_home_addons.scss */
 #rep-logo {
   max-width: 25.39%;
 }
 
-/* line 178, ../scss/partials/_home_addons.scss */
+/* line 181, ../scss/partials/_home_addons.scss */
 #reach-logo {
   max-width: 30.73%;
 }
 
-/* line 179, ../scss/partials/_home_addons.scss */
+/* line 182, ../scss/partials/_home_addons.scss */
 #crossmedia-logo {
   max-width: 58.984%;
 }
 
-/* line 182, ../scss/partials/_home_addons.scss */
+/* line 185, ../scss/partials/_home_addons.scss */
 .bg-img {
   background-repeat: no-repeat;
   background-size: cover;
@@ -3664,13 +3668,13 @@ a {
   transform-origin: 100%;
 }
 
-/* line 191, ../scss/partials/_home_addons.scss */
+/* line 194, ../scss/partials/_home_addons.scss */
 .p-holder {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* line 197, ../scss/partials/_home_addons.scss */
+/* line 200, ../scss/partials/_home_addons.scss */
 .p {
   font-size: 1.1em;
   line-height: 1.4em;
@@ -3680,13 +3684,13 @@ a {
   margin-bottom: .7em;
 }
 @media (min-width: 600px) {
-  /* line 197, ../scss/partials/_home_addons.scss */
+  /* line 200, ../scss/partials/_home_addons.scss */
   .p {
     font-size: 1.5em;
   }
 }
 
-/* line 214, ../scss/partials/_home_addons.scss */
+/* line 217, ../scss/partials/_home_addons.scss */
 .programmatic,
 .crossmedia,
 .reach,
@@ -3700,76 +3704,283 @@ a {
   bottom: 0px;
 }
 
-/* line 223, ../scss/partials/_home_addons.scss */
+/* line 226, ../scss/partials/_home_addons.scss */
 .programmatic {
   background-image: url("../../../../../img/home-beams/programmatic-beam.png");
 }
 
-/* line 224, ../scss/partials/_home_addons.scss */
+/* line 227, ../scss/partials/_home_addons.scss */
 .crossmedia {
   background-image: url("../../../../../img/home-beams/crossmedia-beam.png");
 }
 
-/* line 225, ../scss/partials/_home_addons.scss */
+/* line 228, ../scss/partials/_home_addons.scss */
 .reach {
   background-image: url("../../../../../img/home-beams/reach-beam.png");
 }
 
-/* line 226, ../scss/partials/_home_addons.scss */
+/* line 229, ../scss/partials/_home_addons.scss */
 .reps {
   background-image: url("../../../../../img/home-beams/reps-beam.png");
 }
 
-/* line 229, ../scss/partials/_home_addons.scss */
+/* line 232, ../scss/partials/_home_addons.scss */
 #fly-it {
   right: -60%;
 }
 
-/* line 233, ../scss/partials/_home_addons.scss */
+/* line 236, ../scss/partials/_home_addons.scss */
 #fly-it-2 {
   right: -14%;
   top: -36%;
 }
 
-/* line 237, ../scss/partials/_home_addons.scss */
+/* line 240, ../scss/partials/_home_addons.scss */
 #fly-it-3 {
   right: -19.6%;
   top: -15%;
 }
 
-/* line 241, ../scss/partials/_home_addons.scss */
+/* line 244, ../scss/partials/_home_addons.scss */
 #fly-it-4 {
   right: -48%;
   top: -14%;
 }
 
-/* line 248, ../scss/partials/_home_addons.scss */
+/* line 251, ../scss/partials/_home_addons.scss */
 .charles-home #homeSliderContainer {
   background-color: #ffffff;
   width: 100%;
   max-width: none;
 }
 
-/* line 255, ../scss/partials/_home_addons.scss */
+/* line 258, ../scss/partials/_home_addons.scss */
 .difference {
   margin-left: 11%;
 }
-/* line 257, ../scss/partials/_home_addons.scss */
+/* line 260, ../scss/partials/_home_addons.scss */
 .difference p {
   max-width: 38.5em;
   margin-bottom: 1em;
 }
 
-/* line 263, ../scss/partials/_home_addons.scss */
+/* line 266, ../scss/partials/_home_addons.scss */
 .diff {
   margin-left: 11%;
 }
 
-/* line 267, ../scss/partials/_home_addons.scss */
+/* line 272, ../scss/partials/_home_addons.scss */
+#content {
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* line 277, ../scss/partials/_home_addons.scss */
+.bg-i {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 284, ../scss/partials/_home_addons.scss */
+.smart-copy {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+@media (min-width: 768px) {
+  /* line 284, ../scss/partials/_home_addons.scss */
+  .smart-copy {
+    float: right;
+    width: 50%;
+  }
+}
+
+/* line 295, ../scss/partials/_home_addons.scss */
+.copy-holder {
+  max-width: 800px;
+  float: left;
+  margin-left: 8%;
+  margin-top: 20%;
+}
+@media (min-width: 1600px) {
+  /* line 295, ../scss/partials/_home_addons.scss */
+  .copy-holder {
+    margin-top: 160px;
+    margin-left: 64px;
+  }
+}
+/* line 306, ../scss/partials/_home_addons.scss */
+.copy-holder h1 {
+  display: block;
+  float: left;
+  font-size: 4.5em;
+}
+/* line 312, ../scss/partials/_home_addons.scss */
+.copy-holder p {
+  max-width: 22em;
+}
+/* line 316, ../scss/partials/_home_addons.scss */
+.copy-holder img {
+  width: 48px;
+  height: 49px;
+  display: block;
+  margin-top: 3.8em;
+  margin-right: 1em;
+  float: left;
+}
+
+/* line 327, ../scss/partials/_home_addons.scss */
+.career-copy-c {
+  width: 90%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  /* line 327, ../scss/partials/_home_addons.scss */
+  .career-copy-c {
+    width: 60%;
+    float: left;
+  }
+}
+/* line 336, ../scss/partials/_home_addons.scss */
+.career-copy-c p {
+  max-width: 21em;
+  font-size: 1.5em;
+  line-height: 1.2em;
+  letter-spacing: .03em;
+}
+
+/* line 344, ../scss/partials/_home_addons.scss */
+.smart-pic {
+  height: auto;
+  width: 100%;
+  float: left;
+  background-size: cover;
+  padding-bottom: 41.54%;
+}
+@media (min-width: 768px) {
+  /* line 344, ../scss/partials/_home_addons.scss */
+  .smart-pic {
+    width: 50%;
+  }
+}
+@media (min-width: 1600px) {
+  /* line 344, ../scss/partials/_home_addons.scss */
+  .smart-pic {
+    padding-bottom: 644px;
+  }
+}
+
+/* line 363, ../scss/partials/_home_addons.scss */
+.career-pic-c {
+  height: auto;
+  background-size: cover;
+  float: left;
+  width: 100%;
+  padding-bottom: 41.54%;
+  min-height: 340px;
+}
+@media (min-width: 768px) {
+  /* line 363, ../scss/partials/_home_addons.scss */
+  .career-pic-c {
+    width: 40%;
+  }
+}
+@media (min-width: 1600px) {
+  /* line 363, ../scss/partials/_home_addons.scss */
+  .career-pic-c {
+    padding-bottom: 644px;
+  }
+}
+
+/* line 380, ../scss/partials/_home_addons.scss */
+.defined-pic {
+  padding-bottom: 37.5%;
+  min-height: 340px;
+}
+@media (min-width: 1600px) {
+  /* line 380, ../scss/partials/_home_addons.scss */
+  .defined-pic {
+    padding-bottom: 600px;
+  }
+}
+
+/* line 389, ../scss/partials/_home_addons.scss */
+.h-slider-pic {
+  padding-bottom: 55.5%;
+  min-height: 340px;
+}
+@media (min-width: 1600px) {
+  /* line 389, ../scss/partials/_home_addons.scss */
+  .h-slider-pic {
+    padding-bottom: 887px;
+  }
+}
+
+/* line 398, ../scss/partials/_home_addons.scss */
+.our-sol-pic {
+  position: relative;
+  background-color: #3d3d3d;
+  min-height: 440px;
+  padding-bottom: 32.75%;
+}
+@media (min-width: 1600px) {
+  /* line 398, ../scss/partials/_home_addons.scss */
+  .our-sol-pic {
+    padding-bottom: 524px;
+  }
+}
+
+/* line 407, ../scss/partials/_home_addons.scss */
 .grey-bg-box {
   position: relative;
   background-color: #3d3d3d;
-  height: 600px;
+  min-height: 420px;
+  height: auto;
+  padding-bottom: 31.5%;
+}
+@media (min-width: 1600px) {
+  /* line 407, ../scss/partials/_home_addons.scss */
+  .grey-bg-box {
+    padding-bottom: 503px;
+  }
+}
+
+/* line 419, ../scss/partials/_home_addons.scss */
+.home #content {
+  font-size: 60%;
+}
+@media (min-width: 768px) {
+  /* line 419, ../scss/partials/_home_addons.scss */
+  .home #content {
+    font-size: 80%;
+  }
+}
+@media (min-width: 960px) {
+  /* line 419, ../scss/partials/_home_addons.scss */
+  .home #content {
+    font-size: 100%;
+  }
+}
+
+/* line 432, ../scss/partials/_home_addons.scss */
+.footer {
+  position: relative;
+  margin-top: 0;
+}
+
+/* line 437, ../scss/partials/_home_addons.scss */
+.copy-c-2 {
+  float: right;
+  margin-right: 8%;
+  margin-top: 10%;
+}
+@media (min-width: 1600px) {
+  /* line 437, ../scss/partials/_home_addons.scss */
+  .copy-c-2 {
+    margin-top: 80px;
+    margin-right: 64px;
+  }
 }
 
 /* line 6, ../scss/partials/_sidebar.scss */

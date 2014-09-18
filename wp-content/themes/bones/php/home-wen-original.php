@@ -12,19 +12,14 @@
 			</div>
 		</div>
 
-		<!-- STATIC IMG IN PLACE OF HOME SLIDER -->
-		<!-- <div class="gamut-defined-wrapper bg-i h-slider-pic" style="background-image: url('<?php bloginfo('url'); ?>/img/gamut_slide4.png');"></div> -->
-
-		<!-- DEFINED -->
-		<div class="clearfix gamut-defined-wrapper bg-i defined-pic" style="background-image: url('<?php echo $bg_img['url'] ?>');">
+		<div class="gamut-defined-wrapper" style="position: relative; height: 400px; background-repeat: no-repeat; background-image: url('<?php echo $bg_img['url'] ?>'); background-size: cover;">
 			<div class="home-wrap">
 				<h1><?php echo $gamut_defined_title ?></h1>
 				<div style="margin-left: 9%"><?php echo $gamut_defined_content ?></div>
 			</div>
 		</div>
 
-		<!-- OUR SOLUTIONS -->
-		<div class="clearfix our-solutions-wrapper our-sol-pic">
+		<div class="our-solutions-wrapper" style="position: relative; height: 400px; background-color: #3d3d3d">
 			<div class="home-wrap white">
 				<h1><?php echo $our_solutions_title ?></h1>
 				<div style="margin-left: 9%"><?php echo $our_solutions_content ?></div>
@@ -106,32 +101,26 @@
 		</div>
 			
 		<!-- Smart Service -->
-		<div class="smart-service-wrapper">
-			<!-- image container -->			
-			<div class="smart-copy">
-				<div class="copy-holder">
-					<div class="clearfix copy-c">
-						<img src="<?php bloginfo('url'); ?>/img/plus-sign.png" alt="plus">
-						<h1> <?php echo $smart_service_title ?></h1>
-					</div>
-					<?php echo $smart_service_content ?>
-				</div>
+		<div class="smart-service-wrapper" style="height: 500px;">
+			<!-- image container -->
+			<div style="height: 0; width: 50%; padding-bottom: 40%; float: left; background-image:url('<?php echo $smart_service_image['url'] ?>'); background-size: cover; display: inline-block"></div>
+			<div style="width: 450px; float: left; margin-left: 8%; padding-top: 10%;">
+				<img src="<?php bloginfo('url'); ?>/img/plus-sign.png" style="display: inline-block; width: 30px; height: 30px; vertical-align: middle; margin-right: 10px" alt="plus">
+				<h1 style="display: inline-block;"> <?php echo $smart_service_title ?></h1>
+				<?php echo $smart_service_content ?>
 			</div>
-			<div class="smart-pic" style="background-image:url('<?php echo $careers_image['url'];?>');"></div>
 		</div>
 
 		<div style="clear: both"></div>
 
 		<!-- Careers -->
-		<div class="clearfix careers-wrapper" style="background-color: #f8f8ef">
-			<div class="career-copy-c">
-				<div class="clearfix copy-c-2">
-					<h1><?php echo $careers_title ?></h1>
-					<?php echo $careers_content ?>
-				</div>
+		<div class="careers-wrapper" style="height: 500px; background-color: #f8f8ef">
+			<div style="width: 450px; float: left; margin-left: 8%; padding-top: 10%;">
+				<h1><?php echo $careers_title ?></h1>
+				<?php echo $careers_content ?>
 			</div>
 			<!-- image container -->
-			<div class="career-pic-c bg-i" style="background-image:url('<?php echo $smart_service_image['url'];?>');"></div>
+			<div style="height: 500px; width: 40%; float: right; background-image:url('<?php echo $careers_image['url'] ?>'); background-size: cover; display: inline-block"></div>
 		</div>
 			
 	</section>
