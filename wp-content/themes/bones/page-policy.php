@@ -35,6 +35,9 @@ get_header(); ?>
 										<?php echo $policy_content; ?>
 									
 								</div>
+
+								<!-- adding opt-out policy -->
+
 								<!-- end of content wrapper -->
 
 
