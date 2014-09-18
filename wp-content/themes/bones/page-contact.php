@@ -21,7 +21,7 @@ get_header(); ?>
 
 			?>
 				<header class="article-header">
-					<?php echo do_shortcode('[wpgmza id="1"]'); ?>					
+					<?php //echo do_shortcode('[wpgmza id="1"]'); ?>					
 				</header>
 
 				<div id="inner-content" class="wrap cf">					
