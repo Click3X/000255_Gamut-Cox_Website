@@ -53,14 +53,29 @@
 					$careers_content = get_field('careers-content');
 					$careers_image = get_field('careers-image');
 
+
+					// NEW SLIDES FOR CAROUSEL <-CHARLES TRY
+					$slides = get_field('slides');
+					$images = array();
+
+					// helper($slides);
+
+					foreach ($slides as $key => $slide) {
+						$images[$key] = $slide['image'];
+					}
+
+					// helper($images);
+
+
+
 				?>
 
 				<?php 
 					// WEN'S HOME PAGE FILE
-					include('php/home-wen.php');
+//					include('php/home-wen.php');
 
 
-					// include('php/parallax.php');
+					include('php/parallax.php');
 
 				?>	
 

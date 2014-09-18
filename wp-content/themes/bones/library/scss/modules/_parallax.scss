@@ -1,3 +1,5 @@
+
+
   /* Parallax base styles
   --------------------------------------------- */
 
@@ -81,22 +83,22 @@
   /* demo styles
   --------------------------------------------- */
 
-  body, html {
-    overflow: hidden;
-  }
+  // body, html {
+  //   overflow: hidden;
+  // }
 
-  body {
-    font: 100% / 1.5 Arial;
-  }
+  // body {
+  //   font: 100% / 1.5 Arial;
+  // }
 
-  * {
-    margin:0;
-    padding:0;
-  }
+  // * {
+  //   margin:0;
+  //   padding:0;
+  // }
 
-  .parallax {
-    font-size: 200%;
-  }
+  // .parallax {
+  //   font-size: 200%;
+  // }
 
    /* centre the content in the parallax layers */
   .title {
@@ -122,6 +124,9 @@
 
   #group2 {
     z-index: 3; /* slide under groups 1 and 3 */
+    .new-home-wrap {
+      height: 368px;
+    }
   }
   #group2 .parallax__layer--back {
     // background: rgb(123,210,102);
@@ -129,6 +134,9 @@
 
   #group3 {
     z-index: 4; /* slide over group 2 and 4 */
+    .new-home-wrap {
+      height: 368px;
+    }
   }
   #group3 .parallax__layer--base {
     // background: rgb(153,216,101);
@@ -139,7 +147,6 @@
   }
   #group4 .parallax__layer--deep {
     // background: rgb(184,223,101);
-    // background:transparent;
   }
 
   #group5 {
@@ -147,26 +154,272 @@
   }
   #group5 .parallax__layer--base {
     // background: rgb(214,229,100);
-    // background:transparent;
-    background-color: #ffffff;
   }
 
   #group6 {
     z-index: 2; /* slide under group 5 and 7 */
+
+    .new-home-wrap {
+      height: 368px;
+    }
   }
   #group6 .parallax__layer--back {
     // background: rgb(245,235,100);
-    // background:transparent;
   }
 
   #group7 {
     z-index: 3; /* slide over group 7 */
   }
   #group7 .parallax__layer--base {
-    background: rgb(255,241,100);
-    // background:transparent;
+    // background: rgb(255,241,100);
+    background: white;
   }
 
-  .para-grey {
-    background-color: #3d3d3d;
+.abs-center {
+  position: absolute;
+  top:0; bottom:0; left:0; right:0;
+  margin: auto;
+}
+
+
+// charles styles
+.wrap-holder {
+  width: 100%;
+  // width: 100vw;
+  height: 100%;
+  // height: 100vh;
+  position: relative;
+  text-align: center;
+}
+.new-home-wrap {
+  width: 90%;
+  max-width: 1200px;
+  text-align: left;
+  display: inline-block;
+}
+
+.new-c-copy {
+  padding-bottom:25%;
+  padding-bottom: 25vh;
+  position: relative;
+  text-align: center;
+  width: 100%;
+
+  p,
+  h1 {
+    width:100%;
+    max-width: 396px;
+    display: inline-block;
+    text-align: left;
   }
+
+  p {
+    padding-bottom: 3.5rem;
+  }
+
+  @media(min-width: 811px) {
+    width: 50%;
+    float: left;
+    clear:right;
+    padding-bottom:20.4%;
+    padding-bottom: 29.5vh;
+
+    p,
+    h1 {
+      width:100%;
+      max-width: 35rem;
+      clear: right;
+      display: block;
+    }
+
+    p {
+      padding-bottom: 0;
+    }
+
+  }
+
+  div.clearfix {
+    background-color: white;
+    text-align: center;
+    padding: 1em;
+    
+    @media(min-width: 811px) {
+      background-color:transparent;
+      display: inline-block;
+      padding:0;
+    }
+  }
+  p {
+    text-align: left;
+    font-size: 1.7em;
+    line-height: 1.22em;
+    letter-spacing: .03em;
+  }
+}
+
+.new-smart-copy {
+  padding-bottom:25%;
+  padding-bottom: 25vh;
+  position: relative;
+  text-align: center;
+  width: 100%;
+
+  @media(min-width: 811px) {
+    padding-bottom:20.4%;
+    padding-bottom: 29.5vh;
+
+    width: 50%;
+    float: right;
+    clear: left;
+  }
+
+  h1,
+  div {
+    display: inline-block;
+    text-align: left;
+  }
+
+  .new-copy-holder {
+    background-color: #f8f8ef;
+    padding-top:3.5rem;
+    padding-bottom:3.5rem;
+    display: block;
+    text-align: center;
+
+    @media(min-width: 811px) {
+      padding-top:0;
+      padding-bottom:0;
+      background-color: transparent;
+      display: inline-block;
+    }
+
+    .clearfix {
+      max-width: 396px;
+      @media(min-width: 811px) {
+        max-width: none;
+      }
+    }
+    p {
+      display: inline-block;
+      text-align: left;
+      max-width: 396px;
+      font-size: 1.7em;
+      line-height: 1.22em;
+      letter-spacing: .03em;
+      @media(min-width: 811px) {
+        max-width: 21em;
+      }
+    }
+  }
+}
+
+.back {
+  background-size: cover;
+  background-repeat:no-repeat;
+}
+
+.dude {
+  width: 100%;
+  width: 100vw;
+  background-size: cover;
+  background-position: 0;
+  padding-bottom: 50%;
+  padding-bottom: 50vh;
+
+  @media(min-width: 811px) {
+    // padding-bottom: 50%;
+    // padding-bottom: 50vh;
+
+    width: 50%;
+    width: 50vw;
+  }
+}
+
+.mtn {
+  width: 100%;
+  width: 100vw;
+  background-size: cover;
+  background-position: 0;
+  padding-bottom: 50%;
+  padding-bottom: 50vh;
+  float: left;
+
+  @media(min-width: 811px) {
+    width: 50%;
+    width: 50vw;
+
+    // padding-bottom: 50%;
+    // padding-bottom: 50vh;
+    
+    background-position: 100% 100%;
+  }
+}
+
+.outside {
+  width: 100%;
+  width: 100vw;
+  background-size: cover;
+  background-position: 0;
+}
+
+.beige {
+  width: 100%;
+  width: 100vw;
+  background-color: #f8f8ef;
+  padding-bottom: 50%;
+  padding-bottom: 50vh;
+  float: left;
+
+  display: none;
+
+  @media(min-width: 811px) {
+    display: block;
+
+    width: 50%;
+    width: 50vw;
+
+    // padding-bottom: 50%;
+    // padding-bottom: 50vh;
+  }
+}
+
+.grey-bg {
+  background-color:rgb(61,61,61);
+}
+
+
+.subpage-wrapper-c {
+  position: relative;
+  height:auto;
+  width:100%; 
+  max-width:1600px;
+  margin:auto;
+  padding-bottom: 12.5%;
+  padding-bottom: 12.5vh;
+  padding-top: 12.5%;
+  padding-top: 12.5vh;
+  // padding:8.25% .5em;
+  // padding:9.75% .5em 6.75%;
+  border-bottom: 2px dashed #d8d8d8;
+
+  @media(min-width: 1348px) {
+    // padding-top: 130px;
+    // padding-bottom: 90px;
+  }
+}
+
+#group5 {
+  .subpage-wrapper-c {
+     &:last-of-type {
+      border-bottom: 0;
+    }
+  }
+}
+
+
+// CAROUSEL SLIDER
+.parallax-slide {
+  img {
+    width: 100%;
+  }
+}
