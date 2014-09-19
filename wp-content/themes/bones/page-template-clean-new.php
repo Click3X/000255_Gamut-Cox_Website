@@ -13,7 +13,7 @@ $teamMembers = array();
 if (have_posts()) : while (have_posts()) : the_post(); 
 
 // GET HEADER
-// $header = get_field('header-image');
+$header = get_field('header-image');
 
 // GET TEAM MEMBER POSTS RELATIONSHIP FIELD FROM 'OUR-LEADERSHIP' ADMIN PAGE
 if( get_field('team_members') )
