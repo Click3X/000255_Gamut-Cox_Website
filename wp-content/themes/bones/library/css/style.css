@@ -4971,9 +4971,10 @@ form label {
 /* line 127, ../scss/partials/_wen.scss */
 .our-solutions-list h2 {
   font-family: "franklin-gothic-urw",sans-serif;
+  margin-top: -1.6em;
 }
 
-/* line 132, ../scss/partials/_wen.scss */
+/* line 133, ../scss/partials/_wen.scss */
 #btn-opt-out {
   color: white;
   white-space: nowrap;
@@ -4984,13 +4985,13 @@ form label {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-/* line 141, ../scss/partials/_wen.scss */
+/* line 142, ../scss/partials/_wen.scss */
 #btn-opt-out:hover {
   background-color: #ed228b;
 }
 
 @media (max-width: 560px) {
-  /* line 147, ../scss/partials/_wen.scss */
+  /* line 148, ../scss/partials/_wen.scss */
   .wpcf7-list-item {
     display: block;
   }
