@@ -1,1 +1,139 @@
-// PARA FRIDAY
+//ALL SIZES STYLES
+.background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+}
+
+
+@media(min-width: 811px) {
+// PARA FRIDAY - CHARLES STYLES
+
+.parallax {
+  font-size: 100%;
+}
+
+// FOOTER
+  #group7 {
+    .footer {
+      width:100%;
+      position: absolute;
+      top:auto;
+      bottom:0;
+    }
+  }
+
+
+// z-index: 
+  #group1 {
+    // z-index: 5; /* slide over group 2 */
+    z-index: 3;
+  }
+  #group1 .parallax__layer--base {
+    background:transparent;
+  }
+
+  #group2 {
+    z-index: 4; /* slide under groups 1 and 3 */
+  }
+  #group2 .parallax__layer--back {
+    // background: rgb(123,210,102);
+    background:transparent;
+  }
+
+  #group3 {
+    z-index: 5; /* slide over group 2 and 4 */
+  }
+  #group3 .parallax__layer--base {
+    // background: rgb(153,216,101);
+    background:#ffffff;
+  }
+
+  #group4 {
+    z-index: 2; /* slide under group 3 and 5 */
+  }
+  #group4 .parallax__layer--deep {
+     background-color: rgb(61,61,61);
+  }
+
+  #group5 {
+    z-index: 3; /* slide over group 4 and 6 */
+  }
+  #group5 .parallax__layer--base {
+    background: rgb(214,229,100);
+  }
+
+  #group6 {
+    z-index: 2; /* slide under group 5 and 7 */
+  }
+  #group6 .parallax__layer--back {
+    background: rgb(245,235,100);
+  }
+
+  #group7 {
+    z-index: 3; /* slide over group 7 */
+  }
+  #group7 .parallax__layer--base {
+    background: rgb(255,241,100);
+  }
+}
+
+
+// TEXT
+.parallax {
+  .new-home-wrap {
+    display: inline-block;
+    max-width: 1200px;
+    text-align: left;
+    width: 90%;
+  }
+}
+
+
+.defined-txt {
+  height: 300px;
+  .abs-center {
+    top:18%;
+    bottom:auto;
+    
+    @media(min-width: 1200px) {
+      top:25%;
+    }
+
+  }
+}
+
+.our-solutions {
+  text-align: center;
+  // height: 400px;
+  height: 540px;
+  
+  .new-home-wrap {
+    margin-top: 45px;
+    @media(min-width: 1200px) {
+      margin-top: 90px;
+    }
+  }
+}
+
+.our-solutions.abs-center {
+  top: auto;
+  // bottom: 20%;
+  bottom:0;
+}
+
+.grey-bg {
+  background-color: rgb(61,61,61);
+}
+
+.subpage-wrapper-c {
+  height: 25%;
+  height: 25vh;
+  padding-top:2%;
+}
+
+.difference {
+  top:23%;
+  bottom:auto;
+  height: 500px;
+}

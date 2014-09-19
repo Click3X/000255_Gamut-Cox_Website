@@ -1,4 +1,4 @@
-
+@media(min-width: 811px) {
 
   /* Parallax base styles
   --------------------------------------------- */
@@ -87,9 +87,9 @@
     overflow: hidden;
   }
 
-  body {
-    font: 100% / 1.5 Arial;
-  }
+  // body {
+  //   font: 100% / 1.5 Arial;
+  // }
 
   * {
     margin:0;
@@ -163,3 +163,5 @@
   #group7 .parallax__layer--base {
     background: rgb(255,241,100);
   }
+
+}

@@ -15,11 +15,11 @@
 
 <?php get_header(); ?>
 
-	<div id="content">
+	<!-- <div id="content">
 
 		<div id="inner-content" class="cf">
 
-			<div id="main" class="m-all cf" role="main">
+			<div id="main" class="m-all cf" role="main"> -->
 
 				<?php if (have_posts()) : while (have_posts()) : the_post(); 
 					// DECLARE VARIABLES
@@ -75,7 +75,9 @@
 //					include('php/home-wen.php');
 
 
-					include('php/parallax.php');
+					// include('php/parallax.php');
+
+					include('php/para-friday.php');
 
 				?>	
 
@@ -95,10 +97,10 @@
 
 				<?php endif; ?>
 
-			</div>
+<!-- 			</div>
 
 		</div>
 
-	</div>
+	</div> -->
 
 <?php get_footer(); ?>

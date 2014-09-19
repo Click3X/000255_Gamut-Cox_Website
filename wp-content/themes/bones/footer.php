@@ -1,3 +1,11 @@
+		<?php
+			// IF PAGE IS HOME, WRAP THE FOOTER IN GROUP 7 PARALLAX DIV
+			if(is_page(107)) {
+				echo '<div class="parallax__layer parallax__layer--base">
+				      	<div class="title">Base Layer 7</div>';
+				}
+			?>
+
 			<footer class="footer" role="contentinfo">
 
 				<div id="footer-beam-container">
@@ -95,7 +103,27 @@
 
 			</footer>
 
-		</div>
+			<?php 
+			// IF IS HOME PAGE, CLOSE PARALLAX GROUP 7 WRAP
+			if(is_page(107)) {
+					echo '</div>'; //  END PARALLAX GROUP
+				echo '</div>'; // END GROUP 7
+
+				echo '</div>'; // END PARALLAX
+				// DEBUG SCRIPT
+				echo '<script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script>
+			    var debugInput = document.querySelector("input");
+			    function updateDebugState() {
+			        document.body.classList.toggle("debug-on", debugInput.checked);
+			    }
+			    debugInput.addEventListener("click", updateDebugState);
+			    updateDebugState();
+			  </script>';
+			}
+
+			?>
+
+		</div> <!-- END CONTAINER -->
 
 		<?php // all js scripts are loaded in library/bones.php ?>
 		<?php wp_footer(); ?>

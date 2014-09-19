@@ -29,7 +29,7 @@
     <div id="group2" class="parallax__group">
       <div class="parallax__layer parallax__layer--base">
         <div class="title">Base Layer 2</div>
-        <div class="clearfix wrap-holder">
+        <div class="clearfix wrap-holder defined-txt">
           <div class="new-home-wrap abs-center">
             <h1><?php echo $gamut_defined_title ?></h1>
             <div style="margin-left: 9%"><?php echo $gamut_defined_content ?></div>
@@ -50,9 +50,9 @@
 
         <div class="clearfix wrap-holder outlines">
           <div class="new-home-wrap abs-center white outlines">
-            <h1><?php echo $gamut_defined_title ?></h1>
+            <h1><?php echo $our_solutions_title ?></h1>
             <div class="difference outlines">
-              <?php echo $gamut_defined_content ?>
+              <?php echo $our_solutions_content ?>
             </div>
             <a href="#" class="gamut-btn diff outlines">LEARN MORE&nbsp;&nbsp;<span class="arrow-right outlines" style="border-left: 6px solid #dd1420;"></span></a>
           </div>
