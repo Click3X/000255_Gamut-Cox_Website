@@ -11,10 +11,50 @@ if (have_posts()) : while (have_posts()) : the_post();
 
 	// GET HEADER
 	$header = get_field('header-image');
-
-	$posts = get_field('team_members');
+	$tmpPosts = get_field('team_members');
 	
-	helper($posts);
+	// helper($tmpPosts);
+
+	if( $tmpPosts ) {
+		// helper($tmpPosts[0]['team_member']);
+		$team_members = $tmpPosts[0]['team_member'];
+		// helper($team_members);
+
+		foreach ($team_members as $key => $post) {
+			setup_postdata($post);
+			// helper($team_member);
+			// $MEMBER HOLDS DATA
+			$id = $member->ID;
+
+			// CONTENT FIELDS
+			$content = $member->post_content;
+			$name = $member->post_title;
+			$link = $member->guid;
+
+			// CUSTOM FIELDS
+			$emp_title = get_post_custom_values('title', $id)[0];
+
+			// IMAGES
+			$size = 'thumb';
+			$full = 'large';
+			$thumb = wp_get_attachment_image_src(get_post_thumbnail_id($id) , 'emp-thumb');
+			$largeThumb = wp_get_attachment_image_src(get_post_thumbnail_id($id) , 'emp-large');
+
+			//STORE VARS IN TEAM MEMBERS ARRAY
+			$teamMembers[$key]['id'] = $id;
+			$teamMembers[$key]['content'] = $content;
+			$teamMembers[$key]['name'] = $name;
+			$teamMembers[$key]['link'] = $link;
+			$teamMembers[$key]['emp_title'] = $emp_title;
+			$teamMembers[$key]['thumb'] = $thumb;
+			$teamMembers[$key]['large_thumb'] = $largeThumb;
+
+		}
+
+		// RESET POST OBJECT DATA
+		wp_reset_postdata();
+	}
+	helper($teamMembers);
 
 	// GET TEAM MEMBER POSTS RELATIONSHIP FIELD FROM 'OUR-LEADERSHIP' ADMIN PAGE
 	// if( $posts )
