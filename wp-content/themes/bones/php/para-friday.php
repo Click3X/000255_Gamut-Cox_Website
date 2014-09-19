@@ -44,13 +44,15 @@
         <!-- <div class="title">Base Layer 2</div> -->
         <!-- OUR SOLUTIONS -->
         <div class="clearfix wrap-holder">
-          <div class="abs-center white grey-bg our-solutions">
-            <div class="new-home-wrap">
-              <h1><?php echo $our_solutions_title ?></h1>
-              <div class="difference">
-                <?php echo $our_solutions_content ?>
+          <div class="abs-center white our-solutions">
+            <div class="clearfix sol-holder">
+              <div class="new-home-wrap">
+                <h1><?php echo $our_solutions_title ?></h1>
+                <div class="difference">
+                  <?php echo $our_solutions_content ?>
+                </div>
+                <a href="#" class="gamut-btn diff">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
               </div>
-              <a href="#" class="gamut-btn diff">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
             </div>
           </div>
         </div>
@@ -227,4 +229,3 @@
 
       
   <!-- </div> PARALLAX IS CLOSED ON FOOTER.PHP FOR HOME PAGE-->
-

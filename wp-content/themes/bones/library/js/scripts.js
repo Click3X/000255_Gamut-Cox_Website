@@ -106,6 +106,10 @@ function loadGravatars() {
  * Put all your regular jQuery in here.
 */
 jQuery(document).ready(function($) {
+
+  // CHECK FOR DEVICE (JS CODE FROM HEADER)
+  $('body').addClass(device);
+
   // CHARLES MOBILE BUTTON TOGGLE-HIDE-SHOW
     $('#mobile-btn').click(function(event) {
       event.preventDefault();

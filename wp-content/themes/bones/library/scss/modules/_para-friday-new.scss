@@ -130,9 +130,9 @@
   
   .new-home-wrap {
     margin-top: 45px;
-    @media(min-width: 1200px) {
-      margin-top: 90px;
-    }
+    // @media(min-width: 1200px) {
+    //   margin-top: 90px;
+    // }
   }
 }
 
@@ -368,4 +368,9 @@
       height: 3rem;
     }
   }
+}
+
+.sol-holder {
+  background-color: rgb(61,61,61);
+  margin-top:70px;
 }
