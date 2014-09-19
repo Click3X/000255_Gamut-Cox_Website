@@ -113,7 +113,8 @@
 .defined-txt {
   height: 300px;
   .abs-center {
-    top:18%;
+    // top:18%;
+    top:20%;
     bottom:auto;
     
     @media(min-width: 1200px) {
@@ -150,13 +151,30 @@
   height: 25%;
   height: 25vh;
   padding-top:2%;
+
+  width:90%;
+  max-width: 1200px;
+  margin:0 auto;
 }
 
-.difference {
-  top:23%;
-  bottom:auto;
-  height: 500px;
+// .difference {
+//   // top:23%;
+//   // bottom:auto;
+//   // height: 500px;
+// }
+
+.abs-center.dif {
+  top: 23%;
+  bottom: auto;
+  height: 270px;
+  position: absolute;
+  width: 100%;
 }
+
+.diff-2 {
+
+}
+
 .white-bg {
   position: absolute;
   top: 25%;
@@ -373,4 +391,10 @@
 .sol-holder {
   background-color: rgb(61,61,61);
   margin-top:70px;
+
+  .new-home-wrap {
+    height: 500px;
+    top:23%;
+  bottom:auto;
+  }
 }

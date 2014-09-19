@@ -168,9 +168,11 @@
       <div class="parallax__layer parallax__layer--back">
         <!-- <div class="title">Background Layer 4</div> -->
           <div class="clearfix wrap-holder">
-            <div class="abs-center white grey-bg difference">
-              <h1><?php echo $gamut_difference_title ?></h1>
-              <div class="difference"><?php echo $gamut_difference_content ?></div>
+            <div class="abs-center white grey-bg dif">
+              <div class="clearfix diff-2">              
+                <h1><?php echo $gamut_difference_title ?></h1>
+                <div class="difference"><?php echo $gamut_difference_content ?></div>
+              </div>
             </div>
           </div>
       </div>

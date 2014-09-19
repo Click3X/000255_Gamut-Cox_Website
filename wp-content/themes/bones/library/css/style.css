@@ -4317,7 +4317,7 @@ a {
 }
 /* line 115, ../scss/modules/_para-friday-new.scss */
 .defined-txt .abs-center {
-  top: 18%;
+  top: 20%;
   bottom: auto;
 }
 @media (min-width: 1200px) {
@@ -4327,42 +4327,47 @@ a {
   }
 }
 
-/* line 126, ../scss/modules/_para-friday-new.scss */
+/* line 127, ../scss/modules/_para-friday-new.scss */
 .our-solutions {
   text-align: center;
   height: 540px;
 }
-/* line 131, ../scss/modules/_para-friday-new.scss */
+/* line 132, ../scss/modules/_para-friday-new.scss */
 .our-solutions .new-home-wrap {
   margin-top: 45px;
 }
 
-/* line 139, ../scss/modules/_para-friday-new.scss */
+/* line 140, ../scss/modules/_para-friday-new.scss */
 .our-solutions.abs-center {
   top: auto;
   bottom: 0;
 }
 
-/* line 145, ../scss/modules/_para-friday-new.scss */
+/* line 146, ../scss/modules/_para-friday-new.scss */
 .grey-bg {
   background-color: #3d3d3d;
 }
 
-/* line 149, ../scss/modules/_para-friday-new.scss */
+/* line 150, ../scss/modules/_para-friday-new.scss */
 .subpage-wrapper-c {
   height: 25%;
   height: 25vh;
   padding-top: 2%;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* line 155, ../scss/modules/_para-friday-new.scss */
-.difference {
+/* line 166, ../scss/modules/_para-friday-new.scss */
+.abs-center.dif {
   top: 23%;
   bottom: auto;
-  height: 500px;
+  height: 270px;
+  position: absolute;
+  width: 100%;
 }
 
-/* line 160, ../scss/modules/_para-friday-new.scss */
+/* line 178, ../scss/modules/_para-friday-new.scss */
 .white-bg {
   position: absolute;
   top: 25%;
@@ -4371,13 +4376,13 @@ a {
   padding-bottom: 57.48%;
 }
 @media (min-width: 1850px) {
-  /* line 160, ../scss/modules/_para-friday-new.scss */
+  /* line 178, ../scss/modules/_para-friday-new.scss */
   .white-bg {
     padding-bottom: 1050px;
   }
 }
 
-/* line 172, ../scss/modules/_para-friday-new.scss */
+/* line 190, ../scss/modules/_para-friday-new.scss */
 .dude {
   background-size: cover;
   background-repeat: no-repeat;
@@ -4390,19 +4395,19 @@ a {
   width: 50%;
 }
 @media (min-width: 1040px) {
-  /* line 172, ../scss/modules/_para-friday-new.scss */
+  /* line 190, ../scss/modules/_para-friday-new.scss */
   .dude {
     padding-bottom: 52.5%;
   }
 }
 @media (min-width: 1850px) {
-  /* line 172, ../scss/modules/_para-friday-new.scss */
+  /* line 190, ../scss/modules/_para-friday-new.scss */
   .dude {
     padding-bottom: 1050px;
   }
 }
 
-/* line 199, ../scss/modules/_para-friday-new.scss */
+/* line 217, ../scss/modules/_para-friday-new.scss */
 .mtn {
   background-size: cover;
   background-repeat: no-repeat;
@@ -4412,40 +4417,40 @@ a {
   padding-bottom: 63%;
 }
 @media (min-width: 1040px) {
-  /* line 199, ../scss/modules/_para-friday-new.scss */
+  /* line 217, ../scss/modules/_para-friday-new.scss */
   .mtn {
     padding-bottom: 52.5%;
   }
 }
 @media (min-width: 1850px) {
-  /* line 199, ../scss/modules/_para-friday-new.scss */
+  /* line 217, ../scss/modules/_para-friday-new.scss */
   .mtn {
     padding-bottom: 1050px;
   }
 }
 
-/* line 224, ../scss/modules/_para-friday-new.scss */
+/* line 242, ../scss/modules/_para-friday-new.scss */
 .beige {
   background-color: #f8f8ef;
 }
 
-/* line 228, ../scss/modules/_para-friday-new.scss */
+/* line 246, ../scss/modules/_para-friday-new.scss */
 .smart {
   width: 50%;
   float: right;
   padding-left: 2%;
 }
-/* line 234, ../scss/modules/_para-friday-new.scss */
+/* line 252, ../scss/modules/_para-friday-new.scss */
 .smart p {
   color: #000;
   max-width: 22em;
   padding-right: .5rem;
 }
-/* line 239, ../scss/modules/_para-friday-new.scss */
+/* line 257, ../scss/modules/_para-friday-new.scss */
 .smart .clearfix {
   position: relative;
 }
-/* line 242, ../scss/modules/_para-friday-new.scss */
+/* line 260, ../scss/modules/_para-friday-new.scss */
 .smart .clearfix img {
   width: 33px;
   height: 34px;
@@ -4458,14 +4463,14 @@ a {
   margin: auto;
 }
 @media (1040px) {
-  /* line 242, ../scss/modules/_para-friday-new.scss */
+  /* line 260, ../scss/modules/_para-friday-new.scss */
   .smart .clearfix img {
     width: 48px;
     height: 49px;
   }
 }
 
-/* line 259, ../scss/modules/_para-friday-new.scss */
+/* line 277, ../scss/modules/_para-friday-new.scss */
 .parallax p {
   font-size: 1.6em;
   line-height: 1.2em;
@@ -4473,59 +4478,59 @@ a {
   padding-right: .5rem;
 }
 
-/* line 267, ../scss/modules/_para-friday-new.scss */
+/* line 285, ../scss/modules/_para-friday-new.scss */
 .smart-replace {
   background-repeat: no-repeat;
   background-size: contain;
   width: 75.25%;
   padding-bottom: 7%;
 }
-/* line 272, ../scss/modules/_para-friday-new.scss */
+/* line 290, ../scss/modules/_para-friday-new.scss */
 .smart-replace span {
   display: none;
 }
 
-/* line 278, ../scss/modules/_para-friday-new.scss */
+/* line 296, ../scss/modules/_para-friday-new.scss */
 .home #container p {
   font-size: 1.3em;
 }
 @media (min-width: 1040px) {
-  /* line 278, ../scss/modules/_para-friday-new.scss */
+  /* line 296, ../scss/modules/_para-friday-new.scss */
   .home #container p {
     font-size: 1.6em;
   }
 }
-/* line 286, ../scss/modules/_para-friday-new.scss */
+/* line 304, ../scss/modules/_para-friday-new.scss */
 .home #container h1 {
   font-size: 3em;
 }
 @media (min-width: 1200px) {
-  /* line 286, ../scss/modules/_para-friday-new.scss */
+  /* line 304, ../scss/modules/_para-friday-new.scss */
   .home #container h1 {
     font-size: 4em;
   }
 }
 @media (min-width: 1340px) {
-  /* line 286, ../scss/modules/_para-friday-new.scss */
+  /* line 304, ../scss/modules/_para-friday-new.scss */
   .home #container h1 {
     font-size: 5em;
   }
 }
 
-/* line 298, ../scss/modules/_para-friday-new.scss */
+/* line 316, ../scss/modules/_para-friday-new.scss */
 .carr {
   width: 54%;
   float: left;
   height: 100%;
 }
-/* line 304, ../scss/modules/_para-friday-new.scss */
+/* line 322, ../scss/modules/_para-friday-new.scss */
 .carr h1 {
   width: 28.4rem;
   float: right;
   clear: right;
   padding-left: .5rem;
 }
-/* line 312, ../scss/modules/_para-friday-new.scss */
+/* line 330, ../scss/modules/_para-friday-new.scss */
 .carr p {
   padding-left: .5rem;
   padding-right: 1em;
@@ -4534,32 +4539,32 @@ a {
   float: right;
 }
 @media (min-width: 1040px) {
-  /* line 320, ../scss/modules/_para-friday-new.scss */
+  /* line 338, ../scss/modules/_para-friday-new.scss */
   .carr .clearfix {
     padding-right: 2%;
   }
 }
 
-/* line 328, ../scss/modules/_para-friday-new.scss */
+/* line 346, ../scss/modules/_para-friday-new.scss */
 .abs-holder {
   position: relative;
   height: 100%;
   width: 100%;
 }
-/* line 333, ../scss/modules/_para-friday-new.scss */
+/* line 351, ../scss/modules/_para-friday-new.scss */
 .abs-holder .wrap-holder {
   position: absolute;
   top: 0;
   width: 100%;
 }
 
-/* line 343, ../scss/modules/_para-friday-new.scss */
+/* line 361, ../scss/modules/_para-friday-new.scss */
 .plus-sign {
   position: relative;
   max-width: 7.5em;
   margin-left: .8em;
 }
-/* line 347, ../scss/modules/_para-friday-new.scss */
+/* line 365, ../scss/modules/_para-friday-new.scss */
 .plus-sign:after {
   content: "";
   display: block;
@@ -4575,24 +4580,30 @@ a {
   background-repeat: no-repeat;
 }
 @media (min-width: 1200px) {
-  /* line 347, ../scss/modules/_para-friday-new.scss */
+  /* line 365, ../scss/modules/_para-friday-new.scss */
   .plus-sign:after {
     width: 2.4rem;
     height: 2.4rem;
   }
 }
 @media (min-width: 1340px) {
-  /* line 347, ../scss/modules/_para-friday-new.scss */
+  /* line 365, ../scss/modules/_para-friday-new.scss */
   .plus-sign:after {
     width: 3rem;
     height: 3rem;
   }
 }
 
-/* line 373, ../scss/modules/_para-friday-new.scss */
+/* line 391, ../scss/modules/_para-friday-new.scss */
 .sol-holder {
   background-color: #3d3d3d;
   margin-top: 70px;
+}
+/* line 395, ../scss/modules/_para-friday-new.scss */
+.sol-holder .new-home-wrap {
+  height: 500px;
+  top: 23%;
+  bottom: auto;
 }
 
 /* line 2, ../scss/modules/_home-slider.scss */
