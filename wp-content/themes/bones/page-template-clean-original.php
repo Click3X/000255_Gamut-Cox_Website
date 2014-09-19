@@ -1,6 +1,6 @@
 <?php 
 /*
-	Template Name: Clean
+	Template Name: Clean Original
 */
 
 get_header(); 
