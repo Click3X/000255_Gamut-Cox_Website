@@ -163,7 +163,7 @@
         <!-- <div class="title">Base Layer 4</div> -->
       </div>
     
-      <div class="parallax__layer parallax__layer--fore">
+      <div class="parallax__layer parallax__layer--back">
         <!-- <div class="title">Background Layer 4</div> -->
           <div class="clearfix wrap-holder">
             <div class="abs-center white grey-bg difference">
