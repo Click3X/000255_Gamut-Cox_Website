@@ -1,7 +1,4 @@
 <?php 
-/*
-	Template Name: Clean
-*/
 
 get_header(); 
 
@@ -13,7 +10,7 @@ $teamMembers = array();
 if (have_posts()) : while (have_posts()) : the_post(); 
 
 // GET HEADER
-$header = get_field('header-image');
+// $header = get_field('header-image');
 
 // GET TEAM MEMBER POSTS RELATIONSHIP FIELD FROM 'OUR-LEADERSHIP' ADMIN PAGE
 if( get_field('team_members') )
@@ -28,7 +25,7 @@ if( get_field('team_members') )
 				$id = $member->ID;
 
 				// CONTENT FIELDS
-				$content = $member->post_content;
+				// $content = $member->post_content;
 				$name = $member->post_title;
 				$link = $member->guid;
 
@@ -43,7 +40,7 @@ if( get_field('team_members') )
 
 				//STORE VARS IN TEAM MEMBERS ARRAY
 				$teamMembers[$key]['id'] = $id;
-				$teamMembers[$key]['content'] = $content;
+				// $teamMembers[$key]['content'] = $content;
 				$teamMembers[$key]['name'] = $name;
 				$teamMembers[$key]['link'] = $link;
 				$teamMembers[$key]['emp_title'] = $emp_title;
@@ -76,24 +73,11 @@ endif;
 
 		<ul id="og-grid" class="og-grid">
 
-<<<<<<< HEAD
-										$emp_bio = get_post_custom_values('additional_info', $id)[0];
-										// helper($emp_title);
 
-										
-
-										// IMAGES
-										$size = 'thumb';
-										$full = 'large';
-										$thumb = wp_get_attachment_image_src(get_post_thumbnail_id($id) , 'emp-thumb');
-										$largeThumb = wp_get_attachment_image_src(get_post_thumbnail_id($id) , 'emp-large');
-=======
-		<?php 
->>>>>>> FETCH_HEAD
-
-		foreach ($teamMembers as $key => $teamMember) { ?>
+		<?php
+			foreach ($teamMembers as $key => $teamMember) { ?>
 			<li id="post-<?php echo $teamMember['id']; ?>" role="article" itemscope itemtype="http://schema.org/BlogPosting">
-				<a href="<?php echo $teamMember['link']; ?>" data-largesrc="<?php echo $teamMember['largeThumb'][0]; ?>" data-title="<?php echo $teamMember['name']; ?>" data-description="<?php echo $teamMember['content']; ?>" data-etitle="<?php echo $teamMember['emp_title']; ?>">
+				<a href="<?php echo $teamMember['link']; ?>" data-largesrc="<?php echo $teamMember['largeThumb'][0]; ?>" data-title="<?php echo $teamMember['name']; ?>" data-description="<?php // echo $teamMember['content']; ?>" data-etitle="<?php echo $teamMember['emp_title']; ?>">
 				<?php echo '<a href="'.$teamMember['link'].'">';
 					echo '<img src="'.$teamMember['thumb'][0].'" alt="'.$teamMember['name'].'" class="grid-thumb">';
 					echo '<h2 class="small-name gothic">'.$teamMember['name'].'</h2>';
@@ -104,66 +88,6 @@ endif;
 		<?php
 
 		}
-		
-		// // GO THROUGH LOOP AGAIN
-		// if (have_posts()) : while (have_posts()) : the_post(); 
-
-<<<<<<< HEAD
-										<li id="post-<?php echo $id; ?>" role="article" itemscope itemtype="http://schema.org/BlogPosting">
-											<a href="<?php echo $link; ?>" data-largesrc="<?php echo $largeThumb[0]; ?>" data-title="<?php echo $name; ?>" data-description="<?php echo $emp_bio; ?>" data-etitle="<?php echo $emp_title; ?>">
-											<?php echo '<a href="'.$link.'">';
-												echo '<img src="'.$thumb[0].'" alt="'.$name.'" class="grid-thumb">';
-												echo '<h2 class="small-name gothic">'.$name.'</h2>';
-												echo '<h3 class="small-title gothic">'.$emp_title.'</h3>';
-												?>
-											</a>
-										</li>
-=======
-		// // GET HEADER
-		// $header = get_field('header-image');
->>>>>>> FETCH_HEAD
-
-		// // GET TEAM MEMBER POSTS RELATIONSHIP FIELD FROM 'OUR-LEADERSHIP' ADMIN PAGE
-		// if( get_field('team_members') )
-		// 	{
-		// 		while( has_sub_field('team_members') )
-		// 		{ 
-		// 			$team_member = get_sub_field('team_member');
-
-		// 			foreach ($team_member as $key => $member) {
-		// 				// $MEMBER HOLDS DATA
-
-		// 				$id = $member->ID;
-
-		// 				// CONTENT FIELDS
-		// 				$content = $member->post_content;
-		// 				$name = $member->post_title;
-		// 				$link = $member->guid;
-
-		// 				// CUSTOM FIELDS
-		// 				$emp_title = get_post_custom_values('title', $id)[0];
-
-		// 				// IMAGES
-		// 				$size = 'thumb';
-		// 				$full = 'large';
-		// 				$thumb = wp_get_attachment_image_src(get_post_thumbnail_id($id) , 'emp-thumb');
-		// 				$largeThumb = wp_get_attachment_image_src(get_post_thumbnail_id($id) , 'emp-large');
-
-						?>
-
-
-
-
-						<?php
-
-		// 			}
-		// 		}
-		// 	}
-		
-		// // endwhile;
-
-		// // endif;
-
 		?>
 
 		</ul>
