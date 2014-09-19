@@ -110,19 +110,19 @@ form {
 	}
 }
 
-// #btn-opt-out {
-// 		color: white;
-// 		white-space: nowrap;
-// 		text-align: center;
-// 		background-color: #323944;
-// 		text-decoration: none;
-// 		padding: 10px 35px;
-// 		-webkit-transition: all 0.2s;
-// 		transition: all 0.2s;
-// 		&:hover {
-// 			background-color: $brand-color;
-// 		}		
-// }
+#btn-opt-out {
+		color: white;
+		white-space: nowrap;
+		text-align: center;
+		background-color: #323944;
+		text-decoration: none;
+		padding: 10px 35px;
+		-webkit-transition: all 0.2s;
+		transition: all 0.2s;
+		&:hover {
+			background-color: $brand-color;
+		}		
+}
 
 @media(max-width: 560px) {
     .wpcf7-list-item {
