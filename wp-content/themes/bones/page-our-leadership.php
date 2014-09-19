@@ -25,18 +25,29 @@ if (have_posts()) : while (have_posts()) : the_post();
 			$id = $team_member->ID;
 			$name = $team_member->post_title;
 			$link = $team_member->guid;
-			$emp_title = get_post_custom_values('title', $id)[0];
+			
+			// $emp_title = get_post_custom_values('title', $id)[0];
 
 			$teamMembers[$key]['id'] = $id;
 			$teamMembers[$key]['name'] = $name;
 			$teamMembers[$key]['link'] = $link;
-			$teamMembers[$key]['emp_title'] = $emp_title;
+			// $teamMembers[$key]['emp_title'] = $emp_title;
+
+			$size = 'thumb';
+			$full = 'large';
+			$thumb = wp_get_attachment_image_src(get_post_thumbnail_id($id) , 'emp-thumb');
+			$largeThumb = wp_get_attachment_image_src(get_post_thumbnail_id($id) , 'emp-large');
+
+			$teamMembers[$key]['thumb'] = $thumb[0];
+			$teamMembers[$key]['largeThumb'] = $largeThumb[0];
 
 
 			echo '<h1>This is id: '.$teamMembers[$key]['id'].'</h1>';
 			echo '<h1>This is name: '.$teamMembers[$key]['name'].'</h1>';
 			echo '<h1>This is link: '.$teamMembers[$key]['link'].'</h1>';
-			echo '<h1>This is emp_title: '.$teamMembers[$key]['emp_title'].'</h1>';
+			// echo '<h1>This is emp_title: '.$teamMembers[$key]['emp_title'].'</h1>';
+			echo '<h1>This is thumb: '.$teamMembers[$key]['thumb'].'</h1>';
+			echo '<h1>This is largeThumb: '.$teamMembers[$key]['largeThumb'].'</h1>';
 
 
 			// // CUSTOM FIELDS
