@@ -1,4 +1,7 @@
 <?php 
+/*
+	Template Name: Clean New
+*/
 
 get_header(); 
 
@@ -9,7 +12,6 @@ $teamMembers = array();
 // ANY HTML TAGS
 if (have_posts()) : while (have_posts()) : the_post(); 
 
-<<<<<<< HEAD
 // GET HEADER
 $header = get_field('header-image');
 
@@ -33,8 +35,6 @@ if( get_field('team_members') )
 				// CUSTOM FIELDS
 				$emp_title = get_post_custom_values('title', $id)[0];
 
-				$emp_bio = get_post_custom_values('additional_info', $id)[0];
-
 				// IMAGES
 				$size = 'thumb';
 				$full = 'large';
@@ -51,46 +51,12 @@ if( get_field('team_members') )
 				$teamMembers[$key]['large_thumb'] = $largeThumb;
 
 			}
-=======
-	// GET HEADER
-	$header = get_field('header-image');
-	$tmpPosts = get_field('team_members');
-
-	if( $tmpPosts ) {
-
-		$team_members = $tmpPosts[0]['team_member'];
-
-		foreach ($team_members as $key => $team_member) {
-			$id = $team_member->ID;
-			$name = $team_member->post_title;
-			$link = $team_member->guid;
-			
-			$empTitle = get_post_custom_values('title', $team_member->ID);
-			$emp_title = $empTitle[0];
-
-			$teamMembers[$key]['id'] = $id;
-			$teamMembers[$key]['name'] = $name;
-			$teamMembers[$key]['link'] = $link;
-			$teamMembers[$key]['emp_title'] = $emp_title;
-
-			$size = 'thumb';
-			$full = 'large';
-			$thumb = wp_get_attachment_image_src(get_post_thumbnail_id($id) , 'emp-thumb');
-			$largeThumb = wp_get_attachment_image_src(get_post_thumbnail_id($id) , 'emp-large');
-
-			$teamMembers[$key]['thumb'] = $thumb[0];
-			$teamMembers[$key]['largeThumb'] = $largeThumb[0];
-
->>>>>>> FETCH_HEAD
 		}
 	}
-	// helper($teamMembers);
 
-	endwhile;
+endwhile;
 
 endif;
-
-wp_reset_postdata();
 
 // helper($teamMembers);
 
@@ -110,7 +76,7 @@ wp_reset_postdata();
 
 		<ul id="og-grid" class="og-grid">
 
-<<<<<<< HEAD
+		<?php 
 
 		foreach ($teamMembers as $key => $teamMember) { ?>
 			<li id="post-<?php echo $teamMember['id']; ?>" role="article" itemscope itemtype="http://schema.org/BlogPosting">
@@ -129,20 +95,8 @@ wp_reset_postdata();
 		// // GO THROUGH LOOP AGAIN
 		// if (have_posts()) : while (have_posts()) : the_post(); 
 
-<<<<<<< HEAD
-										<li id="post-<?php echo $id; ?>" role="article" itemscope itemtype="http://schema.org/BlogPosting">
-											<a href="<?php echo $link; ?>" data-largesrc="<?php echo $largeThumb[0]; ?>" data-title="<?php echo $name; ?>" data-description="<?php echo $emp_bio; ?>" data-etitle="<?php echo $emp_title; ?>">
-											<?php echo '<a href="'.$link.'">';
-												echo '<img src="'.$thumb[0].'" alt="'.$name.'" class="grid-thumb">';
-												echo '<h2 class="small-name gothic">'.$name.'</h2>';
-												echo '<h3 class="small-title gothic">'.$emp_title.'</h3>';
-												?>
-											</a>
-										</li>
-=======
 		// // GET HEADER
 		// $header = get_field('header-image');
->>>>>>> FETCH_HEAD
 
 		// // GET TEAM MEMBER POSTS RELATIONSHIP FIELD FROM 'OUR-LEADERSHIP' ADMIN PAGE
 		// if( get_field('team_members') )
@@ -186,24 +140,6 @@ wp_reset_postdata();
 		// // endif;
 
 		?>
-=======
-			<?php 
-
-				foreach ($teamMembers as $key => $teamMember) { ?>
-					<li id="post-<?php echo $teamMember['id']; ?>" role="article" itemscope itemtype="http://schema.org/BlogPosting">
-						<a href="<?php echo $teamMember['link']; ?>" data-largesrc="<?php echo $teamMember['largeThumb']; ?>" data-title="<?php echo $teamMember['name']; ?>" data-description="<?php echo $teamMember['content']; ?>" data-etitle="<?php echo $teamMember['emp_title']; ?>">
-						<?php echo '<a href="'.$teamMember['link'].'">';
-							echo '<img src="'.$teamMember['thumb'].'" alt="'.$teamMember['name'].'" class="grid-thumb">';
-							echo '<h2 class="small-name gothic">'.$teamMember['name'].'</h2>';
-							echo '<h3 class="small-title gothic">'.$teamMember['emp_title'].'</h3>';
-							?>
-						</a>
-					</li>
-				<?php
-
-				}
-			?>
->>>>>>> FETCH_HEAD
 
 		</ul>
 
