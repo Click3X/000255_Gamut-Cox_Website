@@ -51,6 +51,11 @@ $header = get_field('header-image');
 										$emp_title = get_post_custom_values('title', $id)[0];
 										// helper($emp_title);
 
+										$emp_bio = get_post_custom_values('additional_info', $id)[0];
+										// helper($emp_title);
+
+										
+
 										// IMAGES
 										$size = 'thumb';
 										$full = 'large';
@@ -63,7 +68,7 @@ $header = get_field('header-image');
 										?>
 
 										<li id="post-<?php echo $id; ?>" role="article" itemscope itemtype="http://schema.org/BlogPosting">
-											<a href="<?php echo $link; ?>" data-largesrc="<?php echo $largeThumb[0]; ?>" data-title="<?php echo $name; ?>" data-description="<?php echo $content; ?>" data-etitle="<?php echo $emp_title; ?>">
+											<a href="<?php echo $link; ?>" data-largesrc="<?php echo $largeThumb[0]; ?>" data-title="<?php echo $name; ?>" data-description="<?php echo $emp_bio; ?>" data-etitle="<?php echo $emp_title; ?>">
 											<?php echo '<a href="'.$link.'">';
 												echo '<img src="'.$thumb[0].'" alt="'.$name.'" class="grid-thumb">';
 												echo '<h2 class="small-name gothic">'.$name.'</h2>';
