@@ -10,23 +10,24 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
-  padding-bottom: 66%;
+  // padding-bottom: 66%;
+  padding-bottom: 60%;
   width:100%;
 
   @media(min-width: 1040px) {
-    padding-bottom: 60%;
+    padding-bottom: 57%;
   }
 
   @media(min-width: 1200px) {
     // padding-bottom: 56%;
-    padding-bottom: 53%;
+    padding-bottom: 51%;
   }
 
   // @media (min-width: 1040px) { 
   @media (min-width: 1600px) { 
     // padding-bottom: 695px;
     // padding-bottom: 824px;
-    padding-bottom: 780px;
+    padding-bottom: 750px;
   }
 }
 
@@ -83,7 +84,7 @@
   position: absolute; 
   cursor: pointer;  
   // background: url('vendor/royal/rs-default.png');
-  background: url('../images/sprites/grey-arrow.svg');
+  // background: url('../images/sprites/grey-arrow.svg');
 }
 
 
@@ -105,7 +106,7 @@
   // background-position: -64px -64px; 
   // background-position: -109px -108px;
   // background-size: 540%;
-  background: url('../images/sprites/grey-arrow-right.svg');
+  // background: url('../images/sprites/grey-arrow-right.svg');
   background-position: 12px -1px;
   background-size: 50%;
   background-repeat: no-repeat; 

@@ -60,21 +60,41 @@
     z-index: 3; /* slide over group 4 and 6 */
   }
   #group5 .parallax__layer--base {
-    background: rgb(214,229,100);
+    // background: rgb(214,229,100);
   }
 
   #group6 {
     z-index: 2; /* slide under group 5 and 7 */
+
+    .wrap-holder {
+      width:100%;
+      max-width: 1600px;
+      // margin:0 auto;
+
+      margin: auto;
+      position: absolute;
+      // top: 25%;
+      top:0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      // height: 300px;
+      height: 250px;
+    }
   }
   #group6 .parallax__layer--back {
-    background: rgb(245,235,100);
+    // background: rgb(245,235,100);
+    background-color: none;
+    background-size: 50%;
+    background-repeat: no-repeat;
   }
 
   #group7 {
     z-index: 3; /* slide over group 7 */
   }
   #group7 .parallax__layer--base {
-    background: rgb(255,241,100);
+    // background: rgb(255,241,100);
+
   }
 }
 
@@ -136,4 +156,216 @@
   top:23%;
   bottom:auto;
   height: 500px;
+}
+.white-bg {
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  background: white;
+  // padding-bottom: 63%;
+  padding-bottom: 57.48%;
+
+  @media(min-width: 1850px) {
+      padding-bottom:1090px;
+  }
+}
+.dude {
+  // background-size: 50%;
+  // background-repeat: no-repeat;
+  // background-position: 0 27.5%;
+
+    // background-size: cover;
+   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+  width: 100%;
+  float: left;
+  // padding-bottom: 63%;
+  padding-bottom: 63%;
+  position: absolute;
+  top: 0;
+  width: 50%;
+
+    @media(min-width: 1040px) {
+      // padding-bottom: 41.5%;
+      padding-bottom: 52.5%;
+    }
+
+    @media(min-width: 1850px) {
+      padding-bottom:1090px;
+    }
+
+}
+.mtn {
+    // background-size: 66%;
+    // background-repeat: no-repeat;
+    // background-position: 159% 0;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:0;
+    width:46%;
+    float:right;
+
+    padding-bottom: 63%;
+
+    @media(min-width: 1040px) {
+      // padding-bottom: 41.5%;
+      padding-bottom: 52.5%;
+    }
+
+    // @media(min-width: 1040px) {
+    //   padding-bottom: 50%;
+    // }
+    @media(min-width: 1850px) {
+      padding-bottom:1090px;
+    }
+}
+.beige {
+  background-color:rgb(248,248,239);
+}
+
+.smart {
+  width:50%;
+  float:right;
+  // padding-left:4.5em;
+    padding-left:2%;
+
+  p {
+    color:#000;
+    max-width: 22em;
+    padding-right:.5rem;
+  }
+  .clearfix {
+    position: relative;
+
+    img {
+      width:33px;
+      height:34px;
+      display: block;
+      position: absolute;
+      top:0; bottom:0; left:0; right:auto;
+      margin:auto;
+
+      @media(1040px) {
+        width:48px;
+        height:49px;
+      }
+    }
+  }
+}
+
+.parallax {
+  p {
+    font-size: 1.6em;
+    line-height: 1.2em;
+    letter-spacing: .03em;
+    padding-right:.5rem;
+  }
+}
+
+.smart-replace {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 75.25%;
+  padding-bottom: 7%;
+  span {
+    display: none;
+  }
+}
+
+.home #container {
+   p {
+    font-size: 1.3em;
+    @media(min-width: 1040px) {
+      font-size: 1.6em;
+    }
+  }
+
+  
+  h1 {
+    font-size: 3em;
+
+     @media(min-width: 1200px) {
+      font-size: 4em;
+    }
+     @media(min-width: 1340px) {
+      font-size: 5em;
+    }
+  }
+}
+
+.carr {
+  width: 54%;
+  float: left;
+  // padding-right: 4.5em;
+  height: 100%;
+
+  h1 {
+    // display: inline-block;
+    width: 28.4rem;
+    float: right;
+    clear:right;
+    padding-left:.5rem;
+  }
+
+  p {
+    padding-left:.5rem;
+    padding-right: 1em;
+    max-width: 28.4rem;
+    clear: right;
+    float: right;
+  }
+  @media(min-width: 1040px) {
+    .clearfix {
+      // padding-right: 4em;
+      padding-right: 2%;
+    }  
+  }
+  
+}
+
+.abs-holder {
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  .wrap-holder {
+    // background-color:rgb(248,248,239); 
+    position: absolute;
+    // bottom: 54%;
+    // bottom: 60%;
+    top:0;
+    width: 100%;
+  }
+}
+
+.plus-sign {
+  position: relative;
+  max-width: 7.5em;
+  margin-left:.8em;
+  &:after {
+    content: "";
+    display: block;
+    background-image: url("../../../../../img/plus-sign.png");
+    width: 1.65rem;
+    height: 1.65rem;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    margin: auto;
+    left: -.8em;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media(min-width: 1200px) {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+
+    @media(min-width: 1340px) {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
 }

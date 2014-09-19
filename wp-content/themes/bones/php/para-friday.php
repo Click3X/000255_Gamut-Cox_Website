@@ -9,7 +9,7 @@
     <div id="group1" class="parallax__group">
       <!-- END BASE -->
       <div class="parallax__layer parallax__layer--base">
-        <div class="title">Base Layer 1</div>
+        <!-- <div class="title">Base Layer 1</div> -->
       </div>
 
       <!-- END BACKGROUND -->
@@ -24,13 +24,13 @@
             ?>
           </ul>
         </div>
-        <div class="title">Background Layer 1</div>
+        <!-- <div class="title">Background Layer 1</div> -->
       </div>
 
       <!-- DEEP BACKGROUND -->
       <!-- MTN BG -->
       <div class="parallax__layer parallax__layer--deep background" style="background-image: url('<?php echo $bg_img['url'] ?>');">
-        <div class="title">Deep Background Layer 1</div>
+        <!-- <div class="title">Deep Background Layer 1</div> -->
       </div>
 
     </div>
@@ -41,7 +41,7 @@
     <div id="group2" class="parallax__group">
       <!-- BASE -->
       <div class="parallax__layer parallax__layer--base">
-        <div class="title">Base Layer 2</div>
+        <!-- <div class="title">Base Layer 2</div> -->
         <!-- OUR SOLUTIONS -->
         <div class="clearfix wrap-holder">
           <div class="abs-center white grey-bg our-solutions">
@@ -66,7 +66,7 @@
           </div>
         </div>
 
-        <div class="title">Background Layer 2</div>
+        <!-- <div class="title">Background Layer 2</div> -->
       </div>
     </div>
 
@@ -74,13 +74,13 @@
     <!-- SUBPAGES -->
     <div id="group3" class="parallax__group">
       <div class="parallax__layer parallax__layer--base">
-        <div class="title">Base Layer 3</div>
+        <!-- <div class="title">Base Layer 3</div> -->
       </div>
       
       <!-- START BASE -->
       <div class="parallax__layer parallax__layer--fore">
 
-        <div class="title">Foreground  Layer 3</div>
+       <!--  <div class="title">Foreground  Layer 3</div> -->
 
         <!-- Programmatic -->
           <div class="subpage-wrapper-c clearfix">
@@ -149,7 +149,6 @@
             </div>
           </div>
 
-
       
       </div> <!-- END FORE -->
 
@@ -161,11 +160,11 @@
     
       <!-- IMAGES GO HERE -->
       <div class="parallax__layer parallax__layer--base">
-        <div class="title">Base Layer 4</div>
+        <!-- <div class="title">Base Layer 4</div> -->
       </div>
     
-      <div class="parallax__layer parallax__layer--back">
-        <div class="title">Background Layer 4</div>
+      <div class="parallax__layer parallax__layer--fore">
+        <!-- <div class="title">Background Layer 4</div> -->
           <div class="clearfix wrap-holder">
             <div class="abs-center white grey-bg difference">
               <h1><?php echo $gamut_difference_title ?></h1>
@@ -175,37 +174,57 @@
       </div>
     
       <div class="parallax__layer parallax__layer--deep grey-bg">
-        <div class="title">Deep Background Layer 4</div>
+        <!-- <div class="title">Deep Background Layer 4</div> -->
       </div>
     </div>
 
 
-<!--     <div id="group5" class="parallax__group">
-      <div class="parallax__layer parallax__layer--fore">
-        <div class="title">Foreground Layer 5</div>
-      </div>
-      <div class="parallax__layer parallax__layer--base">
-        <div class="title">Base Layer 5</div>
-      </div>
-    </div> -->
-
-
-<!--     <div id="group6" class="parallax__group">
+    <div id="group6" class="parallax__group">
       <div class="parallax__layer parallax__layer--back">
-        <div class="title">Background Layer 6</div>
+        <!-- <div class="title">Deep Layer 6</div> -->
+        <div class="clearfix abs-holder">
+            <div class="clearfix white-bg">
+              <div class=" background dude" style="background-color:#fff; background-image:url('<?php echo $careers_image['url'];?>');"></div>
+            </div>
+          <div class="clearfix abs-holder">
+            <div class="clearfix wrap-holder">
+              <div class="smart">
+                <div class="clearfix">
+                  <!-- <h1 class="smart-replace" style="background-image:url('<?php echo bloginfo('url'); ?>/img/smart-service.png');"><span><?php echo $smart_service_title ?></span></h1> -->
+                  <h1 class="plus-sign"><?php echo $smart_service_title; ?></h1>
+                </div>
+                <?php echo $smart_service_content; ?>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      
+      <!-- SMART  -->
       <div class="parallax__layer parallax__layer--base">
-        <div class="title">Base Layer 6</div>
+        <!-- <div class="title">Base Layer 6</div> -->
       </div>
-    </div> -->
+    </div>
 
 
     <div id="group7" class="parallax__group">
-      <!-- <div class="parallax__layer parallax__layer--base">
-        <div class="title">Base Layer</div>
+      <div class="parallax__layer parallax__layer--base beige">
+        <!-- MTN -->
+        <div class="background mtn" style="background-color:rgb(248,248,239); background-image:url('<?php echo $smart_service_image['url'];?>');"></div>
+         <!-- CAREERS -->
+            <div class="clearfix abs-holder">
+              <div class="clearfix wrap-holder">
+                <div class="carr beige">
+                  <div class="clearfix">
+                    <h1><?php echo $careers_title ?></h1>
+                    <?php echo $careers_content ?>
+                  </div>
+                </div>
+              </div>
+          </div>
+        <!-- <div class="title">Base Layer 7</div> -->
       </div>
-    </div> -->
 
-
+      
   <!-- </div> PARALLAX IS CLOSED ON FOOTER.PHP FOR HOME PAGE-->
 

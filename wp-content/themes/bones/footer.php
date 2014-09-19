@@ -1,8 +1,8 @@
 		<?php
 			// IF PAGE IS HOME, WRAP THE FOOTER IN GROUP 7 PARALLAX DIV
 			if(is_page(107)) {
-				echo '<div class="parallax__layer parallax__layer--base">
-				      	<div class="title">Base Layer 7</div>';
+				echo '<div class="parallax__layer parallax__layer--fore">';
+				    echo '<div class="title">Fore Layer 7</div>';
 				}
 			?>
 
