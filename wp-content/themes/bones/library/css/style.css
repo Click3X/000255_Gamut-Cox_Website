@@ -2925,11 +2925,9 @@ hr {
 
 /* line 549, ../scss/partials/_custom.scss */
 .sub-title {
-  text-transform: lowercase;
-}
-/* line 551, ../scss/partials/_custom.scss */
-.sub-title:first-letter {
   text-transform: uppercase;
+  margin-top: -1.5em;
+  font-family: "franklin-gothic-urw",sans-serif;
 }
 
 /* line 1, ../scss/partials/_footer.scss */
@@ -3149,9 +3147,9 @@ a {
   margin: 0;
   margin-right: .5em;
   font-size: 1.3rem;
-  line-height: 1.15rem;
-  margin-bottom: .75rem;
-  margin-top: .75rem;
+  line-height: 1em;
+  margin-bottom: .15rem;
+  margin-top: .15rem;
   display: inline-block;
 }
 
@@ -3329,7 +3327,7 @@ a {
 /* line 239, ../scss/partials/_who-we-are.scss */
 .og-details p {
   font-size: 14px;
-  line-height: 22px;
+  line-height: 17px;
   color: #323944;
 }
 
@@ -5254,17 +5252,25 @@ form label {
   margin-top: -1.6em;
 }
 
-/* line 159, ../scss/partials/_wen.scss */
+/* line 158, ../scss/partials/_wen.scss */
+.first-p {
+  font-size: 1.5em !important;
+  margin-bottom: 1em !important;
+  margin-top: 1.3em !important;
+  line-height: 1.2em;
+}
+
+/* line 190, ../scss/partials/_wen.scss */
 #opt {
   text-align: center;
   margin-top: 20px;
 }
-/* line 163, ../scss/partials/_wen.scss */
+/* line 194, ../scss/partials/_wen.scss */
 #opt .opt_btn_wrapper {
   margin-top: 30px;
 }
 
-/* line 168, ../scss/partials/_wen.scss */
+/* line 199, ../scss/partials/_wen.scss */
 #ooButton {
   margin-top: 20px;
   cursor: pointer;
@@ -5277,13 +5283,13 @@ form label {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-/* line 179, ../scss/partials/_wen.scss */
+/* line 210, ../scss/partials/_wen.scss */
 #ooButton:hover {
   background-color: #ed228b;
 }
 
 @media (max-width: 560px) {
-  /* line 185, ../scss/partials/_wen.scss */
+  /* line 216, ../scss/partials/_wen.scss */
   .wpcf7-list-item {
     display: block;
   }

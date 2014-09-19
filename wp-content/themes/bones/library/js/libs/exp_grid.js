@@ -194,7 +194,7 @@ jQuery(document).ready(function($) {
 			support = Modernizr.csstransitions,
 			// default settings
 			settings = {
-				minHeight : 500,
+				minHeight : 900,
 				speed : 350,
 				easing : 'ease'
 			};
@@ -461,8 +461,8 @@ jQuery(document).ready(function($) {
 
 			},
 			calcHeight : function() {
-				// var heightPreview = winsize.height - this.$item.data( 'height' ) - marginExpanded,
-				var heightPreview = this.$item.data( 'height' ) - marginExpanded,
+				var heightPreview = winsize.height - this.$item.data( 'height' ) - marginExpanded,
+				//var heightPreview = this.$item.data( 'height' ) - marginExpanded,
 					itemHeight = winsize.height;
 
 				if( heightPreview < settings.minHeight ) {

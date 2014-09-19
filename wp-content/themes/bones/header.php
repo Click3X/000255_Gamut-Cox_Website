@@ -99,7 +99,10 @@
 						<!-- </div> -->
 						<!-- // mobile nav -->
 						<a id="mobile-btn" class="mobile-btn" href="#" rel="nofollow">&#9776;</a>
+						<!-- <h2 id="tagline">SMART MEDIA FROM COX</h2> -->
 					</div>
+
+
 
 					<?php // if you'd like to use the site description you can un-comment it below ?>
 					<?php // bloginfo('description'); ?>

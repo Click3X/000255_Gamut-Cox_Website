@@ -154,6 +154,37 @@ form {
 	}
 }
 
+// our solutions page
+.first-p {
+	font-size: 1.5em !important;
+	margin-bottom: 1em !important;
+	margin-top: 1.3em !important;
+	line-height: 1.2em;
+}
+
+// tagline
+// #tagline {
+// 	font-family: "franklin-gothic-urw",sans-serif !important;
+// 	color: $black;
+// 	width: 500px;
+// 	vertical-align: bottom;
+// 	top: 20px;
+// 	position: absolute;
+// 	display: inline-block;
+// 	left: 130px;
+// 	@include transition(all 0.2s);
+
+// 	@media(max-width: 1048px) {
+//     	opacity: 0;
+    	
+// }
+
+// }
+
+// .logo-holder {
+// 	position: relative;
+// }
+
 // opt out styling
 
 #opt {

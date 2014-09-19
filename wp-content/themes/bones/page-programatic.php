@@ -52,8 +52,19 @@ get_header(); ?>
 										<img src="<?php bloginfo('url'); ?>/img/home-logos/crossmedia-logo.png">
 									<?php } ?>
 
-										
-										<h2 class="sub-title"><?php echo $main_sub_title; ?></h2>
+
+
+									<!-- different pages different sub title colors -->
+									<?php if (is_page(11)) { ?>
+										<h2 class="sub-title pro-color"><?php echo $main_sub_title; ?></h2>
+									<?php } elseif (is_page(15)) { ?>
+										<h2 class="sub-title rep-color"><?php echo $main_sub_title; ?></h2>
+									<?php } elseif (is_page(24)) { ?>
+										<h2 class="sub-title rea-color"><?php echo $main_sub_title; ?></h2>
+									<?php } elseif (is_page(13)) { ?>
+										<h2 class="sub-title cro-color"><?php echo $main_sub_title; ?></h2>
+									<?php } ?>
+
 										<p class="first-p"><?php echo $main_first_p; ?></p>
 										<p><?php echo $main_p; ?></p>
 
@@ -141,14 +152,6 @@ get_header(); ?>
 											</div>
 
 										<?php endif; ?>
-
-
-
-											<?php //} elseif (is_page(8)) { ?>
-											   <!-- <image src="<?php bloginfo('stylesheet_directory'); ?>/images/imagename.jpg" /> -->
-											<?php //} elseif (in_category( '5' )) { ?>
-											   <!-- <image src="<?php bloginfo('stylesheet_directory'); ?>/images/imagename.jpg" /> -->
-											<?php //} ?>
 
 									</div> 
 									<!-- end of lower content -->
