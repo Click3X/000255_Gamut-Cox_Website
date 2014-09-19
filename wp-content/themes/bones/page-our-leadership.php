@@ -25,20 +25,19 @@ if (have_posts()) : while (have_posts()) : the_post();
 			$id = $team_member->ID;
 			$name = $team_member->post_title;
 			$link = $team_member->guid;
+			$emp_title = get_post_custom_values('title', $id)[0];
 
 			$teamMembers[$key]['id'] = $id;
 			$teamMembers[$key]['name'] = $name;
 			$teamMembers[$key]['link'] = $link;
+			$teamMembers[$key]['emp_title'] = $emp_title;
 
 
 			echo '<h1>This is id: '.$teamMembers[$key]['id'].'</h1>';
 			echo '<h1>This is name: '.$teamMembers[$key]['name'].'</h1>';
 			echo '<h1>This is link: '.$teamMembers[$key]['link'].'</h1>';
+			echo '<h1>This is emp_title: '.$teamMembers[$key]['emp_title'].'</h1>';
 
-			// // CONTENT FIELDS
-			// // $content = $team_member->post_content;
-			// $name = $team_member->post_title;
-			// $link = $team_member->guid;
 
 			// // CUSTOM FIELDS
 			// $emp_title = get_post_custom_values('title', $id)[0];
