@@ -26,7 +26,8 @@ if (have_posts()) : while (have_posts()) : the_post();
 			$name = $team_member->post_title;
 			$link = $team_member->guid;
 			
-			// $emp_title = get_post_custom_values('title', $id)[0];
+			$emp_title = get_post_custom_values('title', $team_member->ID);
+			helper($emp_title);
 
 			$teamMembers[$key]['id'] = $id;
 			$teamMembers[$key]['name'] = $name;
