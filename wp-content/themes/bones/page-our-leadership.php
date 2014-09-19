@@ -35,6 +35,8 @@ if( get_field('team_members') )
 				// CUSTOM FIELDS
 				$emp_title = get_post_custom_values('title', $id)[0];
 
+				$emp_bio = get_post_custom_values('additional_info', $id)[0];
+
 				// IMAGES
 				$size = 'thumb';
 				$full = 'large';
@@ -76,20 +78,6 @@ endif;
 
 		<ul id="og-grid" class="og-grid">
 
-<<<<<<< HEAD
-										$emp_bio = get_post_custom_values('additional_info', $id)[0];
-										// helper($emp_title);
-
-										
-
-										// IMAGES
-										$size = 'thumb';
-										$full = 'large';
-										$thumb = wp_get_attachment_image_src(get_post_thumbnail_id($id) , 'emp-thumb');
-										$largeThumb = wp_get_attachment_image_src(get_post_thumbnail_id($id) , 'emp-large');
-=======
-		<?php 
->>>>>>> FETCH_HEAD
 
 		foreach ($teamMembers as $key => $teamMember) { ?>
 			<li id="post-<?php echo $teamMember['id']; ?>" role="article" itemscope itemtype="http://schema.org/BlogPosting">

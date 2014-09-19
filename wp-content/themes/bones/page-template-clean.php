@@ -35,6 +35,8 @@ if( get_field('team_members') )
 				// CUSTOM FIELDS
 				$emp_title = get_post_custom_values('title', $id)[0];
 
+				
+
 				// IMAGES
 				$size = 'thumb';
 				$full = 'large';

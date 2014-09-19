@@ -35,8 +35,6 @@
 						if ($sidebar_intro) {
 							echo '<div id="sidebar-intro">'.$sidebar_intro.'</div>';
 						}
-
-
 						?>
 
 
