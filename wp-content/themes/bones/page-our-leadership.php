@@ -21,34 +21,39 @@ if (have_posts()) : while (have_posts()) : the_post();
 			$id = $team_member->ID;
 			$name = $team_member->post_title;
 			$link = $team_member->guid;
-			
-			$empTitle = get_post_custom_values('title', $team_member->ID);
-			$emp_title = $empTitle[0];
-
-			$teamMembers[$key]['id'] = $id;
-			$teamMembers[$key]['name'] = $name;
-			$teamMembers[$key]['link'] = $link;
-			$teamMembers[$key]['emp_title'] = $emp_title;
-
 			$size = 'thumb';
 			$full = 'large';
 			$thumb = wp_get_attachment_image_src(get_post_thumbnail_id($id) , 'emp-thumb');
 			$largeThumb = wp_get_attachment_image_src(get_post_thumbnail_id($id) , 'emp-large');
-
+			
+			// GET CUSTOM FIELDS ASSOCIATED WITH TEAM MEMBER
+			$empTitle = get_post_custom_values('title', $team_member->ID);
+			$emp_title = $empTitle[0];
+			$addInfo = get_post_custom_values('additional_info', $team_member->ID);
+			$add_info = $addInfo[0];
+			$emailAdd = get_post_custom_values('email', $team_member->ID);
+			$email = $emailAdd[0];
+			$telePhone = get_post_custom_values('telephone', $team_member->ID);
+			$tele = $telePhone[0];
+			
+			// ADD VALUES TO EACH TEAM MEMBER IN ARRAY
+			$teamMembers[$key]['id'] = $id;
+			$teamMembers[$key]['name'] = $name;
+			$teamMembers[$key]['link'] = $link;
+			$teamMembers[$key]['emp_title'] = $emp_title;
+			$teamMembers[$key]['add_info'] = $add_info;
+			$teamMembers[$key]['email'] = $email;
+			$teamMembers[$key]['tele'] = $tele;
 			$teamMembers[$key]['thumb'] = $thumb[0];
 			$teamMembers[$key]['largeThumb'] = $largeThumb[0];
 
 		}
 	}
-	// helper($teamMembers);
-
 	endwhile;
 
 endif;
 
 wp_reset_postdata();
-
-// helper($teamMembers);
 
 ?>
 
@@ -70,7 +75,7 @@ wp_reset_postdata();
 
 				foreach ($teamMembers as $key => $teamMember) { ?>
 					<li id="post-<?php echo $teamMember['id']; ?>" role="article" itemscope itemtype="http://schema.org/BlogPosting">
-						<a href="<?php echo $teamMember['link']; ?>" data-largesrc="<?php echo $teamMember['largeThumb']; ?>" data-title="<?php echo $teamMember['name']; ?>" data-description="<?php echo $teamMember['content']; ?>" data-etitle="<?php echo $teamMember['emp_title']; ?>">
+						<a href="<?php echo $teamMember['link']; ?>" data-largesrc="<?php echo $teamMember['largeThumb']; ?>" data-title="<?php echo $teamMember['name']; ?>" data-description="<?php echo $teamMember['add_info']; ?>" data-etitle="<?php echo $teamMember['emp_title']; ?>">
 						<?php echo '<a href="'.$teamMember['link'].'">';
 							echo '<img src="'.$teamMember['thumb'].'" alt="'.$teamMember['name'].'" class="grid-thumb">';
 							echo '<h2 class="small-name gothic">'.$teamMember['name'].'</h2>';
