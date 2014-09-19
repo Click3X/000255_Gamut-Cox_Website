@@ -18,7 +18,7 @@ if (have_posts()) : while (have_posts()) : the_post();
 		$team_members = $tmpPosts[0]['team_member'];
 
 		foreach ($team_members as $key => $team_member) {
-			helper($team_member);
+			// helper($team_member);
 			$id = $team_member->ID;
 			$name = $team_member->post_title;
 			$link = $team_member->guid;
