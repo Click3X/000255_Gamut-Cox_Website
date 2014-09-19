@@ -120,17 +120,54 @@ form {
 		text-align: left;
 	}
 
+	ul {
+		list-style-position: inside;
+		// list-style-type: disc; 
+		li:before {
+			color: $brand-color; 
+	  		content:"\2022"; 
+	  		font-size: 1.5em;
+	  		padding-right: .25em;
+	  		position: relative;
+	  		top: .1em;
+		}
+
+		ul {
+			margin-top: -0.2em;
+			// padding-left: 1.1em;
+
+			li:before {
+				color: $light-grey; 
+				font-size: 1.2em;
+			}
+		}
+	}
+
 
 }
 
 .our-solutions-list {
+	
 	h2 {
 		font-family: "franklin-gothic-urw",sans-serif;
 		margin-top: -1.6em;
 	}
 }
 
-#btn-opt-out {
+// opt out styling
+
+#opt {
+	text-align: center;
+	margin-top: 20px;
+
+	.opt_btn_wrapper {
+		margin-top: 30px;
+	}
+}
+
+#ooButton {
+		margin-top: 20px;
+		cursor: pointer;
 		color: white;
 		white-space: nowrap;
 		text-align: center;

@@ -37,7 +37,7 @@ get_header(); ?>
 								</div>
 
 								<!-- adding opt-out policy -->
-								<?php if (is_page(275)) { ?>
+								<?php if (is_page(275) || is_page(278)) { ?>
 
 							<div id="opt">
 					            <h6>Your browser&#8217;s current status</h6>

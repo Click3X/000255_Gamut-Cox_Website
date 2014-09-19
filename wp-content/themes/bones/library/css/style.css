@@ -3328,11 +3328,12 @@ a {
 
 /* line 239, ../scss/partials/_who-we-are.scss */
 .og-details p {
-  font-size: 12px;
-  line-height: 17px;
+  font-size: 14px;
+  line-height: 22px;
+  color: #323944;
 }
 
-/* line 244, ../scss/partials/_who-we-are.scss */
+/* line 245, ../scss/partials/_who-we-are.scss */
 .og-details a {
   font-weight: 700;
   font-size: 16px;
@@ -3346,20 +3347,20 @@ a {
   outline: none;
 }
 
-/* line 257, ../scss/partials/_who-we-are.scss */
+/* line 258, ../scss/partials/_who-we-are.scss */
 .og-details a::before {
   content: '\2192';
   display: inline-block;
   margin-right: 10px;
 }
 
-/* line 263, ../scss/partials/_who-we-are.scss */
+/* line 264, ../scss/partials/_who-we-are.scss */
 .og-details a:hover {
   border-color: #999;
   color: #999;
 }
 
-/* line 268, ../scss/partials/_who-we-are.scss */
+/* line 269, ../scss/partials/_who-we-are.scss */
 .og-loading {
   width: 20px;
   height: 20px;
@@ -3376,18 +3377,18 @@ a {
 }
 
 @-webkit-keyframes loader {
-  /* line 284, ../scss/partials/_who-we-are.scss */
+  /* line 285, ../scss/partials/_who-we-are.scss */
   0% {
     background: #ddd;
   }
 
-  /* line 285, ../scss/partials/_who-we-are.scss */
+  /* line 286, ../scss/partials/_who-we-are.scss */
   33% {
     background: #ccc;
     box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd;
   }
 
-  /* line 286, ../scss/partials/_who-we-are.scss */
+  /* line 287, ../scss/partials/_who-we-are.scss */
   66% {
     background: #ccc;
     box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc;
@@ -3395,18 +3396,18 @@ a {
 }
 
 @-moz-keyframes loader {
-  /* line 290, ../scss/partials/_who-we-are.scss */
+  /* line 291, ../scss/partials/_who-we-are.scss */
   0% {
     background: #ddd;
   }
 
-  /* line 291, ../scss/partials/_who-we-are.scss */
+  /* line 292, ../scss/partials/_who-we-are.scss */
   33% {
     background: #ccc;
     box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd;
   }
 
-  /* line 292, ../scss/partials/_who-we-are.scss */
+  /* line 293, ../scss/partials/_who-we-are.scss */
   66% {
     background: #ccc;
     box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc;
@@ -3414,18 +3415,18 @@ a {
 }
 
 @keyframes loader {
-  /* line 296, ../scss/partials/_who-we-are.scss */
+  /* line 297, ../scss/partials/_who-we-are.scss */
   0% {
     background: #ddd;
   }
 
-  /* line 297, ../scss/partials/_who-we-are.scss */
+  /* line 298, ../scss/partials/_who-we-are.scss */
   33% {
     background: #ccc;
     box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd;
   }
 
-  /* line 298, ../scss/partials/_who-we-are.scss */
+  /* line 299, ../scss/partials/_who-we-are.scss */
   66% {
     background: #ccc;
     box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc;
@@ -3433,7 +3434,7 @@ a {
 }
 
 @media screen and (max-width: 650px) {
-  /* line 303, ../scss/partials/_who-we-are.scss */
+  /* line 304, ../scss/partials/_who-we-are.scss */
   .og-details {
     float: none;
     width: 100%;
@@ -4967,15 +4968,49 @@ form label {
     text-align: left;
   }
 }
+/* line 123, ../scss/partials/_wen.scss */
+#sidebar-intro ul {
+  list-style-position: inside;
+}
+/* line 126, ../scss/partials/_wen.scss */
+#sidebar-intro ul li:before {
+  color: #ed228b;
+  content: "\2022";
+  font-size: 1.5em;
+  padding-right: .25em;
+  position: relative;
+  top: .1em;
+}
+/* line 135, ../scss/partials/_wen.scss */
+#sidebar-intro ul ul {
+  margin-top: -0.2em;
+}
+/* line 139, ../scss/partials/_wen.scss */
+#sidebar-intro ul ul li:before {
+  color: #bdbdbd;
+  font-size: 1.2em;
+}
 
-/* line 127, ../scss/partials/_wen.scss */
+/* line 151, ../scss/partials/_wen.scss */
 .our-solutions-list h2 {
   font-family: "franklin-gothic-urw",sans-serif;
   margin-top: -1.6em;
 }
 
-/* line 133, ../scss/partials/_wen.scss */
-#btn-opt-out {
+/* line 159, ../scss/partials/_wen.scss */
+#opt {
+  text-align: center;
+  margin-top: 20px;
+}
+/* line 163, ../scss/partials/_wen.scss */
+#opt .opt_btn_wrapper {
+  margin-top: 30px;
+}
+
+/* line 168, ../scss/partials/_wen.scss */
+#ooButton {
+  margin-top: 20px;
+  cursor: pointer;
   color: white;
   white-space: nowrap;
   text-align: center;
@@ -4985,13 +5020,13 @@ form label {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-/* line 142, ../scss/partials/_wen.scss */
-#btn-opt-out:hover {
+/* line 179, ../scss/partials/_wen.scss */
+#ooButton:hover {
   background-color: #ed228b;
 }
 
 @media (max-width: 560px) {
-  /* line 148, ../scss/partials/_wen.scss */
+  /* line 185, ../scss/partials/_wen.scss */
   .wpcf7-list-item {
     display: block;
   }
