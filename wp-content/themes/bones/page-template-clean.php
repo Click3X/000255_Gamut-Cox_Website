@@ -1,6 +1,6 @@
 <?php 
 /*
-	Template Name: Clean
+	Template Name: Clean New
 */
 
 get_header(); 
@@ -76,20 +76,7 @@ endif;
 
 		<ul id="og-grid" class="og-grid">
 
-<<<<<<< HEAD
-										$emp_bio = get_post_custom_values('additional_info', $id)[0];
-										// helper($emp_title);
-
-										
-
-										// IMAGES
-										$size = 'thumb';
-										$full = 'large';
-										$thumb = wp_get_attachment_image_src(get_post_thumbnail_id($id) , 'emp-thumb');
-										$largeThumb = wp_get_attachment_image_src(get_post_thumbnail_id($id) , 'emp-large');
-=======
 		<?php 
->>>>>>> FETCH_HEAD
 
 		foreach ($teamMembers as $key => $teamMember) { ?>
 			<li id="post-<?php echo $teamMember['id']; ?>" role="article" itemscope itemtype="http://schema.org/BlogPosting">
@@ -108,20 +95,8 @@ endif;
 		// // GO THROUGH LOOP AGAIN
 		// if (have_posts()) : while (have_posts()) : the_post(); 
 
-<<<<<<< HEAD
-										<li id="post-<?php echo $id; ?>" role="article" itemscope itemtype="http://schema.org/BlogPosting">
-											<a href="<?php echo $link; ?>" data-largesrc="<?php echo $largeThumb[0]; ?>" data-title="<?php echo $name; ?>" data-description="<?php echo $emp_bio; ?>" data-etitle="<?php echo $emp_title; ?>">
-											<?php echo '<a href="'.$link.'">';
-												echo '<img src="'.$thumb[0].'" alt="'.$name.'" class="grid-thumb">';
-												echo '<h2 class="small-name gothic">'.$name.'</h2>';
-												echo '<h3 class="small-title gothic">'.$emp_title.'</h3>';
-												?>
-											</a>
-										</li>
-=======
 		// // GET HEADER
 		// $header = get_field('header-image');
->>>>>>> FETCH_HEAD
 
 		// // GET TEAM MEMBER POSTS RELATIONSHIP FIELD FROM 'OUR-LEADERSHIP' ADMIN PAGE
 		// if( get_field('team_members') )
