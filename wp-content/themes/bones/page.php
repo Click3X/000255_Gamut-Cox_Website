@@ -45,31 +45,28 @@
 									<div class="our-solutions-list-wrapper">
 									   
 									   <div class="our-solutions-list">
-										   	<img src="<?php bloginfo('url'); ?>/img/home-logos/programmatic-logo.png">
-										   	<h2 class="pro-color"><?php echo $pro_caption ?></h2>
+										   	<img src="<?php bloginfo('url'); ?>/img/our-solutions/pro-logo.png">
+										   <!-- 	<h2 class="pro-color"><?php echo $pro_caption ?></h2> -->
 									   </div>
 
 									   <div class="our-solutions-list">
-										   	<img src="<?php bloginfo('url'); ?>/img/home-logos/reps-logo.png">
-										   	<h2 class="rep-color"><?php echo $rep_caption ?></h2>
+										   	<img src="<?php bloginfo('url'); ?>/img/our-solutions/rep-logo.png">
+										   	<!-- <h2 class="rep-color"><?php echo $rep_caption ?></h2> -->
 									   </div>
 
 									   <div class="our-solutions-list">
-										   	<img class="logo-smaller" src="<?php bloginfo('url'); ?>/img/home-logos/reach-logo.png">
-										   	<h2 class="rea-color"><?php echo $rea_caption ?></h2>
+										   	<img class="logo-smaller" src="<?php bloginfo('url'); ?>/img/our-solutions/rea-logo.png">
+										   <!-- 	<h2 class="rea-color"><?php echo $rea_caption ?></h2> -->
 									   </div>
 
 									   <div class="our-solutions-list">
-										   	<img class="logo-smaller" src="<?php bloginfo('url'); ?>/img/home-logos/crossmedia-logo.png">
-										   	<h2 class="cro-color"><?php echo $cro_caption ?></h2>
+										   	<img class="logo-smaller" src="<?php bloginfo('url'); ?>/img/our-solutions/cro-logo.png">
+										   	<!-- <h2 class="cro-color"><?php echo $cro_caption ?></h2> -->
 									   </div>
 
 									 </div>
 
-									<?php } elseif (is_page(8)) { ?>
-									   <!-- <image src="<?php bloginfo('stylesheet_directory'); ?>/images/imagename.jpg" /> -->
-									<?php } elseif (in_category( '5' )) { ?>
-									   <!-- <image src="<?php bloginfo('stylesheet_directory'); ?>/images/imagename.jpg" /> -->
+
 									<?php } ?>
 
 									<?php

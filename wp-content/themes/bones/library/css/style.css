@@ -2691,7 +2691,7 @@ hr {
 }
 /* line 300, ../scss/partials/_custom.scss */
 .our-solutions-list img {
-  height: 3em;
+  height: 5em;
 }
 /* line 304, ../scss/partials/_custom.scss */
 .our-solutions-list h2 {
@@ -5260,17 +5260,22 @@ form label {
   line-height: 1.2em;
 }
 
-/* line 190, ../scss/partials/_wen.scss */
+/* line 166, ../scss/partials/_wen.scss */
+.sub-page-content-wrapper img {
+  margin-bottom: 0 !important;
+}
+
+/* line 196, ../scss/partials/_wen.scss */
 #opt {
   text-align: center;
   margin-top: 20px;
 }
-/* line 194, ../scss/partials/_wen.scss */
+/* line 200, ../scss/partials/_wen.scss */
 #opt .opt_btn_wrapper {
   margin-top: 30px;
 }
 
-/* line 199, ../scss/partials/_wen.scss */
+/* line 205, ../scss/partials/_wen.scss */
 #ooButton {
   margin-top: 20px;
   cursor: pointer;
@@ -5283,13 +5288,13 @@ form label {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-/* line 210, ../scss/partials/_wen.scss */
+/* line 216, ../scss/partials/_wen.scss */
 #ooButton:hover {
   background-color: #ed228b;
 }
 
 @media (max-width: 560px) {
-  /* line 216, ../scss/partials/_wen.scss */
+  /* line 222, ../scss/partials/_wen.scss */
   .wpcf7-list-item {
     display: block;
   }
