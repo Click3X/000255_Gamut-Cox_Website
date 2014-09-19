@@ -23,7 +23,8 @@ if (have_posts()) : while (have_posts()) : the_post();
 		foreach ($team_members as $key => $team_member) {
 			helper($team_member);
 			$id = $team_member->ID;
-			echo '<h1>This is id: '.$id.'</h1>';
+			$teamMembers[$key]['id'] = $id;
+			echo '<h1>This is id: '.$teamMembers[$key]['id'].'</h1>';
 
 			// // CONTENT FIELDS
 			// // $content = $team_member->post_content;
