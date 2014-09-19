@@ -83,7 +83,12 @@
   /* demo styles
   --------------------------------------------- */
 
-  body, html {
+  // body, html {
+  //   overflow: hidden;
+  // }
+
+html.home-para,
+  body.home {
     overflow: hidden;
   }
 

@@ -4107,24 +4107,25 @@ a {
 
   /* demo styles
   --------------------------------------------- */
-  /* line 86, ../scss/modules/_para-friday.scss */
-  body, html {
+  /* line 91, ../scss/modules/_para-friday.scss */
+  html.home-para,
+  body.home {
     overflow: hidden;
   }
 
-  /* line 94, ../scss/modules/_para-friday.scss */
+  /* line 99, ../scss/modules/_para-friday.scss */
   * {
     margin: 0;
     padding: 0;
   }
 
-  /* line 99, ../scss/modules/_para-friday.scss */
+  /* line 104, ../scss/modules/_para-friday.scss */
   .parallax {
     font-size: 200%;
   }
 
   /* centre the content in the parallax layers */
-  /* line 104, ../scss/modules/_para-friday.scss */
+  /* line 109, ../scss/modules/_para-friday.scss */
   .title {
     text-align: center;
     position: absolute;
@@ -4136,79 +4137,79 @@ a {
 
   /* style the groups
   --------------------------------------------- */
-  /* line 118, ../scss/modules/_para-friday.scss */
+  /* line 123, ../scss/modules/_para-friday.scss */
   #group1 {
     z-index: 5;
     /* slide over group 2 */
   }
 
-  /* line 121, ../scss/modules/_para-friday.scss */
+  /* line 126, ../scss/modules/_para-friday.scss */
   #group1 .parallax__layer--base {
     background: #66cc66;
   }
 
-  /* line 125, ../scss/modules/_para-friday.scss */
+  /* line 130, ../scss/modules/_para-friday.scss */
   #group2 {
     z-index: 3;
     /* slide under groups 1 and 3 */
   }
 
-  /* line 128, ../scss/modules/_para-friday.scss */
+  /* line 133, ../scss/modules/_para-friday.scss */
   #group2 .parallax__layer--back {
     background: #7bd266;
   }
 
-  /* line 132, ../scss/modules/_para-friday.scss */
+  /* line 137, ../scss/modules/_para-friday.scss */
   #group3 {
     z-index: 4;
     /* slide over group 2 and 4 */
   }
 
-  /* line 135, ../scss/modules/_para-friday.scss */
+  /* line 140, ../scss/modules/_para-friday.scss */
   #group3 .parallax__layer--base {
     background: #99d865;
   }
 
-  /* line 139, ../scss/modules/_para-friday.scss */
+  /* line 144, ../scss/modules/_para-friday.scss */
   #group4 {
     z-index: 2;
     /* slide under group 3 and 5 */
   }
 
-  /* line 142, ../scss/modules/_para-friday.scss */
+  /* line 147, ../scss/modules/_para-friday.scss */
   #group4 .parallax__layer--deep {
     background: #b8df65;
   }
 
-  /* line 146, ../scss/modules/_para-friday.scss */
+  /* line 151, ../scss/modules/_para-friday.scss */
   #group5 {
     z-index: 3;
     /* slide over group 4 and 6 */
   }
 
-  /* line 149, ../scss/modules/_para-friday.scss */
+  /* line 154, ../scss/modules/_para-friday.scss */
   #group5 .parallax__layer--base {
     background: #d6e564;
   }
 
-  /* line 153, ../scss/modules/_para-friday.scss */
+  /* line 158, ../scss/modules/_para-friday.scss */
   #group6 {
     z-index: 2;
     /* slide under group 5 and 7 */
   }
 
-  /* line 156, ../scss/modules/_para-friday.scss */
+  /* line 161, ../scss/modules/_para-friday.scss */
   #group6 .parallax__layer--back {
     background: #f5eb64;
   }
 
-  /* line 160, ../scss/modules/_para-friday.scss */
+  /* line 165, ../scss/modules/_para-friday.scss */
   #group7 {
     z-index: 3;
     /* slide over group 7 */
   }
 
-  /* line 163, ../scss/modules/_para-friday.scss */
+  /* line 168, ../scss/modules/_para-friday.scss */
   #group7 .parallax__layer--base {
     background: #fff164;
   }
