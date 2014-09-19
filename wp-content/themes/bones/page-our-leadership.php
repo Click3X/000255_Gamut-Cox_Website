@@ -40,20 +40,15 @@ if (have_posts()) : while (have_posts()) : the_post();
 			$teamMembers[$key]['thumb'] = $thumb[0];
 			$teamMembers[$key]['largeThumb'] = $largeThumb[0];
 
-
-			// echo '<h1>This is id: '.$teamMembers[$key]['id'].'</h1>';
-			// echo '<h1>This is name: '.$teamMembers[$key]['name'].'</h1>';
-			// echo '<h1>This is link: '.$teamMembers[$key]['link'].'</h1>';
-			// echo '<h1>This is emp_title: '.$teamMembers[$key]['emp_title'].'</h1>';
-			// echo '<h1>This is thumb: '.$teamMembers[$key]['thumb'].'</h1>';
-			// echo '<h1>This is largeThumb: '.$teamMembers[$key]['largeThumb'].'</h1>';
 		}
 	}
-	helper($teamMembers);
+	// helper($teamMembers);
 
 	endwhile;
 
 endif;
+
+wp_reset_postdata();
 
 // helper($teamMembers);
 
