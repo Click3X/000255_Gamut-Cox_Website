@@ -13,86 +13,54 @@ if (have_posts()) : while (have_posts()) : the_post();
 	$header = get_field('header-image');
 
 	$posts = get_field('team_members');
+	
+	helper($posts);
+
 	// GET TEAM MEMBER POSTS RELATIONSHIP FIELD FROM 'OUR-LEADERSHIP' ADMIN PAGE
-	if( $posts )
-		{
-			foreach( $posts as $post): // variable must be called $post (IMPORTANT);
-	        setup_postdata($post); 
+	// if( $posts )
+	// 	{
+	// 		foreach( $posts as $post): // variable must be called $post (IMPORTANT);
+	//         setup_postdata($post); 
 	   		
-	   		// $MEMBER HOLDS DATA
+	//    		// $MEMBER HOLDS DATA
 
-			$id = $member->ID;
+	// 		$id = $post->ID;
 
-			// CONTENT FIELDS
-			// $content = $member->post_content;
-			$name = $member->post_title;
-			$link = $member->guid;
+	// 		// CONTENT FIELDS
+	// 		// $content = $post->post_content;
+	// 		$name = $post->post_title;
+	// 		$link = $post->guid;
 
-			// CUSTOM FIELDS
-			$emp_title = get_post_custom_values('title', $id)[0];
+	// 		// CUSTOM FIELDS
+	// 		$emp_title = get_post_custom_values('title', $id)[0];
 
-			// IMAGES
-			$size = 'thumb';
-			$full = 'large';
-			$thumb = wp_get_attachment_image_src(get_post_thumbnail_id($id) , 'emp-thumb');
-			$largeThumb = wp_get_attachment_image_src(get_post_thumbnail_id($id) , 'emp-large');
+	// 		// IMAGES
+	// 		$size = 'thumb';
+	// 		$full = 'large';
+	// 		$thumb = wp_get_attachment_image_src(get_post_thumbnail_id($id) , 'emp-thumb');
+	// 		$largeThumb = wp_get_attachment_image_src(get_post_thumbnail_id($id) , 'emp-large');
 
-			//STORE VARS IN TEAM MEMBERS ARRAY
-			$teamMembers[$key]['id'] = $id;
-			// $teamMembers[$key]['content'] = $content;
-			$teamMembers[$key]['name'] = $name;
-			$teamMembers[$key]['link'] = $link;
-			$teamMembers[$key]['emp_title'] = $emp_title;
-			$teamMembers[$key]['thumb'] = $thumb;
-			$teamMembers[$key]['large_thumb'] = $largeThumb;
+	// 		//STORE VARS IN TEAM MEMBERS ARRAY
+	// 		$teamMembers[$key]['id'] = $id;
+	// 		// $teamMembers[$key]['content'] = $content;
+	// 		$teamMembers[$key]['name'] = $name;
+	// 		$teamMembers[$key]['link'] = $link;
+	// 		$teamMembers[$key]['emp_title'] = $emp_title;
+	// 		$teamMembers[$key]['thumb'] = $thumb;
+	// 		$teamMembers[$key]['large_thumb'] = $largeThumb;
 
 
-	   		endforeach;
+	//    		endforeach;
 	    
-	    wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly 
-
-
-	// 		while( has_sub_field('team_members') )
-	// 		{ 
-	// 			$team_member = get_sub_field('team_member');
-
-	// 			foreach ($team_member as $key => $member) {
-	// 				// $MEMBER HOLDS DATA
-
-	// 				$id = $member->ID;
-
-	// 				// CONTENT FIELDS
-	// 				// $content = $member->post_content;
-	// 				$name = $member->post_title;
-	// 				$link = $member->guid;
-
-	// 				// CUSTOM FIELDS
-	// 				$emp_title = get_post_custom_values('title', $id)[0];
-
-	// 				// IMAGES
-	// 				$size = 'thumb';
-	// 				$full = 'large';
-	// 				$thumb = wp_get_attachment_image_src(get_post_thumbnail_id($id) , 'emp-thumb');
-	// 				$largeThumb = wp_get_attachment_image_src(get_post_thumbnail_id($id) , 'emp-large');
-
-	// 				//STORE VARS IN TEAM MEMBERS ARRAY
-	// 				$teamMembers[$key]['id'] = $id;
-	// 				// $teamMembers[$key]['content'] = $content;
-	// 				$teamMembers[$key]['name'] = $name;
-	// 				$teamMembers[$key]['link'] = $link;
-	// 				$teamMembers[$key]['emp_title'] = $emp_title;
-	// 				$teamMembers[$key]['thumb'] = $thumb;
-	// 				$teamMembers[$key]['large_thumb'] = $largeThumb;
-
-	// 			}
-	// 		}
-		}
+	//     wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly 
+		
+	// 	}
 
 	endwhile;
 
 endif;
 
-helper($teamMembers);
+// helper($teamMembers);
 
 ?>
 
