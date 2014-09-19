@@ -4,7 +4,7 @@
 
   <div class="parallax">
 
-    <!-- PARALLAX CAROUSEL -->
+    <!-- PARALLAX CAROUSEL  -->
     <div id="group1" class="parallax__group">
       <div class="parallax__layer parallax__layer--base">
         <div class="title">Base Layer 1</div>
