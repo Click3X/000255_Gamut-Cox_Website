@@ -10,50 +10,50 @@ $teamMembers = array();
 if (have_posts()) : while (have_posts()) : the_post(); 
 
 // GET HEADER
-// $header = get_field('header-image');
+$header = get_field('header-image');
 
 // GET TEAM MEMBER POSTS RELATIONSHIP FIELD FROM 'OUR-LEADERSHIP' ADMIN PAGE
-if( get_field('team_members') )
-	{
-		while( has_sub_field('team_members') )
-		{ 
-			$team_member = get_sub_field('team_member');
+// if( get_field('team_members') )
+// 	{
+// 		while( has_sub_field('team_members') )
+// 		{ 
+// 			$team_member = get_sub_field('team_member');
 
-			foreach ($team_member as $key => $member) {
-				// $MEMBER HOLDS DATA
+// 			foreach ($team_member as $key => $member) {
+// 				// $MEMBER HOLDS DATA
 
-				$id = $member->ID;
+// 				$id = $member->ID;
 
-				// CONTENT FIELDS
-				// $content = $member->post_content;
-				$name = $member->post_title;
-				$link = $member->guid;
+// 				// CONTENT FIELDS
+// 				// $content = $member->post_content;
+// 				$name = $member->post_title;
+// 				$link = $member->guid;
 
-				// CUSTOM FIELDS
-				$emp_title = get_post_custom_values('title', $id)[0];
+// 				// CUSTOM FIELDS
+// 				$emp_title = get_post_custom_values('title', $id)[0];
 
-				// IMAGES
-				$size = 'thumb';
-				$full = 'large';
-				$thumb = wp_get_attachment_image_src(get_post_thumbnail_id($id) , 'emp-thumb');
-				$largeThumb = wp_get_attachment_image_src(get_post_thumbnail_id($id) , 'emp-large');
+// 				// IMAGES
+// 				$size = 'thumb';
+// 				$full = 'large';
+// 				$thumb = wp_get_attachment_image_src(get_post_thumbnail_id($id) , 'emp-thumb');
+// 				$largeThumb = wp_get_attachment_image_src(get_post_thumbnail_id($id) , 'emp-large');
 
-				//STORE VARS IN TEAM MEMBERS ARRAY
-				$teamMembers[$key]['id'] = $id;
-				// $teamMembers[$key]['content'] = $content;
-				$teamMembers[$key]['name'] = $name;
-				$teamMembers[$key]['link'] = $link;
-				$teamMembers[$key]['emp_title'] = $emp_title;
-				$teamMembers[$key]['thumb'] = $thumb;
-				$teamMembers[$key]['large_thumb'] = $largeThumb;
+// 				//STORE VARS IN TEAM MEMBERS ARRAY
+// 				$teamMembers[$key]['id'] = $id;
+// 				// $teamMembers[$key]['content'] = $content;
+// 				$teamMembers[$key]['name'] = $name;
+// 				$teamMembers[$key]['link'] = $link;
+// 				$teamMembers[$key]['emp_title'] = $emp_title;
+// 				$teamMembers[$key]['thumb'] = $thumb;
+// 				$teamMembers[$key]['large_thumb'] = $largeThumb;
 
-			}
-		}
-	}
+// 			}
+// 		}
+// 	}
 
-endwhile;
+// endwhile;
 
-endif;
+// endif;
 
 // helper($teamMembers);
 
