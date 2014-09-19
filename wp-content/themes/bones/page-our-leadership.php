@@ -1,4 +1,9 @@
-<?php get_header(); 
+<?php 
+/*
+	Template Name: Charlie
+*/
+
+get_header(); 
 
 // $args = array(
 // 	'post_type'=>'team_members',
@@ -6,7 +11,10 @@
 // 	);
 
 // $the_query = new WP_Query( $args );
+if (have_posts()) : while (have_posts()) : the_post(); 
 $header = get_field('header-image');
+endwhile;
+endif;
 ?>
 
 			<div id="content">
@@ -25,8 +33,11 @@ $header = get_field('header-image');
 
 						<?php 
 						
-
-						if (have_posts()) : while (have_posts()) : the_post(); 
+						// GO THROUGH LOOP AGAIN
+						rewind_posts();
+						while ( have_posts() ) : the_post();
+							
+						// if (have_posts()) : while (have_posts()) : the_post(); 
 
 						// GET TEAM MEMBER POSTS RELATIONSHIP FIELD FROM 'OUR-LEADERSHIP' ADMIN PAGE
 						// query_posts('section_name=Team_Member_Reorder');
@@ -90,7 +101,7 @@ $header = get_field('header-image');
 						
 						endwhile;
 
-						endif;
+						// endif;
 
 						?>
 
