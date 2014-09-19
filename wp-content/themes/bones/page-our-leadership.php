@@ -26,13 +26,14 @@ if (have_posts()) : while (have_posts()) : the_post();
 			$name = $team_member->post_title;
 			$link = $team_member->guid;
 			
-			$emp_title = get_post_custom_values('title', $team_member->ID);
-			helper($emp_title);
+			$empTitle = get_post_custom_values('title', $team_member->ID);
+			helper($empTitle);
+			$emp_title = $empTitle[0];
 
 			$teamMembers[$key]['id'] = $id;
 			$teamMembers[$key]['name'] = $name;
 			$teamMembers[$key]['link'] = $link;
-			// $teamMembers[$key]['emp_title'] = $emp_title;
+			$teamMembers[$key]['emp_title'] = $emp_title;
 
 			$size = 'thumb';
 			$full = 'large';
@@ -46,7 +47,7 @@ if (have_posts()) : while (have_posts()) : the_post();
 			echo '<h1>This is id: '.$teamMembers[$key]['id'].'</h1>';
 			echo '<h1>This is name: '.$teamMembers[$key]['name'].'</h1>';
 			echo '<h1>This is link: '.$teamMembers[$key]['link'].'</h1>';
-			// echo '<h1>This is emp_title: '.$teamMembers[$key]['emp_title'].'</h1>';
+			echo '<h1>This is emp_title: '.$teamMembers[$key]['emp_title'].'</h1>';
 			echo '<h1>This is thumb: '.$teamMembers[$key]['thumb'].'</h1>';
 			echo '<h1>This is largeThumb: '.$teamMembers[$key]['largeThumb'].'</h1>';
 
