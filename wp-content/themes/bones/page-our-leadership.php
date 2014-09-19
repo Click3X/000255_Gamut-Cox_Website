@@ -51,9 +51,9 @@ $header = get_field('header-image');
 // 		}
 // 	}
 
-// endwhile;
+endwhile;
 
-// endif;
+endif;
 
 // helper($teamMembers);
 
@@ -73,22 +73,6 @@ $header = get_field('header-image');
 
 		<ul id="og-grid" class="og-grid">
 
-
-		<?php
-			foreach ($teamMembers as $key => $teamMember) { ?>
-			<li id="post-<?php echo $teamMember['id']; ?>" role="article" itemscope itemtype="http://schema.org/BlogPosting">
-				<a href="<?php echo $teamMember['link']; ?>" data-largesrc="<?php echo $teamMember['largeThumb'][0]; ?>" data-title="<?php echo $teamMember['name']; ?>" data-description="<?php // echo $teamMember['content']; ?>" data-etitle="<?php echo $teamMember['emp_title']; ?>">
-				<?php echo '<a href="'.$teamMember['link'].'">';
-					echo '<img src="'.$teamMember['thumb'][0].'" alt="'.$teamMember['name'].'" class="grid-thumb">';
-					echo '<h2 class="small-name gothic">'.$teamMember['name'].'</h2>';
-					echo '<h3 class="small-title gothic">'.$teamMember['emp_title'].'</h3>';
-					?>
-				</a>
-			</li>
-		<?php
-
-		}
-		?>
 
 		</ul>
 
