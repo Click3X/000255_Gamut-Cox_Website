@@ -5241,10 +5241,10 @@ h3 {
   word-break: normal;
   /* Non standard for webkit */
   word-break: normal;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
 }
 
 @media (max-width: 768px) {
