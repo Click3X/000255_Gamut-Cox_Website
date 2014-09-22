@@ -1,0 +1,47 @@
+// CONTACT
+
+.gothic {
+	a {
+		font-family: inherit;
+		// text-transform: uppercase;
+		font-weight: 500;
+		color: rgb(50, 57, 68);
+	}
+}
+
+.contact-container .division-title {
+	text-transform: uppercase;
+	color:#aeaeae;
+	font-weight: 500;
+	font-size: .91rem;
+	// max-width: 19em;
+	padding:0;
+	line-height: 1.5em;
+	letter-spacing: .05em;
+	width: 90%;
+}
+
+.category {
+	float:left;
+	width: 33.333333%;
+}
+.division-list {
+	position: relative;
+	width:100%;
+	ul {
+
+		.address {
+			.gothic {
+				line-height: 24px;	
+			}
+		}
+		li {
+			display: block;
+			width: 100%;
+
+			h3 {
+				display: block;
+			}
+		}
+	}
+}

@@ -5645,6 +5645,50 @@ body #content {
   margin-bottom: 80px;
 }
 
+/* line 4, ../scss/partials/_contact.scss */
+.gothic a {
+  font-family: inherit;
+  font-weight: 500;
+  color: #323944;
+}
+
+/* line 12, ../scss/partials/_contact.scss */
+.contact-container .division-title {
+  text-transform: uppercase;
+  color: #aeaeae;
+  font-weight: 500;
+  font-size: .91rem;
+  padding: 0;
+  line-height: 1.5em;
+  letter-spacing: .05em;
+  width: 90%;
+}
+
+/* line 24, ../scss/partials/_contact.scss */
+.category {
+  float: left;
+  width: 33.333333%;
+}
+
+/* line 28, ../scss/partials/_contact.scss */
+.division-list {
+  position: relative;
+  width: 100%;
+}
+/* line 34, ../scss/partials/_contact.scss */
+.division-list ul .address .gothic {
+  line-height: 24px;
+}
+/* line 38, ../scss/partials/_contact.scss */
+.division-list ul li {
+  display: block;
+  width: 100%;
+}
+/* line 42, ../scss/partials/_contact.scss */
+.division-list ul li h3 {
+  display: block;
+}
+
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's

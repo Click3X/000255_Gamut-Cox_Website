@@ -59,34 +59,6 @@ get_header(); ?>
 
 								<?php endif;
 
-
-								$args = array(
-									'post_type' => 'team_members'
-									// 'tax_query' => array(
-					    //                array(
-					    //                     'taxonomy' => 'operations',
-					    //                     // 'term' => 'operations'
-					    //                     )
-					    //             ),
-								);
-																// The Query
-								$query1 = new WP_Query( $args );
-
-								// The Loop
-								while ( $query1->have_posts() ) {
-									$query1->the_post();
-
-									// helper($query1);
-
-									// the_title();
-								}
-
-								/* Restore original Post Data 
-								 * NB: Because we are using new WP_Query we aren't stomping on the 
-								 * original $wp_query and it does not need to be reset with 
-								 * wp_reset_query(). We just need to set the post data back up with
-								 * wp_reset_postdata().
-								 */
 								wp_reset_postdata();
 
 								
@@ -106,48 +78,69 @@ get_header(); ?>
 								[contact-form-7 id="286" title="Publishers"]
 								[tabbyending]');
 
-
-								
-
-								// $args = array(
-								// 	'post_type' => 'custom_post_type',
-								// 	'posts_per_page' => -1,
-								// 	'meta_key' => '_EventStartDate',
-								// 	'orderby' => 'taxonomy_cat',
-								// 	'order' => asc
-								// 	);
-								// 	$the_query = new WP_Query( $args );
-
-								// 	if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); 
-
-
-										/*
-										 * Link Pages is used in case you have posts that are set to break into
-										 * multiple pages. You can remove this if you don't plan on doing that.
-										 *
-										 * Also, breaking content up into multiple pages is a horrible experience,
-										 * so don't do it. While there are SOME edge cases where this is useful, it's
-										 * mostly used for people to get more ad views. It's up to you but if you want
-										 * to do it, you're wrong and I hate you. (Ok, I still love you but just not as much)
-										 *
-										 * http://gizmodo.com/5841121/google-wants-to-help-you-avoid-stupid-annoying-multiple-page-articles
-										 *
-										*/
-										wp_link_pages( array(
-											'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'bonestheme' ) . '</span>',
-											'after'       => '</div>',
-											'link_before' => '<span>',
-											'link_after'  => '</span>',
-										) );
 									?>
 						</section> <?php // end article section ?>
 
-								
+						<section class="clearfix contact-container division-list">
+							<?php			
+								//get all categories then display all posts in each term
+								//get all categories then display all posts in each term
+								$taxonomy = 'division';
+								$term_args=array(
+								  'orderby' => 'name',
+								  'order' => 'ASC'
+								);
+								$terms = get_terms($taxonomy,$term_args);
+								if ($terms) {
+								  foreach( $terms as $term ) {
+								    $args=array(
+								      'post_type' => 'team_members',
+								      'post_status' => 'publish',
+								      'posts_per_page' => -1,
+								      'caller_get_posts'=> 1,
+									  'tax_query' => array(
+											array(
+												'taxonomy' => 'division',
+												'terms' => array($term->term_id),
+												'include_children' => true,
+												'operator' => 'IN'
+											)
+										)
+								      );
+								    $my_query = null;
+								    $my_query = new WP_Query($args);
+								    if( $my_query->have_posts() ) { ?>
+								      <div class="category section">
+									    <h2 class="division-title gothic"><?php echo $term->name;?></h2>
+									    
 
+									    <?php
+								      while ($my_query->have_posts()) : $my_query->the_post(); 
+								       // helper($my_query); 
+								      	$title = get_field('title'); 
+								       	$email = get_field('email'); 
+								       	$telephone = get_field('telephone'); 
+								       ?>
+								       <ul class="team-member">
+									        <li class="address"><h3 class="gothic"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3></li>
+									        <li class="emp-title"><?php echo $title; ?></li>
+									        <li class="email"><a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a></li>
+									        <li class="telephone"><a href="tel:<?php echo $telephone; ?>"></a><?php echo $telephone; ?></li>
+								        </ul>
+								       <?php
+								      endwhile;
+								      ?>
+								      
+								      </div>
+								 <?php
+								    }
+								  }
+								}
+								wp_reset_query();  // Restore global post data stomped by the_post().
+								?>
+						</section>
 
 					</div>
-
-						
 
 				</div>
 
