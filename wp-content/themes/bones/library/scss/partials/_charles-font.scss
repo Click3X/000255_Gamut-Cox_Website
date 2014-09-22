@@ -130,7 +130,7 @@ h1 {
 // HOVER STYLES FOR INDIVIDUAL BIZ PRODUCTS PAGES
 // PROGRAMMATIC
 .page-id-11 {
-	#content {
+	#main {
 		a {
 			color: #dd1420;
 			@include prefix(transition, all 200ms);
@@ -139,28 +139,28 @@ h1 {
 				text-decoration: underline;
 			}
 		}
-		.secondary {
-			.page_item.page-item-11 {
-				a:hover {
-					color: #dd1420;
-					text-decoration: underline;
-				}
+	}
+	.secondary {
+		.page_item.page-item-11 {
+			a:hover {
+				color: #dd1420;
+				text-decoration: underline;
 			}
-			.current_page_item {
-				a {
-					color: #dd1420;
-					&:hover {
-						color: #dd1420;
-						text-decoration: underline;
-					}
-				}
-			}
+		}
+		.current_page_item {
 			a {
 				color: #dd1420;
-				@include prefix(transition, all 200ms);
 				&:hover {
+					color: #dd1420;
 					text-decoration: underline;
 				}
+			}
+		}
+		a {
+			color: #dd1420;
+			@include prefix(transition, all 200ms);
+			&:hover {
+				text-decoration: underline;
 			}
 		}
 	}
@@ -182,38 +182,38 @@ h1 {
 
 // CROSSMEDIA
 .page-id-13 {
-	#content {
+	#main {
 		a {
 			color: #fba211;
 			@include prefix(transition, all 200ms);
 
 			&:hover {
-					text-decoration: underline;
-				}
+				text-decoration: underline;
+			}
 		}
-		.secondary {
-			.page_item.page-item-13 {
-				a:hover {
-					color: #fba211;
-					text-decoration: underline;
-				}
-			}
-			.current_page_item {
-				a {
-					color: #fba211;	
-					&:hover {
-						color: #fba211;
-						text-decoration: underline;
-					}
-				}
-			}
-			a {
+	}
+	.secondary {
+		.page_item.page-item-13 {
+			a:hover {
 				color: #fba211;
-				@include prefix(transition, all 200ms);
+				text-decoration: underline;
+			}
+		}
+		.current_page_item {
+			a {
+				color: #fba211;	
 				&:hover {
 					color: #fba211;
 					text-decoration: underline;
 				}
+			}
+		}
+		a {
+			color: #fba211;
+			@include prefix(transition, all 200ms);
+			&:hover {
+				color: #fba211;
+				text-decoration: underline;
 			}
 		}
 	}
@@ -232,38 +232,38 @@ h1 {
 
 // REACH
 .page-id-24 {
-	#content {
+	#main {
 		a {
 			color: rgb(143, 199, 62);
 			@include prefix(transition, all 200ms);
 
 			&:hover {
-					text-decoration: underline;
-				}
+				text-decoration: underline;
+			}
 		}
-		.secondary {
-			.page_item.page-item-24 {
-				a:hover {
-					color: rgb(143, 199, 62);
-					text-decoration: underline;
-				}
+	}
+	.secondary {
+		.page_item.page-item-24 {
+			a:hover {
+				color: rgb(143, 199, 62);
+				text-decoration: underline;
 			}
-			.current_page_item {
-				a {
-					color: rgb(143, 199, 62);
-					&:hover {
-						color: rgb(143, 199, 62);
-						text-decoration: underline;
-					}
-				}
-			}
+		}
+		.current_page_item {
 			a {
 				color: rgb(143, 199, 62);
-				@include prefix(transition, all 200ms);
 				&:hover {
 					color: rgb(143, 199, 62);
 					text-decoration: underline;
 				}
+			}
+		}
+		a {
+			color: rgb(143, 199, 62);
+			@include prefix(transition, all 200ms);
+			&:hover {
+				color: rgb(143, 199, 62);
+				text-decoration: underline;
 			}
 		}
 	}
@@ -281,39 +281,39 @@ h1 {
 
 // REPS
 .page-id-15 {
-	#content {
+	#main {
 		a {
 			color: rgb(3, 159, 211);
 			@include prefix(transition, all 200ms);
 
 			&:hover {
-					text-decoration: underline;
-				}
+				text-decoration: underline;
+			}
 		}
-		.secondary {
-			.page_item.page-item-15 {
-				a:hover {
-					color: rgb(3, 159, 211);
-					text-decoration: underline;
-				}
+	}
+	.secondary {
+		.page_item.page-item-15 {
+			a:hover {
+				color: rgb(3, 159, 211);
+				text-decoration: underline;
 			}
+		}
 
-			.current_page_item {
-				a {
-					color: rgb(3, 159, 211);
-					&:hover {
-						color: rgb(3, 159, 211);
-						text-decoration: underline;
-					}
-				}
-			}
+		.current_page_item {
 			a {
 				color: rgb(3, 159, 211);
-				@include prefix(transition, all 200ms);
 				&:hover {
 					color: rgb(3, 159, 211);
 					text-decoration: underline;
 				}
+			}
+		}
+		a {
+			color: rgb(3, 159, 211);
+			@include prefix(transition, all 200ms);
+			&:hover {
+				color: rgb(3, 159, 211);
+				text-decoration: underline;
 			}
 		}
 	}

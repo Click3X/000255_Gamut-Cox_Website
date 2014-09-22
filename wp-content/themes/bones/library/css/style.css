@@ -5314,7 +5314,7 @@ h1 {
   }
 }
 /* line 134, ../scss/partials/_charles-font.scss */
-.page-id-11 #content a {
+.page-id-11 #main a {
   color: #dd1420;
   -webkit-transition: all 200ms;
   -moz-transition: all 200ms;
@@ -5323,25 +5323,25 @@ h1 {
   transition: all 200ms;
 }
 /* line 138, ../scss/partials/_charles-font.scss */
-.page-id-11 #content a:hover {
+.page-id-11 #main a:hover {
   text-decoration: underline;
 }
-/* line 144, ../scss/partials/_charles-font.scss */
-.page-id-11 #content .secondary .page_item.page-item-11 a:hover {
+/* line 145, ../scss/partials/_charles-font.scss */
+.page-id-11 .secondary .page_item.page-item-11 a:hover {
   color: #dd1420;
   text-decoration: underline;
 }
-/* line 150, ../scss/partials/_charles-font.scss */
-.page-id-11 #content .secondary .current_page_item a {
+/* line 151, ../scss/partials/_charles-font.scss */
+.page-id-11 .secondary .current_page_item a {
   color: #dd1420;
 }
-/* line 152, ../scss/partials/_charles-font.scss */
-.page-id-11 #content .secondary .current_page_item a:hover {
+/* line 153, ../scss/partials/_charles-font.scss */
+.page-id-11 .secondary .current_page_item a:hover {
   color: #dd1420;
   text-decoration: underline;
 }
-/* line 158, ../scss/partials/_charles-font.scss */
-.page-id-11 #content .secondary a {
+/* line 159, ../scss/partials/_charles-font.scss */
+.page-id-11 .secondary a {
   color: #dd1420;
   -webkit-transition: all 200ms;
   -moz-transition: all 200ms;
@@ -5349,8 +5349,8 @@ h1 {
   -ms-transition: all 200ms;
   transition: all 200ms;
 }
-/* line 161, ../scss/partials/_charles-font.scss */
-.page-id-11 #content .secondary a:hover {
+/* line 162, ../scss/partials/_charles-font.scss */
+.page-id-11 .secondary a:hover {
   text-decoration: underline;
 }
 
@@ -5370,7 +5370,7 @@ h1 {
 }
 
 /* line 186, ../scss/partials/_charles-font.scss */
-.page-id-13 #content a {
+.page-id-13 #main a {
   color: #fba211;
   -webkit-transition: all 200ms;
   -moz-transition: all 200ms;
@@ -5379,25 +5379,25 @@ h1 {
   transition: all 200ms;
 }
 /* line 190, ../scss/partials/_charles-font.scss */
-.page-id-13 #content a:hover {
+.page-id-13 #main a:hover {
   text-decoration: underline;
 }
-/* line 196, ../scss/partials/_charles-font.scss */
-.page-id-13 #content .secondary .page_item.page-item-13 a:hover {
+/* line 197, ../scss/partials/_charles-font.scss */
+.page-id-13 .secondary .page_item.page-item-13 a:hover {
   color: #fba211;
   text-decoration: underline;
 }
-/* line 202, ../scss/partials/_charles-font.scss */
-.page-id-13 #content .secondary .current_page_item a {
+/* line 203, ../scss/partials/_charles-font.scss */
+.page-id-13 .secondary .current_page_item a {
   color: #fba211;
 }
-/* line 204, ../scss/partials/_charles-font.scss */
-.page-id-13 #content .secondary .current_page_item a:hover {
+/* line 205, ../scss/partials/_charles-font.scss */
+.page-id-13 .secondary .current_page_item a:hover {
   color: #fba211;
   text-decoration: underline;
 }
-/* line 210, ../scss/partials/_charles-font.scss */
-.page-id-13 #content .secondary a {
+/* line 211, ../scss/partials/_charles-font.scss */
+.page-id-13 .secondary a {
   color: #fba211;
   -webkit-transition: all 200ms;
   -moz-transition: all 200ms;
@@ -5405,8 +5405,8 @@ h1 {
   -ms-transition: all 200ms;
   transition: all 200ms;
 }
-/* line 213, ../scss/partials/_charles-font.scss */
-.page-id-13 #content .secondary a:hover {
+/* line 214, ../scss/partials/_charles-font.scss */
+.page-id-13 .secondary a:hover {
   color: #fba211;
   text-decoration: underline;
 }
@@ -5426,7 +5426,7 @@ h1 {
 }
 
 /* line 236, ../scss/partials/_charles-font.scss */
-.page-id-24 #content a {
+.page-id-24 #main a {
   color: #8fc73e;
   -webkit-transition: all 200ms;
   -moz-transition: all 200ms;
@@ -5435,25 +5435,25 @@ h1 {
   transition: all 200ms;
 }
 /* line 240, ../scss/partials/_charles-font.scss */
-.page-id-24 #content a:hover {
+.page-id-24 #main a:hover {
   text-decoration: underline;
 }
-/* line 246, ../scss/partials/_charles-font.scss */
-.page-id-24 #content .secondary .page_item.page-item-24 a:hover {
+/* line 247, ../scss/partials/_charles-font.scss */
+.page-id-24 .secondary .page_item.page-item-24 a:hover {
   color: #8fc73e;
   text-decoration: underline;
 }
-/* line 252, ../scss/partials/_charles-font.scss */
-.page-id-24 #content .secondary .current_page_item a {
+/* line 253, ../scss/partials/_charles-font.scss */
+.page-id-24 .secondary .current_page_item a {
   color: #8fc73e;
 }
-/* line 254, ../scss/partials/_charles-font.scss */
-.page-id-24 #content .secondary .current_page_item a:hover {
+/* line 255, ../scss/partials/_charles-font.scss */
+.page-id-24 .secondary .current_page_item a:hover {
   color: #8fc73e;
   text-decoration: underline;
 }
-/* line 260, ../scss/partials/_charles-font.scss */
-.page-id-24 #content .secondary a {
+/* line 261, ../scss/partials/_charles-font.scss */
+.page-id-24 .secondary a {
   color: #8fc73e;
   -webkit-transition: all 200ms;
   -moz-transition: all 200ms;
@@ -5461,8 +5461,8 @@ h1 {
   -ms-transition: all 200ms;
   transition: all 200ms;
 }
-/* line 263, ../scss/partials/_charles-font.scss */
-.page-id-24 #content .secondary a:hover {
+/* line 264, ../scss/partials/_charles-font.scss */
+.page-id-24 .secondary a:hover {
   color: #8fc73e;
   text-decoration: underline;
 }
@@ -5482,7 +5482,7 @@ h1 {
 }
 
 /* line 285, ../scss/partials/_charles-font.scss */
-.page-id-15 #content a {
+.page-id-15 #main a {
   color: #039fd3;
   -webkit-transition: all 200ms;
   -moz-transition: all 200ms;
@@ -5491,25 +5491,25 @@ h1 {
   transition: all 200ms;
 }
 /* line 289, ../scss/partials/_charles-font.scss */
-.page-id-15 #content a:hover {
+.page-id-15 #main a:hover {
   text-decoration: underline;
 }
-/* line 295, ../scss/partials/_charles-font.scss */
-.page-id-15 #content .secondary .page_item.page-item-15 a:hover {
+/* line 296, ../scss/partials/_charles-font.scss */
+.page-id-15 .secondary .page_item.page-item-15 a:hover {
   color: #039fd3;
   text-decoration: underline;
 }
-/* line 302, ../scss/partials/_charles-font.scss */
-.page-id-15 #content .secondary .current_page_item a {
+/* line 303, ../scss/partials/_charles-font.scss */
+.page-id-15 .secondary .current_page_item a {
   color: #039fd3;
 }
-/* line 304, ../scss/partials/_charles-font.scss */
-.page-id-15 #content .secondary .current_page_item a:hover {
+/* line 305, ../scss/partials/_charles-font.scss */
+.page-id-15 .secondary .current_page_item a:hover {
   color: #039fd3;
   text-decoration: underline;
 }
-/* line 310, ../scss/partials/_charles-font.scss */
-.page-id-15 #content .secondary a {
+/* line 311, ../scss/partials/_charles-font.scss */
+.page-id-15 .secondary a {
   color: #039fd3;
   -webkit-transition: all 200ms;
   -moz-transition: all 200ms;
@@ -5517,8 +5517,8 @@ h1 {
   -ms-transition: all 200ms;
   transition: all 200ms;
 }
-/* line 313, ../scss/partials/_charles-font.scss */
-.page-id-15 #content .secondary a:hover {
+/* line 314, ../scss/partials/_charles-font.scss */
+.page-id-15 .secondary a:hover {
   color: #039fd3;
   text-decoration: underline;
 }
