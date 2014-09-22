@@ -9,6 +9,8 @@ get_header(); ?>
 
 			<div id="content">
 			<?php
+
+				$header_image = get_field('header-image');
 				$contact_title = get_field('contact-title');
 				$locations_title = get_field('locations-title');
 				// $main_first_p = get_field('main-first-p');
@@ -21,7 +23,7 @@ get_header(); ?>
 
 			?>
 				<header class="article-header">
-					<?php //echo do_shortcode('[wpgmza id="1"]'); ?>					
+					<div class="page-header" style="background-image: url('<?php echo $header_image['url'] ?>')"></div>
 				</header>
 
 				<div id="inner-content" class="wrap cf">					
