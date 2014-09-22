@@ -5364,6 +5364,23 @@ h3 {
   line-height: 1.3em;
 }
 
+/* line 52, ../scss/partials/_charles-font.scss */
+.sub-page-content-wrapper h1 {
+  width: 100%;
+}
+
+/* line 56, ../scss/partials/_charles-font.scss */
+* {
+  -ms-word-break: break-all;
+  word-break: break-all;
+  /* Non standard for webkit */
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
