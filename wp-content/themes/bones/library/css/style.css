@@ -6068,6 +6068,7 @@ be set to display none.
 /* line 1, ../scss/partials/_footer.scss */
 .client-info {
   display: inline-block;
+  margin-right: 3em;
   position: relative;
   letter-spacing: .1em;
   font-size: .91em;
@@ -6078,23 +6079,24 @@ be set to display none.
 .headline {
   text-transform: uppercase;
   font-weight: 500;
+  display: block;
 }
 
-/* line 19, ../scss/partials/_footer.scss */
+/* line 20, ../scss/partials/_footer.scss */
 .copy {
   margin-top: .6em;
   line-height: 1.5em;
   font-size: .91em;
 }
 
-/* line 25, ../scss/partials/_footer.scss */
+/* line 26, ../scss/partials/_footer.scss */
 .career-button {
   position: relative;
   text-align: center;
   float: right;
   margin-top: 30px;
 }
-/* line 33, ../scss/partials/_footer.scss */
+/* line 34, ../scss/partials/_footer.scss */
 .career-button a {
   display: block;
   text-transform: uppercase;
@@ -6109,23 +6111,23 @@ be set to display none.
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-/* line 49, ../scss/partials/_footer.scss */
+/* line 50, ../scss/partials/_footer.scss */
 .career-button a:hover {
   background-color: #ed228b;
   color: white;
 }
-/* line 52, ../scss/partials/_footer.scss */
+/* line 53, ../scss/partials/_footer.scss */
 .career-button a:hover .arrow-right {
   border-left: 6px solid white !important;
 }
-/* line 58, ../scss/partials/_footer.scss */
+/* line 59, ../scss/partials/_footer.scss */
 .career-button .careers-link {
   text-transform: uppercase;
   color: white;
   background-color: #3d3d3d;
   display: block;
 }
-/* line 64, ../scss/partials/_footer.scss */
+/* line 65, ../scss/partials/_footer.scss */
 .career-button .careers-link:after {
   content: "";
   display: block;
@@ -6140,65 +6142,101 @@ be set to display none.
   border-top: 5px solid transparent;
 }
 
-/* line 88, ../scss/partials/_footer.scss */
+/* line 89, ../scss/partials/_footer.scss */
 .footer-logo-holder,
 .social-media-links,
 .social {
   display: inline-block;
 }
 
-/* line 92, ../scss/partials/_footer.scss */
+/* line 93, ../scss/partials/_footer.scss */
 .social {
   margin: .5rem;
 }
 
-/* line 96, ../scss/partials/_footer.scss */
+/* line 97, ../scss/partials/_footer.scss */
 .footer {
   background-color: #3d3d3d;
 }
 
-/* line 100, ../scss/partials/_footer.scss */
+/* line 101, ../scss/partials/_footer.scss */
 .footer-links {
   background-color: #000000;
   padding-top: 90px;
   padding-bottom: 90px;
 }
 
-/* line 107, ../scss/partials/_footer.scss */
+/* line 108, ../scss/partials/_footer.scss */
 .inner-footer {
   padding-bottom: 40px;
 }
 
-/* line 111, ../scss/partials/_footer.scss */
+/* line 112, ../scss/partials/_footer.scss */
 #policy-links {
   color: white;
 }
 
-/* line 116, ../scss/partials/_footer.scss */
+/* line 117, ../scss/partials/_footer.scss */
 .policy-links > .copy {
   margin-top: 0;
   font-weight: 500;
 }
 
-/* line 122, ../scss/partials/_footer.scss */
+/* line 123, ../scss/partials/_footer.scss */
 #policy-links:hover {
   color: #ed228b;
 }
 
-/* line 126, ../scss/partials/_footer.scss */
+/* line 127, ../scss/partials/_footer.scss */
 .address {
   color: #bdbdbd;
 }
 
-/* line 131, ../scss/partials/_footer.scss */
+/* line 132, ../scss/partials/_footer.scss */
 .footer-bottom {
   height: 100px;
   color: #585858 !important;
   margin: auto;
 }
-/* line 136, ../scss/partials/_footer.scss */
+/* line 137, ../scss/partials/_footer.scss */
 .footer-bottom li {
   float: left;
-  margin-right: 30px;
+  margin-right: 15px;
   font-size: 0.8em;
+  letter-spacing: 0;
+}
+/* line 144, ../scss/partials/_footer.scss */
+.footer-bottom .copyright {
+  display: inline-block;
+  float: right;
+  font-size: 0.8em;
+  letter-spacing: 0;
+  margin-top: 12px;
+}
+
+/* line 153, ../scss/partials/_footer.scss */
+.footer-left-column, .other-businesses-container {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* line 158, ../scss/partials/_footer.scss */
+.headquarters-container {
+  border-bottom: 1px dashed #565656;
+}
+
+/* line 163, ../scss/partials/_footer.scss */
+.headquarter-title {
+  text-transform: uppercase;
+}
+
+/* line 167, ../scss/partials/_footer.scss */
+.other-businesses-content {
+  margin-top: 1.2em;
+  display: block;
+}
+
+/* line 172, ../scss/partials/_footer.scss */
+.footer-contact-container {
+  text-transform: uppercase;
 }

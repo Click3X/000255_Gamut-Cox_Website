@@ -57,23 +57,49 @@
 
 				    	// CONTACT LINKS
 					    echo '<div class="footer-links">';
-						    	echo '<div class="footer-links-content wrap cf">';
-						    	// LOCATIONS - CITY & ADDRESS
-								if(get_field('locations', 'options')): ?>
-
-									<?php 
-									// EACH LOCATION ('City-Address combo') GETS ITS OWN UL
-									while(has_sub_field('locations', 'options')): ?>
-									<ul class="client-info location">
-										<li class="headline city"><?php the_sub_field('city'); ?></li>
-										<li class="copy address"><?php the_sub_field('address'); ?></li>
-									</ul>
-									<?php endwhile; ?>
-
-								<?php 
-								endif; 
+						    	echo '<div class="cf">';
 
 
+						    		// LEFT COLUMN CONTAINER
+						    		echo '<div class="footer-left-column">'; 
+								    	// HEADQUARTERS
+								    	echo '<div class="headquarters-container">'; 
+								    	// LOCATIONS - CITY & ADDRESS
+										if(get_field('locations', 'options')): ?>
+
+											<?php 
+											echo '<div class="headquarters-wrapper">'; 
+												$headquarters = get_field('headquarters', 'options');
+												echo '<span class="headline city">' . $headquarters . '</span>';
+
+												// EACH LOCATION ('City-Address combo') GETS ITS OWN UL
+												while(has_sub_field('locations', 'options')): ?>
+												<ul class="client-info location">
+													
+													<li class="copy address headquarter-title"><?php the_sub_field('city'); ?></li>
+													<li class="copy address"><?php the_sub_field('address'); ?></li>
+												</ul>
+												<?php endwhile; ?>
+
+												<?php 
+												endif; 
+											echo '</div>';
+
+										echo '</div>';
+
+										$footer_contact = get_field('footer_contact', 'options');
+										echo '<div class="footer-contact-container">' . $footer_contact . '</div>'; 
+
+								echo '</div>'; 
+
+								echo '<div class="other-businesses-container">';
+
+									$other_businesses = get_field('other_businesses', 'options');
+									$other_businesses_list = get_field('other_businesses_list', 'options');
+									echo '<span class="headline city">' . $other_businesses . '</span>';
+									echo '<span class="copy address other-businesses-content">' . $other_businesses_list . '</span>';
+
+								echo '</div>';
 								
 								
 
@@ -98,6 +124,9 @@
 
 							<?php 
 							endif;
+
+							$copyright = get_field('copyright', 'options');
+							echo '<div class="copyright">' . $copyright . '</div>';
 
 						echo '</div>';
 

@@ -13,12 +13,7 @@ get_header(); ?>
 				$header_image = get_field('header-image');
 				$contact_title = get_field('contact-title');
 				$locations_title = get_field('locations-title');
-				// $main_first_p = get_field('main-first-p');
-				// $main_p = get_field('main-p');
-
-				// $lower_sub_title = get_field('lower-sub-title');
-				// $lower_sub_title2 = get_field('lower-sub-title2');
-				// $lower_sub_title2_caption = get_field('lower-sub-title2-caption');
+				$header_image = get_field('header-image');
 				
 
 			?>

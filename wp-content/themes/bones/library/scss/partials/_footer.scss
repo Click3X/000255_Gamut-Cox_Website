@@ -2,7 +2,7 @@
 	display: inline-block;
 	// display: block;
 	// float:left;
-	// margin-right: 3em;
+	margin-right: 3em;
 	position: relative;
 	letter-spacing: .1em;
 	font-size: .91em;
@@ -14,6 +14,7 @@
 .headline {
 	text-transform: uppercase;
 	font-weight: 500;
+	display: block;
 }
 
 .copy {
@@ -135,8 +136,40 @@
 	margin: auto;
 	li {
 		float: left;
-		margin-right: 30px;
+		margin-right: 15px;
 		font-size: 0.8em;
+		letter-spacing: 0;
 	}
+
+	.copyright {
+		display: inline-block;
+		float: right;
+		font-size: 0.8em;
+		letter-spacing: 0;
+		margin-top: 12px;
+	}
+}
+
+.footer-left-column, .other-businesses-container {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.headquarters-container {
+	border-bottom: 1px dashed #565656;
+}
+
+
+.headquarter-title {
+	text-transform: uppercase;
+}
+
+.other-businesses-content {
+	margin-top: 1.2em;
+	display: block;
+}
+
+.footer-contact-container {
+	text-transform: uppercase;
 }
 
