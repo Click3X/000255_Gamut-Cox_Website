@@ -1732,7 +1732,7 @@ and more scalable.
   /* highlight current page */
   /* end current highlighters */
 }
-@media (min-width: 768px) {
+@media (min-width: 811px) {
   /* line 244, ../scss/breakpoints/_base.scss */
   .nav {
     clear: none;
@@ -2323,27 +2323,29 @@ view.
   }
 }
 
-/* line 1026, ../scss/breakpoints/_base.scss */
-.show-nav {
-  z-index: 9;
-  -webkit-transform: translateY(240px);
-  -moz-transform: translateY(240px);
-  -o-transform: translateY(240px);
-  -ms-transform: translateY(240px);
-  transform: translateY(240px);
-  -webkit-transform: translateZ(9);
-  -moz-transform: translateZ(9);
-  -o-transform: translateZ(9);
-  -ms-transform: translateZ(9);
-  transform: translateZ(9);
-  -webkit-transition: all 250ms;
-  -moz-transition: all 250ms;
-  -o-transition: all 250ms;
-  -ms-transition: all 250ms;
-  transition: all 250ms;
+@media (max-width: 810px) {
+  /* line 1026, ../scss/breakpoints/_base.scss */
+  .show-nav {
+    z-index: 9;
+    -webkit-transform: translateY(240px);
+    -moz-transform: translateY(240px);
+    -o-transform: translateY(240px);
+    -ms-transform: translateY(240px);
+    transform: translateY(240px);
+    -webkit-transform: translateZ(9);
+    -moz-transform: translateZ(9);
+    -o-transform: translateZ(9);
+    -ms-transform: translateZ(9);
+    transform: translateZ(9);
+    -webkit-transition: all 250ms;
+    -moz-transition: all 250ms;
+    -o-transition: all 250ms;
+    -ms-transition: all 250ms;
+    transition: all 250ms;
+  }
 }
 
-/* line 1033, ../scss/breakpoints/_base.scss */
+/* line 1035, ../scss/breakpoints/_base.scss */
 .hide-nav {
   -webkit-transition: all 500ms;
   -moz-transition: all 500ms;
@@ -2352,13 +2354,13 @@ view.
   transition: all 500ms;
 }
 
-/* line 1038, ../scss/breakpoints/_base.scss */
+/* line 1040, ../scss/breakpoints/_base.scss */
 #inner-header.wrap {
   width: 100%;
   margin: 0 auto;
 }
-@media (min-width: 768px) {
-  /* line 1038, ../scss/breakpoints/_base.scss */
+@media (min-width: 811px) {
+  /* line 1040, ../scss/breakpoints/_base.scss */
   #inner-header.wrap {
     padding-left: 2%;
     width: 98%;
@@ -5557,6 +5559,89 @@ h1 {
   color: #dd1420;
 }
 
+@media (min-width: 811px) {
+  /* line 340, ../scss/partials/_charles-font.scss */
+  .nav {
+    border: 0;
+    /* end .menu ul li */
+    /* highlight current page */
+    /* end current highlighters */
+  }
+  /* line 342, ../scss/partials/_charles-font.scss */
+  .nav ul {
+    background: #323944;
+    margin-top: 0;
+  }
+  /* line 346, ../scss/partials/_charles-font.scss */
+  .nav li {
+    float: left;
+    position: relative;
+    /*
+    plan your menus and drop-downs wisely.
+    */
+    /* showing sub-menus */
+  }
+  /* line 350, ../scss/partials/_charles-font.scss */
+  .nav li a {
+    border-bottom: 0;
+    /*
+    you can use hover styles here even though this size
+    has the possibility of being a mobile device.
+    */
+  }
+  /* line 357, ../scss/partials/_charles-font.scss */
+  .nav li a:hover, .nav li a:focus {
+    color: white;
+    text-decoration: underline;
+  }
+  /* line 370, ../scss/partials/_charles-font.scss */
+  .nav li ul.sub-menu,
+  .nav li ul.children {
+    margin-top: 0;
+    border: 1px solid #ccc;
+    border-top: 0;
+    position: absolute;
+    visibility: hidden;
+    z-index: 8999;
+    /* highlight sub-menu current page */
+  }
+  /* line 378, ../scss/partials/_charles-font.scss */
+  .nav li ul.sub-menu li,
+  .nav li ul.children li {
+    /*
+    if you need to go deeper, go nuts
+    just remember deeper menus suck
+    for usability. k, bai.
+    */
+  }
+  /* line 380, ../scss/partials/_charles-font.scss */
+  .nav li ul.sub-menu li a,
+  .nav li ul.children li a {
+    padding-left: 10px;
+    border-right: 0;
+    display: block;
+    width: 180px;
+    border-bottom: 1px solid #ccc;
+  }
+  /* line 397, ../scss/partials/_charles-font.scss */
+  .nav li ul.sub-menu li:last-child a,
+  .nav li ul.children li:last-child a {
+    border-bottom: 0;
+  }
+  /* line 407, ../scss/partials/_charles-font.scss */
+  .nav li ul.sub-menu li ul,
+  .nav li ul.children li ul {
+    top: 0;
+    left: 100%;
+  }
+  /* line 422, ../scss/partials/_charles-font.scss */
+  .nav li:hover > ul {
+    top: auto;
+    visibility: visible;
+  }
+
+  /* end .nav */
+}
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
@@ -5699,87 +5784,6 @@ you can add resource intensive styles.
   /*********************
   NAVIGATION STYLES
   *********************/
-  /* line 42, ../scss/breakpoints/_768up.scss */
-  .nav {
-    border: 0;
-    /* end .menu ul li */
-    /* highlight current page */
-    /* end current highlighters */
-  }
-  /* line 44, ../scss/breakpoints/_768up.scss */
-  .nav ul {
-    background: #323944;
-    margin-top: 0;
-  }
-  /* line 48, ../scss/breakpoints/_768up.scss */
-  .nav li {
-    float: left;
-    position: relative;
-    /*
-    plan your menus and drop-downs wisely.
-    */
-    /* showing sub-menus */
-  }
-  /* line 52, ../scss/breakpoints/_768up.scss */
-  .nav li a {
-    border-bottom: 0;
-    /*
-    you can use hover styles here even though this size
-    has the possibility of being a mobile device.
-    */
-  }
-  /* line 59, ../scss/breakpoints/_768up.scss */
-  .nav li a:hover, .nav li a:focus {
-    color: white;
-    text-decoration: underline;
-  }
-  /* line 72, ../scss/breakpoints/_768up.scss */
-  .nav li ul.sub-menu,
-  .nav li ul.children {
-    margin-top: 0;
-    border: 1px solid #ccc;
-    border-top: 0;
-    position: absolute;
-    visibility: hidden;
-    z-index: 8999;
-    /* highlight sub-menu current page */
-  }
-  /* line 80, ../scss/breakpoints/_768up.scss */
-  .nav li ul.sub-menu li,
-  .nav li ul.children li {
-    /*
-    if you need to go deeper, go nuts
-    just remember deeper menus suck
-    for usability. k, bai.
-    */
-  }
-  /* line 82, ../scss/breakpoints/_768up.scss */
-  .nav li ul.sub-menu li a,
-  .nav li ul.children li a {
-    padding-left: 10px;
-    border-right: 0;
-    display: block;
-    width: 180px;
-    border-bottom: 1px solid #ccc;
-  }
-  /* line 99, ../scss/breakpoints/_768up.scss */
-  .nav li ul.sub-menu li:last-child a,
-  .nav li ul.children li:last-child a {
-    border-bottom: 0;
-  }
-  /* line 109, ../scss/breakpoints/_768up.scss */
-  .nav li ul.sub-menu li ul,
-  .nav li ul.children li ul {
-    top: 0;
-    left: 100%;
-  }
-  /* line 124, ../scss/breakpoints/_768up.scss */
-  .nav li:hover > ul {
-    top: auto;
-    visibility: visible;
-  }
-
-  /* end .nav */
   /*********************
   SIDEBARS & ASIDES
   *********************/
