@@ -5667,35 +5667,138 @@ body #content {
 
 /* line 25, ../scss/partials/_contact.scss */
 .category {
+  display: block;
+  vertical-align: top;
   float: left;
-  width: 33.333333%;
+  width: 100%;
+  margin-bottom: 2.5em;
+}
+@media (min-width: 480px) {
+  /* line 25, ../scss/partials/_contact.scss */
+  .category {
+    width: 45%;
+    margin-right: 5%;
+  }
+}
+@media (min-width: 768px) {
+  /* line 25, ../scss/partials/_contact.scss */
+  .category {
+    width: 30%;
+    margin-right: 3.333333%;
+  }
+}
+@media (min-width: 1040px) {
+  /* line 25, ../scss/partials/_contact.scss */
+  .category {
+    width: 20%;
+    margin-right: 5%;
+  }
 }
 
-/* line 29, ../scss/partials/_contact.scss */
+/* line 49, ../scss/partials/_contact.scss */
 .division-list {
   position: relative;
   width: 100%;
   margin-top: 50px;
 }
-/* line 34, ../scss/partials/_contact.scss */
+/* line 54, ../scss/partials/_contact.scss */
 .division-list ul {
   margin-top: .5em;
   margin-bottom: 1.5em;
 }
-/* line 39, ../scss/partials/_contact.scss */
+/* line 59, ../scss/partials/_contact.scss */
 .division-list ul .address .gothic {
   line-height: 24px;
 }
-/* line 43, ../scss/partials/_contact.scss */
+/* line 63, ../scss/partials/_contact.scss */
 .division-list ul li {
   display: block;
   width: 100%;
 }
-/* line 47, ../scss/partials/_contact.scss */
+/* line 67, ../scss/partials/_contact.scss */
 .division-list ul li h3 {
   display: block;
 }
 
+/* line 74, ../scss/partials/_contact.scss */
+.contact-title {
+  max-width: 10em;
+}
+
+/* line 79, ../scss/partials/_contact.scss */
+.page-id-9 .contact-container #contact-beam-container {
+  width: 780px;
+  height: 5px;
+  overflow: hidden;
+  position: absolute;
+  left: -800px;
+  top: 3em;
+  border-radius: 10px;
+}
+
+/* line 90, ../scss/partials/_contact.scss */
+.contact-container li {
+  display: block;
+  vertical-align: top;
+  margin-right: 5%;
+  float: left;
+  width: 100%;
+}
+@media (min-width: 480px) {
+  /* line 90, ../scss/partials/_contact.scss */
+  .contact-container li {
+    width: 45%;
+    margin-right: 5%;
+  }
+}
+@media (min-width: 768px) {
+  /* line 90, ../scss/partials/_contact.scss */
+  .contact-container li {
+    width: 30%;
+    margin-right: 3.333333%;
+  }
+}
+@media (min-width: 1040px) {
+  /* line 90, ../scss/partials/_contact.scss */
+  .contact-container li {
+    width: 20%;
+    margin-right: 5%;
+  }
+}
+
+@media (min-width: 480px) {
+  /* line 117, ../scss/partials/_contact.scss */
+  .location:nth-child(2n+1),
+  .category.section:nth-child(2n+1) {
+    clear: left;
+  }
+}
+@media (min-width: 768px) {
+  /* line 124, ../scss/partials/_contact.scss */
+  .location:nth-child(2n+1),
+  .category.section:nth-child(2n+1) {
+    clear: none;
+  }
+
+  /* line 128, ../scss/partials/_contact.scss */
+  .location:nth-child(3n+1),
+  .category.section:nth-child(3n+1) {
+    clear: left;
+  }
+}
+@media (min-width: 1040px) {
+  /* line 135, ../scss/partials/_contact.scss */
+  .location:nth-child(3n+1),
+  .category.section:nth-child(3n+1) {
+    clear: none;
+  }
+
+  /* line 140, ../scss/partials/_contact.scss */
+  .location:nth-child(4n+1),
+  .category.section:nth-child(4n+1) {
+    clear: left;
+  }
+}
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's

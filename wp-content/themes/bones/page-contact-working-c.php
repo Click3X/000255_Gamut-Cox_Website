@@ -23,7 +23,7 @@ get_header(); ?>
 
 				<div id="inner-content" class="wrap cf">					
 
-					<div id="main" class="m-all t-3of3 d-7of7 cf" role="main">						
+					<div id="main" class="m-all t-2of3 d-5of7 cf" role="main">						
 
 						<section class="entry-content cf" itemprop="articleBody">
 
@@ -35,7 +35,7 @@ get_header(); ?>
 
 								</div>
 
-								<h2 class="contact-title"><?php echo $contact_title; ?></h2>
+								<h2><?php echo $contact_title; ?></h2>
 								<hr>
 							
 								<?php if(get_field('location-list')): ?>
