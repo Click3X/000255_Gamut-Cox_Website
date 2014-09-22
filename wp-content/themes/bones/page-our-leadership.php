@@ -35,6 +35,11 @@ if (have_posts()) : while (have_posts()) : the_post();
 			$email = $emailAdd[0];
 			$telePhone = get_post_custom_values('telephone', $team_member->ID);
 			$tele = $telePhone[0];
+			$empThumb = get_post_custom_values('thumbnail', $team_member->ID);
+			echo $empThumb;
+			// $empThu = $empThumb[0];
+			// helper($empThu);
+
 			
 			// ADD VALUES TO EACH TEAM MEMBER IN ARRAY
 			$teamMembers[$key]['id'] = $id;
@@ -48,6 +53,7 @@ if (have_posts()) : while (have_posts()) : the_post();
 			$teamMembers[$key]['largeThumb'] = $largeThumb[0];
 			$teamMembers[$key]['largeThumb-width'] = $largeThumb[1];
 			$teamMembers[$key]['largeThumb-height'] = $largeThumb[2];
+			$teamMembers[$key]['new-thumb'] = $empThumb;
 
 		}
 	}
@@ -80,7 +86,8 @@ wp_reset_postdata();
 					<li id="post-<?php echo $teamMember['id']; ?>" role="article" itemscope itemtype="http://schema.org/BlogPosting">
 						<a href="<?php echo $teamMember['link']; ?>" data-largesrc="<?php echo $teamMember['largeThumb']; ?>" data-largeheight="<?php echo $teamMember['largeThumb-height']; ?>" data-largewidth="<?php echo $teamMember['largeThumb-width']; ?>" data-title="<?php echo $teamMember['name']; ?>" data-description="<?php echo $teamMember['add_info']; ?>" data-etitle="<?php echo $teamMember['emp_title']; ?>">
 						<?php echo '<a href="'.$teamMember['link'].'">';
-							echo '<img src="'.$teamMember['thumb'].'" alt="'.$teamMember['name'].'" class="grid-thumb">';
+							// echo '<img src="'.$teamMember['thumb'].'" alt="'.$teamMember['name'].'" class="grid-thumb">';
+							echo '<img src="'.$teamMember['new-thumb'].'" alt="'.$teamMember['name'].'" class="grid-thumb">';
 							echo '<h2 class="small-name gothic">'.$teamMember['name'].'</h2>';
 							echo '<h3 class="small-title gothic">'.$teamMember['emp_title'].'</h3>';
 							?>
