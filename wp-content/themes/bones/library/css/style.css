@@ -2930,6 +2930,133 @@ hr {
   font-family: "franklin-gothic-urw",sans-serif;
 }
 
+<<<<<<< HEAD
+=======
+/* line 1, ../scss/partials/_footer.scss */
+.client-info {
+  display: inline-block;
+  position: relative;
+  letter-spacing: .1em;
+  font-size: .91em;
+  vertical-align: top;
+}
+
+/* line 14, ../scss/partials/_footer.scss */
+.headline {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* line 19, ../scss/partials/_footer.scss */
+.copy {
+  margin-top: .6em;
+  line-height: 1.5em;
+  font-size: .91em;
+}
+
+/* line 25, ../scss/partials/_footer.scss */
+.career-button {
+  position: relative;
+  text-align: center;
+  float: right;
+  margin-top: 30px;
+}
+/* line 33, ../scss/partials/_footer.scss */
+.career-button a {
+  display: block;
+  text-transform: uppercase;
+  font-size: .91em;
+  color: white !important;
+  white-space: nowrap;
+  text-align: center;
+  border: 2px solid #747474;
+  color: #747474;
+  text-decoration: none;
+  padding: 10px 35px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+/* line 49, ../scss/partials/_footer.scss */
+.career-button a:hover {
+  background-color: #ed228b;
+}
+/* line 51, ../scss/partials/_footer.scss */
+.career-button a:hover .arrow-right {
+  border-left: 6px solid white !important;
+}
+/* line 57, ../scss/partials/_footer.scss */
+.career-button .careers-link {
+  text-transform: uppercase;
+  color: white;
+  background-color: #3d3d3d;
+  display: block;
+}
+/* line 63, ../scss/partials/_footer.scss */
+.career-button .careers-link:after {
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 2em;
+  margin: auto;
+  border-left: 10px solid red;
+  border-bottom: 5px solid transparent;
+  border-top: 5px solid transparent;
+}
+
+/* line 85, ../scss/partials/_footer.scss */
+.footer-logo-holder,
+.social-media-links,
+.social {
+  display: inline-block;
+}
+
+/* line 89, ../scss/partials/_footer.scss */
+.social {
+  margin: .5rem;
+}
+
+/* line 93, ../scss/partials/_footer.scss */
+.footer {
+  background-color: #3d3d3d;
+}
+
+/* line 97, ../scss/partials/_footer.scss */
+.footer-links {
+  background-color: #000000;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+/* line 104, ../scss/partials/_footer.scss */
+.inner-footer {
+  padding-bottom: 40px;
+}
+
+/* line 108, ../scss/partials/_footer.scss */
+#policy-links {
+  color: white;
+}
+
+/* line 113, ../scss/partials/_footer.scss */
+.policy-links > .copy {
+  margin-top: 0;
+  font-weight: 500;
+}
+
+/* line 119, ../scss/partials/_footer.scss */
+#policy-links:hover {
+  color: #ed228b;
+}
+
+/* line 123, ../scss/partials/_footer.scss */
+.address {
+  color: #bdbdbd;
+}
+
+>>>>>>> FETCH_HEAD
 /* General Demo Style */
 /*@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);*/
 /* line 5, ../scss/partials/_who-we-are.scss */
@@ -5198,10 +5325,80 @@ form label {
 }
 /* line 3, ../scss/partials/_charles-font.scss */
 #sidebar1 .sidebar-intro li {
-  /* list-style-position: outside; */
-  margin-left: -.8em;
+  list-style-position: outside;
+  position: relative;
+  padding-left: 1.25em;
 }
 
+/* line 9, ../scss/partials/_charles-font.scss */
+#sidebar-intro {
+  border-top: 1px solid #bfbfbf;
+  border-bottom: 1px solid #bfbfbf;
+  padding: .65em 0px;
+  width: 100%;
+  margin-top: 80px;
+  font-size: .9em;
+  max-width: none;
+  line-height: 1.5em;
+}
+/* line 18, ../scss/partials/_charles-font.scss */
+#sidebar-intro h2 {
+  line-height: 1.2em;
+}
+/* line 21, ../scss/partials/_charles-font.scss */
+#sidebar-intro h2, #sidebar-intro h3 {
+  margin-bottom: 0;
+}
+
+/* line 28, ../scss/partials/_charles-font.scss */
+#sidebar-intro ul {
+  margin-top: 0;
+  margin-bottom: 2em;
+}
+/* line 32, ../scss/partials/_charles-font.scss */
+#sidebar-intro ul li:before {
+  color: #ed228b;
+  content: "\2022";
+  font-size: 1.5em;
+  padding-right: .25em;
+  position: relative;
+  top: 0;
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 1em;
+  height: 1em;
+}
+
+/* line 48, ../scss/partials/_charles-font.scss */
+h2, .h2,
+h3 {
+  line-height: 1.3em;
+}
+
+/* line 52, ../scss/partials/_charles-font.scss */
+.sub-page-content-wrapper h1 {
+  width: 100%;
+}
+
+/* line 56, ../scss/partials/_charles-font.scss */
+* {
+  -ms-word-break: break-all;
+  word-break: break-all;
+  /* Non standard for webkit */
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+@media (max-width: 768px) {
+  /* line 76, ../scss/partials/_charles-font.scss */
+  #inner-content {
+    width: 90%;
+  }
+}
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's

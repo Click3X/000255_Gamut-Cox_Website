@@ -91,7 +91,7 @@
                 <p class="p"><?php echo $programmatic_intro_content; ?></p>
               </div>
               <div class="half blue">
-                <a href="#" class="gamut-btn abs-center">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
+                <a href="#" class="gamut-btn abs-center">LEARN HOW&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
               </div>
               <div class="half red">
                 <img id="pro-logo" src="<?php bloginfo('url'); ?>/img/home-logos/programmatic-logo.png" alt="programmatic">
@@ -109,7 +109,7 @@
                 <p class="p"><?php echo $reps_intro_content; ?></p>
               </div>
               <div class="half blue">
-                <a href="#" class="gamut-btn abs-center">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
+                <a href="#" class="gamut-btn abs-center">LEARN HOW&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
               </div>
               <div class="half red">
                 <img id="rep-logo" src="<?php bloginfo('url'); ?>/img/home-logos/reps-logo.png" alt="reps">
@@ -126,7 +126,7 @@
                 <p class="p"><?php echo $reach_intro_content; ?></p>
               </div>
               <div class="half blue">
-                <a href="#" class="gamut-btn abs-center">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
+                <a href="#" class="gamut-btn abs-center">LEARN HOW&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
               </div>
               <div class="half red">
                 <img id="reach-logo" src="<?php bloginfo('url'); ?>/img/home-logos/reach-logo.png" alt="reach">
@@ -142,7 +142,7 @@
                 <p class="p"><?php echo $convergence_intro_content; ?></p>
               </div>
               <div class="half blue">
-                <a href="#" class="gamut-btn abs-center">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
+                <a href="#" class="gamut-btn abs-center">LEARN HOW&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
               </div>
               <div class="half red">
                 <img id="crossmedia-logo" src="<?php bloginfo('url'); ?>/img/home-logos/crossmedia-logo.png" alt="crossmedia">
