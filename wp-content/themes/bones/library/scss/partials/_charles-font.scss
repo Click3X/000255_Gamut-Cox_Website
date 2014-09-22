@@ -83,16 +83,16 @@ h3 {
 	background-color: white;
 	padding: 20px 0 20px 0;
 
-	h1 {
-		margin-top:0;
-
-		@media(min-width: 811px) {
-			margin-top:.67em;
-		}
-	}
+	h1 { margin-top:0; }
 
 	@media(min-width:550px) {
-		margin-top: -150px;
 		padding: 20px 8% 20px 8%;
+	}
+
+	@media(min-width: 811px) {
+		margin-top: -150px;
+		h1 {
+			margin-top:.67em;
+		}
 	}
 }
