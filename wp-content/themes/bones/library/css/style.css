@@ -5341,8 +5341,9 @@ form label {
 /* line 28, ../scss/partials/_charles-font.scss */
 #sidebar-intro ul {
   margin-top: 0;
+  margin-bottom: 2em;
 }
-/* line 31, ../scss/partials/_charles-font.scss */
+/* line 32, ../scss/partials/_charles-font.scss */
 #sidebar-intro ul li:before {
   color: #ed228b;
   content: "\2022";
