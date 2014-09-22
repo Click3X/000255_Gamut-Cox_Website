@@ -5358,6 +5358,12 @@ form label {
   height: 1em;
 }
 
+/* line 48, ../scss/partials/_charles-font.scss */
+h2, .h2,
+h3 {
+  line-height: 1.3em;
+}
+
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
