@@ -96,3 +96,29 @@ h3 {
 		}
 	}
 }
+
+h1 {
+	font-size: 2.5em;
+
+	@media(min-width: 550px) {
+		font-size: 3.65em;
+	}
+}
+
+.our-solutions-list-wrapper {
+	margin-left: 0;
+	@media(min-width: 550px) {
+		margin-left: 8%;
+	}
+}
+
+
+.our-solutions-list img {
+	height: auto;
+}
+
+@media(min-width: 500px) {
+	.our-solutions-list img {
+		height:5em;
+	}
+}

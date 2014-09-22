@@ -5299,6 +5299,39 @@ h3 {
   }
 }
 
+/* line 100, ../scss/partials/_charles-font.scss */
+h1 {
+  font-size: 2.5em;
+}
+@media (min-width: 550px) {
+  /* line 100, ../scss/partials/_charles-font.scss */
+  h1 {
+    font-size: 3.65em;
+  }
+}
+
+/* line 108, ../scss/partials/_charles-font.scss */
+.our-solutions-list-wrapper {
+  margin-left: 0;
+}
+@media (min-width: 550px) {
+  /* line 108, ../scss/partials/_charles-font.scss */
+  .our-solutions-list-wrapper {
+    margin-left: 8%;
+  }
+}
+
+/* line 116, ../scss/partials/_charles-font.scss */
+.our-solutions-list img {
+  height: auto;
+}
+
+@media (min-width: 500px) {
+  /* line 121, ../scss/partials/_charles-font.scss */
+  .our-solutions-list img {
+    height: 5em;
+  }
+}
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
