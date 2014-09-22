@@ -2879,7 +2879,7 @@ hr {
 
   /* line 498, ../scss/partials/_custom.scss */
   .footer-links-content {
-    width: 80%;
+    width: 95%;
   }
 }
 @media (max-width: 500px) {
@@ -5861,7 +5861,7 @@ you can add resource intensive styles.
 
   /* line 299, ../scss/breakpoints/_768up.scss */
   .footer-links-content {
-    width: 80%;
+    width: 95%;
   }
 }
 /*********************
@@ -5898,7 +5898,7 @@ you can add resource intensive styles.
 
   /* line 25, ../scss/breakpoints/_1030up.scss */
   .footer-links-content {
-    width: 80%;
+    width: 95%;
   }
 }
 /*********************
@@ -6077,6 +6077,12 @@ be set to display none.
   font-size: .91em;
   vertical-align: top;
 }
+@media (max-width: 530px) {
+  /* line 1, ../scss/partials/_footer.scss */
+  .client-info {
+    margin-right: 1em;
+  }
+}
 
 /* line 14, ../scss/partials/_footer.scss */
 .headline {
@@ -6100,7 +6106,13 @@ be set to display none.
   float: right;
   margin-top: 30px;
 }
-/* line 35, ../scss/partials/_footer.scss */
+@media (max-width: 530px) {
+  /* line 27, ../scss/partials/_footer.scss */
+  .career-button {
+    margin-top: 20px;
+  }
+}
+/* line 38, ../scss/partials/_footer.scss */
 .career-button a {
   display: block;
   text-transform: uppercase;
@@ -6115,23 +6127,29 @@ be set to display none.
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-/* line 51, ../scss/partials/_footer.scss */
+@media (max-width: 890px) {
+  /* line 38, ../scss/partials/_footer.scss */
+  .career-button a {
+    padding: 8px 15px;
+  }
+}
+/* line 58, ../scss/partials/_footer.scss */
 .career-button a:hover {
   background-color: #ed228b;
   color: white;
 }
-/* line 54, ../scss/partials/_footer.scss */
+/* line 61, ../scss/partials/_footer.scss */
 .career-button a:hover .arrow-right {
   border-left: 6px solid white !important;
 }
-/* line 60, ../scss/partials/_footer.scss */
+/* line 67, ../scss/partials/_footer.scss */
 .career-button .careers-link {
   text-transform: uppercase;
   color: white;
   background-color: #3d3d3d;
   display: block;
 }
-/* line 66, ../scss/partials/_footer.scss */
+/* line 73, ../scss/partials/_footer.scss */
 .career-button .careers-link:after {
   content: "";
   display: block;
@@ -6146,63 +6164,80 @@ be set to display none.
   border-top: 5px solid transparent;
 }
 
-/* line 90, ../scss/partials/_footer.scss */
+/* line 97, ../scss/partials/_footer.scss */
 .footer-logo-holder,
 .social-media-links,
 .social {
   display: inline-block;
 }
 
-/* line 94, ../scss/partials/_footer.scss */
+/* line 101, ../scss/partials/_footer.scss */
 .social {
   margin: .5rem;
 }
-
-/* line 98, ../scss/partials/_footer.scss */
-.footer {
-  background-color: #3d3d3d;
+@media (max-width: 530px) {
+  /* line 101, ../scss/partials/_footer.scss */
+  .social {
+    margin: 0.1rem;
+  }
 }
 
-/* line 102, ../scss/partials/_footer.scss */
+/* line 108, ../scss/partials/_footer.scss */
+.footer {
+  background-color: #202020;
+}
+
+/* line 112, ../scss/partials/_footer.scss */
 .footer-links {
   background-color: #000000;
 }
 
-/* line 113, ../scss/partials/_footer.scss */
+/* line 118, ../scss/partials/_footer.scss */
+.logo-social {
+  background-color: #3d3d3d;
+}
+
+/* line 127, ../scss/partials/_footer.scss */
 #policy-links {
   color: white;
 }
 
-/* line 118, ../scss/partials/_footer.scss */
+/* line 132, ../scss/partials/_footer.scss */
 .policy-links > .copy {
   margin-top: 0;
   font-weight: 500;
 }
 
-/* line 124, ../scss/partials/_footer.scss */
+/* line 138, ../scss/partials/_footer.scss */
 #policy-links:hover {
   color: #ed228b;
 }
 
-/* line 128, ../scss/partials/_footer.scss */
+/* line 142, ../scss/partials/_footer.scss */
 .address {
   color: #bdbdbd;
 }
 
-/* line 133, ../scss/partials/_footer.scss */
+/* line 147, ../scss/partials/_footer.scss */
 .footer-bottom {
   height: 50px;
   color: #585858 !important;
   margin: auto;
 }
-/* line 138, ../scss/partials/_footer.scss */
+@media (max-width: 890px) {
+  /* line 147, ../scss/partials/_footer.scss */
+  .footer-bottom {
+    padding-top: 20px;
+  }
+}
+/* line 156, ../scss/partials/_footer.scss */
 .footer-bottom li {
   float: left;
   margin-right: 15px;
   font-size: 0.8em;
   letter-spacing: 0;
 }
-/* line 145, ../scss/partials/_footer.scss */
+/* line 163, ../scss/partials/_footer.scss */
 .footer-bottom .copyright {
   display: inline-block;
   float: right;
@@ -6210,19 +6245,27 @@ be set to display none.
   letter-spacing: 0;
   margin-top: 12px;
 }
+@media (max-width: 890px) {
+  /* line 163, ../scss/partials/_footer.scss */
+  .footer-bottom .copyright {
+    float: left;
+    margin-bottom: 25px;
+    margin-top: 0;
+  }
+}
 
-/* line 154, ../scss/partials/_footer.scss */
+/* line 178, ../scss/partials/_footer.scss */
 .footer-left-column, .other-businesses-container {
   display: inline-block;
   vertical-align: top;
 }
 
-/* line 159, ../scss/partials/_footer.scss */
+/* line 183, ../scss/partials/_footer.scss */
 .headquarters-container {
   border-bottom: 1px dashed #565656;
 }
 
-/* line 164, ../scss/partials/_footer.scss */
+/* line 188, ../scss/partials/_footer.scss */
 .other-businesses-container {
   padding-left: 70px;
   padding-right: 70px;
@@ -6231,59 +6274,132 @@ be set to display none.
   padding-top: 60px;
   padding-bottom: 140px;
 }
+@media (max-width: 1033px) {
+  /* line 188, ../scss/partials/_footer.scss */
+  .other-businesses-container {
+    padding-bottom: 60px;
+    border-bottom: 1px solid #565656;
+    border-right: none;
+  }
+}
+@media (max-width: 890px) {
+  /* line 188, ../scss/partials/_footer.scss */
+  .other-businesses-container {
+    padding-bottom: 60px;
+    border: none;
+    padding-left: 0;
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #565656;
+  }
+}
 
-/* line 175, ../scss/partials/_footer.scss */
+/* line 216, ../scss/partials/_footer.scss */
 .headquarter-title {
   text-transform: uppercase;
 }
 
-/* line 179, ../scss/partials/_footer.scss */
+/* line 220, ../scss/partials/_footer.scss */
 .other-businesses-content {
   margin-top: 1.2em;
   display: block;
 }
 
-/* line 184, ../scss/partials/_footer.scss */
+/* line 225, ../scss/partials/_footer.scss */
 .footer-contact-container {
   text-transform: uppercase;
   margin-top: 20px;
   display: inline-block;
 }
+@media (max-width: 1033px) {
+  /* line 225, ../scss/partials/_footer.scss */
+  .footer-contact-container {
+    padding-bottom: 30px;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 890px) {
+  /* line 225, ../scss/partials/_footer.scss */
+  .footer-contact-container {
+    display: block;
+  }
+}
 
-/* line 191, ../scss/partials/_footer.scss */
+/* line 241, ../scss/partials/_footer.scss */
 .headquarters-wrapper {
   margin-bottom: 20px;
 }
 
-/* line 195, ../scss/partials/_footer.scss */
+/* line 245, ../scss/partials/_footer.scss */
 .footer-links-content {
   margin: auto;
 }
 
-/* line 199, ../scss/partials/_footer.scss */
+/* line 249, ../scss/partials/_footer.scss */
 .footer-left-column {
   padding-top: 60px;
 }
+@media (max-width: 890px) {
+  /* line 249, ../scss/partials/_footer.scss */
+  .footer-left-column {
+    display: block;
+  }
+}
 
-/* line 203, ../scss/partials/_footer.scss */
+/* line 257, ../scss/partials/_footer.scss */
 .footer-contact-link {
   cursor: pointer;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   color: white;
 }
-/* line 209, ../scss/partials/_footer.scss */
+/* line 263, ../scss/partials/_footer.scss */
 .footer-contact-link:hover .arrow-right {
   border-left: 6px solid #ed228b !important;
 }
 
-/* line 215, ../scss/partials/_footer.scss */
-.iab_logo {
+/* line 269, ../scss/partials/_footer.scss */
+.footer-contact-wrapper {
+  display: block;
+}
+@media (max-width: 890px) {
+  /* line 269, ../scss/partials/_footer.scss */
+  .footer-contact-wrapper {
+    border-bottom: 1px solid #565656;
+  }
+}
+/* line 275, ../scss/partials/_footer.scss */
+.footer-contact-wrapper a {
+  display: inline-block;
+}
+
+/* line 281, ../scss/partials/_footer.scss */
+.iab_logo_container {
+  display: inline-block;
+}
+@media (max-width: 1033px) {
+  /* line 281, ../scss/partials/_footer.scss */
+  .iab_logo_container {
+    display: block;
+  }
+}
+/* line 287, ../scss/partials/_footer.scss */
+.iab_logo_container a {
+  display: inline-block;
   margin-left: 50px;
   margin-top: 60px;
   display: inline-block;
 }
-/* line 216, ../scss/partials/_footer.scss */
-.iab_logo img {
+@media (max-width: 1033px) {
+  /* line 287, ../scss/partials/_footer.scss */
+  .iab_logo_container a {
+    margin-left: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+/* line 301, ../scss/partials/_footer.scss */
+.iab_logo_container img {
   width: 80px;
 }

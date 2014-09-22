@@ -297,7 +297,7 @@ CUSTOM STYLES
 
 /* line 299, ../scss/breakpoints/_768up.scss */
 .footer-links-content {
-  width: 80%;
+  width: 95%;
 }
 
 /******************************************************************
@@ -327,7 +327,7 @@ be seen on the Desktop.
 
 /* line 25, ../scss/breakpoints/_1030up.scss */
 .footer-links-content {
-  width: 80%;
+  width: 95%;
 }
 
 /*

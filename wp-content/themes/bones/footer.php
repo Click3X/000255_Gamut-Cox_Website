@@ -88,12 +88,11 @@
 										echo '</div>';
 
 										$footer_contact = get_field('footer_contact', 'options');
-										echo '<a class="footer-contact-link"><div class="footer-contact-container headline">' . $footer_contact . '&nbsp;&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid white"></span></div></a>'; 
+										echo '<div class="footer-contact-wrapper"><a class="footer-contact-link"><div class="footer-contact-container headline">' . $footer_contact . '&nbsp;&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid white"></span></div></a></div>'; 
 
 
 								echo '</div>'; ?>
 
-								<!-- <img src="<?php bloginfo('url'); ?>/img/vertical-line.png"> -->
 
 								<?php echo '<div class="other-businesses-container">';
 
@@ -104,13 +103,12 @@
 
 								echo '</div>'; ?>
 								
-								<!-- <img src="<?php bloginfo('url'); ?>/img/vertical-line.png"> -->
-
+								<div class="iab_logo_container">
 								<a href="http://www.iab.net/about_the_iab/recent_press_releases/press_release_archive/press_release/pr-051314?gko=96140" target="blank" class="iab_logo">
 									<img src="<?php bloginfo('url'); ?>/img/iab_logo.png">
 									<!-- <div class="iab_learn_more">Learn More</div> -->
 								</a>
-												
+								</div>				
 
 							<?php echo '</div>'; // .wrap
 
