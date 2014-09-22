@@ -122,3 +122,69 @@ h1 {
 		height:5em;
 	}
 }
+
+
+// HOVER STYLES FOR INDIVIDUAL BIZ PRODUCTS PAGES
+// PROGRAMMATIC
+.page-id-11 {
+	a {
+		color: #ed228b;
+		@include prefix(transition, all 200ms);
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	.secondary {
+		.current_page_item {
+			a {
+				color: #ed228b;	
+			}
+		}
+		a {
+			color: #ed228b;
+			@include prefix(transition, all 200ms);
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+
+// CROSSMEDIA
+// #sidebar .secondary li.page_item.page-item-13 a,
+.page-id-13 {
+	a {
+		color: #fba211;
+		@include prefix(transition, all 200ms);
+
+		&:hover {
+				text-decoration: underline;
+			}
+	}
+	.secondary {
+		.current_page_item {
+			a {
+				color: #fba211;	
+			}
+		}
+		a {
+			color: #fba211;
+			@include prefix(transition, all 200ms);
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+.page-item-13 {
+	a {color: #fba211;
+			@include prefix(transition, all 200ms);
+	
+	&:hover {
+			text-decoration: underline;
+		}
+	}
+}

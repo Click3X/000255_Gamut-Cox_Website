@@ -3880,13 +3880,6 @@ a {
     top: 0px;
   }
 }
-/* line 6, ../scss/partials/_sidebar.scss */
-.page-id-45 .page-item-48 a,
-.current_page_item a,
-.sidebar-selected a {
-  color: #ed228b !important;
-}
-
 @media (min-width: 811px) {
   /* Parallax base styles
   --------------------------------------------- */
@@ -5332,6 +5325,82 @@ h1 {
     height: 5em;
   }
 }
+/* line 130, ../scss/partials/_charles-font.scss */
+.page-id-11 a {
+  color: #ed228b;
+  -webkit-transition: all 200ms;
+  -moz-transition: all 200ms;
+  -o-transition: all 200ms;
+  -ms-transition: all 200ms;
+  transition: all 200ms;
+}
+/* line 134, ../scss/partials/_charles-font.scss */
+.page-id-11 a:hover {
+  text-decoration: underline;
+}
+/* line 140, ../scss/partials/_charles-font.scss */
+.page-id-11 .secondary .current_page_item a {
+  color: #ed228b;
+}
+/* line 144, ../scss/partials/_charles-font.scss */
+.page-id-11 .secondary a {
+  color: #ed228b;
+  -webkit-transition: all 200ms;
+  -moz-transition: all 200ms;
+  -o-transition: all 200ms;
+  -ms-transition: all 200ms;
+  transition: all 200ms;
+}
+/* line 147, ../scss/partials/_charles-font.scss */
+.page-id-11 .secondary a:hover {
+  text-decoration: underline;
+}
+
+/* line 158, ../scss/partials/_charles-font.scss */
+.page-id-13 a {
+  color: #fba211;
+  -webkit-transition: all 200ms;
+  -moz-transition: all 200ms;
+  -o-transition: all 200ms;
+  -ms-transition: all 200ms;
+  transition: all 200ms;
+}
+/* line 162, ../scss/partials/_charles-font.scss */
+.page-id-13 a:hover {
+  text-decoration: underline;
+}
+/* line 168, ../scss/partials/_charles-font.scss */
+.page-id-13 .secondary .current_page_item a {
+  color: #fba211;
+}
+/* line 172, ../scss/partials/_charles-font.scss */
+.page-id-13 .secondary a {
+  color: #fba211;
+  -webkit-transition: all 200ms;
+  -moz-transition: all 200ms;
+  -o-transition: all 200ms;
+  -ms-transition: all 200ms;
+  transition: all 200ms;
+}
+/* line 175, ../scss/partials/_charles-font.scss */
+.page-id-13 .secondary a:hover {
+  text-decoration: underline;
+}
+
+/* line 183, ../scss/partials/_charles-font.scss */
+.page-item-13 a {
+  color: #fba211;
+  -webkit-transition: all 200ms;
+  -moz-transition: all 200ms;
+  -o-transition: all 200ms;
+  -ms-transition: all 200ms;
+  transition: all 200ms;
+}
+/* line 186, ../scss/partials/_charles-font.scss */
+.page-item-13 a:hover {
+  text-decoration: underline;
+}
+
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
