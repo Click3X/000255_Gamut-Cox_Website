@@ -5675,16 +5675,16 @@ body #content {
   position: relative;
   width: 100%;
 }
-/* line 34, ../scss/partials/_contact.scss */
+/* line 35, ../scss/partials/_contact.scss */
 .division-list ul .address .gothic {
   line-height: 24px;
 }
-/* line 38, ../scss/partials/_contact.scss */
+/* line 39, ../scss/partials/_contact.scss */
 .division-list ul li {
   display: block;
   width: 100%;
 }
-/* line 42, ../scss/partials/_contact.scss */
+/* line 43, ../scss/partials/_contact.scss */
 .division-list ul li h3 {
   display: block;
 }
