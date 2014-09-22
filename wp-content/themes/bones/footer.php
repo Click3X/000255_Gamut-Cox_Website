@@ -23,6 +23,9 @@
 				   		// earlier on the page
 				    	wp_reset_postdata();
 
+				    	// CAREERS BUTTON
+						$careers = get_field('careers', 'options');
+
 				    	// LOGO AND SOCIAL LINKS
 				    	echo '<div class="logo-social clearfix">';
 				    		echo '<div class="footer-links-content wrap cf">';
@@ -43,6 +46,12 @@
 								<?php endwhile;
 								echo '</ul>';
 							endif; 
+
+
+							if($careers) {
+								echo '<ul class="client-info career-button"><li><a href="'.$careers.'" id="careers-link">Careers&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #eb0a8e;"></span></a></li></ul>';
+							}
+
 							echo '</div>'; // .wrap
 				    	echo '</div>';
 
@@ -65,19 +74,14 @@
 								endif; 
 
 
-								// CAREERS BUTTON
-								$careers = get_field('careers', 'options');
+								
 								
 								// POLICY LINKS - 
 								if(get_field('policy_links', 'options')): ?>
 									
 									
 
-									<?php 
-									if($careers) {
-										echo '<ul class="client-info career-button"><li><a href="'.$careers.'" id="careers-link">Careers&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #eb0a8e;"></span></a></li></ul>';
-									}?>
-
+									
 									<ul class="client-info policy-links">
 									
 									<?php // EACH LOCATION ('City-Address combo') GETS ITS OWN UL
