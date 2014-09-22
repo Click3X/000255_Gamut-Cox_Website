@@ -45,22 +45,30 @@
 									<div class="our-solutions-list-wrapper">
 									   
 									   <div class="our-solutions-list">
-										   	<img src="<?php bloginfo('url'); ?>/img/our-solutions/pro-logo.png">
+									   		<a href="<?php the_permalink(11); ?>">
+										   		<img src="<?php bloginfo('url'); ?>/img/our-solutions/pro-logo.png">
+										   	</a>
 										   <!-- 	<h2 class="pro-color"><?php echo $pro_caption ?></h2> -->
 									   </div>
 
 									   <div class="our-solutions-list">
-										   	<img src="<?php bloginfo('url'); ?>/img/our-solutions/rep-logo.png">
+									   		<a href="<?php the_permalink(13); ?>">
+										   		<img src="<?php bloginfo('url'); ?>/img/our-solutions/rep-logo.png">
+										   	</a>
 										   	<!-- <h2 class="rep-color"><?php echo $rep_caption ?></h2> -->
 									   </div>
 
 									   <div class="our-solutions-list">
-										   	<img class="logo-smaller" src="<?php bloginfo('url'); ?>/img/our-solutions/rea-logo.png">
+									   		<a href="<?php the_permalink(24); ?>">
+										   		<img class="logo-smaller" src="<?php bloginfo('url'); ?>/img/our-solutions/rea-logo.png">
+										   	</a>
 										   <!-- 	<h2 class="rea-color"><?php echo $rea_caption ?></h2> -->
 									   </div>
 
 									   <div class="our-solutions-list">
-										   	<img class="logo-smaller" src="<?php bloginfo('url'); ?>/img/our-solutions/cro-logo.png">
+									   		<a href="<?php the_permalink(15); ?>">
+										   		<img class="logo-smaller" src="<?php bloginfo('url'); ?>/img/our-solutions/cro-logo.png">
+										   	</a>
 										   	<!-- <h2 class="cro-color"><?php echo $cro_caption ?></h2> -->
 									   </div>
 
