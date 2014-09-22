@@ -36,9 +36,11 @@ if (have_posts()) : while (have_posts()) : the_post();
 			$telePhone = get_post_custom_values('telephone', $team_member->ID);
 			$tele = $telePhone[0];
 			$empThumb = get_post_custom_values('thumbnail', $team_member->ID);
-			echo $empThumb;
-			// $empThu = $empThumb[0];
-			// helper($empThu);
+			// echo $empThumb;
+			$empId = $empThumb[0];
+			$bwThumb = wp_get_attachment_image_src($empId , 'emp-thumb');
+			// helper($bwThumb);
+			$newThumb = $bwThumb[0];
 
 			
 			// ADD VALUES TO EACH TEAM MEMBER IN ARRAY
@@ -53,7 +55,7 @@ if (have_posts()) : while (have_posts()) : the_post();
 			$teamMembers[$key]['largeThumb'] = $largeThumb[0];
 			$teamMembers[$key]['largeThumb-width'] = $largeThumb[1];
 			$teamMembers[$key]['largeThumb-height'] = $largeThumb[2];
-			$teamMembers[$key]['new-thumb'] = $empThumb;
+			$teamMembers[$key]['new-thumb'] = $newThumb;
 
 		}
 	}
