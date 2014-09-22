@@ -131,7 +131,7 @@ h1 {
 // PROGRAMMATIC
 .page-id-11 {
 	a {
-		color: #ed228b;
+		color: #dd1420;
 		@include prefix(transition, all 200ms);
 
 		&:hover {
@@ -141,21 +141,21 @@ h1 {
 	.secondary {
 		.page_item.page-item-11 {
 			a:hover {
-				color: #ed228b;
+				color: #dd1420;
 				text-decoration: underline;
 			}
 		}
 		.current_page_item {
 			a {
-				color: #ed228b;
+				color: #dd1420;
 				&:hover {
-					color: #ed228b;
+					color: #dd1420;
 					text-decoration: underline;
 				}
 			}
 		}
 		a {
-			color: #ed228b;
+			color: #dd1420;
 			@include prefix(transition, all 200ms);
 			&:hover {
 				text-decoration: underline;
@@ -167,11 +167,11 @@ h1 {
 
 .page-item-11 {
 	a {
-		color: #ed228b;
+		color: #dd1420;
 		@include prefix(transition, all 200ms);
 	
 		&:hover {
-			color: #ed228b;
+			color: #dd1420;
 			text-decoration: underline;
 		}
 	}
@@ -324,4 +324,4 @@ h1 {
 #sidebar1 > ul > li.page_item.page-item-13 > a:hover { color: #fba211; }
 #sidebar1 > ul > li.page_item.page-item-15 > a:hover { color: rgb(3, 159, 211); }
 #sidebar1 > ul > li.page_item.page-item-24 > a:hover { color: rgb(143, 199, 62); }
-#sidebar1 > ul > li.page_item.page-item-11 > a:hover {  color: #ed228b; }
+#sidebar1 > ul > li.page_item.page-item-11 > a:hover {  color: #dd1420; }
