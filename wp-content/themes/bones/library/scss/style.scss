@@ -71,8 +71,8 @@ the other stylesheets. Remember, keep it light: Speed is Important.
 // custom scss
 @import "partials/custom";
 
-// FOOTER
-@import "partials/footer";
+// // FOOTER
+// @import "partials/footer";
 
 // WHO WE ARE
 @import "partials/who-we-are";
@@ -180,6 +180,9 @@ be set to display none.
 	@import "partials/print";
 
 }
+
+// FOOTER
+@import "partials/footer";
 
 
 	

@@ -35,11 +35,11 @@
 		text-transform: uppercase;
 		// font-size: 1em;
 		font-size: .91em;
-		color: white !important;
 		white-space: nowrap;
 		text-align: center;
-		border: 1px solid #747474;
+		border: 2px solid #747474;
 		color: #747474;
+		font-weight: 500;
 		// background-color: #323944;
 		text-decoration: none;
 		padding: 10px 35px;
@@ -48,6 +48,7 @@
 
 		&:hover {
 			background-color: $brand-color;
+			color: $white;
 			.arrow-right {
 				border-left: 6px solid $white !important;
 			}

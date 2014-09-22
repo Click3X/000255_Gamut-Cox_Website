@@ -2930,130 +2930,6 @@ hr {
   font-family: "franklin-gothic-urw",sans-serif;
 }
 
-/* line 1, ../scss/partials/_footer.scss */
-.client-info {
-  display: inline-block;
-  position: relative;
-  letter-spacing: .1em;
-  font-size: .91em;
-  vertical-align: top;
-}
-
-/* line 14, ../scss/partials/_footer.scss */
-.headline {
-  text-transform: uppercase;
-  font-weight: 500;
-}
-
-/* line 19, ../scss/partials/_footer.scss */
-.copy {
-  margin-top: .6em;
-  line-height: 1.5em;
-  font-size: .91em;
-}
-
-/* line 25, ../scss/partials/_footer.scss */
-.career-button {
-  position: relative;
-  text-align: center;
-  float: right;
-  margin-top: 30px;
-}
-/* line 33, ../scss/partials/_footer.scss */
-.career-button a {
-  display: block;
-  text-transform: uppercase;
-  font-size: .91em;
-  color: white !important;
-  white-space: nowrap;
-  text-align: center;
-  border: 1px solid #747474;
-  color: #747474;
-  text-decoration: none;
-  padding: 10px 35px;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-/* line 49, ../scss/partials/_footer.scss */
-.career-button a:hover {
-  background-color: #ed228b;
-}
-/* line 51, ../scss/partials/_footer.scss */
-.career-button a:hover .arrow-right {
-  border-left: 6px solid white !important;
-}
-/* line 57, ../scss/partials/_footer.scss */
-.career-button .careers-link {
-  text-transform: uppercase;
-  color: white;
-  background-color: #3d3d3d;
-  display: block;
-}
-/* line 63, ../scss/partials/_footer.scss */
-.career-button .careers-link:after {
-  content: "";
-  display: block;
-  height: 2px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 2em;
-  margin: auto;
-  border-left: 10px solid red;
-  border-bottom: 5px solid transparent;
-  border-top: 5px solid transparent;
-}
-
-/* line 85, ../scss/partials/_footer.scss */
-.footer-logo-holder,
-.social-media-links,
-.social {
-  display: inline-block;
-}
-
-/* line 89, ../scss/partials/_footer.scss */
-.social {
-  margin: .5rem;
-}
-
-/* line 93, ../scss/partials/_footer.scss */
-.footer {
-  background-color: #3d3d3d;
-}
-
-/* line 97, ../scss/partials/_footer.scss */
-.footer-links {
-  background-color: #000000;
-  padding-top: 90px;
-  padding-bottom: 90px;
-}
-
-/* line 104, ../scss/partials/_footer.scss */
-.inner-footer {
-  padding-bottom: 40px;
-}
-
-/* line 108, ../scss/partials/_footer.scss */
-#policy-links {
-  color: white;
-}
-
-/* line 113, ../scss/partials/_footer.scss */
-.policy-links > .copy {
-  margin-top: 0;
-  font-weight: 500;
-}
-
-/* line 119, ../scss/partials/_footer.scss */
-#policy-links:hover {
-  color: #ed228b;
-}
-
-/* line 123, ../scss/partials/_footer.scss */
-.address {
-  color: #bdbdbd;
-}
-
 /* General Demo Style */
 /*@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);*/
 /* line 5, ../scss/partials/_who-we-are.scss */
@@ -5305,8 +5181,17 @@ form label {
   background-color: #ed228b;
 }
 
+/* line 236, ../scss/partials/_wen.scss */
+.footer-bottom {
+  height: 80px;
+}
+/* line 238, ../scss/partials/_wen.scss */
+.footer-bottom li {
+  float: left !important;
+}
+
 @media (max-width: 560px) {
-  /* line 222, ../scss/partials/_wen.scss */
+  /* line 244, ../scss/partials/_wen.scss */
   .wpcf7-list-item {
     display: block;
   }
@@ -5820,4 +5705,128 @@ be set to display none.
   nav {
     display: none;
   }
+}
+/* line 1, ../scss/partials/_footer.scss */
+.client-info {
+  display: inline-block;
+  position: relative;
+  letter-spacing: .1em;
+  font-size: .91em;
+  vertical-align: top;
+}
+
+/* line 14, ../scss/partials/_footer.scss */
+.headline {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* line 19, ../scss/partials/_footer.scss */
+.copy {
+  margin-top: .6em;
+  line-height: 1.5em;
+  font-size: .91em;
+}
+
+/* line 25, ../scss/partials/_footer.scss */
+.career-button {
+  position: relative;
+  text-align: center;
+  float: right;
+  margin-top: 30px;
+}
+/* line 33, ../scss/partials/_footer.scss */
+.career-button a {
+  display: block;
+  text-transform: uppercase;
+  font-size: .91em;
+  white-space: nowrap;
+  text-align: center;
+  border: 2px solid #747474;
+  color: #747474;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 10px 35px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+/* line 49, ../scss/partials/_footer.scss */
+.career-button a:hover {
+  background-color: #ed228b;
+  color: white;
+}
+/* line 52, ../scss/partials/_footer.scss */
+.career-button a:hover .arrow-right {
+  border-left: 6px solid white !important;
+}
+/* line 58, ../scss/partials/_footer.scss */
+.career-button .careers-link {
+  text-transform: uppercase;
+  color: white;
+  background-color: #3d3d3d;
+  display: block;
+}
+/* line 64, ../scss/partials/_footer.scss */
+.career-button .careers-link:after {
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 2em;
+  margin: auto;
+  border-left: 10px solid red;
+  border-bottom: 5px solid transparent;
+  border-top: 5px solid transparent;
+}
+
+/* line 86, ../scss/partials/_footer.scss */
+.footer-logo-holder,
+.social-media-links,
+.social {
+  display: inline-block;
+}
+
+/* line 90, ../scss/partials/_footer.scss */
+.social {
+  margin: .5rem;
+}
+
+/* line 94, ../scss/partials/_footer.scss */
+.footer {
+  background-color: #3d3d3d;
+}
+
+/* line 98, ../scss/partials/_footer.scss */
+.footer-links {
+  background-color: #000000;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+/* line 105, ../scss/partials/_footer.scss */
+.inner-footer {
+  padding-bottom: 40px;
+}
+
+/* line 109, ../scss/partials/_footer.scss */
+#policy-links {
+  color: white;
+}
+
+/* line 114, ../scss/partials/_footer.scss */
+.policy-links > .copy {
+  margin-top: 0;
+  font-weight: 500;
+}
+
+/* line 120, ../scss/partials/_footer.scss */
+#policy-links:hover {
+  color: #ed228b;
+}
+
+/* line 124, ../scss/partials/_footer.scss */
+.address {
+  color: #bdbdbd;
 }

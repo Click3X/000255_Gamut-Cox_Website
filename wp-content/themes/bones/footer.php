@@ -76,24 +76,28 @@
 
 								
 								
-								// POLICY LINKS - 
-								if(get_field('policy_links', 'options')): ?>
-									
-									
 
-									
-									<ul class="client-info policy-links">
-									
-									<?php // EACH LOCATION ('City-Address combo') GETS ITS OWN UL
-										while(has_sub_field('policy_links', 'options')): ?>
-										<li class="copy link"><a class="policy-links" href="<?php the_sub_field('link'); ?>"><?php the_sub_field('title'); ?></a></li>
-									<?php endwhile; ?>
-
-									</ul>
-
-								<?php 
-								endif;
 							echo '</div>'; // .wrap
+
+						echo '</div>';
+
+						echo '<div class="footer-bottom">';
+
+							// POLICY LINKS - 
+							if(get_field('policy_links', 'options')): ?>
+								
+									
+								<ul class="client-info policy-links">
+									
+								<?php // EACH LOCATION ('City-Address combo') GETS ITS OWN UL
+									while(has_sub_field('policy_links', 'options')): ?>
+									<li class="copy link"><a class="policy-links" href="<?php the_sub_field('link'); ?>"><?php the_sub_field('title'); ?></a></li>
+								<?php endwhile; ?>
+
+								</ul>
+
+							<?php 
+							endif;
 
 						echo '</div>';
 
