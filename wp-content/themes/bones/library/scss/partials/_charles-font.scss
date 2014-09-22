@@ -136,9 +136,19 @@ h1 {
 		}
 	}
 	.secondary {
+		.page_item.page-item-11 {
+			a:hover {
+				color: #ed228b;
+				text-decoration: underline;
+			}
+		}
 		.current_page_item {
 			a {
-				color: #ed228b;	
+				color: #ed228b;
+				&:hover {
+					color: #ed228b;
+					text-decoration: underline;
+				}
 			}
 		}
 		a {
@@ -152,8 +162,20 @@ h1 {
 }
 
 
+.page-item-11 {
+	a {
+		color: #ed228b;
+		@include prefix(transition, all 200ms);
+	
+		&:hover {
+			color: #ed228b;
+			text-decoration: underline;
+		}
+	}
+}
+
+
 // CROSSMEDIA
-// #sidebar .secondary li.page_item.page-item-13 a,
 .page-id-13 {
 	a {
 		color: #fba211;
@@ -164,15 +186,26 @@ h1 {
 			}
 	}
 	.secondary {
+		.page_item.page-item-13 {
+			a:hover {
+				color: #fba211;
+				text-decoration: underline;
+			}
+		}
 		.current_page_item {
 			a {
 				color: #fba211;	
+				&:hover {
+					color: #fba211;
+					text-decoration: underline;
+				}
 			}
 		}
 		a {
 			color: #fba211;
 			@include prefix(transition, all 200ms);
 			&:hover {
+				color: #fba211;
 				text-decoration: underline;
 			}
 		}
@@ -188,3 +221,104 @@ h1 {
 		}
 	}
 }
+
+
+// REACH
+.page-id-24 {
+	a {
+		color: rgb(143, 199, 62);
+		@include prefix(transition, all 200ms);
+
+		&:hover {
+				text-decoration: underline;
+			}
+	}
+	.secondary {
+		.page_item.page-item-24 {
+			a:hover {
+				color: rgb(143, 199, 62);
+				text-decoration: underline;
+			}
+		}
+		.current_page_item {
+			a {
+				color: rgb(143, 199, 62);
+				&:hover {
+					color: rgb(143, 199, 62);
+					text-decoration: underline;
+				}
+			}
+		}
+		a {
+			color: rgb(143, 199, 62);
+			@include prefix(transition, all 200ms);
+			&:hover {
+				color: rgb(143, 199, 62);
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+.page-item-24 {
+	a {color: rgb(143, 199, 62);
+			@include prefix(transition, all 200ms);
+	
+	&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+// REPS
+.page-id-15 {
+	a {
+		color: rgb(3, 159, 211);
+		@include prefix(transition, all 200ms);
+
+		&:hover {
+				text-decoration: underline;
+			}
+	}
+	.secondary {
+		.page_item.page-item-15 {
+			a:hover {
+				color: rgb(3, 159, 211);
+				text-decoration: underline;
+			}
+		}
+
+		.current_page_item {
+			a {
+				color: rgb(3, 159, 211);
+				&:hover {
+					color: rgb(3, 159, 211);
+					text-decoration: underline;
+				}
+			}
+		}
+		a {
+			color: rgb(3, 159, 211);
+			@include prefix(transition, all 200ms);
+			&:hover {
+				color: rgb(3, 159, 211);
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+.page-item-15 {
+	a {color: rgb(3, 159, 211);
+			@include prefix(transition, all 200ms);
+	
+	&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+#sidebar1 > ul > li.page_item.page-item-13 > a:hover { color: #fba211; }
+#sidebar1 > ul > li.page_item.page-item-15 > a:hover { color: rgb(3, 159, 211); }
+#sidebar1 > ul > li.page_item.page-item-24 > a:hover { color: rgb(143, 199, 62); }
+#sidebar1 > ul > li.page_item.page-item-11 > a:hover {  color: #ed228b; }

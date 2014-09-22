@@ -517,6 +517,7 @@ hr {
   line-height: 1.45em;
 }
 
+// .secondary li.page_item {
 .secondary li.page_item {
   line-height: 2.2em;
   font-size: .85em;
@@ -525,9 +526,9 @@ hr {
     color:  rgb(98,98,98);
   }
 
-  a:hover {
-    color: $brand-color;
-  }
+  // a:hover {
+  //   color: $brand-color;
+  // }
 }
 
 .contact-container h2 {
