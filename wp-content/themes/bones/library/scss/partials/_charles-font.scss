@@ -2,5 +2,16 @@
 
 #sidebar1 .sidebar-intro li {
 /* list-style-position: outside; */
-margin-left: -.8em;
+// margin-left: -.8em;
+}
+
+#sidebar-intro {
+  border-top: 1px solid #bfbfbf;
+  border-bottom: 1px solid #bfbfbf;
+  padding: .65em 0px;
+  width: 200px;
+  margin-top: 80px;
+  font-size: .9em;
+  max-width: none;
+  line-height: 1.5em;
 }
