@@ -15,6 +15,7 @@
 	text-transform: uppercase;
 	font-weight: 500;
 	display: block;
+	letter-spacing: 0.05em;
 }
 
 .copy {
@@ -100,14 +101,14 @@
 
 .footer-links {
 	background-color:#000000;
-	padding-top: 90px;
-	padding-bottom: 90px;
+	// padding-top: 90px;
+	// padding-bottom: 90px;
 }
 
 
-.inner-footer {
-	padding-bottom: 40px;
-}
+// .inner-footer {
+// 	padding-bottom: 40px;
+// }
 
 #policy-links {
 	color: white;
@@ -130,7 +131,7 @@
 
 
 .footer-bottom {
-	height: 100px;
+	height: 50px;
 	color: #585858 !important;
 	
 	margin: auto;
@@ -157,6 +158,17 @@
 
 .headquarters-container {
 	border-bottom: 1px dashed #565656;
+	// width: 150%;
+}
+
+.other-businesses-container {
+	padding-left: 70px;
+	padding-right: 70px;
+	border-left: 1px solid #565656;
+	border-right: 1px solid #565656;
+	// vertical-align: middle;
+	padding-top: 60px;
+	padding-bottom: 140px;
 }
 
 
@@ -171,5 +183,41 @@
 
 .footer-contact-container {
 	text-transform: uppercase;
+	margin-top: 20px;
+	display: inline-block;
+
 }
 
+.headquarters-wrapper {
+	margin-bottom: 20px;
+}
+
+.footer-links-content {
+	margin: auto;
+}
+
+.footer-left-column {
+	padding-top: 60px;
+}
+
+.footer-contact-link {
+	cursor: pointer;
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+	color: white;
+	&:hover {
+		.arrow-right {
+			border-left: 6px solid $brand-color !important;
+		}
+	}
+}
+
+.iab_logo {
+	img {
+		width: 80px;
+	}
+
+	margin-left: 50px;
+	margin-top: 60px;
+	display: inline-block;
+}

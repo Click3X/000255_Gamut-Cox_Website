@@ -57,7 +57,7 @@
 
 				    	// CONTACT LINKS
 					    echo '<div class="footer-links">';
-						    	echo '<div class="cf">';
+						    	echo '<div class="footer-links-content cf">';
 
 
 						    		// LEFT COLUMN CONTAINER
@@ -88,22 +88,31 @@
 										echo '</div>';
 
 										$footer_contact = get_field('footer_contact', 'options');
-										echo '<div class="footer-contact-container">' . $footer_contact . '</div>'; 
+										echo '<a class="footer-contact-link"><div class="footer-contact-container headline">' . $footer_contact . '&nbsp;&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid white"></span></div></a>'; 
 
-								echo '</div>'; 
 
-								echo '<div class="other-businesses-container">';
+								echo '</div>'; ?>
+
+								<!-- <img src="<?php bloginfo('url'); ?>/img/vertical-line.png"> -->
+
+								<?php echo '<div class="other-businesses-container">';
 
 									$other_businesses = get_field('other_businesses', 'options');
 									$other_businesses_list = get_field('other_businesses_list', 'options');
 									echo '<span class="headline city">' . $other_businesses . '</span>';
 									echo '<span class="copy address other-businesses-content">' . $other_businesses_list . '</span>';
 
-								echo '</div>';
+								echo '</div>'; ?>
 								
-								
+								<!-- <img src="<?php bloginfo('url'); ?>/img/vertical-line.png"> -->
 
-							echo '</div>'; // .wrap
+								<a href="http://www.iab.net/about_the_iab/recent_press_releases/press_release_archive/press_release/pr-051314?gko=96140" target="blank" class="iab_logo">
+									<img src="<?php bloginfo('url'); ?>/img/iab_logo.png">
+									<!-- <div class="iab_learn_more">Learn More</div> -->
+								</a>
+												
+
+							<?php echo '</div>'; // .wrap
 
 						echo '</div>';
 

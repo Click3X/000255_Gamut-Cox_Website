@@ -5858,7 +5858,7 @@ you can add resource intensive styles.
 
   /* line 299, ../scss/breakpoints/_768up.scss */
   .footer-links-content {
-    width: 70%;
+    width: 80%;
   }
 }
 /*********************
@@ -5895,7 +5895,7 @@ you can add resource intensive styles.
 
   /* line 25, ../scss/breakpoints/_1030up.scss */
   .footer-links-content {
-    width: 70%;
+    width: 80%;
   }
 }
 /*********************
@@ -5920,7 +5920,7 @@ This is for the larger monitors and possibly full screen viewers.
 
   /* line 17, ../scss/breakpoints/_1240up.scss */
   .footer-links-content {
-    width: 70%;
+    width: 80%;
   }
 }
 /*********************
@@ -6080,23 +6080,24 @@ be set to display none.
   text-transform: uppercase;
   font-weight: 500;
   display: block;
+  letter-spacing: 0.05em;
 }
 
-/* line 20, ../scss/partials/_footer.scss */
+/* line 21, ../scss/partials/_footer.scss */
 .copy {
   margin-top: .6em;
   line-height: 1.5em;
   font-size: .91em;
 }
 
-/* line 26, ../scss/partials/_footer.scss */
+/* line 27, ../scss/partials/_footer.scss */
 .career-button {
   position: relative;
   text-align: center;
   float: right;
   margin-top: 30px;
 }
-/* line 34, ../scss/partials/_footer.scss */
+/* line 35, ../scss/partials/_footer.scss */
 .career-button a {
   display: block;
   text-transform: uppercase;
@@ -6111,23 +6112,23 @@ be set to display none.
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-/* line 50, ../scss/partials/_footer.scss */
+/* line 51, ../scss/partials/_footer.scss */
 .career-button a:hover {
   background-color: #ed228b;
   color: white;
 }
-/* line 53, ../scss/partials/_footer.scss */
+/* line 54, ../scss/partials/_footer.scss */
 .career-button a:hover .arrow-right {
   border-left: 6px solid white !important;
 }
-/* line 59, ../scss/partials/_footer.scss */
+/* line 60, ../scss/partials/_footer.scss */
 .career-button .careers-link {
   text-transform: uppercase;
   color: white;
   background-color: #3d3d3d;
   display: block;
 }
-/* line 65, ../scss/partials/_footer.scss */
+/* line 66, ../scss/partials/_footer.scss */
 .career-button .careers-link:after {
   content: "";
   display: block;
@@ -6142,70 +6143,63 @@ be set to display none.
   border-top: 5px solid transparent;
 }
 
-/* line 89, ../scss/partials/_footer.scss */
+/* line 90, ../scss/partials/_footer.scss */
 .footer-logo-holder,
 .social-media-links,
 .social {
   display: inline-block;
 }
 
-/* line 93, ../scss/partials/_footer.scss */
+/* line 94, ../scss/partials/_footer.scss */
 .social {
   margin: .5rem;
 }
 
-/* line 97, ../scss/partials/_footer.scss */
+/* line 98, ../scss/partials/_footer.scss */
 .footer {
   background-color: #3d3d3d;
 }
 
-/* line 101, ../scss/partials/_footer.scss */
+/* line 102, ../scss/partials/_footer.scss */
 .footer-links {
   background-color: #000000;
-  padding-top: 90px;
-  padding-bottom: 90px;
 }
 
-/* line 108, ../scss/partials/_footer.scss */
-.inner-footer {
-  padding-bottom: 40px;
-}
-
-/* line 112, ../scss/partials/_footer.scss */
+/* line 113, ../scss/partials/_footer.scss */
 #policy-links {
   color: white;
 }
 
-/* line 117, ../scss/partials/_footer.scss */
+/* line 118, ../scss/partials/_footer.scss */
 .policy-links > .copy {
   margin-top: 0;
   font-weight: 500;
 }
 
-/* line 123, ../scss/partials/_footer.scss */
+/* line 124, ../scss/partials/_footer.scss */
 #policy-links:hover {
   color: #ed228b;
 }
 
-/* line 127, ../scss/partials/_footer.scss */
+/* line 128, ../scss/partials/_footer.scss */
 .address {
   color: #bdbdbd;
 }
 
-/* line 132, ../scss/partials/_footer.scss */
+/* line 133, ../scss/partials/_footer.scss */
 .footer-bottom {
-  height: 100px;
+  height: 50px;
   color: #585858 !important;
   margin: auto;
 }
-/* line 137, ../scss/partials/_footer.scss */
+/* line 138, ../scss/partials/_footer.scss */
 .footer-bottom li {
   float: left;
   margin-right: 15px;
   font-size: 0.8em;
   letter-spacing: 0;
 }
-/* line 144, ../scss/partials/_footer.scss */
+/* line 145, ../scss/partials/_footer.scss */
 .footer-bottom .copyright {
   display: inline-block;
   float: right;
@@ -6214,29 +6208,79 @@ be set to display none.
   margin-top: 12px;
 }
 
-/* line 153, ../scss/partials/_footer.scss */
+/* line 154, ../scss/partials/_footer.scss */
 .footer-left-column, .other-businesses-container {
   display: inline-block;
   vertical-align: top;
 }
 
-/* line 158, ../scss/partials/_footer.scss */
+/* line 159, ../scss/partials/_footer.scss */
 .headquarters-container {
   border-bottom: 1px dashed #565656;
 }
 
-/* line 163, ../scss/partials/_footer.scss */
+/* line 164, ../scss/partials/_footer.scss */
+.other-businesses-container {
+  padding-left: 70px;
+  padding-right: 70px;
+  border-left: 1px solid #565656;
+  border-right: 1px solid #565656;
+  padding-top: 60px;
+  padding-bottom: 140px;
+}
+
+/* line 175, ../scss/partials/_footer.scss */
 .headquarter-title {
   text-transform: uppercase;
 }
 
-/* line 167, ../scss/partials/_footer.scss */
+/* line 179, ../scss/partials/_footer.scss */
 .other-businesses-content {
   margin-top: 1.2em;
   display: block;
 }
 
-/* line 172, ../scss/partials/_footer.scss */
+/* line 184, ../scss/partials/_footer.scss */
 .footer-contact-container {
   text-transform: uppercase;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+/* line 191, ../scss/partials/_footer.scss */
+.headquarters-wrapper {
+  margin-bottom: 20px;
+}
+
+/* line 195, ../scss/partials/_footer.scss */
+.footer-links-content {
+  margin: auto;
+}
+
+/* line 199, ../scss/partials/_footer.scss */
+.footer-left-column {
+  padding-top: 60px;
+}
+
+/* line 203, ../scss/partials/_footer.scss */
+.footer-contact-link {
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  color: white;
+}
+/* line 209, ../scss/partials/_footer.scss */
+.footer-contact-link:hover .arrow-right {
+  border-left: 6px solid #ed228b !important;
+}
+
+/* line 215, ../scss/partials/_footer.scss */
+.iab_logo {
+  margin-left: 50px;
+  margin-top: 60px;
+  display: inline-block;
+}
+/* line 216, ../scss/partials/_footer.scss */
+.iab_logo img {
+  width: 80px;
 }
