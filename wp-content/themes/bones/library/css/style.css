@@ -5662,30 +5662,36 @@ body #content {
   line-height: 1.5em;
   letter-spacing: .05em;
   width: 90%;
+  font-weight: 600;
 }
 
-/* line 24, ../scss/partials/_contact.scss */
+/* line 25, ../scss/partials/_contact.scss */
 .category {
   float: left;
   width: 33.333333%;
 }
 
-/* line 28, ../scss/partials/_contact.scss */
+/* line 29, ../scss/partials/_contact.scss */
 .division-list {
   position: relative;
   width: 100%;
   margin-top: 50px;
 }
-/* line 36, ../scss/partials/_contact.scss */
+/* line 34, ../scss/partials/_contact.scss */
+.division-list ul {
+  margin-top: .5em;
+  margin-bottom: 1.5em;
+}
+/* line 39, ../scss/partials/_contact.scss */
 .division-list ul .address .gothic {
   line-height: 24px;
 }
-/* line 40, ../scss/partials/_contact.scss */
+/* line 43, ../scss/partials/_contact.scss */
 .division-list ul li {
   display: block;
   width: 100%;
 }
-/* line 44, ../scss/partials/_contact.scss */
+/* line 47, ../scss/partials/_contact.scss */
 .division-list ul li h3 {
   display: block;
 }
