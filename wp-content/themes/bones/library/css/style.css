@@ -5310,6 +5310,12 @@ form label {
     display: block;
   }
 }
+/* line 3, ../scss/partials/_charles-font.scss */
+#sidebar1 .sidebar-intro li {
+  /* list-style-position: outside; */
+  margin-left: -.8em;
+}
+
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
