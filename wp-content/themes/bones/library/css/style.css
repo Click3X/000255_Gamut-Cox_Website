@@ -5315,7 +5315,7 @@ form label {
 #sidebar1 .sidebar-intro li {
   list-style-position: outside;
   position: relative;
-  padding-left: 1em;
+  padding-left: 1.25em;
 }
 
 /* line 9, ../scss/partials/_charles-font.scss */
@@ -5329,12 +5329,20 @@ form label {
   max-width: none;
   line-height: 1.5em;
 }
-/* line 19, ../scss/partials/_charles-font.scss */
+/* line 18, ../scss/partials/_charles-font.scss */
+#sidebar-intro h2 {
+  line-height: 1.2em;
+}
+/* line 21, ../scss/partials/_charles-font.scss */
 #sidebar-intro h2, #sidebar-intro h3 {
   margin-bottom: 0;
 }
 
-/* line 26, ../scss/partials/_charles-font.scss */
+/* line 28, ../scss/partials/_charles-font.scss */
+#sidebar-intro ul {
+  margin-top: 0;
+}
+/* line 31, ../scss/partials/_charles-font.scss */
 #sidebar-intro ul li:before {
   color: #ed228b;
   content: "\2022";
