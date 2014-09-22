@@ -3123,10 +3123,10 @@ a {
 
 /* line 171, ../scss/partials/_who-we-are.scss */
 .og-expander-inner {
-  padding: 50px 30px;
+  padding: 0;
 }
 
-/* line 175, ../scss/partials/_who-we-are.scss */
+/* line 176, ../scss/partials/_who-we-are.scss */
 .og-close {
   position: absolute;
   width: 40px;
@@ -3136,7 +3136,7 @@ a {
   cursor: pointer;
 }
 
-/* line 185, ../scss/partials/_who-we-are.scss */
+/* line 186, ../scss/partials/_who-we-are.scss */
 .og-close::before,
 .og-close::after {
   content: '';
@@ -3150,20 +3150,20 @@ a {
   transform: rotate(45deg);
 }
 
-/* line 197, ../scss/partials/_who-we-are.scss */
+/* line 198, ../scss/partials/_who-we-are.scss */
 .og-close::after {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
-/* line 204, ../scss/partials/_who-we-are.scss */
+/* line 205, ../scss/partials/_who-we-are.scss */
 .og-close:hover::before,
 .og-close:hover::after {
   background: #333;
 }
 
-/* line 209, ../scss/partials/_who-we-are.scss */
+/* line 210, ../scss/partials/_who-we-are.scss */
 .og-fullimg,
 .og-details {
   float: left;
@@ -3171,20 +3171,17 @@ a {
   position: relative;
 }
 
-/* line 214, ../scss/partials/_who-we-are.scss */
+/* line 215, ../scss/partials/_who-we-are.scss */
 .og-fullimg {
-  width: 33.333333%;
-  max-width: 250px;
+  width: 35.5%;
+  max-width: 308px;
 }
 
-/* line 219, ../scss/partials/_who-we-are.scss */
+/* line 222, ../scss/partials/_who-we-are.scss */
 .og-details {
-  width: 66.66667%;
-}
-
-/* line 224, ../scss/partials/_who-we-are.scss */
-.og-details {
-  padding: 0 0 0 20px;
+  padding: 0 0 0 6px;
+  margin-top: 46px;
+  width: 64.5%;
 }
 
 /* line 229, ../scss/partials/_who-we-are.scss */
@@ -3204,9 +3201,10 @@ a {
   font-size: 14px;
   line-height: 17px;
   color: #323944;
+  max-width: 35em;
 }
 
-/* line 245, ../scss/partials/_who-we-are.scss */
+/* line 246, ../scss/partials/_who-we-are.scss */
 .og-details a {
   font-weight: 700;
   font-size: 16px;
@@ -3220,20 +3218,20 @@ a {
   outline: none;
 }
 
-/* line 258, ../scss/partials/_who-we-are.scss */
+/* line 259, ../scss/partials/_who-we-are.scss */
 .og-details a::before {
   content: '\2192';
   display: inline-block;
   margin-right: 10px;
 }
 
-/* line 264, ../scss/partials/_who-we-are.scss */
+/* line 265, ../scss/partials/_who-we-are.scss */
 .og-details a:hover {
   border-color: #999;
   color: #999;
 }
 
-/* line 269, ../scss/partials/_who-we-are.scss */
+/* line 270, ../scss/partials/_who-we-are.scss */
 .og-loading {
   width: 20px;
   height: 20px;
@@ -3250,18 +3248,18 @@ a {
 }
 
 @-webkit-keyframes loader {
-  /* line 285, ../scss/partials/_who-we-are.scss */
+  /* line 286, ../scss/partials/_who-we-are.scss */
   0% {
     background: #ddd;
   }
 
-  /* line 286, ../scss/partials/_who-we-are.scss */
+  /* line 287, ../scss/partials/_who-we-are.scss */
   33% {
     background: #ccc;
     box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd;
   }
 
-  /* line 287, ../scss/partials/_who-we-are.scss */
+  /* line 288, ../scss/partials/_who-we-are.scss */
   66% {
     background: #ccc;
     box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc;
@@ -3269,18 +3267,18 @@ a {
 }
 
 @-moz-keyframes loader {
-  /* line 291, ../scss/partials/_who-we-are.scss */
+  /* line 292, ../scss/partials/_who-we-are.scss */
   0% {
     background: #ddd;
   }
 
-  /* line 292, ../scss/partials/_who-we-are.scss */
+  /* line 293, ../scss/partials/_who-we-are.scss */
   33% {
     background: #ccc;
     box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd;
   }
 
-  /* line 293, ../scss/partials/_who-we-are.scss */
+  /* line 294, ../scss/partials/_who-we-are.scss */
   66% {
     background: #ccc;
     box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc;
@@ -3288,18 +3286,18 @@ a {
 }
 
 @keyframes loader {
-  /* line 297, ../scss/partials/_who-we-are.scss */
+  /* line 298, ../scss/partials/_who-we-are.scss */
   0% {
     background: #ddd;
   }
 
-  /* line 298, ../scss/partials/_who-we-are.scss */
+  /* line 299, ../scss/partials/_who-we-are.scss */
   33% {
     background: #ccc;
     box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd;
   }
 
-  /* line 299, ../scss/partials/_who-we-are.scss */
+  /* line 300, ../scss/partials/_who-we-are.scss */
   66% {
     background: #ccc;
     box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc;
@@ -3307,10 +3305,10 @@ a {
 }
 
 @media screen and (max-width: 650px) {
-  /* line 304, ../scss/partials/_who-we-are.scss */
+  /* line 305, ../scss/partials/_who-we-are.scss */
   .og-details {
     float: none;
-    width: 100%;
+    width: auto;
   }
 }
 /* line 2, ../scss/partials/_home_addons.scss */

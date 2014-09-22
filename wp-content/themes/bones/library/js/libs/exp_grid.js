@@ -354,8 +354,8 @@ jQuery(document).ready(function($) {
 				this.$loading = $( '<div class="og-loading"></div>' );
 				this.$fullimage = $( '<div class="og-fullimg"></div>' ).append( this.$loading );
 				this.$closePreview = $( '<span class="og-close"></span>' );
-				this.$previewInner = $( '<div class="og-expander-inner"></div>' ).append( this.$closePreview, this.$fullimage, this.$details );
-				this.$previewEl = $( '<div class="og-expander"></div>' ).append( this.$previewInner );
+				this.$previewInner = $( '<div class="clearfix og-expander-inner"></div>' ).append( this.$closePreview, this.$fullimage, this.$details );
+				this.$previewEl = $( '<div class="clearfix og-expander"></div>' ).append( this.$previewInner );
 				// append preview element to the item
 				this.$item.append( this.getEl() );
 				// set the transitions for the preview and the item
@@ -389,13 +389,16 @@ jQuery(document).ready(function($) {
 						title : $itemEl.data( 'title' ),
 						description : $itemEl.data( 'description' ),
 						emptitle: $itemEl.data('etitle'),
+						largewidth: $itemEl.data('largewidth'),
+						largeheight: $itemEl.data('largeheight'),
 					};
 
 				this.$title.html( eldata.title );
 				this.$description.html( eldata.description );
 				this.$href.attr( 'href', eldata.href );
 				this.$emptitle.html( eldata.emptitle );
-				
+				this.$largewidth = eldata.largewidth;
+				this.$largeheight = eldata.largeheight;
 
 				var self = this;
 				
@@ -416,13 +419,13 @@ jQuery(document).ready(function($) {
 							self.$largeImg = $img.fadeIn( 350 );
 							self.$fullimage.append( self.$largeImg );
 						}
-					} ).attr( 'src', eldata.largesrc );	
+					} ).attr( 'src', eldata.largesrc );
 				}
 
 			},
 			open : function() {
 
-				setTimeout( $.proxy( function() {	
+				setTimeout( $.proxy( function() {
 					// set the height for the preview and the item
 					this.setHeights();
 					// scroll to position the preview in the right place
@@ -464,15 +467,25 @@ jQuery(document).ready(function($) {
 				var heightPreview = winsize.height - this.$item.data( 'height' ) - marginExpanded,
 				//var heightPreview = this.$item.data( 'height' ) - marginExpanded,
 					itemHeight = winsize.height;
-				console.log(heightPreview);
-				console.log(this.$item.data('height'));
+					// itemHeight = this.$largewidth;
+				// console.log(heightPreview);
+				// console.log(this.$item.data('height'));
+
+				var imgRatio = (250/this.$largewidth);
+				var imgHeight = this.$largeheight * imgRatio + 100;
+				console.log('This is imgHeight: ');
+				console.log(imgHeight);
+
+				// this.height = heightPreview;
+				this.height = imgHeight;
+				this.itemHeight = itemHeight;
+
 				if( heightPreview < settings.minHeight ) {
 					heightPreview = settings.minHeight;
 					itemHeight = settings.minHeight + this.$item.data( 'height' ) + marginExpanded;
 				}
 
-				this.height = heightPreview;
-				this.itemHeight = itemHeight;
+
 
 			},
 			setHeights : function() {
@@ -487,7 +500,16 @@ jQuery(document).ready(function($) {
 
 				this.calcHeight();
 				this.$previewEl.css( 'height', this.height );
+				console.log('This is this.height');
+				console.log(this.height);
+				console.dir(this);
+
+				console.log('This is this.itemHeight:');
+				console.log(this.itemHeight);
 				this.$item.css( 'height', this.itemHeight ).on( transEndEventName, onEndFn );
+
+				console.log('Height from setHeights');
+				console.log(this.$item.css('height'));
 
 				if( !support ) {
 					onEndFn.call();
@@ -503,7 +525,15 @@ jQuery(document).ready(function($) {
 				var position = this.$item.data( 'offsetTop' ),
 					previewOffsetT = this.$previewEl.offset().top - scrollExtra,
 					scrollVal = this.height + this.$item.data( 'height' ) + marginExpanded <= winsize.height ? position : this.height < winsize.height ? previewOffsetT - ( winsize.height - this.height ) : previewOffsetT;
-				
+					
+				console.log('This is scrollVal: ');
+				console.log(scrollVal);
+				console.log('This is previewOffsetT: ');
+				console.log(previewOffsetT);
+				console.log('This is position: ');
+				console.log(position);
+
+
 				$body.animate( { scrollTop : scrollVal }, settings.speed );
 
 			},
