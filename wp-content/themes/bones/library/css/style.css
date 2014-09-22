@@ -2845,7 +2845,7 @@ hr {
     background-repeat: no-repeat;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   /* line 472, ../scss/partials/_custom.scss */
   .page-header {
     height: 200px;
