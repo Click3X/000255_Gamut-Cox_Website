@@ -76,6 +76,8 @@
 			border-top: 5px solid transparent;
 
 		}
+
+
 	}
 
 }
@@ -124,3 +126,17 @@
 .address {
 	color: $light-grey;
 }
+
+
+.footer-bottom {
+	height: 100px;
+	color: #585858 !important;
+	
+	margin: auto;
+	li {
+		float: left;
+		margin-right: 30px;
+		font-size: 0.8em;
+	}
+}
+

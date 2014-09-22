@@ -5174,17 +5174,8 @@ form label {
   background-color: #ed228b;
 }
 
-/* line 236, ../scss/partials/_wen.scss */
-.footer-bottom {
-  height: 80px;
-}
-/* line 238, ../scss/partials/_wen.scss */
-.footer-bottom li {
-  float: left !important;
-}
-
 @media (max-width: 560px) {
-  /* line 244, ../scss/partials/_wen.scss */
+  /* line 222, ../scss/partials/_wen.scss */
   .wpcf7-list-item {
     display: block;
   }
@@ -5980,52 +5971,65 @@ be set to display none.
   border-top: 5px solid transparent;
 }
 
-/* line 86, ../scss/partials/_footer.scss */
+/* line 88, ../scss/partials/_footer.scss */
 .footer-logo-holder,
 .social-media-links,
 .social {
   display: inline-block;
 }
 
-/* line 90, ../scss/partials/_footer.scss */
+/* line 92, ../scss/partials/_footer.scss */
 .social {
   margin: .5rem;
 }
 
-/* line 94, ../scss/partials/_footer.scss */
+/* line 96, ../scss/partials/_footer.scss */
 .footer {
   background-color: #3d3d3d;
 }
 
-/* line 98, ../scss/partials/_footer.scss */
+/* line 100, ../scss/partials/_footer.scss */
 .footer-links {
   background-color: #000000;
   padding-top: 90px;
   padding-bottom: 90px;
 }
 
-/* line 105, ../scss/partials/_footer.scss */
+/* line 107, ../scss/partials/_footer.scss */
 .inner-footer {
   padding-bottom: 40px;
 }
 
-/* line 109, ../scss/partials/_footer.scss */
+/* line 111, ../scss/partials/_footer.scss */
 #policy-links {
   color: white;
 }
 
-/* line 114, ../scss/partials/_footer.scss */
+/* line 116, ../scss/partials/_footer.scss */
 .policy-links > .copy {
   margin-top: 0;
   font-weight: 500;
 }
 
-/* line 120, ../scss/partials/_footer.scss */
+/* line 122, ../scss/partials/_footer.scss */
 #policy-links:hover {
   color: #ed228b;
 }
 
-/* line 124, ../scss/partials/_footer.scss */
+/* line 126, ../scss/partials/_footer.scss */
 .address {
   color: #bdbdbd;
+}
+
+/* line 131, ../scss/partials/_footer.scss */
+.footer-bottom {
+  height: 100px;
+  color: #585858 !important;
+  margin: auto;
+}
+/* line 136, ../scss/partials/_footer.scss */
+.footer-bottom li {
+  float: left;
+  margin-right: 30px;
+  font-size: 0.8em;
 }

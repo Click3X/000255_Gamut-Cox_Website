@@ -5,7 +5,7 @@
 				    // echo '<div class="title">Fore Layer 7</div>';
 				}
 			?>
-
+			<div style="clear: both"></div>
 			<footer class="footer" role="contentinfo">
 
 				<div id="footer-beam-container">
@@ -81,7 +81,7 @@
 
 						echo '</div>';
 
-						echo '<div class="footer-bottom">';
+						echo '<div class="footer-bottom footer-links-content">';
 
 							// POLICY LINKS - 
 							if(get_field('policy_links', 'options')): ?>
