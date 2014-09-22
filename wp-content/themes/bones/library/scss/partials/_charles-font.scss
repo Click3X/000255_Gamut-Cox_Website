@@ -1,8 +1,9 @@
 // charles-font
 
 #sidebar1 .sidebar-intro li {
-/* list-style-position: outside; */
-// margin-left: -.8em;
+	list-style-position: outside;
+	position: relative;
+	padding-left: 1em;
 }
 
 #sidebar-intro {
@@ -14,4 +15,24 @@
   font-size: .9em;
   max-width: none;
   line-height: 1.5em;
+
+  h2, h3 {
+  	margin-bottom: 0;
+  }
+}
+
+
+
+#sidebar-intro ul li:before {
+	color: #ed228b;
+	content: "\2022";
+	font-size: 1.5em;
+	padding-right: .25em;
+	position: relative;
+	top: 0;
+	position: absolute;
+	left: 0;
+	display: block;
+	width: 1em;
+	height: 1em;
 }
