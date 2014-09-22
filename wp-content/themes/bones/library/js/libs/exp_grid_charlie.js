@@ -194,7 +194,8 @@ jQuery(document).ready(function($) {
 			support = Modernizr.csstransitions,
 			// default settings
 			settings = {
-				minHeight : 600,
+				// minHeight : 500,
+				minHeight : 500,
 				speed : 350,
 				easing : 'ease'
 			};
@@ -354,7 +355,7 @@ jQuery(document).ready(function($) {
 				this.$loading = $( '<div class="og-loading"></div>' );
 				this.$fullimage = $( '<div class="og-fullimg"></div>' ).append( this.$loading );
 				this.$closePreview = $( '<span class="og-close"></span>' );
-				this.$previewInner = $( '<div class="og-expander-inner"></div>' ).append( this.$closePreview, this.$fullimage, this.$details );
+				this.$previewInner = $( '<div class="clearfix og-expander-inner"></div>' ).append( this.$closePreview, this.$fullimage, this.$details );
 				this.$previewEl = $( '<div class="og-expander"></div>' ).append( this.$previewInner );
 				// append preview element to the item
 				this.$item.append( this.getEl() );
@@ -416,13 +417,13 @@ jQuery(document).ready(function($) {
 							self.$largeImg = $img.fadeIn( 350 );
 							self.$fullimage.append( self.$largeImg );
 						}
-					} ).attr( 'src', eldata.largesrc );	
+					} ).attr( 'src', eldata.largesrc );
 				}
 
 			},
 			open : function() {
 
-				setTimeout( $.proxy( function() {	
+				setTimeout( $.proxy( function() {
 					// set the height for the preview and the item
 					this.setHeights();
 					// scroll to position the preview in the right place
@@ -461,14 +462,44 @@ jQuery(document).ready(function($) {
 
 			},
 			calcHeight : function() {
-				var heightPreview = winsize.height - this.$item.data( 'height' ) - marginExpanded,
-				//var heightPreview = this.$item.data( 'height' ) - marginExpanded,
-					itemHeight = winsize.height;
-				console.log(heightPreview);
-				console.log(this.$item.data('height'));
+				var self = this;
+				var myHeight = self.$previewInner[0].clientHeight;
+				console.dir(myHeight);
+				console.log(myHeight);
+				// var heightPreview = winsize.height - this.$item.data( 'height' ) - marginExpanded,
+				var innerData = $(this.$previewInner);
+
+				// var expData = $(this).closest('.og-expanded .og-expander-inner');
+				// console.log('This is expData');
+				// console.dir(expData);
+				// var inData = innerData[0].clientHeight;
+				console.log('This is innerData');
+				console.dir(innerData);
+				// console.log('This is inData');
+				// console.dir(inData);
+				var heightPreview = this.$item.data( 'height' ) - marginExpanded,
+				itemHeight = winsize.height,
+				thisHeight = this.$item.data( 'height' ),
+				settingsHeight = settings.minHeight;
+
+				// console.log('Live from Calc height: ');
+				// console.log('heightPreview: ');
+				// console.log(heightPreview);
+				// console.log('itemHeight: ');
+				// console.log(itemHeight);
+				console.log('thisHeight: ');
+				console.log(thisHeight);
+				console.log('Here is this: ');
+				console.dir(this);
+				// console.log('settingsHeight: ');
+				// console.log(settingsHeight);
+
 				if( heightPreview < settings.minHeight ) {
 					heightPreview = settings.minHeight;
+					// heightPreview = inData;
 					itemHeight = settings.minHeight + this.$item.data( 'height' ) + marginExpanded;
+					console.log('This is itemHeight: ');
+					console.log(itemHeight);
 				}
 
 				this.height = heightPreview;
@@ -476,16 +507,36 @@ jQuery(document).ready(function($) {
 
 			},
 			setHeights : function() {
-
+				var myHeight;
 				var self = this,
 					onEndFn = function() {
 						if( support ) {
 							self.$item.off( transEndEventName );
 						}
+						console.log('This is myself from SetHeights: ');
+						console.dir(self);
+						myHeight = self.$previewInner[0].clientHeight;
+						console.dir(myHeight);
+						console.log(myHeight);
+
 						self.$item.addClass( 'og-expanded' );
+
+						console.log('This is this from onEndFn');
+						console.dir(this);
+
+						console.log('This is self from onEndFn');
+						console.dir(self);
+						// console.log('This is myself from SetHeights: ');
+						// console.dir(self);
+						// var myHeight = self.$previewInner[0].clientHeight;
+						// console.dir(myHeight);
+						// console.log(myHeight);
 					};
 
 				this.calcHeight();
+				// this.height = myHeight;
+				console.log('this is this.height');
+				console.log(this.height);
 				this.$previewEl.css( 'height', this.height );
 				this.$item.css( 'height', this.itemHeight ).on( transEndEventName, onEndFn );
 

@@ -157,7 +157,7 @@
 
 				echo '</div>'; // END PARALLAX
 				// DEBUG SCRIPT
-				echo '<script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script>
+			echo '<script>
 			    var debugInput = document.querySelector("input");
 			    function updateDebugState() {
 			        document.body.classList.toggle("debug-on", debugInput.checked);
@@ -174,6 +174,16 @@
 		<?php // all js scripts are loaded in library/bones.php ?>
 		<?php wp_footer(); ?>
 		
+		<script>
+		// GOOGLE ANALYTICS SCRIPT FROM OLD WEBSITE
+		// (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		// (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		// m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		// })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		// ga('create', 'UA-49682614-1', 'coxdigitalsolutions.com');
+		// ga('send', 'pageview');
+		</script>
 	</body>
 
 </html> <!-- end of site. what a ride! -->

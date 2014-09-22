@@ -436,3 +436,11 @@ h1 {
 	} /* end .nav */
 
 }
+
+
+
+// PUSH FOOTER DOWN TO NOT HAVE COLOR BEAM INTERFERE
+// body:not(.home) #content {
+body #content {
+	margin-bottom: 80px;
+}

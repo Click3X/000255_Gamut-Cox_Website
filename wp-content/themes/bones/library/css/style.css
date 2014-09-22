@@ -5642,6 +5642,11 @@ h1 {
 
   /* end .nav */
 }
+/* line 444, ../scss/partials/_charles-font.scss */
+body #content {
+  margin-bottom: 80px;
+}
+
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
