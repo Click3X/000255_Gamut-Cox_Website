@@ -2967,7 +2967,7 @@ hr {
   color: white !important;
   white-space: nowrap;
   text-align: center;
-  border: 1px solid #747474;
+  border: 2px solid #747474;
   color: #747474;
   text-decoration: none;
   padding: 10px 35px;
@@ -5381,6 +5381,12 @@ h3 {
   hyphens: auto;
 }
 
+@media (max-width: 768px) {
+  /* line 76, ../scss/partials/_charles-font.scss */
+  #inner-content {
+    width: 90%;
+  }
+}
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
