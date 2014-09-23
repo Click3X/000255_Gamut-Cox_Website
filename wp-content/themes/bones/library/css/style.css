@@ -5645,6 +5645,49 @@ body #content {
   margin-bottom: 80px;
 }
 
+/* line 451, ../scss/partials/_charles-font.scss */
+.lower-columns ul li ul li {
+  line-height: 1.1rem;
+  padding: .2rem 0;
+  position: relative;
+  padding-left: 1.25em;
+}
+
+/* line 460, ../scss/partials/_charles-font.scss */
+.lower-columns ul li ul li:before {
+  color: #ed228b;
+  content: "\2022";
+  font-size: 1.5em;
+  padding-right: .25em;
+  position: relative;
+  top: .2rem;
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 1em;
+  height: 1em;
+}
+
+/* line 475, ../scss/partials/_charles-font.scss */
+.page-id-13 .lower-columns ul li ul li:before {
+  color: #fba211;
+}
+
+/* line 481, ../scss/partials/_charles-font.scss */
+.page-id-15 .lower-columns ul li ul li:before {
+  color: #039fd3;
+}
+
+/* line 487, ../scss/partials/_charles-font.scss */
+.page-id-24 .lower-columns ul li ul li:before {
+  color: #8fc73e;
+}
+
+/* line 493, ../scss/partials/_charles-font.scss */
+.page-id-11 .lower-columns ul li ul li:before {
+  color: #dd1420;
+}
+
 /* line 4, ../scss/partials/_contact.scss */
 .gothic a {
   font-family: inherit;
@@ -6053,6 +6096,11 @@ you can add resource intensive styles.
   /* line 25, ../scss/breakpoints/_1030up.scss */
   .footer-links-content {
     width: 95%;
+  }
+
+  /* line 30, ../scss/breakpoints/_1030up.scss */
+  .lower-columns ul li ul li {
+    width: 100%;
   }
 }
 /*********************

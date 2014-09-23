@@ -330,6 +330,11 @@ be seen on the Desktop.
   width: 95%;
 }
 
+/* line 30, ../scss/breakpoints/_1030up.scss */
+.lower-columns ul li ul li {
+  width: 100%;
+}
+
 /*
 you can call the larger styles if you want, but there's really no need
 */

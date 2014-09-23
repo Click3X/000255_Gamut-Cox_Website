@@ -444,3 +444,53 @@ h1 {
 body #content {
 	margin-bottom: 80px;
 }
+
+
+
+// BULLETS ON COLUMNS
+.lower-columns ul li ul li {
+	// line-height: 16px;
+	line-height:1.1rem;
+	// padding: 4px 0;
+	padding: .2rem 0;
+	position: relative;
+	padding-left: 1.25em;
+}
+
+.lower-columns ul li ul li:before {
+	color: #ed228b;
+	content: "\2022";
+	font-size: 1.5em;
+	padding-right: .25em;
+	position: relative;
+	top: .2rem;
+	position: absolute;
+	left: 0;
+	display: block;
+	width: 1em;
+	height: 1em;
+}
+
+.page-id-13 {
+	.lower-columns ul li ul li:before {
+		color: #fba211;
+	}
+}
+
+.page-id-15 {
+	.lower-columns ul li ul li:before {
+		color: #039fd3;
+	}	
+}
+
+.page-id-24 {
+	.lower-columns ul li ul li:before {
+		color: rgb(143, 199, 62);
+	}	
+}
+
+.page-id-11 {
+	.lower-columns ul li ul li:before {
+		color: #dd1420;
+	}	
+}
