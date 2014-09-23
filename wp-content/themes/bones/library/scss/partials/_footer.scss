@@ -19,7 +19,7 @@
 }
 
 .copy {
-	margin-top: .6em;
+	// margin-top: .6em;
 	line-height: 1.5em;
 	font-size: .91em;
 }
@@ -195,7 +195,7 @@
 	padding-bottom: 140px;
 
 	@media(max-width: 1033px) {
-		padding-bottom: 60px;
+		padding-bottom: 30px;
 		border-bottom: 1px solid #565656;
 		border-right: none;
 	}
@@ -218,14 +218,26 @@
 }
 
 .other-businesses-content {
-	margin-top: 1.2em;
-	display: block;
+	a {
+		color: #bdbdbd;
+
+		&:hover {
+			color: $brand-color;
+		}
+	}
+	
+
 }
 
 .footer-contact-container {
 	text-transform: uppercase;
 	margin-top: 20px;
 	display: inline-block;
+	color: white;
+
+	&:hover {
+		color: $brand-color;
+	}
 
 	@media(max-width: 1033px) {
 		padding-bottom: 30px;

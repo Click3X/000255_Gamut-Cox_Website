@@ -17,7 +17,10 @@
 
 			<div id="content">
 
-			<?php $header_image = get_field('header-image');?>
+			<?php $header_image = get_field('header-image');
+					$sub_page_content = get_field('sub-page-content');
+
+			?>
 
 				<header class="clearfix article-header">
 					<div class="page-header" style="background-image: url('<?php echo $header_image['url'] ?>')"></div>					
@@ -33,12 +36,22 @@
 						<!-- IF Events PAGE -->
 						<?php if (is_page(298)) { ?>
 							<?php query_posts( 'cat=18' ); ?>
+							<div class="news-logos-container">
+								<img src="<?php bloginfo('url'); ?>/img/fastcompany.png">
+								<img src="<?php bloginfo('url'); ?>/img/nyt.png">
+								<img src="<?php bloginfo('url'); ?>/img/forbes.png">
+							</div>
 							<!-- IF PRESS PAGE -->
 						<?php } elseif (is_page(65)) { ?>
 							<?php query_posts( 'cat=19' ); ?>
+
+
 						<?php } ?>
 
-						
+																<!-- IF PRESS PAGE -->
+										
+
+										
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -46,7 +59,8 @@
 
 								<section class="entry-content cf news-post-inner" itemprop="articleBody">
 										
-										
+
+
 										<h1 class="post-header"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 										<p class="byline vcard">
 											<?php printf( __( '<time class="updated" datetime="%1$s" pubdate>%2$s</time>', 'bonestheme' ), get_the_time('Y-m-j'), get_the_time(get_option('date_format'))); ?>
@@ -85,6 +99,7 @@
 
 							<?php endwhile; else: endif;  ?>
 
+							<div class="media-inquiry-info"><?php echo $sub_page_content  ?></div>
 
 						</div> 
 						<!-- end of content wrapper with formatting -->

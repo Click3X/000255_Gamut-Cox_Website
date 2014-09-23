@@ -87,8 +87,9 @@
 
 										echo '</div>';
 
+										// CONTACT LOCAL OFFICES										
 										$footer_contact = get_field('footer_contact', 'options');
-										echo '<div class="footer-contact-wrapper"><a class="footer-contact-link"><div class="footer-contact-container headline">' . $footer_contact . '&nbsp;&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid white"></span></div></a></div>'; 
+										echo '<div class="footer-contact-wrapper"><a class="footer-contact-link" href="?page_id=9"><div class="footer-contact-container headline">' . $footer_contact . '&nbsp;&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid white"></span></div></a></div>'; 
 
 
 								echo '</div>'; ?>
@@ -96,10 +97,26 @@
 
 								<?php echo '<div class="other-businesses-container">';
 
-									$other_businesses = get_field('other_businesses', 'options');
-									$other_businesses_list = get_field('other_businesses_list', 'options');
-									echo '<span class="headline city">' . $other_businesses . '</span>';
-									echo '<span class="copy address other-businesses-content">' . $other_businesses_list . '</span>';
+									// 
+									// $other_businesses_list = get_field('other_businesses_list', 'options');
+									// echo '<span class="headline city">' . $other_businesses . '</span>';
+									// echo '<span class="copy address other-businesses-content">' . $other_businesses_list . '</span>';
+
+								if(get_field('other_businesses_list', 'options')): 
+									$other_businesses = get_field('other_businesses', 'options'); ?>
+									<span class="headline city"><?php echo $other_businesses ?></span>
+									<ul>
+										
+									<?php // EACH LOCATION ('City-Address combo') GETS ITS OWN UL
+										while(has_sub_field('other_businesses_list', 'options')): ?>
+										
+										<li class="copy address other-businesses-content"><a href="<?php the_sub_field('link'); ?>"><?php the_sub_field('title'); ?></a></li>
+									<?php endwhile; ?>
+
+									</ul>
+
+								<?php 
+								endif;
 
 								echo '</div>'; ?>
 								

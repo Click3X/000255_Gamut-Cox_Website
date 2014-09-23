@@ -5001,58 +5001,73 @@ img.rsImg {
 }
 
 /* line 25, ../scss/partials/_wen.scss */
+.news-logos-container {
+  margin-top: 50px;
+}
+/* line 27, ../scss/partials/_wen.scss */
+.news-logos-container img {
+  height: 32px;
+  margin-right: 40px;
+}
+
+/* line 34, ../scss/partials/_wen.scss */
+.media-inquiry-info {
+  margin-top: 80px;
+}
+
+/* line 38, ../scss/partials/_wen.scss */
 .mail-link {
   color: #ed228b !important;
 }
 
-/* line 29, ../scss/partials/_wen.scss */
+/* line 42, ../scss/partials/_wen.scss */
 .small-title {
   font-weight: 400;
 }
 
-/* line 35, ../scss/partials/_wen.scss */
+/* line 48, ../scss/partials/_wen.scss */
 form input {
   display: inline;
 }
-/* line 40, ../scss/partials/_wen.scss */
+/* line 53, ../scss/partials/_wen.scss */
 form input, form textarea {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   outline: none;
   font-family: "franklin-gothic-urw",sans-serif !important;
 }
-/* line 46, ../scss/partials/_wen.scss */
+/* line 59, ../scss/partials/_wen.scss */
 form ::-webkit-input-placeholder, form ::-webkit-textarea-placeholder {
   color: #323944;
   font-weight: 500;
   text-transform: uppercase;
 }
-/* line 52, ../scss/partials/_wen.scss */
+/* line 65, ../scss/partials/_wen.scss */
 form :-moz-placeholder {
   /* Firefox 18- */
   color: #323944;
   font-weight: 500;
   text-transform: uppercase;
 }
-/* line 58, ../scss/partials/_wen.scss */
+/* line 71, ../scss/partials/_wen.scss */
 form ::-moz-placeholder {
   /* Firefox 19+ */
   color: #323944;
   font-weight: 500;
   text-transform: uppercase;
 }
-/* line 64, ../scss/partials/_wen.scss */
+/* line 77, ../scss/partials/_wen.scss */
 form :-ms-input-placeholder {
   color: #323944;
   font-weight: 500;
   text-transform: uppercase;
 }
-/* line 70, ../scss/partials/_wen.scss */
+/* line 83, ../scss/partials/_wen.scss */
 form input:focus, form textarea:focus {
   box-shadow: 0 0 5px #ed228b;
   border: 1px solid #ed228b;
 }
-/* line 75, ../scss/partials/_wen.scss */
+/* line 88, ../scss/partials/_wen.scss */
 form div {
   display: inline-block;
   padding: 10px 10px;
@@ -5060,44 +5075,44 @@ form div {
   font-weight: 500;
   text-transform: uppercase;
 }
-/* line 83, ../scss/partials/_wen.scss */
+/* line 96, ../scss/partials/_wen.scss */
 form .full-width {
   width: 100%;
 }
-/* line 87, ../scss/partials/_wen.scss */
+/* line 100, ../scss/partials/_wen.scss */
 form input[type="text"], form input[type="email"], form input[type="tel"], form input[type="url"], form textarea {
   background-color: white;
   border: 1px solid #bdbdbd;
   border-radius: 0;
 }
-/* line 93, ../scss/partials/_wen.scss */
+/* line 106, ../scss/partials/_wen.scss */
 form textarea {
   resize: none;
 }
-/* line 97, ../scss/partials/_wen.scss */
+/* line 110, ../scss/partials/_wen.scss */
 form input[type="radio"] {
   margin-right: 8px;
 }
-/* line 101, ../scss/partials/_wen.scss */
+/* line 114, ../scss/partials/_wen.scss */
 form label {
   margin-right: 20px;
 }
 
-/* line 107, ../scss/partials/_wen.scss */
+/* line 120, ../scss/partials/_wen.scss */
 .general {
   float: right;
 }
 
-/* line 111, ../scss/partials/_wen.scss */
+/* line 124, ../scss/partials/_wen.scss */
 .wpcf7-captchac {
   padding-top: 10px;
 }
 
-/* line 115, ../scss/partials/_wen.scss */
+/* line 128, ../scss/partials/_wen.scss */
 .form-submit {
   float: right;
 }
-/* line 119, ../scss/partials/_wen.scss */
+/* line 132, ../scss/partials/_wen.scss */
 .form-submit input[type=submit] {
   color: white;
   white-space: nowrap;
@@ -5110,27 +5125,27 @@ form label {
   border: 0 none;
   width: 100%;
 }
-/* line 131, ../scss/partials/_wen.scss */
+/* line 144, ../scss/partials/_wen.scss */
 .form-submit input[type=submit]:hover {
   background-color: #ed228b;
 }
 
-/* line 138, ../scss/partials/_wen.scss */
+/* line 151, ../scss/partials/_wen.scss */
 #sidebar-intro p {
   margin-bottom: 15px;
 }
 @media (max-width: 768px) {
-  /* line 137, ../scss/partials/_wen.scss */
+  /* line 150, ../scss/partials/_wen.scss */
   #sidebar-intro {
     margin: auto;
     text-align: left;
   }
 }
-/* line 147, ../scss/partials/_wen.scss */
+/* line 160, ../scss/partials/_wen.scss */
 #sidebar-intro ul {
   list-style-position: inside;
 }
-/* line 150, ../scss/partials/_wen.scss */
+/* line 163, ../scss/partials/_wen.scss */
 #sidebar-intro ul li:before {
   color: #ed228b;
   content: "\2022";
@@ -5139,23 +5154,23 @@ form label {
   position: relative;
   top: .1em;
 }
-/* line 159, ../scss/partials/_wen.scss */
+/* line 172, ../scss/partials/_wen.scss */
 #sidebar-intro ul ul {
   margin-top: -0.2em;
 }
-/* line 163, ../scss/partials/_wen.scss */
+/* line 176, ../scss/partials/_wen.scss */
 #sidebar-intro ul ul li:before {
   color: #bdbdbd;
   font-size: 1.2em;
 }
 
-/* line 175, ../scss/partials/_wen.scss */
+/* line 188, ../scss/partials/_wen.scss */
 .our-solutions-list h2 {
   font-family: "franklin-gothic-urw",sans-serif;
   margin-top: -1.6em;
 }
 
-/* line 182, ../scss/partials/_wen.scss */
+/* line 195, ../scss/partials/_wen.scss */
 .first-p {
   font-size: 1.5em !important;
   margin-bottom: 1em !important;
@@ -5163,22 +5178,22 @@ form label {
   line-height: 1.2em;
 }
 
-/* line 190, ../scss/partials/_wen.scss */
+/* line 203, ../scss/partials/_wen.scss */
 .sub-page-content-wrapper img {
   margin-bottom: 0 !important;
 }
 
-/* line 220, ../scss/partials/_wen.scss */
+/* line 233, ../scss/partials/_wen.scss */
 #opt {
   text-align: center;
   margin-top: 20px;
 }
-/* line 224, ../scss/partials/_wen.scss */
+/* line 237, ../scss/partials/_wen.scss */
 #opt .opt_btn_wrapper {
   margin-top: 30px;
 }
 
-/* line 229, ../scss/partials/_wen.scss */
+/* line 242, ../scss/partials/_wen.scss */
 #ooButton {
   margin-top: 20px;
   cursor: pointer;
@@ -5191,13 +5206,13 @@ form label {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-/* line 240, ../scss/partials/_wen.scss */
+/* line 253, ../scss/partials/_wen.scss */
 #ooButton:hover {
   background-color: #ed228b;
 }
 
 @media (max-width: 560px) {
-  /* line 246, ../scss/partials/_wen.scss */
+  /* line 259, ../scss/partials/_wen.scss */
   .wpcf7-list-item {
     display: block;
   }
@@ -6355,7 +6370,6 @@ be set to display none.
 
 /* line 21, ../scss/partials/_footer.scss */
 .copy {
-  margin-top: .6em;
   line-height: 1.5em;
   font-size: .91em;
 }
@@ -6538,7 +6552,7 @@ be set to display none.
 @media (max-width: 1033px) {
   /* line 188, ../scss/partials/_footer.scss */
   .other-businesses-container {
-    padding-bottom: 60px;
+    padding-bottom: 30px;
     border-bottom: 1px solid #565656;
     border-right: none;
   }
@@ -6561,91 +6575,99 @@ be set to display none.
   text-transform: uppercase;
 }
 
-/* line 220, ../scss/partials/_footer.scss */
-.other-businesses-content {
-  margin-top: 1.2em;
-  display: block;
+/* line 221, ../scss/partials/_footer.scss */
+.other-businesses-content a {
+  color: #bdbdbd;
+}
+/* line 224, ../scss/partials/_footer.scss */
+.other-businesses-content a:hover {
+  color: #ed228b;
 }
 
-/* line 225, ../scss/partials/_footer.scss */
+/* line 232, ../scss/partials/_footer.scss */
 .footer-contact-container {
   text-transform: uppercase;
   margin-top: 20px;
   display: inline-block;
+  color: white;
+}
+/* line 238, ../scss/partials/_footer.scss */
+.footer-contact-container:hover {
+  color: #ed228b;
 }
 @media (max-width: 1033px) {
-  /* line 225, ../scss/partials/_footer.scss */
+  /* line 232, ../scss/partials/_footer.scss */
   .footer-contact-container {
     padding-bottom: 30px;
     margin-top: 30px;
   }
 }
 @media (max-width: 890px) {
-  /* line 225, ../scss/partials/_footer.scss */
+  /* line 232, ../scss/partials/_footer.scss */
   .footer-contact-container {
     display: block;
   }
 }
 
-/* line 241, ../scss/partials/_footer.scss */
+/* line 253, ../scss/partials/_footer.scss */
 .headquarters-wrapper {
   margin-bottom: 20px;
 }
 
-/* line 245, ../scss/partials/_footer.scss */
+/* line 257, ../scss/partials/_footer.scss */
 .footer-links-content {
   margin: auto;
 }
 
-/* line 249, ../scss/partials/_footer.scss */
+/* line 261, ../scss/partials/_footer.scss */
 .footer-left-column {
   padding-top: 60px;
 }
 @media (max-width: 890px) {
-  /* line 249, ../scss/partials/_footer.scss */
+  /* line 261, ../scss/partials/_footer.scss */
   .footer-left-column {
     display: block;
   }
 }
 
-/* line 257, ../scss/partials/_footer.scss */
+/* line 269, ../scss/partials/_footer.scss */
 .footer-contact-link {
   cursor: pointer;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   color: white;
 }
-/* line 263, ../scss/partials/_footer.scss */
+/* line 275, ../scss/partials/_footer.scss */
 .footer-contact-link:hover .arrow-right {
   border-left: 6px solid #ed228b !important;
 }
 
-/* line 269, ../scss/partials/_footer.scss */
+/* line 281, ../scss/partials/_footer.scss */
 .footer-contact-wrapper {
   display: block;
 }
 @media (max-width: 890px) {
-  /* line 269, ../scss/partials/_footer.scss */
+  /* line 281, ../scss/partials/_footer.scss */
   .footer-contact-wrapper {
     border-bottom: 1px solid #565656;
   }
 }
-/* line 275, ../scss/partials/_footer.scss */
+/* line 287, ../scss/partials/_footer.scss */
 .footer-contact-wrapper a {
   display: inline-block;
 }
 
-/* line 281, ../scss/partials/_footer.scss */
+/* line 293, ../scss/partials/_footer.scss */
 .iab_logo_container {
   display: inline-block;
 }
 @media (max-width: 1033px) {
-  /* line 281, ../scss/partials/_footer.scss */
+  /* line 293, ../scss/partials/_footer.scss */
   .iab_logo_container {
     display: block;
   }
 }
-/* line 287, ../scss/partials/_footer.scss */
+/* line 299, ../scss/partials/_footer.scss */
 .iab_logo_container a {
   display: inline-block;
   margin-left: 50px;
@@ -6653,14 +6675,14 @@ be set to display none.
   display: inline-block;
 }
 @media (max-width: 1033px) {
-  /* line 287, ../scss/partials/_footer.scss */
+  /* line 299, ../scss/partials/_footer.scss */
   .iab_logo_container a {
     margin-left: 0;
     margin-top: 20px;
     margin-bottom: 20px;
   }
 }
-/* line 301, ../scss/partials/_footer.scss */
+/* line 313, ../scss/partials/_footer.scss */
 .iab_logo_container img {
   width: 80px;
 }
