@@ -1,5 +1,26 @@
-// .wpcf7 .wpcf7-mail-sent-ok {visibility:hidden;}
+// posts page styling
+.excerpt-read-more {
+	color: $brand-color !important;
+	font-family: "franklin-gothic-urw",sans-serif;
+	// margin-top: 20px;
+	// display: inline-block;
 
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.news-post-wrapper {
+	border-bottom: 1px solid $light-grey;
+}
+
+.post-header {
+	margin-bottom: 0;
+}
+
+.news-post-inner {
+	margin-bottom: -16px;
+}
 
 .mail-link {
 	color: $brand-color !important;

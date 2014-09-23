@@ -1828,13 +1828,13 @@ POSTS & CONTENT STYLES
 /* post meta */
 /* line 387, ../scss/breakpoints/_base.scss */
 .byline {
-  color: #9fa6b4;
-  font-style: italic;
+  color: #ed228b;
+  font-family: "franklin-gothic-urw",sans-serif;
   margin: 0;
 }
 
 /* entry content */
-/* line 396, ../scss/breakpoints/_base.scss */
+/* line 397, ../scss/breakpoints/_base.scss */
 .entry-content {
   padding: 0 0;
   margin: auto;
@@ -1845,18 +1845,18 @@ POSTS & CONTENT STYLES
   but it's up to you. Feel free to change it up.
   */
 }
-/* line 402, ../scss/breakpoints/_base.scss */
+/* line 403, ../scss/breakpoints/_base.scss */
 .entry-content p {
   margin: 0 0 1.5em;
   font-size: .95em;
 }
-/* line 429, ../scss/breakpoints/_base.scss */
+/* line 430, ../scss/breakpoints/_base.scss */
 .entry-content table {
   width: 100%;
   border: 1px solid #eaedf2;
   margin-bottom: 1.5em;
 }
-/* line 434, ../scss/breakpoints/_base.scss */
+/* line 435, ../scss/breakpoints/_base.scss */
 .entry-content table caption {
   margin: 0 0 7px;
   font-size: 0.75em;
@@ -1864,34 +1864,34 @@ POSTS & CONTENT STYLES
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-/* line 443, ../scss/breakpoints/_base.scss */
+/* line 444, ../scss/breakpoints/_base.scss */
 .entry-content tr {
   border-bottom: 1px solid #eaedf2;
 }
-/* line 446, ../scss/breakpoints/_base.scss */
+/* line 447, ../scss/breakpoints/_base.scss */
 .entry-content tr:nth-child(even) {
   background-color: #f8f9fa;
 }
-/* line 451, ../scss/breakpoints/_base.scss */
+/* line 452, ../scss/breakpoints/_base.scss */
 .entry-content td {
   padding: 7px;
   border-right: 1px solid #eaedf2;
 }
-/* line 455, ../scss/breakpoints/_base.scss */
+/* line 456, ../scss/breakpoints/_base.scss */
 .entry-content td:last-child {
   border-right: 0;
 }
-/* line 460, ../scss/breakpoints/_base.scss */
+/* line 461, ../scss/breakpoints/_base.scss */
 .entry-content th {
   background-color: #f8f9fa;
   border-bottom: 1px solid #eaedf2;
   border-right: 1px solid #eaedf2;
 }
-/* line 465, ../scss/breakpoints/_base.scss */
+/* line 466, ../scss/breakpoints/_base.scss */
 .entry-content th:last-child {
   border-right: 0;
 }
-/* line 470, ../scss/breakpoints/_base.scss */
+/* line 471, ../scss/breakpoints/_base.scss */
 .entry-content blockquote {
   margin: 0 0 1.5em 0.75em;
   padding: 0 0 0 0.75em;
@@ -1899,20 +1899,20 @@ POSTS & CONTENT STYLES
   font-style: italic;
   color: #9fa6b4;
 }
-/* line 485, ../scss/breakpoints/_base.scss */
+/* line 486, ../scss/breakpoints/_base.scss */
 .entry-content dd {
   margin-left: 0;
   font-size: 0.9em;
   color: #787878;
   margin-bottom: 1.5em;
 }
-/* line 492, ../scss/breakpoints/_base.scss */
+/* line 493, ../scss/breakpoints/_base.scss */
 .entry-content img {
   margin: 0 0 1.5em 0;
   max-width: 100%;
   height: auto;
 }
-/* line 512, ../scss/breakpoints/_base.scss */
+/* line 513, ../scss/breakpoints/_base.scss */
 .entry-content .size-auto,
 .entry-content .size-full,
 .entry-content .size-large,
@@ -1921,7 +1921,7 @@ POSTS & CONTENT STYLES
   max-width: 100%;
   height: auto;
 }
-/* line 517, ../scss/breakpoints/_base.scss */
+/* line 518, ../scss/breakpoints/_base.scss */
 .entry-content pre {
   background: #323944;
   color: #f8f9fa;
@@ -1932,20 +1932,20 @@ POSTS & CONTENT STYLES
 }
 
 /* end .entry-content */
-/* line 528, ../scss/breakpoints/_base.scss */
+/* line 529, ../scss/breakpoints/_base.scss */
 .wp-caption {
   max-width: 100%;
   background: #eee;
   padding: 5px;
   /* images inside wp-caption */
 }
-/* line 534, ../scss/breakpoints/_base.scss */
+/* line 535, ../scss/breakpoints/_base.scss */
 .wp-caption img {
   max-width: 100%;
   margin-bottom: 0;
   width: 100%;
 }
-/* line 540, ../scss/breakpoints/_base.scss */
+/* line 541, ../scss/breakpoints/_base.scss */
 .wp-caption p.wp-caption-text {
   font-size: 0.85em;
   margin: 4px 0 7px;
@@ -1956,7 +1956,7 @@ POSTS & CONTENT STYLES
 /* image gallery styles */
 /* end .gallery */
 /* gallery caption styles */
-/* line 574, ../scss/breakpoints/_base.scss */
+/* line 575, ../scss/breakpoints/_base.scss */
 .tags {
   margin: 0;
 }
@@ -1964,17 +1964,17 @@ POSTS & CONTENT STYLES
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
-/* line 583, ../scss/breakpoints/_base.scss */
+/* line 584, ../scss/breakpoints/_base.scss */
 .pagination,
 .wp-prev-next {
   margin: 1.5em 0;
 }
 
-/* line 586, ../scss/breakpoints/_base.scss */
+/* line 587, ../scss/breakpoints/_base.scss */
 .pagination {
   text-align: center;
 }
-/* line 589, ../scss/breakpoints/_base.scss */
+/* line 590, ../scss/breakpoints/_base.scss */
 .pagination ul {
   display: inline-block;
   background-color: white;
@@ -1983,7 +1983,7 @@ PAGE NAVI STYLES
   clear: both;
   border-radius: 3px;
 }
-/* line 598, ../scss/breakpoints/_base.scss */
+/* line 599, ../scss/breakpoints/_base.scss */
 .pagination li {
   padding: 0;
   margin: 0;
@@ -1992,7 +1992,7 @@ PAGE NAVI STYLES
   overflow: hidden;
   border-right: 1px solid #eaedf2;
 }
-/* line 607, ../scss/breakpoints/_base.scss */
+/* line 608, ../scss/breakpoints/_base.scss */
 .pagination a, .pagination span {
   margin: 0;
   text-decoration: none;
@@ -2005,17 +2005,17 @@ PAGE NAVI STYLES
   display: block;
   color: #2980b9;
 }
-/* line 619, ../scss/breakpoints/_base.scss */
+/* line 620, ../scss/breakpoints/_base.scss */
 .pagination a:hover, .pagination a:focus, .pagination span:hover, .pagination span:focus {
   background-color: #2980b9;
   color: white;
 }
-/* line 625, ../scss/breakpoints/_base.scss */
+/* line 626, ../scss/breakpoints/_base.scss */
 .pagination .current {
   cursor: default;
   color: #5c6b80;
 }
-/* line 629, ../scss/breakpoints/_base.scss */
+/* line 630, ../scss/breakpoints/_base.scss */
 .pagination .current:hover, .pagination .current:focus {
   background-color: white;
   color: #5c6b80;
@@ -2023,11 +2023,11 @@ PAGE NAVI STYLES
 
 /* end .bones_page_navi */
 /* fallback previous & next links */
-/* line 642, ../scss/breakpoints/_base.scss */
+/* line 643, ../scss/breakpoints/_base.scss */
 .wp-prev-next .prev-link {
   float: left;
 }
-/* line 646, ../scss/breakpoints/_base.scss */
+/* line 647, ../scss/breakpoints/_base.scss */
 .wp-prev-next .next-link {
   float: right;
 }
@@ -2037,7 +2037,7 @@ PAGE NAVI STYLES
 COMMENT STYLES
 ******************************************************************/
 /* h3 comment title */
-/* line 657, ../scss/breakpoints/_base.scss */
+/* line 658, ../scss/breakpoints/_base.scss */
 #comments-title {
   padding: 0.75em;
   margin: 0;
@@ -2045,13 +2045,13 @@ COMMENT STYLES
   /* number of comments span */
 }
 
-/* line 677, ../scss/breakpoints/_base.scss */
+/* line 678, ../scss/breakpoints/_base.scss */
 .commentlist {
   margin: 0;
   list-style-type: none;
 }
 
-/* line 682, ../scss/breakpoints/_base.scss */
+/* line 683, ../scss/breakpoints/_base.scss */
 .comment {
   position: relative;
   clear: both;
@@ -2063,78 +2063,78 @@ COMMENT STYLES
   /* end children */
   /* general comment classes */
 }
-/* line 689, ../scss/breakpoints/_base.scss */
+/* line 690, ../scss/breakpoints/_base.scss */
 .comment .comment-author {
   padding: 7px;
   border: 0;
 }
-/* line 695, ../scss/breakpoints/_base.scss */
+/* line 696, ../scss/breakpoints/_base.scss */
 .comment .vcard {
   margin-left: 50px;
 }
-/* line 698, ../scss/breakpoints/_base.scss */
+/* line 699, ../scss/breakpoints/_base.scss */
 .comment .vcard cite.fn {
   font-weight: 700;
   font-style: normal;
 }
-/* line 706, ../scss/breakpoints/_base.scss */
+/* line 707, ../scss/breakpoints/_base.scss */
 .comment .vcard time {
   display: block;
   font-size: 0.9em;
   font-style: italic;
 }
-/* line 711, ../scss/breakpoints/_base.scss */
+/* line 712, ../scss/breakpoints/_base.scss */
 .comment .vcard time a {
   color: #9fa6b4;
   text-decoration: none;
 }
-/* line 715, ../scss/breakpoints/_base.scss */
+/* line 716, ../scss/breakpoints/_base.scss */
 .comment .vcard time a:hover {
   text-decoration: underline;
 }
-/* line 725, ../scss/breakpoints/_base.scss */
+/* line 726, ../scss/breakpoints/_base.scss */
 .comment .vcard .avatar {
   position: absolute;
   left: 16px;
   border-radius: 50%;
 }
-/* line 733, ../scss/breakpoints/_base.scss */
+/* line 734, ../scss/breakpoints/_base.scss */
 .comment:last-child {
   margin-bottom: 0;
 }
-/* line 737, ../scss/breakpoints/_base.scss */
+/* line 738, ../scss/breakpoints/_base.scss */
 .comment .children {
   margin: 0;
   /* variations */
   /* change number for different depth */
 }
-/* line 755, ../scss/breakpoints/_base.scss */
+/* line 756, ../scss/breakpoints/_base.scss */
 .comment[class*=depth-] {
   margin-top: 1.1em;
 }
-/* line 759, ../scss/breakpoints/_base.scss */
+/* line 760, ../scss/breakpoints/_base.scss */
 .comment.depth-1 {
   margin-left: 0;
   margin-top: 0;
 }
-/* line 764, ../scss/breakpoints/_base.scss */
+/* line 765, ../scss/breakpoints/_base.scss */
 .comment:not(.depth-1) {
   margin-top: 0;
   margin-left: 7px;
   padding: 7px;
 }
-/* line 777, ../scss/breakpoints/_base.scss */
+/* line 778, ../scss/breakpoints/_base.scss */
 .comment.odd {
   background-color: white;
 }
-/* line 780, ../scss/breakpoints/_base.scss */
+/* line 781, ../scss/breakpoints/_base.scss */
 .comment.even {
   background: #f8f9fa;
 }
 
 /* comment meta */
 /* comment content */
-/* line 814, ../scss/breakpoints/_base.scss */
+/* line 815, ../scss/breakpoints/_base.scss */
 .comment_content p {
   margin: 0.7335em 0 1.5em;
   font-size: 1em;
@@ -2143,7 +2143,7 @@ COMMENT STYLES
 
 /* end .commentlist .comment_content */
 /* comment reply link */
-/* line 823, ../scss/breakpoints/_base.scss */
+/* line 824, ../scss/breakpoints/_base.scss */
 .comment-reply-link {
   font-size: 0.9em;
   float: right;
@@ -2151,7 +2151,7 @@ COMMENT STYLES
 
 /* end .commentlist .comment-reply-link */
 /* edit comment link */
-/* line 835, ../scss/breakpoints/_base.scss */
+/* line 836, ../scss/breakpoints/_base.scss */
 .comment-edit-link {
   font-style: italic;
   margin: 0 7px;
@@ -2162,34 +2162,34 @@ COMMENT STYLES
 /******************************************************************
 COMMENT FORM STYLES
 ******************************************************************/
-/* line 848, ../scss/breakpoints/_base.scss */
+/* line 849, ../scss/breakpoints/_base.scss */
 .comment-respond {
   padding: 1.5em;
   border-top: 1px solid #f8f9fa;
 }
 
-/* line 854, ../scss/breakpoints/_base.scss */
+/* line 855, ../scss/breakpoints/_base.scss */
 #reply-title {
   margin: 0;
 }
 
-/* line 858, ../scss/breakpoints/_base.scss */
+/* line 859, ../scss/breakpoints/_base.scss */
 .logged-in-as {
   color: #9fa6b4;
   font-style: italic;
   margin: 0;
 }
-/* line 863, ../scss/breakpoints/_base.scss */
+/* line 864, ../scss/breakpoints/_base.scss */
 .logged-in-as a {
   color: #5c6b80;
 }
 
-/* line 868, ../scss/breakpoints/_base.scss */
+/* line 869, ../scss/breakpoints/_base.scss */
 .comment-form-comment {
   margin: 1.5em 0 0.75em;
 }
 
-/* line 872, ../scss/breakpoints/_base.scss */
+/* line 873, ../scss/breakpoints/_base.scss */
 .form-allowed-tags {
   padding: 1.5em;
   background-color: #f8f9fa;
@@ -2197,14 +2197,14 @@ COMMENT FORM STYLES
 }
 
 /* comment submit button */
-/* line 879, ../scss/breakpoints/_base.scss */
+/* line 880, ../scss/breakpoints/_base.scss */
 #submit {
   float: right;
   font-size: 1em;
 }
 
 /* comment form title */
-/* line 886, ../scss/breakpoints/_base.scss */
+/* line 887, ../scss/breakpoints/_base.scss */
 #comment-form-title {
   margin: 0 0 1.1em;
 }
@@ -2212,13 +2212,13 @@ COMMENT FORM STYLES
 /* cancel comment reply link */
 /* logged in comments */
 /* allowed tags */
-/* line 899, ../scss/breakpoints/_base.scss */
+/* line 900, ../scss/breakpoints/_base.scss */
 #allowed_tags {
   margin: 1.5em 10px 0.7335em 0;
 }
 
 /* no comments */
-/* line 904, ../scss/breakpoints/_base.scss */
+/* line 905, ../scss/breakpoints/_base.scss */
 .nocomments {
   margin: 0 20px 1.1em;
 }
@@ -2226,12 +2226,12 @@ COMMENT FORM STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 920, ../scss/breakpoints/_base.scss */
+/* line 921, ../scss/breakpoints/_base.scss */
 .widget ul li {
   /* deep nesting */
 }
 
-/* line 937, ../scss/breakpoints/_base.scss */
+/* line 938, ../scss/breakpoints/_base.scss */
 .no-widgets {
   background-color: white;
   padding: 1.5em;
@@ -2244,7 +2244,7 @@ SIDEBARS & ASIDES
 /*********************
 FOOTER STYLES
 *********************/
-/* line 950, ../scss/breakpoints/_base.scss */
+/* line 951, ../scss/breakpoints/_base.scss */
 .footer {
   clear: both;
   background-color: #323944;
@@ -2261,7 +2261,7 @@ override these styles for the desktop
 view.
 */
 /* end .footer-links */
-/* line 980, ../scss/breakpoints/_base.scss */
+/* line 981, ../scss/breakpoints/_base.scss */
 .logo-holder {
   display: block;
   background: white;
@@ -2276,7 +2276,7 @@ view.
   transform: translateZ(10);
 }
 @media (min-width: 811px) {
-  /* line 980, ../scss/breakpoints/_base.scss */
+  /* line 981, ../scss/breakpoints/_base.scss */
   .logo-holder {
     display: inline-block;
     float: left;
@@ -2291,7 +2291,7 @@ view.
   }
 }
 
-/* line 1000, ../scss/breakpoints/_base.scss */
+/* line 1001, ../scss/breakpoints/_base.scss */
 .main-nav {
   position: absolute;
   width: 100%;
@@ -2311,7 +2311,7 @@ view.
   transition: all 250ms;
 }
 @media (min-width: 811px) {
-  /* line 1000, ../scss/breakpoints/_base.scss */
+  /* line 1001, ../scss/breakpoints/_base.scss */
   .main-nav {
     position: relative;
     width: auto;
@@ -2324,7 +2324,7 @@ view.
 }
 
 @media (max-width: 810px) {
-  /* line 1026, ../scss/breakpoints/_base.scss */
+  /* line 1027, ../scss/breakpoints/_base.scss */
   .show-nav {
     z-index: 9;
     -webkit-transform: translateY(240px);
@@ -2345,7 +2345,7 @@ view.
   }
 }
 
-/* line 1035, ../scss/breakpoints/_base.scss */
+/* line 1036, ../scss/breakpoints/_base.scss */
 .hide-nav {
   -webkit-transition: all 500ms;
   -moz-transition: all 500ms;
@@ -2354,13 +2354,13 @@ view.
   transition: all 500ms;
 }
 
-/* line 1040, ../scss/breakpoints/_base.scss */
+/* line 1041, ../scss/breakpoints/_base.scss */
 #inner-header.wrap {
   width: 100%;
   margin: 0 auto;
 }
 @media (min-width: 811px) {
-  /* line 1040, ../scss/breakpoints/_base.scss */
+  /* line 1041, ../scss/breakpoints/_base.scss */
   #inner-header.wrap {
     padding-left: 2%;
     width: 98%;
@@ -4962,59 +4962,84 @@ img.rsImg {
   background: url(blank.gif);
 }
 
-/* line 4, ../scss/partials/_wen.scss */
+/* line 2, ../scss/partials/_wen.scss */
+.excerpt-read-more {
+  color: #ed228b !important;
+  font-family: "franklin-gothic-urw",sans-serif;
+}
+/* line 8, ../scss/partials/_wen.scss */
+.excerpt-read-more:hover {
+  text-decoration: underline;
+}
+
+/* line 13, ../scss/partials/_wen.scss */
+.news-post-wrapper {
+  border-bottom: 1px solid #bdbdbd;
+}
+
+/* line 17, ../scss/partials/_wen.scss */
+.post-header {
+  margin-bottom: 0;
+}
+
+/* line 21, ../scss/partials/_wen.scss */
+.news-post-inner {
+  margin-bottom: -16px;
+}
+
+/* line 25, ../scss/partials/_wen.scss */
 .mail-link {
   color: #ed228b !important;
 }
 
-/* line 8, ../scss/partials/_wen.scss */
+/* line 29, ../scss/partials/_wen.scss */
 .small-title {
   font-weight: 400;
 }
 
-/* line 14, ../scss/partials/_wen.scss */
+/* line 35, ../scss/partials/_wen.scss */
 form input {
   display: inline;
 }
-/* line 19, ../scss/partials/_wen.scss */
+/* line 40, ../scss/partials/_wen.scss */
 form input, form textarea {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   outline: none;
   font-family: "franklin-gothic-urw",sans-serif !important;
 }
-/* line 25, ../scss/partials/_wen.scss */
+/* line 46, ../scss/partials/_wen.scss */
 form ::-webkit-input-placeholder, form ::-webkit-textarea-placeholder {
   color: #323944;
   font-weight: 500;
   text-transform: uppercase;
 }
-/* line 31, ../scss/partials/_wen.scss */
+/* line 52, ../scss/partials/_wen.scss */
 form :-moz-placeholder {
   /* Firefox 18- */
   color: #323944;
   font-weight: 500;
   text-transform: uppercase;
 }
-/* line 37, ../scss/partials/_wen.scss */
+/* line 58, ../scss/partials/_wen.scss */
 form ::-moz-placeholder {
   /* Firefox 19+ */
   color: #323944;
   font-weight: 500;
   text-transform: uppercase;
 }
-/* line 43, ../scss/partials/_wen.scss */
+/* line 64, ../scss/partials/_wen.scss */
 form :-ms-input-placeholder {
   color: #323944;
   font-weight: 500;
   text-transform: uppercase;
 }
-/* line 49, ../scss/partials/_wen.scss */
+/* line 70, ../scss/partials/_wen.scss */
 form input:focus, form textarea:focus {
   box-shadow: 0 0 5px #ed228b;
   border: 1px solid #ed228b;
 }
-/* line 54, ../scss/partials/_wen.scss */
+/* line 75, ../scss/partials/_wen.scss */
 form div {
   display: inline-block;
   padding: 10px 10px;
@@ -5022,44 +5047,44 @@ form div {
   font-weight: 500;
   text-transform: uppercase;
 }
-/* line 62, ../scss/partials/_wen.scss */
+/* line 83, ../scss/partials/_wen.scss */
 form .full-width {
   width: 100%;
 }
-/* line 66, ../scss/partials/_wen.scss */
+/* line 87, ../scss/partials/_wen.scss */
 form input[type="text"], form input[type="email"], form input[type="tel"], form input[type="url"], form textarea {
   background-color: white;
   border: 1px solid #bdbdbd;
   border-radius: 0;
 }
-/* line 72, ../scss/partials/_wen.scss */
+/* line 93, ../scss/partials/_wen.scss */
 form textarea {
   resize: none;
 }
-/* line 76, ../scss/partials/_wen.scss */
+/* line 97, ../scss/partials/_wen.scss */
 form input[type="radio"] {
   margin-right: 8px;
 }
-/* line 80, ../scss/partials/_wen.scss */
+/* line 101, ../scss/partials/_wen.scss */
 form label {
   margin-right: 20px;
 }
 
-/* line 86, ../scss/partials/_wen.scss */
+/* line 107, ../scss/partials/_wen.scss */
 .general {
   float: right;
 }
 
-/* line 90, ../scss/partials/_wen.scss */
+/* line 111, ../scss/partials/_wen.scss */
 .wpcf7-captchac {
   padding-top: 10px;
 }
 
-/* line 94, ../scss/partials/_wen.scss */
+/* line 115, ../scss/partials/_wen.scss */
 .form-submit {
   float: right;
 }
-/* line 98, ../scss/partials/_wen.scss */
+/* line 119, ../scss/partials/_wen.scss */
 .form-submit input[type=submit] {
   color: white;
   white-space: nowrap;
@@ -5072,27 +5097,27 @@ form label {
   border: 0 none;
   width: 100%;
 }
-/* line 110, ../scss/partials/_wen.scss */
+/* line 131, ../scss/partials/_wen.scss */
 .form-submit input[type=submit]:hover {
   background-color: #ed228b;
 }
 
-/* line 117, ../scss/partials/_wen.scss */
+/* line 138, ../scss/partials/_wen.scss */
 #sidebar-intro p {
   margin-bottom: 15px;
 }
 @media (max-width: 768px) {
-  /* line 116, ../scss/partials/_wen.scss */
+  /* line 137, ../scss/partials/_wen.scss */
   #sidebar-intro {
     margin: auto;
     text-align: left;
   }
 }
-/* line 126, ../scss/partials/_wen.scss */
+/* line 147, ../scss/partials/_wen.scss */
 #sidebar-intro ul {
   list-style-position: inside;
 }
-/* line 129, ../scss/partials/_wen.scss */
+/* line 150, ../scss/partials/_wen.scss */
 #sidebar-intro ul li:before {
   color: #ed228b;
   content: "\2022";
@@ -5101,23 +5126,23 @@ form label {
   position: relative;
   top: .1em;
 }
-/* line 138, ../scss/partials/_wen.scss */
+/* line 159, ../scss/partials/_wen.scss */
 #sidebar-intro ul ul {
   margin-top: -0.2em;
 }
-/* line 142, ../scss/partials/_wen.scss */
+/* line 163, ../scss/partials/_wen.scss */
 #sidebar-intro ul ul li:before {
   color: #bdbdbd;
   font-size: 1.2em;
 }
 
-/* line 154, ../scss/partials/_wen.scss */
+/* line 175, ../scss/partials/_wen.scss */
 .our-solutions-list h2 {
   font-family: "franklin-gothic-urw",sans-serif;
   margin-top: -1.6em;
 }
 
-/* line 161, ../scss/partials/_wen.scss */
+/* line 182, ../scss/partials/_wen.scss */
 .first-p {
   font-size: 1.5em !important;
   margin-bottom: 1em !important;
@@ -5125,22 +5150,22 @@ form label {
   line-height: 1.2em;
 }
 
-/* line 169, ../scss/partials/_wen.scss */
+/* line 190, ../scss/partials/_wen.scss */
 .sub-page-content-wrapper img {
   margin-bottom: 0 !important;
 }
 
-/* line 199, ../scss/partials/_wen.scss */
+/* line 220, ../scss/partials/_wen.scss */
 #opt {
   text-align: center;
   margin-top: 20px;
 }
-/* line 203, ../scss/partials/_wen.scss */
+/* line 224, ../scss/partials/_wen.scss */
 #opt .opt_btn_wrapper {
   margin-top: 30px;
 }
 
-/* line 208, ../scss/partials/_wen.scss */
+/* line 229, ../scss/partials/_wen.scss */
 #ooButton {
   margin-top: 20px;
   cursor: pointer;
@@ -5153,13 +5178,13 @@ form label {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-/* line 219, ../scss/partials/_wen.scss */
+/* line 240, ../scss/partials/_wen.scss */
 #ooButton:hover {
   background-color: #ed228b;
 }
 
 @media (max-width: 560px) {
-  /* line 225, ../scss/partials/_wen.scss */
+  /* line 246, ../scss/partials/_wen.scss */
   .wpcf7-list-item {
     display: block;
   }

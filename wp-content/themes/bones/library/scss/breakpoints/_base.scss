@@ -385,8 +385,9 @@ POSTS & CONTENT STYLES
 
 	/* post meta */
 	.byline {
-		color: $meta-gray;
-		font-style: italic;
+		color: $brand-color;
+		// font-style: italic;
+		font-family: "franklin-gothic-urw",sans-serif;
 		margin: 0;
 
 		time {}
