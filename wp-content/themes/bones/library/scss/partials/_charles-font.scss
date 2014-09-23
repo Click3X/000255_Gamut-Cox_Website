@@ -87,12 +87,12 @@ h3 {
 	padding: 20px 0 20px 0;
 
 	h1 { margin-top:0; }
-
-	@media(min-width:550px) {
-		padding: 20px 8% 20px 8%;
+	@media(min-width: 768px) {
+		padding: 20px 0 20px 20px;
 	}
-
+	
 	@media(min-width: 811px) {
+		padding: 20px 8% 20px 8%;
 		margin-top: -150px;
 		h1 {
 			margin-top:.67em;
@@ -493,4 +493,15 @@ body #content {
 	.lower-columns ul li ul li:before {
 		color: #dd1420;
 	}	
+}
+
+
+// SIDEBAR MOBILE STYLES
+
+#sidebar1 {
+  padding-left: 0;
+  position: relative;
+  @media(min-width: 811px) {
+  	padding-left: 10px;
+  }
 }
