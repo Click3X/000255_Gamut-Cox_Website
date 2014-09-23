@@ -36,14 +36,15 @@
 						<!-- IF Events PAGE -->
 						<?php if (is_page(298)) { ?>
 							<?php query_posts( 'cat=18' ); ?>
+
+							<!-- IF PRESS PAGE -->
+						<?php } elseif (is_page(65)) { ?>
+							<?php query_posts( 'cat=19' ); ?>
 							<div class="news-logos-container">
 								<img id="logo-fast" src="<?php bloginfo('url'); ?>/img/fastcompany.png">
 								<img id="logo-nyt" src="<?php bloginfo('url'); ?>/img/nyt.png">
 								<img id="logo-forbes" src="<?php bloginfo('url'); ?>/img/forbes.png">
 							</div>
-							<!-- IF PRESS PAGE -->
-						<?php } elseif (is_page(65)) { ?>
-							<?php query_posts( 'cat=19' ); ?>
 
 
 						<?php } ?>
