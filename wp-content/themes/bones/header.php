@@ -66,16 +66,6 @@
 					 echo $class.' {background-image:url("'.$hover.'"); background-image:url("'.$icon.'"); background-repeat:no-repeat; display:block; width:44px; height:44px; background-size:cover; }'."\n";
 
 					 echo $class_hover.' {background-image:url("'.$hover.'"); background-repeat:no-repeat; display:block; width:44px; height:44px; background-size:cover; transition: background-image 0.2s; }'."\n";
-					
-				
-					// .next {
-					// 	background: url(../images/next-hover.png) center center no-repeat;
-					// 	background: url(../images/next.png) center center no-repeat;        
-					// }
-					// .next:hover{
-					// 	background: url(../images/next-hover.png) center center no-repeat;
-					// }
-
 
 				endwhile;
 
