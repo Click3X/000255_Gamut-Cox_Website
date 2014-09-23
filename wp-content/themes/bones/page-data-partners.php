@@ -2,6 +2,7 @@
 	
 get_header();
 
+$dataPartners = array();
 
 // RUN LOOP, STRORE VARS
 if (have_posts()) : while (have_posts()) : the_post();
@@ -9,12 +10,20 @@ if (have_posts()) : while (have_posts()) : the_post();
 	$header_image = get_field('header-image');
 	$sub_page_title = get_field('sub-page-title');
 	$sub_page_content = get_field('sub-page-content');
+	$dPartners = get_field('data_partners');
 
+	foreach ($dPartners as $key => $dPartner) {
+		$dataPartners[$key]['id'] = cleanString($dPartner['name']);
+		$dataPartners[$key]['logo'] = $dPartner['logo'];
+		$dataPartners[$key]['link'] = $dPartner['link'];
+	}
 
 
 endwhile;
 
-endif; 
+endif;
+
+// helper($dataPartners);
 
 ?>
 
@@ -35,10 +44,29 @@ endif;
 					<section class="entry-content cf" itemprop="articleBody">
 
 						<div class="sub-page-content-wrapper" style="">
-							<h1><?php the_title();?></h1>
-							<div>
-								<?php echo $sub_page_content ?>
-							</div>
+							<?php echo $sub_page_title; ?>
+
+							<?php 
+								// SUB-PAGE CONTENT
+								if($sub_page_content != '') { ?>
+								<div class="sub-page-content">
+									<?php echo $sub_page_content ?>
+								</div>
+							<?php } ?>
+
+							<?php 
+								// SUB-PAGE CONTENT
+								// GET LENGTH OF ARRAY & ENSURE ITS NOT 0 - IF NOT - PRINT DATA PARTNERS
+								$pLength = sizeof($dataPartners);
+								if( $pLength > 0 ) { ?>
+								<ul class="clearfix data-partners">
+									<?php
+										foreach ($dataPartners as $key => $dataPartner) {
+											echo '<li class="'.$dataPartner['id'].'"><a href="'.$dataPartner['link'].'"><img src="'.$dataPartner['logo'].'"></a></li>';
+										}
+									?>
+								</ul>
+							<?php } ?>
 						</div>
 
 					</section> <?php // end article section ?>

@@ -5942,7 +5942,7 @@ body #content {
 }
 
 /* line 9, ../scss/partials/_social.scss */
-.facebook {
+.facebook:hover {
   background-position: -176px -79px;
   width: 45px;
   height: 45px;
@@ -5950,14 +5950,14 @@ body #content {
 
 /*.fb-hover{*/
 /* line 16, ../scss/partials/_social.scss */
-.facebook:hover {
+.facebook {
   background-position: -176px -28px;
   width: 45px;
   height: 45px;
 }
 
 /* line 23, ../scss/partials/_social.scss */
-.google-plus {
+.google-plus:hover {
   background-position: -126px -79px;
   width: 45px;
   height: 45px;
@@ -5965,28 +5965,28 @@ body #content {
 
 /*.g-hover{*/
 /* line 30, ../scss/partials/_social.scss */
-.google-plus:hover {
+.google-plus {
   background-position: -126px -28px;
   width: 45px;
   height: 45px;
 }
 
 /* line 36, ../scss/partials/_social.scss */
-.linked-in {
+.linked-in:hover {
   background-position: -77px -79px;
   width: 45px;
   height: 45px;
 }
 
 /* line 42, ../scss/partials/_social.scss */
-.linked-in:hover {
+.linked-in {
   background-position: -77px -28px;
   width: 45px;
   height: 45px;
 }
 
 /* line 48, ../scss/partials/_social.scss */
-.twitter {
+.twitter:hover {
   background-position: -24px -79px;
   width: 45px;
   height: 45px;
@@ -5994,7 +5994,7 @@ body #content {
 
 /*.tw-hover{*/
 /* line 55, ../scss/partials/_social.scss */
-.twitter:hover {
+.twitter {
   background-position: -24px -28px;
   width: 45px;
   height: 45px;
