@@ -15,7 +15,14 @@
 
 <?php get_header(); ?>
 
-<?php if (have_posts()) : while (have_posts()) : the_post(); 
+<?php 
+$args = array(
+	'page_id'=>466
+	);
+
+$the_query = new WP_Query( $args );
+
+if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post(); 
 	// DECLARE VARIABLES
 	$bg_img = get_field('gamut-defined-bg');
 	$gamut_defined_title = get_field('gamut-defined-title');
