@@ -3093,21 +3093,6 @@ a {
   }
 }
 
-/* line 144, ../scss/partials/_who-we-are.scss */
-.og-grid li.og-expanded > a::after {
-  top: auto;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-  border-bottom-color: #ddd;
-  border-width: 15px;
-  left: 50%;
-  margin: -20px 0 0 -15px;
-}
-
 /* line 158, ../scss/partials/_who-we-are.scss */
 .og-expander {
   position: absolute;
@@ -3191,12 +3176,15 @@ a {
 
 /* line 233, ../scss/partials/_who-we-are.scss */
 .og-fullimg img {
-  display: inline-block;
   max-height: 100%;
   max-width: 100%;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
 }
 
-/* line 239, ../scss/partials/_who-we-are.scss */
+/* line 243, ../scss/partials/_who-we-are.scss */
 .og-details p {
   font-size: 14px;
   line-height: 17px;
@@ -3204,7 +3192,7 @@ a {
   max-width: 35em;
 }
 
-/* line 246, ../scss/partials/_who-we-are.scss */
+/* line 250, ../scss/partials/_who-we-are.scss */
 .og-details a {
   font-weight: 700;
   font-size: 16px;
@@ -3218,20 +3206,20 @@ a {
   outline: none;
 }
 
-/* line 259, ../scss/partials/_who-we-are.scss */
+/* line 263, ../scss/partials/_who-we-are.scss */
 .og-details a::before {
   content: '\2192';
   display: inline-block;
   margin-right: 10px;
 }
 
-/* line 265, ../scss/partials/_who-we-are.scss */
+/* line 269, ../scss/partials/_who-we-are.scss */
 .og-details a:hover {
   border-color: #999;
   color: #999;
 }
 
-/* line 270, ../scss/partials/_who-we-are.scss */
+/* line 274, ../scss/partials/_who-we-are.scss */
 .og-loading {
   width: 20px;
   height: 20px;
@@ -3248,18 +3236,18 @@ a {
 }
 
 @-webkit-keyframes loader {
-  /* line 286, ../scss/partials/_who-we-are.scss */
+  /* line 290, ../scss/partials/_who-we-are.scss */
   0% {
     background: #ddd;
   }
 
-  /* line 287, ../scss/partials/_who-we-are.scss */
+  /* line 291, ../scss/partials/_who-we-are.scss */
   33% {
     background: #ccc;
     box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd;
   }
 
-  /* line 288, ../scss/partials/_who-we-are.scss */
+  /* line 292, ../scss/partials/_who-we-are.scss */
   66% {
     background: #ccc;
     box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc;
@@ -3267,18 +3255,18 @@ a {
 }
 
 @-moz-keyframes loader {
-  /* line 292, ../scss/partials/_who-we-are.scss */
+  /* line 296, ../scss/partials/_who-we-are.scss */
   0% {
     background: #ddd;
   }
 
-  /* line 293, ../scss/partials/_who-we-are.scss */
+  /* line 297, ../scss/partials/_who-we-are.scss */
   33% {
     background: #ccc;
     box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd;
   }
 
-  /* line 294, ../scss/partials/_who-we-are.scss */
+  /* line 298, ../scss/partials/_who-we-are.scss */
   66% {
     background: #ccc;
     box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc;
@@ -3286,18 +3274,18 @@ a {
 }
 
 @keyframes loader {
-  /* line 298, ../scss/partials/_who-we-are.scss */
+  /* line 302, ../scss/partials/_who-we-are.scss */
   0% {
     background: #ddd;
   }
 
-  /* line 299, ../scss/partials/_who-we-are.scss */
+  /* line 303, ../scss/partials/_who-we-are.scss */
   33% {
     background: #ccc;
     box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd;
   }
 
-  /* line 300, ../scss/partials/_who-we-are.scss */
+  /* line 304, ../scss/partials/_who-we-are.scss */
   66% {
     background: #ccc;
     box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc;
@@ -3305,7 +3293,7 @@ a {
 }
 
 @media screen and (max-width: 650px) {
-  /* line 305, ../scss/partials/_who-we-are.scss */
+  /* line 309, ../scss/partials/_who-we-are.scss */
   .og-details {
     float: none;
     width: auto;
@@ -5645,6 +5633,49 @@ body #content {
   margin-bottom: 80px;
 }
 
+/* line 451, ../scss/partials/_charles-font.scss */
+.lower-columns ul li ul li {
+  line-height: 1.1rem;
+  padding: .2rem 0;
+  position: relative;
+  padding-left: 1.25em;
+}
+
+/* line 460, ../scss/partials/_charles-font.scss */
+.lower-columns ul li ul li:before {
+  color: #ed228b;
+  content: "\2022";
+  font-size: 1.5em;
+  padding-right: .25em;
+  position: relative;
+  top: .2rem;
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 1em;
+  height: 1em;
+}
+
+/* line 475, ../scss/partials/_charles-font.scss */
+.page-id-13 .lower-columns ul li ul li:before {
+  color: #fba211;
+}
+
+/* line 481, ../scss/partials/_charles-font.scss */
+.page-id-15 .lower-columns ul li ul li:before {
+  color: #039fd3;
+}
+
+/* line 487, ../scss/partials/_charles-font.scss */
+.page-id-24 .lower-columns ul li ul li:before {
+  color: #8fc73e;
+}
+
+/* line 493, ../scss/partials/_charles-font.scss */
+.page-id-11 .lower-columns ul li ul li:before {
+  color: #dd1420;
+}
+
 /* line 4, ../scss/partials/_contact.scss */
 .gothic a {
   font-family: inherit;
@@ -6053,6 +6084,11 @@ you can add resource intensive styles.
   /* line 25, ../scss/breakpoints/_1030up.scss */
   .footer-links-content {
     width: 95%;
+  }
+
+  /* line 30, ../scss/breakpoints/_1030up.scss */
+  .lower-columns ul li ul li {
+    width: 100%;
   }
 }
 /*********************

@@ -15,10 +15,10 @@ get_header(); ?>
 				$locations_title = get_field('locations-title');
 				$header_image = get_field('header-image');
 				
-
 			?>
-				<header class="article-header">
-					<div class="page-header" style="background-image: url('<?php echo $header_image['url'] ?>')"></div>
+				<header class="clearfix article-header">
+					<!-- <div class="page-header" style="background-image: url('<?php echo $header_image['url'] ?>')"></div> -->
+					<div id="map-canvas" class="clearfix page-header"></div>
 				</header>
 
 				<div id="inner-content" class="wrap cf">					

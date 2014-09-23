@@ -185,6 +185,11 @@ function bones_scripts_and_styles() {
 		wp_register_script( 'scroll', get_stylesheet_directory_uri() . '/library/js/scroll.js', array('jquery', 'tweenMax', 'scrollorama'), '', true );
 
 
+		// GOOGLE MAP SCRIPTS CHARLIE
+		wp_register_script( 'google-maps', 'https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false', array(), '', false );
+		wp_register_script( 'g-maps' , get_stylesheet_directory_uri() . '/library/js/g-maps.js', array('g-maps'), '', false );
+
+
 		// enqueue styles and scripts
 		wp_enqueue_script( 'bones-modernizr' );
 		wp_enqueue_style( 'bones-stylesheet' );
@@ -211,6 +216,12 @@ function bones_scripts_and_styles() {
 		if( is_page(45) || is_page(48)) {
 			// wp_enqueue_style( 'exp-grid-css' );
 			wp_enqueue_script( 'exp-grid-js' );
+		}
+
+		// CONDITIONAL SCRIPT TO LOAD GOOGLE MAPS ON CONTACT PAGE
+		if(is_page(9)) {
+			// wp_enqueue_script( 'google-maps' );
+			// wp_enqueue_script( 'g-maps' );
 		}
 
 		// CONDITIONAL SCRIPT TO LOAD ROYALSLIDER ON HOME PAGE
