@@ -30,18 +30,21 @@
 						<div id="main" class="m-all t-2of3 d-5of7 cf" role="main">
 
 						<div class="sub-page-content-wrapper">
+						<!-- IF Events PAGE -->
+						<?php if (is_page(298)) { ?>
+							<?php query_posts( 'cat=18' ); ?>
+							<!-- IF PRESS PAGE -->
+						<?php } elseif (is_page(65)) { ?>
+							<?php query_posts( 'cat=19' ); ?>
+						<?php } ?>
 
-						<?php query_posts( 'cat=18' ); ?>
+						
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 							<article class="news-post-wrapper" id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
 								<section class="entry-content cf news-post-inner" itemprop="articleBody">
-									
-										<!-- // the content (pretty self explanatory huh)
-										//the_content(); -->
-
 										
 										
 										<h1 class="post-header"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
@@ -75,16 +78,6 @@
 									?>
 								</section>
 
-								
-
-
-								<!-- <footer class="article-footer"> -->
-
-                 <!--  <?php the_tags( '<p class="tags"><span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ', ', '</p>' ); ?> -->
-
-								<!-- </footer> -->
-
-								
 
 							</article>
 
