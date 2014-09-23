@@ -5180,20 +5180,20 @@ form label {
 
 /* line 203, ../scss/partials/_wen.scss */
 .sub-page-content-wrapper img {
-  margin-bottom: 0 !important;
+  margin-bottom: 0;
 }
 
-/* line 233, ../scss/partials/_wen.scss */
+/* line 234, ../scss/partials/_wen.scss */
 #opt {
   text-align: center;
   margin-top: 20px;
 }
-/* line 237, ../scss/partials/_wen.scss */
+/* line 238, ../scss/partials/_wen.scss */
 #opt .opt_btn_wrapper {
   margin-top: 30px;
 }
 
-/* line 242, ../scss/partials/_wen.scss */
+/* line 243, ../scss/partials/_wen.scss */
 #ooButton {
   margin-top: 20px;
   cursor: pointer;
@@ -5206,13 +5206,13 @@ form label {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-/* line 253, ../scss/partials/_wen.scss */
+/* line 254, ../scss/partials/_wen.scss */
 #ooButton:hover {
   background-color: #ed228b;
 }
 
 @media (max-width: 560px) {
-  /* line 259, ../scss/partials/_wen.scss */
+  /* line 260, ../scss/partials/_wen.scss */
   .wpcf7-list-item {
     display: block;
   }
@@ -5980,6 +5980,60 @@ body #content {
   background-position: -24px -28px;
   width: 45px;
   height: 45px;
+}
+
+/* line 4, ../scss/partials/_data-partners.scss */
+.data-partners li {
+  display: block;
+  float: left;
+  width: 50%;
+}
+@media (min-width: 650px) {
+  /* line 4, ../scss/partials/_data-partners.scss */
+  .data-partners li {
+    width: 33.333333%;
+  }
+}
+@media (min-width: 768px) {
+  /* line 4, ../scss/partials/_data-partners.scss */
+  .data-partners li {
+    width: 50%;
+  }
+}
+@media (min-width: 1040px) {
+  /* line 4, ../scss/partials/_data-partners.scss */
+  .data-partners li {
+    width: 33.333333%;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 4, ../scss/partials/_data-partners.scss */
+  .data-partners li {
+    width: 25%;
+  }
+}
+/* line 25, ../scss/partials/_data-partners.scss */
+.data-partners li a {
+  display: block;
+  height: auto;
+  height: 0;
+  padding-bottom: 100%;
+  position: relative;
+}
+/* line 32, ../scss/partials/_data-partners.scss */
+.data-partners li a img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 4px;
+}
+
+/* line 46, ../scss/partials/_data-partners.scss */
+.secondary li.page_item a:hover {
+  color: #ed228b;
 }
 
 /*********************
