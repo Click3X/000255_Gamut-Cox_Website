@@ -51,31 +51,37 @@
 
 	
 
-			if(get_field('social_media_links', 'options')):
-				// SOCIAL MEDIA LINKS
-				echo '<style>';
+			// if(get_field('social_media_links', 'options')):
+			// 	// SOCIAL MEDIA LINKS
+			// 	echo '<style>';
 
-				while(has_sub_field('social_media_links', 'options')):
+			// 	while(has_sub_field('social_media_links', 'options')):
 					
-					 $icon = get_sub_field('icon');
-					 $hover = get_sub_field('hover');
+			// 		 $icon = get_sub_field('icon');
+			// 		 $hover = get_sub_field('hover');
 
-					 $class = '.'.cleanString(get_sub_field('title'));
-					 $class_hover = '.'.cleanString(get_sub_field('title')).':hover';
+			// 		 $class = '.'.cleanString(get_sub_field('title'));
+			// 		 $class_hover = '.'.cleanString(get_sub_field('title')).':hover';
 					 
-					 echo $class.' {background-image:url("'.$hover.'"); background-image:url("'.$icon.'"); background-repeat:no-repeat; display:block; width:44px; height:44px; background-size:cover; }'."\n";
+			// 		 echo $class.' {background-image:url("'.$hover.'"); background-image:url("'.$icon.'"); background-repeat:no-repeat; display:block; width:44px; height:44px; background-size:cover; }'."\n";
 
-					 echo $class_hover.' {background-image:url("'.$hover.'"); background-repeat:no-repeat; display:block; width:44px; height:44px; background-size:cover; transition: background-image 0.2s; }'."\n";
+			// 		 echo $class_hover.' {background-image:url("'.$hover.'"); background-repeat:no-repeat; display:block; width:44px; height:44px; background-size:cover; transition: background-image 0.2s; }'."\n";
 
-				endwhile;
+			// 	endwhile;
 
-				echo '</style>';
+			// 	echo '</style>';
 				
-			endif;
+			// endif;
 
-			wp_reset_postdata();
+			// wp_reset_postdata();
 
 		?>
+
+		<style>
+
+			
+
+		</style>
 
 		<script>
             // TEST FOR MOBILE DEVICE / TABLET
