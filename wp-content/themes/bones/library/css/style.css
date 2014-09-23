@@ -5260,7 +5260,7 @@ h3 {
   hyphens: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   /* line 79, ../scss/partials/_charles-font.scss */
   #inner-content {
     width: 90%;
@@ -5276,15 +5276,16 @@ h3 {
 .sub-page-content-wrapper h1 {
   margin-top: 0;
 }
-@media (min-width: 550px) {
+@media (min-width: 768px) {
   /* line 84, ../scss/partials/_charles-font.scss */
   .sub-page-content-wrapper {
-    padding: 20px 8% 20px 8%;
+    padding: 20px 0 20px 20px;
   }
 }
 @media (min-width: 811px) {
   /* line 84, ../scss/partials/_charles-font.scss */
   .sub-page-content-wrapper {
+    padding: 20px 8% 20px 8%;
     margin-top: -150px;
   }
   /* line 97, ../scss/partials/_charles-font.scss */
@@ -5701,6 +5702,18 @@ body #content {
   color: #dd1420;
 }
 
+/* line 501, ../scss/partials/_charles-font.scss */
+#sidebar1 {
+  padding-left: 0;
+  position: relative;
+}
+@media (min-width: 811px) {
+  /* line 501, ../scss/partials/_charles-font.scss */
+  #sidebar1 {
+    padding-left: 10px;
+  }
+}
+
 /* line 4, ../scss/partials/_contact.scss */
 .gothic a {
   font-family: inherit;
@@ -5855,6 +5868,26 @@ body #content {
     clear: left;
   }
 }
+/* line 2, ../scss/partials/_contact-maps.scss */
+#map-canvas {
+  background-size: cover;
+  height: auto;
+  margin: auto;
+  min-height: 150px;
+  padding-bottom: 50%;
+}
+@media (min-width: 1600px) {
+  /* line 2, ../scss/partials/_contact-maps.scss */
+  #map-canvas {
+    padding-bottom: 800px;
+  }
+}
+
+/* line 15, ../scss/partials/_contact-maps.scss */
+.wpcf7 form > div {
+  vertical-align: top;
+}
+
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's

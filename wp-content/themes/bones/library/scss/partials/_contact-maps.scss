@@ -1,0 +1,18 @@
+// CONTACT MAPS FOR GOOGLE MAP
+#map-canvas {
+	background-size: cover;
+	height: auto;
+	margin: auto;
+	min-height: 150px;
+	padding-bottom: 50%;
+
+	@media(min-width: 1600px) {
+		padding-bottom: 800px;
+	}
+}
+
+.wpcf7 {
+	form > div {
+		vertical-align: top;
+	}
+}
