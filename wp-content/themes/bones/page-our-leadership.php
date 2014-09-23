@@ -36,10 +36,8 @@ if (have_posts()) : while (have_posts()) : the_post();
 			$telePhone = get_post_custom_values('telephone', $team_member->ID);
 			$tele = $telePhone[0];
 			$empThumb = get_post_custom_values('thumbnail', $team_member->ID);
-			// echo $empThumb;
 			$empId = $empThumb[0];
 			$bwThumb = wp_get_attachment_image_src($empId , 'emp-thumb');
-			// helper($bwThumb);
 			$newThumb = $bwThumb[0];
 
 			
@@ -69,43 +67,54 @@ wp_reset_postdata();
 
 <div id="content">
 
-<header class="article-header">
-	<div class="page-header" style="background-image: url('<?php echo $header['url'] ?>')"></div>
-</header>
+	<header class="article-header">
+		<div class="page-header" style="background-image: url('<?php echo $header['url'] ?>')"></div>
+	</header>
 
-<div id="inner-content" class="wrap cf">
+	<div id="inner-content" class="wrap cf">
 
-	<?php get_sidebar(); ?>
+		<?php get_sidebar(); ?>
 
-	<div id="main" class="m-all t-2of3 d-5of7 cf" role="main">
+		<div id="main" class="m-all t-2of3 d-6of7 cf" role="main">
 
-		<ul id="og-grid" class="og-grid">
+			<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
-			<?php 
+				<section class="entry-content cf" itemprop="articleBody">
 
-				foreach ($teamMembers as $key => $teamMember) { ?>
+					<div class="sub-page-content-wrapper" style="">
+						<h1><?php the_title(); ?></h1>
+					</div>
 
-					<li id="post-<?php echo $teamMember['id']; ?>" role="article" itemscope itemtype="http://schema.org/BlogPosting">
-						<a href="<?php echo $teamMember['link']; ?>" data-largesrc="<?php echo $teamMember['largeThumb']; ?>" data-largeheight="<?php echo $teamMember['largeThumb-height']; ?>" data-largewidth="<?php echo $teamMember['largeThumb-width']; ?>" data-title="<?php echo $teamMember['name']; ?>" data-description="<?php echo $teamMember['add_info']; ?>" data-etitle="<?php echo $teamMember['emp_title']; ?>">
-						<?php echo '<a href="'.$teamMember['link'].'">';
-							// echo '<img src="'.$teamMember['thumb'].'" alt="'.$teamMember['name'].'" class="grid-thumb">';
-							echo '<img src="'.$teamMember['new-thumb'].'" alt="'.$teamMember['name'].'" class="grid-thumb">';
-							echo '<h2 class="small-name gothic">'.$teamMember['name'].'</h2>';
-							echo '<h3 class="small-title gothic">'.$teamMember['emp_title'].'</h3>';
-							?>
-						</a>
-					</li>
-				
-				<?php
+					<ul id="og-grid" class="og-grid">
 
-				}
-			?>
+						<?php 
 
-		</ul>
+							foreach ($teamMembers as $key => $teamMember) { ?>
+
+								<li id="post-<?php echo $teamMember['id']; ?>" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+									<a href="<?php echo $teamMember['link']; ?>" data-largesrc="<?php echo $teamMember['largeThumb']; ?>" data-largeheight="<?php echo $teamMember['largeThumb-height']; ?>" data-largewidth="<?php echo $teamMember['largeThumb-width']; ?>" data-title="<?php echo $teamMember['name']; ?>" data-description="<?php echo $teamMember['add_info']; ?>" data-etitle="<?php echo $teamMember['emp_title']; ?>">
+									<?php echo '<a href="'.$teamMember['link'].'">';
+										echo '<img src="'.$teamMember['new-thumb'].'" alt="'.$teamMember['name'].'" class="grid-thumb">';
+										echo '<h2 class="small-name gothic">'.$teamMember['name'].'</h2>';
+										echo '<h3 class="small-title gothic">'.$teamMember['emp_title'].'</h3>';
+										?>
+									</a>
+								</li>
+							
+							<?php
+
+							}
+						?>
+
+					</ul>
+
+				</section>
+
+			</article>
+
+		</div>
 
 	</div>
-
-</div>
 
 </div>
 

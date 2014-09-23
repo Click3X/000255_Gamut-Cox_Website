@@ -1,4 +1,11 @@
-<div id="sidebar1" class="sidebar m-all t-1of3 d-2of7 cf" role="complementary">
+<?php
+	// SPECIAL CLASS FOR OUR LEADERSHIP SIDEBAR
+	$sidebar_class="d-2of7";
+	if(is_page(48)) {
+		$sidebar_class="d-1of7";
+	}
+?>
+<div id="sidebar1" class="sidebar m-all t-1of3 cf <?php echo $sidebar_class; ?>" role="complementary">
 
 	<div id="sidebar-beam-container">
 
