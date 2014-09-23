@@ -1,9 +1,22 @@
 // posts page styling
+#logo-fast {
+	height:1.5em;
+	vertical-align: top;
+}
+
+#logo-nyt {
+	height: 2em;
+	vertical-align: top;
+}
+
+#logo-forbes {
+	height: 1.6em;
+	vertical-align: top;
+}
+
 .excerpt-read-more {
 	color: $brand-color !important;
 	font-family: "franklin-gothic-urw",sans-serif;
-	// margin-top: 20px;
-	// display: inline-block;
 
 	&:hover {
 		text-decoration: underline;
@@ -23,7 +36,7 @@
 }
 
 .news-logos-container {
-	margin-top: 50px;
+	margin-top: 30px;
 	img {
 		height: 32px;
 		margin-right: 40px;

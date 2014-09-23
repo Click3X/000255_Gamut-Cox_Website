@@ -37,9 +37,9 @@
 						<?php if (is_page(298)) { ?>
 							<?php query_posts( 'cat=18' ); ?>
 							<div class="news-logos-container">
-								<img src="<?php bloginfo('url'); ?>/img/fastcompany.png">
-								<img src="<?php bloginfo('url'); ?>/img/nyt.png">
-								<img src="<?php bloginfo('url'); ?>/img/forbes.png">
+								<img id="logo-fast" src="<?php bloginfo('url'); ?>/img/fastcompany.png">
+								<img id="logo-nyt" src="<?php bloginfo('url'); ?>/img/nyt.png">
+								<img id="logo-forbes" src="<?php bloginfo('url'); ?>/img/forbes.png">
 							</div>
 							<!-- IF PRESS PAGE -->
 						<?php } elseif (is_page(65)) { ?>
@@ -47,10 +47,7 @@
 
 
 						<?php } ?>
-
-																<!-- IF PRESS PAGE -->
 										
-
 										
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>

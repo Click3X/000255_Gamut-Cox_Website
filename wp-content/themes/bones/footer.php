@@ -97,10 +97,6 @@
 
 								<?php echo '<div class="other-businesses-container">';
 
-									// 
-									// $other_businesses_list = get_field('other_businesses_list', 'options');
-									// echo '<span class="headline city">' . $other_businesses . '</span>';
-									// echo '<span class="copy address other-businesses-content">' . $other_businesses_list . '</span>';
 
 								if(get_field('other_businesses_list', 'options')): 
 									$other_businesses = get_field('other_businesses', 'options'); ?>

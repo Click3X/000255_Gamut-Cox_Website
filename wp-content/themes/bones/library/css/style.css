@@ -4976,98 +4976,116 @@ img.rsImg {
 }
 
 /* line 2, ../scss/partials/_wen.scss */
+#logo-fast {
+  height: 1.5em;
+  vertical-align: top;
+}
+
+/* line 7, ../scss/partials/_wen.scss */
+#logo-nyt {
+  height: 2em;
+  vertical-align: top;
+}
+
+/* line 12, ../scss/partials/_wen.scss */
+#logo-forbes {
+  height: 1.6em;
+  vertical-align: top;
+}
+
+/* line 17, ../scss/partials/_wen.scss */
 .excerpt-read-more {
   color: #ed228b !important;
   font-family: "franklin-gothic-urw",sans-serif;
 }
-/* line 8, ../scss/partials/_wen.scss */
+/* line 21, ../scss/partials/_wen.scss */
 .excerpt-read-more:hover {
   text-decoration: underline;
 }
 
-/* line 13, ../scss/partials/_wen.scss */
+/* line 26, ../scss/partials/_wen.scss */
 .news-post-wrapper {
   border-bottom: 1px solid #bdbdbd;
 }
 
-/* line 17, ../scss/partials/_wen.scss */
+/* line 30, ../scss/partials/_wen.scss */
 .post-header {
   margin-bottom: 0;
 }
 
-/* line 21, ../scss/partials/_wen.scss */
+/* line 34, ../scss/partials/_wen.scss */
 .news-post-inner {
   margin-bottom: -16px;
 }
 
-/* line 25, ../scss/partials/_wen.scss */
+/* line 38, ../scss/partials/_wen.scss */
 .news-logos-container {
-  margin-top: 50px;
+  margin-top: 30px;
 }
-/* line 27, ../scss/partials/_wen.scss */
+/* line 40, ../scss/partials/_wen.scss */
 .news-logos-container img {
   height: 32px;
   margin-right: 40px;
 }
 
-/* line 34, ../scss/partials/_wen.scss */
+/* line 47, ../scss/partials/_wen.scss */
 .media-inquiry-info {
   margin-top: 80px;
 }
 
-/* line 38, ../scss/partials/_wen.scss */
+/* line 51, ../scss/partials/_wen.scss */
 .mail-link {
   color: #ed228b !important;
 }
 
-/* line 42, ../scss/partials/_wen.scss */
+/* line 55, ../scss/partials/_wen.scss */
 .small-title {
   font-weight: 400;
 }
 
-/* line 48, ../scss/partials/_wen.scss */
+/* line 61, ../scss/partials/_wen.scss */
 form input {
   display: inline;
 }
-/* line 53, ../scss/partials/_wen.scss */
+/* line 66, ../scss/partials/_wen.scss */
 form input, form textarea {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   outline: none;
   font-family: "franklin-gothic-urw",sans-serif !important;
 }
-/* line 59, ../scss/partials/_wen.scss */
+/* line 72, ../scss/partials/_wen.scss */
 form ::-webkit-input-placeholder, form ::-webkit-textarea-placeholder {
   color: #323944;
   font-weight: 500;
   text-transform: uppercase;
 }
-/* line 65, ../scss/partials/_wen.scss */
+/* line 78, ../scss/partials/_wen.scss */
 form :-moz-placeholder {
   /* Firefox 18- */
   color: #323944;
   font-weight: 500;
   text-transform: uppercase;
 }
-/* line 71, ../scss/partials/_wen.scss */
+/* line 84, ../scss/partials/_wen.scss */
 form ::-moz-placeholder {
   /* Firefox 19+ */
   color: #323944;
   font-weight: 500;
   text-transform: uppercase;
 }
-/* line 77, ../scss/partials/_wen.scss */
+/* line 90, ../scss/partials/_wen.scss */
 form :-ms-input-placeholder {
   color: #323944;
   font-weight: 500;
   text-transform: uppercase;
 }
-/* line 83, ../scss/partials/_wen.scss */
+/* line 96, ../scss/partials/_wen.scss */
 form input:focus, form textarea:focus {
   box-shadow: 0 0 5px #ed228b;
   border: 1px solid #ed228b;
 }
-/* line 88, ../scss/partials/_wen.scss */
+/* line 101, ../scss/partials/_wen.scss */
 form div {
   display: inline-block;
   padding: 10px 10px;
@@ -5075,44 +5093,44 @@ form div {
   font-weight: 500;
   text-transform: uppercase;
 }
-/* line 96, ../scss/partials/_wen.scss */
+/* line 109, ../scss/partials/_wen.scss */
 form .full-width {
   width: 100%;
 }
-/* line 100, ../scss/partials/_wen.scss */
+/* line 113, ../scss/partials/_wen.scss */
 form input[type="text"], form input[type="email"], form input[type="tel"], form input[type="url"], form textarea {
   background-color: white;
   border: 1px solid #bdbdbd;
   border-radius: 0;
 }
-/* line 106, ../scss/partials/_wen.scss */
+/* line 119, ../scss/partials/_wen.scss */
 form textarea {
   resize: none;
 }
-/* line 110, ../scss/partials/_wen.scss */
+/* line 123, ../scss/partials/_wen.scss */
 form input[type="radio"] {
   margin-right: 8px;
 }
-/* line 114, ../scss/partials/_wen.scss */
+/* line 127, ../scss/partials/_wen.scss */
 form label {
   margin-right: 20px;
 }
 
-/* line 120, ../scss/partials/_wen.scss */
+/* line 133, ../scss/partials/_wen.scss */
 .general {
   float: right;
 }
 
-/* line 124, ../scss/partials/_wen.scss */
+/* line 137, ../scss/partials/_wen.scss */
 .wpcf7-captchac {
   padding-top: 10px;
 }
 
-/* line 128, ../scss/partials/_wen.scss */
+/* line 141, ../scss/partials/_wen.scss */
 .form-submit {
   float: right;
 }
-/* line 132, ../scss/partials/_wen.scss */
+/* line 145, ../scss/partials/_wen.scss */
 .form-submit input[type=submit] {
   color: white;
   white-space: nowrap;
@@ -5125,27 +5143,27 @@ form label {
   border: 0 none;
   width: 100%;
 }
-/* line 144, ../scss/partials/_wen.scss */
+/* line 157, ../scss/partials/_wen.scss */
 .form-submit input[type=submit]:hover {
   background-color: #ed228b;
 }
 
-/* line 151, ../scss/partials/_wen.scss */
+/* line 164, ../scss/partials/_wen.scss */
 #sidebar-intro p {
   margin-bottom: 15px;
 }
 @media (max-width: 768px) {
-  /* line 150, ../scss/partials/_wen.scss */
+  /* line 163, ../scss/partials/_wen.scss */
   #sidebar-intro {
     margin: auto;
     text-align: left;
   }
 }
-/* line 160, ../scss/partials/_wen.scss */
+/* line 173, ../scss/partials/_wen.scss */
 #sidebar-intro ul {
   list-style-position: inside;
 }
-/* line 163, ../scss/partials/_wen.scss */
+/* line 176, ../scss/partials/_wen.scss */
 #sidebar-intro ul li:before {
   color: #ed228b;
   content: "\2022";
@@ -5154,23 +5172,23 @@ form label {
   position: relative;
   top: .1em;
 }
-/* line 172, ../scss/partials/_wen.scss */
+/* line 185, ../scss/partials/_wen.scss */
 #sidebar-intro ul ul {
   margin-top: -0.2em;
 }
-/* line 176, ../scss/partials/_wen.scss */
+/* line 189, ../scss/partials/_wen.scss */
 #sidebar-intro ul ul li:before {
   color: #bdbdbd;
   font-size: 1.2em;
 }
 
-/* line 188, ../scss/partials/_wen.scss */
+/* line 201, ../scss/partials/_wen.scss */
 .our-solutions-list h2 {
   font-family: "franklin-gothic-urw",sans-serif;
   margin-top: -1.6em;
 }
 
-/* line 195, ../scss/partials/_wen.scss */
+/* line 208, ../scss/partials/_wen.scss */
 .first-p {
   font-size: 1.5em !important;
   margin-bottom: 1em !important;
@@ -5178,22 +5196,22 @@ form label {
   line-height: 1.2em;
 }
 
-/* line 203, ../scss/partials/_wen.scss */
+/* line 216, ../scss/partials/_wen.scss */
 .sub-page-content-wrapper img {
   margin-bottom: 0 !important;
 }
 
-/* line 233, ../scss/partials/_wen.scss */
+/* line 246, ../scss/partials/_wen.scss */
 #opt {
   text-align: center;
   margin-top: 20px;
 }
-/* line 237, ../scss/partials/_wen.scss */
+/* line 250, ../scss/partials/_wen.scss */
 #opt .opt_btn_wrapper {
   margin-top: 30px;
 }
 
-/* line 242, ../scss/partials/_wen.scss */
+/* line 255, ../scss/partials/_wen.scss */
 #ooButton {
   margin-top: 20px;
   cursor: pointer;
@@ -5206,13 +5224,13 @@ form label {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-/* line 253, ../scss/partials/_wen.scss */
+/* line 266, ../scss/partials/_wen.scss */
 #ooButton:hover {
   background-color: #ed228b;
 }
 
 @media (max-width: 560px) {
-  /* line 259, ../scss/partials/_wen.scss */
+  /* line 272, ../scss/partials/_wen.scss */
   .wpcf7-list-item {
     display: block;
   }
