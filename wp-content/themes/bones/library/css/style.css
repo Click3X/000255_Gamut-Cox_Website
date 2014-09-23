@@ -5916,6 +5916,72 @@ body #content {
   vertical-align: top;
 }
 
+/* line 1, ../scss/partials/_social.scss */
+.facebook, .google-plus, .linked-in, .twitter {
+  display: block;
+  background-image: url("../../../../../img/sprites.png");
+  background-repeat: no-repeat;
+}
+
+/* line 9, ../scss/partials/_social.scss */
+.facebook {
+  background-position: -176px -79px;
+  width: 45px;
+  height: 45px;
+}
+
+/*.fb-hover{*/
+/* line 16, ../scss/partials/_social.scss */
+.facebook:hover {
+  background-position: -176px -28px;
+  width: 45px;
+  height: 45px;
+}
+
+/* line 23, ../scss/partials/_social.scss */
+.google-plus {
+  background-position: -126px -79px;
+  width: 45px;
+  height: 45px;
+}
+
+/*.g-hover{*/
+/* line 30, ../scss/partials/_social.scss */
+.google-plus:hover {
+  background-position: -126px -28px;
+  width: 45px;
+  height: 45px;
+}
+
+/* line 36, ../scss/partials/_social.scss */
+.linked-in {
+  background-position: -77px -79px;
+  width: 45px;
+  height: 45px;
+}
+
+/* line 42, ../scss/partials/_social.scss */
+.linked-in:hover {
+  background-position: -77px -28px;
+  width: 45px;
+  height: 45px;
+}
+
+/* line 48, ../scss/partials/_social.scss */
+.twitter {
+  background-position: -24px -79px;
+  width: 45px;
+  height: 45px;
+}
+
+/*.tw-hover{*/
+/* line 55, ../scss/partials/_social.scss */
+.twitter:hover {
+  background-position: -24px -28px;
+  width: 45px;
+  height: 45px;
+}
+
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
