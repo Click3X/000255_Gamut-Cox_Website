@@ -119,6 +119,19 @@ jQuery(document).ready(function($) {
 
     });
 
+  // CAREERS PAGE ACCORDION
+
+$(".accordion").click(function(){
+  $(this).find('img').toggle();
+  $(this).next().slideToggle('fast');
+});
+
+$(".jobSlideUp").click(function(){
+  $(this).parent().prev().find('img').toggle();
+  $(this).parent().slideToggle('fast');
+});
+
+
   /*
    * Let's fire off the gravatar function
    * You can remove this if you don't need it
