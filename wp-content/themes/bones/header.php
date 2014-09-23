@@ -111,7 +111,7 @@
                     styles: [
                         {"stylers":[
                             {"hue":"#ff1a00"},
-                            {"invert_lightness":true},
+                            {"invert_lightness":false},
                             {"saturation":-100},
                             {"lightness":33},
                             {"gamma":0.5}
@@ -120,20 +120,20 @@
                         {"featureType":"water",
                         "elementType":"geometry",
                         "stylers":[
-                            {"color":"#2D333C"}
+                            {"color":"#9ba0a5"}
                             ]
                         },
                         {
                             "featureType": "road.arterial",
                             "stylers": [
                               { "visibility": "on" },
-                              { "color": "#000000" }
+                              { "color": "#ffffff" }
                             ]
                           },
                           {
                             "featureType": "road.local",
                             "stylers": [
-                              { "color": "#000000" },
+                              { "color": "#ffffff" },
                               { "visibility": "on" }
                             ]
                           }
