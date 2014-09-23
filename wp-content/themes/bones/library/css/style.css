@@ -5243,20 +5243,32 @@ form label {
 
 /* line 253, ../scss/partials/_wen.scss */
 .sub-page-content-wrapper img {
-  margin-bottom: 0 !important;
+  margin-bottom: 0;
 }
 
+<<<<<<< HEAD
 /* line 283, ../scss/partials/_wen.scss */
+=======
+/* line 247, ../scss/partials/_wen.scss */
+>>>>>>> 6d89504038dec553d09afe97fb0535521b8516fb
 #opt {
   text-align: center;
   margin-top: 20px;
 }
+<<<<<<< HEAD
 /* line 287, ../scss/partials/_wen.scss */
+=======
+/* line 251, ../scss/partials/_wen.scss */
+>>>>>>> 6d89504038dec553d09afe97fb0535521b8516fb
 #opt .opt_btn_wrapper {
   margin-top: 30px;
 }
 
+<<<<<<< HEAD
 /* line 292, ../scss/partials/_wen.scss */
+=======
+/* line 256, ../scss/partials/_wen.scss */
+>>>>>>> 6d89504038dec553d09afe97fb0535521b8516fb
 #ooButton {
   margin-top: 20px;
   cursor: pointer;
@@ -5269,13 +5281,21 @@ form label {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
+<<<<<<< HEAD
 /* line 303, ../scss/partials/_wen.scss */
+=======
+/* line 267, ../scss/partials/_wen.scss */
+>>>>>>> 6d89504038dec553d09afe97fb0535521b8516fb
 #ooButton:hover {
   background-color: #ed228b;
 }
 
 @media (max-width: 560px) {
+<<<<<<< HEAD
   /* line 309, ../scss/partials/_wen.scss */
+=======
+  /* line 273, ../scss/partials/_wen.scss */
+>>>>>>> 6d89504038dec553d09afe97fb0535521b8516fb
   .wpcf7-list-item {
     display: block;
   }
@@ -6043,6 +6063,60 @@ body #content {
   background-position: -24px -28px;
   width: 45px;
   height: 45px;
+}
+
+/* line 4, ../scss/partials/_data-partners.scss */
+.data-partners li {
+  display: block;
+  float: left;
+  width: 50%;
+}
+@media (min-width: 650px) {
+  /* line 4, ../scss/partials/_data-partners.scss */
+  .data-partners li {
+    width: 33.333333%;
+  }
+}
+@media (min-width: 768px) {
+  /* line 4, ../scss/partials/_data-partners.scss */
+  .data-partners li {
+    width: 50%;
+  }
+}
+@media (min-width: 1040px) {
+  /* line 4, ../scss/partials/_data-partners.scss */
+  .data-partners li {
+    width: 33.333333%;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 4, ../scss/partials/_data-partners.scss */
+  .data-partners li {
+    width: 25%;
+  }
+}
+/* line 25, ../scss/partials/_data-partners.scss */
+.data-partners li a {
+  display: block;
+  height: auto;
+  height: 0;
+  padding-bottom: 100%;
+  position: relative;
+}
+/* line 32, ../scss/partials/_data-partners.scss */
+.data-partners li a img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 4px;
+}
+
+/* line 46, ../scss/partials/_data-partners.scss */
+.secondary li.page_item a:hover {
+  color: #ed228b;
 }
 
 /*********************

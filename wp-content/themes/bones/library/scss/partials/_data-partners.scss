@@ -1,1 +1,48 @@
 // DATA PARTNERS
+
+.data-partners {
+	li {
+		display: block;
+		float: left;
+		width: 50%;
+
+		@media(min-width: 650px) {
+			width: 33.333333%;
+		}
+
+		@media(min-width: 768px) {
+			width: 50%;
+		}
+
+		@media(min-width: 1040px) {
+			width: 33.333333%;
+		}
+
+		@media(min-width: 1200px) {
+			width: 25%;
+		}
+
+		a {
+			display: block;
+			height: auto;
+			height: 0;
+			padding-bottom: 100%;
+			position: relative;
+
+			img {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				margin: auto;
+				padding: 4px;
+			}
+		}
+	}
+
+}
+
+.secondary li.page_item a:hover {
+	color: #ed228b;
+}
