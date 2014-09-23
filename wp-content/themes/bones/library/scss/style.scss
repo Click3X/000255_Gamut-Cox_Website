@@ -89,9 +89,8 @@ the other stylesheets. Remember, keep it light: Speed is Important.
 @import "modules/para-friday-new";
 @import "modules/home-slider";
 
-// // SCROLLORAMA
+// SCROLLORAMA
 @import "partials/scrollorama";
-
 
 // CAROUSEL HOME PAGE
 @import "modules/slider";
@@ -102,8 +101,13 @@ the other stylesheets. Remember, keep it light: Speed is Important.
 
 // Charles Font Styles
 @import "partials/charles-font";
-// contact
+
+// CONTACT
 @import "partials/contact";
+
+// CONTACT PAGE- GOOGLE MAPS STYLES
+@import "partials/contact-maps";
+
 
 /*********************
 LARGER MOBILE DEVICES

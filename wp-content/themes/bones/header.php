@@ -93,7 +93,7 @@
         if(is_page(9)) {
 			echo '<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
         <script>
-            var clickLatLong = new google.maps.LatLng(40.741244, -73.991320),
+            var clickLatLong = new google.maps.LatLng(40.753519, -73.969971),
             map,
             mapOptions,
             marker;
