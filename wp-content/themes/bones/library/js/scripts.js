@@ -220,9 +220,9 @@ setInterval(function(){
 
   var url = window.location;
 
-  $('a[href="'+url+'"]').parent('#menu-main-menu li').addClass('main-menu-selected');
+  $('a[href="'+url+'"]').parent('#menu-main-menu>li').addClass('main-menu-selected');
 
-  $('a[href="'+url+'"]').parent('.sidebar li').addClass('sidebar-selected');
+  $('a[href="'+url+'"]').parent('.sidebar li').children().addClass('sidebar-selected');
 
 
 }); /* end of as page load scripts */

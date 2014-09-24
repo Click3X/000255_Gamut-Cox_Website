@@ -1,3 +1,19 @@
+// fix main menu highlight
+.current-page-ancestor {
+	a {
+		color: $brand-color !important;
+	}
+	
+}
+
+// page link color
+.page-link {
+	color: $brand-color !important;
+	&:hover {
+		text-decoration: underline !important;
+	}
+}
+
 // careers
 .job_container {
 	ul {
@@ -181,6 +197,10 @@
 
 .mail-link {
 	color: $brand-color !important;
+
+	&:hover {
+		text-decoration: underline;
+	}
 }
 
 .small-title {

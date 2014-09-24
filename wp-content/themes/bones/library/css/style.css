@@ -1587,7 +1587,6 @@ LINK STYLES
 /* line 111, ../scss/breakpoints/_base.scss */
 a, a:visited {
   text-decoration: none;
-  color: #626262;
   /* on hover */
   /* on click */
   /* mobile tap color */
@@ -2593,11 +2592,6 @@ hr {
   color: #ed228b !important;
 }
 
-/* line 204, ../scss/partials/_custom.scss */
-.sidebar-selected a {
-  color: #323944;
-}
-
 /* line 208, ../scss/partials/_custom.scss */
 .slider-text {
   font-family: Sentinel Medium;
@@ -2895,33 +2889,29 @@ hr {
   line-height: 1.45em;
 }
 
-/* line 521, ../scss/partials/_custom.scss */
+/* line 520, ../scss/partials/_custom.scss */
 .secondary li.page_item {
   line-height: 2.2em;
   font-size: .85em;
 }
-/* line 525, ../scss/partials/_custom.scss */
-.secondary li.page_item a {
-  color: #626262;
-}
 
-/* line 534, ../scss/partials/_custom.scss */
+/* line 533, ../scss/partials/_custom.scss */
 .contact-container h2 {
   padding: .65em 0;
 }
 
-/* line 539, ../scss/partials/_custom.scss */
+/* line 538, ../scss/partials/_custom.scss */
 .contact-container hr + h3 {
   margin-top: 3.4em;
 }
-/* line 543, ../scss/partials/_custom.scss */
+/* line 542, ../scss/partials/_custom.scss */
 .contact-container .location p {
   margin: .5em 0 1.5em;
   font-size: .87em;
   line-height: 1.5em;
 }
 
-/* line 550, ../scss/partials/_custom.scss */
+/* line 549, ../scss/partials/_custom.scss */
 .sub-title {
   text-transform: uppercase;
   margin-top: -1.5em;
@@ -4782,26 +4772,40 @@ img.rsImg {
 }
 
 /* line 3, ../scss/partials/_wen.scss */
+.current-page-ancestor a {
+  color: #ed228b !important;
+}
+
+/* line 10, ../scss/partials/_wen.scss */
+.page-link {
+  color: #ed228b !important;
+}
+/* line 12, ../scss/partials/_wen.scss */
+.page-link:hover {
+  text-decoration: underline !important;
+}
+
+/* line 19, ../scss/partials/_wen.scss */
 .job_container ul {
   list-style-type: disc;
 }
-/* line 6, ../scss/partials/_wen.scss */
+/* line 22, ../scss/partials/_wen.scss */
 .job_container ul ul {
   list-style-type: circle;
   padding-left: 20px;
 }
 
-/* line 14, ../scss/partials/_wen.scss */
+/* line 30, ../scss/partials/_wen.scss */
 .job_hidden {
   display: none;
 }
 
-/* line 18, ../scss/partials/_wen.scss */
+/* line 34, ../scss/partials/_wen.scss */
 .job_wrapper {
   margin-top: 20px;
 }
 
-/* line 22, ../scss/partials/_wen.scss */
+/* line 38, ../scss/partials/_wen.scss */
 .accordion {
   background-color: #bdbdbd;
   display: block;
@@ -4812,41 +4816,41 @@ img.rsImg {
   font-size: 1.2em;
   text-transform: uppercase;
 }
-/* line 32, ../scss/partials/_wen.scss */
+/* line 48, ../scss/partials/_wen.scss */
 .accordion:hover {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   background-color: #ed228b;
   color: white;
 }
-/* line 38, ../scss/partials/_wen.scss */
+/* line 54, ../scss/partials/_wen.scss */
 .accordion img {
   width: 12px;
   margin-top: 6px;
   float: right;
 }
 @media (max-width: 1029px) {
-  /* line 22, ../scss/partials/_wen.scss */
+  /* line 38, ../scss/partials/_wen.scss */
   .accordion {
     font-size: 0.95em;
   }
 }
 
-/* line 50, ../scss/partials/_wen.scss */
+/* line 66, ../scss/partials/_wen.scss */
 .closing-statement-container {
   margin-top: 60px;
 }
 
-/* line 54, ../scss/partials/_wen.scss */
+/* line 70, ../scss/partials/_wen.scss */
 .jobSlideUp {
   text-align: right;
 }
-/* line 57, ../scss/partials/_wen.scss */
+/* line 73, ../scss/partials/_wen.scss */
 .jobSlideUp .close_btn {
   cursor: pointer;
 }
 
-/* line 62, ../scss/partials/_wen.scss */
+/* line 78, ../scss/partials/_wen.scss */
 .f_job_headline {
   text-transform: uppercase;
   font-size: 2em;
@@ -4856,189 +4860,193 @@ img.rsImg {
   color: #ed228b;
 }
 @media (max-width: 1029px) {
-  /* line 62, ../scss/partials/_wen.scss */
+  /* line 78, ../scss/partials/_wen.scss */
   .f_job_headline {
     font-size: 1.5em;
   }
 }
 
-/* line 76, ../scss/partials/_wen.scss */
+/* line 92, ../scss/partials/_wen.scss */
 .featured_job {
   margin-bottom: 60px;
 }
 
-/* line 80, ../scss/partials/_wen.scss */
+/* line 96, ../scss/partials/_wen.scss */
 #a-top {
   width: 12px;
 }
 
-/* line 84, ../scss/partials/_wen.scss */
+/* line 100, ../scss/partials/_wen.scss */
 #a-down {
   width: 14px;
   display: none;
 }
 
-/* line 90, ../scss/partials/_wen.scss */
+/* line 106, ../scss/partials/_wen.scss */
 #logo-fast {
   height: 1.5em;
   vertical-align: top;
 }
 @media (max-width: 810px) {
-  /* line 90, ../scss/partials/_wen.scss */
+  /* line 106, ../scss/partials/_wen.scss */
   #logo-fast {
     margin-top: 20px;
   }
 }
 
-/* line 100, ../scss/partials/_wen.scss */
+/* line 116, ../scss/partials/_wen.scss */
 #logo-nyt {
   height: 2em;
   vertical-align: top;
 }
 @media (max-width: 1029px) {
-  /* line 100, ../scss/partials/_wen.scss */
+  /* line 116, ../scss/partials/_wen.scss */
   #logo-nyt {
     margin-top: 20px;
   }
 }
 
-/* line 111, ../scss/partials/_wen.scss */
+/* line 127, ../scss/partials/_wen.scss */
 #logo-forbes {
   height: 1.6em;
   vertical-align: top;
 }
 @media (max-width: 1239px) {
-  /* line 111, ../scss/partials/_wen.scss */
+  /* line 127, ../scss/partials/_wen.scss */
   #logo-forbes {
     margin-top: 20px;
   }
 }
 
-/* line 122, ../scss/partials/_wen.scss */
+/* line 138, ../scss/partials/_wen.scss */
 .media-inquiry-info .highlight {
   font-family: 'Sentinel Medium';
 }
 
-/* line 127, ../scss/partials/_wen.scss */
+/* line 143, ../scss/partials/_wen.scss */
 .excerpt-read-more {
   color: #ed228b !important;
   font-family: "franklin-gothic-urw",sans-serif;
 }
-/* line 131, ../scss/partials/_wen.scss */
+/* line 147, ../scss/partials/_wen.scss */
 .excerpt-read-more:hover {
   text-decoration: underline;
 }
 
-/* line 136, ../scss/partials/_wen.scss */
+/* line 152, ../scss/partials/_wen.scss */
 .news-post-wrapper {
   border-bottom: 1px solid #bdbdbd;
 }
 
-/* line 140, ../scss/partials/_wen.scss */
+/* line 156, ../scss/partials/_wen.scss */
 .post-header {
   margin-bottom: 0;
   font-size: 2.8em;
 }
 @media (max-width: 810px) {
-  /* line 140, ../scss/partials/_wen.scss */
+  /* line 156, ../scss/partials/_wen.scss */
   .post-header {
     margin-top: 20px !important;
   }
 }
 @media (max-width: 767px) {
-  /* line 140, ../scss/partials/_wen.scss */
+  /* line 156, ../scss/partials/_wen.scss */
   .post-header {
     font-size: 2.2em;
   }
 }
 
-/* line 153, ../scss/partials/_wen.scss */
+/* line 169, ../scss/partials/_wen.scss */
 .news-post-inner {
   margin-bottom: -16px;
 }
 
-/* line 157, ../scss/partials/_wen.scss */
+/* line 173, ../scss/partials/_wen.scss */
 .news-logos-container {
   margin-top: 30px;
 }
-/* line 159, ../scss/partials/_wen.scss */
+/* line 175, ../scss/partials/_wen.scss */
 .news-logos-container img {
   height: 32px;
   margin-right: 40px;
 }
 @media (max-width: 810px) {
-  /* line 157, ../scss/partials/_wen.scss */
+  /* line 173, ../scss/partials/_wen.scss */
   .news-logos-container {
     margin-top: -100px;
     margin-bottom: 30px;
   }
 }
 @media (max-width: 767px) {
-  /* line 157, ../scss/partials/_wen.scss */
+  /* line 173, ../scss/partials/_wen.scss */
   .news-logos-container {
     margin-top: 0;
     margin-bottom: 30px;
   }
 }
 
-/* line 178, ../scss/partials/_wen.scss */
+/* line 194, ../scss/partials/_wen.scss */
 .media-inquiry-info {
   margin-top: 80px;
 }
 
-/* line 182, ../scss/partials/_wen.scss */
+/* line 198, ../scss/partials/_wen.scss */
 .mail-link {
   color: #ed228b !important;
 }
+/* line 201, ../scss/partials/_wen.scss */
+.mail-link:hover {
+  text-decoration: underline;
+}
 
-/* line 186, ../scss/partials/_wen.scss */
+/* line 206, ../scss/partials/_wen.scss */
 .small-title {
   font-weight: 400;
 }
 
-/* line 192, ../scss/partials/_wen.scss */
+/* line 212, ../scss/partials/_wen.scss */
 form input {
   display: inline;
 }
-/* line 197, ../scss/partials/_wen.scss */
+/* line 217, ../scss/partials/_wen.scss */
 form input, form textarea {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   outline: none;
   font-family: "franklin-gothic-urw",sans-serif !important;
 }
-/* line 203, ../scss/partials/_wen.scss */
+/* line 223, ../scss/partials/_wen.scss */
 form ::-webkit-input-placeholder, form ::-webkit-textarea-placeholder {
   color: #323944;
   font-weight: 500;
   text-transform: uppercase;
 }
-/* line 209, ../scss/partials/_wen.scss */
+/* line 229, ../scss/partials/_wen.scss */
 form :-moz-placeholder {
   /* Firefox 18- */
   color: #323944;
   font-weight: 500;
   text-transform: uppercase;
 }
-/* line 215, ../scss/partials/_wen.scss */
+/* line 235, ../scss/partials/_wen.scss */
 form ::-moz-placeholder {
   /* Firefox 19+ */
   color: #323944;
   font-weight: 500;
   text-transform: uppercase;
 }
-/* line 221, ../scss/partials/_wen.scss */
+/* line 241, ../scss/partials/_wen.scss */
 form :-ms-input-placeholder {
   color: #323944;
   font-weight: 500;
   text-transform: uppercase;
 }
-/* line 227, ../scss/partials/_wen.scss */
+/* line 247, ../scss/partials/_wen.scss */
 form input:focus, form textarea:focus {
   box-shadow: 0 0 5px #ed228b;
   border: 1px solid #ed228b;
 }
-/* line 232, ../scss/partials/_wen.scss */
+/* line 252, ../scss/partials/_wen.scss */
 form div {
   display: inline-block;
   padding: 10px 10px;
@@ -5046,44 +5054,44 @@ form div {
   font-weight: 500;
   text-transform: uppercase;
 }
-/* line 240, ../scss/partials/_wen.scss */
+/* line 260, ../scss/partials/_wen.scss */
 form .full-width {
   width: 100%;
 }
-/* line 244, ../scss/partials/_wen.scss */
+/* line 264, ../scss/partials/_wen.scss */
 form input[type="text"], form input[type="email"], form input[type="tel"], form input[type="url"], form textarea {
   background-color: white;
   border: 1px solid #bdbdbd;
   border-radius: 0;
 }
-/* line 250, ../scss/partials/_wen.scss */
+/* line 270, ../scss/partials/_wen.scss */
 form textarea {
   resize: none;
 }
-/* line 254, ../scss/partials/_wen.scss */
+/* line 274, ../scss/partials/_wen.scss */
 form input[type="radio"] {
   margin-right: 8px;
 }
-/* line 258, ../scss/partials/_wen.scss */
+/* line 278, ../scss/partials/_wen.scss */
 form label {
   margin-right: 20px;
 }
 
-/* line 264, ../scss/partials/_wen.scss */
+/* line 284, ../scss/partials/_wen.scss */
 .general {
   float: right;
 }
 
-/* line 268, ../scss/partials/_wen.scss */
+/* line 288, ../scss/partials/_wen.scss */
 .wpcf7-captchac {
   padding-top: 10px;
 }
 
-/* line 272, ../scss/partials/_wen.scss */
+/* line 292, ../scss/partials/_wen.scss */
 .form-submit {
   float: right;
 }
-/* line 276, ../scss/partials/_wen.scss */
+/* line 296, ../scss/partials/_wen.scss */
 .form-submit input[type=submit] {
   color: white;
   white-space: nowrap;
@@ -5096,27 +5104,27 @@ form label {
   border: 0 none;
   width: 100%;
 }
-/* line 288, ../scss/partials/_wen.scss */
+/* line 308, ../scss/partials/_wen.scss */
 .form-submit input[type=submit]:hover {
   background-color: #ed228b;
 }
 
-/* line 295, ../scss/partials/_wen.scss */
+/* line 315, ../scss/partials/_wen.scss */
 #sidebar-intro p {
   margin-bottom: 15px;
 }
 @media (max-width: 768px) {
-  /* line 294, ../scss/partials/_wen.scss */
+  /* line 314, ../scss/partials/_wen.scss */
   #sidebar-intro {
     margin: auto;
     text-align: left;
   }
 }
-/* line 304, ../scss/partials/_wen.scss */
+/* line 324, ../scss/partials/_wen.scss */
 #sidebar-intro ul {
   list-style-position: inside;
 }
-/* line 307, ../scss/partials/_wen.scss */
+/* line 327, ../scss/partials/_wen.scss */
 #sidebar-intro ul li:before {
   color: #ed228b;
   content: "\2022";
@@ -5125,23 +5133,23 @@ form label {
   position: relative;
   top: .1em;
 }
-/* line 316, ../scss/partials/_wen.scss */
+/* line 336, ../scss/partials/_wen.scss */
 #sidebar-intro ul ul {
   margin-top: -0.2em;
 }
-/* line 320, ../scss/partials/_wen.scss */
+/* line 340, ../scss/partials/_wen.scss */
 #sidebar-intro ul ul li:before {
   color: #bdbdbd;
   font-size: 1.2em;
 }
 
-/* line 332, ../scss/partials/_wen.scss */
+/* line 352, ../scss/partials/_wen.scss */
 .our-solutions-list h2 {
   font-family: "franklin-gothic-urw",sans-serif;
   margin-top: -1.6em;
 }
 
-/* line 339, ../scss/partials/_wen.scss */
+/* line 359, ../scss/partials/_wen.scss */
 .first-p {
   font-size: 1.5em !important;
   margin-bottom: 1em !important;
@@ -5149,22 +5157,22 @@ form label {
   line-height: 1.2em;
 }
 
-/* line 347, ../scss/partials/_wen.scss */
+/* line 367, ../scss/partials/_wen.scss */
 .sub-page-content-wrapper img {
   margin-bottom: 0;
 }
 
-/* line 355, ../scss/partials/_wen.scss */
+/* line 375, ../scss/partials/_wen.scss */
 #opt {
   text-align: center;
   margin-top: 20px;
 }
-/* line 359, ../scss/partials/_wen.scss */
+/* line 379, ../scss/partials/_wen.scss */
 #opt .opt_btn_wrapper {
   margin-top: 30px;
 }
 
-/* line 364, ../scss/partials/_wen.scss */
+/* line 384, ../scss/partials/_wen.scss */
 #ooButton {
   margin-top: 20px;
   cursor: pointer;
@@ -5177,18 +5185,18 @@ form label {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-/* line 375, ../scss/partials/_wen.scss */
+/* line 395, ../scss/partials/_wen.scss */
 #ooButton:hover {
   background-color: #ed228b;
 }
 
 @media (max-width: 560px) {
-  /* line 381, ../scss/partials/_wen.scss */
+  /* line 401, ../scss/partials/_wen.scss */
   .wpcf7-list-item {
     display: block;
   }
 }
-/* line 386, ../scss/partials/_wen.scss */
+/* line 406, ../scss/partials/_wen.scss */
 .no-found-msg {
   color: #ed228b;
 }
@@ -5331,7 +5339,7 @@ h1 {
     height: 5em;
   }
 }
-/* line 134, ../scss/partials/_charles-font.scss */
+/* line 133, ../scss/partials/_charles-font.scss */
 .page-id-11 #main a {
   color: #dd1420;
   -webkit-transition: all 200ms;
@@ -5340,25 +5348,29 @@ h1 {
   -ms-transition: all 200ms;
   transition: all 200ms;
 }
-/* line 138, ../scss/partials/_charles-font.scss */
+/* line 137, ../scss/partials/_charles-font.scss */
 .page-id-11 #main a:hover {
   text-decoration: underline;
 }
-/* line 145, ../scss/partials/_charles-font.scss */
+/* line 146, ../scss/partials/_charles-font.scss */
+.page-id-11 .secondary li.page_item a {
+  color: #626262;
+}
+/* line 155, ../scss/partials/_charles-font.scss */
 .page-id-11 .secondary .page_item.page-item-11 a:hover {
   color: #dd1420;
   text-decoration: underline;
 }
-/* line 151, ../scss/partials/_charles-font.scss */
+/* line 161, ../scss/partials/_charles-font.scss */
 .page-id-11 .secondary .current_page_item a {
-  color: #dd1420;
+  color: #dd1420 !important;
 }
-/* line 153, ../scss/partials/_charles-font.scss */
+/* line 163, ../scss/partials/_charles-font.scss */
 .page-id-11 .secondary .current_page_item a:hover {
   color: #dd1420;
   text-decoration: underline;
 }
-/* line 159, ../scss/partials/_charles-font.scss */
+/* line 169, ../scss/partials/_charles-font.scss */
 .page-id-11 .secondary a {
   color: #dd1420;
   -webkit-transition: all 200ms;
@@ -5367,27 +5379,27 @@ h1 {
   -ms-transition: all 200ms;
   transition: all 200ms;
 }
-/* line 162, ../scss/partials/_charles-font.scss */
+/* line 172, ../scss/partials/_charles-font.scss */
 .page-id-11 .secondary a:hover {
   text-decoration: underline;
 }
 
-/* line 171, ../scss/partials/_charles-font.scss */
+/* line 181, ../scss/partials/_charles-font.scss */
 .page-item-11 a {
-  color: #dd1420;
+  color: #626262;
   -webkit-transition: all 200ms;
   -moz-transition: all 200ms;
   -o-transition: all 200ms;
   -ms-transition: all 200ms;
   transition: all 200ms;
 }
-/* line 175, ../scss/partials/_charles-font.scss */
+/* line 186, ../scss/partials/_charles-font.scss */
 .page-item-11 a:hover {
   color: #dd1420;
   text-decoration: underline;
 }
 
-/* line 186, ../scss/partials/_charles-font.scss */
+/* line 197, ../scss/partials/_charles-font.scss */
 .page-id-13 #main a {
   color: #fba211;
   -webkit-transition: all 200ms;
@@ -5396,25 +5408,29 @@ h1 {
   -ms-transition: all 200ms;
   transition: all 200ms;
 }
-/* line 190, ../scss/partials/_charles-font.scss */
+/* line 201, ../scss/partials/_charles-font.scss */
 .page-id-13 #main a:hover {
   text-decoration: underline;
 }
-/* line 197, ../scss/partials/_charles-font.scss */
+/* line 209, ../scss/partials/_charles-font.scss */
+.page-id-13 .secondary li.page_item a {
+  color: #626262;
+}
+/* line 217, ../scss/partials/_charles-font.scss */
 .page-id-13 .secondary .page_item.page-item-13 a:hover {
   color: #fba211;
   text-decoration: underline;
 }
-/* line 203, ../scss/partials/_charles-font.scss */
+/* line 223, ../scss/partials/_charles-font.scss */
 .page-id-13 .secondary .current_page_item a {
-  color: #fba211;
+  color: #fba211 !important;
 }
-/* line 205, ../scss/partials/_charles-font.scss */
+/* line 225, ../scss/partials/_charles-font.scss */
 .page-id-13 .secondary .current_page_item a:hover {
   color: #fba211;
   text-decoration: underline;
 }
-/* line 211, ../scss/partials/_charles-font.scss */
+/* line 231, ../scss/partials/_charles-font.scss */
 .page-id-13 .secondary a {
   color: #fba211;
   -webkit-transition: all 200ms;
@@ -5423,27 +5439,27 @@ h1 {
   -ms-transition: all 200ms;
   transition: all 200ms;
 }
-/* line 214, ../scss/partials/_charles-font.scss */
+/* line 234, ../scss/partials/_charles-font.scss */
 .page-id-13 .secondary a:hover {
   color: #fba211;
   text-decoration: underline;
 }
 
-/* line 223, ../scss/partials/_charles-font.scss */
+/* line 243, ../scss/partials/_charles-font.scss */
 .page-item-13 a {
-  color: #fba211;
+  color: #626262;
   -webkit-transition: all 200ms;
   -moz-transition: all 200ms;
   -o-transition: all 200ms;
   -ms-transition: all 200ms;
   transition: all 200ms;
 }
-/* line 226, ../scss/partials/_charles-font.scss */
+/* line 248, ../scss/partials/_charles-font.scss */
 .page-item-13 a:hover {
   text-decoration: underline;
 }
 
-/* line 236, ../scss/partials/_charles-font.scss */
+/* line 258, ../scss/partials/_charles-font.scss */
 .page-id-24 #main a {
   color: #8fc73e;
   -webkit-transition: all 200ms;
@@ -5452,25 +5468,29 @@ h1 {
   -ms-transition: all 200ms;
   transition: all 200ms;
 }
-/* line 240, ../scss/partials/_charles-font.scss */
+/* line 262, ../scss/partials/_charles-font.scss */
 .page-id-24 #main a:hover {
   text-decoration: underline;
 }
-/* line 247, ../scss/partials/_charles-font.scss */
+/* line 270, ../scss/partials/_charles-font.scss */
+.page-id-24 .secondary li.page_item a {
+  color: #626262;
+}
+/* line 279, ../scss/partials/_charles-font.scss */
 .page-id-24 .secondary .page_item.page-item-24 a:hover {
   color: #8fc73e;
   text-decoration: underline;
 }
-/* line 253, ../scss/partials/_charles-font.scss */
+/* line 285, ../scss/partials/_charles-font.scss */
 .page-id-24 .secondary .current_page_item a {
-  color: #8fc73e;
+  color: #8fc73e !important;
 }
-/* line 255, ../scss/partials/_charles-font.scss */
+/* line 287, ../scss/partials/_charles-font.scss */
 .page-id-24 .secondary .current_page_item a:hover {
   color: #8fc73e;
   text-decoration: underline;
 }
-/* line 261, ../scss/partials/_charles-font.scss */
+/* line 293, ../scss/partials/_charles-font.scss */
 .page-id-24 .secondary a {
   color: #8fc73e;
   -webkit-transition: all 200ms;
@@ -5479,27 +5499,27 @@ h1 {
   -ms-transition: all 200ms;
   transition: all 200ms;
 }
-/* line 264, ../scss/partials/_charles-font.scss */
+/* line 296, ../scss/partials/_charles-font.scss */
 .page-id-24 .secondary a:hover {
   color: #8fc73e;
   text-decoration: underline;
 }
 
-/* line 273, ../scss/partials/_charles-font.scss */
+/* line 305, ../scss/partials/_charles-font.scss */
 .page-item-24 a {
-  color: #8fc73e;
+  color: #626262;
   -webkit-transition: all 200ms;
   -moz-transition: all 200ms;
   -o-transition: all 200ms;
   -ms-transition: all 200ms;
   transition: all 200ms;
 }
-/* line 276, ../scss/partials/_charles-font.scss */
+/* line 310, ../scss/partials/_charles-font.scss */
 .page-item-24 a:hover {
   text-decoration: underline;
 }
 
-/* line 285, ../scss/partials/_charles-font.scss */
+/* line 319, ../scss/partials/_charles-font.scss */
 .page-id-15 #main a {
   color: #039fd3;
   -webkit-transition: all 200ms;
@@ -5508,25 +5528,29 @@ h1 {
   -ms-transition: all 200ms;
   transition: all 200ms;
 }
-/* line 289, ../scss/partials/_charles-font.scss */
+/* line 323, ../scss/partials/_charles-font.scss */
 .page-id-15 #main a:hover {
   text-decoration: underline;
 }
-/* line 296, ../scss/partials/_charles-font.scss */
+/* line 332, ../scss/partials/_charles-font.scss */
+.page-id-15 .secondary li.page_item a {
+  color: #626262;
+}
+/* line 341, ../scss/partials/_charles-font.scss */
 .page-id-15 .secondary .page_item.page-item-15 a:hover {
   color: #039fd3;
   text-decoration: underline;
 }
-/* line 303, ../scss/partials/_charles-font.scss */
+/* line 348, ../scss/partials/_charles-font.scss */
 .page-id-15 .secondary .current_page_item a {
-  color: #039fd3;
+  color: #039fd3 !important;
 }
-/* line 305, ../scss/partials/_charles-font.scss */
+/* line 350, ../scss/partials/_charles-font.scss */
 .page-id-15 .secondary .current_page_item a:hover {
   color: #039fd3;
   text-decoration: underline;
 }
-/* line 311, ../scss/partials/_charles-font.scss */
+/* line 356, ../scss/partials/_charles-font.scss */
 .page-id-15 .secondary a {
   color: #039fd3;
   -webkit-transition: all 200ms;
@@ -5535,60 +5559,60 @@ h1 {
   -ms-transition: all 200ms;
   transition: all 200ms;
 }
-/* line 314, ../scss/partials/_charles-font.scss */
+/* line 359, ../scss/partials/_charles-font.scss */
 .page-id-15 .secondary a:hover {
   color: #039fd3;
   text-decoration: underline;
 }
 
-/* line 323, ../scss/partials/_charles-font.scss */
+/* line 368, ../scss/partials/_charles-font.scss */
 .page-item-15 a {
-  color: #039fd3;
+  color: #626262;
   -webkit-transition: all 200ms;
   -moz-transition: all 200ms;
   -o-transition: all 200ms;
   -ms-transition: all 200ms;
   transition: all 200ms;
 }
-/* line 326, ../scss/partials/_charles-font.scss */
+/* line 373, ../scss/partials/_charles-font.scss */
 .page-item-15 a:hover {
   text-decoration: underline;
 }
 
-/* line 332, ../scss/partials/_charles-font.scss */
+/* line 379, ../scss/partials/_charles-font.scss */
 #sidebar1 > ul > li.page_item.page-item-13 > a:hover {
   color: #fba211;
 }
 
-/* line 333, ../scss/partials/_charles-font.scss */
+/* line 380, ../scss/partials/_charles-font.scss */
 #sidebar1 > ul > li.page_item.page-item-15 > a:hover {
   color: #039fd3;
 }
 
-/* line 334, ../scss/partials/_charles-font.scss */
+/* line 381, ../scss/partials/_charles-font.scss */
 #sidebar1 > ul > li.page_item.page-item-24 > a:hover {
   color: #8fc73e;
 }
 
-/* line 335, ../scss/partials/_charles-font.scss */
+/* line 382, ../scss/partials/_charles-font.scss */
 #sidebar1 > ul > li.page_item.page-item-11 > a:hover {
   color: #dd1420;
 }
 
 @media (min-width: 811px) {
-  /* line 340, ../scss/partials/_charles-font.scss */
+  /* line 387, ../scss/partials/_charles-font.scss */
   .nav {
     border: 0;
     /* end .menu ul li */
     /* highlight current page */
     /* end current highlighters */
   }
-  /* line 342, ../scss/partials/_charles-font.scss */
+  /* line 389, ../scss/partials/_charles-font.scss */
   .nav ul {
     background: #323944;
     margin-top: 0;
   }
-  /* line 346, ../scss/partials/_charles-font.scss */
+  /* line 393, ../scss/partials/_charles-font.scss */
   .nav li {
     float: left;
     position: relative;
@@ -5597,7 +5621,7 @@ h1 {
     */
     /* showing sub-menus */
   }
-  /* line 350, ../scss/partials/_charles-font.scss */
+  /* line 397, ../scss/partials/_charles-font.scss */
   .nav li a {
     border-bottom: 0;
     /*
@@ -5605,12 +5629,12 @@ h1 {
     has the possibility of being a mobile device.
     */
   }
-  /* line 357, ../scss/partials/_charles-font.scss */
+  /* line 404, ../scss/partials/_charles-font.scss */
   .nav li a:hover, .nav li a:focus {
     color: white;
     text-decoration: underline;
   }
-  /* line 370, ../scss/partials/_charles-font.scss */
+  /* line 417, ../scss/partials/_charles-font.scss */
   .nav li ul.sub-menu,
   .nav li ul.children {
     margin-top: 0;
@@ -5621,7 +5645,7 @@ h1 {
     z-index: 8999;
     /* highlight sub-menu current page */
   }
-  /* line 378, ../scss/partials/_charles-font.scss */
+  /* line 425, ../scss/partials/_charles-font.scss */
   .nav li ul.sub-menu li,
   .nav li ul.children li {
     /*
@@ -5630,7 +5654,7 @@ h1 {
     for usability. k, bai.
     */
   }
-  /* line 380, ../scss/partials/_charles-font.scss */
+  /* line 427, ../scss/partials/_charles-font.scss */
   .nav li ul.sub-menu li a,
   .nav li ul.children li a {
     padding-left: 10px;
@@ -5639,18 +5663,18 @@ h1 {
     width: 180px;
     border-bottom: 1px solid #ccc;
   }
-  /* line 397, ../scss/partials/_charles-font.scss */
+  /* line 444, ../scss/partials/_charles-font.scss */
   .nav li ul.sub-menu li:last-child a,
   .nav li ul.children li:last-child a {
     border-bottom: 0;
   }
-  /* line 407, ../scss/partials/_charles-font.scss */
+  /* line 454, ../scss/partials/_charles-font.scss */
   .nav li ul.sub-menu li ul,
   .nav li ul.children li ul {
     top: 0;
     left: 100%;
   }
-  /* line 422, ../scss/partials/_charles-font.scss */
+  /* line 469, ../scss/partials/_charles-font.scss */
   .nav li:hover > ul {
     top: auto;
     visibility: visible;
@@ -5658,12 +5682,12 @@ h1 {
 
   /* end .nav */
 }
-/* line 444, ../scss/partials/_charles-font.scss */
+/* line 491, ../scss/partials/_charles-font.scss */
 body #content {
   margin-bottom: 80px;
 }
 
-/* line 451, ../scss/partials/_charles-font.scss */
+/* line 498, ../scss/partials/_charles-font.scss */
 .lower-columns ul li ul li {
   line-height: 1.1rem;
   padding: .2rem 0;
@@ -5671,7 +5695,7 @@ body #content {
   padding-left: 1.25em;
 }
 
-/* line 460, ../scss/partials/_charles-font.scss */
+/* line 507, ../scss/partials/_charles-font.scss */
 .lower-columns ul li ul li:before {
   color: #ed228b;
   content: "\2022";
@@ -5686,36 +5710,41 @@ body #content {
   height: 1em;
 }
 
-/* line 475, ../scss/partials/_charles-font.scss */
+/* line 522, ../scss/partials/_charles-font.scss */
 .page-id-13 .lower-columns ul li ul li:before {
   color: #fba211;
 }
 
-/* line 481, ../scss/partials/_charles-font.scss */
+/* line 528, ../scss/partials/_charles-font.scss */
 .page-id-15 .lower-columns ul li ul li:before {
   color: #039fd3;
 }
 
-/* line 487, ../scss/partials/_charles-font.scss */
+/* line 534, ../scss/partials/_charles-font.scss */
 .page-id-24 .lower-columns ul li ul li:before {
   color: #8fc73e;
 }
 
-/* line 493, ../scss/partials/_charles-font.scss */
+/* line 540, ../scss/partials/_charles-font.scss */
 .page-id-11 .lower-columns ul li ul li:before {
   color: #dd1420;
 }
 
-/* line 501, ../scss/partials/_charles-font.scss */
+/* line 548, ../scss/partials/_charles-font.scss */
 #sidebar1 {
   padding-left: 0;
   position: relative;
 }
 @media (min-width: 811px) {
-  /* line 501, ../scss/partials/_charles-font.scss */
+  /* line 548, ../scss/partials/_charles-font.scss */
   #sidebar1 {
     padding-left: 10px;
   }
+}
+
+/* line 557, ../scss/partials/_charles-font.scss */
+.sidebar-selected {
+  color: #ed228b;
 }
 
 /* line 4, ../scss/partials/_contact.scss */
