@@ -49,41 +49,17 @@
 										
 										while(has_sub_field('careers_list')): 
 
+									
+										$feat_check = get_sub_field('featured_checkbox');
 
-										
-										//if( in_array( 'featured', get_field('careers_list') ) )
-										//{
-										    
-										    //echo the_sub_field('job_title');
-										//} 
-
-
-									// $posts = get_posts(array(
-									//     'meta_query' => array(
-									//         array(
-									//             'key' => 'careers_list', // name of custom field
-									//             'value' => '"Featured"', // matches exaclty "red", not just red. This prevents a match for "acquired"
-									//             // 'compare' => 'LIKE'
-									//         )
-									//     )
-									// ));
-
-									// if( $posts )
-									// {
-									//     echo the_sub_field('job_title');
-									//} 
-
-										// echo '<pre>';
-										// var_dump(get_field('featured_checkbox'));
-										// echo '</pre>';
-
-
-
-
-											?>
-
-										<!-- ACCORDION START -->
-										<div class="job_wrapper">
+										// if ($feat_check) {
+										// 	echo '<div class="featured_job">';
+										// 	echo the_sub_field('job_title');
+										// 	echo the_sub_field('job_description');
+										// 	echo '</div>';
+										// } else {
+											// <!-- ACCORDION START -->
+										?> <div class="job_wrapper">
 											<a class="accordion"><?php echo the_sub_field('job_title'); ?><img class="tab_arrow" id="a-right" src="<?php bloginfo('url'); ?>/img/arrow-right.png"><img class="tab_arrow" id="a-down" src="<?php bloginfo('url'); ?>/img/arrow-down.png"></a>
 
 											<div class="job_hidden">
@@ -96,6 +72,9 @@
 											</div>
 										</div>
 										<!-- ACCORDION END -->
+										<?php //}?>
+
+										
 
 										<?php endwhile;
 										endif;  ?>
