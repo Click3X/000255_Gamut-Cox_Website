@@ -134,18 +134,16 @@
           <div class="clearfix subpage">
             <div class="p-holder">
                 <p class="p"><?php echo $convergence_intro_content; ?></p>
-            </div>
-            <div class="half blue">
-              <a href="#" class="gamut-btn abs-center">LEARN HOW&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
-            </div>
-            <div class="half red">
-              <img id="crossmedia-logo" src="<?php bloginfo('url'); ?>/img/home-logos/crossmedia-logo.png" alt="crossmedia">
-              <div id="fly-it-4" class="bg-img crossmedia"></div>
-            </div>
+              </div>
+              <div class="half blue">
+                <a href="#" class="gamut-btn abs-center">LEARN HOW&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
+              </div>
+              <div class="half red">
+                <img id="crossmedia-logo" src="<?php bloginfo('url'); ?>/img/home-logos/crossmedia-logo.png" alt="crossmedia">
+                <div id="fly-it-4" class="bg-img crossmedia"></div>
+              </div>
           </div>
-          
         </div>
-
       </div>
       <div class="parallax__layer parallax__layer--deep">
         <div class="title">Deep Background Layer</div>

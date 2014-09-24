@@ -237,7 +237,6 @@ function bones_scripts_and_styles() {
 			// wp_enqueue_script( 'scrollorama' );
 			// wp_enqueue_script( 'scroll' );
 		}
-
 	}
 }
 

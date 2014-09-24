@@ -28,9 +28,13 @@
   #group1 {
     // z-index: 5; /* slide over group 2 */
     z-index: 3;
+    max-height: 100vh;
   }
   #group1 .parallax__layer--base {
     background:transparent;
+  }
+  #group1 .parallax__layer--deep {
+    height: 130%;
   }
 
   #group2 {
@@ -51,6 +55,7 @@
 
   #group4 {
     z-index: 2; /* slide under group 3 and 5 */
+    max-height: 600px;
   }
   #group4 .parallax__layer--deep {
      background-color: rgb(61,61,61);
@@ -65,6 +70,7 @@
 
   #group6 {
     z-index: 2; /* slide under group 5 and 7 */
+    max-height: 800px;
 
     .wrap-holder {
       width:100%;
@@ -74,8 +80,10 @@
       margin: auto;
       position: absolute;
       // top: 25%;
-      top:0;
-      bottom: 0;
+      // top:0;
+      // bottom: 0;
+      bottom: auto;
+      top: 33%;
       left: 0;
       right: 0;
       // height: 300px;
@@ -91,10 +99,15 @@
 
   #group7 {
     z-index: 3; /* slide over group 7 */
+    max-height: 960px;
   }
   #group7 .parallax__layer--base {
     // background: rgb(255,241,100);
 
+  }
+
+  #group8 {
+    max-height: 661px;
   }
 }
 
@@ -398,3 +411,92 @@
   bottom:auto;
   }
 }
+
+
+/// NEW STYLES
+
+.carr,
+.smart {
+  .clearfix {
+    p {
+      margin-bottom:1.8rem;
+    }
+  }
+  .gbtn-holders {
+    float: right;
+    width: 100%;
+    width: 28.4rem;
+    padding-left:.5rem;
+    clear: right;
+    .gamut-btn {
+      margin-left:0;
+    }
+  }
+}
+
+.smart {
+  .gbtn-holders {
+    clear: left;
+    float: left;
+    padding-left: 0;
+  }
+  p {
+    margin-bottom: 1.8rem;
+  }
+}
+
+#group5 .gamut-btn {
+  margin-left: 11%;
+}
+
+.pad {
+
+  #group1 {
+    max-height: none;
+      height: 0px;
+     padding-bottom:50%;
+
+     @media(min-width: 1600px) {
+      padding-bottom: 800px;
+     }
+  }
+
+
+  #group2 {
+    max-height: none;
+      height: 0px;
+     padding-bottom:35.5%;
+
+     @media(min-width: 1600px) {
+      padding-bottom: 568px;
+     }
+  }
+
+  #group3 {
+    max-height: none;
+      height: 0px;
+     padding-bottom:32.5%;
+
+     @media(min-width: 1600px) {
+      padding-bottom: 520px;
+     }
+  }
+
+  .subpage {
+    // padding-bottom: 27.5%;
+    // @media(min-width: 1600px) {
+    //   padding-bottom: 440px;
+    //  }
+  }
+
+  #group3 {
+    max-height: none;
+    height: 0px;
+    padding-bottom:32.5%;
+
+     @media(min-width: 1600px) {
+      padding-bottom: 520px;
+    }
+  }
+}
+
