@@ -51,7 +51,7 @@
                 <div class="difference">
                   <?php echo $our_solutions_content ?>
                 </div>
-                <a href="#" class="gamut-btn diff">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
+               <!--  <a href="#" class="gamut-btn diff">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a> -->
               </div>
             </div>
           </div>
@@ -73,6 +73,8 @@
     </div>
 
 
+
+
     <!-- SUBPAGES -->
     <div id="group3" class="parallax__group">
       <div class="parallax__layer parallax__layer--base">
@@ -88,10 +90,10 @@
           <div class="subpage-wrapper-c clearfix">
             <div class="clearfix subpage-holder">
               <div class="p-holder">
-                <p class="p"><?php echo $programmatic_intro_content; ?></p>
+                <?php echo $programmatic_intro_content; ?>
               </div>
               <div class="half blue">
-                <a href="#" class="gamut-btn abs-center">LEARN HOW&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
+                <a href="<?php echo get_permalink(11);?>" class="gamut-btn abs-center">LEARN HOW&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
               </div>
               <div class="half red">
                 <img id="pro-logo" src="<?php bloginfo('url'); ?>/img/home-logos/programmatic-logo.png" alt="programmatic">
@@ -106,10 +108,10 @@
           <div class="subpage-wrapper-c clearfix">
             <div class="clearfix subpage-holder">
               <div class="p-holder">
-                <p class="p"><?php echo $reps_intro_content; ?></p>
+                <?php echo $reps_intro_content; ?>
               </div>
               <div class="half blue">
-                <a href="#" class="gamut-btn abs-center">LEARN HOW&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
+                <a href="<?php echo get_permalink(15);?>" class="gamut-btn abs-center">LEARN HOW&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
               </div>
               <div class="half red">
                 <img id="rep-logo" src="<?php bloginfo('url'); ?>/img/home-logos/reps-logo.png" alt="reps">
@@ -123,10 +125,10 @@
           <div class="subpage-wrapper-c clearfix">
             <div class="clearfix subpage-holder">
               <div class="p-holder">
-                <p class="p"><?php echo $reach_intro_content; ?></p>
+                <?php echo $reach_intro_content; ?>
               </div>
               <div class="half blue">
-                <a href="#" class="gamut-btn abs-center">LEARN HOW&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
+                <a href="<?php echo get_permalink(24);?>" class="gamut-btn abs-center">LEARN HOW&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
               </div>
               <div class="half red">
                 <img id="reach-logo" src="<?php bloginfo('url'); ?>/img/home-logos/reach-logo.png" alt="reach">
@@ -139,10 +141,10 @@
           <div class="subpage-wrapper-c clearfix">
             <div class="clearfix subpage-holder">
               <div class="p-holder">
-                <p class="p"><?php echo $convergence_intro_content; ?></p>
+                <?php echo $convergence_intro_content; ?>
               </div>
               <div class="half blue">
-                <a href="#" class="gamut-btn abs-center">LEARN HOW&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
+                <a href="<?php echo get_permalink(13);?>" class="gamut-btn abs-center">LEARN HOW&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
               </div>
               <div class="half red">
                 <img id="crossmedia-logo" src="<?php bloginfo('url'); ?>/img/home-logos/crossmedia-logo.png" alt="crossmedia">
@@ -161,20 +163,34 @@
     <div id="group4" class="parallax__group">
     
       <!-- IMAGES GO HERE -->
-      <div class="parallax__layer parallax__layer--base">
+      <div class="parallax__layer parallax__layer--base grey-bg">
         <!-- <div class="title">Base Layer 4</div> -->
+        <div class="clearfix wrap-holder">
+            <div class="new-home-wrap abs-center white grey-bg dif">
+              <div class="clearfix diff-2">              
+                <h1><?php echo $gamut_difference_title ?></h1>
+                <div class="difference"><?php echo $gamut_difference_content ?></div>
+                <div class="clearfix gbtn-holders"> 
+                  <a href="<?php echo get_permalink(11);?>" class="gamut-btn diff">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
     
       <div class="parallax__layer parallax__layer--back">
         <!-- <div class="title">Background Layer 4</div> -->
-          <div class="clearfix wrap-holder">
-            <div class="abs-center white grey-bg dif">
+          <!-- <div class="clearfix wrap-holder">
+            <div class="new-home-wrap abs-center white grey-bg dif">
               <div class="clearfix diff-2">              
                 <h1><?php echo $gamut_difference_title ?></h1>
                 <div class="difference"><?php echo $gamut_difference_content ?></div>
+                <div class="clearfix gbtn-holders"> 
+                  <a href="<?php echo get_permalink(11);?>" class="gamut-btn diff">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
+                </div>
               </div>
             </div>
-          </div>
+          </div> -->
       </div>
     
       <div class="parallax__layer parallax__layer--deep grey-bg">
@@ -185,6 +201,12 @@
 
     <div id="group6" class="parallax__group">
       <div class="parallax__layer parallax__layer--back">
+        
+      </div>
+      
+      <!-- SMART  -->
+      <div class="parallax__layer parallax__layer--base">
+        <!-- <div class="title">Base Layer 6</div> -->
         <!-- <div class="title">Deep Layer 6</div> -->
         <div class="clearfix abs-holder">
             <div class="clearfix white-bg">
@@ -198,15 +220,14 @@
                   <h1 class="plus-sign"><?php echo $smart_service_title; ?></h1>
                 </div>
                 <?php echo $smart_service_content; ?>
+                <div class="clearfix gbtn-holders">
+                  <a href="<?php echo get_permalink(61);?>" class="gamut-btn diff">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      
-      <!-- SMART  -->
-      <div class="parallax__layer parallax__layer--base">
-        <!-- <div class="title">Base Layer 6</div> -->
+
       </div>
     </div>
 
@@ -222,12 +243,16 @@
                   <div class="clearfix">
                     <h1><?php echo $careers_title ?></h1>
                     <?php echo $careers_content ?>
+                    <div class="clearfix gbtn-holders">
+                      <a href="<?php echo get_permalink(388);?>" class="gamut-btn diff">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
+                    </div>
                   </div>
                 </div>
               </div>
           </div>
         <!-- <div class="title">Base Layer 7</div> -->
       </div>
-
+    </div>
+    <div id="group8" class="parallax__group">
       
   <!-- </div> PARALLAX IS CLOSED ON FOOTER.PHP FOR HOME PAGE-->

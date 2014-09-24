@@ -86,10 +86,12 @@ the other stylesheets. Remember, keep it light: Speed is Important.
 // PARALLAX FOR HOME PAGE
 // @import "modules/parallax";
 @import "modules/para-friday";
-@import "modules/para-friday-new";
-@import "modules/parallax-tues";
+// @import "modules/para-friday-new";
+
+// @import "modules/parallax-tues";
 // parallax mobile
-@import "modules/parallax-mobile";
+// @import "modules/parallax-mobile";
+@import "modules/para-new";
 
 // SLIDER
 @import "modules/home-slider";
