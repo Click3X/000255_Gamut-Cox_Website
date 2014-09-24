@@ -126,7 +126,7 @@ endif;
 						       <ul class="team-member">
 							        <li class="address"><h3 class="gothic"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3></li>
 							        <li class="emp-title"><?php echo $title; ?></li>
-							        <li class="email"><a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a></li>
+							        <li class="email"><a href="mailto: <?php echo antispambot($email); ?>"><?php echo antispambot($email); ?></a></li>
 							        <li class="telephone"><a href="tel:<?php echo $telephone; ?>"></a><?php echo $telephone; ?></li>
 						        </ul>
 						       <?php
