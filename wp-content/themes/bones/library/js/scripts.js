@@ -131,6 +131,9 @@ $(".jobSlideUp").click(function(){
   $(this).parent().slideToggle('fast');
 });
 
+// reorder careers order
+$('.featured_job').prependTo('.job_container');
+
 
   /*
    * Let's fire off the gravatar function

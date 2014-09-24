@@ -106,6 +106,9 @@ function bones_custom_image_sizes( $sizes ) {
     ) );
 }
 
+// POST THUMBNAIL RESIZE
+// add_image_size( 'news-post-thumbnail', 100%, 300, true );
+
 /*
 The function above adds the ability to use the dropdown menu to select
 the new images sizes you have just created from within the media manager

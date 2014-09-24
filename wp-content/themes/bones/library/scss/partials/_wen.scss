@@ -27,6 +27,11 @@
 		margin-top: 6px;
 		float: right;
 	}
+
+	@media(max-width: 1029px) {
+		font-size: 0.95em;
+		
+	}
 }
 
 .jobSlideUp {
@@ -35,6 +40,24 @@
 	.close_btn {
 		cursor: pointer;
 	}
+}
+
+.f_job_headline {
+	text-transform: uppercase;
+	font-size: 2em;
+	text-align: center;
+	margin-top: 50px !important;
+	margin-bottom: 50px;
+	color: $brand-color;
+
+	@media(max-width: 1029px) {
+		font-size: 1.5em;
+		
+	}
+}
+
+.featured_job {
+	margin-bottom: 60px;
 }
 
 #a-top {
@@ -341,4 +364,8 @@ form {
     .wpcf7-list-item {
     	display: block;
     }
+}
+
+.no-found-msg {
+	color: $brand-color;
 }

@@ -63,6 +63,18 @@
 										<p class="byline vcard">
 											<?php printf( __( '<time class="updated" datetime="%1$s" pubdate>%2$s</time>', 'bonestheme' ), get_the_time('Y-m-j'), get_the_time(get_option('date_format'))); ?>
 										</p>
+
+
+										<?php if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+											//the_post_thumbnail( 'news-post-thumbnail' );
+											$post_thumbnail_id = get_post_thumbnail_id();
+										    $post_thumbnail_url = wp_get_attachment_url( $post_thumbnail_id );										 
+										?>
+										<div class="post-image">
+										    <img title="image title" alt="thumb image" class="wp-post-image" src="<?php echo $post_thumbnail_url; ?>" style="width:100%; height:auto;">
+										</div>
+										<?php } ?>
+
 										<p><?php the_excerpt()?></p>
 										<?php //endwhile; else: endif; 
 
@@ -95,7 +107,21 @@
 
 
 
-							<?php endwhile; else: endif;  ?>
+
+							<?php endwhile; else: ?>
+								<article id="post-not-found" class="hentry cf">
+									<header class="article-header">
+										<!-- <h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1> -->
+										<h3 class="no-found-msg">No news has been posted.</h3>
+									</header>
+									<!-- <section class="entry-content">
+										<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'bonestheme' ); ?></p>
+									</section>
+									<footer class="article-footer">
+										<p><?php _e( 'This is the error message in the page-custom.php template.', 'bonestheme' ); ?></p>
+									</footer> -->
+								</article> 
+							<?php endif;  ?>
 
 							<div class="media-inquiry-info"><?php echo $sub_page_content  ?></div>
 

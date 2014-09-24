@@ -17,6 +17,7 @@
 				// $rea_caption = get_field('rea-caption');
 				// $cro_caption = get_field('cro-caption');
 
+
 			?>
 				<header class="article-header">
 					<div class="page-header" style="background-image: url('<?php echo $header_image['url'] ?>')"></div>
@@ -43,21 +44,30 @@
 											<?php echo $sub_page_content ?>
 										</div>
 
+										<div class="job_container">
+
 
 							    	<?php if(get_field('careers_list')):
 
-										
+									
 										while(has_sub_field('careers_list')): 
 
-									
 										$feat_check = get_sub_field('featured_checkbox');
+										$job_title = get_sub_field('job_title');
+										$job_description = get_sub_field('job_description');
 
-										// if ($feat_check) {
-										// 	echo '<div class="featured_job">';
-										// 	echo the_sub_field('job_title');
-										// 	echo the_sub_field('job_description');
-										// 	echo '</div>';
-										// } else {
+										
+
+										if ($feat_check) {
+											echo '<div class="featured_job">';
+											echo '<h1 class="f_job_headline">Featured Career Opportunity</h1>';
+											// echo $job_title;
+											echo $job_description;
+											echo '</div>';
+
+										} else {
+
+
 											// <!-- ACCORDION START -->
 										?> <div class="job_wrapper">
 											<a class="accordion"><?php echo the_sub_field('job_title'); ?><img class="tab_arrow" id="a-right" src="<?php bloginfo('url'); ?>/img/arrow-right.png"><img class="tab_arrow" id="a-down" src="<?php bloginfo('url'); ?>/img/arrow-down.png"></a>
@@ -72,14 +82,15 @@
 											</div>
 										</div>
 										<!-- ACCORDION END -->
-										<?php //}?>
+										<?php }?>
 
 										
 
 										<?php endwhile;
+
 										endif;  ?>
 
-
+										
 
 									</div>
 
@@ -135,7 +146,7 @@
 
 						</div>
 
-						
+						</div>
 
 				</div>
 
