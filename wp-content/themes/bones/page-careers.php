@@ -11,8 +11,8 @@
 			<?php
 				$header_image = get_field('header-image');
 				$sub_page_title = get_field('sub-page-title');
-				// $sub_page_content = get_field('sub-page-content');
-				// $pro_caption = get_field('pro-caption');
+				$sub_page_content = get_field('sub-page-content');
+				// $job_title = get_field('job_title');
 				// $rep_caption = get_field('rep-caption');
 				// $rea_caption = get_field('rea-caption');
 				// $cro_caption = get_field('cro-caption');
@@ -32,7 +32,7 @@
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
-								<section class="entry-content cf" itemprop="articleBody">
+								<section id="careers" class="entry-content cf" itemprop="articleBody">
 
 									<div class="sub-page-content-wrapper">
 										<?php echo $sub_page_title 
@@ -40,8 +40,47 @@
 										?> 
 										<div>
 											<!-- in back-end the title is wrapped with <p> already -->
-											<?php //echo $sub_page_content ?>
+											<?php echo $sub_page_content ?>
 										</div>
+
+
+							    	<?php if(get_field('careers_list')):
+
+										
+										while(has_sub_field('careers_list')): 
+
+									
+										$feat_check = get_sub_field('featured_checkbox');
+
+										// if ($feat_check) {
+										// 	echo '<div class="featured_job">';
+										// 	echo the_sub_field('job_title');
+										// 	echo the_sub_field('job_description');
+										// 	echo '</div>';
+										// } else {
+											// <!-- ACCORDION START -->
+										?> <div class="job_wrapper">
+											<a class="accordion"><?php echo the_sub_field('job_title'); ?><img class="tab_arrow" id="a-right" src="<?php bloginfo('url'); ?>/img/arrow-right.png"><img class="tab_arrow" id="a-down" src="<?php bloginfo('url'); ?>/img/arrow-down.png"></a>
+
+											<div class="job_hidden">
+												<div class="job">
+													<!-- job description goes here -->
+													<?php echo the_sub_field('job_description'); ?>
+												</div>
+
+												<div class="jobSlideUp"><a class="close_btn">CLOSE&nbsp;&nbsp;<img src="<?php bloginfo('url'); ?>/img/arrow-up.jpg"></a></div>
+											</div>
+										</div>
+										<!-- ACCORDION END -->
+										<?php //}?>
+
+										
+
+										<?php endwhile;
+										endif;  ?>
+
+
+
 									</div>
 
 

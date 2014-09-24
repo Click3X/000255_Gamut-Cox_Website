@@ -1,3 +1,51 @@
+// careers
+.job_hidden {
+	display: none;
+}
+
+.job_wrapper {
+	margin-top: 20px;
+}
+
+.accordion {
+	background-color: $light-grey;
+	display: block;
+	padding: 10px;
+	color: $white;
+	cursor: pointer;
+	font-weight: 500;
+	font-size: 1.2em;
+
+	&:hover {
+		@include transition(all 0.2s);
+		background-color: $brand-color;
+		color: $white;
+	}
+
+	img {
+		width: 12px;
+		margin-top: 6px;
+		float: right;
+	}
+}
+
+.jobSlideUp {
+	text-align: right;
+
+	.close_btn {
+		cursor: pointer;
+	}
+}
+
+#a-top {
+	width: 12px;
+}
+
+#a-down {
+	width: 14px;
+	display: none;
+}
+
 // posts page styling
 #logo-fast {
 	height:1.5em;
@@ -27,6 +75,12 @@
 	@media(max-width: 1239px) {
 		margin-top: 20px;
 		
+	}
+}
+
+.media-inquiry-info {
+	.highlight {
+		font-family: 'Sentinel Medium';
 	}
 }
 
@@ -255,29 +309,6 @@ form {
 		margin-bottom: 0;
 	}
 }
-
-// tagline
-// #tagline {
-// 	font-family: "franklin-gothic-urw",sans-serif !important;
-// 	color: $black;
-// 	width: 500px;
-// 	vertical-align: bottom;
-// 	top: 20px;
-// 	position: absolute;
-// 	display: inline-block;
-// 	left: 130px;
-// 	@include transition(all 0.2s);
-
-// 	@media(max-width: 1048px) {
-//     	opacity: 0;
-    	
-// }
-
-// }
-
-// .logo-holder {
-// 	position: relative;
-// }
 
 // opt out styling
 
