@@ -1,3 +1,16 @@
+// news sidebar
+.news-sidebar {
+	margin-left: 5%;
+	margin-top: 40px !important;
+	float: left;
+}
+
+.news-content-wrapper {
+	width: 70%;
+	margin: auto;
+}
+
+
 // fix main menu highlight
 .current-page-ancestor {
 	a {
@@ -9,7 +22,7 @@
 // bio
 .bio-left-column-image {
 	display: inline-block;
-	height: 580px;
+	// height: 580px;
 
 	@media(max-width: 1000px) {
 		height: 400px;		
@@ -27,6 +40,10 @@
 	margin: auto;
 	vertical-align: top;
 	margin-left: 5%;
+
+	@media(max-width: 1000px) {
+		width: 60%;	
+	}
 
 	.bio-name {
 	color: $white;

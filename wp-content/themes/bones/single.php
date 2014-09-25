@@ -2,11 +2,28 @@
 
 			<div id="content">
 
+
+				<div id="sidebar1" class="news-sidebar sidebar m-all cf <?php echo $sidebar_class; ?>" role="complementary">
+
+					<div id="sidebar-beam-container">
+
+						<div id="sidebar-beam" style="background-image: url(<?php bloginfo('url'); ?>/img/sidebar-beam.png);"></div>
+
+					</div>
+
+					<?php //$parent_title = get_the_title($post->post_parent); ?>
+
+					<a class="page-link" href="<?php echo get_permalink($post->post_parent);?>"><h2 id="sidebar-title">Back</h2></a>
+
+				</div>
+
 				<div id="inner-content" class="wrap cf">
 
-				<?php get_sidebar(); ?>
 
-					<div id="main" class="m-all t-2of3 d-5of7 cf" role="main">
+
+					<div id="main" class="news-content-wrapper cf" role="main">
+
+
 
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 

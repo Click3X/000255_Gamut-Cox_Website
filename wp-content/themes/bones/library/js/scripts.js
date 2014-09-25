@@ -141,14 +141,14 @@ $(".fancybox").fancybox();
 
   $(".various").fancybox({
     maxWidth  : 800,
-    maxHeight : 600,
-    fitToView : false,
-    width   : '70%',
-    height    : '70%',
-    autoSize  : false,
+    // maxHeight : 600,
+    // fitToView : false,
+    // width   : '70%',
+    // height    : '70%',
+    // autoSize  : false,
     closeClick  : false,
-    openEffect  : 'none',
-    closeEffect : 'none'
+    // openEffect  : 'none',
+    // closeEffect : 'none'
   });
   /*
    * Let's fire off the gravatar function
