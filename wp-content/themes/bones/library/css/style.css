@@ -637,16 +637,13 @@ more here: http://www.newnet-soft.com/blog/csstypography
 */
 /* line 100, ../scss/partials/_typography.scss */
 p {
-  -ms-word-break: break-all;
-  -ms-word-wrap: break-all;
-  word-break: break-word;
-  word-break: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  hyphens: auto;
-  -webkit-hyphenate-before: 2;
-  -webkit-hyphenate-after: 3;
-  hyphenate-lines: 3;
+  -ms-word-break: keep-all;
+  -ms-word-wrap: keep-all;
+  word-break: keep-all;
+  word-break: keep-all;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  hyphens: none;
   -webkit-font-feature-settings: "liga", "dlig";
   -moz-font-feature-settings: "liga=1, dlig=1";
   -ms-font-feature-settings: "liga", "dlig";
@@ -5190,15 +5187,9 @@ html, body {
   height: 1%;
 }
 
-/* line 5, ../scss/modules/_parallax-kieth.scss */
-* {
-  word-break: keep-all;
-  -ms-word-break: keep-all;
-}
-
 /* Parallax-kieth base styles
 --------------------------------------------- */
-/* line 13, ../scss/modules/_parallax-kieth.scss */
+/* line 10, ../scss/modules/_parallax-kieth.scss */
 .parallax-kieth {
   height: 500px;
   /* fallback for older browsers */
@@ -5210,13 +5201,13 @@ html, body {
 }
 
 @media (min-width: 1200px) {
-  /* line 22, ../scss/modules/_parallax-kieth.scss */
+  /* line 19, ../scss/modules/_parallax-kieth.scss */
   .mobile #group4 .subpage .blue, .mobile #group4 .subpage .red {
     padding-bottom: 100px;
   }
 }
 
-/* line 27, ../scss/modules/_parallax-kieth.scss */
+/* line 24, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth {
   /* Debugger styles - used to show the effect
   --------------------------------------------- */
@@ -5227,64 +5218,64 @@ html, body {
   --------------------------------------------- */
 }
 @media (min-width: 1200px) {
-  /* line 29, ../scss/modules/_parallax-kieth.scss */
+  /* line 26, ../scss/modules/_parallax-kieth.scss */
   #parallax-kieth .blue,
   #parallax-kieth .red {
     padding-bottom: 100px;
   }
 }
-/* line 36, ../scss/modules/_parallax-kieth.scss */
+/* line 33, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth .subpage {
   width: 90%;
   max-width: 1300px;
   margin: 0 auto;
 }
-/* line 42, ../scss/modules/_parallax-kieth.scss */
+/* line 39, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth p {
   font-size: 1.1em;
   line-height: 1.15em;
 }
 @media (min-width: 811px) {
-  /* line 42, ../scss/modules/_parallax-kieth.scss */
+  /* line 39, ../scss/modules/_parallax-kieth.scss */
   #parallax-kieth p {
     font-size: 1.4em;
   }
 }
 @media (min-width: 1200px) {
-  /* line 42, ../scss/modules/_parallax-kieth.scss */
+  /* line 39, ../scss/modules/_parallax-kieth.scss */
   #parallax-kieth p {
     font-size: 1.6em;
   }
 }
-/* line 53, ../scss/modules/_parallax-kieth.scss */
+/* line 50, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth h1 {
   font-size: 1.9em;
 }
 @media (min-width: 400px) {
-  /* line 53, ../scss/modules/_parallax-kieth.scss */
+  /* line 50, ../scss/modules/_parallax-kieth.scss */
   #parallax-kieth h1 {
     font-size: 2.5em;
   }
 }
 @media (min-width: 811px) {
-  /* line 53, ../scss/modules/_parallax-kieth.scss */
+  /* line 50, ../scss/modules/_parallax-kieth.scss */
   #parallax-kieth h1 {
     font-size: 2.8em;
   }
 }
 @media (min-width: 1200px) {
-  /* line 53, ../scss/modules/_parallax-kieth.scss */
+  /* line 50, ../scss/modules/_parallax-kieth.scss */
   #parallax-kieth h1 {
     font-size: 4em;
   }
 }
 @media (min-width: 1300px) {
-  /* line 53, ../scss/modules/_parallax-kieth.scss */
+  /* line 50, ../scss/modules/_parallax-kieth.scss */
   #parallax-kieth h1 {
     font-size: 4.5em;
   }
 }
-/* line 73, ../scss/modules/_parallax-kieth.scss */
+/* line 70, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth .parallax__group {
   position: relative;
   height: 500px;
@@ -5293,7 +5284,7 @@ html, body {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
-/* line 81, ../scss/modules/_parallax-kieth.scss */
+/* line 78, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth .parallax__layer {
   position: absolute;
   top: 0;
@@ -5301,31 +5292,31 @@ html, body {
   right: 0;
   bottom: 0;
 }
-/* line 89, ../scss/modules/_parallax-kieth.scss */
+/* line 86, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth .parallax__layer--fore {
   -webkit-transform: translateZ(90px) scale(0.7);
   transform: translateZ(90px) scale(0.7);
   z-index: 1;
 }
-/* line 95, ../scss/modules/_parallax-kieth.scss */
+/* line 92, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth .parallax__layer--base {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   z-index: 4;
 }
-/* line 101, ../scss/modules/_parallax-kieth.scss */
+/* line 98, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth .parallax__layer--back {
   -webkit-transform: translateZ(-300px) scale(2);
   transform: translateZ(-300px) scale(2);
   z-index: 3;
 }
-/* line 107, ../scss/modules/_parallax-kieth.scss */
+/* line 104, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth .parallax__layer--deep {
   -webkit-transform: translateZ(-600px) scale(3);
   transform: translateZ(-600px) scale(3);
   z-index: 2;
 }
-/* line 117, ../scss/modules/_parallax-kieth.scss */
+/* line 114, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth .debug {
   position: fixed;
   top: 0;
@@ -5336,26 +5327,26 @@ html, body {
   padding: .5em;
   border-radius: 0 0 5px 5px;
 }
-/* line 127, ../scss/modules/_parallax-kieth.scss */
+/* line 124, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth .debug-on .parallax__group {
   -webkit-transform: translate3d(800px, 0, -800px) rotateY(30deg);
   transform: translate3d(700px, 0, -800px) rotateY(30deg);
 }
-/* line 131, ../scss/modules/_parallax-kieth.scss */
+/* line 128, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth .debug-on .parallax__layer {
   box-shadow: 0 0 0 2px #000;
   opacity: 0.9;
 }
-/* line 135, ../scss/modules/_parallax-kieth.scss */
+/* line 132, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth .parallax__group {
   -webkit-transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
 }
-/* line 144, ../scss/modules/_parallax-kieth.scss */
+/* line 141, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth body, #parallax-kieth html {
   overflow: hidden;
 }
-/* line 162, ../scss/modules/_parallax-kieth.scss */
+/* line 159, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth .title {
   text-align: center;
   position: absolute;
@@ -5364,87 +5355,87 @@ html, body {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 176, ../scss/modules/_parallax-kieth.scss */
+/* line 173, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth #group1 {
   z-index: 5;
   /* slide over group 2 */
 }
-/* line 183, ../scss/modules/_parallax-kieth.scss */
+/* line 180, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth #group2 {
   z-index: 3;
   /* slide under groups 1 and 3 */
 }
-/* line 190, ../scss/modules/_parallax-kieth.scss */
+/* line 187, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth #group3 {
   z-index: 4;
   /* slide over group 2 and 4 */
 }
-/* line 193, ../scss/modules/_parallax-kieth.scss */
+/* line 190, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth #group3 .parallax__layer--base {
   background: #3d3d3d;
 }
-/* line 198, ../scss/modules/_parallax-kieth.scss */
+/* line 195, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth #group4 {
   z-index: 2;
   /* slide under group 3 and 5 */
 }
-/* line 201, ../scss/modules/_parallax-kieth.scss */
+/* line 198, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth #group4 .parallax__layer--deep {
   background: #fff;
 }
-/* line 206, ../scss/modules/_parallax-kieth.scss */
+/* line 203, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth #group5 {
   z-index: 3;
   /* slide over group 4 and 6 */
 }
-/* line 209, ../scss/modules/_parallax-kieth.scss */
+/* line 206, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth #group5 .parallax__layer--base {
   background: #3d3d3d;
 }
-/* line 214, ../scss/modules/_parallax-kieth.scss */
+/* line 211, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth #group6 {
   z-index: 2;
   /* slide under group 5 and 7 */
 }
-/* line 217, ../scss/modules/_parallax-kieth.scss */
+/* line 214, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth #group6 .parallax__layer--back {
   height: 40%;
 }
-/* line 222, ../scss/modules/_parallax-kieth.scss */
+/* line 219, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth #group7 {
   z-index: 3;
   /* slide over group 7 */
 }
 @media (min-width: 811px) {
-  /* line 230, ../scss/modules/_parallax-kieth.scss */
+  /* line 227, ../scss/modules/_parallax-kieth.scss */
   #parallax-kieth #group1 {
     height: 736px;
   }
-  /* line 231, ../scss/modules/_parallax-kieth.scss */
+  /* line 228, ../scss/modules/_parallax-kieth.scss */
   #parallax-kieth #group2 {
     height: 467px;
   }
-  /* line 232, ../scss/modules/_parallax-kieth.scss */
+  /* line 229, ../scss/modules/_parallax-kieth.scss */
   #parallax-kieth #group3 {
     height: 504px;
   }
-  /* line 233, ../scss/modules/_parallax-kieth.scss */
+  /* line 230, ../scss/modules/_parallax-kieth.scss */
   #parallax-kieth #group4 {
     height: 1647px;
   }
-  /* line 234, ../scss/modules/_parallax-kieth.scss */
+  /* line 231, ../scss/modules/_parallax-kieth.scss */
   #parallax-kieth #group5 {
     height: 536px;
   }
-  /* line 236, ../scss/modules/_parallax-kieth.scss */
+  /* line 233, ../scss/modules/_parallax-kieth.scss */
   #parallax-kieth #group6 {
     height: 800px;
   }
-  /* line 238, ../scss/modules/_parallax-kieth.scss */
+  /* line 235, ../scss/modules/_parallax-kieth.scss */
   #parallax-kieth #group7 {
     height: 510px;
   }
-  /* line 241, ../scss/modules/_parallax-kieth.scss */
+  /* line 238, ../scss/modules/_parallax-kieth.scss */
   #parallax-kieth .clearfix.new-b {
     width: 50%;
     padding-bottom: 440px;
@@ -5452,24 +5443,24 @@ html, body {
     left: 0;
     background: #f8f8ef;
   }
-  /* line 251, ../scss/modules/_parallax-kieth.scss */
+  /* line 248, ../scss/modules/_parallax-kieth.scss */
   #parallax-kieth #group6 .ccc-holder,
   #parallax-kieth #group7 .ccc-holder {
     width: 100%;
     max-width: none;
   }
-  /* line 254, ../scss/modules/_parallax-kieth.scss */
+  /* line 251, ../scss/modules/_parallax-kieth.scss */
   #parallax-kieth #group6 .ccc-holder .gamut-btn,
   #parallax-kieth #group7 .ccc-holder .gamut-btn {
     margin-left: 0;
     margin-top: 2rem;
   }
-  /* line 261, ../scss/modules/_parallax-kieth.scss */
+  /* line 258, ../scss/modules/_parallax-kieth.scss */
   #parallax-kieth .p-holder p {
     max-width: 27em;
     text-align: left;
   }
-  /* line 267, ../scss/modules/_parallax-kieth.scss */
+  /* line 264, ../scss/modules/_parallax-kieth.scss */
   #parallax-kieth #group6 .c-smart {
     background-color: #ffffff;
     max-width: none;
@@ -5479,32 +5470,32 @@ html, body {
     left: 50%;
     top: 28%;
   }
-  /* line 278, ../scss/modules/_parallax-kieth.scss */
+  /* line 275, ../scss/modules/_parallax-kieth.scss */
   #parallax-kieth #group6 .c-smart p {
     max-width: 20em;
   }
-  /* line 285, ../scss/modules/_parallax-kieth.scss */
+  /* line 282, ../scss/modules/_parallax-kieth.scss */
   #parallax-kieth #group7 .h1-hold {
     max-width: 650px;
     width: 100%;
     float: right;
   }
 }
-/* line 296, ../scss/modules/_parallax-kieth.scss */
+/* line 293, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth .no-vis {
   opacity: 0;
 }
-/* line 301, ../scss/modules/_parallax-kieth.scss */
+/* line 298, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth #group6 h1, #parallax-kieth #group6 p {
   width: 100%;
 }
-/* line 304, ../scss/modules/_parallax-kieth.scss */
+/* line 301, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth #group6 h1, #parallax-kieth #group6 p, #parallax-kieth #group6 .c-btn-hold {
   width: 100%;
   max-width: 651px;
   float: left;
 }
-/* line 313, ../scss/modules/_parallax-kieth.scss */
+/* line 310, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth .smart-service-bag,
 #parallax-kieth .careers-bag {
   background-repeat: no-repeat;
@@ -5512,53 +5503,53 @@ html, body {
   width: 50%;
   padding-bottom: 440px;
 }
-/* line 321, ../scss/modules/_parallax-kieth.scss */
+/* line 318, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth .smart-service-bag {
   clear: left;
 }
-/* line 325, ../scss/modules/_parallax-kieth.scss */
+/* line 322, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth .careers-bag {
   float: right;
 }
-/* line 330, ../scss/modules/_parallax-kieth.scss */
+/* line 327, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth .ccc-holder {
   max-width: 1300px;
   margin: 0 auto;
 }
-/* line 335, ../scss/modules/_parallax-kieth.scss */
+/* line 332, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth .c-career {
   width: 50%;
   background: rGB(248, 248, 239);
 }
-/* line 339, ../scss/modules/_parallax-kieth.scss */
+/* line 336, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth .c-career h1, #parallax-kieth .c-career p {
   width: 100%;
 }
-/* line 343, ../scss/modules/_parallax-kieth.scss */
+/* line 340, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth .c-career h1 {
   max-width: 651px;
 }
-/* line 349, ../scss/modules/_parallax-kieth.scss */
+/* line 346, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth .c-career p {
   max-width: 19.5em;
 }
-/* line 352, ../scss/modules/_parallax-kieth.scss */
+/* line 349, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth .c-career .gamut-btn {
   margin-top: 2rem;
   margin-left: 0;
 }
-/* line 358, ../scss/modules/_parallax-kieth.scss */
+/* line 355, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth .c-smart {
   max-width: 615px;
   width: 50%;
   float: right;
 }
-/* line 365, ../scss/modules/_parallax-kieth.scss */
+/* line 362, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth .footer {
   z-index: 1000;
 }
 
-/* line 372, ../scss/modules/_parallax-kieth.scss */
+/* line 369, ../scss/modules/_parallax-kieth.scss */
 .debug {
   position: fixed;
   top: 0;
@@ -5570,33 +5561,33 @@ html, body {
   border-radius: 0 0 5px 5px;
 }
 
-/* line 382, ../scss/modules/_parallax-kieth.scss */
+/* line 379, ../scss/modules/_parallax-kieth.scss */
 .debug-on .parallax__group {
   -webkit-transform: translate3d(800px, 0, -800px) rotateY(30deg);
   transform: translate3d(700px, 0, -800px) rotateY(30deg);
 }
 
-/* line 386, ../scss/modules/_parallax-kieth.scss */
+/* line 383, ../scss/modules/_parallax-kieth.scss */
 .debug-on .parallax__layer {
   box-shadow: 0 0 0 2px #000;
   opacity: 0.9;
 }
 
-/* line 390, ../scss/modules/_parallax-kieth.scss */
+/* line 387, ../scss/modules/_parallax-kieth.scss */
 .parallax__group {
   -webkit-transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
 }
 
-/* line 397, ../scss/modules/_parallax-kieth.scss */
+/* line 394, ../scss/modules/_parallax-kieth.scss */
 .c-career p {
   max-width: 19.5em;
 }
-/* line 401, ../scss/modules/_parallax-kieth.scss */
+/* line 398, ../scss/modules/_parallax-kieth.scss */
 .c-career h1 {
   position: relative;
 }
-/* line 403, ../scss/modules/_parallax-kieth.scss */
+/* line 400, ../scss/modules/_parallax-kieth.scss */
 .c-career h1:before {
   content: "";
   display: block;
@@ -5614,7 +5605,7 @@ html, body {
   z-index: 10;
 }
 @media (min-width: 811px) {
-  /* line 403, ../scss/modules/_parallax-kieth.scss */
+  /* line 400, ../scss/modules/_parallax-kieth.scss */
   .c-career h1:before {
     right: 0;
     left: -1450px;
@@ -5623,12 +5614,12 @@ html, body {
   }
 }
 
-/* line 435, ../scss/modules/_parallax-kieth.scss */
+/* line 432, ../scss/modules/_parallax-kieth.scss */
 #group3 h1,
 #group5 h1 {
   position: relative;
 }
-/* line 438, ../scss/modules/_parallax-kieth.scss */
+/* line 435, ../scss/modules/_parallax-kieth.scss */
 #group3 h1:before,
 #group5 h1:before {
   content: "";
@@ -5647,7 +5638,7 @@ html, body {
   z-index: 10;
 }
 @media (min-width: 811px) {
-  /* line 438, ../scss/modules/_parallax-kieth.scss */
+  /* line 435, ../scss/modules/_parallax-kieth.scss */
   #group3 h1:before,
   #group5 h1:before {
     top: .5em;
@@ -5655,12 +5646,12 @@ html, body {
     left: -812px;
   }
 }
-/* line 464, ../scss/modules/_parallax-kieth.scss */
+/* line 461, ../scss/modules/_parallax-kieth.scss */
 #group3 p,
 #group5 p {
   position: relative;
 }
-/* line 466, ../scss/modules/_parallax-kieth.scss */
+/* line 463, ../scss/modules/_parallax-kieth.scss */
 #group3 p:after,
 #group5 p:after {
   content: "";
@@ -5676,7 +5667,7 @@ html, body {
   right: -802px;
 }
 @media (min-width: 811px) {
-  /* line 466, ../scss/modules/_parallax-kieth.scss */
+  /* line 463, ../scss/modules/_parallax-kieth.scss */
   #group3 p:after,
   #group5 p:after {
     right: -862px;
@@ -5685,7 +5676,7 @@ html, body {
   }
 }
 
-/* line 489, ../scss/modules/_parallax-kieth.scss */
+/* line 486, ../scss/modules/_parallax-kieth.scss */
 .gamut-btn {
   background-color: black;
   border-color: black;
@@ -5694,14 +5685,14 @@ html, body {
   margin-top: 2em;
 }
 
-/* line 497, ../scss/modules/_parallax-kieth.scss */
+/* line 494, ../scss/modules/_parallax-kieth.scss */
 .plus-sign {
   position: relative;
   max-width: 7.5em;
   margin-left: .8em;
 }
 
-/* line 503, ../scss/modules/_parallax-kieth.scss */
+/* line 500, ../scss/modules/_parallax-kieth.scss */
 .plus-sign:after {
   content: "";
   display: block;
@@ -5717,21 +5708,21 @@ html, body {
   background-repeat: no-repeat;
 }
 @media (min-width: 400px) {
-  /* line 503, ../scss/modules/_parallax-kieth.scss */
+  /* line 500, ../scss/modules/_parallax-kieth.scss */
   .plus-sign:after {
     width: 1.65rem;
     height: 1.65rem;
   }
 }
 @media (min-width: 1040px) {
-  /* line 503, ../scss/modules/_parallax-kieth.scss */
+  /* line 500, ../scss/modules/_parallax-kieth.scss */
   .plus-sign:after {
     width: 2.15rem;
     height: 2.15rem;
   }
 }
 @media (min-width: 1340px) {
-  /* line 503, ../scss/modules/_parallax-kieth.scss */
+  /* line 500, ../scss/modules/_parallax-kieth.scss */
   .plus-sign:after {
     width: 2.65rem;
     height: 2.65rem;
