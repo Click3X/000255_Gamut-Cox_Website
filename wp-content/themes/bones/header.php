@@ -111,7 +111,7 @@
             function initialize() {
 
                 mapOptions = {
-                    zoom: 6,
+                    zoom: 4,
                     zoomControl: true,
                     scaleControl: false,
                     scrollwheel: false,
