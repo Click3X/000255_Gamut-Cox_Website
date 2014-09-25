@@ -1,6 +1,6 @@
 		<?php
 			// IF PAGE IS HOME, WRAP THE FOOTER IN GROUP 7 PARALLAX DIV
-			if(is_page(107) || is_page(466) ) {
+			if(is_page(107) || is_page(466) || is_page(393) ) {
 				// echo '<div class="parallax__layer parallax__layer--fore">';
 				    // echo '<div class="title">Fore Layer 7</div>';
 				}
@@ -162,7 +162,7 @@
 
 			<?php 
 			// IF IS HOME PAGE, CLOSE PARALLAX GROUP 7 WRAP
-			if(is_page(107)) {
+			if(is_page(107) || is_page(466) || is_page(393) ) {
 						echo '</div>'; //  END PARALLAX GROUP
 					echo '</div>'; // END GROUP 7
 				echo '</div>'; // END PARALLAX
