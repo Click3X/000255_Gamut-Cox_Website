@@ -184,9 +184,10 @@
         <div class="title">Background Layer</div>
 
         <!-- SERVICES -->
-        <div class="smart-service-bag" style="background-image:url('<?php echo $smart_service_image['url']; ?>');"></div>
+        <div id="smart-service-bg" class="smart-service-bag" style="background-image:url('<?php echo $smart_service_image['url']; ?>');"></div>
         <!-- CAREERS -->
-        <div class="careers-bag" style="background-image:url('<?php echo $careers_image['url']; ?>');"></div>
+        <div class="clearfix new-b"></div>
+        <div id="careers-bg" class="careers-bag" style="background-image:url('<?php echo $careers_image['url']; ?>');"></div>
 
       </div>
       <div class="parallax__layer parallax__layer--base">
@@ -217,4 +218,4 @@
       </div>
     </div>
 
-  <!-- </div> -->
+  <!-- </div> END PARALLAX CONTAINER -->
