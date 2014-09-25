@@ -102,6 +102,7 @@ function loadGravatars() {
 } // end function
 
 
+
 /*
  * Put all your regular jQuery in here.
 */
@@ -131,7 +132,24 @@ $(".jobSlideUp").click(function(){
   $(this).parent().slideToggle('fast');
 });
 
+// reorder careers order
+$('.featured_job').prependTo('.job_container');
 
+// initiate lightbox
+$(".fancybox").fancybox();
+
+
+  $(".various").fancybox({
+    maxWidth  : 800,
+    // maxHeight : 600,
+    // fitToView : false,
+    // width   : '70%',
+    // height    : '70%',
+    // autoSize  : false,
+    closeClick  : false,
+    // openEffect  : 'none',
+    // closeEffect : 'none'
+  });
   /*
    * Let's fire off the gravatar function
    * You can remove this if you don't need it
@@ -154,16 +172,16 @@ $(".jobSlideUp").click(function(){
 
 // home slide
 // load gif
-$('fg').hide();
-$('#bg>img').attr('src', 'img/home-animation.gif');
+// $('fg').hide();
+// $('#bg>img').attr('src', 'img/home-animation.gif');
 
 // load images
-setTimeout(function (){
-  // $('#bg>img').css('opacity', 0);
-  $('#bg>img').attr('src', 'img/bg-long-copy.png');
-  // $('#bg>img').css('opacity', 1);
-  $('fg').show();
-}, 2000);
+// setTimeout(function (){
+//   // $('#bg>img').css('opacity', 0);
+//   $('#bg>img').attr('src', 'img/bg-long-copy.png');
+//   // $('#bg>img').css('opacity', 1);
+//   $('fg').show();
+// }, 2000);
 
 
 
@@ -176,35 +194,35 @@ setTimeout(function (){
 
 
 
-var $bg = $('#bg');
-var $fg = $('#fg');
+// var $bg = $('#bg');
+// var $fg = $('#fg');
 
-var bgImageWidth = 1600;
-var bgNumberOfImages = 4;
-var bgWidth = bgImageWidth * bgNumberOfImages;
+// var bgImageWidth = 1600;
+// var bgNumberOfImages = 4;
+// var bgWidth = bgImageWidth * bgNumberOfImages;
 
-var bgShift = 0;
-var bgShiftDesired = 0;
+// var bgShift = 0;
+// var bgShiftDesired = 0;
 
-setInterval(function(){ 
-  bgShift += (bgShiftDesired-bgShift)/8;
-  $bg.css({left:-bgShift});
-  $fg.css({left:-bgShift*1.5});
-},30);
+// setInterval(function(){ 
+//   bgShift += (bgShiftDesired-bgShift)/8;
+//   $bg.css({left:-bgShift});
+//   $fg.css({left:-bgShift*1.5});
+// },30);
 
 
 
-function forward(){
-  bgShiftDesired += bgImageWidth;
-  if (bgShiftDesired>bgWidth){
-    bgShiftDesired -= bgWidth;
-    bgShift -= bgWidth;
-  }
-}
+// function forward(){
+//   bgShiftDesired += bgImageWidth;
+//   if (bgShiftDesired>bgWidth){
+//     bgShiftDesired -= bgWidth;
+//     bgShift -= bgWidth;
+//   }
+// }
 
-setInterval(function(){ 
-  forward();
-},5000);
+// setInterval(function(){ 
+//   forward();
+// },5000);
 
 
 
@@ -217,9 +235,9 @@ setInterval(function(){
 
   var url = window.location;
 
-  $('a[href="'+url+'"]').parent('#menu-main-menu li').addClass('main-menu-selected');
+  $('a[href="'+url+'"]').parent('#menu-main-menu>li').addClass('main-menu-selected');
 
-  $('a[href="'+url+'"]').parent('.sidebar li').addClass('sidebar-selected');
+  $('a[href="'+url+'"]').parent('.sidebar li').children().addClass('sidebar-selected');
 
 
 }); /* end of as page load scripts */

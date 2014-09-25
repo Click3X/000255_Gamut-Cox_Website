@@ -246,4 +246,10 @@ function cleanString($string){
 
 }
 
+// EMAIL ADDRESS ANTI-SPAM
+// function email_encode_function( $atts, $content ){
+//   return '<a href="'.antispambot("mailto:".$content).'">'.antispambot($content).'</a>';
+// }
+// add_shortcode( 'email', 'email_encode_function' );
+
 /* DON'T DELETE THIS CLOSING TAG */ ?>

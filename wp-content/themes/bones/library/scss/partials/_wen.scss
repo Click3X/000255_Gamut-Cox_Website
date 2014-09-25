@@ -1,4 +1,112 @@
+// news sidebar
+.news-sidebar {
+	margin-left: 5%;
+	margin-top: 40px !important;
+	float: left;
+}
+
+.news-content-wrapper {
+	width: 70%;
+	margin: auto;
+}
+
+
+// fix main menu highlight
+.current-page-ancestor {
+	a {
+		color: $brand-color !important;
+	}
+	
+}
+
+// bio
+.bio-left-column-image {
+	display: inline-block;
+	// height: 580px;
+
+	@media(max-width: 1000px) {
+		height: 400px;		
+	}
+
+	@media(max-width: 736px) {
+		display: block;	
+		margin: auto;	
+	}
+}
+
+.bio-right-column-container {
+	display: inline-block;
+	width: 50%;
+	margin: auto;
+	vertical-align: top;
+	margin-left: 5%;
+
+	@media(max-width: 1000px) {
+		width: 60%;	
+	}
+
+	@media(max-width: 850px) {
+		width: 50%;
+	}
+
+	.bio-name {
+	color: $white;
+	display: inline-block;
+	font-weight: 700;
+}
+
+	.bio-title {
+		color: $brand-color;
+		display: inline-block;
+		font-weight: 700;
+	}
+
+	p {
+		color: $black;
+		font-size: 0.9em;
+		line-height: 1.32em;
+		margin-top: 0.7em;
+	}
+
+	@media(max-width: 736px) {
+		display: block;
+		display: block;
+		margin: auto;
+		width: 90%;
+		margin-top: 20px;		
+	}
+
+}
+
+.fancybox-inner {
+	background-color: #cecdcd;
+}
+
+.og-grid li a img {
+	margin: 0 !important;
+}
+
+// page link color
+.page-link {
+	color: $brand-color !important;
+	&:hover {
+		text-decoration: underline !important;
+	}
+}
+
 // careers
+.job_container {
+	ul {
+		list-style-type: disc;
+
+		ul {
+			list-style-type: circle;
+			padding-left: 20px;
+		}
+	}
+	
+}
+
 .job_hidden {
 	display: none;
 }
@@ -15,6 +123,7 @@
 	cursor: pointer;
 	font-weight: 500;
 	font-size: 1.2em;
+	text-transform: uppercase;
 
 	&:hover {
 		@include transition(all 0.2s);
@@ -27,6 +136,15 @@
 		margin-top: 6px;
 		float: right;
 	}
+
+	@media(max-width: 1029px) {
+		font-size: 0.95em;
+		
+	}
+}
+
+.closing-statement-container {
+	margin-top: 60px;
 }
 
 .jobSlideUp {
@@ -35,6 +153,24 @@
 	.close_btn {
 		cursor: pointer;
 	}
+}
+
+.f_job_headline {
+	text-transform: uppercase;
+	font-size: 2em;
+	text-align: center;
+	margin-top: 50px !important;
+	margin-bottom: 50px;
+	color: $brand-color;
+
+	@media(max-width: 1029px) {
+		font-size: 1.5em;
+		
+	}
+}
+
+.featured_job {
+	margin-bottom: 60px;
 }
 
 #a-top {
@@ -141,6 +277,10 @@
 
 .mail-link {
 	color: $brand-color !important;
+
+	&:hover {
+		text-decoration: underline;
+	}
 }
 
 .small-title {
@@ -341,4 +481,8 @@ form {
     .wpcf7-list-item {
     	display: block;
     }
+}
+
+.no-found-msg {
+	color: $brand-color;
 }

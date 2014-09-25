@@ -126,7 +126,6 @@ h1 {
 	}
 }
 
-
 // HOVER STYLES FOR INDIVIDUAL BIZ PRODUCTS PAGES
 // PROGRAMMATIC
 .page-id-11 {
@@ -140,6 +139,17 @@ h1 {
 			}
 		}
 	}
+
+	// mytest
+	.secondary li.page_item {
+
+	  a {
+	    color:  rgb(98,98,98);
+	  }
+
+	 }
+	 // end of test
+
 	.secondary {
 		.page_item.page-item-11 {
 			a:hover {
@@ -149,7 +159,7 @@ h1 {
 		}
 		.current_page_item {
 			a {
-				color: #dd1420;
+				color: #dd1420 !important;
 				&:hover {
 					color: #dd1420;
 					text-decoration: underline;
@@ -169,7 +179,8 @@ h1 {
 
 .page-item-11 {
 	a {
-		color: #dd1420;
+		// color: #dd1420;
+		color:  rgb(98,98,98);
 		@include prefix(transition, all 200ms);
 	
 		&:hover {
@@ -192,6 +203,15 @@ h1 {
 			}
 		}
 	}
+
+	// mytest
+	.secondary li.page_item {
+	  a {
+	    color:  rgb(98,98,98);
+	  }
+	 }
+	 // end of test
+
 	.secondary {
 		.page_item.page-item-13 {
 			a:hover {
@@ -201,7 +221,7 @@ h1 {
 		}
 		.current_page_item {
 			a {
-				color: #fba211;	
+				color: #fba211 !important;	
 				&:hover {
 					color: #fba211;
 					text-decoration: underline;
@@ -220,7 +240,9 @@ h1 {
 }
 
 .page-item-13 {
-	a {color: #fba211;
+	a {
+		// color: #fba211;
+		color:  rgb(98,98,98);
 			@include prefix(transition, all 200ms);
 	
 	&:hover {
@@ -242,6 +264,16 @@ h1 {
 			}
 		}
 	}
+
+	// mytest
+	.secondary li.page_item {
+	  a {
+	    color:  rgb(98,98,98);
+	  }
+
+	 }
+	// end of test
+
 	.secondary {
 		.page_item.page-item-24 {
 			a:hover {
@@ -251,7 +283,7 @@ h1 {
 		}
 		.current_page_item {
 			a {
-				color: rgb(143, 199, 62);
+				color: rgb(143, 199, 62) !important;
 				&:hover {
 					color: rgb(143, 199, 62);
 					text-decoration: underline;
@@ -270,8 +302,10 @@ h1 {
 }
 
 .page-item-24 {
-	a {color: rgb(143, 199, 62);
-			@include prefix(transition, all 200ms);
+	a {
+		// color: rgb(143, 199, 62);
+		color:  rgb(98,98,98);
+		@include prefix(transition, all 200ms);
 	
 	&:hover {
 			text-decoration: underline;
@@ -291,6 +325,17 @@ h1 {
 			}
 		}
 	}
+
+	// mytest
+	.secondary li.page_item {
+
+	  a {
+	    color:  rgb(98,98,98);
+	  }
+
+	 }
+	 // end of test
+	 
 	.secondary {
 		.page_item.page-item-15 {
 			a:hover {
@@ -301,7 +346,7 @@ h1 {
 
 		.current_page_item {
 			a {
-				color: rgb(3, 159, 211);
+				color: rgb(3, 159, 211) !important;
 				&:hover {
 					color: rgb(3, 159, 211);
 					text-decoration: underline;
@@ -320,8 +365,10 @@ h1 {
 }
 
 .page-item-15 {
-	a {color: rgb(3, 159, 211);
-			@include prefix(transition, all 200ms);
+	a {
+		// color: rgb(3, 159, 211);
+		color:  rgb(98,98,98);
+		@include prefix(transition, all 200ms);
 	
 	&:hover {
 			text-decoration: underline;
@@ -504,4 +551,9 @@ body #content {
   @media(min-width: 811px) {
   	padding-left: 10px;
   }
+}
+
+// normal sidebar content override
+.sidebar-selected {
+  color: $brand-color;
 }

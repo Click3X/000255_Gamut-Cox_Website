@@ -141,7 +141,10 @@ function bones_scripts_and_styles() {
 
 
 		//parallax slider
-		wp_register_style( 'bones-pslider', get_stylesheet_directory_uri() . '/library/css/jquery.parallax-slider.css', array(), '' );
+		// wp_register_style( 'bones-pslider', get_stylesheet_directory_uri() . '/library/css/jquery.parallax-slider.css', array(), '' );
+
+		// Lightbox
+		wp_register_style( 'fancybox', get_stylesheet_directory_uri() . '/library/css/jquery.fancybox.css', array(), '' );
 
 
     // comment reply script for threaded comments
@@ -156,19 +159,16 @@ function bones_scripts_and_styles() {
 		wp_register_script( 'bones-jqueryui', 'http://code.jquery.com/ui/1.11.1/jquery-ui.js', array('jquery'), true );
 
 		// parallax slider
-		wp_register_script( 'bones-slider', get_stylesheet_directory_uri() . '/library/js/libs/jquery.parallax-slider.js', array('jquery'), true );
-		wp_register_script( 'bones-easing', get_stylesheet_directory_uri() . '/library/js/libs/jquery.easing.1.3.js', array('jquery'), true );
-		wp_register_script( 'bones-colors', get_stylesheet_directory_uri() . '/library/js/libs/jquery.animate-colors.js', array('jquery'), true );
+		// wp_register_script( 'bones-slider', get_stylesheet_directory_uri() . '/library/js/libs/jquery.parallax-slider.js', array('jquery'), true );
+		// wp_register_script( 'bones-easing', get_stylesheet_directory_uri() . '/library/js/libs/jquery.easing.1.3.js', array('jquery'), true );
+		// wp_register_script( 'bones-colors', get_stylesheet_directory_uri() . '/library/js/libs/jquery.animate-colors.js', array('jquery'), true );
 
-		// waypoints
-		wp_register_script( 'bones-waypoint', get_stylesheet_directory_uri() . '/library/js/libs/waypoints.min.js', array(), '', true );
 
 		// EXP_GRID for 'who-we-are' page
-		wp_register_script( 'exp-grid-js', get_stylesheet_directory_uri() . '/library/js/libs/exp_grid.js', array('jquery'), '', true );
+		// wp_register_script( 'exp-grid-js', get_stylesheet_directory_uri() . '/library/js/libs/exp_grid.js', array('jquery'), '', true );
 		// wp_register_style( 'exp-grid-css', get_stylesheet_directory_uri() . '/library/css/exp_grid.css', array(), '', true );
 
-		//gif control
-		wp_register_script( 'gif-js', get_stylesheet_directory_uri() . '/library/js/libs/libgif.js', array('jquery'), '', true );
+
 
 		// ROYALSLIDER
 		wp_register_style( 'rs-css', get_stylesheet_directory_uri() . '/library/js/libs/royalslider/royalslider.css', array(), '', true );
@@ -190,10 +190,15 @@ function bones_scripts_and_styles() {
 		wp_register_script( 'g-maps' , get_stylesheet_directory_uri() . '/library/js/g-maps.js', array('g-maps'), '', false );
 
 
+		// LIGHTBOX
+		wp_register_script( 'fancybox-js', get_stylesheet_directory_uri() . '/library/js/jquery.fancybox.js', array('jquery'), '', true );
+		wp_register_script( 'fancyboxpack-js', get_stylesheet_directory_uri() . '/library/js/jquery.fancybox.pack.js', array('jquery'), '', true );
+
 		// enqueue styles and scripts
 		wp_enqueue_script( 'bones-modernizr' );
 		wp_enqueue_style( 'bones-stylesheet' );
 		wp_enqueue_style( 'bones-ie-only' );
+		wp_enqueue_style( 'fancybox' );
 
 
 		$wp_styles->add_data( 'bones-ie-only', 'conditional', 'lt IE 9' ); // add conditional wrapper around ie stylesheet
@@ -206,11 +211,8 @@ function bones_scripts_and_styles() {
 		wp_enqueue_script( 'jquery' );
 		wp_enqueue_script( 'bones-js' );
 		wp_enqueue_script( 'bones-jqueryui' );
-		wp_enqueue_script( 'bones-waypoint' );
-		wp_enqueue_script( 'bones-slider' );
-		wp_enqueue_script( 'bones-easing' );
-		wp_enqueue_script( 'bones-colors' );
-		wp_enqueue_script( 'gif-js' );
+		wp_enqueue_script( 'fancybox-js' );
+		wp_enqueue_script( 'fancyboxpack-js' );
 
 		// CONDITIONAL SCRIPT TO ONLY LOAD EXP-GRID-JS AND EXP-GRID-CSS ON 'WHO-WE-ARE' PAGE id = 45
 		if( is_page(45) || is_page(48)) {

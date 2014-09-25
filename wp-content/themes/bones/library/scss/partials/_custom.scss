@@ -201,9 +201,9 @@ hr {
   color: $brand-color !important;
 }
 
-.sidebar-selected a {
-  color: $black;
-}
+// .sidebar-selected {
+//   color: $brand-color;
+// }
 
 .slider-text {
   font-family: Sentinel Medium;
@@ -517,14 +517,13 @@ hr {
   line-height: 1.45em;
 }
 
-// .secondary li.page_item {
 .secondary li.page_item {
   line-height: 2.2em;
   font-size: .85em;
 
-  a {
-    color:  rgb(98,98,98);
-  }
+//   a {
+//     color:  rgb(98,98,98);
+//   }
 
   // a:hover {
   //   color: $brand-color;
