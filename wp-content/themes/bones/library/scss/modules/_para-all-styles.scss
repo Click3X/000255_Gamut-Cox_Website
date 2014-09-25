@@ -272,7 +272,7 @@
       overflow-y:hidden;
     }
     #group2 {
-      background-image: url('http://localhost/~charliedavis/gamut/wp-content/uploads/2014/09/rgb_Gamut_mountainspace.jpg');
+      // background-image: url('http://localhost/~charliedavis/gamut/wp-content/uploads/2014/09/rgb_Gamut_mountainspace.jpg');
       background-size: cover;
       background-position: 0;
 
@@ -351,7 +351,34 @@
       }
     }
 
+    .c-career-bg {
+      background-size: 50%;
+      background-position: 100%;
+      background-repeat: no-repeat;
+    }
 
+    #group6 {
+      // .c-smart-bg:before {
+      //   content: "";
+      //   display: block;
+      //   width: 100%;
+      //   padding-bottom: 25%;
+      //   background-image:url('');
+      //   background-size: cover;
+      // }
+
+      .ccc-holder {
+        width: 99%;
+        max-width: 1300px;
+        margin: 0 auto;
+
+        padding-bottom: 22%;
+          @media(min-width: 1300px) {
+            padding-bottom: 263px;
+          }
+
+      }
+    }
 
 
   }
@@ -360,4 +387,10 @@
   .home {
     width:100%;
     overflow-x:hidden;
+  }
+
+  .c-bg-mobile {
+    @media(min-width: 768px) {
+      display: none;
+    }
   }

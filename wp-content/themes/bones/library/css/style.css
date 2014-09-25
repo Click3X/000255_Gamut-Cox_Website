@@ -4330,7 +4330,6 @@ a {
 }
 /* line 274, ../scss/modules/_para-all-styles.scss */
 .mobile #group2 {
-  background-image: url("http://localhost/~charliedavis/gamut/wp-content/uploads/2014/09/rgb_Gamut_mountainspace.jpg");
   background-size: cover;
   background-position: 0;
   position: relative;
@@ -4419,12 +4418,38 @@ a {
     width: 58%;
   }
 }
+/* line 354, ../scss/modules/_para-all-styles.scss */
+.mobile .c-career-bg {
+  background-size: 50%;
+  background-position: 100%;
+  background-repeat: no-repeat;
+}
+/* line 370, ../scss/modules/_para-all-styles.scss */
+.mobile #group6 .ccc-holder {
+  width: 99%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-bottom: 22%;
+}
+@media (min-width: 1300px) {
+  /* line 370, ../scss/modules/_para-all-styles.scss */
+  .mobile #group6 .ccc-holder {
+    padding-bottom: 263px;
+  }
+}
 
-/* line 360, ../scss/modules/_para-all-styles.scss */
+/* line 387, ../scss/modules/_para-all-styles.scss */
 html,
 .home {
   width: 100%;
   overflow-x: hidden;
+}
+
+@media (min-width: 768px) {
+  /* line 392, ../scss/modules/_para-all-styles.scss */
+  .c-bg-mobile {
+    display: none;
+  }
 }
 
 /* line 2, ../scss/modules/_home-slider.scss */

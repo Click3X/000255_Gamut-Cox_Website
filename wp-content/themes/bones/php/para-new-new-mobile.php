@@ -51,7 +51,7 @@
   </div>
 
 
-  <div id="group2" class="parallax__group">
+  <div id="group2" class="parallax__group" style="background-image: url('<?php echo $bg_img['url'] ?>');">
     <div class="parallax__layer parallax__layer--base">
       <!-- <div class="title">Base Layer</div> -->
 
@@ -193,6 +193,7 @@
       <!-- <div class="title">Base Layer</div> -->
 
       <!-- <div class="clearfix cs-holder"> -->
+        <div class="clearfix cc-holder c-smart-bg c-bg-mobile" style="background-image:url('<?php echo $smart_service_image['url']; ?>');">
         <div class="clearfix cc-holder c-smart-bg" style="background-image:url('<?php echo $smart_service_image['url']; ?>');">
           <div class="clearfix ccc-holder">
             <div class="clearfix c-smart">
