@@ -425,6 +425,19 @@
     }
 
 
+    // HIDE BEAMS FOR NOW
+    #fly-it,
+    #fly-it-2,
+    #fly-it-3,
+    #fly-it-4 {
+      display: none;
+      @media(min-width: 811px) {
+        display: block;
+      }
+    }
+
+
+
   }
 
   html,

@@ -4485,15 +4485,31 @@ a {
 .mobile .c-smart {
   max-width: 615px;
 }
+/* line 432, ../scss/modules/_para-all-styles.scss */
+.mobile #fly-it,
+.mobile #fly-it-2,
+.mobile #fly-it-3,
+.mobile #fly-it-4 {
+  display: none;
+}
+@media (min-width: 811px) {
+  /* line 432, ../scss/modules/_para-all-styles.scss */
+  .mobile #fly-it,
+  .mobile #fly-it-2,
+  .mobile #fly-it-3,
+  .mobile #fly-it-4 {
+    display: block;
+  }
+}
 
-/* line 431, ../scss/modules/_para-all-styles.scss */
+/* line 444, ../scss/modules/_para-all-styles.scss */
 html,
 .home {
   width: 100%;
   overflow-x: hidden;
 }
 
-/* line 437, ../scss/modules/_para-all-styles.scss */
+/* line 450, ../scss/modules/_para-all-styles.scss */
 .c-bg-mobile.c-smart-bg,
 .c-bg-mobile.c-career-bg {
   background-size: cover;
@@ -4502,7 +4518,7 @@ html,
   padding-bottom: 50%;
 }
 @media (min-width: 811px) {
-  /* line 437, ../scss/modules/_para-all-styles.scss */
+  /* line 450, ../scss/modules/_para-all-styles.scss */
   .c-bg-mobile.c-smart-bg,
   .c-bg-mobile.c-career-bg {
     display: none;
@@ -4510,7 +4526,7 @@ html,
 }
 
 @media (min-width: 811px) {
-  /* line 447, ../scss/modules/_para-all-styles.scss */
+  /* line 460, ../scss/modules/_para-all-styles.scss */
   .c-bg-mobile {
     display: none;
   }
