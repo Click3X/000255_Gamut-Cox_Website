@@ -4499,8 +4499,8 @@ a {
   /* line 406, ../scss/modules/_para-all-styles.scss */
   .mobile .c-smart-bg {
     background-repeat: no-repeat;
-    background-size: 924px 616px;
-    background-position: 0% 0%;
+    background-size: 80%;
+    background-position: -150% 0%;
   }
 }
 /* line 420, ../scss/modules/_para-all-styles.scss */
