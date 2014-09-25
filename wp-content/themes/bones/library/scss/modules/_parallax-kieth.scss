@@ -13,7 +13,19 @@
   }
 
   #parallax-kieth {
+      .blue,
+      .red {
+        @media(min-width: 1200px) {
+          padding-bottom: 100px;
+        }
+      }
 
+
+      .subpage {
+        width: 90%;
+        max-width: 1300px;
+        margin: 0 auto;
+      }
 
      p {
         font-size: 1.1em;
@@ -211,7 +223,8 @@
     // #group6 { height: 1100px; }
     #group6 { height: 800px; }
     // #group7 { height: 400px; }
-    #group7 { height: 440px; }
+    #group7 { height: 510px; }
+
 
     .clearfix.new-b {
       width: 50%;
@@ -232,6 +245,11 @@
       }
     }
 
+    .p-holder p {
+      max-width: 27em;
+      text-align: left;
+    }
+
     #group6 {
       .c-smart {
       // max-width: 615px;
@@ -241,7 +259,20 @@
       float: right;
       position: absolute;
       left: 50%;
-      top: 25%;
+      // top: 25%;
+      top: 28%;
+
+      p {
+          max-width: 20em;
+        }
+      }
+    }
+
+    #group7 {
+      .h1-hold {
+        max-width: 650px;
+        width: 100%;
+        float: right;
       }
     }
 
@@ -257,8 +288,9 @@
   h1, p {
     width: 100%;
   }
-  h1, p, .gamut-btn {
-      max-width: 681px;
+  h1, p, .c-btn-hold {
+      // max-width: 681px;
+      width:100%;
       max-width: 651px;
       float:left;
     }
@@ -294,10 +326,15 @@
     h1, p {
       width:100%;
     }
-    h1, p, .gamut-btn, .c-btn-hold {
+    // h1, p, .c-btn-hold {
+      h1 {
       // max-width: 681px;
       max-width: 651px;
-      float: right;
+      // float: right;
+    }
+
+    p {
+      max-width:19.5em;
     }
     .gamut-btn {
       margin-top:2rem;
@@ -344,6 +381,9 @@
 
 
   .c-career {
+    p {
+      max-width: 19.5em;
+    }
 
     h1 {
       position: relative;

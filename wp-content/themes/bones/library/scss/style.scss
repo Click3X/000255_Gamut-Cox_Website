@@ -84,26 +84,14 @@ the other stylesheets. Remember, keep it light: Speed is Important.
 @import "partials/sidebar";
 
 // PARALLAX FOR HOME PAGE
-// @import "modules/parallax";
 @import "modules/para-friday";
-// @import "modules/para-friday-new";
-
-// @import "modules/parallax-tues";
-// parallax mobile
-// @import "modules/parallax-mobile";
-// @import "modules/para-new";
-
-
-// @import "modules/para-new-new";
-
 
 @import "modules/para-all-styles";
 
-// @import "modules/para-new-new-mobile";
-
+// DEV PAGE TEST STYLES
 @import "modules/para-new-dev";
 
-// KEITH PARALLAX
+// KEITH PARALLAX -> THE REAL WORKING DEAL
 @import "modules/parallax-kieth";
 @import "modules/parallax-kieth-addons";
 
