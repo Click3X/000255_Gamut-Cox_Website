@@ -62,7 +62,7 @@ endif;
 								<ul class="clearfix data-partners">
 									<?php
 										foreach ($dataPartners as $key => $dataPartner) {
-											echo '<li class="'.$dataPartner['id'].'"><a href="'.$dataPartner['link'].'"><img src="'.$dataPartner['logo'].'"></a></li>';
+											echo '<li class="'.$dataPartner['id'].'"><a href="'.$dataPartner['link'].'" target="_blank"><img src="'.$dataPartner['logo'].'"></a></li>';
 										}
 									?>
 								</ul>
