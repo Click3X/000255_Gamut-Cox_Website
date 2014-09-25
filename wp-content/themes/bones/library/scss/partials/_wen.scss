@@ -1,9 +1,21 @@
 // Events post formatting
 .events-table {
+	border: none;
 	h3 {
 		margin-top: .6em;
 		letter-spacing: .1em;
 		font-size: .91em;
+		font-family: "franklin-gothic-urw",sans-serif;
+		font-weight: 700;
+	}
+
+	tr {
+		border: none;
+		background-color: $white;
+	}
+
+	td {
+		border: none;
 	}
 
 	.events-right-column {
@@ -12,7 +24,7 @@
 }
 
 .events-break {
-	
+	border-top:2px solid #aaa;
 }
 
 
