@@ -167,13 +167,14 @@
   </div>
 
 
+
   <div id="group5" class="parallax__group">
     <div class="parallax__layer parallax__layer--fore">
       <!-- <div class="title">Foreground Layer</div> -->
       <div class="clearfix grey-bg txt-holder">
         <h1><?php echo $gamut_difference_title; ?></h1>
         <div class="difference"><?php echo $gamut_difference_content; ?></div>
-        <a href="<?php echo get_permalink(11);?>" class="gamut-btn">LEARN HOW&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
+        <a href="<?php echo get_permalink(184);?>" class="gamut-btn">LEARN HOW&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
       </div>
     </div>
     <div class="parallax__layer parallax__layer--base" style="background-color:rgb(61,61,61);">
