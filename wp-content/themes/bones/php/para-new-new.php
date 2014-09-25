@@ -8,7 +8,7 @@
       
       <div class="parallax__layer parallax__layer--base">
         <!-- <div class="title">Base Layer</div> -->
-        <div id="home-slider-holder" class="container clearfix">
+        <!-- <div id="home-slider-holder" class="container clearfix">
           <ul id="marquee-slider" class="royalSlider contentSlider rsDefault js-show">
             <?php
             foreach ($images as $key => $image) { ?>
@@ -17,7 +17,34 @@
               }
             ?>
           </ul>
+        </div> -->
+
+        <div id="home-slider-holder" class="container clearfix">
+          <!-- <ul id="marquee-slider" class="royalSlider contentSlider rsDefault js-show">
+            <?php
+            foreach ($images as $key => $image) { ?>
+              <li class="marquee-slide" style="background-image:url('<?php echo $image;?>');"></li>
+            <?php 
+              }
+            ?>
+          </ul> -->
+          <?php 
+            require_once 'Mobile_Detect.php'; 
+            $detect = new Mobile_Detect;
+          ?>
+          <?php if ( $detect->isMobile() ) : ?>
+          <img src="<?php bloginfo('url'); ?>/wp-content/videos/gamut_intro_1.gif" width="100%"/>
+          <?php else : ?>
+          <video width="100%" loop autoplay muted>
+            <!-- poster="<?php bloginfo('url'); ?>/wp-content/videos/GAMUT_h264.png" -->
+            <source src="<?php bloginfo('url'); ?>/wp-content/videos/GAMUT_h264.mp4" type="video/mp4">
+            <source src="<?php bloginfo('url'); ?>/wp-content/videos/GAMUT_h264.ogv" type="video/ogg">
+            <img src="<?php bloginfo('url'); ?>/wp-content/videos/gamut_intro_1.gif" width="100%"/>
+          </video>
+          <?php endif; ?>
         </div>
+
+        
 
       </div>
 
