@@ -64,9 +64,11 @@
 
 	// PARALLAX FILE
 	// include('php/para-tues.php'); 
-
 	// include('php/para-new.php'); 
-	include('php/para-new-new.php'); 
+
+	// thursday
+	// include('php/para-new-new.php'); 
+	include('php/para-new-new-mobile.php'); 
 
 ?>	
 

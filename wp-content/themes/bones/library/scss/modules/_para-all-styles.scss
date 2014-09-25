@@ -1,0 +1,363 @@
+// ALL STYLES
+
+.c-career {
+    h1 {
+      position: relative;
+     &:before {
+        content: "";
+        display: block;
+        background-image: url("../../../../../img/new-beams/our-solutions.png");
+        background-size: cover;
+        position: absolute;
+        margin:auto;
+        
+        right: 0;
+        width: 783px;
+
+        top: -1.5em;
+        bottom: 0;
+        // left: -1270px;
+        left: -1320px;
+
+
+        // max-width: 783px;
+        height: 100%;
+        max-height: 5px;
+        z-index: 10;
+
+        @media(min-width: 811px) {
+         right: 0;
+          // left: -1350px;
+          left: -1450px;
+          top: .5em;
+          bottom: auto;
+
+        }
+      }
+    }
+  }
+  
+  #group3,
+  #group5 {
+    h1 {
+      position: relative;
+
+      &:before {
+        content: "";
+        display: block;
+        background-image: url("../../../../../img/new-beams/our-solutions.png");
+        background-size: cover;
+        position: absolute;
+        // top: .5em;
+        bottom: 0;
+        right: 0;
+        width: 783px;
+
+        top: -.5em;
+        bottom: 0;
+        left: -762px;
+
+
+        // max-width: 783px;
+        height: 100%;
+        max-height: 5px;
+        z-index: 10;
+
+        @media(min-width: 811px) {
+          top: .5em;
+          bottom: 0;
+          left: -812px;
+        }
+      }
+    }
+    p {
+      position: relative;
+      &:after {
+        content: "";
+        display: block;
+        background-image: url("../../../../../img/new-beams/diff-right.png");
+        background-size: cover;
+        position: absolute;
+
+        width: 842px;
+        // max-width: 842px;
+        height: 100%;
+        max-height: 5px;
+        margin: auto;
+        z-index: 10;
+        right: -802px;
+
+        @media(min-width: 811px) {
+          right: -862px;
+          top:0;
+          bottom:0;
+        }
+      }
+    }
+  }
+
+
+.parallax {
+
+  #group2 .txt-holder,
+  #group4 .subpage,
+  .grey-bg {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+
+  .subpage-wrap {
+     border-bottom: 2px dashed rgb(216,216,216);
+
+     &:last-of-type {border-bottom:none;}
+  }
+
+  p {
+    font-size: 1.6em;
+    line-height: 1.15em;
+  }
+
+  .c-career p {
+    max-width: 19.5em;
+  }
+
+  .c-smart p {
+    max-width: 20em;
+  }
+
+  .ccc-holder {
+    width:90%;
+    max-width:1300px;
+    margin: 0 auto;
+  }
+
+
+  .p-holder {
+    p {
+      max-width: 27em;
+      text-align: left;
+    }
+  }
+
+
+  .gamut-btn {
+      background-color: black;
+      border-color:black;
+      color:white !important;
+      margin-left: 0;
+      margin-top:2em;
+    }
+
+  .plus-sign {
+    position: relative;
+    max-width: 7.5em;
+    margin-left: .8em;
+  }
+
+  .plus-sign:after {
+    content: "";
+    display: block;
+    background-image: url('../../../../../img/plus-sign.png');
+    width: 1.65rem;
+    height: 1.65rem;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    margin: auto;
+    left: -.8em;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media(min-width:1040px) {
+       width: 2.15rem;
+      height: 2.15rem;
+    }
+
+    @media(min-width: 1340px) { 
+      width: 2.65rem;
+      height: 2.65rem;
+    }
+
+    .c-career-bg {
+      background-repeat: no-repeat;
+      background-size: 80%;
+      background-position: 290% 20%;
+    }
+  }
+
+
+
+  @media(min-width: 811px) {
+    .c-smart, .c-career {
+      width: 50%;
+      padding:0 .5em;
+    }
+    .c-smart {
+      float:right;
+    }
+  }
+
+  .c-smart-bg {
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: -25% 0%;
+  }
+  #group3,
+  #group5 {
+    color:white;
+
+    h1 {
+      color:white;
+    }
+  }
+
+
+  .grey-bg {
+    background-color: rgb(61,61,61);
+  }
+
+}
+
+#group5 .gamut-btn {
+  margin-left:11%;
+}
+
+#group5 .gamut-btn,
+#group6 .gamut-btn {
+  margin-bottom: 2em;
+}
+
+.mobile #group5,
+  .mobile #group3,
+  #group5 .parallax__layer--base, 
+  #group3 .parallax__layer--base {
+    background-color: rgb(61,61,61);
+    color:white;
+  }
+
+  .parallax {
+    p {
+        font-size: 1.1em;
+      @media(min-width: 768px) {
+        font-size: 1.4em;
+      }
+
+      @media(min-width: 1200px) {
+        font-size: 1.6em;
+      }
+    }
+    h1 {
+      font-size: 2.5em;
+
+      @media(min-width: 768px) {
+        font-size: 3em;
+      }
+
+      @media(min-width: 1200px) {
+        font-size: 4.5em;
+      }
+    }
+  }
+
+
+  .mobile {
+    .debug {
+      display: none;
+    }
+    #group1 {
+      // max-height: 800px;
+      max-height: 730px;
+      overflow-y:hidden;
+    }
+    #group2 {
+      background-image: url('http://localhost/~charliedavis/gamut/wp-content/uploads/2014/09/rgb_Gamut_mountainspace.jpg');
+      background-size: cover;
+      background-position: 0;
+
+      position: relative;
+
+      padding-bottom: 12%;
+      padding-top: 6%;
+      // padding-bottom: 23%;
+      @media(min-width: 640px){
+        padding-bottom: 42%;
+        padding-top:0;
+      }
+
+      @media(min-width: 1200px) {
+        // padding-bottom: 275px;  
+        padding-bottom: 475px;  
+      }
+
+      .parallax__layer.parallax__layer--base {
+        @media(min-width: 640px) {
+          width:100%;
+          position: absolute;
+          top:12%; 
+          left:0; right:0;bottom:0;
+        }
+      }
+    }
+
+    #group5,
+    #group3 {
+      padding: 8% 0 9%;
+
+      @media(min-width: 1200px) {
+        padding: 95px 0 115px;
+      }
+    }
+
+    #group4 .subpage {
+      padding: 10% 0 8%;
+
+      @media(min-width: 1200px) {
+        padding: 100px 0 80px;
+      }
+
+      @media(min-width:500px) {
+      .gamut-btn {
+          position: absolute;
+          top:0; bottom:0;  
+          margin:auto;
+        }
+      }
+
+      .p-holder {
+        margin-bottom:2em;
+      }
+
+      .blue, .red {
+        padding-bottom: 75px;
+        width: 100%;
+
+        @media(min-width:500px) {
+          padding-bottom:8%;
+        }
+      }
+
+      .blue {
+        @media(min-width:500px) {
+          width:42%;
+        }
+      }
+
+      .red {
+        @media(min-width:500px) {
+          width: 58%
+        }
+      }
+    }
+
+
+
+
+  }
+
+  html,
+  .home {
+    width:100%;
+    overflow-x:hidden;
+  }

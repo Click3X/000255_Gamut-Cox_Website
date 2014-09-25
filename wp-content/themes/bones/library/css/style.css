@@ -2378,6 +2378,11 @@ view.
   }
 }
 
+/* line 1063, ../scss/breakpoints/_base.scss */
+#main article p a {
+  color: #ed228b;
+}
+
 /* ==========================================================================
    Custom CSS
    ========================================================================== */
@@ -3907,10 +3912,20 @@ a {
   }
 }
 @media (min-width: 811px) {
-  /* Parallax base styles
-  --------------------------------------------- */
-  /* line 6, ../scss/modules/_para-friday.scss */
-  .parallax {
+  /* line 1, ../scss/modules/_para-friday.scss */
+  .desk {
+    /* Parallax base styles
+    --------------------------------------------- */
+    /* Debugger styles - used to show the effect
+    --------------------------------------------- */
+    /* demo styles
+    --------------------------------------------- */
+    /* centre the content in the parallax layers */
+    /* style the groups
+    --------------------------------------------- */
+  }
+  /* line 8, ../scss/modules/_para-friday.scss */
+  .desk .parallax {
     height: 500px;
     /* fallback for older browsers */
     height: 100vh;
@@ -3919,9 +3934,8 @@ a {
     -webkit-perspective: 300px;
     perspective: 300px;
   }
-
-  /* line 15, ../scss/modules/_para-friday.scss */
-  .parallax__group {
+  /* line 17, ../scss/modules/_para-friday.scss */
+  .desk .parallax__group {
     position: relative;
     height: 500px;
     /* fallback for older browsers */
@@ -3929,48 +3943,40 @@ a {
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
   }
-
-  /* line 23, ../scss/modules/_para-friday.scss */
-  .parallax__layer {
+  /* line 25, ../scss/modules/_para-friday.scss */
+  .desk .parallax__layer {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
   }
-
-  /* line 31, ../scss/modules/_para-friday.scss */
-  .parallax__layer--fore {
+  /* line 33, ../scss/modules/_para-friday.scss */
+  .desk .parallax__layer--fore {
     -webkit-transform: translateZ(90px) scale(0.7);
     transform: translateZ(90px) scale(0.7);
     z-index: 1;
   }
-
-  /* line 37, ../scss/modules/_para-friday.scss */
-  .parallax__layer--base {
+  /* line 39, ../scss/modules/_para-friday.scss */
+  .desk .parallax__layer--base {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     z-index: 4;
   }
-
-  /* line 43, ../scss/modules/_para-friday.scss */
-  .parallax__layer--back {
+  /* line 45, ../scss/modules/_para-friday.scss */
+  .desk .parallax__layer--back {
     -webkit-transform: translateZ(-300px) scale(2);
     transform: translateZ(-300px) scale(2);
     z-index: 3;
   }
-
-  /* line 49, ../scss/modules/_para-friday.scss */
-  .parallax__layer--deep {
+  /* line 51, ../scss/modules/_para-friday.scss */
+  .desk .parallax__layer--deep {
     -webkit-transform: translateZ(-600px) scale(3);
     transform: translateZ(-600px) scale(3);
     z-index: 2;
   }
-
-  /* Debugger styles - used to show the effect
-  --------------------------------------------- */
-  /* line 59, ../scss/modules/_para-friday.scss */
-  .debug {
+  /* line 61, ../scss/modules/_para-friday.scss */
+  .desk .debug {
     position: fixed;
     top: 0;
     left: .5em;
@@ -3980,36 +3986,28 @@ a {
     padding: .5em;
     border-radius: 0 0 5px 5px;
   }
-
-  /* line 69, ../scss/modules/_para-friday.scss */
-  .debug-on .parallax__group {
+  /* line 71, ../scss/modules/_para-friday.scss */
+  .desk .debug-on .parallax__group {
     -webkit-transform: translate3d(800px, 0, -800px) rotateY(30deg);
     transform: translate3d(700px, 0, -800px) rotateY(30deg);
   }
-
-  /* line 73, ../scss/modules/_para-friday.scss */
-  .debug-on .parallax__layer {
+  /* line 75, ../scss/modules/_para-friday.scss */
+  .desk .debug-on .parallax__layer {
     box-shadow: 0 0 0 2px #000;
     opacity: 0.9;
   }
-
-  /* line 77, ../scss/modules/_para-friday.scss */
-  .parallax__group {
+  /* line 79, ../scss/modules/_para-friday.scss */
+  .desk .parallax__group {
     -webkit-transition: -webkit-transform 0.5s;
     transition: transform 0.5s;
   }
-
-  /* demo styles
-  --------------------------------------------- */
-  /* line 88, ../scss/modules/_para-friday.scss */
-  html.home-para,
-  body.home {
+  /* line 90, ../scss/modules/_para-friday.scss */
+  .desk html.home-para,
+  .desk body.home {
     overflow: hidden;
   }
-
-  /* centre the content in the parallax layers */
-  /* line 102, ../scss/modules/_para-friday.scss */
-  .title {
+  /* line 104, ../scss/modules/_para-friday.scss */
+  .desk .title {
     text-align: center;
     position: absolute;
     left: 50%;
@@ -4017,594 +4015,49 @@ a {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
-
-  /* style the groups
-  --------------------------------------------- */
-  /* line 116, ../scss/modules/_para-friday.scss */
-  #group1 {
+  /* line 118, ../scss/modules/_para-friday.scss */
+  .desk #group1 {
     z-index: 5;
     /* slide over group 2 */
   }
-
-  /* line 123, ../scss/modules/_para-friday.scss */
-  #group2 {
+  /* line 125, ../scss/modules/_para-friday.scss */
+  .desk #group2 {
     z-index: 3;
     /* slide under groups 1 and 3 */
   }
-
-  /* line 130, ../scss/modules/_para-friday.scss */
-  #group3 {
+  /* line 132, ../scss/modules/_para-friday.scss */
+  .desk #group3 {
     z-index: 4;
     /* slide over group 2 and 4 */
   }
-
-  /* line 137, ../scss/modules/_para-friday.scss */
-  #group4 {
+  /* line 139, ../scss/modules/_para-friday.scss */
+  .desk #group4 {
     z-index: 2;
     /* slide under group 3 and 5 */
   }
-
-  /* line 144, ../scss/modules/_para-friday.scss */
-  #group5 {
+  /* line 146, ../scss/modules/_para-friday.scss */
+  .desk #group5 {
     z-index: 3;
     /* slide over group 4 and 6 */
   }
-
-  /* line 151, ../scss/modules/_para-friday.scss */
-  #group6 {
+  /* line 153, ../scss/modules/_para-friday.scss */
+  .desk #group6 {
     z-index: 2;
     /* slide under group 5 and 7 */
   }
-
-  /* line 158, ../scss/modules/_para-friday.scss */
-  #group7 {
+  /* line 160, ../scss/modules/_para-friday.scss */
+  .desk #group7 {
     z-index: 3;
     /* slide over group 7 */
   }
 }
-/* style the groups
---------------------------------------------- */
-/* line 8, ../scss/modules/_para-new-new.scss */
-.home #group1,
-.page-id-466 #group1,
-.page-id-393 #group1 {
-  z-index: 5;
-  /* slide over group 2 */
-}
-/* line 15, ../scss/modules/_para-new-new.scss */
-.home #group2,
-.page-id-466 #group2,
-.page-id-393 #group2 {
-  z-index: 3;
-  /* slide under groups 1 and 3 */
-}
-/* line 18, ../scss/modules/_para-new-new.scss */
-.home #group2 .txt-holder-holder,
-.page-id-466 #group2 .txt-holder-holder,
-.page-id-393 #group2 .txt-holder-holder {
-  margin-top: 50px;
-}
-@media (min-width: 1040px) {
-  /* line 18, ../scss/modules/_para-new-new.scss */
-  .home #group2 .txt-holder-holder,
-  .page-id-466 #group2 .txt-holder-holder,
-  .page-id-393 #group2 .txt-holder-holder {
-    margin-top: 100px;
-  }
-}
-/* line 26, ../scss/modules/_para-new-new.scss */
-.home #group2 .parallax__layer--back,
-.page-id-466 #group2 .parallax__layer--back,
-.page-id-393 #group2 .parallax__layer--back {
-  padding-bottom: 50%;
-}
-/* line 31, ../scss/modules/_para-new-new.scss */
-.home #group2 .parallax__layer--deep,
-.page-id-466 #group2 .parallax__layer--deep,
-.page-id-393 #group2 .parallax__layer--deep {
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 150%;
-}
-/* line 37, ../scss/modules/_para-new-new.scss */
-.home #group3,
-.page-id-466 #group3,
-.page-id-393 #group3 {
-  z-index: 4;
-  /* slide over group 2 and 4 */
-}
-/* line 44, ../scss/modules/_para-new-new.scss */
-.home #group4,
-.page-id-466 #group4,
-.page-id-393 #group4 {
-  z-index: 3;
-  /* slide under group 3 and 5 */
-}
-/* line 52, ../scss/modules/_para-new-new.scss */
-.home #group5,
-.page-id-466 #group5,
-.page-id-393 #group5 {
-  z-index: 3;
-  /* slide over group 4 and 6 */
-}
-/* line 59, ../scss/modules/_para-new-new.scss */
-.home #group6,
-.page-id-466 #group6,
-.page-id-393 #group6 {
-  z-index: 2;
-  /* slide under group 5 and 7 */
-}
-/* line 66, ../scss/modules/_para-new-new.scss */
-.home #group7,
-.page-id-466 #group7,
-.page-id-393 #group7 {
-  z-index: 3;
-  /* slide over group 7 */
-}
-/* line 74, ../scss/modules/_para-new-new.scss */
-.home .parallax__group,
-.page-id-466 .parallax__group,
-.page-id-393 .parallax__group {
-  height: 500px;
-}
-@media (min-width: 811px) {
-  /* line 81, ../scss/modules/_para-new-new.scss */
-  .home #group1,
-  .page-id-466 #group1,
-  .page-id-393 #group1 {
-    height: 100vh;
-  }
-  /* line 85, ../scss/modules/_para-new-new.scss */
-  .home #group1 .parallax__group,
-  .page-id-466 #group1 .parallax__group,
-  .page-id-393 #group1 .parallax__group {
-    height: 100vh;
-  }
-}
-@media (min-width: 1040px) {
-  /* line 100, ../scss/modules/_para-new-new.scss */
-  .home #group1,
-  .page-id-466 #group1,
-  .page-id-393 #group1 {
-    height: 700px;
-  }
-  /* line 103, ../scss/modules/_para-new-new.scss */
-  .home #group1 .parallax__group,
-  .page-id-466 #group1 .parallax__group,
-  .page-id-393 #group1 .parallax__group {
-    height: 700px;
-  }
-}
-/* line 118, ../scss/modules/_para-new-new.scss */
-.home #group6,
-.home #group6 .parallax__group,
-.page-id-466 #group6,
-.page-id-466 #group6 .parallax__group,
-.page-id-393 #group6,
-.page-id-393 #group6 .parallax__group {
-  height: 734px;
-}
-@media (min-width: 1040px) {
-  /* line 118, ../scss/modules/_para-new-new.scss */
-  .home #group6,
-  .home #group6 .parallax__group,
-  .page-id-466 #group6,
-  .page-id-466 #group6 .parallax__group,
-  .page-id-393 #group6,
-  .page-id-393 #group6 .parallax__group {
-    height: 1130px;
-  }
-}
-@media (min-width: 1200px) {
-  /* line 128, ../scss/modules/_para-new-new.scss */
-  .home #group6 .c-career,
-  .page-id-466 #group6 .c-career,
-  .page-id-393 #group6 .c-career {
-    padding-left: 10%;
-  }
-}
-/* line 145, ../scss/modules/_para-new-new.scss */
-.home #group2 .txt-holder,
-.page-id-466 #group2 .txt-holder,
-.page-id-393 #group2 .txt-holder {
-  width: 90%;
-  max-width: 1300px;
-  margin: 0 auto;
-}
-/* line 155, ../scss/modules/_para-new-new.scss */
-.home #group5 p,
-.page-id-466 #group5 p,
-.page-id-393 #group5 p {
-  max-width: 32.5em;
-}
-/* line 159, ../scss/modules/_para-new-new.scss */
-.home #group5 .gamut-btn,
-.page-id-466 #group5 .gamut-btn,
-.page-id-393 #group5 .gamut-btn {
-  margin-left: 11%;
-  color: white !important;
-  background: black;
-  border-color: black;
-}
-/* line 168, ../scss/modules/_para-new-new.scss */
-.home #group4,
-.page-id-466 #group4,
-.page-id-393 #group4 {
-  height: 1080px;
-  background-color: white;
-}
-@media (min-width: 1040px) {
-  /* line 168, ../scss/modules/_para-new-new.scss */
-  .home #group4,
-  .page-id-466 #group4,
-  .page-id-393 #group4 {
-    height: 1640px;
-  }
-}
-/* line 177, ../scss/modules/_para-new-new.scss */
-.home #group4 .subpage,
-.page-id-466 #group4 .subpage,
-.page-id-393 #group4 .subpage {
-  padding: 62.5px 0;
-  width: 90%;
-  max-width: 1300px;
-  margin: 0 auto;
-}
-@media (min-width: 1040px) {
-  /* line 177, ../scss/modules/_para-new-new.scss */
-  .home #group4 .subpage,
-  .page-id-466 #group4 .subpage,
-  .page-id-393 #group4 .subpage {
-    padding: 112.5px 0;
-  }
-}
-/* line 188, ../scss/modules/_para-new-new.scss */
-.home #group4 .subpage .gamut-btn,
-.page-id-466 #group4 .subpage .gamut-btn,
-.page-id-393 #group4 .subpage .gamut-btn {
-  color: white !important;
-  background-color: black;
-  border-color: black;
-}
-/* line 194, ../scss/modules/_para-new-new.scss */
-.home #group4 .subpage p,
-.page-id-466 #group4 .subpage p,
-.page-id-393 #group4 .subpage p {
-  font-size: 1.8em;
-}
-/* line 200, ../scss/modules/_para-new-new.scss */
-.home #group4 .parallax__group,
-.page-id-466 #group4 .parallax__group,
-.page-id-393 #group4 .parallax__group {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  height: 1080px;
-}
-@media (min-width: 1040px) {
-  /* line 200, ../scss/modules/_para-new-new.scss */
-  .home #group4 .parallax__group,
-  .page-id-466 #group4 .parallax__group,
-  .page-id-393 #group4 .parallax__group {
-    height: 1600px;
-  }
-}
-/* line 211, ../scss/modules/_para-new-new.scss */
-.home #group3,
-.home #group5,
-.page-id-466 #group3,
-.page-id-466 #group5,
-.page-id-393 #group3,
-.page-id-393 #group5 {
-  color: white;
-}
-/* line 214, ../scss/modules/_para-new-new.scss */
-.home #group3 h1,
-.home #group5 h1,
-.page-id-466 #group3 h1,
-.page-id-466 #group5 h1,
-.page-id-393 #group3 h1,
-.page-id-393 #group5 h1 {
-  color: white;
-}
-/* line 228, ../scss/modules/_para-new-new.scss */
-.home #group3,
-.home #group3 .parallax__group,
-.home #group5,
-.home #group5 .parallax__group,
-.page-id-466 #group3,
-.page-id-466 #group3 .parallax__group,
-.page-id-466 #group5,
-.page-id-466 #group5 .parallax__group,
-.page-id-393 #group3,
-.page-id-393 #group3 .parallax__group,
-.page-id-393 #group5,
-.page-id-393 #group5 .parallax__group {
-  height: 400px;
-}
-@media (min-width: 1040px) {
-  /* line 228, ../scss/modules/_para-new-new.scss */
-  .home #group3,
-  .home #group3 .parallax__group,
-  .home #group5,
-  .home #group5 .parallax__group,
-  .page-id-466 #group3,
-  .page-id-466 #group3 .parallax__group,
-  .page-id-466 #group5,
-  .page-id-466 #group5 .parallax__group,
-  .page-id-393 #group3,
-  .page-id-393 #group3 .parallax__group,
-  .page-id-393 #group5,
-  .page-id-393 #group5 .parallax__group {
-    height: 500px;
-  }
-}
-/* line 237, ../scss/modules/_para-new-new.scss */
-.home #group2,
-.page-id-466 #group2,
-.page-id-393 #group2 {
-  height: 100vh;
-}
-/* line 240, ../scss/modules/_para-new-new.scss */
-.home #group2 .txt-holder-holder,
-.page-id-466 #group2 .txt-holder-holder,
-.page-id-393 #group2 .txt-holder-holder {
-  position: absolute;
-  top: 31%;
-  width: 100%;
-}
-/* line 246, ../scss/modules/_para-new-new.scss */
-.home #group2 .parallax__group,
-.page-id-466 #group2 .parallax__group,
-.page-id-393 #group2 .parallax__group {
-  height: 100vh;
-}
-@media (min-width: 811px) {
-  /* line 254, ../scss/modules/_para-new-new.scss */
-  .home #group7,
-  .page-id-466 #group7,
-  .page-id-393 #group7 {
-    height: 550px;
-  }
-}
-@media (min-width: 1040px) {
-  /* line 254, ../scss/modules/_para-new-new.scss */
-  .home #group7,
-  .page-id-466 #group7,
-  .page-id-393 #group7 {
-    height: 530px;
-  }
-}
-/* line 266, ../scss/modules/_para-new-new.scss */
-.home .home #container,
-.page-id-466 .home #container,
-.page-id-393 .home #container {
-  margin-top: -62.5px;
-}
-@media (min-width: 1210px) {
-  /* line 266, ../scss/modules/_para-new-new.scss */
-  .home .home #container,
-  .page-id-466 .home #container,
-  .page-id-393 .home #container {
-    margin-top: -31px;
-  }
-}
-@media (min-width: 811px) {
-  /* line 275, ../scss/modules/_para-new-new.scss */
-  .home .c-smart, .home .c-career,
-  .page-id-466 .c-smart,
-  .page-id-466 .c-career,
-  .page-id-393 .c-smart,
-  .page-id-393 .c-career {
-    width: 50%;
-    padding: 0 .5em;
-  }
-  /* line 279, ../scss/modules/_para-new-new.scss */
-  .home .c-smart,
-  .page-id-466 .c-smart,
-  .page-id-393 .c-smart {
-    float: right;
-  }
-}
-/* line 284, ../scss/modules/_para-new-new.scss */
-.home .c-smart-bg,
-.page-id-466 .c-smart-bg,
-.page-id-393 .c-smart-bg {
-  background-repeat: no-repeat;
-  background-size: 60%;
-  background-position: -25% 0%;
-}
-@media (min-width: 1040px) {
-  /* line 284, ../scss/modules/_para-new-new.scss */
-  .home .c-smart-bg,
-  .page-id-466 .c-smart-bg,
-  .page-id-393 .c-smart-bg {
-    background-size: 63%;
-    background-position: -35% 0%;
-  }
-}
-@media (min-width: 1320px) {
-  /* line 284, ../scss/modules/_para-new-new.scss */
-  .home .c-smart-bg,
-  .page-id-466 .c-smart-bg,
-  .page-id-393 .c-smart-bg {
-    padding-bottom: 100px;
-  }
-  /* line 299, ../scss/modules/_para-new-new.scss */
-  .home .c-smart-bg .c-smart,
-  .page-id-466 .c-smart-bg .c-smart,
-  .page-id-393 .c-smart-bg .c-smart {
-    margin-top: 110px;
-  }
-}
-/* line 305, ../scss/modules/_para-new-new.scss */
-.home .c-career-bg,
-.page-id-466 .c-career-bg,
-.page-id-393 .c-career-bg {
-  background-repeat: no-repeat;
-  background-size: 80%;
-  background-position: 290% 20%;
-}
-/* line 313, ../scss/modules/_para-new-new.scss */
-.home .plus-sign,
-.page-id-466 .plus-sign,
-.page-id-393 .plus-sign {
-  position: relative;
-  max-width: 7.5em;
-  margin-left: .8em;
-}
-/* line 319, ../scss/modules/_para-new-new.scss */
-.home .plus-sign:after,
-.page-id-466 .plus-sign:after,
-.page-id-393 .plus-sign:after {
-  content: "";
-  display: block;
-  background-image: url("../../../../../img/plus-sign.png");
-  width: 1.65rem;
-  height: 1.65rem;
-  top: 0;
-  bottom: 0;
-  position: absolute;
-  margin: auto;
-  left: -.8em;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-@media (min-width: 1040px) {
-  /* line 319, ../scss/modules/_para-new-new.scss */
-  .home .plus-sign:after,
-  .page-id-466 .plus-sign:after,
-  .page-id-393 .plus-sign:after {
-    width: 2.15rem;
-    height: 2.15rem;
-  }
-}
-@media (min-width: 1340px) {
-  /* line 319, ../scss/modules/_para-new-new.scss */
-  .home .plus-sign:after,
-  .page-id-466 .plus-sign:after,
-  .page-id-393 .plus-sign:after {
-    width: 2.65rem;
-    height: 2.65rem;
-  }
-}
-/* line 344, ../scss/modules/_para-new-new.scss */
-.home .cc-holder,
-.page-id-466 .cc-holder,
-.page-id-393 .cc-holder {
-  padding-bottom: 15%;
-}
-@media (min-width: 1040px) {
-  /* line 344, ../scss/modules/_para-new-new.scss */
-  .home .cc-holder,
-  .page-id-466 .cc-holder,
-  .page-id-393 .cc-holder {
-    padding-bottom: 140px;
-  }
-}
-@media (min-width: 1600px) {
-  /* line 344, ../scss/modules/_para-new-new.scss */
-  .home .cc-holder,
-  .page-id-466 .cc-holder,
-  .page-id-393 .cc-holder {
-    padding-bottom: 240px;
-  }
-}
-/* line 354, ../scss/modules/_para-new-new.scss */
-.home .cc-holder .gamut-btn,
-.page-id-466 .cc-holder .gamut-btn,
-.page-id-393 .cc-holder .gamut-btn {
-  background-color: black;
-  border-color: black;
-  color: white !important;
-  margin-left: 0;
-  margin-top: 2em;
-}
-/* line 363, ../scss/modules/_para-new-new.scss */
-.home p,
-.page-id-466 p,
-.page-id-393 p {
-  font-size: 1.6em;
-  line-height: 1.15em;
-}
-/* line 368, ../scss/modules/_para-new-new.scss */
-.home .c-career p,
-.page-id-466 .c-career p,
-.page-id-393 .c-career p {
-  max-width: 19.5em;
-}
-/* line 372, ../scss/modules/_para-new-new.scss */
-.home .c-smart p,
-.page-id-466 .c-smart p,
-.page-id-393 .c-smart p {
-  max-width: 20em;
-}
-/* line 376, ../scss/modules/_para-new-new.scss */
-.home .ccc-holder,
-.page-id-466 .ccc-holder,
-.page-id-393 .ccc-holder {
-  width: 90%;
-  max-width: 1300px;
-  margin: 0 auto;
-}
-/* line 384, ../scss/modules/_para-new-new.scss */
-.home .p-holder p,
-.page-id-466 .p-holder p,
-.page-id-393 .p-holder p {
-  max-width: 27em;
-  text-align: left;
-}
-/* line 390, ../scss/modules/_para-new-new.scss */
-.home .grey-bg,
-.page-id-466 .grey-bg,
-.page-id-393 .grey-bg {
-  width: 90%;
-  max-width: 1300px;
-  margin: 0 auto;
-}
-/* line 396, ../scss/modules/_para-new-new.scss */
-.home .parallax,
-.page-id-466 .parallax,
-.page-id-393 .parallax {
-  font-size: 75%;
-}
-/* line 398, ../scss/modules/_para-new-new.scss */
-.home .parallax h1,
-.page-id-466 .parallax h1,
-.page-id-393 .parallax h1 {
-  font-size: 3.25em;
-}
-@media (min-width: 1040px) {
-  /* line 396, ../scss/modules/_para-new-new.scss */
-  .home .parallax,
-  .page-id-466 .parallax,
-  .page-id-393 .parallax {
-    font-size: 100%;
-  }
-  /* line 401, ../scss/modules/_para-new-new.scss */
-  .home .parallax h1,
-  .page-id-466 .parallax h1,
-  .page-id-393 .parallax h1 {
-    font-size: 3.5em;
-  }
-}
-@media (min-width: 1300px) {
-  /* line 404, ../scss/modules/_para-new-new.scss */
-  .home .parallax h1,
-  .page-id-466 .parallax h1,
-  .page-id-393 .parallax h1 {
-    font-size: 4.5em;
-  }
-}
-/* line 410, ../scss/modules/_para-new-new.scss */
-.home .c-career h1,
-.page-id-466 .c-career h1,
-.page-id-393 .c-career h1 {
+
+/* line 4, ../scss/modules/_para-all-styles.scss */
+.c-career h1 {
   position: relative;
 }
-/* line 412, ../scss/modules/_para-new-new.scss */
-.home .c-career h1:before,
-.page-id-466 .c-career h1:before,
-.page-id-393 .c-career h1:before {
+/* line 6, ../scss/modules/_para-all-styles.scss */
+.c-career h1:before {
   content: "";
   display: block;
   background-image: url("../../../../../img/new-beams/our-solutions.png");
@@ -4621,32 +4074,23 @@ a {
   z-index: 10;
 }
 @media (min-width: 811px) {
-  /* line 412, ../scss/modules/_para-new-new.scss */
-  .home .c-career h1:before,
-  .page-id-466 .c-career h1:before,
-  .page-id-393 .c-career h1:before {
+  /* line 6, ../scss/modules/_para-all-styles.scss */
+  .c-career h1:before {
     right: 0;
     left: -1450px;
     top: .5em;
     bottom: auto;
   }
 }
-/* line 448, ../scss/modules/_para-new-new.scss */
-.home #group3 h1,
-.home #group5 h1,
-.page-id-466 #group3 h1,
-.page-id-466 #group5 h1,
-.page-id-393 #group3 h1,
-.page-id-393 #group5 h1 {
+
+/* line 42, ../scss/modules/_para-all-styles.scss */
+#group3 h1,
+#group5 h1 {
   position: relative;
 }
-/* line 451, ../scss/modules/_para-new-new.scss */
-.home #group3 h1:before,
-.home #group5 h1:before,
-.page-id-466 #group3 h1:before,
-.page-id-466 #group5 h1:before,
-.page-id-393 #group3 h1:before,
-.page-id-393 #group5 h1:before {
+/* line 45, ../scss/modules/_para-all-styles.scss */
+#group3 h1:before,
+#group5 h1:before {
   content: "";
   display: block;
   background-image: url("../../../../../img/new-beams/our-solutions.png");
@@ -4663,34 +4107,22 @@ a {
   z-index: 10;
 }
 @media (min-width: 811px) {
-  /* line 451, ../scss/modules/_para-new-new.scss */
-  .home #group3 h1:before,
-  .home #group5 h1:before,
-  .page-id-466 #group3 h1:before,
-  .page-id-466 #group5 h1:before,
-  .page-id-393 #group3 h1:before,
-  .page-id-393 #group5 h1:before {
+  /* line 45, ../scss/modules/_para-all-styles.scss */
+  #group3 h1:before,
+  #group5 h1:before {
     top: .5em;
     bottom: 0;
     left: -812px;
   }
 }
-/* line 479, ../scss/modules/_para-new-new.scss */
-.home #group3 p,
-.home #group5 p,
-.page-id-466 #group3 p,
-.page-id-466 #group5 p,
-.page-id-393 #group3 p,
-.page-id-393 #group5 p {
+/* line 73, ../scss/modules/_para-all-styles.scss */
+#group3 p,
+#group5 p {
   position: relative;
 }
-/* line 481, ../scss/modules/_para-new-new.scss */
-.home #group3 p:after,
-.home #group5 p:after,
-.page-id-466 #group3 p:after,
-.page-id-466 #group5 p:after,
-.page-id-393 #group3 p:after,
-.page-id-393 #group5 p:after {
+/* line 75, ../scss/modules/_para-all-styles.scss */
+#group3 p:after,
+#group5 p:after {
   content: "";
   display: block;
   background-image: url("../../../../../img/new-beams/diff-right.png");
@@ -4704,64 +4136,295 @@ a {
   right: -802px;
 }
 @media (min-width: 811px) {
-  /* line 481, ../scss/modules/_para-new-new.scss */
-  .home #group3 p:after,
-  .home #group5 p:after,
-  .page-id-466 #group3 p:after,
-  .page-id-466 #group5 p:after,
-  .page-id-393 #group3 p:after,
-  .page-id-393 #group5 p:after {
+  /* line 75, ../scss/modules/_para-all-styles.scss */
+  #group3 p:after,
+  #group5 p:after {
     right: -862px;
     top: 0;
     bottom: 0;
   }
 }
-/* line 506, ../scss/modules/_para-new-new.scss */
-.home .c-smart,
-.page-id-466 .c-smart,
-.page-id-393 .c-smart {
-  max-width: 420px;
-}
-@media (min-width: 1040px) {
-  /* line 506, ../scss/modules/_para-new-new.scss */
-  .home .c-smart,
-  .page-id-466 .c-smart,
-  .page-id-393 .c-smart {
-    max-width: 486px;
-  }
-}
-@media (min-width: 1317px) {
-  /* line 506, ../scss/modules/_para-new-new.scss */
-  .home .c-smart,
-  .page-id-466 .c-smart,
-  .page-id-393 .c-smart {
-    max-width: 593px;
-  }
-}
 
-/* line 526, ../scss/modules/_para-new-new.scss */
-.subpage-wrap {
+/* line 104, ../scss/modules/_para-all-styles.scss */
+.parallax #group2 .txt-holder,
+.parallax #group4 .subpage,
+.parallax .grey-bg {
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+/* line 111, ../scss/modules/_para-all-styles.scss */
+.parallax .subpage-wrap {
   border-bottom: 2px dashed #d8d8d8;
 }
-/* line 529, ../scss/modules/_para-new-new.scss */
-.subpage-wrap:last-of-type {
+/* line 114, ../scss/modules/_para-all-styles.scss */
+.parallax .subpage-wrap:last-of-type {
   border-bottom: none;
 }
-
-/* line 534, ../scss/modules/_para-new-new.scss */
-#main article p a {
-  color: #ed228b;
+/* line 117, ../scss/modules/_para-all-styles.scss */
+.parallax p {
+  font-size: 1.6em;
+  line-height: 1.15em;
+}
+/* line 122, ../scss/modules/_para-all-styles.scss */
+.parallax .c-career p {
+  max-width: 19.5em;
+}
+/* line 126, ../scss/modules/_para-all-styles.scss */
+.parallax .c-smart p {
+  max-width: 20em;
+}
+/* line 130, ../scss/modules/_para-all-styles.scss */
+.parallax .ccc-holder {
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+/* line 138, ../scss/modules/_para-all-styles.scss */
+.parallax .p-holder p {
+  max-width: 27em;
+  text-align: left;
+}
+/* line 145, ../scss/modules/_para-all-styles.scss */
+.parallax .gamut-btn {
+  background-color: black;
+  border-color: black;
+  color: white !important;
+  margin-left: 0;
+  margin-top: 2em;
+}
+/* line 153, ../scss/modules/_para-all-styles.scss */
+.parallax .plus-sign {
+  position: relative;
+  max-width: 7.5em;
+  margin-left: .8em;
+}
+/* line 159, ../scss/modules/_para-all-styles.scss */
+.parallax .plus-sign:after {
+  content: "";
+  display: block;
+  background-image: url("../../../../../img/plus-sign.png");
+  width: 1.65rem;
+  height: 1.65rem;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  margin: auto;
+  left: -.8em;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 1040px) {
+  /* line 159, ../scss/modules/_para-all-styles.scss */
+  .parallax .plus-sign:after {
+    width: 2.15rem;
+    height: 2.15rem;
+  }
+}
+@media (min-width: 1340px) {
+  /* line 159, ../scss/modules/_para-all-styles.scss */
+  .parallax .plus-sign:after {
+    width: 2.65rem;
+    height: 2.65rem;
+  }
+}
+/* line 183, ../scss/modules/_para-all-styles.scss */
+.parallax .plus-sign:after .c-career-bg {
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: 290% 20%;
+}
+@media (min-width: 811px) {
+  /* line 193, ../scss/modules/_para-all-styles.scss */
+  .parallax .c-smart, .parallax .c-career {
+    width: 50%;
+    padding: 0 .5em;
+  }
+  /* line 197, ../scss/modules/_para-all-styles.scss */
+  .parallax .c-smart {
+    float: right;
+  }
+}
+/* line 202, ../scss/modules/_para-all-styles.scss */
+.parallax .c-smart-bg {
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: -25% 0%;
+}
+/* line 208, ../scss/modules/_para-all-styles.scss */
+.parallax #group3,
+.parallax #group5 {
+  color: white;
+}
+/* line 211, ../scss/modules/_para-all-styles.scss */
+.parallax #group3 h1,
+.parallax #group5 h1 {
+  color: white;
+}
+/* line 217, ../scss/modules/_para-all-styles.scss */
+.parallax .grey-bg {
+  background-color: #3d3d3d;
 }
 
-/* line 8, ../scss/modules/_para-new-new-mobile.scss */
-.mobile #group1,
-.mobile #group2,
-.mobile #group3,
-.mobile #group4,
+/* line 223, ../scss/modules/_para-all-styles.scss */
+#group5 .gamut-btn {
+  margin-left: 11%;
+}
+
+/* line 228, ../scss/modules/_para-all-styles.scss */
+#group5 .gamut-btn,
+#group6 .gamut-btn {
+  margin-bottom: 2em;
+}
+
+/* line 235, ../scss/modules/_para-all-styles.scss */
 .mobile #group5,
-.mobile #group6,
-.mobile #group7 {
-  height: auto;
+.mobile #group3,
+#group5 .parallax__layer--base,
+#group3 .parallax__layer--base {
+  background-color: #3d3d3d;
+  color: white;
+}
+
+/* line 241, ../scss/modules/_para-all-styles.scss */
+.parallax p {
+  font-size: 1.1em;
+}
+@media (min-width: 768px) {
+  /* line 241, ../scss/modules/_para-all-styles.scss */
+  .parallax p {
+    font-size: 1.4em;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 241, ../scss/modules/_para-all-styles.scss */
+  .parallax p {
+    font-size: 1.6em;
+  }
+}
+/* line 251, ../scss/modules/_para-all-styles.scss */
+.parallax h1 {
+  font-size: 2.5em;
+}
+@media (min-width: 768px) {
+  /* line 251, ../scss/modules/_para-all-styles.scss */
+  .parallax h1 {
+    font-size: 3em;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 251, ../scss/modules/_para-all-styles.scss */
+  .parallax h1 {
+    font-size: 4.5em;
+  }
+}
+
+/* line 266, ../scss/modules/_para-all-styles.scss */
+.mobile .debug {
+  display: none;
+}
+/* line 269, ../scss/modules/_para-all-styles.scss */
+.mobile #group1 {
+  max-height: 730px;
+  overflow-y: hidden;
+}
+/* line 274, ../scss/modules/_para-all-styles.scss */
+.mobile #group2 {
+  background-image: url("http://localhost/~charliedavis/gamut/wp-content/uploads/2014/09/rgb_Gamut_mountainspace.jpg");
+  background-size: cover;
+  background-position: 0;
+  position: relative;
+  padding-bottom: 12%;
+  padding-top: 6%;
+}
+@media (min-width: 640px) {
+  /* line 274, ../scss/modules/_para-all-styles.scss */
+  .mobile #group2 {
+    padding-bottom: 42%;
+    padding-top: 0;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 274, ../scss/modules/_para-all-styles.scss */
+  .mobile #group2 {
+    padding-bottom: 475px;
+  }
+}
+@media (min-width: 640px) {
+  /* line 294, ../scss/modules/_para-all-styles.scss */
+  .mobile #group2 .parallax__layer.parallax__layer--base {
+    width: 100%;
+    position: absolute;
+    top: 12%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+/* line 305, ../scss/modules/_para-all-styles.scss */
+.mobile #group5,
+.mobile #group3 {
+  padding: 8% 0 9%;
+}
+@media (min-width: 1200px) {
+  /* line 305, ../scss/modules/_para-all-styles.scss */
+  .mobile #group5,
+  .mobile #group3 {
+    padding: 95px 0 115px;
+  }
+}
+/* line 313, ../scss/modules/_para-all-styles.scss */
+.mobile #group4 .subpage {
+  padding: 10% 0 8%;
+}
+@media (min-width: 1200px) {
+  /* line 313, ../scss/modules/_para-all-styles.scss */
+  .mobile #group4 .subpage {
+    padding: 100px 0 80px;
+  }
+}
+@media (min-width: 500px) {
+  /* line 321, ../scss/modules/_para-all-styles.scss */
+  .mobile #group4 .subpage .gamut-btn {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
+/* line 328, ../scss/modules/_para-all-styles.scss */
+.mobile #group4 .subpage .p-holder {
+  margin-bottom: 2em;
+}
+/* line 332, ../scss/modules/_para-all-styles.scss */
+.mobile #group4 .subpage .blue, .mobile #group4 .subpage .red {
+  padding-bottom: 75px;
+  width: 100%;
+}
+@media (min-width: 500px) {
+  /* line 332, ../scss/modules/_para-all-styles.scss */
+  .mobile #group4 .subpage .blue, .mobile #group4 .subpage .red {
+    padding-bottom: 8%;
+  }
+}
+@media (min-width: 500px) {
+  /* line 341, ../scss/modules/_para-all-styles.scss */
+  .mobile #group4 .subpage .blue {
+    width: 42%;
+  }
+}
+@media (min-width: 500px) {
+  /* line 347, ../scss/modules/_para-all-styles.scss */
+  .mobile #group4 .subpage .red {
+    width: 58%;
+  }
+}
+
+/* line 360, ../scss/modules/_para-all-styles.scss */
+html,
+.home {
+  width: 100%;
+  overflow-x: hidden;
 }
 
 /* line 2, ../scss/modules/_home-slider.scss */

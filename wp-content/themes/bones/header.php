@@ -89,7 +89,8 @@
             if( /Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent) ) {
                 device = 'mobile';
             } else {
-                device = 'desk';
+                // device = 'desk';
+                device = 'mobile';
             }
 
         </script>

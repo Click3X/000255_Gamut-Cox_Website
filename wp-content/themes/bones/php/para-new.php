@@ -52,7 +52,7 @@
 <!-- GREY -->
     <div id="group3" class="parallax__group">
       <div class="parallax__layer parallax__layer--fore c-desk">
-        <div class="title">Foreground Layer 3</div>
+        <!-- <div class="title">Foreground Layer 3</div> -->
       </div>
       <div class="parallax__layer parallax__layer--base">
         <div class="title" style="background-color:rgb(61,61,61);">
