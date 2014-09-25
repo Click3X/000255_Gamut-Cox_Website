@@ -226,6 +226,9 @@ html, body {height:100%;}
   @media(min-width: 811px) {
     #group1 { height: 736px; }
     #group2 { height: 467px; }
+    #group2 .parallax__layer--back {
+      padding-bottom: 600px;
+    }
     #group3 { height: 504px; }
     #group4 { height: 1647px; }
     #group5 { height: 536px; }
