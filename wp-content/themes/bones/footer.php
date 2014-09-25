@@ -1,10 +1,3 @@
-		<?php
-			// IF PAGE IS HOME, WRAP THE FOOTER IN GROUP 7 PARALLAX DIV
-			if(is_page(107) || is_page(466) || is_page(393) || is_page(472) ) {
-				// echo '<div class="parallax__layer parallax__layer--fore">';
-				    // echo '<div class="title">Fore Layer 7</div>';
-				}
-			?>
 			<div style="clear: both"></div>
 			<footer class="footer" role="contentinfo">
 
@@ -167,15 +160,6 @@
 					echo '</div>'; // END GROUP 7
 				echo '</div>'; // END PARALLAX
 			// echo '</div>'; // END CONTAINER
-			// DEBUG SCRIPT
-			// echo '<script>
-			//     var debugInput = document.querySelector("input");
-			//     function updateDebugState() {
-			//         document.body.classList.toggle("debug-on", debugInput.checked);
-			//     }
-			//     debugInput.addEventListener("click", updateDebugState);
-			//     updateDebugState();
-			//   </script>';
 			}
 
 			?>
@@ -200,23 +184,14 @@
 
 		if(is_page(472)) {
 			echo '</div>';
-			echo '<script>
-			    var debugInput = document.querySelector("input");
-			    function updateDebugState() {
-			        document.body.classList.toggle("debug-on", debugInput.checked);
-			    }
-			    debugInput.addEventListener("click", updateDebugState);
-			    updateDebugState();
-			  </script>';
-			// echo "<script src='https://rawgithub.com/pederan/Parallax-ImageScroll/master/jquery.imageScroll.min.js'></script>";
-		// 	echo '<script>scrollmagic/ScrollMagic/js/jquery.scrollmagic.js</script>';
-		// echo '<script type="text/javascript" src="scrollmagic/ScrollMagic/js/_dependent/greensock/TweenMax.min.js"></script>
-		// <script type="text/javascript" src="scrollmagic/ScrollMagic/js/_dependent/greensock/plugins/ScrollToPlugin.min.js"></script>
-		// <script type="text/javascript" src="scrollmagic/ScrollMagic/js/_dependent/jquery.min.js"></script>
-	 //  	<script type="text/javascript" src="scrollmagic/ScrollMagic/js/_examples/modernizr.custom.min.js"></script>
-	 //  	<script type="text/javascript" src="scrollmagic/ScrollMagic/js/_mobile/iscroll-probe.js"></script>
-	 //  	<script type="text/javascript" src="scrollmagic/ScrollMagic/js/jquery.scrollmagic.min.js"></script>
-	 //  	<script type="text/javascript" src="scrollmagic/ScrollMagic/js/_examples/demo.js"></script>';
+			// echo '<script>
+			//     var debugInput = document.querySelector("input");
+			//     function updateDebugState() {
+			//         document.body.classList.toggle("debug-on", debugInput.checked);
+			//     }
+			//     debugInput.addEventListener("click", updateDebugState);
+			//     updateDebugState();
+			//   </script>';
 		}
 
 		?>

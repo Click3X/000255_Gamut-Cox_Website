@@ -111,12 +111,12 @@
             function initialize() {
 
                 mapOptions = {
-                    zoom: 4,
+                    zoom: 17,
                     zoomControl: true,
                     scaleControl: false,
                     scrollwheel: false,
                     disableDoubleClickZoom: true,
-                    center:cenUs,
+                    center:nycLatLong,
                     disableDefaultUI: true,
                     styles: [
                         {"stylers":[

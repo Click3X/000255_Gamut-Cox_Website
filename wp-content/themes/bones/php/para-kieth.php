@@ -1,7 +1,7 @@
-
+<!-- 
   <div class="debug">
     <label><input type="checkbox"> Debug</label>
-  </div>
+  </div> -->
 
   <div id="parallax-kieth" class="parallax-kieth">
 
@@ -56,7 +56,7 @@
 
       </div>
       <div class="parallax__layer parallax__layer--back" style="background-image: url('<?php echo $bg_img['url'] ?>');background-size: cover; background-repeat:no-repeat;">
-        <div class="title">Background Layer</div>
+        <!-- <div class="title">Background Layer</div> -->
       </div>
     </div>
 
@@ -74,7 +74,7 @@
 
       </div>
       <div class="parallax__layer parallax__layer--base">
-        <div class="title">Base Layer</div>
+        <!-- <div class="title">Base Layer</div> -->
       </div>
     </div>
 
@@ -151,12 +151,13 @@
 
       </div>
       <div class="parallax__layer parallax__layer--back">
-        <div class="title">Background Layer</div>
+        <!-- <div class="title">Background Layer</div> -->
       </div>
       <div class="parallax__layer parallax__layer--deep">
-        <div class="title">Deep Background Layer</div>
+        <!-- <div class="title">Deep Background Layer</div> -->
       </div>
     </div>
+
 
 
     
@@ -173,7 +174,7 @@
 
       </div>
       <div class="parallax__layer parallax__layer--base">
-        <div class="title">Base Layer</div>
+        <!-- <div class="title">Base Layer</div> -->
       </div>
     </div>
 
@@ -181,7 +182,7 @@
     <!-- CAREER AND SMART SERVICE -->
     <div id="group6" class="parallax__group">
       <div class="parallax__layer parallax__layer--back">
-        <div class="title">Background Layer</div>
+        <!-- <div class="title">Background Layer</div> -->
 
         <!-- SERVICES -->
         <div id="smart-service-bg" class="smart-service-bag" style="background-image:url('<?php echo $smart_service_image['url']; ?>');"></div>
@@ -194,9 +195,13 @@
         <!-- <div class="title">Base Layer</div> -->
         <div class="clearfix ccc-holder">
           <div class="clearfix c-smart">
-            <h1 class="plus-sign"><?php echo $smart_service_title; ?></h1>
-            <?php echo $smart_service_content; ?>
-            <a href="<?php echo get_permalink(61);?>" class="gamut-btn">LEARN HOW&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
+            <div class="clearfix h1-hold">
+              <h1 class="plus-sign"><?php echo $smart_service_title; ?></h1>
+              <?php echo $smart_service_content; ?>
+              <div class="clearfix c-btn-hold">
+                <a href="<?php echo get_permalink(61);?>" class="gamut-btn">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
+              </div>
+            </div>
           </div>
         </div>
         
@@ -209,9 +214,13 @@
         <!-- <div class="title">Base Layer</div> -->
         <div class="clearfix ccc-holder">
           <div class="clearfix c-career">
-            <h1><?php echo $careers_title; ?></h1>
-            <?php echo $careers_content; ?>
-            <a href="<?php echo get_permalink(388);?>" class="gamut-btn">LEARN HOW&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
+            <div class="clearfix h1-hold">
+              <h1><?php echo $careers_title; ?></h1>
+              <?php echo $careers_content; ?>
+              <div class="clearfix c-btn-hold">
+                <a href="<?php echo get_permalink(388);?>" class="gamut-btn">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
+              </div>
+            </div>
           </div>
         </div>
 
