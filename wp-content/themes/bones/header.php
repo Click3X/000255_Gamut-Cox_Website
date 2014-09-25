@@ -100,20 +100,23 @@
         if(is_page(9)) {
 			echo '<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
         <script>
-            var clickLatLong = new google.maps.LatLng(40.753519, -73.969971),
+            var nycLatLong = new google.maps.LatLng(40.753519, -73.969971),
+            sfLatLong = new google.maps.LatLng(37.794108,-122.39511),
+            cenUs = new google.maps.LatLng(40.753519, -100.969971),
             map,
             mapOptions,
-            marker;
+            marker,
+            sfMarker;
 
             function initialize() {
 
                 mapOptions = {
-                    zoom: 17,
+                    zoom: 4,
                     zoomControl: true,
                     scaleControl: false,
                     scrollwheel: false,
                     disableDoubleClickZoom: true,
-                    center: clickLatLong,
+                    center:cenUs,
                     disableDefaultUI: true,
                     styles: [
                         {"stylers":[
@@ -150,7 +153,12 @@
                 map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
 
                 marker = new google.maps.Marker({
-                    position: clickLatLong,
+                    position: nycLatLong,
+                    map: map
+                });
+
+				sfMarker = new google.maps.Marker({
+                    position: sfLatLong,
                     map: map
                 });
 
