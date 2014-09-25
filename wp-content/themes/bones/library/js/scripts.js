@@ -157,17 +157,17 @@ $(".fancybox").fancybox();
   loadGravatars();
 
   // Debug code
-   $('head').append('<style>#outline {position:fixed;z-index:1000;bottom:50px;right:50px; width:60px; height:30px;} .outlines {outline:1px solid rgba(255, 0, 0, 0.3);}</style>');
-    $('body').append('<input id="outline" type="button">');
+   // $('head').append('<style>#outline {position:fixed;z-index:1000;bottom:50px;right:50px; width:60px; height:30px;} .outlines {outline:1px solid rgba(255, 0, 0, 0.3);}</style>');
+   //  $('body').append('<input id="outline" type="button">');
 
-    $('#outline').click(function() {
-        $('*').toggleClass('outlines');
-   });
+   //  $('#outline').click(function() {
+   //      $('*').toggleClass('outlines');
+   // });
 
   // Beam slide animation
   $('.home-beam').hide();
   $('#pro-logo').click(function (){
-    $('.home-beam').show('slide', {direction:'left'}, 200); 
+    $('.home-beam').show('slide', {direction:'left'}, 200);
   });
 
 // home slide

@@ -227,7 +227,7 @@ function bones_scripts_and_styles() {
 		}
 
 		// CONDITIONAL SCRIPT TO LOAD ROYALSLIDER ON HOME PAGE
-		if( is_page(107) || is_page(466)) {
+		if( is_page(107) || is_page(466) || is_page(393) ) {
 			// wp_enqueue_style( 'rs-css' );
 			wp_enqueue_script( 'jq-easing' );
 			wp_enqueue_script( 'rs-js' );
