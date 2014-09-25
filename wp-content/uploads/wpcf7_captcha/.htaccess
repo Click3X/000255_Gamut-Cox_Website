@@ -1,4 +1,0 @@
-Order Allow,Deny
-<FilesMatch "^[0-9A-Za-z]+\.(jpe?g|gif|png)$">
-Allow from all
-</FilesMatch>
