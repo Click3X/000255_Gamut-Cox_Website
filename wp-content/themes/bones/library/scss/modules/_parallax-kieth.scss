@@ -4,6 +4,7 @@ html, body {height:100%;}
 /// WORD BREAK STYLES IN IE
 * {
   word-break:keep-all;
+  -ms-word-break:keep-all;
 }
 
   /* Parallax-kieth base styles
