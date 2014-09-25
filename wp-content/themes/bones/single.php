@@ -13,11 +13,28 @@
 
 					<?php //$parent_title = get_the_title($post->post_parent); ?>
 
-					<a class="page-link" href="<?php echo get_permalink($post->post_parent);?>"><h2 id="sidebar-title">Back</h2></a>
+					<!-- check which category the post belongs to, and go back to it's category list -->
+					<?php 
+
+					// $category = get_the_category();
+
+					$cat_event = 18; // or could be category id: 634 
+					$cat_press = 19;  
+					if(in_category( $cat_event )) { ?>
+						<a class="page-link" href="<?php echo get_page_link(298);?>"><h2 id="sidebar-title">Back</h2></a>
+					<?php } elseif (in_category( $cat_press )) { ?>
+						<a class="page-link" href="<?php echo get_page_link(65);?>"><h2 id="sidebar-title">Back</h2></a>
+					<?php } else { ?>
+						<a class="page-link" href="<?php echo get_page_link(63);?>"><h2 id="sidebar-title">Back</h2></a>
+					<?php }?> 
+
+					
 
 				</div>
 
 				<div id="inner-content" class="wrap cf">
+
+
 
 
 
