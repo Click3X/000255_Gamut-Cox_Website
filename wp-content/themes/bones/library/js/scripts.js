@@ -167,7 +167,7 @@ $(".fancybox").fancybox();
   // Beam slide animation
   $('.home-beam').hide();
   $('#pro-logo').click(function (){
-    $('.home-beam').show('slide', {direction:'left'}, 200); 
+    $('.home-beam').show('slide', {direction:'left'}, 200);
   });
 
 // home slide
