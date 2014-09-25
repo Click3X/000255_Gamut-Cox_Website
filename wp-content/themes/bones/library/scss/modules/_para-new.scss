@@ -1,6 +1,99 @@
 // PARA NEW
 
 .new-c {
+  // background-color: rgb(32, 32, 32);
+
+  .c-career {
+    h1 {
+      position: relative;
+     &:before {
+        content: "";
+        display: block;
+        background-image: url("../../../../../img/new-beams/our-solutions.png");
+        background-size: cover;
+        position: absolute;
+        margin:auto;
+        
+        right: 0;
+        width: 783px;
+
+        top: -1.5em;
+        bottom: 0;
+        left: -1270px;
+
+
+        // max-width: 783px;
+        height: 100%;
+        max-height: 5px;
+        z-index: 10;
+
+        @media(min-width: 811px) {
+         right: 0;
+          left: -1350px;
+          top: .5em;
+          bottom: auto;
+
+        }
+      }
+    }
+  }
+  .grey-bg {
+    h1 {
+      position: relative;
+
+      &:before {
+        content: "";
+        display: block;
+        background-image: url("../../../../../img/new-beams/our-solutions.png");
+        background-size: cover;
+        position: absolute;
+        // top: .5em;
+        bottom: 0;
+        right: 0;
+        width: 783px;
+
+        top: -.5em;
+        bottom: 0;
+        left: -762px;
+
+
+        // max-width: 783px;
+        height: 100%;
+        max-height: 5px;
+        z-index: 10;
+
+        @media(min-width: 811px) {
+          top: .5em;
+          bottom: 0;
+          left: -812px;
+        }
+      }
+    }
+    p {
+      position: relative;
+      &:after {
+        content: "";
+        display: block;
+        background-image: url("../../../../../img/new-beams/diff-right.png");
+        background-size: cover;
+        position: absolute;
+
+        width: 842px;
+        // max-width: 842px;
+        height: 100%;
+        max-height: 5px;
+        margin: auto;
+        z-index: 10;
+        right: -802px;
+
+        @media(min-width: 811px) {
+          right: -862px;
+          top:0;
+          bottom:0;
+        }
+      }
+    }
+  }
 
   font-size: 100%;
 
@@ -31,8 +124,12 @@
       font-size: 3em;
     }
 
+     @media(min-width:1040px) {
+      font-size: 3.75em;
+    }
+
     @media(min-width:1340px) {
-      font-size: 5em;
+      font-size: 4.5em;
     }
   }
 
@@ -74,7 +171,11 @@
     padding: 0;
     margin: 0;
     position: relative;
-    padding-bottom: 8%;
+    padding-bottom: 1em;
+
+    @media(min-width: 480px) {
+      padding-bottom: 8%;
+    }
   }
 
   .blue {
@@ -145,78 +246,423 @@
   .c-career,
   .c-smart {
     padding: 0 .5em;
+    text-align: left;
+
+    @media(min-width: 811px) {
+      width:50%;
+      clear: both;
+    }
+
+    h1,
     p {
       margin-bottom: 2rem;
+      max-width: 33rem;
+      text-align: left;
+      line-height: 1.1em;
+    }
+    margin-bottom: 2rem;
+  }
+  
+
+  .c-smart {
+
+    @media(min-width: 811px) {
+      float:right;
+      margin-bottom: 10%;
+    }
+
+    h1 {
+      max-width:none;
+    }
+  }
+
+  .c-career {
+    p {
+      max-width: 31rem;
+    }
+  }
+
+  .plus-sign {
+    position: relative;
+    max-width: 7.5em;
+    margin-left: .8em;
+  }
+
+  .plus-sign:after {
+    content: "";
+    display: block;
+    background-image: url("../../../../../img/plus-sign.png");
+    width: 1.65rem;
+    height: 1.65rem;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    margin: auto;
+    left: -.8em;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media(min-width:1040px) {
+       width: 2.15rem;
+      height: 2.15rem;
+    }
+
+    @media(min-width: 1340px) { 
+      width: 2.65rem;
+      height: 2.65rem;
+    }
+  }
+
+  .cs-holder {
+    width:100%;
+    max-width: 1200px;
+    margin:0 auto;
+
+    .gamut-btn {
+      background-color: black;
+      border-color:black;
+      color:white !important;
     }
   }
 
   .career-bg,
   .smart-bg {
     height: 0;
-    width:50%;
-    padding-bottom: 50%;
+    // padding-bottom: 50%;
+    padding-bottom: 39.6%;
+
+    @media(min-width:768px) {
+      width:50%;
+    }
+
+    @media(min-width: 1600px) {
+      // padding-bottom:664px;
+      // padding-bottom:604px;
+      padding-bottom: 560px;
+    }
   }
 
 
-  #group1 {
-   z-index: 5; /* slide over group 2 */
-  }
-  #group1 .parallax__layer--base {
-    // background: rgb(102,204,102);
-    // background:transparent;
-    background-size: cover;
+
+  .career-bg {
+    @media(min-width: 768px) {
+      float: right;
+    }
   }
 
-  #group2 {
-    z-index: 3; /* slide under groups 1 and 3 */
-  }
-  #group2 .parallax__layer--back {
-    // background: rgb(123,210,102);
-    background-size: cover;
-    background-repeat:no-repeat;
+  .subpage-wrapper .gamut-btn,
+  .gamut-btn {
+    margin-left:0;
   }
 
-  #group3 {
-    z-index: 4; /* slide over group 2 and 4 */
-  }
-  #group3 .parallax__layer--base {
-    // background: rgb(153,216,101);
-    background: rgb(61,61,61);
-  }
 
-  #group4 {
-    z-index: 2; /* slide under group 3 and 5 */
-  }
-  #group4 .parallax__layer--deep {
-    background: rgb(184,223,101);
-  }
+  // #group1 {
+  //  z-index: 5; /* slide over group 2 */
+  //  max-height: 50%;
 
-  #group5 {
-    z-index: 3; /* slide over group 4 and 6 */
-  }
-  #group5 .parallax__layer--base {
-    // background: rgb(214,229,100);
-    background: rgb(61,61,61);
-  }
+  //  // @media(min-width: 811px) {
+  // @media(min-width: 1600px) {
+  //   max-height: 800px;
+  //  }
+
+  // }
+  // #group1 .parallax__layer--base {
+  //   // background: rgb(102,204,102);
+  //   // background:transparent;
+  //   background-size: cover;
+  // }
+
+  // #group2 {
+  //   z-index: 3; /* slide under groups 1 and 3 */
+  //   // height: 40%;
+  //   @media(min-width: 811px) {
+  //     max-height: 37%;
+  //   }
+  //   @media(min-width: 1600px) {
+  //     max-height: 603px;
+  //   }
+
+  //   .txt-holder {
+  //     background-size: cover;
+  //     background-repeat: no-repeat;
+  //     background-image: url('http://gamut.dev/wp-content/uploads/2014/09/clouds2.jpg');
+
+  //     @media(min-width: 768px) {
+  //       background-image:none;
+  //     }
+  //   }
+  // }
+  // #group2 .parallax__layer--back {
+  //   // background: rgb(123,210,102);
+  //   background-size: cover;
+  //   background-repeat:no-repeat;
+  // }
+
+  // #group3 {
+  //   z-index: 4; /* slide over group 2 and 4 */
+  //   @media(min-width: 811px) {
+  //     max-height: 37.25%;
+  //     min-height: 362px;
+  //   }
+  //   @media(min-width: 1600px) {
+  //     max-height: 500px;
+  //   }
+  // }
+  // #group3 .parallax__layer--base {
+  //   // background: rgb(153,216,101);
+  //   background: rgb(61,61,61);
+  // }
+
+  // #group4 {
+  //   z-index: 2; /* slide under group 3 and 5 */
+
+  //   @media(min-width: 811px) {
+  //     height: 125vh;
+  //     max-height: 1536px;
+  //   }
+  // }
+  // #group4 .parallax__layer--base {
+  //   background-color: white;
+  //   .title { 
+  //     margin-top: 3em;
+  //   }
+  // }
+  // #group4 .parallax__layer--deep {
+  //   // background: rgb(184,223,101);
+  // }
+
+  // #group5 {
+  //   // z-index: 3; /* slide over group 4 and 6 */
+  //   z-index: 3; /* slide over group 4 and 6 */
+  //   // min-height: 362px;
+  //   @media(min-width: 811px) {
+  //     max-height: 37.25%;
+  //     min-height: 362px;
+  //   }
+  //   @media(min-width: 1600px) {
+  //     max-height: 500px;
+  //   }
+
+  //   .gamut-btn {
+  //     background: black;
+  //     border-color:black;
+  //     color:white !important;
+  //   }
+
+  //   .bg {
+  //     padding-bottom: 40%;
+  //   }
+
+  //    // @media(min-width: 1600px) {
+  //    //  max-height: 800px;
+  //    // }
+  // }
+  // #group5 .parallax__layer--base {
+  //   // background: rgb(214,229,100);
+  //   background: rgb(61,61,61);
+  // }
+
+  // #group6 {
+  //   // z-index: 2; /* slide under group 5 and 7 */
+  //   z-index: 2; /* slide under group 5 and 7 */
+
+  //   @media(min-width: 768px) {
+  //     // height: 63vh;
+  //     // max-height: 800px;
+  //   }
+  //   .title {
+  //     max-width: none;
+  //   }
+  // }
+  // #group6 .parallax__layer--back {
+  //   // background: rgb(245,235,100);
+  //   background-color: #ffffff;
+  //   max-height: 860px;
+  // }
+
+  // #group7 {
+  //   z-index: 3; /* slide over group 7 */
+
+  //   @media(min-width: 811px) {
+  //     height: 795px;
+  //   }
+
+  //   @media(min-width:892px) {
+  //     height: 589px;
+  //   }
+
+  //   @media(min-width:1034px) {
+  //     height: 469px;
+  //   }
+  // }
+  // // #group7 .parallax__layer--base {
+  //   #group7 .parallax__layer--fore {
+
+  //     @media(min-width: 811px){
+  //       top: -100px;
+  //       bottom: auto;
+  //       height: auto;
+  //       max-height: none;
+  //       margin: none;
+  //       margin: auto;
+  //     }
+  // }
 
   #group6 {
-    z-index: 2; /* slide under group 5 and 7 */
-  }
-  #group6 .parallax__layer--back {
-    // background: rgb(245,235,100);
+    .title {
+      width: 100%;
+      max-width: none;
+
+      .cc-holder {
+        width: 100%;
+        max-width: 1200px;
+      }
+    } 
   }
 
   #group7 {
-    z-index: 3; /* slide over group 7 */
-  }
-  #group7 .parallax__layer--base {
-    // background: rgb(255,241,100);
+    // background: transparent;
+    margin-top: -140px;
+    height:auto;
+    .parallax__layer--fore {
+      position: static;
+    }
   }
 
+  #group3 .parallax__layer--base .title {
+    background: rgb (61,61,61);
+  }
+
+@media(min-width: 811px) {
+  #group1 {
+    height:800px;
+  }
+  #group2 {
+    height:600px;
+  }
+  #group3 {
+    height:600px;
+  }
+  #group4 {
+    height:1500px;
+  }
+  #group5 {
+    height:500px;
+  }
+  #group6 {
+    // height:800px
+    height: 930px;
+  }
+  // #group7 {
+  //   height:910px;
+  // }
+}
+
+@media(min-width: 891px) {
+  // #group7 {
+  //   height:720px;
+  // }
+}
+
+@media(min-width: 1040px) {
+  #group1 {
+    height:800px;
+  }
+  #group2 {
+    height:600px;
+  }
+  #group3 {
+    height:600px;
+  }
+  #group4 {
+    height:1500px;
+  }
+  #group5 {
+    height:500px;
+  }
+  #group6 {
+    height: 930px;
+  }
+  // #group7 {
+  //   // height:690px;
+  //   // height:654px;
+  //   height:auto;
+  // }
+}
+
+
+@media(min-width: 1200px) {
+  #group3 {
+    background-color: rgb(61,61,61);
+  }
+
+  #group5 {
+    background-color: rgb(61,61,61);
+  }
+}
 
 
 .footer {
-  margin-top:100px;
+    margin-top:0;
+  }
+
 }
 
+// #group5 .parallax__layer--base.outlines > div > div > .clearfix {
+//   margin-left:11%;
+// }
+#group5 > div.parallax__layer.parallax__layer--base > div > div > div.clearfix > a {
+  margin-left:11%;
+}
+
+.c-mobile {
+  @media(min-width: 768px) {
+    display: none;
+  }
+}
+
+.c-desk {
+  display: none;
+ @media(min-width: 768px) {
+    display: block;
+  } 
+}
+
+.smart-bg.c-mobile {
+  width:100%;
+  float: none;
+}
+
+.cc-holder {
+  .c-career {
+    clear: none;
+    float: left;
+  }
+}
+
+// .cs-holder.new:after {
+//   content: '';
+//   display: block;
+//   position: absolute;
+//   // top:100%;
+
+//   bottom: 1;
+//   width: 100%;
+//   padding-bottom: 20%;
+//   background: rgb(248,248,239);
+//   z-index: 0;
+// }
+
+.cs-holder.new {
+  background-color: rgb(248, 248, 239);
+  max-width: none;
+
+  .cc-holder {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.home #container {
+  overflow-x:hidden;
 }
