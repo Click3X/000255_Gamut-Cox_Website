@@ -246,6 +246,8 @@ function cleanString($string){
 
 }
 
+
+
 // EMAIL ADDRESS ANTI-SPAM
 // function email_encode_function( $atts, $content ){
 //   return '<a href="'.antispambot("mailto:".$content).'">'.antispambot($content).'</a>';
