@@ -1,6 +1,6 @@
-<!-- <div class="debug">
+<div class="debug">
     <label><input type="checkbox"> Debug</label>
-</div> -->
+</div>
 <div class="parallax">
 
 
