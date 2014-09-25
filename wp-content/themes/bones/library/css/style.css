@@ -4204,8 +4204,8 @@ a {
   content: "";
   display: block;
   background-image: url("../../../../../img/plus-sign.png");
-  width: 1.65rem;
-  height: 1.65rem;
+  width: 1.25rem;
+  height: 1.25rem;
   top: 0;
   bottom: 0;
   position: absolute;
@@ -4213,6 +4213,13 @@ a {
   left: -.8em;
   background-size: cover;
   background-repeat: no-repeat;
+}
+@media (min-width: 400px) {
+  /* line 159, ../scss/modules/_para-all-styles.scss */
+  .parallax .plus-sign:after {
+    width: 1.65rem;
+    height: 1.65rem;
+  }
 }
 @media (min-width: 1040px) {
   /* line 159, ../scss/modules/_para-all-styles.scss */
@@ -4228,56 +4235,56 @@ a {
     height: 2.65rem;
   }
 }
-/* line 183, ../scss/modules/_para-all-styles.scss */
+/* line 188, ../scss/modules/_para-all-styles.scss */
 .parallax .plus-sign:after .c-career-bg {
   background-repeat: no-repeat;
   background-size: 80%;
   background-position: 290% 20%;
 }
 @media (min-width: 811px) {
-  /* line 193, ../scss/modules/_para-all-styles.scss */
+  /* line 198, ../scss/modules/_para-all-styles.scss */
   .parallax .c-smart, .parallax .c-career {
     width: 50%;
     padding: 0 .5em;
   }
-  /* line 197, ../scss/modules/_para-all-styles.scss */
+  /* line 202, ../scss/modules/_para-all-styles.scss */
   .parallax .c-smart {
     float: right;
   }
 }
-/* line 202, ../scss/modules/_para-all-styles.scss */
+/* line 207, ../scss/modules/_para-all-styles.scss */
 .parallax .c-smart-bg {
   background-repeat: no-repeat;
   background-size: 60%;
   background-position: -25% 0%;
 }
-/* line 208, ../scss/modules/_para-all-styles.scss */
+/* line 213, ../scss/modules/_para-all-styles.scss */
 .parallax #group3,
 .parallax #group5 {
   color: white;
 }
-/* line 211, ../scss/modules/_para-all-styles.scss */
+/* line 216, ../scss/modules/_para-all-styles.scss */
 .parallax #group3 h1,
 .parallax #group5 h1 {
   color: white;
 }
-/* line 217, ../scss/modules/_para-all-styles.scss */
+/* line 222, ../scss/modules/_para-all-styles.scss */
 .parallax .grey-bg {
   background-color: #3d3d3d;
 }
 
-/* line 223, ../scss/modules/_para-all-styles.scss */
+/* line 228, ../scss/modules/_para-all-styles.scss */
 #group5 .gamut-btn {
   margin-left: 11%;
 }
 
-/* line 228, ../scss/modules/_para-all-styles.scss */
+/* line 233, ../scss/modules/_para-all-styles.scss */
 #group5 .gamut-btn,
 #group6 .gamut-btn {
   margin-bottom: 2em;
 }
 
-/* line 235, ../scss/modules/_para-all-styles.scss */
+/* line 240, ../scss/modules/_para-all-styles.scss */
 .mobile #group5,
 .mobile #group3,
 #group5 .parallax__layer--base,
@@ -4286,55 +4293,61 @@ a {
   color: white;
 }
 
-/* line 241, ../scss/modules/_para-all-styles.scss */
+/* line 246, ../scss/modules/_para-all-styles.scss */
 .parallax p {
   font-size: 1.1em;
 }
 @media (min-width: 811px) {
-  /* line 241, ../scss/modules/_para-all-styles.scss */
+  /* line 246, ../scss/modules/_para-all-styles.scss */
   .parallax p {
     font-size: 1.4em;
   }
 }
 @media (min-width: 1200px) {
-  /* line 241, ../scss/modules/_para-all-styles.scss */
+  /* line 246, ../scss/modules/_para-all-styles.scss */
   .parallax p {
     font-size: 1.6em;
   }
 }
-/* line 251, ../scss/modules/_para-all-styles.scss */
+/* line 256, ../scss/modules/_para-all-styles.scss */
 .parallax h1 {
-  font-size: 2.5em;
+  font-size: 1.9em;
+}
+@media (min-width: 400px) {
+  /* line 256, ../scss/modules/_para-all-styles.scss */
+  .parallax h1 {
+    font-size: 2.5em;
+  }
 }
 @media (min-width: 811px) {
-  /* line 251, ../scss/modules/_para-all-styles.scss */
+  /* line 256, ../scss/modules/_para-all-styles.scss */
   .parallax h1 {
     font-size: 2.8em;
   }
 }
 @media (min-width: 1200px) {
-  /* line 251, ../scss/modules/_para-all-styles.scss */
+  /* line 256, ../scss/modules/_para-all-styles.scss */
   .parallax h1 {
     font-size: 4em;
   }
 }
 @media (min-width: 1300px) {
-  /* line 251, ../scss/modules/_para-all-styles.scss */
+  /* line 256, ../scss/modules/_para-all-styles.scss */
   .parallax h1 {
     font-size: 4.5em;
   }
 }
 
-/* line 270, ../scss/modules/_para-all-styles.scss */
+/* line 279, ../scss/modules/_para-all-styles.scss */
 .mobile .debug {
   display: none;
 }
-/* line 273, ../scss/modules/_para-all-styles.scss */
+/* line 282, ../scss/modules/_para-all-styles.scss */
 .mobile #group1 {
   max-height: 730px;
   overflow-y: hidden;
 }
-/* line 278, ../scss/modules/_para-all-styles.scss */
+/* line 287, ../scss/modules/_para-all-styles.scss */
 .mobile #group2 {
   background-size: cover;
   background-position: 0;
@@ -4343,20 +4356,20 @@ a {
   padding-top: 6%;
 }
 @media (min-width: 640px) {
-  /* line 278, ../scss/modules/_para-all-styles.scss */
+  /* line 287, ../scss/modules/_para-all-styles.scss */
   .mobile #group2 {
     padding-bottom: 42%;
     padding-top: 0;
   }
 }
 @media (min-width: 1200px) {
-  /* line 278, ../scss/modules/_para-all-styles.scss */
+  /* line 287, ../scss/modules/_para-all-styles.scss */
   .mobile #group2 {
     padding-bottom: 475px;
   }
 }
 @media (min-width: 640px) {
-  /* line 298, ../scss/modules/_para-all-styles.scss */
+  /* line 307, ../scss/modules/_para-all-styles.scss */
   .mobile #group2 .parallax__layer.parallax__layer--base {
     width: 100%;
     position: absolute;
@@ -4366,30 +4379,30 @@ a {
     bottom: 0;
   }
 }
-/* line 309, ../scss/modules/_para-all-styles.scss */
+/* line 318, ../scss/modules/_para-all-styles.scss */
 .mobile #group5,
 .mobile #group3 {
   padding: 8% 0 9%;
 }
 @media (min-width: 1200px) {
-  /* line 309, ../scss/modules/_para-all-styles.scss */
+  /* line 318, ../scss/modules/_para-all-styles.scss */
   .mobile #group5,
   .mobile #group3 {
     padding: 95px 0 115px;
   }
 }
-/* line 317, ../scss/modules/_para-all-styles.scss */
+/* line 326, ../scss/modules/_para-all-styles.scss */
 .mobile #group4 .subpage {
   padding: 10% 0 8%;
 }
 @media (min-width: 1200px) {
-  /* line 317, ../scss/modules/_para-all-styles.scss */
+  /* line 326, ../scss/modules/_para-all-styles.scss */
   .mobile #group4 .subpage {
     padding: 100px 0 80px;
   }
 }
 @media (min-width: 500px) {
-  /* line 325, ../scss/modules/_para-all-styles.scss */
+  /* line 334, ../scss/modules/_para-all-styles.scss */
   .mobile #group4 .subpage .gamut-btn {
     position: absolute;
     top: 0;
@@ -4397,40 +4410,40 @@ a {
     margin: auto;
   }
 }
-/* line 332, ../scss/modules/_para-all-styles.scss */
+/* line 341, ../scss/modules/_para-all-styles.scss */
 .mobile #group4 .subpage .p-holder {
   margin-bottom: 2em;
 }
-/* line 336, ../scss/modules/_para-all-styles.scss */
+/* line 345, ../scss/modules/_para-all-styles.scss */
 .mobile #group4 .subpage .blue, .mobile #group4 .subpage .red {
   padding-bottom: 75px;
   width: 100%;
 }
 @media (min-width: 500px) {
-  /* line 336, ../scss/modules/_para-all-styles.scss */
+  /* line 345, ../scss/modules/_para-all-styles.scss */
   .mobile #group4 .subpage .blue, .mobile #group4 .subpage .red {
     padding-bottom: 8%;
   }
 }
 @media (min-width: 500px) {
-  /* line 345, ../scss/modules/_para-all-styles.scss */
+  /* line 354, ../scss/modules/_para-all-styles.scss */
   .mobile #group4 .subpage .blue {
     width: 42%;
   }
 }
 @media (min-width: 500px) {
-  /* line 351, ../scss/modules/_para-all-styles.scss */
+  /* line 360, ../scss/modules/_para-all-styles.scss */
   .mobile #group4 .subpage .red {
     width: 58%;
   }
 }
-/* line 358, ../scss/modules/_para-all-styles.scss */
+/* line 367, ../scss/modules/_para-all-styles.scss */
 .mobile .c-career-bg {
   background-size: 50%;
   background-position: 100%;
   background-repeat: no-repeat;
 }
-/* line 374, ../scss/modules/_para-all-styles.scss */
+/* line 383, ../scss/modules/_para-all-styles.scss */
 .mobile #group6 .ccc-holder {
   width: 99%;
   max-width: 1300px;
@@ -4439,53 +4452,53 @@ a {
   padding-top: 6%;
 }
 @media (min-width: 811px) {
-  /* line 374, ../scss/modules/_para-all-styles.scss */
+  /* line 383, ../scss/modules/_para-all-styles.scss */
   .mobile #group6 .ccc-holder {
     padding-bottom: 11%;
     padding-top: 6%;
   }
 }
 @media (min-width: 1300px) {
-  /* line 374, ../scss/modules/_para-all-styles.scss */
+  /* line 383, ../scss/modules/_para-all-styles.scss */
   .mobile #group6 .ccc-holder {
     padding-bottom: 131px;
     padding-top: 60px;
   }
 }
-/* line 398, ../scss/modules/_para-all-styles.scss */
+/* line 407, ../scss/modules/_para-all-styles.scss */
 .mobile .c-smart-bg {
   background-size: 0;
 }
 @media (min-width: 811px) {
-  /* line 398, ../scss/modules/_para-all-styles.scss */
+  /* line 407, ../scss/modules/_para-all-styles.scss */
   .mobile .c-smart-bg {
     background-repeat: no-repeat;
     background-size: 80%;
     background-position: -150% 0%;
   }
 }
-/* line 407, ../scss/modules/_para-all-styles.scss */
+/* line 416, ../scss/modules/_para-all-styles.scss */
 .mobile .c-career-bg {
   background-size: 0;
 }
 @media (min-width: 811px) {
-  /* line 407, ../scss/modules/_para-all-styles.scss */
+  /* line 416, ../scss/modules/_para-all-styles.scss */
   .mobile .c-career-bg {
     background-repeat: no-repeat;
     background-size: 80%;
     background-position: 248% 0%;
   }
 }
-/* line 419, ../scss/modules/_para-all-styles.scss */
+/* line 428, ../scss/modules/_para-all-styles.scss */
 .mobile .c-career,
 .mobile .c-smart {
   padding: 0 1em;
 }
-/* line 423, ../scss/modules/_para-all-styles.scss */
+/* line 432, ../scss/modules/_para-all-styles.scss */
 .mobile .c-smart {
   max-width: 615px;
 }
-/* line 432, ../scss/modules/_para-all-styles.scss */
+/* line 441, ../scss/modules/_para-all-styles.scss */
 .mobile #fly-it,
 .mobile #fly-it-2,
 .mobile #fly-it-3,
@@ -4493,7 +4506,7 @@ a {
   display: none;
 }
 @media (min-width: 811px) {
-  /* line 432, ../scss/modules/_para-all-styles.scss */
+  /* line 441, ../scss/modules/_para-all-styles.scss */
   .mobile #fly-it,
   .mobile #fly-it-2,
   .mobile #fly-it-3,
@@ -4502,14 +4515,14 @@ a {
   }
 }
 
-/* line 444, ../scss/modules/_para-all-styles.scss */
+/* line 453, ../scss/modules/_para-all-styles.scss */
 html,
 .home {
   width: 100%;
   overflow-x: hidden;
 }
 
-/* line 450, ../scss/modules/_para-all-styles.scss */
+/* line 459, ../scss/modules/_para-all-styles.scss */
 .c-bg-mobile.c-smart-bg,
 .c-bg-mobile.c-career-bg {
   background-size: cover;
@@ -4518,7 +4531,7 @@ html,
   padding-bottom: 50%;
 }
 @media (min-width: 811px) {
-  /* line 450, ../scss/modules/_para-all-styles.scss */
+  /* line 459, ../scss/modules/_para-all-styles.scss */
   .c-bg-mobile.c-smart-bg,
   .c-bg-mobile.c-career-bg {
     display: none;
@@ -4526,7 +4539,7 @@ html,
 }
 
 @media (min-width: 811px) {
-  /* line 460, ../scss/modules/_para-all-styles.scss */
+  /* line 469, ../scss/modules/_para-all-styles.scss */
   .c-bg-mobile {
     display: none;
   }
