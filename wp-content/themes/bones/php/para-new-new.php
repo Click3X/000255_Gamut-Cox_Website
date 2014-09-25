@@ -41,7 +41,7 @@
 
       </div>
       <div class="parallax__layer parallax__layer--deep"  style="background-image: url('<?php echo $bg_img['url'] ?>');">
-        <div class="title">Background Layer</div>
+        <!-- <div class="title">Background Layer</div> -->
       </div>
     </div>
 
@@ -56,7 +56,7 @@
         </div>
       </div>
       <div class="parallax__layer parallax__layer--base" style="background-color:rgb(61,61,61);">
-        <div class="title">Base Layer</div>
+        <!-- <div class="title">Base Layer</div> -->
       </div>
     </div>
 
@@ -65,9 +65,10 @@
     <div id="group4" class="parallax__group">
       
       <div class="parallax__layer parallax__layer--base">
-        <div class="title">Base Layer</div>
+        <!-- <div class="title">Base Layer</div> -->
 
         <!-- PROGRAMMATIC -->
+           <div class="clearfix subpage-wrap">
             <div class="clearfix subpage">
                 <div class="p-holder">
                   <?php echo $programmatic_intro_content; ?>
@@ -80,9 +81,10 @@
                   <div id="fly-it" class="bg-img programmatic"></div>
                 </div>
             </div>
-
+          </div>
 
             <!-- REPS -->
+           <div class="clearfix subpage-wrap">
             <div class="clearfix subpage">
               <div class="p-holder">
                   <?php echo $reps_intro_content; ?>
@@ -95,8 +97,10 @@
                   <div id="fly-it-2" class="bg-img reps"></div>
                 </div>
             </div>
+            </div>
 
             <!-- REACH -->
+           <div class="clearfix subpage-wrap">
             <div class="clearfix subpage">
               <div class="p-holder">
                   <?php echo $reach_intro_content; ?>
@@ -109,9 +113,10 @@
                   <div id="fly-it-3" class="bg-img reach"></div>
                 </div>
             </div>
-
+            </div>
 
             <!-- CROSSMEDIA -->
+           <div class="clearfix subpage-wrap">
             <div class="clearfix subpage">
               <div class="p-holder">
                   <?php echo $convergence_intro_content; ?>
@@ -124,11 +129,12 @@
                 <div id="fly-it-4" class="bg-img crossmedia"></div>
               </div>
             </div>
+            </div>
 
       </div>
 
       <div class="parallax__layer parallax__layer--back">
-        <div class="title">Background Layer</div>
+        <!-- <div class="title">Background Layer</div> -->
       </div>
 
     </div>
@@ -144,7 +150,7 @@
         </div>
       </div>
       <div class="parallax__layer parallax__layer--base" style="background-color:rgb(61,61,61);">
-        <div class="title">Base Layer</div>
+        <!-- <div class="title">Base Layer</div> -->
       </div>
     </div>
 
@@ -153,11 +159,11 @@
     <div id="group6" class="parallax__group">
 <!--       <?php echo $careers_image['url'];?> -->
       <div class="parallax__layer parallax__layer--back">
-        <div class="title">Background Layer</div>
+        <!-- <div class="title">Background Layer</div> -->
       </div>
 
       <div class="parallax__layer parallax__layer--base">
-        <div class="title">Base Layer</div>
+        <!-- <div class="title">Base Layer</div> -->
 
         <!-- <div class="clearfix cs-holder"> -->
           <div class="clearfix cc-holder c-smart-bg" style="background-image:url('<?php echo $smart_service_image['url']; ?>');">
@@ -188,7 +194,7 @@
 
     <div id="group7" class="parallax__group">
       <div class="parallax__layer parallax__layer--base">
-        <div class="title">Base Layer</div>
+        <!-- <div class="title">Base Layer</div> -->
       <!-- </div>
     </div>
   </div> -->
