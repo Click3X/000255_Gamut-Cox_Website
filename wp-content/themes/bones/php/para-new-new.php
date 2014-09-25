@@ -49,7 +49,7 @@
     <!-- GREY -->
     <div id="group3" class="parallax__group">
       <div class="parallax__layer parallax__layer--fore">
-        <div class="title">Foreground Layer</div>
+        <!-- <div class="title">Foreground Layer</div> -->
         <div class="clearfix grey-bg txt-holder">
           <h1><?php echo $our_solutions_title ?></h1>
           <div class="difference"><?php echo $our_solutions_content ?></div>

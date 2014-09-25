@@ -4090,7 +4090,6 @@ a {
 }
 /* line 23, ../scss/modules/_para-new-new.scss */
 .home #group2 .parallax__layer--back {
-  background: #7bd266;
   padding-bottom: 50%;
 }
 /* line 28, ../scss/modules/_para-new-new.scss */
@@ -4104,27 +4103,15 @@ a {
   z-index: 4;
   /* slide over group 2 and 4 */
 }
-/* line 37, ../scss/modules/_para-new-new.scss */
-.home #group3 .parallax__layer--base {
-  background: #99d865;
-}
 /* line 41, ../scss/modules/_para-new-new.scss */
 .home #group4 {
   z-index: 3;
   /* slide under group 3 and 5 */
 }
-/* line 45, ../scss/modules/_para-new-new.scss */
-.home #group4 .parallax__layer--deep {
-  background: #b8df65;
-}
 /* line 49, ../scss/modules/_para-new-new.scss */
 .home #group5 {
   z-index: 3;
   /* slide over group 4 and 6 */
-}
-/* line 52, ../scss/modules/_para-new-new.scss */
-.home #group5 .parallax__layer--base {
-  background: #d6e564;
 }
 /* line 56, ../scss/modules/_para-new-new.scss */
 .home #group6 {
@@ -4561,6 +4548,11 @@ a {
 /* line 505, ../scss/modules/_para-new-new.scss */
 .subpage-wrap:last-of-type {
   border-bottom: none;
+}
+
+/* line 510, ../scss/modules/_para-new-new.scss */
+#main article p a {
+  color: #ed228b;
 }
 
 /* line 2, ../scss/modules/_home-slider.scss */
