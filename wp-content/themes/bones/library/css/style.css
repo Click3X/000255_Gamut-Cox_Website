@@ -5165,6 +5165,10 @@ html,
 #main article p a {
   color: #ed228b;
 }
+/* line 535, ../scss/modules/_para-new-dev.scss */
+#main article p a:hover {
+  text-decoration: underline;
+}
 
 /* line 2, ../scss/modules/_home-slider.scss */
 .contentSlider {
