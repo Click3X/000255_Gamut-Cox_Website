@@ -6,7 +6,6 @@
   }
 }
 
-
 .c-career {
 
     h1 {
@@ -24,18 +23,14 @@
 
         top: -1.5em;
         bottom: 0;
-        // left: -1270px;
         left: -1320px;
 
-
-        // max-width: 783px;
         height: 100%;
         max-height: 5px;
         z-index: 10;
 
         @media(min-width: 811px) {
          right: 0;
-          // left: -1350px;
           left: -1450px;
           top: .5em;
           bottom: auto;
@@ -65,8 +60,6 @@
         bottom: 0;
         left: -762px;
 
-
-        // max-width: 783px;
         height: 100%;
         max-height: 5px;
         z-index: 10;
@@ -88,7 +81,6 @@
         position: absolute;
 
         width: 842px;
-        // max-width: 842px;
         height: 100%;
         max-height: 5px;
         margin: auto;
@@ -288,23 +280,14 @@
       display: none;
     }
     #group1 {
-      // max-height: 800px;
       max-height: 730px;
       overflow-y:hidden;
     }
     #group2 {
-      
-      // background-image: url('http://localhost/~charliedavis/gamut/wp-content/uploads/2014/09/rgb_Gamut_mountainspace.jpg');
       background-size: cover;
       background-position: 0;
 
       position: relative;
-
-      // padding-bottom: 12%;
-      // padding-top: 6%;
-
-      // padding-bottom:9%;
-      // padding-top:9%;
 
       padding-top:5.2%;
       padding-bottom:8%;
@@ -314,22 +297,11 @@
       }
       
       @media(min-width: 640px){
-        // padding-bottom: 42%;
-        // padding-bottom: 35%;
-        // padding-top:0;
-        // padding-bottom: 17.5%;
-        // padding-top: 17.5%;
         padding-top: 9%;
         padding-bottom: 11%;
       }
 
-      // @media(min-width: 890px){
-      //   padding-bottom: 35%;
-      // }
-
       @media(min-width: 1200px) {
-        // padding-bottom: 275px;  
-        // padding-bottom: 475px;  
         padding-top: 135px;
         padding-bottom: 145px;
       }
@@ -337,23 +309,10 @@
       .parallax__layer.parallax__layer--base {
         @media(min-width: 640px) {
           width:100%;
-          // position: absolute;
-          // top:12%; 
-          // left:0; right:0;bottom:0;
         }
       }
     }
 
-    // #group5,
-    // #group3 {
-    //   // padding: 8% 0 9%;
-    //   padding: 8%;
-
-    //   @media(min-width: 1200px) {
-    //     // padding: 95px 0 115px;
-    //     padding: 95px 0;
-    //   }
-    // }
     #group5,
     #group3 {
       padding: 8% 0 9%;
@@ -364,11 +323,9 @@
     }
 
     #group4 .subpage {
-      // padding: 10% 0 8%;
       padding:9% 0;
 
       @media(min-width: 1200px) {
-        // padding: 100px 0 80px;
         padding:90px 0;
       }
 
@@ -413,51 +370,47 @@
     }
 
     #group6 {
-      // .c-smart-bg:before {
-      //   content: "";
-      //   display: block;
-      //   width: 100%;
-      //   padding-bottom: 25%;
-      //   background-image:url('');
-      //   background-size: cover;
-      // }
 
       .ccc-holder {
         width: 99%;
         max-width: 1300px;
         margin: 0 auto;
-
-        // padding-bottom: 12%;
-        // padding-top: 6%;
-
-        padding: 9% 0; 
+        padding: 9% 0;
 
         @media(min-width: 811px) {
-          // padding-bottom: 22%;
-          // padding-bottom: 11%;
-          // padding-top:0;  
-          // padding-top:6%; 
-          padding: 9% 0; 
+          // padding: 11% 0;
+        }
+
+
+        @media(min-width: 811px) {
+          padding: 6% 0; 
         }
         
           @media(min-width: 1300px) {
-            // padding-bottom: 263px;
-            // padding-bottom: 131px;
-            // padding-top:60px;  
-
-            padding-bottom: 90px;
-            padding-top: 90px;
+            // padding-bottom: 90px;
+            // padding-top: 90px;
+            padding-bottom:150px;
+            padding-top:150px;
           }
 
       }
+
+      .c-smart-bg {
+         .ccc-holder {
+            padding: 11% 0;
+        }
+      }
+
     }
 
     .c-smart-bg {
       background-size:0;
+
       @media(min-width: 811px) {
         background-repeat: no-repeat;
         background-size: 80%;
         background-position: -150% 0%;
+
       }
     }
 
@@ -465,8 +418,6 @@
       background-size:0;
       @media(min-width: 811px) {
         background-repeat: no-repeat;
-        // background-size: 50%;
-        // background-position: 100%;
         background-size: 80%;
         background-position: 248% 0%;
       } 
@@ -495,7 +446,7 @@
 
 
 
-  }
+}
 
   html,
   .home {
