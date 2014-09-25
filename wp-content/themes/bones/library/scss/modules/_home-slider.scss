@@ -14,13 +14,18 @@
   padding-bottom: 60%;
   width:100%;
 
+  @media(min-width: 811px) {
+    padding-bottom: 510px;
+  }
+
   @media(min-width: 1040px) {
-    padding-bottom: 50%;
+    // padding-bottom: 50%;
+    padding-bottom: 700px;
   }
 
   @media(min-width: 1200px) {
     // padding-bottom: 56%;
-    padding-bottom: 50%;
+    // padding-bottom: 50%;
   }
 
   // @media (min-width: 1040px) { 
@@ -29,7 +34,7 @@
     // padding-bottom: 824px;
     // padding-bottom: 750px;
     // padding-bottom: 600px;
-    padding-bottom: 800px;
+    // padding-bottom: 800px;
   }
 }
 

@@ -42,7 +42,7 @@
 
         </div>
       </div>
-      <div class="parallax__layer parallax__layer--back bg" style="background-image: url('<?php echo $bg_img['url'] ?>');">
+      <div class="parallax__layer parallax__layer--back bg c-desk" style="background-image: url('<?php echo $bg_img['url'] ?>');">
         <div class="title">Background Layer 2</div>
       </div>
     </div>
@@ -51,11 +51,11 @@
 
 <!-- GREY -->
     <div id="group3" class="parallax__group">
-      <div class="parallax__layer parallax__layer--fore">
+      <div class="parallax__layer parallax__layer--fore c-desk">
         <div class="title">Foreground Layer 3</div>
       </div>
       <div class="parallax__layer parallax__layer--base">
-        <div class="title">
+        <div class="title" style="background-color:rgb(61,61,61);">
           <span>Base Layer 3</span>
 
           <div class="clearfix grey-bg txt-holder">
@@ -135,22 +135,17 @@
 
         </div>
       </div>
-      <div class="parallax__layer parallax__layer--back">
+      <div class="parallax__layer parallax__layer--back c-desk">
         <div class="title">Background Layer 4</div>
       </div>
-      <div class="parallax__layer parallax__layer--deep">
-        <div class="title">Deep Background Layer 4</div>
-      </div>
+
     </div>
 
 
 <!-- GROUP 5 - DIFFERENCE -->
     <div id="group5" class="parallax__group">
-      <div class="parallax__layer parallax__layer--fore">
-        <div class="title">Foreground Layer 5</div>
-      </div>
       <div class="parallax__layer parallax__layer--base">
-        <div class="title">
+        <div class="title" style="background-color:rgb(61,61,61);">
           <span>Base Layer 5</span>
 
           <!-- <div class="new-home-wrap abs-center white"> -->
@@ -169,38 +164,49 @@
 <!-- SMART HOLDER & CAREER HOLDER -->
     <div id="group6" class="parallax__group">
       <!-- BACKGROUND -->      
-      <div class="parallax__layer parallax__layer--back">
-        <div class="title">Background Layer 6</div>
-        <div class="bg career-bg" style="background-image:url('<?php echo $careers_image['url'];?>'); background-size:cover; background-repeat:no-repeat;"></div>
-        <div class="bg smart-bg" style="background-image:url('<?php echo $smart_service_image['url'];?>'); background-size:cover; background-repeat:no-repeat;"></div>
+      <div class="parallax__layer parallax__layer--back" style="background-color:#ffffff; background-image:url('<?php echo $careers_image['url'];?>'); background-size:50%; background-repeat:no-repeat;">
+        <!-- <div class="title">Background Layer 6</div> -->
+        <div class="title">
+          <div class="clearfix cs-holder">
+            <span>Base Layer 6</span>
+            
+            <div class="clearfix cc-holder">
+              <div class="clearfix c-smart">
+                <h1 class="plus-sign"><?php echo $smart_service_title; ?></h1>
+                <?php echo $smart_service_content; ?>
+                <a href="<?php echo get_permalink(61);?>" class="gamut-btn">LEARN HOW&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
+              </div>
+            </div>
+            <!-- MOBILE DIV -->
+            <div class="bg career-bg c-mobile" style="background-image:url('<?php echo $smart_service_image['url'];?>'); background-size:cover; background-repeat:no-repeat;"></div>
+          </div>
+          <div class="clearfix cs-holder new">
+            <div class="clearfix cc-holder">
+              <div class="clearfix c-career">
+                <h1><?php echo $careers_title; ?></h1>
+                <?php echo $careers_content; ?>
+                <a href="<?php echo get_permalink(388);?>" class="gamut-btn">LEARN HOW&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
+              </div>
+
+               <!--  <div class="bg career-bg c-desk" style="background-image:url('<?php echo $smart_service_image['url'];?>'); background-size:cover; background-repeat:no-repeat;"></div> -->
+               <!-- MOBILE DIV -->
+              <!-- <div class="bg career-bg c-mobile" style="background-image:url('<?php echo $careers_image['url'];?>'); background-size:cover; background-repeat:no-repeat;"></div> -->
+            </div>
+
+          </div>
+        </div>
+        <!-- <div class="bg smart-bg" style="background-color:#ffffff; background-image:url('<?php echo $careers_image['url'];?>'); background-size:cover; background-repeat:no-repeat;"></div> -->
+        <!-- <div class="bg career-bg c-desk" style="background-image:url('<?php echo $smart_service_image['url'];?>'); background-size:cover; background-repeat:no-repeat;"></div> -->
       </div>
 
       <!-- TEXT -->
-      <div class="parallax__layer parallax__layer--base">
-        <div class="title">
-          <span>Base Layer 6</span>
 
-          <div class="clearfix c-smart">
-            <h1 class="plus-sign"><?php echo $smart_service_title; ?></h1>
-            <?php echo $smart_service_content; ?>
-            <a href="<?php echo get_permalink(61);?>" class="gamut-btn">LEARN HOW&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
-          </div>
-
-
-          <div class="clearfix c-career">
-            <h1><?php echo $careers_title; ?></h1>
-            <?php echo $careers_content; ?>
-            <a href="<?php echo get_permalink(388);?>" class="gamut-btn">LEARN HOW&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
-          </div>
-
-        </div>
-      </div>
     </div>
 
 
     <div id="group7" class="parallax__group">
-      <div class="parallax__layer parallax__layer--base">
-        <div class="title">Base Layer Footer Layer 7</div>
+      <div class="parallax__layer parallax__layer--fore">
+        <!-- <div class="title">Base Layer Footer Layer 7</div -->>
 <!--       </div>
     </div>
   </div> -->
