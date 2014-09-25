@@ -93,14 +93,27 @@ wp_reset_postdata();
 							foreach ($teamMembers as $key => $teamMember) { ?>
 
 								<li id="post-<?php echo $teamMember['id']; ?>" role="article" itemscope itemtype="http://schema.org/BlogPosting">
-									<a href="<?php echo $teamMember['link']; ?>" data-largesrc="<?php echo $teamMember['largeThumb']; ?>" data-largeheight="<?php echo $teamMember['largeThumb-height']; ?>" data-largewidth="<?php echo $teamMember['largeThumb-width']; ?>" data-title="<?php echo $teamMember['name']; ?>" data-description="<?php echo $teamMember['add_info']; ?>" data-etitle="<?php echo $teamMember['emp_title']; ?>">
-									<?php echo '<a href="'.$teamMember['link'].'">';
+
+									<a class="fancybox various" href="<?php echo '#' . $teamMember['id']; ?>">
+
+									<?php 
 										echo '<img src="'.$teamMember['new-thumb'].'" alt="'.$teamMember['name'].'" class="grid-thumb">';
 										echo '<h2 class="small-name gothic">'.$teamMember['name'].'</h2>';
 										echo '<h3 class="small-title gothic">'.$teamMember['emp_title'].'</h3>';
-										?>
+									?>
+										
 									</a>
 								</li>
+
+								<div id="<?php echo $teamMember['id']; ?>" style="width:100%;display: none;">
+									<?php echo '<img class="bio-left-column-image" src="'.$teamMember['largeThumb'].'" alt="'.$teamMember['name'].'">' ?>
+									<div class="bio-right-column-container">
+									<h3 class="bio-name"><?php echo $teamMember['name']; ?></h3>	
+									<h3 class="bio-title"><?php echo $teamMember['emp_title']; ?></h3>	
+									<p><?php echo $teamMember['add_info']; ?></p>
+									</div>
+									
+								</div> 
 							
 							<?php
 
@@ -108,6 +121,7 @@ wp_reset_postdata();
 						?>
 
 					</ul>
+
 
 				</section>
 

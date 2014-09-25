@@ -6,6 +6,65 @@
 	
 }
 
+// bio
+.bio-left-column-image {
+	display: inline-block;
+	height: 580px;
+
+	@media(max-width: 1000px) {
+		height: 400px;		
+	}
+
+	@media(max-width: 736px) {
+		display: block;	
+		margin: auto;	
+	}
+}
+
+.bio-right-column-container {
+	display: inline-block;
+	width: 50%;
+	margin: auto;
+	vertical-align: top;
+	margin-left: 5%;
+
+	.bio-name {
+	color: $white;
+	display: inline-block;
+	font-weight: 700;
+}
+
+	.bio-title {
+		color: $brand-color;
+		display: inline-block;
+		font-weight: 700;
+	}
+
+	p {
+		color: $black;
+		font-size: 0.9em;
+		line-height: 1.32em;
+		margin-top: 0.7em;
+	}
+
+	@media(max-width: 736px) {
+		display: block;
+		display: block;
+		margin: auto;
+		width: 90%;
+		margin-top: 20px;		
+	}
+
+}
+
+.fancybox-inner {
+	background-color: #cecdcd;
+}
+
+.og-grid li a img {
+	margin: 0 !important;
+}
+
 // page link color
 .page-link {
 	color: $brand-color !important;
