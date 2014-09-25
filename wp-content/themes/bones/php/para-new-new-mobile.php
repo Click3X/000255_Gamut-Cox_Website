@@ -35,7 +35,7 @@
         <?php if ( $detect->isMobile() ) : ?>
         <img src="<?php bloginfo('url'); ?>/wp-content/videos/gamut_intro_1.gif" width="100%"/>
         <?php else : ?>
-        <video width="100%" loop autoplay muted>
+        <video width="100%" style="width:100%; height:auto;" loop autoplay muted>
           <!-- poster="<?php bloginfo('url'); ?>/wp-content/videos/GAMUT_h264.png" -->
           <source src="<?php bloginfo('url'); ?>/wp-content/videos/GAMUT_h264.mp4" type="video/mp4">
           <source src="<?php bloginfo('url'); ?>/wp-content/videos/GAMUT_h264.ogv" type="video/ogg">
