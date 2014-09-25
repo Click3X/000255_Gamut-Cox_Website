@@ -240,7 +240,7 @@
   .parallax {
     p {
         font-size: 1.1em;
-      @media(min-width: 768px) {
+      @media(min-width: 811px) {
         font-size: 1.4em;
       }
 
@@ -251,7 +251,7 @@
     h1 {
       font-size: 2.5em;
 
-      @media(min-width: 768px) {
+      @media(min-width: 811px) {
         font-size: 3em;
       }
 
@@ -375,13 +375,15 @@
         padding-bottom: 12%;
         padding-top: 6%;
 
-        @media(min-width: 768px) {
-          padding-bottom: 22%;
+        @media(min-width: 811px) {
+          // padding-bottom: 22%;
+          padding-bottom: 11%;
           padding-top:0;  
         }
         
           @media(min-width: 1300px) {
-            padding-bottom: 263px;
+            // padding-bottom: 263px;
+            padding-bottom: 131px;
           }
 
       }
@@ -389,7 +391,7 @@
 
     .c-smart-bg {
       background-size:0;
-      @media(min-width: 768px) {
+      @media(min-width: 811px) {
         background-repeat: no-repeat;
         background-size: 80%;
         background-position: -150% 0%;
@@ -398,7 +400,7 @@
 
     .c-career-bg {
       background-size:0;
-      @media(min-width: 768px) {
+      @media(min-width: 811px) {
         background-repeat: no-repeat;
         // background-size: 50%;
         // background-position: 100%;
@@ -427,7 +429,7 @@
     background-repeat: no-repeat;
     width:100%;
     padding-bottom:50%;
-    @media(min-width: 768px) {
+    @media(min-width: 811px) {
       display: none;
     }
   }

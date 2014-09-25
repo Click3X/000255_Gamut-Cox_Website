@@ -4290,7 +4290,7 @@ a {
 .parallax p {
   font-size: 1.1em;
 }
-@media (min-width: 768px) {
+@media (min-width: 811px) {
   /* line 241, ../scss/modules/_para-all-styles.scss */
   .parallax p {
     font-size: 1.4em;
@@ -4306,7 +4306,7 @@ a {
 .parallax h1 {
   font-size: 2.5em;
 }
-@media (min-width: 768px) {
+@media (min-width: 811px) {
   /* line 251, ../scss/modules/_para-all-styles.scss */
   .parallax h1 {
     font-size: 3em;
@@ -4432,57 +4432,57 @@ a {
   padding-bottom: 12%;
   padding-top: 6%;
 }
-@media (min-width: 768px) {
+@media (min-width: 811px) {
   /* line 370, ../scss/modules/_para-all-styles.scss */
   .mobile #group6 .ccc-holder {
-    padding-bottom: 22%;
+    padding-bottom: 11%;
     padding-top: 0;
   }
 }
 @media (min-width: 1300px) {
   /* line 370, ../scss/modules/_para-all-styles.scss */
   .mobile #group6 .ccc-holder {
-    padding-bottom: 263px;
+    padding-bottom: 131px;
   }
 }
-/* line 390, ../scss/modules/_para-all-styles.scss */
+/* line 392, ../scss/modules/_para-all-styles.scss */
 .mobile .c-smart-bg {
   background-size: 0;
 }
-@media (min-width: 768px) {
-  /* line 390, ../scss/modules/_para-all-styles.scss */
+@media (min-width: 811px) {
+  /* line 392, ../scss/modules/_para-all-styles.scss */
   .mobile .c-smart-bg {
     background-repeat: no-repeat;
     background-size: 80%;
     background-position: -150% 0%;
   }
 }
-/* line 399, ../scss/modules/_para-all-styles.scss */
+/* line 401, ../scss/modules/_para-all-styles.scss */
 .mobile .c-career-bg {
   background-size: 0;
 }
-@media (min-width: 768px) {
-  /* line 399, ../scss/modules/_para-all-styles.scss */
+@media (min-width: 811px) {
+  /* line 401, ../scss/modules/_para-all-styles.scss */
   .mobile .c-career-bg {
     background-repeat: no-repeat;
     background-size: 80%;
     background-position: 248% 0%;
   }
 }
-/* line 411, ../scss/modules/_para-all-styles.scss */
+/* line 413, ../scss/modules/_para-all-styles.scss */
 .mobile .c-career,
 .mobile .c-smart {
   padding: 0 1em;
 }
 
-/* line 419, ../scss/modules/_para-all-styles.scss */
+/* line 421, ../scss/modules/_para-all-styles.scss */
 html,
 .home {
   width: 100%;
   overflow-x: hidden;
 }
 
-/* line 425, ../scss/modules/_para-all-styles.scss */
+/* line 427, ../scss/modules/_para-all-styles.scss */
 .c-bg-mobile.c-smart-bg,
 .c-bg-mobile.c-career-bg {
   background-size: cover;
@@ -4490,8 +4490,8 @@ html,
   width: 100%;
   padding-bottom: 50%;
 }
-@media (min-width: 768px) {
-  /* line 425, ../scss/modules/_para-all-styles.scss */
+@media (min-width: 811px) {
+  /* line 427, ../scss/modules/_para-all-styles.scss */
   .c-bg-mobile.c-smart-bg,
   .c-bg-mobile.c-career-bg {
     display: none;
