@@ -52,7 +52,7 @@
 									   </div>
 
 									   <div class="our-solutions-list">
-									   		<a href="<?php echo get_permalink(13); ?>">
+									   		<a href="<?php echo get_permalink(15); ?>">
 										   		<img src="<?php bloginfo('url'); ?>/img/our-solutions/rep-logo.png">
 										   	</a>
 										   	<!-- <h2 class="rep-color"><?php echo $rep_caption ?></h2> -->
@@ -66,7 +66,7 @@
 									   </div>
 
 									   <div class="our-solutions-list">
-									   		<a href="<?php echo get_permalink(15); ?>">
+									   		<a href="<?php echo get_permalink(13); ?>">
 										   		<img class="logo-smaller" src="<?php bloginfo('url'); ?>/img/our-solutions/cro-logo.png">
 										   	</a>
 										   	<!-- <h2 class="cro-color"><?php echo $cro_caption ?></h2> -->

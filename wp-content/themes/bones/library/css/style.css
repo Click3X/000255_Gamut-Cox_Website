@@ -3608,7 +3608,7 @@ a {
 /* line 235, ../scss/partials/_home_addons.scss */
 #fly-it {
   position: absolute;
-  right: -60%;
+  right: -63%;
   top: -71%;
 }
 @media (min-width: 480px) {
@@ -3620,7 +3620,7 @@ a {
 
 /* line 245, ../scss/partials/_home_addons.scss */
 #fly-it-2 {
-  right: -14%;
+  right: -17%;
   top: -75%;
 }
 @media (min-width: 480px) {
@@ -3632,7 +3632,7 @@ a {
 
 /* line 253, ../scss/partials/_home_addons.scss */
 #fly-it-3 {
-  right: -19.6%;
+  right: -22%;
   top: -69%;
 }
 @media (min-width: 480px) {
@@ -3644,7 +3644,7 @@ a {
 
 /* line 261, ../scss/partials/_home_addons.scss */
 #fly-it-4 {
-  right: -48%;
+  right: -50%;
   top: -69%;
 }
 @media (min-width: 480px) {
