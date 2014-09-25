@@ -1,6 +1,6 @@
 		<?php
 			// IF PAGE IS HOME, WRAP THE FOOTER IN GROUP 7 PARALLAX DIV
-			if(is_page(107) || is_page(466) || is_page(393) ) {
+			if(is_page(107) || is_page(466) || is_page(393) || is_page(472) ) {
 				// echo '<div class="parallax__layer parallax__layer--fore">';
 				    // echo '<div class="title">Fore Layer 7</div>';
 				}
@@ -162,20 +162,20 @@
 
 			<?php 
 			// IF IS HOME PAGE, CLOSE PARALLAX GROUP 7 WRAP
-			if(is_page(107) || is_page(466) || is_page(393) ) {
+			if(is_page(107) || is_page(466) || is_page(393) || is_page(472) ) {
 						echo '</div>'; //  END PARALLAX GROUP
 					echo '</div>'; // END GROUP 7
 				echo '</div>'; // END PARALLAX
 			// echo '</div>'; // END CONTAINER
-				// DEBUG SCRIPT
-			echo '<script>
-			    var debugInput = document.querySelector("input");
-			    function updateDebugState() {
-			        document.body.classList.toggle("debug-on", debugInput.checked);
-			    }
-			    debugInput.addEventListener("click", updateDebugState);
-			    updateDebugState();
-			  </script>';
+			// DEBUG SCRIPT
+			// echo '<script>
+			//     var debugInput = document.querySelector("input");
+			//     function updateDebugState() {
+			//         document.body.classList.toggle("debug-on", debugInput.checked);
+			//     }
+			//     debugInput.addEventListener("click", updateDebugState);
+			//     updateDebugState();
+			//   </script>';
 			}
 
 			?>
@@ -195,6 +195,22 @@
 		// ga('create', 'UA-49682614-1', 'coxdigitalsolutions.com');
 		// ga('send', 'pageview');
 		</script>
+
+		<?php 
+
+		if(is_page(472)) {
+			// echo "<script src='https://rawgithub.com/pederan/Parallax-ImageScroll/master/jquery.imageScroll.min.js'></script>";
+		// 	echo '<script>scrollmagic/ScrollMagic/js/jquery.scrollmagic.js</script>';
+		// echo '<script type="text/javascript" src="scrollmagic/ScrollMagic/js/_dependent/greensock/TweenMax.min.js"></script>
+		// <script type="text/javascript" src="scrollmagic/ScrollMagic/js/_dependent/greensock/plugins/ScrollToPlugin.min.js"></script>
+		// <script type="text/javascript" src="scrollmagic/ScrollMagic/js/_dependent/jquery.min.js"></script>
+	 //  	<script type="text/javascript" src="scrollmagic/ScrollMagic/js/_examples/modernizr.custom.min.js"></script>
+	 //  	<script type="text/javascript" src="scrollmagic/ScrollMagic/js/_mobile/iscroll-probe.js"></script>
+	 //  	<script type="text/javascript" src="scrollmagic/ScrollMagic/js/jquery.scrollmagic.min.js"></script>
+	 //  	<script type="text/javascript" src="scrollmagic/ScrollMagic/js/_examples/demo.js"></script>';
+		}
+
+		?>
 	</body>
 
 </html> <!-- end of site. what a ride! -->
