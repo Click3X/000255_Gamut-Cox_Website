@@ -372,12 +372,42 @@
         max-width: 1300px;
         margin: 0 auto;
 
-        padding-bottom: 22%;
+        padding-bottom: 12%;
+        padding-top: 6%;
+
+        @media(min-width: 768px) {
+          padding-bottom: 22%;
+          padding-top:0;  
+        }
+        
           @media(min-width: 1300px) {
             padding-bottom: 263px;
           }
 
       }
+    }
+
+    .c-smart-bg {
+      background-size:0;
+      @media(min-width: 768px) {
+        background-repeat: no-repeat;
+        background-size: 80%;
+        background-position: -150% 0%;
+      }
+    }
+
+    .c-career-bg {
+      background-size:0;
+      @media(min-width: 768px) {
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: 100%;
+      } 
+    }
+
+    .c-career,
+    .c-smart {
+      padding: 0 1em;
     }
 
 
@@ -389,8 +419,3 @@
     overflow-x:hidden;
   }
 
-  .c-bg-mobile {
-    @media(min-width: 768px) {
-      display: none;
-    }
-  }

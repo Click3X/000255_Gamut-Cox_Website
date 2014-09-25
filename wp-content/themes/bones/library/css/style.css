@@ -4429,7 +4429,15 @@ a {
   width: 99%;
   max-width: 1300px;
   margin: 0 auto;
-  padding-bottom: 22%;
+  padding-bottom: 12%;
+  padding-top: 6%;
+}
+@media (min-width: 768px) {
+  /* line 370, ../scss/modules/_para-all-styles.scss */
+  .mobile #group6 .ccc-holder {
+    padding-bottom: 22%;
+    padding-top: 0;
+  }
 }
 @media (min-width: 1300px) {
   /* line 370, ../scss/modules/_para-all-styles.scss */
@@ -4437,19 +4445,41 @@ a {
     padding-bottom: 263px;
   }
 }
+/* line 390, ../scss/modules/_para-all-styles.scss */
+.mobile .c-smart-bg {
+  background-size: 0;
+}
+@media (min-width: 768px) {
+  /* line 390, ../scss/modules/_para-all-styles.scss */
+  .mobile .c-smart-bg {
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: -150% 0%;
+  }
+}
+/* line 399, ../scss/modules/_para-all-styles.scss */
+.mobile .c-career-bg {
+  background-size: 0;
+}
+@media (min-width: 768px) {
+  /* line 399, ../scss/modules/_para-all-styles.scss */
+  .mobile .c-career-bg {
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 100%;
+  }
+}
+/* line 409, ../scss/modules/_para-all-styles.scss */
+.mobile .c-career,
+.mobile .c-smart {
+  padding: 0 1em;
+}
 
-/* line 387, ../scss/modules/_para-all-styles.scss */
+/* line 417, ../scss/modules/_para-all-styles.scss */
 html,
 .home {
   width: 100%;
   overflow-x: hidden;
-}
-
-@media (min-width: 768px) {
-  /* line 392, ../scss/modules/_para-all-styles.scss */
-  .c-bg-mobile {
-    display: none;
-  }
 }
 
 /* line 2, ../scss/modules/_home-slider.scss */
