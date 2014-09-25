@@ -12,6 +12,11 @@
     perspective: 300px;
   }
 
+.mobile #group4 .subpage .blue, .mobile #group4 .subpage .red, {
+   @media(min-width: 1200px) {
+    padding-bottom: 100px;
+  }
+}
   #parallax-kieth {
       .blue,
       .red {
@@ -237,6 +242,7 @@
     #group6,
     #group7 {
       .ccc-holder {
+        width:100%;
         max-width: none;
         .gamut-btn {
           margin-left:0;
