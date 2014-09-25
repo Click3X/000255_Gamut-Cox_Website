@@ -2,11 +2,12 @@
   /* style the groups
   --------------------------------------------- */
 .home {
+
   #group1 {
     z-index: 5; /* slide over group 2 */
   }
   #group1 .parallax__layer--base {
-    background: rgb(102,204,102);
+    // background: rgb(102,204,102);
   }
  
   #group2 {
@@ -76,11 +77,14 @@
 
 @media(min-width: 811px) {
   #group1 {
-  height:510px;
+  // height:510px;
+    height: 100vh;
   }
   #group1 .parallax__group {
-    height:510px;
+    // height:510px;
+    height: 100vh;
   }
+
 
   // #group2 {
   // height: 400px;
@@ -214,8 +218,8 @@
 //   height:900px;
 // }
 
-#group2,
-#group2 .parallax__group,
+// #group2,
+// #group2 .parallax__group,
 #group3,
 #group3 .parallax__group,
 #group5,
@@ -226,6 +230,24 @@
     height: 500px;
   }
 }
+
+
+  #group2 {
+    height: 100vh;
+    
+    .txt-holder-holder {
+       position: absolute;
+      top: 31%;
+      width: 100%;
+    }
+  }
+  #group2 .parallax__group { 
+    height: 100vh;
+
+
+  }
+
+
 
 #group7 {
   @media(min-width:811px) {

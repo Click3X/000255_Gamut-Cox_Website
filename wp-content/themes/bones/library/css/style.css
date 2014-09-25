@@ -4064,136 +4064,132 @@ a {
 }
 /* style the groups
 --------------------------------------------- */
-/* line 5, ../scss/modules/_para-new-new.scss */
+/* line 6, ../scss/modules/_para-new-new.scss */
 .home #group1 {
   z-index: 5;
   /* slide over group 2 */
 }
-/* line 8, ../scss/modules/_para-new-new.scss */
-.home #group1 .parallax__layer--base {
-  background: #66cc66;
-}
-/* line 12, ../scss/modules/_para-new-new.scss */
+/* line 13, ../scss/modules/_para-new-new.scss */
 .home #group2 {
   z-index: 3;
   /* slide under groups 1 and 3 */
 }
-/* line 15, ../scss/modules/_para-new-new.scss */
+/* line 16, ../scss/modules/_para-new-new.scss */
 .home #group2 .txt-holder-holder {
   margin-top: 50px;
 }
 @media (min-width: 1040px) {
-  /* line 15, ../scss/modules/_para-new-new.scss */
+  /* line 16, ../scss/modules/_para-new-new.scss */
   .home #group2 .txt-holder-holder {
     margin-top: 100px;
   }
 }
-/* line 23, ../scss/modules/_para-new-new.scss */
+/* line 24, ../scss/modules/_para-new-new.scss */
 .home #group2 .parallax__layer--back {
   padding-bottom: 50%;
 }
-/* line 28, ../scss/modules/_para-new-new.scss */
+/* line 29, ../scss/modules/_para-new-new.scss */
 .home #group2 .parallax__layer--deep {
   background-size: cover;
   background-repeat: no-repeat;
   height: 150%;
 }
-/* line 34, ../scss/modules/_para-new-new.scss */
+/* line 35, ../scss/modules/_para-new-new.scss */
 .home #group3 {
   z-index: 4;
   /* slide over group 2 and 4 */
 }
-/* line 41, ../scss/modules/_para-new-new.scss */
+/* line 42, ../scss/modules/_para-new-new.scss */
 .home #group4 {
   z-index: 3;
   /* slide under group 3 and 5 */
 }
-/* line 49, ../scss/modules/_para-new-new.scss */
+/* line 50, ../scss/modules/_para-new-new.scss */
 .home #group5 {
   z-index: 3;
   /* slide over group 4 and 6 */
 }
-/* line 56, ../scss/modules/_para-new-new.scss */
+/* line 57, ../scss/modules/_para-new-new.scss */
 .home #group6 {
   z-index: 2;
   /* slide under group 5 and 7 */
 }
-/* line 63, ../scss/modules/_para-new-new.scss */
+/* line 64, ../scss/modules/_para-new-new.scss */
 .home #group7 {
   z-index: 3;
   /* slide over group 7 */
 }
-/* line 71, ../scss/modules/_para-new-new.scss */
+/* line 72, ../scss/modules/_para-new-new.scss */
 .home .parallax__group {
   height: 500px;
 }
 @media (min-width: 811px) {
-  /* line 78, ../scss/modules/_para-new-new.scss */
+  /* line 79, ../scss/modules/_para-new-new.scss */
   .home #group1 {
-    height: 510px;
+    height: 100vh;
   }
-  /* line 81, ../scss/modules/_para-new-new.scss */
+  /* line 83, ../scss/modules/_para-new-new.scss */
   .home #group1 .parallax__group {
-    height: 510px;
+    height: 100vh;
   }
 }
 @media (min-width: 1040px) {
-  /* line 94, ../scss/modules/_para-new-new.scss */
+  /* line 98, ../scss/modules/_para-new-new.scss */
   .home #group1 {
     height: 700px;
   }
-  /* line 97, ../scss/modules/_para-new-new.scss */
+  /* line 101, ../scss/modules/_para-new-new.scss */
   .home #group1 .parallax__group {
     height: 700px;
   }
 }
-/* line 112, ../scss/modules/_para-new-new.scss */
+/* line 116, ../scss/modules/_para-new-new.scss */
 .home #group6,
 .home #group6 .parallax__group {
   height: 734px;
 }
 @media (min-width: 1040px) {
-  /* line 112, ../scss/modules/_para-new-new.scss */
+  /* line 116, ../scss/modules/_para-new-new.scss */
   .home #group6,
   .home #group6 .parallax__group {
     height: 1130px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 122, ../scss/modules/_para-new-new.scss */
+  /* line 126, ../scss/modules/_para-new-new.scss */
   .home #group6 .c-career {
     padding-left: 10%;
   }
 }
-/* line 139, ../scss/modules/_para-new-new.scss */
+/* line 143, ../scss/modules/_para-new-new.scss */
 .home #group2 .txt-holder {
   width: 90%;
   max-width: 1300px;
   margin: 0 auto;
 }
-/* line 149, ../scss/modules/_para-new-new.scss */
+/* line 153, ../scss/modules/_para-new-new.scss */
 .home #group5 p {
   max-width: 32.5em;
 }
-/* line 153, ../scss/modules/_para-new-new.scss */
+/* line 157, ../scss/modules/_para-new-new.scss */
 .home #group5 .gamut-btn {
   margin-left: 11%;
   color: white !important;
   background: black;
   border-color: black;
 }
-/* line 162, ../scss/modules/_para-new-new.scss */
+/* line 166, ../scss/modules/_para-new-new.scss */
 .home #group4 {
   height: 1080px;
   background-color: white;
 }
 @media (min-width: 1040px) {
-  /* line 162, ../scss/modules/_para-new-new.scss */
+  /* line 166, ../scss/modules/_para-new-new.scss */
   .home #group4 {
     height: 1640px;
   }
 }
-/* line 171, ../scss/modules/_para-new-new.scss */
+/* line 175, ../scss/modules/_para-new-new.scss */
 .home #group4 .subpage {
   padding: 62.5px 0;
   width: 90%;
@@ -4201,46 +4197,44 @@ a {
   margin: 0 auto;
 }
 @media (min-width: 1040px) {
-  /* line 171, ../scss/modules/_para-new-new.scss */
+  /* line 175, ../scss/modules/_para-new-new.scss */
   .home #group4 .subpage {
     padding: 112.5px 0;
   }
 }
-/* line 182, ../scss/modules/_para-new-new.scss */
+/* line 186, ../scss/modules/_para-new-new.scss */
 .home #group4 .subpage .gamut-btn {
   color: white !important;
   background-color: black;
   border-color: black;
 }
-/* line 188, ../scss/modules/_para-new-new.scss */
+/* line 192, ../scss/modules/_para-new-new.scss */
 .home #group4 .subpage p {
   font-size: 1.8em;
 }
-/* line 194, ../scss/modules/_para-new-new.scss */
+/* line 198, ../scss/modules/_para-new-new.scss */
 .home #group4 .parallax__group {
   margin-top: 20px;
   margin-bottom: 20px;
   height: 1080px;
 }
 @media (min-width: 1040px) {
-  /* line 194, ../scss/modules/_para-new-new.scss */
+  /* line 198, ../scss/modules/_para-new-new.scss */
   .home #group4 .parallax__group {
     height: 1600px;
   }
 }
-/* line 205, ../scss/modules/_para-new-new.scss */
+/* line 209, ../scss/modules/_para-new-new.scss */
 .home #group3,
 .home #group5 {
   color: white;
 }
-/* line 208, ../scss/modules/_para-new-new.scss */
+/* line 212, ../scss/modules/_para-new-new.scss */
 .home #group3 h1,
 .home #group5 h1 {
   color: white;
 }
-/* line 222, ../scss/modules/_para-new-new.scss */
-.home #group2,
-.home #group2 .parallax__group,
+/* line 226, ../scss/modules/_para-new-new.scss */
 .home #group3,
 .home #group3 .parallax__group,
 .home #group5,
@@ -4248,9 +4242,7 @@ a {
   height: 400px;
 }
 @media (min-width: 1040px) {
-  /* line 222, ../scss/modules/_para-new-new.scss */
-  .home #group2,
-  .home #group2 .parallax__group,
+  /* line 226, ../scss/modules/_para-new-new.scss */
   .home #group3,
   .home #group3 .parallax__group,
   .home #group5,
@@ -4258,75 +4250,89 @@ a {
     height: 500px;
   }
 }
+/* line 235, ../scss/modules/_para-new-new.scss */
+.home #group2 {
+  height: 100vh;
+}
+/* line 238, ../scss/modules/_para-new-new.scss */
+.home #group2 .txt-holder-holder {
+  position: absolute;
+  top: 31%;
+  width: 100%;
+}
+/* line 244, ../scss/modules/_para-new-new.scss */
+.home #group2 .parallax__group {
+  height: 100vh;
+}
 @media (min-width: 811px) {
-  /* line 230, ../scss/modules/_para-new-new.scss */
+  /* line 252, ../scss/modules/_para-new-new.scss */
   .home #group7 {
     height: 550px;
   }
 }
 @media (min-width: 1040px) {
-  /* line 230, ../scss/modules/_para-new-new.scss */
+  /* line 252, ../scss/modules/_para-new-new.scss */
   .home #group7 {
     height: 530px;
   }
 }
-/* line 242, ../scss/modules/_para-new-new.scss */
+/* line 264, ../scss/modules/_para-new-new.scss */
 .home .home #container {
   margin-top: -62.5px;
 }
 @media (min-width: 1210px) {
-  /* line 242, ../scss/modules/_para-new-new.scss */
+  /* line 264, ../scss/modules/_para-new-new.scss */
   .home .home #container {
     margin-top: -31px;
   }
 }
 @media (min-width: 811px) {
-  /* line 251, ../scss/modules/_para-new-new.scss */
+  /* line 273, ../scss/modules/_para-new-new.scss */
   .home .c-smart, .home .c-career {
     width: 50%;
     padding: 0 .5em;
   }
-  /* line 255, ../scss/modules/_para-new-new.scss */
+  /* line 277, ../scss/modules/_para-new-new.scss */
   .home .c-smart {
     float: right;
   }
 }
-/* line 260, ../scss/modules/_para-new-new.scss */
+/* line 282, ../scss/modules/_para-new-new.scss */
 .home .c-smart-bg {
   background-repeat: no-repeat;
   background-size: 60%;
   background-position: -25% 0%;
 }
 @media (min-width: 1040px) {
-  /* line 260, ../scss/modules/_para-new-new.scss */
+  /* line 282, ../scss/modules/_para-new-new.scss */
   .home .c-smart-bg {
     background-size: 63%;
     background-position: -35% 0%;
   }
 }
 @media (min-width: 1320px) {
-  /* line 260, ../scss/modules/_para-new-new.scss */
+  /* line 282, ../scss/modules/_para-new-new.scss */
   .home .c-smart-bg {
     padding-bottom: 100px;
   }
-  /* line 275, ../scss/modules/_para-new-new.scss */
+  /* line 297, ../scss/modules/_para-new-new.scss */
   .home .c-smart-bg .c-smart {
     margin-top: 110px;
   }
 }
-/* line 281, ../scss/modules/_para-new-new.scss */
+/* line 303, ../scss/modules/_para-new-new.scss */
 .home .c-career-bg {
   background-repeat: no-repeat;
   background-size: 80%;
   background-position: 290% 20%;
 }
-/* line 289, ../scss/modules/_para-new-new.scss */
+/* line 311, ../scss/modules/_para-new-new.scss */
 .home .plus-sign {
   position: relative;
   max-width: 7.5em;
   margin-left: .8em;
 }
-/* line 295, ../scss/modules/_para-new-new.scss */
+/* line 317, ../scss/modules/_para-new-new.scss */
 .home .plus-sign:after {
   content: "";
   display: block;
@@ -4342,36 +4348,36 @@ a {
   background-repeat: no-repeat;
 }
 @media (min-width: 1040px) {
-  /* line 295, ../scss/modules/_para-new-new.scss */
+  /* line 317, ../scss/modules/_para-new-new.scss */
   .home .plus-sign:after {
     width: 2.15rem;
     height: 2.15rem;
   }
 }
 @media (min-width: 1340px) {
-  /* line 295, ../scss/modules/_para-new-new.scss */
+  /* line 317, ../scss/modules/_para-new-new.scss */
   .home .plus-sign:after {
     width: 2.65rem;
     height: 2.65rem;
   }
 }
-/* line 320, ../scss/modules/_para-new-new.scss */
+/* line 342, ../scss/modules/_para-new-new.scss */
 .home .cc-holder {
   padding-bottom: 15%;
 }
 @media (min-width: 1040px) {
-  /* line 320, ../scss/modules/_para-new-new.scss */
+  /* line 342, ../scss/modules/_para-new-new.scss */
   .home .cc-holder {
     padding-bottom: 140px;
   }
 }
 @media (min-width: 1600px) {
-  /* line 320, ../scss/modules/_para-new-new.scss */
+  /* line 342, ../scss/modules/_para-new-new.scss */
   .home .cc-holder {
     padding-bottom: 240px;
   }
 }
-/* line 330, ../scss/modules/_para-new-new.scss */
+/* line 352, ../scss/modules/_para-new-new.scss */
 .home .cc-holder .gamut-btn {
   background-color: black;
   border-color: black;
@@ -4379,65 +4385,65 @@ a {
   margin-left: 0;
   margin-top: 2em;
 }
-/* line 339, ../scss/modules/_para-new-new.scss */
+/* line 361, ../scss/modules/_para-new-new.scss */
 .home p {
   font-size: 1.6em;
   line-height: 1.15em;
 }
-/* line 344, ../scss/modules/_para-new-new.scss */
+/* line 366, ../scss/modules/_para-new-new.scss */
 .home .c-career p {
   max-width: 19.5em;
 }
-/* line 348, ../scss/modules/_para-new-new.scss */
+/* line 370, ../scss/modules/_para-new-new.scss */
 .home .c-smart p {
   max-width: 20em;
 }
-/* line 352, ../scss/modules/_para-new-new.scss */
+/* line 374, ../scss/modules/_para-new-new.scss */
 .home .ccc-holder {
   width: 90%;
   max-width: 1300px;
   margin: 0 auto;
 }
-/* line 360, ../scss/modules/_para-new-new.scss */
+/* line 382, ../scss/modules/_para-new-new.scss */
 .home .p-holder p {
   max-width: 27em;
   text-align: left;
 }
-/* line 366, ../scss/modules/_para-new-new.scss */
+/* line 388, ../scss/modules/_para-new-new.scss */
 .home .grey-bg {
   width: 90%;
   max-width: 1300px;
   margin: 0 auto;
 }
-/* line 372, ../scss/modules/_para-new-new.scss */
+/* line 394, ../scss/modules/_para-new-new.scss */
 .home .parallax {
   font-size: 75%;
 }
-/* line 374, ../scss/modules/_para-new-new.scss */
+/* line 396, ../scss/modules/_para-new-new.scss */
 .home .parallax h1 {
   font-size: 3.25em;
 }
 @media (min-width: 1040px) {
-  /* line 372, ../scss/modules/_para-new-new.scss */
+  /* line 394, ../scss/modules/_para-new-new.scss */
   .home .parallax {
     font-size: 100%;
   }
-  /* line 377, ../scss/modules/_para-new-new.scss */
+  /* line 399, ../scss/modules/_para-new-new.scss */
   .home .parallax h1 {
     font-size: 3.5em;
   }
 }
 @media (min-width: 1300px) {
-  /* line 380, ../scss/modules/_para-new-new.scss */
+  /* line 402, ../scss/modules/_para-new-new.scss */
   .home .parallax h1 {
     font-size: 4.5em;
   }
 }
-/* line 386, ../scss/modules/_para-new-new.scss */
+/* line 408, ../scss/modules/_para-new-new.scss */
 .home .c-career h1 {
   position: relative;
 }
-/* line 388, ../scss/modules/_para-new-new.scss */
+/* line 410, ../scss/modules/_para-new-new.scss */
 .home .c-career h1:before {
   content: "";
   display: block;
@@ -4455,7 +4461,7 @@ a {
   z-index: 10;
 }
 @media (min-width: 811px) {
-  /* line 388, ../scss/modules/_para-new-new.scss */
+  /* line 410, ../scss/modules/_para-new-new.scss */
   .home .c-career h1:before {
     right: 0;
     left: -1450px;
@@ -4463,12 +4469,12 @@ a {
     bottom: auto;
   }
 }
-/* line 424, ../scss/modules/_para-new-new.scss */
+/* line 446, ../scss/modules/_para-new-new.scss */
 .home #group3 h1,
 .home #group5 h1 {
   position: relative;
 }
-/* line 427, ../scss/modules/_para-new-new.scss */
+/* line 449, ../scss/modules/_para-new-new.scss */
 .home #group3 h1:before,
 .home #group5 h1:before {
   content: "";
@@ -4487,7 +4493,7 @@ a {
   z-index: 10;
 }
 @media (min-width: 811px) {
-  /* line 427, ../scss/modules/_para-new-new.scss */
+  /* line 449, ../scss/modules/_para-new-new.scss */
   .home #group3 h1:before,
   .home #group5 h1:before {
     top: .5em;
@@ -4495,12 +4501,12 @@ a {
     left: -812px;
   }
 }
-/* line 455, ../scss/modules/_para-new-new.scss */
+/* line 477, ../scss/modules/_para-new-new.scss */
 .home #group3 p,
 .home #group5 p {
   position: relative;
 }
-/* line 457, ../scss/modules/_para-new-new.scss */
+/* line 479, ../scss/modules/_para-new-new.scss */
 .home #group3 p:after,
 .home #group5 p:after {
   content: "";
@@ -4516,7 +4522,7 @@ a {
   right: -802px;
 }
 @media (min-width: 811px) {
-  /* line 457, ../scss/modules/_para-new-new.scss */
+  /* line 479, ../scss/modules/_para-new-new.scss */
   .home #group3 p:after,
   .home #group5 p:after {
     right: -862px;
@@ -4524,33 +4530,33 @@ a {
     bottom: 0;
   }
 }
-/* line 482, ../scss/modules/_para-new-new.scss */
+/* line 504, ../scss/modules/_para-new-new.scss */
 .home .c-smart {
   max-width: 420px;
 }
 @media (min-width: 1040px) {
-  /* line 482, ../scss/modules/_para-new-new.scss */
+  /* line 504, ../scss/modules/_para-new-new.scss */
   .home .c-smart {
     max-width: 486px;
   }
 }
 @media (min-width: 1317px) {
-  /* line 482, ../scss/modules/_para-new-new.scss */
+  /* line 504, ../scss/modules/_para-new-new.scss */
   .home .c-smart {
     max-width: 593px;
   }
 }
 
-/* line 502, ../scss/modules/_para-new-new.scss */
+/* line 524, ../scss/modules/_para-new-new.scss */
 .subpage-wrap {
   border-bottom: 2px dashed #d8d8d8;
 }
-/* line 505, ../scss/modules/_para-new-new.scss */
+/* line 527, ../scss/modules/_para-new-new.scss */
 .subpage-wrap:last-of-type {
   border-bottom: none;
 }
 
-/* line 510, ../scss/modules/_para-new-new.scss */
+/* line 532, ../scss/modules/_para-new-new.scss */
 #main article p a {
   color: #ed228b;
 }
