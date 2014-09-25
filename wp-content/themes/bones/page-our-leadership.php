@@ -24,7 +24,10 @@ if (have_posts()) : while (have_posts()) : the_post();
 			$size = 'thumb';
 			$full = 'full';
 			$thumb = wp_get_attachment_image_src(get_post_thumbnail_id($id) , 'emp-thumb');
+			// hover over
+			$thumb_hover = wp_get_attachment_image_src(get_post_thumbnail_id($id) , 'emp-thumb');
 			$largeThumb = wp_get_attachment_image_src(get_post_thumbnail_id($id) , 'full');
+
 			
 			// GET CUSTOM FIELDS ASSOCIATED WITH TEAM MEMBER
 			$empTitle = get_post_custom_values('title', $team_member->ID);
@@ -36,9 +39,19 @@ if (have_posts()) : while (have_posts()) : the_post();
 			$telePhone = get_post_custom_values('telephone', $team_member->ID);
 			$tele = $telePhone[0];
 			$empThumb = get_post_custom_values('thumbnail', $team_member->ID);
+			// hover over
+			$empThumb_hover = get_post_custom_values('thumbnail_hover', $team_member->ID);
 			$empId = $empThumb[0];
+
+
+			// hover over
+			$empHoverId = $empThumb_hover[0];
+			$bwHoverThumb = wp_get_attachment_image_src($empHoverId , 'emp-thumb');
+			$newHoverThumb = $bwHoverThumb[0];
+
 			$bwThumb = wp_get_attachment_image_src($empId , 'emp-thumb');
 			$newThumb = $bwThumb[0];
+
 
 			
 			// ADD VALUES TO EACH TEAM MEMBER IN ARRAY
@@ -50,11 +63,16 @@ if (have_posts()) : while (have_posts()) : the_post();
 			$teamMembers[$key]['email'] = $email;
 			$teamMembers[$key]['tele'] = $tele;
 			$teamMembers[$key]['thumb'] = $thumb[0];
+			// hover
+			$teamMembers[$key]['thumb_hover'] = $thumb_hover[0];
+
 			$teamMembers[$key]['largeThumb'] = $largeThumb[0];
 			$teamMembers[$key]['largeThumb-width'] = $largeThumb[1];
 			$teamMembers[$key]['largeThumb-height'] = $largeThumb[2];
 			$teamMembers[$key]['new-thumb'] = $newThumb;
 
+			// hover 
+			$teamMembers[$key]['newHoverThumb'] = $newHoverThumb;
 		}
 	}
 	endwhile;
@@ -96,7 +114,10 @@ wp_reset_postdata();
 
 									<a class="fancybox various" href="<?php echo '#' . $teamMember['id']; ?>">
 
+									<!-- <div class="grid-thumb imgOverlay" style="background-image: url(<?php echo $teamMember['new-thumb'] ?>);"></div> -->
 									<?php 
+										// echo '<img src="'.$teamMember['newHoverThumb'].'" alt="'.$teamMember['name'].'" class="grid-thumb">';
+
 										echo '<img src="'.$teamMember['new-thumb'].'" alt="'.$teamMember['name'].'" class="grid-thumb">';
 										echo '<h2 class="small-name gothic">'.$teamMember['name'].'</h2>';
 										echo '<h3 class="small-title gothic">'.$teamMember['emp_title'].'</h3>';
