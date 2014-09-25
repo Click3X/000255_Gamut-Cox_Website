@@ -55,7 +55,7 @@ if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->t
 //	include('php/para-new-new-mobile.php'); 
 
 	// PARALAXX SCROLL MAGIC
-	include('php/para-scrollmagic.php');
+	include('php/para-kieth.php');
 
 ?>	
 

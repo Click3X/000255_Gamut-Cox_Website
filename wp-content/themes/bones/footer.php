@@ -162,7 +162,7 @@
 
 			<?php 
 			// IF IS HOME PAGE, CLOSE PARALLAX GROUP 7 WRAP
-			if(is_page(107) || is_page(466) || is_page(393) || is_page(472) ) {
+			if(is_page(107) || is_page(466) || is_page(393) ) {
 						echo '</div>'; //  END PARALLAX GROUP
 					echo '</div>'; // END GROUP 7
 				echo '</div>'; // END PARALLAX
@@ -187,18 +187,27 @@
 		
 		<script>
 		// GOOGLE ANALYTICS SCRIPT FROM OLD WEBSITE
-		// (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		// (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		// m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		// })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-		// ga('create', 'UA-49682614-1', 'coxdigitalsolutions.com');
-		// ga('send', 'pageview');
+		  ga('create', 'UA-55177925-1', 'auto');
+		  ga('send', 'pageview');
 		</script>
 
 		<?php 
 
 		if(is_page(472)) {
+			echo '</div>';
+			echo '<script>
+			    var debugInput = document.querySelector("input");
+			    function updateDebugState() {
+			        document.body.classList.toggle("debug-on", debugInput.checked);
+			    }
+			    debugInput.addEventListener("click", updateDebugState);
+			    updateDebugState();
+			  </script>';
 			// echo "<script src='https://rawgithub.com/pederan/Parallax-ImageScroll/master/jquery.imageScroll.min.js'></script>";
 		// 	echo '<script>scrollmagic/ScrollMagic/js/jquery.scrollmagic.js</script>';
 		// echo '<script type="text/javascript" src="scrollmagic/ScrollMagic/js/_dependent/greensock/TweenMax.min.js"></script>
