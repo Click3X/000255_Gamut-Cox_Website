@@ -169,6 +169,9 @@ function bones_scripts_and_styles() {
 		// wp_register_style( 'exp-grid-css', get_stylesheet_directory_uri() . '/library/css/exp_grid.css', array(), '', true );
 
 
+		// IN VIEW PORT
+		wp_register_script( 'in-view', get_stylesheet_directory_uri() . '/library/js/in-view/jquery.viewport.min.js', array('jquery'), '', true );
+		wp_register_script( 'in-view-page', get_stylesheet_directory_uri() . '/library/js/in-view/in-view-page.js', array('jquery', 'in-view'), '', true );
 
 		// ROYALSLIDER
 		wp_register_style( 'rs-css', get_stylesheet_directory_uri() . '/library/js/libs/royalslider/royalslider.css', array(), '', true );
@@ -238,6 +241,9 @@ function bones_scripts_and_styles() {
 			// wp_enqueue_script( 'timelineMax' );
 			// wp_enqueue_script( 'scrollorama' );
 			// wp_enqueue_script( 'scroll' );
+
+			wp_enqueue_script( 'in-view' );
+			wp_enqueue_script( 'in-view-page' );
 		}
 	}
 }
