@@ -407,9 +407,12 @@
       background-size:0;
 
       @media(min-width: 811px) {
+        // background-repeat: no-repeat;
+        // background-size: 80%;
+        // background-position: -150% 0%;
         background-repeat: no-repeat;
-        background-size: 80%;
-        background-position: -150% 0%;
+        background-size: 924px 616px;
+        background-position: 0% 0%;
 
       }
     }

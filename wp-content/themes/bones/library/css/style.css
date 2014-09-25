@@ -4503,32 +4503,32 @@ a {
   /* line 406, ../scss/modules/_para-all-styles.scss */
   .mobile .c-smart-bg {
     background-repeat: no-repeat;
-    background-size: 80%;
-    background-position: -150% 0%;
+    background-size: 924px 616px;
+    background-position: 0% 0%;
   }
 }
-/* line 417, ../scss/modules/_para-all-styles.scss */
+/* line 420, ../scss/modules/_para-all-styles.scss */
 .mobile .c-career-bg {
   background-size: 0;
 }
 @media (min-width: 811px) {
-  /* line 417, ../scss/modules/_para-all-styles.scss */
+  /* line 420, ../scss/modules/_para-all-styles.scss */
   .mobile .c-career-bg {
     background-repeat: no-repeat;
     background-size: 80%;
     background-position: 248% 0%;
   }
 }
-/* line 427, ../scss/modules/_para-all-styles.scss */
+/* line 430, ../scss/modules/_para-all-styles.scss */
 .mobile .c-career,
 .mobile .c-smart {
   padding: 0 1em;
 }
-/* line 431, ../scss/modules/_para-all-styles.scss */
+/* line 434, ../scss/modules/_para-all-styles.scss */
 .mobile .c-smart {
   max-width: 615px;
 }
-/* line 440, ../scss/modules/_para-all-styles.scss */
+/* line 443, ../scss/modules/_para-all-styles.scss */
 .mobile #fly-it,
 .mobile #fly-it-2,
 .mobile #fly-it-3,
@@ -4536,7 +4536,7 @@ a {
   display: none;
 }
 @media (min-width: 811px) {
-  /* line 440, ../scss/modules/_para-all-styles.scss */
+  /* line 443, ../scss/modules/_para-all-styles.scss */
   .mobile #fly-it,
   .mobile #fly-it-2,
   .mobile #fly-it-3,
@@ -4545,14 +4545,14 @@ a {
   }
 }
 
-/* line 452, ../scss/modules/_para-all-styles.scss */
+/* line 455, ../scss/modules/_para-all-styles.scss */
 html,
 .home {
   width: 100%;
   overflow-x: hidden;
 }
 
-/* line 458, ../scss/modules/_para-all-styles.scss */
+/* line 461, ../scss/modules/_para-all-styles.scss */
 .c-bg-mobile.c-smart-bg,
 .c-bg-mobile.c-career-bg {
   background-size: cover;
@@ -4561,7 +4561,7 @@ html,
   padding-bottom: 50%;
 }
 @media (min-width: 811px) {
-  /* line 458, ../scss/modules/_para-all-styles.scss */
+  /* line 461, ../scss/modules/_para-all-styles.scss */
   .c-bg-mobile.c-smart-bg,
   .c-bg-mobile.c-career-bg {
     display: none;
@@ -4569,7 +4569,7 @@ html,
 }
 
 @media (min-width: 811px) {
-  /* line 468, ../scss/modules/_para-all-styles.scss */
+  /* line 471, ../scss/modules/_para-all-styles.scss */
   .c-bg-mobile {
     display: none;
   }
