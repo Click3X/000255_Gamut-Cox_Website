@@ -1,8 +1,11 @@
 // Events post formatting
 .events-table {
-	border: none !important;
+	border-left: none !important;
+	border-right: none !important;
+	border-top: none !important;
+	border-bottom: none !important;
 	h3 {
-		margin-top: .6em;
+		margin-top: .2em;
 		letter-spacing: .1em;
 		font-size: .91em;
 		font-family: "franklin-gothic-urw",sans-serif;
