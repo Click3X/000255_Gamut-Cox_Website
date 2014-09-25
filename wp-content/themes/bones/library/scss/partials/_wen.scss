@@ -1,6 +1,6 @@
 // Events post formatting
 .events-table {
-	border: none;
+	border: none !important;
 	h3 {
 		margin-top: .6em;
 		letter-spacing: .1em;
@@ -21,6 +21,8 @@
 	td {
 		border: none;
 		background-color: $white !important;
+		vertical-align: top;
+		padding: 0 !important;
 	}
 
 	.events-right-column {
