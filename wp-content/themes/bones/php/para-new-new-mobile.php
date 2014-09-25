@@ -200,7 +200,7 @@
             <div class="clearfix c-smart">
               <h1 class="plus-sign"><?php echo $smart_service_title; ?></h1>
               <?php echo $smart_service_content; ?>
-              <a href="<?php echo get_permalink(61);?>" class="gamut-btn">LEARN HOW&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
+              <a href="<?php echo get_permalink(61);?>" class="gamut-btn">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
             </div>
           </div>
         </div>
@@ -212,7 +212,7 @@
           <div class="clearfix c-career">
             <h1><?php echo $careers_title; ?></h1>
             <?php echo $careers_content; ?>
-            <a href="<?php echo get_permalink(388);?>" class="gamut-btn">LEARN HOW&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
+            <a href="<?php echo get_permalink(388);?>" class="gamut-btn">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
           </div>
         </div>
       </div>
