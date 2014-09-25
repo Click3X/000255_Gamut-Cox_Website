@@ -40,7 +40,7 @@
 
 									?>
 									<li class="social">
-										<a href="<?php the_sub_field('link'); ?>" title="<?php the_sub_field('title');?>" class="<?php echo $socialTitle; ?>">
+										<a href="<?php the_sub_field('link'); ?>" target="_blank" title="<?php the_sub_field('title');?>" class="<?php echo $socialTitle; ?>">
 										</a>
 									</li>
 								<?php endwhile;
