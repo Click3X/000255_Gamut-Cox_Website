@@ -1,6 +1,6 @@
 <?php
 /*
- Template Name: News
+ Template Name: Press
  *
  * This is your custom page template. You can create as many of these as you need.
  * Simply name is "page-whatever.php" and in add the "Template Name" title at the
@@ -75,9 +75,9 @@
 										</div>
 										<?php } ?>
 
+										
 
-										<p><?php the_content()?></p>
-										<!-- <p><?php the_excerpt()?></p> -->
+										<p><?php the_excerpt()?></p>
 										<?php //endwhile; else: endif; 
 
 
