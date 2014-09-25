@@ -4315,20 +4315,26 @@ a {
 @media (min-width: 1200px) {
   /* line 251, ../scss/modules/_para-all-styles.scss */
   .parallax h1 {
+    font-size: 4em;
+  }
+}
+@media (min-width: 1300px) {
+  /* line 251, ../scss/modules/_para-all-styles.scss */
+  .parallax h1 {
     font-size: 4.5em;
   }
 }
 
-/* line 266, ../scss/modules/_para-all-styles.scss */
+/* line 270, ../scss/modules/_para-all-styles.scss */
 .mobile .debug {
   display: none;
 }
-/* line 269, ../scss/modules/_para-all-styles.scss */
+/* line 273, ../scss/modules/_para-all-styles.scss */
 .mobile #group1 {
   max-height: 730px;
   overflow-y: hidden;
 }
-/* line 274, ../scss/modules/_para-all-styles.scss */
+/* line 278, ../scss/modules/_para-all-styles.scss */
 .mobile #group2 {
   background-size: cover;
   background-position: 0;
@@ -4337,20 +4343,20 @@ a {
   padding-top: 6%;
 }
 @media (min-width: 640px) {
-  /* line 274, ../scss/modules/_para-all-styles.scss */
+  /* line 278, ../scss/modules/_para-all-styles.scss */
   .mobile #group2 {
     padding-bottom: 42%;
     padding-top: 0;
   }
 }
 @media (min-width: 1200px) {
-  /* line 274, ../scss/modules/_para-all-styles.scss */
+  /* line 278, ../scss/modules/_para-all-styles.scss */
   .mobile #group2 {
     padding-bottom: 475px;
   }
 }
 @media (min-width: 640px) {
-  /* line 294, ../scss/modules/_para-all-styles.scss */
+  /* line 298, ../scss/modules/_para-all-styles.scss */
   .mobile #group2 .parallax__layer.parallax__layer--base {
     width: 100%;
     position: absolute;
@@ -4360,30 +4366,30 @@ a {
     bottom: 0;
   }
 }
-/* line 305, ../scss/modules/_para-all-styles.scss */
+/* line 309, ../scss/modules/_para-all-styles.scss */
 .mobile #group5,
 .mobile #group3 {
   padding: 8% 0 9%;
 }
 @media (min-width: 1200px) {
-  /* line 305, ../scss/modules/_para-all-styles.scss */
+  /* line 309, ../scss/modules/_para-all-styles.scss */
   .mobile #group5,
   .mobile #group3 {
     padding: 95px 0 115px;
   }
 }
-/* line 313, ../scss/modules/_para-all-styles.scss */
+/* line 317, ../scss/modules/_para-all-styles.scss */
 .mobile #group4 .subpage {
   padding: 10% 0 8%;
 }
 @media (min-width: 1200px) {
-  /* line 313, ../scss/modules/_para-all-styles.scss */
+  /* line 317, ../scss/modules/_para-all-styles.scss */
   .mobile #group4 .subpage {
     padding: 100px 0 80px;
   }
 }
 @media (min-width: 500px) {
-  /* line 321, ../scss/modules/_para-all-styles.scss */
+  /* line 325, ../scss/modules/_para-all-styles.scss */
   .mobile #group4 .subpage .gamut-btn {
     position: absolute;
     top: 0;
@@ -4391,40 +4397,40 @@ a {
     margin: auto;
   }
 }
-/* line 328, ../scss/modules/_para-all-styles.scss */
+/* line 332, ../scss/modules/_para-all-styles.scss */
 .mobile #group4 .subpage .p-holder {
   margin-bottom: 2em;
 }
-/* line 332, ../scss/modules/_para-all-styles.scss */
+/* line 336, ../scss/modules/_para-all-styles.scss */
 .mobile #group4 .subpage .blue, .mobile #group4 .subpage .red {
   padding-bottom: 75px;
   width: 100%;
 }
 @media (min-width: 500px) {
-  /* line 332, ../scss/modules/_para-all-styles.scss */
+  /* line 336, ../scss/modules/_para-all-styles.scss */
   .mobile #group4 .subpage .blue, .mobile #group4 .subpage .red {
     padding-bottom: 8%;
   }
 }
 @media (min-width: 500px) {
-  /* line 341, ../scss/modules/_para-all-styles.scss */
+  /* line 345, ../scss/modules/_para-all-styles.scss */
   .mobile #group4 .subpage .blue {
     width: 42%;
   }
 }
 @media (min-width: 500px) {
-  /* line 347, ../scss/modules/_para-all-styles.scss */
+  /* line 351, ../scss/modules/_para-all-styles.scss */
   .mobile #group4 .subpage .red {
     width: 58%;
   }
 }
-/* line 354, ../scss/modules/_para-all-styles.scss */
+/* line 358, ../scss/modules/_para-all-styles.scss */
 .mobile .c-career-bg {
   background-size: 50%;
   background-position: 100%;
   background-repeat: no-repeat;
 }
-/* line 370, ../scss/modules/_para-all-styles.scss */
+/* line 374, ../scss/modules/_para-all-styles.scss */
 .mobile #group6 .ccc-holder {
   width: 99%;
   max-width: 1300px;
@@ -4433,56 +4439,61 @@ a {
   padding-top: 6%;
 }
 @media (min-width: 811px) {
-  /* line 370, ../scss/modules/_para-all-styles.scss */
+  /* line 374, ../scss/modules/_para-all-styles.scss */
   .mobile #group6 .ccc-holder {
     padding-bottom: 11%;
-    padding-top: 0;
+    padding-top: 6%;
   }
 }
 @media (min-width: 1300px) {
-  /* line 370, ../scss/modules/_para-all-styles.scss */
+  /* line 374, ../scss/modules/_para-all-styles.scss */
   .mobile #group6 .ccc-holder {
     padding-bottom: 131px;
+    padding-top: 60px;
   }
 }
-/* line 392, ../scss/modules/_para-all-styles.scss */
+/* line 398, ../scss/modules/_para-all-styles.scss */
 .mobile .c-smart-bg {
   background-size: 0;
 }
 @media (min-width: 811px) {
-  /* line 392, ../scss/modules/_para-all-styles.scss */
+  /* line 398, ../scss/modules/_para-all-styles.scss */
   .mobile .c-smart-bg {
     background-repeat: no-repeat;
     background-size: 80%;
     background-position: -150% 0%;
   }
 }
-/* line 401, ../scss/modules/_para-all-styles.scss */
+/* line 407, ../scss/modules/_para-all-styles.scss */
 .mobile .c-career-bg {
   background-size: 0;
 }
 @media (min-width: 811px) {
-  /* line 401, ../scss/modules/_para-all-styles.scss */
+  /* line 407, ../scss/modules/_para-all-styles.scss */
   .mobile .c-career-bg {
     background-repeat: no-repeat;
     background-size: 80%;
     background-position: 248% 0%;
   }
 }
-/* line 413, ../scss/modules/_para-all-styles.scss */
+/* line 419, ../scss/modules/_para-all-styles.scss */
 .mobile .c-career,
 .mobile .c-smart {
   padding: 0 1em;
 }
+/* line 423, ../scss/modules/_para-all-styles.scss */
+.mobile .c-smart {
+  max-width: 615px;
+}
 
-/* line 421, ../scss/modules/_para-all-styles.scss */
+/* line 431, ../scss/modules/_para-all-styles.scss */
 html,
 .home {
   width: 100%;
   overflow-x: hidden;
 }
 
-/* line 427, ../scss/modules/_para-all-styles.scss */
+/* line 437, ../scss/modules/_para-all-styles.scss */
 .c-bg-mobile.c-smart-bg,
 .c-bg-mobile.c-career-bg {
   background-size: cover;
@@ -4491,9 +4502,16 @@ html,
   padding-bottom: 50%;
 }
 @media (min-width: 811px) {
-  /* line 427, ../scss/modules/_para-all-styles.scss */
+  /* line 437, ../scss/modules/_para-all-styles.scss */
   .c-bg-mobile.c-smart-bg,
   .c-bg-mobile.c-career-bg {
+    display: none;
+  }
+}
+
+@media (min-width: 811px) {
+  /* line 447, ../scss/modules/_para-all-styles.scss */
+  .c-bg-mobile {
     display: none;
   }
 }

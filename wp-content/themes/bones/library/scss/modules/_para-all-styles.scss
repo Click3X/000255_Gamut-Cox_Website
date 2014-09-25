@@ -256,6 +256,10 @@
       }
 
       @media(min-width: 1200px) {
+        font-size: 4em;
+      }
+
+      @media(min-width: 1300px) {
         font-size: 4.5em;
       }
     }
@@ -378,12 +382,14 @@
         @media(min-width: 811px) {
           // padding-bottom: 22%;
           padding-bottom: 11%;
-          padding-top:0;  
+          // padding-top:0;  
+          padding-top:6%;  
         }
         
           @media(min-width: 1300px) {
             // padding-bottom: 263px;
             padding-bottom: 131px;
+            padding-top:60px;  
           }
 
       }
@@ -414,6 +420,10 @@
       padding: 0 1em;
     }
 
+    .c-smart {
+      max-width: 615px;
+    }
+
 
   }
 
@@ -433,3 +443,9 @@
       display: none;
     }
   }
+
+.c-bg-mobile {
+  @media(min-width: 811px) {
+    display:none;
+  }
+}
