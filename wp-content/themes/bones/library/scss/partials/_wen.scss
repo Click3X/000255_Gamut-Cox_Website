@@ -316,9 +316,16 @@
 
 .news-post-inner {
 	margin-bottom: -16px;
-	ul {
-		padding-left: 1em !important;
-		list-style-type: disc !important;
+
+
+}
+
+.news-post-wrapper {
+	section {
+		ul {
+			padding-left: 1em !important;
+			list-style-type: disc !important;
+		}
 	}
 }
 
