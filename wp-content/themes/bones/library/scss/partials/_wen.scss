@@ -1,3 +1,70 @@
+// home page btn transitions
+// PROGRAMMATIC BTN
+#home-btn-pro:hover {
+		background-color: $programmatic;
+		border-color: $programmatic;
+
+		#home-btn-pro-arrow {
+			border-left: 6px solid $white;
+		}
+}
+
+#home-btn-pro-arrow {
+	border-left: 6px solid #dd1420;
+}
+
+// REPS BTN
+#home-btn-rep:hover {
+	background-color: $reps;
+	border-color: $reps;
+
+	#home-btn-rep-arrow {
+		border-left: 6px solid $white;
+	}
+}
+
+#home-btn-rep-arrow {
+	border-left: 6px solid #039fd3;
+}
+
+// REACH
+#home-btn-rea:hover {
+	background-color: $reach;
+	border-color: $reach;
+	#home-btn-rea-arrow {
+		border-left: 6px solid $white;
+	}
+}
+
+#home-btn-rea-arrow {
+	border-left: 6px solid #8fc73e;
+}
+
+
+#home-btn-cro:hover {
+	background-color: $crossmedia;
+	border-color: $crossmedia;
+	#home-btn-cro-arrow {
+		border-left: 6px solid $white;
+	}	
+}
+
+#home-btn-cro-arrow {
+	border-left: 6px solid #fba211;
+}
+
+// end
+// home general btn
+#home-btn-difference:hover, #home-btn-service:hover, #home-btn-careers:hover {
+	background-color: $brand-color;
+	border-color: $brand-color;
+
+	#home-btn-difference-arrow, #home-btn-service-arrow, #home-btn-careers-arrow {
+		border-left: 6px solid $white !important;
+	}
+}
+
+
 // Events post formatting
 .events-table {
 	border: none !important;

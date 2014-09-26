@@ -98,7 +98,6 @@
 										
 									<?php // EACH LOCATION ('City-Address combo') GETS ITS OWN UL
 										while(has_sub_field('other_businesses_list', 'options')): ?>
-										
 										<li class="copy address other-businesses-content"><a href="<?php the_sub_field('link'); ?>"><?php the_sub_field('title'); ?></a></li>
 									<?php endwhile; ?>
 
