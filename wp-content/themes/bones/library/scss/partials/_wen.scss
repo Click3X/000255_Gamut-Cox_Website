@@ -75,9 +75,7 @@
 	width: 70%;
 	margin: auto;
 
-	ul {
-		padding-left: 1em !important;
-	}
+
 }
 
 
@@ -318,6 +316,10 @@
 
 .news-post-inner {
 	margin-bottom: -16px;
+	ul {
+		padding-left: 1em !important;
+		list-style-type: disc !important;
+	}
 }
 
 .news-logos-container {
