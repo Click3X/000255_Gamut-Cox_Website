@@ -482,40 +482,42 @@ html, body {height:100%;}
 }
 
 
-.subpage {
-    width: 90%;
-    max-width: 1300px;
-    margin: 0 auto;
-  }
-
- p {
-    font-size: 1.1em;
-    line-height: 1.15em;
-    @media(min-width: 811px) {
-      font-size: 1.4em;
+#parallax-kieth {
+  .subpage {
+      width: 90%;
+      max-width: 1300px;
+      margin: 0 auto;
     }
 
-    @media(min-width: 1200px) {
-      font-size: 1.6em;
+   p {
+      font-size: 1.1em;
+      line-height: 1.15em;
+      @media(min-width: 811px) {
+        font-size: 1.4em;
+      }
+
+      @media(min-width: 1200px) {
+        font-size: 1.6em;
+      }
     }
-  }
-  
-  h1 {
-    font-size: 1.9em;
     
-    @media(min-width:400px) {
-      font-size: 2.5em;
-    }
+    h1 {
+      font-size: 1.9em;
+      
+      @media(min-width:400px) {
+        font-size: 2.5em;
+      }
 
-    @media(min-width: 811px) {
-      font-size: 2.8em;
-    }
+      @media(min-width: 811px) {
+        font-size: 2.8em;
+      }
 
-    @media(min-width: 1200px) {
-      font-size: 4em;
-    }
+      @media(min-width: 1200px) {
+        font-size: 4em;
+      }
 
-    @media(min-width: 1300px) {
-      font-size: 4.5em;
+      @media(min-width: 1300px) {
+        font-size: 4.5em;
+      }
     }
   }
