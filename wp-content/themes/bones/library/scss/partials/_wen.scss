@@ -39,6 +39,16 @@
 	margin-bottom: 20px;
 }
 
+// press releases email link color
+.media-inquiry-info {
+	a {
+		color: $brand-color;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
 // individual employee page
 .emp-img-container {
 	float: left;
