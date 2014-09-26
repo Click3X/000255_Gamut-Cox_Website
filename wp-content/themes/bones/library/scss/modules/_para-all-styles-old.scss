@@ -235,8 +235,8 @@
   margin-bottom: 2em;
 }
 
-.mobile #group5,
-.mobile #group3,
+// .mobile #group5,
+//   .mobile #group3,
 #group5,
 #group3,
 #group5 .parallax__layer--base, 
@@ -289,9 +289,9 @@
     background-position: 0;
 
     position: relative;
-    padding:9% 0;
-    // padding-top:5.2%;
-    // padding-bottom:8%;
+
+    padding-top:5.2%;
+    padding-bottom:8%;
 
     h1 {
       margin-top:1.8rem;
@@ -431,14 +431,10 @@
   // }
 // }
 
-@media(min-width:811px) {
-  html.home-para,
-  .page-id-472,
-  .page-id-466,
-  .home {
-    width:100%;
-    overflow-x:hidden;
-  }
+html,
+.home {
+  width:100%;
+  overflow-x:hidden;
 }
 
 .c-bg-mobile.c-smart-bg,

@@ -16,7 +16,11 @@ jQuery(document).ready(function($) {
 
 	// PARALLAX DIVS
 	var group2back = $('#group2 > div.parallax__layer.parallax__layer--back'),
-	group6back = $('#group6 > div.parallax__layer.parallax__layer--back');
+	group6back = $('#group6 > div.parallax__layer.parallax__layer--back'),
+	flyit = $('#fly-it'),
+	flyit2 = $('#fly-it-2'),
+	flyit3 = $('#fly-it-3'),
+	flyit4 = $('#fly-it-4');
 
 	// Returns a function, that, as long as it continues to be invoked, will not
 	// be triggered. The function will be called after it stops being called for
@@ -103,10 +107,16 @@ jQuery(document).ready(function($) {
 			}
 		}
 
-
-
 	}
 
+
+	function flyItOut(el, winScroll, offsetAmt) {
+		if( winScroll > offsetAmt ) {
+			$(el).addClass('flyout');
+		} else if (offsetAmt > winScroll) {
+			$(el).removeClass('flyout');
+		}
+	}
 
 
 	function paraScrollTop (el, callback) {
@@ -115,10 +125,20 @@ jQuery(document).ready(function($) {
 			cl(paraScroll);
 
 			// HIDE GROUP 2 BACK
-			hideEl(group2back, paraScroll, 1280, 'hide');
+			// hideEl(group2back, paraScroll, 1280, 'hide');
+			hideEl(group2back, paraScroll, 1200, 'hide');
 			// hideEl(group6back, paraScroll, 2793, 'show');
-			hideEl(group6back, paraScroll, 2800, 'show');
+			// hideEl(group6back, paraScroll, 2800, 'show');
+			hideEl(group6back, paraScroll, 3060, 'show');
 			// hideEl(group6back, paraScroll, 2915, 'show');
+
+			flyItOut(flyit, paraScroll, 1450);
+
+			flyItOut(flyit2, paraScroll, 1830);
+
+			flyItOut(flyit3, paraScroll, 2260);
+
+			flyItOut(flyit4, paraScroll, 2690);
 
 
 			// cd(paraContainer[0].scrollTop);

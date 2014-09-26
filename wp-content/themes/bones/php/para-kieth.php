@@ -1,7 +1,7 @@
-
+<!-- 
   <div class="debug">
     <label><input type="checkbox"> Debug</label>
-  </div>
+  </div> -->
 
   <div id="parallax-kieth" class="parallax-kieth">
 
@@ -53,6 +53,8 @@
               </div>
             </div>
           </div>
+
+          <!-- <div class="parallax__layer parallax__layer--back c-mobile g2b" style="background-image: url('<?php echo $bg_img['url'] ?>');background-size: cover; background-repeat:no-repeat;"> -->
 
       </div>
       <div class="parallax__layer parallax__layer--back" style="background-image: url('<?php echo $bg_img['url'] ?>');background-size: cover; background-repeat:no-repeat;">
@@ -201,6 +203,8 @@
 
       <div class="parallax__layer parallax__layer--base">
         <!-- <div class="title">Base Layer</div> -->
+        <div id="ss-bg-mobile" class="clearfix ss-bg-mobile c-mobile" style="background-image:url('<?php echo $smart_service_image['url']; ?>');"></div>
+
         <div class="clearfix ccc-holder">
           <div class="clearfix c-smart">
             <div class="clearfix h1-hold">
@@ -221,6 +225,8 @@
     <div id="group7" class="parallax__group">
       <div class="parallax__layer parallax__layer--base">
         <!-- <div class="title">Base Layer</div> -->
+        <div id="cc-bg-mobile" class="clearfix ss-bg-mobile c-mobile" style="background-image:url('<?php echo $careers_image['url']; ?>');"></div>
+        
         <div class="clearfix ccc-holder">
           <div class="clearfix c-career">
             <div class="clearfix h1-hold">

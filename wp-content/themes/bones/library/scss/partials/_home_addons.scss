@@ -234,37 +234,88 @@
 // CHARLE SCSS
 #fly-it {
 	position: absolute;
-	
-	right: -63%;
 	top: -71%;
+	// right: -63%;
+	right: 30%;
+
+	z-index: 10;
+
+	// @include prefix(transform, translateX(30%));
+
+	@include prefix(transform, translateZ(10));
+
+	@include prefix(transition, all 500ms);
 	@media(min-width: 480px) {
-		top: -33%;
+		top: -34%;
 	}
 	// @include prefix(transform, translateX(200%));
 }
-#fly-it-2 {
-	right: -17%;
-	top: -75%;
-	@media(min-width: 480px) {
-		top:-38%;	
-	}
-	
+
+.flyout {
+	@include prefix(transition, all 500ms);
 }
+
+#fly-it.flyout {
+	right: -63%;
+	// @include prefix(transform, translateX(-63%));
+
+}
+#fly-it-2 {
+	top: -75%;
+	right: 82%;
+
+	@include prefix(transform, translateZ(10));
+
+	@include prefix(transition, all 500ms);
+	@media(min-width: 480px) {
+		top:-38%;
+	}
+}
+
+#fly-it-2.flyout {
+	right: -17%;
+	// @include prefix(transform, translateX(-17%));
+}
+
 #fly-it-3 {
-	right: -22%;
+	// right: -22%;
+	right: 78%;
 	// top: -15%;
 	top: -69%;
+
+	@include prefix(transform, translateZ(10));
+
+	@include prefix(transition, all 500ms);
+
+
 	@media(min-width: 480px) {
 		top: -28%;
 	}
 }
+
+#fly-it-3.flyout {
+	right: -22%;
+	// @include prefix(transform, translateX(-22%));
+}
+
 #fly-it-4 {
-	right: -50%;
+	// right: -50%;
+	right: 50%;
 	// top: -14%;
 	top: -69%;
+
+	@include prefix(transform, translateZ(10));
+
+	@include prefix(transition, all 500ms);
+
 	@media(min-width: 480px) {
-		top: -29%;
+		top: -28%;
 	}
+}
+
+#fly-it-4.flyout {
+	right: -51%;
+	// @include prefix(transform, translateX(-22%));
 }
 
 

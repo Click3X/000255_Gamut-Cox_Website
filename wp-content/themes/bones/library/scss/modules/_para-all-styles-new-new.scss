@@ -236,242 +236,252 @@
 }
 
 .mobile #group5,
-.mobile #group3,
-#group5,
-#group3,
-#group5 .parallax__layer--base, 
-#group3 .parallax__layer--base {
-  background-color: rgb(61,61,61);
-  color:white;
-}
-
-.parallax {
-  p {
-      font-size: 1.1em;
-      line-height: 1.15em;
-    @media(min-width: 811px) {
-      font-size: 1.4em;
-    }
-
-    @media(min-width: 1200px) {
-      font-size: 1.6em;
-    }
+  .mobile #group3,
+  #group5 .parallax__layer--base, 
+  #group3 .parallax__layer--base {
+    background-color: rgb(61,61,61);
+    color:white;
   }
-  h1 {
-    font-size: 1.9em;
-    
-    @media(min-width:400px) {
-      font-size: 2.5em;
+
+  .parallax {
+    p {
+        font-size: 1.1em;
+        line-height: 1.15em;
+      @media(min-width: 811px) {
+        font-size: 1.4em;
+      }
+
+      @media(min-width: 1200px) {
+        font-size: 1.6em;
+      }
     }
-
-    @media(min-width: 811px) {
-      font-size: 2.8em;
-    }
-
-    @media(min-width: 1200px) {
-      font-size: 4em;
-    }
-
-    @media(min-width: 1300px) {
-      font-size: 4.5em;
-    }
-  }
-}
-
-
-// .mobile {
-  #group1 {
-    max-height: 730px;
-    overflow-y:hidden;
-  }
-  #group2 {
-    background-size: cover;
-    background-position: 0;
-
-    position: relative;
-    padding:9% 0;
-    // padding-top:5.2%;
-    // padding-bottom:8%;
-
     h1 {
-      margin-top:1.8rem;
-    }
-    
-    @media(min-width: 640px){
-      // padding-top: 9%;
-      padding-top:90px;
-      // padding-bottom: 11%;
-      padding-bottom: 100px;
-    }
-
-    @media(min-width: 1200px) {
-      padding-top: 135px;
-      padding-bottom: 145px;
-    }
-
-    .parallax__layer.parallax__layer--base {
-      @media(min-width: 640px) {
-        width:100%;
-      }
-    }
-  }
-
-  #group5,
-  #group3 {
-    padding: 8% 0 9%;
-
-    @media(min-width: 1200px) {
-      padding: 95px 0 115px;
-    }
-  }
-
-  #group4 .subpage {
-    padding:9% 0;
-
-    @media(min-width: 1200px) {
-      padding:90px 0;
-    }
-
-    @media(min-width:500px) {
-    .gamut-btn {
-        position: absolute;
-        top:0; bottom:0;  
-        margin:auto;
-      }
-    }
-
-    .p-holder {
-      margin-bottom:2em;
-    }
-
-    .blue, .red {
-      padding-bottom: 75px;
-      width: 100%;
-
-      @media(min-width:500px) {
-        padding-bottom:8%;
-      }
-    }
-
-    .blue {
-      @media(min-width:500px) {
-        width:42%;
-      }
-    }
-
-    .red {
-      @media(min-width:500px) {
-        width: 58%
-      }
-    }
-  }
-
-  .c-career-bg {
-    background-size: 50%;
-    background-position: 100%;
-    background-repeat: no-repeat;
-  }
-
-  #group6 {
-
-    .ccc-holder {
-      width: 99%;
-      max-width: 1300px;
-      margin: 0 auto;
-      padding: 9% 0;
-
-      @media(min-width: 811px) { padding: 6% 0; }
+      font-size: 1.9em;
       
-        @media(min-width: 1300px) {
-          padding-bottom: 150px;
-          padding-top: 110px;
+      @media(min-width:400px) {
+        font-size: 2.5em;
+      }
+
+      @media(min-width: 811px) {
+        font-size: 2.8em;
+      }
+
+      @media(min-width: 1200px) {
+        font-size: 4em;
+      }
+
+      @media(min-width: 1300px) {
+        font-size: 4.5em;
+      }
+    }
+  }
+
+
+  .mobile {
+    // .debug {
+    //   display: none;
+    // }
+    #group1 {
+      max-height: 730px;
+      overflow-y:hidden;
+    }
+    #group2 {
+      background-size: cover;
+      background-position: 0;
+
+      position: relative;
+
+      padding-top:5.2%;
+      padding-bottom:8%;
+
+      h1 {
+        margin-top:1.8rem;
+      }
+      
+      @media(min-width: 640px){
+        padding-top: 9%;
+        padding-bottom: 11%;
+      }
+
+      @media(min-width: 1200px) {
+        padding-top: 135px;
+        padding-bottom: 145px;
+      }
+
+      .parallax__layer.parallax__layer--base {
+        @media(min-width: 640px) {
+          width:100%;
         }
       }
     }
 
-  .c-smart-bg {
-    background-size:0;
+    #group5,
+    #group3 {
+      padding: 8% 0 9%;
 
-    @media(min-width: 811px) {
-      background-repeat: no-repeat;
-      background-size: 60%;
-      background-position: -28% 0%;
+      @media(min-width: 1200px) {
+        padding: 95px 0 115px;
+      }
     }
-  }
 
-  .c-career-bg {
-    background-size:0;
-    @media(min-width: 811px) {
-      background-repeat: no-repeat;
-      background-size: 80%;
-      background-position: 248% 0%;
-    } 
-  }
+    #group4 .subpage {
+      padding:9% 0;
 
-  // .c-career,
-  // .c-smart { padding: 0 1em; }
-  // .c-smart { max-width: 615px; }
+      @media(min-width: 1200px) {
+        padding:90px 0;
+      }
 
+      @media(min-width:500px) {
+      .gamut-btn {
+          position: absolute;
+          top:0; bottom:0;  
+          margin:auto;
+        }
+      }
 
-  // HIDE BEAMS FOR NOW
-  #fly-it,
-  #fly-it-2,
-  #fly-it-3,
-  #fly-it-4 {
-    display: none;
-    @media(min-width: 811px) {
-      display: block;
+      .p-holder {
+        margin-bottom:2em;
+      }
+
+      .blue, .red {
+        padding-bottom: 75px;
+        width: 100%;
+
+        @media(min-width:500px) {
+          padding-bottom:8%;
+        }
+      }
+
+      .blue {
+        @media(min-width:500px) {
+          width:42%;
+        }
+      }
+
+      .red {
+        @media(min-width:500px) {
+          width: 58%
+        }
+      }
     }
-  }
 
-  // .cc-bg-holder,
-  // .ss-bg-holder {
-  //   width:100%;
-  //   position: relative;
-  // }
-// }
+    .c-career-bg {
+      background-size: 50%;
+      background-position: 100%;
+      background-repeat: no-repeat;
+    }
 
-@media(min-width:811px) {
-  html.home-para,
-  .page-id-472,
-  .page-id-466,
+    #group6 {
+
+      .ccc-holder {
+        width: 99%;
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 9% 0;
+
+        @media(min-width: 811px) {
+          // padding: 11% 0;
+        }
+
+
+        @media(min-width: 811px) {
+          padding: 6% 0; 
+        }
+        
+          @media(min-width: 1300px) {
+            // padding-bottom: 90px;
+            // padding-top: 90px;
+            // padding-bottom:150px;
+            // padding-top:150px;
+            padding-bottom: 150px;
+            padding-top: 110px;
+          }
+
+      }
+
+      // .c-smart-bg {
+      //    .ccc-holder {
+      //       padding: 11% 0;
+      //   }
+      // }
+
+    }
+
+    .c-smart-bg {
+      background-size:0;
+
+      @media(min-width: 811px) {
+        background-repeat: no-repeat;
+        // background-size: 80%;
+        // background-position: -150% 0%;
+        // background-repeat: no-repeat;
+        // background-size: 924px 616px;
+        // background-position: 0% 0%;
+                background-size: 60%;
+    background-position: -28% 0%;
+
+      }
+    }
+
+    .c-career-bg {
+      background-size:0;
+      @media(min-width: 811px) {
+        background-repeat: no-repeat;
+        background-size: 80%;
+        background-position: 248% 0%;
+      } 
+    }
+
+    .c-career,
+    .c-smart {
+      padding: 0 1em;
+    }
+
+    .c-smart {
+      max-width: 615px;
+    }
+
+
+    // HIDE BEAMS FOR NOW
+    #fly-it,
+    #fly-it-2,
+    #fly-it-3,
+    #fly-it-4 {
+      display: none;
+      @media(min-width: 811px) {
+        display: block;
+      }
+    }
+
+    .cc-bg-holder,
+    .ss-bg-holder {
+      width:100%;
+      position: relative;
+    }
+
+
+
+}
+
+  html,
   .home {
     width:100%;
     overflow-x:hidden;
   }
-}
 
-.c-bg-mobile.c-smart-bg,
-.c-bg-mobile.c-career-bg {
-  background-size: cover;
-  background-repeat: no-repeat;
-  width:100%;
-  padding-bottom:50%;
-  @media(min-width: 811px) {
-    display: none;
+  .c-bg-mobile.c-smart-bg,
+  .c-bg-mobile.c-career-bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    padding-bottom:50%;
+    @media(min-width: 811px) {
+      display: none;
+    }
   }
-}
 
 .c-bg-mobile {
   @media(min-width: 811px) {
     display:none;
-  }
-}
-
-.cc-bg-holder,
-.ss-bg-holder {
-  width:100%;
-  position: relative;
-}
-
-.c-career,
-.c-smart { padding: 0 1em; }
-.c-smart { max-width: 615px; }
-
-#group6 {
-  .ccc-holder {
-    width: 99%;
-    max-width: 1300px;
-    margin: 0 auto;
   }
 }
