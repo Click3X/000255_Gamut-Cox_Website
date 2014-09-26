@@ -60,7 +60,9 @@
 	endif;
 
 	// PARALLAX FILE
-	include('php/para-new-new-mobile.php'); 
+	// include('php/para-new-new-mobile.php'); 
+	
+	include('php/para-kieth.php');
 
 ?>	
 
