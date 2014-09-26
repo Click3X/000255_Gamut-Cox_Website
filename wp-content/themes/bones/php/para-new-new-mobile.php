@@ -195,7 +195,7 @@
 
       <!-- <div class="clearfix cs-holder"> -->
         <div class="clearfix cc-holder c-smart-bg c-bg-mobile" style="background-image:url('<?php echo $smart_service_image['url']; ?>');"></div>
-        <div class="clearfix cc-holder c-smart-bg" style="background-image:url('<?php echo $smart_service_image['url']; ?>');">
+        <div class="clearfix cc-holder c-smart-bg" style="background-image:url('<?php echo $smart_service_image['sizes']['para-bg']; ?>');">
           <div class="clearfix ccc-holder">
             <div class="clearfix c-smart">
               <h1 class="plus-sign"><?php echo $smart_service_title; ?></h1>
@@ -206,7 +206,7 @@
         </div>
       <!-- </div> -->
 
-      <div class="clearfix cc-holder c-career-bg c-bg-mobile" style="background-image:url('<?php echo $careers_image['url']; ?>');"></div>
+      <div class="clearfix cc-holder c-career-bg c-bg-mobile" style="background-image:url('<?php echo $careers_image['sizes']['para-bg']; ?>');"></div>
       <div class="clearfix cc-holder c-career-bg" style="background-color:rgb(248,248,239); background-image:url('<?php echo $careers_image['url']; ?>');">
         <div class="clearfix ccc-holder">
           <div class="clearfix c-career">

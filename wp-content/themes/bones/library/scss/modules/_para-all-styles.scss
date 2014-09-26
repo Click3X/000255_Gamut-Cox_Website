@@ -363,6 +363,14 @@
       @media(min-width:500px) {
         width: 58%
       }
+
+      @media(min-width:811px) {
+        width:425px;
+      }
+
+      @media(min-width: 980px) {
+        width: 500px;
+      }
     }
   }
 

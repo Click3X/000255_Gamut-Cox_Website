@@ -168,6 +168,10 @@
 	// background-color:rgba(255, 0, 0, 0.2);
 	width:58%; max-width:768px;
 	text-align: left;
+
+	@media(min-width: 811px) {
+		width:425px;
+	}
 }
 
 #crossmedia-logo,
@@ -261,61 +265,86 @@
 
 }
 #fly-it-2 {
-	top: -75%;
+	position: absolute;
+	top: -23px;
 	right: 82%;
+
+	height:4.031px;
+	width:383px;
 
 	@include prefix(transform, translateZ(10));
 
 	@include prefix(transition, all 500ms);
-	@media(min-width: 480px) {
-		top:-38%;
-	}
+
+
+	@media(min-width: 980px) {
+      height: 4px;
+      width: 1070px;
+      top: -25px;
+    }
 }
 
 #fly-it-2.flyout {
 	right: -17%;
 	// @include prefix(transform, translateX(-17%));
+	@media(min-width: 980px) {
+		height: 4px;
+		width: 1070px;
+		top: -25px;
+	}
 }
 
 #fly-it-3 {
-	// right: -22%;
+	position: absolute;
 	right: 78%;
-	// top: -15%;
-	top: -69%;
+	top: -17px;
 
 	@include prefix(transform, translateZ(10));
 
 	@include prefix(transition, all 500ms);
 
-
-	@media(min-width: 480px) {
-		top: -28%;
-	}
+	@media(min-width: 980px) {
+		height: 4px;
+		width: 1070px;
+		top: -19px;	
+    }
 }
 
 #fly-it-3.flyout {
 	right: -22%;
 	// @include prefix(transform, translateX(-22%));
+	@media(min-width: 980px) {
+      	height: 4px;
+		width: 1070px;
+		top: -19px;
+    }
 }
 
 #fly-it-4 {
-	// right: -50%;
+	position: absolute;
 	right: 50%;
-	// top: -14%;
-	top: -69%;
+	top: -16px;
 
 	@include prefix(transform, translateZ(10));
 
 	@include prefix(transition, all 500ms);
 
-	@media(min-width: 480px) {
-		top: -28%;
-	}
+	@media(min-width: 980px) {
+      height: 4px;
+      width: 1070px;
+      top: -19px;
+    }
 }
 
 #fly-it-4.flyout {
 	right: -51%;
 	// @include prefix(transform, translateX(-22%));
+
+	@media(min-width: 980px) {
+      height: 4px;
+      width: 1070px;
+      top: -19px;
+    }
 }
 
 
