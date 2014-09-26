@@ -125,9 +125,11 @@ jQuery(document).ready(function($) {
 			cl(paraScroll);
 
 			// HIDE GROUP 2 BACK
-			hideEl(group2back, paraScroll, 1280, 'hide');
+			// hideEl(group2back, paraScroll, 1280, 'hide');
+			hideEl(group2back, paraScroll, 1200, 'hide');
 			// hideEl(group6back, paraScroll, 2793, 'show');
-			hideEl(group6back, paraScroll, 2800, 'show');
+			// hideEl(group6back, paraScroll, 2800, 'show');
+			hideEl(group6back, paraScroll, 2900, 'show');
 			// hideEl(group6back, paraScroll, 2915, 'show');
 
 			flyItOut(flyit, paraScroll, 1450);
