@@ -129,7 +129,7 @@ wp_reset_postdata();
 								<div id="<?php echo $teamMember['id']; ?>" style="width:100%;display: none;">
 									<?php echo '<img class="bio-left-column-image" src="'.$teamMember['largeThumb'].'" alt="'.$teamMember['name'].'">' ?>
 									<div class="bio-right-column-container">
-									<h3 class="bio-name"><?php echo $teamMember['name']; ?></h3>	
+									<h3 class="bio-name"><?php echo $teamMember['name']; ?></h3><br />	
 									<h3 class="bio-title"><?php echo $teamMember['emp_title']; ?></h3>	
 									<p><?php echo $teamMember['add_info']; ?></p>
 									</div>
