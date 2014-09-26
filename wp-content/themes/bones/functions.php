@@ -77,6 +77,9 @@ add_image_size( 'bones-thumb-300', 300, 100, true );
 add_image_size( 'emp-thumb', 180, 180, true );
 add_image_size( 'emp-large', 250, 250, true );
 
+// SET IMAGES FOR INDIVIDUAL EMPLOYEE PAGE
+add_image_size( 'emp-individual', 290, 440, true );
+
 /*
 to add more sizes, simply copy a line from above
 and change the dimensions & name. As long as you

@@ -39,6 +39,42 @@
 	margin-bottom: 20px;
 }
 
+// individual employee page
+.emp-img-container {
+	float: left;
+	margin-right: 30px;
+}
+
+.type-team_members {
+	margin-top: 45px;
+}
+
+.emp-img-container {
+
+	@media(max-width: 767px) {
+		float: none;
+		margin-bottom: 20px;
+		img {
+			margin: auto;
+			display: block;
+		}
+
+			
+	}	
+}
+
+.emp-intro-container {
+	h1 {
+		font-size: 1.4em;
+		line-height: 1.3em;
+		color: $brand-color;
+	}
+
+	@media(max-width: 767px) {
+		width: 100%;
+	}
+}
+
 
 
 
@@ -90,7 +126,7 @@
 // bio
 .bio-left-column-image {
 	display: inline-block;
-	// height: 580px;
+	height: 440px;
 
 	@media(max-width: 1000px) {
 		height: 400px;		
