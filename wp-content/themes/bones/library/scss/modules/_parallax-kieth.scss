@@ -161,7 +161,7 @@ html, body {height:100%;}
     position: absolute;
     left: 50%;
     // top: 50%;
-    top: 48%;
+    top:54%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
@@ -238,7 +238,8 @@ html, body {height:100%;}
 
       // top: 250px;
       top: 200px;
-      background-position: 60% 0;
+      // background-position: 60% 0;
+      background-position: 100% 0;
 
       @media(min-width: 1200px) {
         top:190px;
@@ -263,7 +264,8 @@ html, body {height:100%;}
     #group1 { height: 736px; }
     #group2 { height: 467px; }
     #group2 .parallax__layer--back {
-      padding-bottom: 600px;
+      // padding-bottom: 600px;
+      padding-bottom: 700px;
       top: -50px;
     }
     #group3 { height: 504px; }
@@ -586,7 +588,9 @@ html, body {height:100%;}
   }
 
   @media(min-width: 1200px) {
-    height: 1647px; 
+    height: 1600px;
+    // height: 1647px; 
+    // height: 1857px;
   }
 }
 
