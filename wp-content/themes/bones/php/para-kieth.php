@@ -186,14 +186,14 @@
         <!-- SERVICES -->
         <!-- <div id="smart-service-bg" class="smart-service-bag" style="background-image:url('<?php echo $smart_service_image['url']; ?>');"></div> -->
         <div class="clearfix ss-bg-holder">
-          <div id="smart-service-bg" class="smart-service-bag" style="background-image:url('<?php echo $smart_service_image['url']; ?>');"></div>
+          <div id="smart-service-bg" class="smart-service-bag" style="background-image:url('<?php echo $smart_service_image['sizes']['para-bg']; ?>');"></div>
         </div>
 
         <!-- CAREERS -->
         <div class="clearfix new-b"></div>
         <!-- <div id="careers-bg" class="careers-bag" style="background-image:url('<?php echo $careers_image['url']; ?>');"></div> -->
         <div class="clearfix cc-bg-holder">
-          <div id="careers-bg" class="careers-bag" style="background-image:url('<?php echo $careers_image['url']; ?>');"></div>
+          <div id="careers-bg" class="careers-bag" style="background-image:url('<?php echo $careers_image['sizes']['para-bg']; ?>');"></div>
         </div>
 
 
@@ -205,6 +205,7 @@
           <div class="clearfix c-smart">
             <div class="clearfix h1-hold">
               <h1 class="plus-sign"><?php echo $smart_service_title; ?></h1>
+              <!-- <h2><?php helper($smart_service_image); ?></h2> -->
               <?php echo $smart_service_content; ?>
               <div class="clearfix c-btn-hold">
                 <a href="<?php echo get_permalink(61);?>" class="gamut-btn">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
