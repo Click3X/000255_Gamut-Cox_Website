@@ -5331,14 +5331,14 @@ a {
 }
 
 /* line 1, ../scss/modules/_parallax-kieth.scss */
-html, body {
+html.home-para, body.home {
   height: 100%;
   overflow-x: hidden;
   width: 100%;
 }
 
 /* line 2, ../scss/modules/_parallax-kieth.scss */
-* html .clearfix {
+* html.home-para .clearfix {
   height: 1%;
 }
 
