@@ -1,7 +1,7 @@
-
+<!-- 
   <div class="debug">
     <label><input type="checkbox"> Debug</label>
-  </div>
+  </div> -->
 
   <div id="parallax-kieth" class="parallax-kieth">
 
@@ -181,22 +181,15 @@
 
     <!-- CAREER AND SMART SERVICE -->
     <div id="group6" class="parallax__group">
-      
+
       <div class="parallax__layer parallax__layer--back no-vis">
         <!-- SERVICES -->
-        <!-- <div id="smart-service-bg" class="smart-service-bag" style="background-image:url('<?php echo $smart_service_image['url']; ?>');"></div> -->
-        <div class="clearfix ss-bg-holder">
-          <div id="smart-service-bg" class="smart-service-bag" style="background-image:url('<?php echo $smart_service_image['url']; ?>');"></div>
-        </div>
-
+        <div id="smart-service-bg" class="smart-service-bag" style="background-image:url('<?php echo $smart_service_image['url']; ?>');"></div>
         <!-- CAREERS -->
         <div class="clearfix new-b"></div>
-        <!-- <div id="careers-bg" class="careers-bag" style="background-image:url('<?php echo $careers_image['url']; ?>');"></div> -->
-        <div class="clearfix cc-bg-holder">
-          <div id="careers-bg" class="careers-bag" style="background-image:url('<?php echo $careers_image['url']; ?>');"></div>
-        </div>
-
-
+        
+        <div id="careers-bg" class="careers-bag" style="background-image:url('<?php echo $careers_image['url']; ?>');"></div>
+      
       </div>
 
       <div class="parallax__layer parallax__layer--base">

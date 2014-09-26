@@ -278,9 +278,9 @@
 
 
   .mobile {
-    .debug {
-      display: none;
-    }
+    // .debug {
+    //   display: none;
+    // }
     #group1 {
       max-height: 730px;
       overflow-y:hidden;
@@ -451,6 +451,12 @@
       @media(min-width: 811px) {
         display: block;
       }
+    }
+
+    .cc-bg-holder,
+    .ss-bg-holder {
+      width:100%;
+      position: relative;
     }
 
 

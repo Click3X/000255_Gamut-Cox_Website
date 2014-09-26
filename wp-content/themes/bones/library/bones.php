@@ -197,7 +197,13 @@ function bones_scripts_and_styles() {
 		wp_register_script( 'fancybox-js', get_stylesheet_directory_uri() . '/library/js/jquery.fancybox.js', array('jquery'), '', true );
 		wp_register_script( 'fancyboxpack-js', get_stylesheet_directory_uri() . '/library/js/jquery.fancybox.pack.js', array('jquery'), '', true );
 
-		// enqueue styles and scripts
+		
+
+        // HIDE SCROLL - FOR PARALLAX
+        wp_register_script( 'hide-scroll' , get_stylesheet_directory_uri() . '/library/js/hide-scroll.js', array('jquery'), '', true );
+
+
+        // enqueue styles and scripts
 		wp_enqueue_script( 'bones-modernizr' );
 		wp_enqueue_style( 'bones-stylesheet' );
 		wp_enqueue_style( 'bones-ie-only' );
@@ -242,8 +248,10 @@ function bones_scripts_and_styles() {
 			// wp_enqueue_script( 'scrollorama' );
 			// wp_enqueue_script( 'scroll' );
 
-			wp_enqueue_script( 'in-view' );
-			wp_enqueue_script( 'in-view-page' );
+			// wp_enqueue_script( 'in-view' );
+			// wp_enqueue_script( 'in-view-page' );
+
+            wp_enqueue_script( 'hide-scroll' );
 		}
 	}
 }
