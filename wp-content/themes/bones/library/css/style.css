@@ -5945,79 +5945,6 @@ html, body {
 }
 
 /*
-<<<<<<< HEAD
-Syntax error: Invalid CSS after "  }": expected selector or at-rule, was "}"
-        on line 367 of /Users/wen-ws317/Documents/Projects/000255_Gamut-Cox_Website/wp-content/themes/bones/library/scss/modules/_parallax-kieth.scss
-        from line 95 of /Users/wen-ws317/Documents/Projects/000255_Gamut-Cox_Website/wp-content/themes/bones/library/scss/style.scss
-
-Backtrace:
-/Users/wen-ws317/Documents/Projects/000255_Gamut-Cox_Website/wp-content/themes/bones/library/scss/modules/_parallax-kieth.scss:367
-/Users/wen-ws317/Documents/Projects/000255_Gamut-Cox_Website/wp-content/themes/bones/library/scss/style.scss:95
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:1147:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:1085:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:28:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/engine.rb:342:in `_to_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/engine.rb:274:in `to_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:225:in `visit_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:7:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/root_node.rb:20:in `render'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/engine.rb:315:in `_render'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/engine.rb:262:in `render'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/lib/compass/compiler.rb:139:in `block (2 levels) in compile'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/lib/compass/compiler.rb:126:in `timed'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/lib/compass/compiler.rb:138:in `block in compile'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/lib/compass/logger.rb:45:in `red'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/lib/compass/compiler.rb:137:in `compile'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/lib/compass/compiler.rb:118:in `compile_if_required'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/lib/compass/compiler.rb:103:in `block (2 levels) in run'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/lib/compass/compiler.rb:101:in `each'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/lib/compass/compiler.rb:101:in `block in run'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/lib/compass/compiler.rb:126:in `timed'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/lib/compass/compiler.rb:100:in `run'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/lib/compass/commands/watch_project.rb:147:in `recompile'
-/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `call'
-/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `run_callback'
-/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:55:in `callback_action'
-/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:35:in `update'
-/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:39:in `block in modified'
-/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `each'
-/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `modified'
-/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:18:in `refresh'
-/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
-/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `each'
-/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block in run'
-/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `loop'
-/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `run'
-/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/monitor.rb:26:in `run'
-/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm.rb:70:in `monitor'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/lib/compass/commands/watch_project.rb:87:in `perform'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/lib/compass/commands/base.rb:18:in `execute'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/lib/compass/commands/project_base.rb:19:in `execute'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/bin/compass:30:in `block in <top (required)>'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/bin/compass:44:in `call'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/bin/compass:44:in `<top (required)>'
-/usr/bin/compass:23:in `load'
-/usr/bin/compass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"  }\": expected selector or at-rule, was \"}\"\A         on line 367 of /Users/wen-ws317/Documents/Projects/000255_Gamut-Cox_Website/wp-content/themes/bones/library/scss/modules/_parallax-kieth.scss\A         from line 95 of /Users/wen-ws317/Documents/Projects/000255_Gamut-Cox_Website/wp-content/themes/bones/library/scss/style.scss"; }
-=======
 	COLORS
  
 	Dark Blue 		#222438
@@ -6382,44 +6309,53 @@ img.rsImg {
   margin-bottom: 20px;
 }
 
-/* line 43, ../scss/partials/_wen.scss */
+/* line 44, ../scss/partials/_wen.scss */
+.media-inquiry-info a {
+  color: #ed228b;
+}
+/* line 46, ../scss/partials/_wen.scss */
+.media-inquiry-info a:hover {
+  text-decoration: underline;
+}
+
+/* line 53, ../scss/partials/_wen.scss */
 .emp-img-container {
   float: left;
   margin-right: 30px;
 }
 
-/* line 48, ../scss/partials/_wen.scss */
+/* line 58, ../scss/partials/_wen.scss */
 .type-team_members {
   margin-top: 45px;
 }
 
 @media (max-width: 767px) {
-  /* line 52, ../scss/partials/_wen.scss */
+  /* line 62, ../scss/partials/_wen.scss */
   .emp-img-container {
     float: none;
     margin-bottom: 20px;
   }
-  /* line 57, ../scss/partials/_wen.scss */
+  /* line 67, ../scss/partials/_wen.scss */
   .emp-img-container img {
     margin: auto;
     display: block;
   }
 }
 
-/* line 67, ../scss/partials/_wen.scss */
+/* line 77, ../scss/partials/_wen.scss */
 .emp-intro-container h1 {
   font-size: 1.4em;
   line-height: 1.3em;
   color: #ed228b;
 }
 @media (max-width: 767px) {
-  /* line 66, ../scss/partials/_wen.scss */
+  /* line 76, ../scss/partials/_wen.scss */
   .emp-intro-container {
     width: 100%;
   }
 }
 
-/* line 82, ../scss/partials/_wen.scss */
+/* line 92, ../scss/partials/_wen.scss */
 .grid-thumb {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -6433,50 +6369,50 @@ img.rsImg {
   /* Fix for transition flickering */
 }
 
-/* line 98, ../scss/partials/_wen.scss */
+/* line 108, ../scss/partials/_wen.scss */
 .grid-thumb:hover {
   filter: none;
   -webkit-filter: grayscale(0%);
 }
 
-/* line 104, ../scss/partials/_wen.scss */
+/* line 114, ../scss/partials/_wen.scss */
 .news-sidebar {
   margin-left: 5%;
   margin-top: 40px !important;
   float: left;
 }
 
-/* line 110, ../scss/partials/_wen.scss */
+/* line 120, ../scss/partials/_wen.scss */
 .news-content-wrapper {
   width: 70%;
   margin: auto;
 }
 
-/* line 120, ../scss/partials/_wen.scss */
+/* line 130, ../scss/partials/_wen.scss */
 .current-page-ancestor a {
   color: #ed228b !important;
 }
 
-/* line 127, ../scss/partials/_wen.scss */
+/* line 137, ../scss/partials/_wen.scss */
 .bio-left-column-image {
   display: inline-block;
   height: 440px;
 }
 @media (max-width: 1000px) {
-  /* line 127, ../scss/partials/_wen.scss */
+  /* line 137, ../scss/partials/_wen.scss */
   .bio-left-column-image {
     height: 400px;
   }
 }
 @media (max-width: 736px) {
-  /* line 127, ../scss/partials/_wen.scss */
+  /* line 137, ../scss/partials/_wen.scss */
   .bio-left-column-image {
     display: block;
     margin: auto;
   }
 }
 
-/* line 141, ../scss/partials/_wen.scss */
+/* line 151, ../scss/partials/_wen.scss */
 .bio-right-column-container {
   display: inline-block;
   width: 50%;
@@ -6485,30 +6421,30 @@ img.rsImg {
   margin-left: 5%;
 }
 @media (max-width: 1000px) {
-  /* line 141, ../scss/partials/_wen.scss */
+  /* line 151, ../scss/partials/_wen.scss */
   .bio-right-column-container {
     width: 60%;
   }
 }
 @media (max-width: 850px) {
-  /* line 141, ../scss/partials/_wen.scss */
+  /* line 151, ../scss/partials/_wen.scss */
   .bio-right-column-container {
     width: 50%;
   }
 }
-/* line 156, ../scss/partials/_wen.scss */
+/* line 166, ../scss/partials/_wen.scss */
 .bio-right-column-container .bio-name {
   color: white;
   display: inline-block;
   font-weight: 700;
 }
-/* line 162, ../scss/partials/_wen.scss */
+/* line 172, ../scss/partials/_wen.scss */
 .bio-right-column-container .bio-title {
   color: #ed228b;
   display: inline-block;
   font-weight: 700;
 }
-/* line 168, ../scss/partials/_wen.scss */
+/* line 178, ../scss/partials/_wen.scss */
 .bio-right-column-container p {
   color: #323944;
   font-size: 0.9em;
@@ -6516,7 +6452,7 @@ img.rsImg {
   margin-top: 0.7em;
 }
 @media (max-width: 736px) {
-  /* line 141, ../scss/partials/_wen.scss */
+  /* line 151, ../scss/partials/_wen.scss */
   .bio-right-column-container {
     display: block;
     display: block;
@@ -6526,46 +6462,46 @@ img.rsImg {
   }
 }
 
-/* line 185, ../scss/partials/_wen.scss */
+/* line 195, ../scss/partials/_wen.scss */
 .fancybox-inner {
   background-color: #cecdcd;
 }
 
-/* line 189, ../scss/partials/_wen.scss */
+/* line 199, ../scss/partials/_wen.scss */
 .og-grid li a img {
   margin: 0 !important;
 }
 
-/* line 194, ../scss/partials/_wen.scss */
+/* line 204, ../scss/partials/_wen.scss */
 .page-link {
   color: #ed228b !important;
 }
-/* line 196, ../scss/partials/_wen.scss */
+/* line 206, ../scss/partials/_wen.scss */
 .page-link:hover {
   text-decoration: underline !important;
 }
 
-/* line 203, ../scss/partials/_wen.scss */
+/* line 213, ../scss/partials/_wen.scss */
 .job_container ul {
   list-style-type: disc;
 }
-/* line 206, ../scss/partials/_wen.scss */
+/* line 216, ../scss/partials/_wen.scss */
 .job_container ul ul {
   list-style-type: circle;
   padding-left: 20px;
 }
 
-/* line 214, ../scss/partials/_wen.scss */
+/* line 224, ../scss/partials/_wen.scss */
 .job_hidden {
   display: none;
 }
 
-/* line 218, ../scss/partials/_wen.scss */
+/* line 228, ../scss/partials/_wen.scss */
 .job_wrapper {
   margin-top: 20px;
 }
 
-/* line 222, ../scss/partials/_wen.scss */
+/* line 232, ../scss/partials/_wen.scss */
 .accordion {
   background-color: #bdbdbd;
   display: block;
@@ -6576,41 +6512,41 @@ img.rsImg {
   font-size: 1.2em;
   text-transform: uppercase;
 }
-/* line 232, ../scss/partials/_wen.scss */
+/* line 242, ../scss/partials/_wen.scss */
 .accordion:hover {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   background-color: #ed228b;
   color: white;
 }
-/* line 238, ../scss/partials/_wen.scss */
+/* line 248, ../scss/partials/_wen.scss */
 .accordion img {
   width: 12px;
   margin-top: 6px;
   float: right;
 }
 @media (max-width: 1029px) {
-  /* line 222, ../scss/partials/_wen.scss */
+  /* line 232, ../scss/partials/_wen.scss */
   .accordion {
     font-size: 0.95em;
   }
 }
 
-/* line 250, ../scss/partials/_wen.scss */
+/* line 260, ../scss/partials/_wen.scss */
 .closing-statement-container {
   margin-top: 60px;
 }
 
-/* line 254, ../scss/partials/_wen.scss */
+/* line 264, ../scss/partials/_wen.scss */
 .jobSlideUp {
   text-align: right;
 }
-/* line 257, ../scss/partials/_wen.scss */
+/* line 267, ../scss/partials/_wen.scss */
 .jobSlideUp .close_btn {
   cursor: pointer;
 }
 
-/* line 262, ../scss/partials/_wen.scss */
+/* line 273, ../scss/partials/_wen.scss */
 .f_job_headline {
   text-transform: uppercase;
   font-size: 2em;
@@ -6620,199 +6556,199 @@ img.rsImg {
   color: #ed228b;
 }
 @media (max-width: 1029px) {
-  /* line 262, ../scss/partials/_wen.scss */
+  /* line 273, ../scss/partials/_wen.scss */
   .f_job_headline {
     font-size: 1.5em;
   }
 }
 
-/* line 276, ../scss/partials/_wen.scss */
+/* line 287, ../scss/partials/_wen.scss */
 .featured_job {
   margin-bottom: 60px;
 }
 
-/* line 280, ../scss/partials/_wen.scss */
+/* line 291, ../scss/partials/_wen.scss */
 #a-top {
   width: 12px;
 }
 
-/* line 284, ../scss/partials/_wen.scss */
+/* line 295, ../scss/partials/_wen.scss */
 #a-down {
   width: 14px;
   display: none;
 }
 
-/* line 290, ../scss/partials/_wen.scss */
+/* line 301, ../scss/partials/_wen.scss */
 #logo-fast {
   height: 1.5em;
   vertical-align: top;
 }
 @media (max-width: 810px) {
-  /* line 290, ../scss/partials/_wen.scss */
+  /* line 301, ../scss/partials/_wen.scss */
   #logo-fast {
     margin-top: 20px;
   }
 }
 
-/* line 300, ../scss/partials/_wen.scss */
+/* line 311, ../scss/partials/_wen.scss */
 #logo-nyt {
   height: 2em;
   vertical-align: top;
 }
 @media (max-width: 1029px) {
-  /* line 300, ../scss/partials/_wen.scss */
+  /* line 311, ../scss/partials/_wen.scss */
   #logo-nyt {
     margin-top: 20px;
   }
 }
 
-/* line 311, ../scss/partials/_wen.scss */
+/* line 322, ../scss/partials/_wen.scss */
 #logo-forbes {
   height: 1.6em;
   vertical-align: top;
 }
 @media (max-width: 1239px) {
-  /* line 311, ../scss/partials/_wen.scss */
+  /* line 322, ../scss/partials/_wen.scss */
   #logo-forbes {
     margin-top: 20px;
   }
 }
 
-/* line 322, ../scss/partials/_wen.scss */
+/* line 333, ../scss/partials/_wen.scss */
 .media-inquiry-info .highlight {
   font-family: 'Sentinel Medium';
 }
 
-/* line 327, ../scss/partials/_wen.scss */
+/* line 338, ../scss/partials/_wen.scss */
 .excerpt-read-more {
   color: #ed228b !important;
   font-family: "franklin-gothic-urw",sans-serif;
 }
-/* line 331, ../scss/partials/_wen.scss */
+/* line 342, ../scss/partials/_wen.scss */
 .excerpt-read-more:hover {
   text-decoration: underline;
 }
 
-/* line 336, ../scss/partials/_wen.scss */
+/* line 347, ../scss/partials/_wen.scss */
 .news-post-wrapper {
   border-bottom: 1px solid #bdbdbd;
 }
 
-/* line 340, ../scss/partials/_wen.scss */
+/* line 351, ../scss/partials/_wen.scss */
 .post-header {
   margin-bottom: 0;
   font-size: 2.4em;
 }
 @media (max-width: 810px) {
-  /* line 340, ../scss/partials/_wen.scss */
+  /* line 351, ../scss/partials/_wen.scss */
   .post-header {
     margin-top: 20px !important;
   }
 }
 @media (max-width: 767px) {
-  /* line 340, ../scss/partials/_wen.scss */
+  /* line 351, ../scss/partials/_wen.scss */
   .post-header {
     font-size: 2.2em;
   }
 }
 
-/* line 353, ../scss/partials/_wen.scss */
+/* line 364, ../scss/partials/_wen.scss */
 .news-post-inner {
   margin-bottom: -16px;
 }
 
-/* line 361, ../scss/partials/_wen.scss */
+/* line 372, ../scss/partials/_wen.scss */
 .news-content-wrapper section ul {
   padding-left: 1em !important;
   list-style-type: disc !important;
 }
 
-/* line 368, ../scss/partials/_wen.scss */
+/* line 379, ../scss/partials/_wen.scss */
 .news-logos-container {
   margin-top: 30px;
 }
-/* line 370, ../scss/partials/_wen.scss */
+/* line 381, ../scss/partials/_wen.scss */
 .news-logos-container img {
   height: 32px;
   margin-right: 40px;
 }
 @media (max-width: 810px) {
-  /* line 368, ../scss/partials/_wen.scss */
+  /* line 379, ../scss/partials/_wen.scss */
   .news-logos-container {
     margin-top: -100px;
     margin-bottom: 30px;
   }
 }
 @media (max-width: 767px) {
-  /* line 368, ../scss/partials/_wen.scss */
+  /* line 379, ../scss/partials/_wen.scss */
   .news-logos-container {
     margin-top: 0;
     margin-bottom: 30px;
   }
 }
 
-/* line 389, ../scss/partials/_wen.scss */
+/* line 400, ../scss/partials/_wen.scss */
 .media-inquiry-info {
   margin-top: 80px;
 }
 
-/* line 393, ../scss/partials/_wen.scss */
+/* line 404, ../scss/partials/_wen.scss */
 .mail-link {
   color: #ed228b !important;
 }
-/* line 396, ../scss/partials/_wen.scss */
+/* line 407, ../scss/partials/_wen.scss */
 .mail-link:hover {
   text-decoration: underline;
 }
 
-/* line 401, ../scss/partials/_wen.scss */
+/* line 412, ../scss/partials/_wen.scss */
 .small-title {
   font-weight: 400;
 }
 
-/* line 407, ../scss/partials/_wen.scss */
+/* line 418, ../scss/partials/_wen.scss */
 form input {
   display: inline;
 }
-/* line 412, ../scss/partials/_wen.scss */
+/* line 423, ../scss/partials/_wen.scss */
 form input, form textarea {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   outline: none;
   font-family: "franklin-gothic-urw",sans-serif !important;
 }
-/* line 418, ../scss/partials/_wen.scss */
+/* line 429, ../scss/partials/_wen.scss */
 form ::-webkit-input-placeholder, form ::-webkit-textarea-placeholder {
   color: #323944;
   font-weight: 500;
   text-transform: uppercase;
 }
-/* line 424, ../scss/partials/_wen.scss */
+/* line 435, ../scss/partials/_wen.scss */
 form :-moz-placeholder {
   /* Firefox 18- */
   color: #323944;
   font-weight: 500;
   text-transform: uppercase;
 }
-/* line 430, ../scss/partials/_wen.scss */
+/* line 441, ../scss/partials/_wen.scss */
 form ::-moz-placeholder {
   /* Firefox 19+ */
   color: #323944;
   font-weight: 500;
   text-transform: uppercase;
 }
-/* line 436, ../scss/partials/_wen.scss */
+/* line 447, ../scss/partials/_wen.scss */
 form :-ms-input-placeholder {
   color: #323944;
   font-weight: 500;
   text-transform: uppercase;
 }
-/* line 442, ../scss/partials/_wen.scss */
+/* line 453, ../scss/partials/_wen.scss */
 form input:focus, form textarea:focus {
   box-shadow: 0 0 5px #ed228b;
   border: 1px solid #ed228b;
 }
-/* line 447, ../scss/partials/_wen.scss */
+/* line 458, ../scss/partials/_wen.scss */
 form div {
   display: inline-block;
   padding: 10px 10px;
@@ -6820,44 +6756,44 @@ form div {
   font-weight: 500;
   text-transform: uppercase;
 }
-/* line 455, ../scss/partials/_wen.scss */
+/* line 466, ../scss/partials/_wen.scss */
 form .full-width {
   width: 100%;
 }
-/* line 459, ../scss/partials/_wen.scss */
+/* line 470, ../scss/partials/_wen.scss */
 form input[type="text"], form input[type="email"], form input[type="tel"], form input[type="url"], form textarea {
   background-color: white;
   border: 1px solid #bdbdbd;
   border-radius: 0;
 }
-/* line 465, ../scss/partials/_wen.scss */
+/* line 476, ../scss/partials/_wen.scss */
 form textarea {
   resize: none;
 }
-/* line 469, ../scss/partials/_wen.scss */
+/* line 480, ../scss/partials/_wen.scss */
 form input[type="radio"] {
   margin-right: 8px;
 }
-/* line 473, ../scss/partials/_wen.scss */
+/* line 484, ../scss/partials/_wen.scss */
 form label {
   margin-right: 20px;
 }
 
-/* line 479, ../scss/partials/_wen.scss */
+/* line 490, ../scss/partials/_wen.scss */
 .general {
   float: right;
 }
 
-/* line 483, ../scss/partials/_wen.scss */
+/* line 494, ../scss/partials/_wen.scss */
 .wpcf7-captchac {
   padding-top: 10px;
 }
 
-/* line 487, ../scss/partials/_wen.scss */
+/* line 498, ../scss/partials/_wen.scss */
 .form-submit {
   float: right;
 }
-/* line 491, ../scss/partials/_wen.scss */
+/* line 502, ../scss/partials/_wen.scss */
 .form-submit input[type=submit] {
   color: white;
   white-space: nowrap;
@@ -6870,27 +6806,27 @@ form label {
   border: 0 none;
   width: 100%;
 }
-/* line 503, ../scss/partials/_wen.scss */
+/* line 514, ../scss/partials/_wen.scss */
 .form-submit input[type=submit]:hover {
   background-color: #ed228b;
 }
 
-/* line 510, ../scss/partials/_wen.scss */
+/* line 521, ../scss/partials/_wen.scss */
 #sidebar-intro p {
   margin-bottom: 15px;
 }
 @media (max-width: 768px) {
-  /* line 509, ../scss/partials/_wen.scss */
+  /* line 520, ../scss/partials/_wen.scss */
   #sidebar-intro {
     margin: auto;
     text-align: left;
   }
 }
-/* line 519, ../scss/partials/_wen.scss */
+/* line 530, ../scss/partials/_wen.scss */
 #sidebar-intro ul {
   list-style-position: inside;
 }
-/* line 522, ../scss/partials/_wen.scss */
+/* line 533, ../scss/partials/_wen.scss */
 #sidebar-intro ul li:before {
   color: #ed228b;
   content: "\2022";
@@ -6899,23 +6835,23 @@ form label {
   position: relative;
   top: .1em;
 }
-/* line 531, ../scss/partials/_wen.scss */
+/* line 542, ../scss/partials/_wen.scss */
 #sidebar-intro ul ul {
   margin-top: -0.2em;
 }
-/* line 535, ../scss/partials/_wen.scss */
+/* line 546, ../scss/partials/_wen.scss */
 #sidebar-intro ul ul li:before {
   color: #bdbdbd;
   font-size: 1.2em;
 }
 
-/* line 547, ../scss/partials/_wen.scss */
+/* line 558, ../scss/partials/_wen.scss */
 .our-solutions-list h2 {
   font-family: "franklin-gothic-urw",sans-serif;
   margin-top: -1.6em;
 }
 
-/* line 554, ../scss/partials/_wen.scss */
+/* line 565, ../scss/partials/_wen.scss */
 .first-p {
   font-size: 1.5em !important;
   margin-bottom: 1em !important;
@@ -6923,22 +6859,22 @@ form label {
   line-height: 1.2em;
 }
 
-/* line 562, ../scss/partials/_wen.scss */
+/* line 573, ../scss/partials/_wen.scss */
 .sub-page-content-wrapper img {
   margin-bottom: 0;
 }
 
-/* line 570, ../scss/partials/_wen.scss */
+/* line 581, ../scss/partials/_wen.scss */
 #opt {
   text-align: center;
   margin-top: 20px;
 }
-/* line 574, ../scss/partials/_wen.scss */
+/* line 585, ../scss/partials/_wen.scss */
 #opt .opt_btn_wrapper {
   margin-top: 30px;
 }
 
-/* line 579, ../scss/partials/_wen.scss */
+/* line 590, ../scss/partials/_wen.scss */
 #ooButton {
   margin-top: 20px;
   cursor: pointer;
@@ -6951,18 +6887,18 @@ form label {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-/* line 590, ../scss/partials/_wen.scss */
+/* line 601, ../scss/partials/_wen.scss */
 #ooButton:hover {
   background-color: #ed228b;
 }
 
 @media (max-width: 560px) {
-  /* line 596, ../scss/partials/_wen.scss */
+  /* line 607, ../scss/partials/_wen.scss */
   .wpcf7-list-item {
     display: block;
   }
 }
-/* line 601, ../scss/partials/_wen.scss */
+/* line 612, ../scss/partials/_wen.scss */
 .no-found-msg {
   color: #ed228b;
 }
@@ -8579,4 +8515,3 @@ be set to display none.
 .iab_logo_container img {
   width: 80px;
 }
->>>>>>> d781799ab92644072c7108bee33e909084547a22
