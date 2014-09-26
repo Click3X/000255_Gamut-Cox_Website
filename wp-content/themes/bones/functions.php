@@ -80,6 +80,9 @@ add_image_size( 'emp-large', 250, 250, true );
 // SET IMAGES FOR INDIVIDUAL EMPLOYEE PAGE
 add_image_size( 'emp-individual', 290, 440, true );
 
+// SET IMAGE SIZE FOR PARALLAX BACKGROUND
+add_image_size( 'para-bg', 800, 533, true );
+
 /*
 to add more sizes, simply copy a line from above
 and change the dimensions & name. As long as you
