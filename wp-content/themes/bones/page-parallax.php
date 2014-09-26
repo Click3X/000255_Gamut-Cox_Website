@@ -54,13 +54,13 @@ if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->t
 
 	// PARALLAX FILE
 //	include('php/para-new-new-mobile.php'); 
-	if(is_ie()) { 
-	/* your code here */ 
-		include('php/para-new-new-mobile.php'); 
-	} else {
+	// if(is_ie()) { 
+	// /* your code here */ 
+	// 	include('php/para-new-new-mobile.php'); 
+	// } else {
 		// PARALAXX SCROLL MAGIC
 	include('php/para-kieth.php');
-	}
+	// }
 
 	
 
