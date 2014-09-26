@@ -206,8 +206,12 @@
 
   .c-smart-bg {
     background-repeat: no-repeat;
-    background-size: 60%;
+    background-size: 0;
     background-position: -25% 0%;
+
+    @media(min-width: 811px) {
+      background-size: 60%;
+    }
 
   }
   #group3,
