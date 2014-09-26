@@ -482,9 +482,27 @@ html, body {height:100%;}
   }
 }
 
+.blue,
+.red > img {
+  z-index: 100;
+  background-color: white;
+}
+
+#parallax-kieth {
+  #group4 .subpage .red,
+  #group4 .subpage .blue {
+    padding-bottom: 100px;
+  }
+
+  #fly-it {
+    top: -34px;
+  }
+}
+
 
 #parallax-kieth {
   .subpage {
+      background-color: white;
       width: 90%;
       max-width: 1300px;
       margin: 0 auto;
