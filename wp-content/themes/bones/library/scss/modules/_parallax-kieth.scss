@@ -1,5 +1,9 @@
-html, body {height:100%;}
+html, body {height:100%; overflow-x:hidden; width:100%;}
 * html .clearfix { height: 1%; }
+
+#inner-header{
+  position: relative;
+}
 
 #group1 {
   // background-color: white;
