@@ -129,13 +129,8 @@
 								<ul class="client-info policy-links">
 									
 								<?php // EACH LOCATION ('City-Address combo') GETS ITS OWN UL
-									while(has_sub_field('policy_links', 'options')): 
-									if (the_sub_field('title') == 'Google Plus') { ?>
-										<li class="copy link"><a class="policy-links" href="<?php the_sub_field('link'); ?>" rel="publisher"><?php the_sub_field('title'); ?></a></li>
-									<?php } else { ?>
-										<li class="copy link"><a class="policy-links" href="<?php the_sub_field('link'); ?>"><?php the_sub_field('title'); ?></a></li>
-									 <?php } ?>
-									
+									while(has_sub_field('policy_links', 'options')): ?>
+									<li class="copy link"><a class="policy-links" href="<?php the_sub_field('link'); ?>"><?php the_sub_field('title'); ?></a></li>
 								<?php endwhile; ?>
 
 								</ul>
@@ -189,15 +184,15 @@
 
 		if(is_page(472)) {
 			echo '</div>';
-		// 	echo '<script>
-		// 	    var debugInput = document.querySelector("input");
-		// 	    function updateDebugState() {
-		// 	        document.body.classList.toggle("debug-on", debugInput.checked);
-		// 	    }
-		// 	    debugInput.addEventListener("click", updateDebugState);
-		// 	    updateDebugState();
-		// 	  </script>';
-		// }
+			echo '<script>
+			    var debugInput = document.querySelector("input");
+			    function updateDebugState() {
+			        document.body.classList.toggle("debug-on", debugInput.checked);
+			    }
+			    debugInput.addEventListener("click", updateDebugState);
+			    updateDebugState();
+			  </script>';
+		}
 
 		?>
 	</body>
