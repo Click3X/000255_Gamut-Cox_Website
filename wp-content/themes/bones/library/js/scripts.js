@@ -121,22 +121,21 @@ jQuery(document).ready(function($) {
     });
 
   // CAREERS PAGE ACCORDION
+  $(".accordion").click(function(){
+    $(this).find('img').toggle();
+    $(this).next().slideToggle('fast');
+  });
 
-$(".accordion").click(function(){
-  $(this).find('img').toggle();
-  $(this).next().slideToggle('fast');
-});
+  $(".jobSlideUp").click(function(){
+    $(this).parent().prev().find('img').toggle();
+    $(this).parent().slideToggle('fast');
+  });
 
-$(".jobSlideUp").click(function(){
-  $(this).parent().prev().find('img').toggle();
-  $(this).parent().slideToggle('fast');
-});
+  // reorder careers order
+  $('.featured_job').prependTo('.job_container');
 
-// reorder careers order
-$('.featured_job').prependTo('.job_container');
-
-// initiate lightbox
-$(".fancybox").fancybox();
+  // initiate lightbox
+  $(".fancybox").fancybox();
 
 
   $(".various").fancybox({
