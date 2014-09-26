@@ -7406,6 +7406,28 @@ body #content {
   color: #ed228b;
 }
 
+/* line 5, ../scss/partials/_ie.scss */
+.lt-ie8 #parallax-kieth,
+.lt-ie9 #parallax-kieth,
+.lt-ie10 #parallax-kieth,
+.lt-ie11 #parallax-kieth {
+  max-height: 730px;
+  overflow-y: hidden;
+}
+/* line 10, ../scss/partials/_ie.scss */
+.lt-ie8 .parallax-kieth,
+.lt-ie9 .parallax-kieth,
+.lt-ie10 .parallax-kieth,
+.lt-ie11 .parallax-kieth {
+  height: 500px;
+  /* fallback for older browsers */
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-perspective: none;
+  perspective: none;
+}
+
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's

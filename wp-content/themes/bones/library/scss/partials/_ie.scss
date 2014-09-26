@@ -1,3 +1,18 @@
-.lt-ie9 {
-    
+.lt-ie8,
+.lt-ie9,
+.lt-ie10,
+.lt-ie11 {
+    #parallax-kieth {
+      max-height: 730px;
+      overflow-y: hidden;
+    }
+
+    .parallax-kieth {
+        height: 500px; /* fallback for older browsers */
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+        -webkit-perspective: none;
+        perspective: none;
+      }
 }
