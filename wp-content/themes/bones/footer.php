@@ -129,8 +129,13 @@
 								<ul class="client-info policy-links">
 									
 								<?php // EACH LOCATION ('City-Address combo') GETS ITS OWN UL
-									while(has_sub_field('policy_links', 'options')): ?>
-									<li class="copy link"><a class="policy-links" href="<?php the_sub_field('link'); ?>"><?php the_sub_field('title'); ?></a></li>
+									while(has_sub_field('policy_links', 'options')): 
+									if (the_sub_field('title') == 'Google Plus') { ?>
+										<li class="copy link"><a class="policy-links" href="<?php the_sub_field('link'); ?>" rel="publisher"><?php the_sub_field('title'); ?></a></li>
+									<?php } else { ?>
+										<li class="copy link"><a class="policy-links" href="<?php the_sub_field('link'); ?>"><?php the_sub_field('title'); ?></a></li>
+									 <?php } ?>
+									
 								<?php endwhile; ?>
 
 								</ul>
