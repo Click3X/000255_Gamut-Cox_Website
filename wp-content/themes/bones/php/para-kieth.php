@@ -1,7 +1,7 @@
-
+<!-- 
   <div class="debug">
     <label><input type="checkbox"> Debug</label>
-  </div>
+  </div> -->
 
   <div id="parallax-kieth" class="parallax-kieth">
 

@@ -129,7 +129,7 @@ jQuery(document).ready(function($) {
 			hideEl(group2back, paraScroll, 1200, 'hide');
 			// hideEl(group6back, paraScroll, 2793, 'show');
 			// hideEl(group6back, paraScroll, 2800, 'show');
-			hideEl(group6back, paraScroll, 2900, 'show');
+			hideEl(group6back, paraScroll, 3060, 'show');
 			// hideEl(group6back, paraScroll, 2915, 'show');
 
 			flyItOut(flyit, paraScroll, 1450);
