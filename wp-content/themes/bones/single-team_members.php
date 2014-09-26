@@ -13,8 +13,8 @@
 
 					<?php //$parent_title = get_the_title($post->post_parent); ?>
 
-					<!-- go back to OUR LEADERSHIP list -->					
-					<a class="page-link" href="<?php echo get_page_link(184);?>"><h2 id="sidebar-title">Back</h2></a>
+					<!-- go back to previous page -->					
+					<a class="page-link" href="javascript:javascript:history.go(-1)"><h2 id="sidebar-title">Back</h2></a>
 					
 
 					
