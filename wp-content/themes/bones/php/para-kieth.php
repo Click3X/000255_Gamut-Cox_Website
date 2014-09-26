@@ -92,7 +92,7 @@
               <?php echo $programmatic_intro_content; ?>
             </div>
             <div class="clearfix half blue">
-              <a href="<?php echo get_permalink(11);?>" class="gamut-btn abs-center">LEARN HOW&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
+              <a href="<?php echo get_permalink(11);?>" class="gamut-btn abs-center" id="home-btn-pro">LEARN HOW&nbsp;&nbsp;<span class="arrow-right" id="home-btn-pro-arrow"></span></a>
             </div>
             <div class="clearfix half red">
               <img id="pro-logo" src="<?php bloginfo('url'); ?>/img/home-logos/programmatic-logo.png" alt="programmatic">
@@ -108,7 +108,7 @@
                 <?php echo $reps_intro_content; ?>
               </div>
               <div class="clearfix half blue">
-                <a href="<?php echo get_permalink(15);?>" class="gamut-btn abs-center">LEARN HOW&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #039fd3;"></span></a>
+                <a href="<?php echo get_permalink(15);?>" class="gamut-btn abs-center" id="home-btn-rep">LEARN HOW&nbsp;&nbsp;<span class="arrow-right" id="home-btn-rep-arrow"></span></a>
               </div>
               <div class="clearfix half red">
                 <img id="rep-logo" src="<?php bloginfo('url'); ?>/img/home-logos/reps-logo.png" alt="reps">
@@ -124,7 +124,7 @@
                 <?php echo $reach_intro_content; ?>
               </div>
               <div class="clearfix half blue">
-                <a href="<?php echo get_permalink(24);?>" class="gamut-btn abs-center">LEARN HOW&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #8fc73e;"></span></a>
+                <a href="<?php echo get_permalink(24);?>" class="gamut-btn abs-center" id="home-btn-rea">LEARN HOW&nbsp;&nbsp;<span class="arrow-right" id="home-btn-rea-arrow"></span></a>
               </div>
               <div class="clearfix half red">
                 <img id="reach-logo" src="<?php bloginfo('url'); ?>/img/home-logos/reach-logo.png" alt="reach">
@@ -140,7 +140,7 @@
                 <?php echo $convergence_intro_content; ?>
             </div>
             <div class="clearfix half blue">
-              <a href="<?php echo get_permalink(13);?>" class="gamut-btn abs-center">LEARN HOW&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #fba211;"></span></a>
+              <a href="<?php echo get_permalink(13);?>" class="gamut-btn abs-center" id="home-btn-cro">LEARN HOW&nbsp;&nbsp;<span class="arrow-right" id="home-btn-cro-arrow"></span></a>
             </div>
             <div class="clearfix half red">
               <img id="crossmedia-logo" src="<?php bloginfo('url'); ?>/img/home-logos/crossmedia-logo.png" alt="crossmedia">
@@ -170,7 +170,7 @@
           <div class="clearfix grey-bg txt-holder">
             <h1><?php echo $gamut_difference_title; ?></h1>
             <div class="difference"><?php echo $gamut_difference_content; ?></div>
-            <a href="<?php echo get_permalink(184);?>" class="gamut-btn">LEARN HOW&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
+            <a href="<?php echo get_permalink(184);?>" class="gamut-btn" id="home-btn-difference">LEARN HOW&nbsp;&nbsp;<span class="arrow-right" id="home-btn-difference-arrow" style="border-left: 6px solid #ed228b;"></span></a>
           </div>
         </div>
 
@@ -212,7 +212,7 @@
               <!-- <h2><?php helper($smart_service_image); ?></h2> -->
               <?php echo $smart_service_content; ?>
               <div class="clearfix c-btn-hold">
-                <a href="<?php echo get_permalink(61);?>" class="gamut-btn">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
+                <a href="<?php echo get_permalink(61);?>" class="gamut-btn" id="home-btn-service">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" id="home-btn-service-arrow" style="border-left: 6px solid #ed228b;"></span></a>
               </div>
             </div>
           </div>
@@ -233,7 +233,7 @@
               <h1><?php echo $careers_title; ?></h1>
               <?php echo $careers_content; ?>
               <div class="clearfix c-btn-hold">
-                <a href="<?php echo get_permalink(388);?>" class="gamut-btn">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" style="border-left: 6px solid #dd1420;"></span></a>
+                <a href="<?php echo get_permalink(388);?>" class="gamut-btn" id="home-btn-careers">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" id="home-btn-careers-arrow" style="border-left: 6px solid #ed228b;"></span></a>
               </div>
             </div>
           </div>
