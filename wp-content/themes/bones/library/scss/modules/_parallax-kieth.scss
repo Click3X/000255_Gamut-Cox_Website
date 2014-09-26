@@ -144,7 +144,8 @@ html, body {height:100%;}
 
     #smart-service-bg {
       position: absolute;
-      z-index: 100;
+      // z-index: 1;
+      z-index: 20;
       height: 740px;
       top: -100px;
       background-position: 40% 0;
@@ -546,7 +547,8 @@ html, body {height:100%;}
 
 .blue,
 .red > img {
-  z-index: 100;
+  // z-index: 100;
+  z-index:20;
   background-color: white;
 }
 
@@ -560,7 +562,18 @@ html, body {height:100%;}
   }
 
   #fly-it {
-    top: -34px;
+    // top: -34px;
+    height: 4px;
+    width:382px;
+
+    top: -19px;
+
+    @media(min-width: 980px) {
+      height: 3px;
+      width: 1070px;
+      top: -24px;
+    }
+
   }
 }
 
