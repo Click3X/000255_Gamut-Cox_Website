@@ -330,7 +330,8 @@
   }
 
   #group4 .subpage {
-    padding:9% 0;
+    // padding:9% 0;
+    padding: 7.5% 0;
 
     @media(min-width: 1200px) {
       padding:90px 0;
@@ -485,5 +486,16 @@
     width: 99%;
     max-width: 1300px;
     margin: 0 auto;
+  }
+}
+
+#group1 {
+  #home-slider-holder {
+    background-color:#ffffff;
+    video {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: block;
+    }
   }
 }

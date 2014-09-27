@@ -59,10 +59,14 @@
 
 	endif;
 
-	// PARALLAX FILE
-	// include('php/para-new-new-mobile.php'); 
 	
-	include('php/para-kieth.php');
+	if( is_ie() ) {
+		// IE FILE
+		include('php/para-new-new-mobile.php'); 
+	} else {
+		// PARALLAX FILE
+		include('php/para-kieth.php');
+	}
 
 ?>	
 
