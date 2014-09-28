@@ -1,13 +1,13 @@
 //HIDE SCROLL
 jQuery(document).ready(function($) {
 	// HELPERS
-	function cd(el) {
-		console.dir(el);
-	}
+	// function cd(el) {
+	//	console.dir(el);
+	// }
 
-	function cl(el) {
-		console.log(el);
-	}
+	// function cl(el) {
+	//	console.log(el);
+	// }
 
 
 	var paraContainer = $('#parallax-kieth'),
@@ -48,7 +48,7 @@ jQuery(document).ready(function($) {
 
 			//special bonus for those using jQuery
 			if (typeof jQuery === "function" && el instanceof jQuery) {
-			el = el[0];
+				el = el[0];
 			}
 
 			var rect = el.getBoundingClientRect();
@@ -59,20 +59,20 @@ jQuery(document).ready(function($) {
 					rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
 					rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
 			);
-	}
+		}
 
 
 
 
 	function callback () {
 		//your code here, e.g. console.log('is visible now');
-		cl('This is visisble now');
+		// cl('This is visisble now');
 	}
 
 
 	function noCallback () {
 		//your code here, e.g. console.log('is visible now');
-		cl('Hidden');
+		// cl('Hidden');
 	}
 
 
@@ -122,7 +122,7 @@ jQuery(document).ready(function($) {
 	function paraScrollTop (el, callback) {
 		return function () {
 			paraScroll = paraContainer[0].scrollTop;
-			cl(paraScroll);
+			// cl(paraScroll);
 
 			// HIDE GROUP 2 BACK
 			// hideEl(group2back, paraScroll, 1280, 'hide');
@@ -144,19 +144,17 @@ jQuery(document).ready(function($) {
 			// cd(paraContainer[0].scrollTop);
 
 			// if ( isElementInViewport(el) ) {
-			// 		callback();
+			//		callback();
 			// } else {
-			// 	noCallback();
+			//	noCallback();
 			// }
-		}
+		};
 	}
 
 	
-	cd(el);
+	// cd(el);
 
 	var handler = paraScrollTop (el, callback);
-
-
 
 
 

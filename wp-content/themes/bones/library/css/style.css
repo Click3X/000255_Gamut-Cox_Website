@@ -2978,7 +2978,7 @@ html {
 }
 
 /* line 32, ../scss/partials/_who-we-are.scss */
-body {
+body.page-id-48 {
   overflow: scroll;
   overflow-x: hidden;
 }
@@ -4133,13 +4133,6 @@ a {
   .page-id-393 .parallax__group {
     -webkit-transition: -webkit-transform 0.5s;
     transition: transform 0.5s;
-  }
-  /* line 91, ../scss/modules/_para-friday.scss */
-  .page-id-466 html.home-para,
-  .page-id-466 body.home,
-  .page-id-393 html.home-para,
-  .page-id-393 body.home {
-    overflow: hidden;
   }
   /* line 105, ../scss/modules/_para-friday.scss */
   .page-id-466 .title,

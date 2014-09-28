@@ -54,8 +54,6 @@
             </div>
           </div>
 
-          <!-- <div class="parallax__layer parallax__layer--back c-mobile g2b" style="background-image: url('<?php echo $bg_img['url'] ?>');background-size: cover; background-repeat:no-repeat;"> -->
-
       </div>
       <div class="parallax__layer parallax__layer--back" style="background-image: url('<?php echo $bg_img['url'] ?>');background-size: cover; background-repeat:no-repeat;">
         <!-- <div class="title">Background Layer</div> -->
@@ -186,14 +184,12 @@
       
       <div class="parallax__layer parallax__layer--back no-vis">
         <!-- SERVICES -->
-        <!-- <div id="smart-service-bg" class="smart-service-bag" style="background-image:url('<?php echo $smart_service_image['url']; ?>');"></div> -->
         <div class="clearfix ss-bg-holder">
           <div id="smart-service-bg" class="smart-service-bag" style="background-image:url('<?php echo $smart_service_image['sizes']['para-bg']; ?>');"></div>
         </div>
 
         <!-- CAREERS -->
         <div class="clearfix new-b"></div>
-        <!-- <div id="careers-bg" class="careers-bag" style="background-image:url('<?php echo $careers_image['url']; ?>');"></div> -->
         <div class="clearfix cc-bg-holder">
           <div id="careers-bg" class="careers-bag" style="background-image:url('<?php echo $careers_image['sizes']['para-bg']; ?>');"></div>
         </div>
@@ -203,13 +199,12 @@
 
       <div class="parallax__layer parallax__layer--base">
         <!-- <div class="title">Base Layer</div> -->
-        <div id="ss-bg-mobile" class="clearfix ss-bg-mobile c-mobile" style="background-image:url('<?php echo $smart_service_image['url']; ?>');"></div>
+        <div id="ss-bg-mobile" class="clearfix ss-bg-mobile c-mobile" style="background-image:url('<?php echo $smart_service_image['sizes']['para-bg']; ?>');"></div>
 
         <div class="clearfix ccc-holder">
           <div class="clearfix c-smart">
             <div class="clearfix h1-hold">
               <h1 class="plus-sign"><?php echo $smart_service_title; ?></h1>
-              <!-- <h2><?php helper($smart_service_image); ?></h2> -->
               <?php echo $smart_service_content; ?>
               <div class="clearfix c-btn-hold">
                 <a href="<?php echo get_permalink(61);?>" class="gamut-btn" id="home-btn-service">LEARN MORE&nbsp;&nbsp;<span class="arrow-right" id="home-btn-service-arrow" style="border-left: 6px solid #ed228b;"></span></a>
@@ -225,7 +220,7 @@
     <div id="group7" class="parallax__group">
       <div class="parallax__layer parallax__layer--base">
         <!-- <div class="title">Base Layer</div> -->
-        <div id="cc-bg-mobile" class="clearfix ss-bg-mobile c-mobile" style="background-image:url('<?php echo $careers_image['url']; ?>');"></div>
+        <div id="cc-bg-mobile" class="clearfix ss-bg-mobile c-mobile" style="background-image:url('<?php echo $careers_image['sizes']['para-bg']; ?>');"></div>
         
         <div class="clearfix ccc-holder">
           <div class="clearfix c-career">

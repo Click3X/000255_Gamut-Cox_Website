@@ -114,7 +114,7 @@ jQuery(document).ready(function($) {
   // CHARLES MOBILE BUTTON TOGGLE-HIDE-SHOW
     $('#mobile-btn').click(function(event) {
       event.preventDefault();
-      console.log('I am clicked!');
+      // console.log('I am clicked!');
 
       $('#main-nav').toggleClass('show-nav');
 
