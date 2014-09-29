@@ -36,25 +36,74 @@
 								<section class="entry-content cf" itemprop="articleBody">
 
 
-								<div id="opt">
-				                    <h6>Your browser&#8217;s current status</h6>
-				                    <div id="opt-out-status">
-				                      <iframe id="ooStatusFrame" src="http://oo.afy11.net/NAIIsOptOut.aspx?nocache=0.2900599" width="259" height="60" style="overflow:hidden;border:none;border:solid 1px #eee;" scrolling="no"></iframe>
-				                    </div>
-				                    <div class="opt_btn_wrapper">
-				                      <a name="oo" id="ooButton" class="button opt_btn" id="btn-opt-out" href="http://www.coxdigitalsolutions.com/privacy-policy/consumer-opt-out-program/#">Opt-Out</a><br />
-				                      <iframe id="ooResponseFrame" src="" width="30" height="30" style="border:none;position:relative;top:10px;margin-top:-30px;" ></iframe>
-				                    </div>
-				                    <p>
-				                        <script language="JavaScript" type="text/javascript">
-				                               document.getElementById('ooButton').onclick = function () {
-				                                   document.getElementById('ooResponseFrame').src = 'http://oo.afy11.net/NAIOptOut.aspx';
-				                                   setTimeout(function () { document.getElementById('ooStatusFrame').src = 'http://oo.afy11.net/NAIIsOptOut.aspx?nocache=0.2900600'; }, 200);
-				                                   return false;
-				                               } 
-				                        </script>
-				                    </p>
-				                  </div>
+<div id="opt">
+                                                <h6>Your browser’s current status</h6>
+                                    <div id="opt-out-status">
+                                      <iframe id="ooStatusFrame" src="./Cox Digital Solutions - Privacy Policy_files/no_cookie.gif" width="259" height="60" style="overflow:hidden;border:none;border:solid 1px #eee;" scrolling="no"></iframe>
+                                    </div>
+                                    <div class="opt_btn_wrapper">
+                                      <a name="oo" id="ooButton" class="button opt_btn" href="http://www.coxdigitalsolutions.com/privacy-policy/consumer-opt-out-program/#">Opt-Out</a><br>
+                                                  <div id="statusDiv">
+                                                  </div>
+                                    </div>
+                                    <p>
+                                        <script language="JavaScript" type="text/javascript">
+                                                                                                document.getElementById('ooButton').onclick = function () {
+                                                                                                                var statusDiv = document.getElementById('opt-out-status');
+                                                                                                                var responseDiv = document.getElementById('statusDiv');
+                                                                                                               
+                                                                                                                // create css classes for the new iframes
+                                                                                                                addClass('statusClass', 'overflow:hidden;border:none;border:solid 1px #eee;');
+                                                                                                                addClass('responseClass', 'border:none;position:relative;top:10px;margin-top:-30px;');
+                                                                                                               
+                                                                                                                // show the response                                                                                                   
+                                                                                                                addIframe(
+                                                                                                                                responseDiv,
+                                                                                                                                'http://oo.afy11.net/NAIOptOut.aspx',
+                                                                                                                                30,
+                                                                                                                                30,
+                                                                                                                                'responseClass');
+                                                                                                                               
+                                                                                                                // show the status
+                                                                                                                addIframe(
+                                                                                                                                statusDiv,
+                                                                                                                                'http://oo.afy11.net/NAIIsOptOut.aspx?nocache=0.2900600',
+                                                                                                                                259,
+                                                                                                                                60,
+                                                                                                                                'statusClass');
+                                                                                                               
+                                                                                                                // hide the old status frame
+                                                                                                                statusFrame = document.getElementById('ooStatusFrame');
+                                                                                                                statusFrame.style.display = 'none';
+                                                                                                               
+                                                   return false;
+                                               }
+                                                                                   
+                                                                                   // appends an iFrame to the parent div
+                                                                                   var addIframe = function(parentDiv, url, width, height, className)
+                                                                                   {
+                                                                                                var iframe = document.createElement('iframe');
+                                                                                                                iframe.src = url;
+                                                                                                                iframe.width = width;
+                                                                                                                iframe.height = height;
+                                                                                                                iframe.className = className;
+                                                                                                                parentDiv.appendChild(iframe);
+                                                                                   }
+                                                                                  
+                                                                                   // created this function to facilitate setting style
+                                                                                   // of new iFrames by dynamically add css class to the page
+                                                                                   var addClass = function(className, styleText)
+                                                                                   {
+                                                                                                                var style = document.createElement('style');
+                                                                                                                style.type = 'text/css';
+                                                                                                                style.innerHTML = '.' + className + ' { ' + styleText + ' }';
+                                                                                                                document.getElementsByTagName('head')[0].appendChild(style);
+                                                                                   }
+                                        </script>
+                                    </p>
+                                </div>
+ 
+                </div>
 
 									<?php
 										// the content (pretty self explanatory huh)
