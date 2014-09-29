@@ -60,7 +60,7 @@
 	endif;
 
 	// CHECK FOR PHP BROWSER DETECTION PLUGIN - FOR IE	
-	$path = blog_info('url') .'/wp-content/plugins/php-browser-detection/php-browser-detection.php';
+	$path = bloginfo('url') .'/wp-content/plugins/php-browser-detection/php-browser-detection.php';
 	if ( is_plugin_active( $path ) ) {
 		if( is_ie() ) {
 			// IF IE - GET FILE WITH NO PARALLAX
