@@ -7,3 +7,15 @@
 .txt-holder {
 	text-align: left;
 }
+
+#group7 {
+    .ccc-hbolder {
+        .c-career {
+            padding-bottom: 130px;
+
+            @media(min-width: 811px) {
+                padding-bottom: 0;
+            }
+        }
+    }
+}

@@ -24,16 +24,19 @@
           require_once 'Mobile_Detect.php'; 
           $detect = new Mobile_Detect;
         ?>
+
         <?php if ( $detect->isMobile() ) : ?>
-        <img src="<?php bloginfo('url'); ?>/wp-content/videos/gamut_intro_1.gif" width="100%"/>
-        <?php else : ?>
-        <video width="100%" loop autoplay muted>
-          <!-- poster="<?php bloginfo('url'); ?>/wp-content/videos/GAMUT_h264.png" -->
-          <source src="<?php bloginfo('url'); ?>/wp-content/videos/GAMUT_h264.mp4" type="video/mp4">
-          <source src="<?php bloginfo('url'); ?>/wp-content/videos/GAMUT_h264.ogv" type="video/ogg">
           <img src="<?php bloginfo('url'); ?>/wp-content/videos/gamut_intro_1.gif" width="100%"/>
-        </video>
+          <?php  else : ?>
+          <img src="<?php bloginfo('url'); ?>/wp-content/videos/gamut_intro_1.gif" width="100%"/>
+         <!--  <video width="100%" loop autoplay muted> -->
+            <!-- poster="<?php bloginfo('url'); ?>/wp-content/videos/GAMUT_h264.png" -->
+            <!-- <source src="<?php bloginfo('url'); ?>/wp-content/videos/GAMUT_h264.mp4" type="video/mp4">
+            <source src="<?php bloginfo('url'); ?>/wp-content/videos/GAMUT_h264.ogv" type="video/ogg">
+            <img src="<?php bloginfo('url'); ?>/wp-content/videos/gamut_intro_1.gif" width="100%"/>
+          </video> -->
         <?php endif; ?>
+
       </div>
 
 
