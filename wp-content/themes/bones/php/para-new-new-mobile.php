@@ -32,8 +32,8 @@
           require_once 'Mobile_Detect.php'; 
           $detect = new Mobile_Detect;
         ?>
-
         <?php if ( $detect->isMobile() ) : ?>
+
           <img src="<?php echo $images[0]; ?>" width="100%"/>
           <?php  else : ?>
           <img src="<?php echo $images[0]; ?>" width="100%"/>
@@ -46,7 +46,6 @@
           <!--   <img src="<?php bloginfo('url'); ?>/wp-content/videos/gamut_intro_1.gif" width="100%"/>
           </video> -->
         <?php endif; ?>
-
       </div>
 
       
