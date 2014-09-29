@@ -69,7 +69,6 @@
 		} else {
 			// OTHERWISE GET PARALLAX FILE
 			include('php/para-kieth.php');
-			// echo '</div>';
 		}
 	} else {
 		// IF THERE IS NO PLUGIN, JUST GET PARALLAX FILE

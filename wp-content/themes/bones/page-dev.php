@@ -1,11 +1,4 @@
-<?php 
-/*
-
-Template Name: Dev Fix Overflow
-
-*/
-
-get_header(); ?>
+<?php get_header(); ?>
 
 <?php 
 $args = array(

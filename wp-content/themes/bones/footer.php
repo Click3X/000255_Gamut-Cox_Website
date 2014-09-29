@@ -166,24 +166,11 @@
 
 			<?php 
 			// IF IS HOME PAGE, CLOSE PARALLAX GROUP 7 WRAP
-			// if( is_page(466) || is_page(393) ) {
-			// 			echo '</div>'; //  END PARALLAX GROUP
-			// 		echo '</div>'; // END GROUP 7
-			// 	echo '</div>'; // END PARALLAX
-			// }
-
-
-			// if( is_page(472) || is_home() || is_page_template('Dev Fix Overflow') ) {
-				// echo '</div>'; // ADDED TO FIX HTML VALIDATION
-			// 	// echo '<script>
-			// 	//     var debugInput = document.querySelector("input");
-			// 	//     function updateDebugState() {
-			// 	//         document.body.classList.toggle("debug-on", debugInput.checked);
-			// 	//     }
-			// 	//     debugInput.addEventListener("click", updateDebugState);
-			// 	//     updateDebugState();
-			// 	//   </script>';
-			// }
+			if( is_page(466) || is_page(393) ) {
+						echo '</div>'; //  END PARALLAX GROUP
+					echo '</div>'; // END GROUP 7
+				echo '</div>'; // END PARALLAX
+			}
 
 			?>
 
@@ -205,16 +192,16 @@
 
 		<?php 
 
-
-		if (  is_page_template('Dev Fix Overflow') ) {
-			echo '<script>
-			    var debugInput = document.querySelector("input");
-			    function updateDebugState() {
-			        document.body.classList.toggle("debug-on", debugInput.checked);
-			    }
-			    debugInput.addEventListener("click", updateDebugState);
-			    updateDebugState();
-			  </script>';
+		if( is_page(472) || is_home() ) {
+			echo '</div>';
+			// echo '<script>
+			//     var debugInput = document.querySelector("input");
+			//     function updateDebugState() {
+			//         document.body.classList.toggle("debug-on", debugInput.checked);
+			//     }
+			//     debugInput.addEventListener("click", updateDebugState);
+			//     updateDebugState();
+			//   </script>';
 		}
 
 		?>
