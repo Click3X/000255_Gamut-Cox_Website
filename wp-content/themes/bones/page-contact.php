@@ -83,7 +83,7 @@ endif;
 							?>
 				</section> <?php // end article section ?>
 
-			<!-- 	<section class="clearfix contact-container division-list">
+			<section class="clearfix contact-container division-list">
 					<?php			
 						//get all categories then display all posts in each term
 						//get all categories then display all posts in each term
@@ -141,7 +141,7 @@ endif;
 						wp_reset_query();  // Restore global post data stomped by the_post().
 						?>
 				</section>
- -->
+ 
 			</article>
 
 		</div>

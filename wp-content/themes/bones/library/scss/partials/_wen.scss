@@ -107,6 +107,17 @@
 
 }
 
+// policy pages link styling
+.entry-content {
+	a {
+		color: $brand-color !important;
+	}
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
 // press releases email link color
 .media-inquiry-info {
 	a {
