@@ -21,9 +21,6 @@ AddType application/x-font-woff              woff
 AddType video/ogg   .ogv
 AddType video/mp4   .mp4
 AddType video/webm  .webm
-
-AddType audio/ogg oga ogg
-AddType video/ogg ogv
  
 # webfonts and svg:
 <IfModule mod_deflate.c>
