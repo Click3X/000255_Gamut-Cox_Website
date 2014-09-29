@@ -230,13 +230,13 @@ function bones_scripts_and_styles() {
 		}
 
 		// CONDITIONAL SCRIPT TO LOAD GOOGLE MAPS ON CONTACT PAGE
-		if(is_page(9)) {
-			// wp_enqueue_script( 'google-maps' );
-			// wp_enqueue_script( 'g-maps' );
-		}
+		// if(is_page(9)) {
+		// 	// wp_enqueue_script( 'google-maps' );
+		// 	// wp_enqueue_script( 'g-maps' );
+		// }
 
 		// CONDITIONAL SCRIPT TO LOAD ROYALSLIDER ON HOME PAGE
-		if( is_page(107) || is_page(466) || is_page(393) || is_page(472) ) {
+		if( is_page(107) || is_page(466) || is_page(393) || is_page(472) || is_page_template('Dev Fix Overflow') ) {
 			// wp_enqueue_style( 'rs-css' );
 			wp_enqueue_script( 'jq-easing' );
 			wp_enqueue_script( 'rs-js' );
