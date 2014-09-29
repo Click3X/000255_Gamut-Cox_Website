@@ -59,12 +59,19 @@
 
 	endif;
 
-	
-	if( is_ie() ) {
-		// IE FILE
-		include('php/para-new-new-mobile.php'); 
+	// CHECK FOR PHP BROWSER DETECTION PLUGIN - FOR IE	
+	$myUrl = get_bloginfo('url');
+	$path = $myUrl .'/wp-content/plugins/php-browser-detection/php-browser-detection.php';
+	if ( is_plugin_active( $path ) ) {
+		if( is_ie() ) {
+			// IF IE - GET FILE WITH NO PARALLAX
+			include('php/para-new-new-mobile.php'); 
+		} else {
+			// OTHERWISE GET PARALLAX FILE
+			include('php/para-kieth.php');
+		}
 	} else {
-		// PARALLAX FILE
+		// IF THERE IS NO PLUGIN, JUST GET PARALLAX FILE
 		include('php/para-kieth.php');
 	}
 
