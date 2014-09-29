@@ -11,11 +11,13 @@
 				$cro_caption = get_field('cro-caption');
 
 			?>
-				<header class="article-header">
+				<header class="article-header" style="position: fixed; width: 100%">
 					<div class="page-header" style="background-image: url('<?php echo $header_image['url'] ?>')"></div>
 				</header>
 
-				<div id="inner-content" class="wrap cf">
+				<div id="inner-content" class="sroll-top-container cf">
+
+					<div class="sroll-top-wrapper wrap">
 
 						<?php get_sidebar(); ?>
 
@@ -126,7 +128,7 @@
 
 						</div>
 
-						
+						</div>
 
 				</div>
 

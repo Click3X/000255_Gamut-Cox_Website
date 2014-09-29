@@ -693,3 +693,19 @@ form {
 .no-found-msg {
 	color: $brand-color;
 }
+
+.sroll-top-container {
+	background-color: white; 
+	position: relative; 
+	top: 300px;
+	@media(min-width: 768px) {
+	   width: 100%;
+	}
+
+	@media(max-width: 767px) {
+	   width: 100% !important;
+	   padding-left: 5%;
+	   padding-right: 5%;
+	}
+
+}

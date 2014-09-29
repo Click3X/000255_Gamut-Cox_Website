@@ -6652,6 +6652,27 @@ form label {
   color: #ed228b;
 }
 
+/* line 697, ../scss/partials/_wen.scss */
+.sroll-top-container {
+  background-color: white;
+  position: relative;
+  top: 300px;
+}
+@media (min-width: 768px) {
+  /* line 697, ../scss/partials/_wen.scss */
+  .sroll-top-container {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  /* line 697, ../scss/partials/_wen.scss */
+  .sroll-top-container {
+    width: 100% !important;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
 /* line 3, ../scss/partials/_charles-font.scss */
 #sidebar1 .sidebar-intro li {
   list-style-position: outside;
