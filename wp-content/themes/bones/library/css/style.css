@@ -6673,7 +6673,13 @@ form label {
   }
 }
 
-/* line 715, ../scss/partials/_wen.scss */
+/* line 714, ../scss/partials/_wen.scss */
+.scroll-fix-header {
+  position: fixed;
+  width: 100%;
+}
+
+/* line 720, ../scss/partials/_wen.scss */
 #searchsubmit {
   color: white;
   white-space: nowrap;
@@ -6688,7 +6694,7 @@ form label {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-/* line 728, ../scss/partials/_wen.scss */
+/* line 733, ../scss/partials/_wen.scss */
 #searchsubmit:hover {
   background-color: #ed228b;
 }

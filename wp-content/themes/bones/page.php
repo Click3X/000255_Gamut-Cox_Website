@@ -11,7 +11,7 @@
 				$cro_caption = get_field('cro-caption');
 
 			?>
-				<header class="article-header" style="position: fixed; width: 100%">
+				<header class="article-header scroll-fix-header">
 					<div class="page-header" style="background-image: url('<?php echo $header_image['url'] ?>')"></div>
 				</header>
 
