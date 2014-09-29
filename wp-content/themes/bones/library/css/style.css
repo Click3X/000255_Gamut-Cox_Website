@@ -6627,7 +6627,7 @@ form label {
 #ooButton {
   margin-top: 20px;
   cursor: pointer;
-  color: white;
+  color: white !important;
   white-space: nowrap;
   text-align: center;
   background-color: #323944;
@@ -6638,7 +6638,7 @@ form label {
 }
 /* line 682, ../scss/partials/_wen.scss */
 #ooButton:hover {
-  background-color: #ed228b;
+  background-color: #ed228b !important;
 }
 
 @media (max-width: 560px) {

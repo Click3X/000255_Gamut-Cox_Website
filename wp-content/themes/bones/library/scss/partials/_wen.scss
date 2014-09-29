@@ -111,7 +111,7 @@
 .entry-content {
 	a {
 		color: $brand-color !important;
-		
+
 		&:hover {
 		text-decoration: underline;
 		}
@@ -671,7 +671,7 @@ form {
 #ooButton {
 		margin-top: 20px;
 		cursor: pointer;
-		color: white;
+		color: $white !important;
 		white-space: nowrap;
 		text-align: center;
 		background-color: #323944;
@@ -680,7 +680,7 @@ form {
 		-webkit-transition: all 0.2s;
 		transition: all 0.2s;
 		&:hover {
-			background-color: $brand-color;
+			background-color: $brand-color !important;
 		}		
 }
 
