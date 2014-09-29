@@ -111,11 +111,13 @@
 .entry-content {
 	a {
 		color: $brand-color !important;
+		
+		&:hover {
+		text-decoration: underline;
+		}
 	}
 
-	&:hover {
-		text-decoration: underline;
-	}
+
 }
 
 // press releases email link color
