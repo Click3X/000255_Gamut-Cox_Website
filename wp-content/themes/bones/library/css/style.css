@@ -4738,18 +4738,6 @@ a {
   display: block;
 }
 
-/* line 1, ../scss/modules/_parallax-kieth.scss */
-html.home-para, body.home {
-  height: 100%;
-  overflow-x: hidden;
-  width: 100%;
-}
-
-/* line 2, ../scss/modules/_parallax-kieth.scss */
-* html.home-para .clearfix {
-  height: 1%;
-}
-
 /* line 10, ../scss/modules/_parallax-kieth.scss */
 .home #container {
   overflow-x: hidden;
