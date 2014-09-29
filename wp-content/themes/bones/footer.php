@@ -30,20 +30,12 @@
 
 								while(has_sub_field('social_media_links', 'options')): 
 									$socialTitle = cleanString(get_sub_field('title'));
-									$sub_title = get_sub_field('title'); 
-									if ($sub_title == 'Google Plus') { ?>
 
-									<li class="social">
-										<a href="<?php the_sub_field('link'); ?>" target="_blank" title="<?php the_sub_field('title');?>" rel="publisher" class="<?php echo $socialTitle; ?>">
-										</a>
-									</li>
-									<?php } else {  ?>
+									?>
 									<li class="social">
 										<a href="<?php the_sub_field('link'); ?>" target="_blank" title="<?php the_sub_field('title');?>" class="<?php echo $socialTitle; ?>">
 										</a>
 									</li>
-									<?php } ?>
-
 								<?php endwhile;
 								echo '</ul>';
 							endif; 
@@ -105,13 +97,8 @@
 									<ul>
 										
 									<?php // EACH LOCATION ('City-Address combo') GETS ITS OWN UL
-										while(has_sub_field('other_businesses_list', 'options')): 
-											$sub_title = get_sub_field('title'); 
-											if ($sub_title == 'Cox Enterprises') { ?>
-												<li class="copy address other-businesses-content"><a href="<?php echo get_sub_field('link'); ?>" target="_blank"><?php echo $sub_title; ?></a></li>
-											<?php } else {  ?>
-												<li class="copy address other-businesses-content"><a href="<?php echo get_sub_field('link'); ?>"><?php echo $sub_title; ?></a></li>
-											<?php } ?>
+										while(has_sub_field('other_businesses_list', 'options')): ?>
+										<li class="copy address other-businesses-content"><a href="<?php the_sub_field('link'); ?>"><?php the_sub_field('title'); ?></a></li>
 									<?php endwhile; ?>
 
 									</ul>
@@ -142,9 +129,9 @@
 									
 								<?php // EACH LOCATION ('City-Address combo') GETS ITS OWN UL
 									while(has_sub_field('policy_links', 'options')): ?>
-									
+									<?php //if () ?>
 									<li class="copy link"><a class="policy-links" href="<?php the_sub_field('link'); ?>"><?php the_sub_field('title'); ?></a></li>
-									
+									<?php var_dump(the_sub_field('title')); ?>
 								<?php endwhile; ?>
 
 								</ul>
