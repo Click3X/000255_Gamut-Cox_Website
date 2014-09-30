@@ -38,6 +38,14 @@
               
             <img src="<?php bloginfo('url'); ?>/wp-content/videos/gamut_intro_1.gif" width="100%"/>
           </video>
+          <!-- Video Controls -->
+          <div id="video-controls">
+            <button type="button" id="play-pause">Play</button>
+            <input type="range" id="seek-bar" value="0">
+            <button type="button" id="mute">Mute</button>
+            <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
+            <button type="button" id="full-screen">Full-Screen</button>
+          </div>
 
         <?php endif; ?>
       </div>
