@@ -1,5 +1,5 @@
-<!-- 
-  <div class="debug">
+
+  <!-- <div class="debug">
     <label><input type="checkbox"> Debug</label>
   </div> -->
 
@@ -24,28 +24,25 @@
           require_once 'Mobile_Detect.php'; 
           $detect = new Mobile_Detect;
         ?>
+        
         <?php if ( $detect->isMobile() ) : ?>
-          <!-- <img src="<?php echo $images[0]; ?>" width="100%"/> -->
-          <img src="<?php bloginfo('url'); ?>/wp-content/videos/gamut_intro_1.gif" width="100%"/>
-          <?php  else : ?>
-          
-          <!-- <img src="<?php echo $images[0]; ?>" width="100%"/> -->
-          <video width="100%" loop autoplay muted>
-            <!-- poster="<?php bloginfo('url'); ?>/wp-content/videos/GAMUT_h264.png" -->
-            <source src="<?php bloginfo('url'); ?>/wp-content/videos/GAMUT_new.mp4" type="video/mp4">
-            <source src="<?php bloginfo('url'); ?>/wp-content/videos/GAMUT_new.ogv" type="video/ogg">
-            <source src="<?php bloginfo('url'); ?>/wp-content/videos/GAMUT_new.webm" type="video/webm">
-              
             <img src="<?php bloginfo('url'); ?>/wp-content/videos/gamut_intro_1.gif" width="100%"/>
-          </video>
-          <!-- Video Controls -->
-          <div id="video-controls">
-            <button type="button" id="play-pause">Play</button>
-            <input type="range" id="seek-bar" value="0">
-            <button type="button" id="mute">Mute</button>
-            <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
-            <button type="button" id="full-screen">Full-Screen</button>
-          </div>
+          <?php  else : ?>
+      
+            <!-- VIDEO -->
+            <video id="video" width="100%" loop autoplay muted>
+              <!-- poster="<?php bloginfo('url'); ?>/wp-content/videos/GAMUT_h264.png" -->
+              <source src="<?php bloginfo('url'); ?>/wp-content/videos/GAMUT_new.mp4" type="video/mp4">
+              <source src="<?php bloginfo('url'); ?>/wp-content/videos/GAMUT_new.ogv" type="video/ogg">
+              <source src="<?php bloginfo('url'); ?>/wp-content/videos/GAMUT_new.webm" type="video/webm">
+                
+              <img src="<?php bloginfo('url'); ?>/wp-content/videos/gamut_intro_1.gif" width="100%"/>
+            </video>
+
+            <!-- VIDEO CONTROLS -->
+            <div id="video-controls">
+              <button id="video-play" class="gamut-btn" type="button" id="mute">Play Sound</button>
+            </div>
 
         <?php endif; ?>
       </div>
@@ -251,4 +248,4 @@
       </div>
     </div>
 
-  <!-- </div> END PARALLAX CONTAINER -->
+  <!-- </div> END PARALLAX CONTAINER
