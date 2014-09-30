@@ -51,7 +51,7 @@
 
             <!-- VIDEO CONTROLS -->
             <div id="video-controls">
-              <button id="video-play" class="gamut-btn" type="button" id="mute">Play Sound</button>
+              <button class="gamut-btn" type="button" id="mute">Play Sound<span class="arrow-right" id="home-btn-cro-arrow"></span></button>
             </div>
 
         <?php endif; ?>
