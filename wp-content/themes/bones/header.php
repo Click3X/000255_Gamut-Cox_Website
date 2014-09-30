@@ -206,6 +206,7 @@
             #home-btn-service {
                 z-index: 10;
                 position: relative;
+                white-space: nowrap;
             }
         }
 
