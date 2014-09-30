@@ -6013,7 +6013,6 @@ img.rsImg {
 /* line 3, ../scss/partials/_wen.scss */
 #home-btn-pro:hover {
   background-color: #dd1420;
-  border-color: #dd1420;
 }
 /* line 7, ../scss/partials/_wen.scss */
 #home-btn-pro:hover #home-btn-pro-arrow {
@@ -6028,7 +6027,6 @@ img.rsImg {
 /* line 17, ../scss/partials/_wen.scss */
 #home-btn-rep:hover {
   background-color: #039fd3;
-  border-color: #039fd3;
 }
 /* line 21, ../scss/partials/_wen.scss */
 #home-btn-rep:hover #home-btn-rep-arrow {
@@ -6043,7 +6041,6 @@ img.rsImg {
 /* line 31, ../scss/partials/_wen.scss */
 #home-btn-rea:hover {
   background-color: #8fc73e;
-  border-color: #8fc73e;
 }
 /* line 34, ../scss/partials/_wen.scss */
 #home-btn-rea:hover #home-btn-rea-arrow {
@@ -6058,7 +6055,6 @@ img.rsImg {
 /* line 44, ../scss/partials/_wen.scss */
 #home-btn-cro:hover {
   background-color: #fba211;
-  border-color: #fba211;
 }
 /* line 47, ../scss/partials/_wen.scss */
 #home-btn-cro:hover #home-btn-cro-arrow {
@@ -6073,7 +6069,6 @@ img.rsImg {
 /* line 58, ../scss/partials/_wen.scss */
 #home-btn-difference:hover, #home-btn-service:hover, #home-btn-careers:hover {
   background-color: #ed228b;
-  border-color: #ed228b;
 }
 /* line 62, ../scss/partials/_wen.scss */
 #home-btn-difference:hover #home-btn-difference-arrow, #home-btn-difference:hover #home-btn-service-arrow, #home-btn-difference:hover #home-btn-careers-arrow, #home-btn-service:hover #home-btn-difference-arrow, #home-btn-service:hover #home-btn-service-arrow, #home-btn-service:hover #home-btn-careers-arrow, #home-btn-careers:hover #home-btn-difference-arrow, #home-btn-careers:hover #home-btn-service-arrow, #home-btn-careers:hover #home-btn-careers-arrow {
