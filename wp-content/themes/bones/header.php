@@ -199,15 +199,21 @@
             background-color: white;
         }
 
+        .arrow-right:hover,
+        .arrow-right {
+            white-space: nowrap;
+        }
 
-        @media(max-width: 811px) {
-            #home-btn-careers,
-            a#home-btn-difference,
-            #home-btn-service {
-                z-index: 10;
-                position: relative;
-                white-space: nowrap;
-            }
+        #home-btn-careers,
+        #home-btn-careers:hover,
+        a#home-btn-difference,
+        a#home-btn-difference:hover,
+        #home-btn-service,
+        #home-btn-service:hover,
+        #group4 .subpage .gamut-btn,
+        #group4 .subpage .gamut-btn:hover {
+            white-space: nowrap;
+            border: 0;
         }
 
         .subpage-wrap {
@@ -216,6 +222,43 @@
 
         .subpage-wrap:last-of-type {
             border-bottom:0;
+        }
+
+
+        @media(max-width: 811px) {
+            #home-btn-careers,
+            a#home-btn-difference,
+            #home-btn-service {
+                z-index: 10;
+                position: relative;
+            }
+        }
+
+
+        @media(min-width: 811px) {
+            #parallax-kieth .footer {
+                height:600px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            #parallax-kieth #group6 #careers-bg {
+                /*top: 174px;*/
+                top: 144px;
+            }
+        }
+
+        @media (min-width: 1040px) {
+            #parallax-kieth #group4 {
+                height: 1650px;
+            }
+        }
+
+
+        @media (min-width: 1060px) {
+            #parallax-kieth .footer {
+                height: 530px;
+            }
         }
 
         </style>
