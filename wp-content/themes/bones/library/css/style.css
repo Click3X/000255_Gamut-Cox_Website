@@ -4757,7 +4757,7 @@ a {
 @media (min-width: 811px) {
   /* line 34, ../scss/modules/_parallax-kieth.scss */
   .parallax-kieth {
-    height: 500px;
+    height: 800px;
     /* fallback for older browsers */
     height: 100vh;
     overflow-x: hidden;
