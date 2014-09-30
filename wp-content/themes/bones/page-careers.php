@@ -7,7 +7,7 @@
 
 <?php get_header(); ?>
 
-			<div id="content">
+			<div id="content" class="fixed-header-bg">
 			<?php
 				$header_image = get_field('header-image');
 				$sub_page_title = get_field('sub-page-title');
@@ -19,6 +19,8 @@
 				<header class="article-header">
 					<div class="page-header" style="background-image: url('<?php echo $header_image['url'] ?>')"></div>
 				</header>
+
+				<div class="wrap-wrap cf">
 
 				<div id="inner-content" class="wrap cf">
 
@@ -149,6 +151,8 @@
 						</div>
 
 						</div>
+
+					</div>
 
 				</div>
 

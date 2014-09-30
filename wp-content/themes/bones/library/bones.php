@@ -198,9 +198,11 @@ function bones_scripts_and_styles() {
 		wp_register_script( 'fancyboxpack-js', get_stylesheet_directory_uri() . '/library/js/jquery.fancybox.pack.js', array('jquery'), '', true );
 
 		
-
         // HIDE SCROLL - FOR PARALLAX
         wp_register_script( 'hide-scroll' , get_stylesheet_directory_uri() . '/library/js/hide-scroll.js', array('jquery'), '', true );
+
+        // PLAY SOUND
+        wp_register_script( 'play-sound' , get_stylesheet_directory_uri() . '/library/js/play-sound.js', array(), '', true );
 
 
         // enqueue styles and scripts
@@ -252,6 +254,8 @@ function bones_scripts_and_styles() {
 			// wp_enqueue_script( 'in-view-page' );
 
             wp_enqueue_script( 'hide-scroll' );
+
+            wp_enqueue_script( 'play-sound' );
 		}
 	}
 }

@@ -27,11 +27,13 @@ endif;
 
 ?>
 
-	<div id="content">
+	<div id="content" class="fixed-header-bg">
 
 		<header class="article-header">
 			<div class="page-header" style="background-image: url('<?php echo $header_image['url'] ?>')"></div>
 		</header>
+
+		<div class="wrap-wrap cf">
 
 		<div id="inner-content" class="wrap cf">
 
@@ -78,6 +80,8 @@ endif;
 				</article>
 
 			</div>
+
+		</div>
 
 		</div>
 

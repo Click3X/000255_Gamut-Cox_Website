@@ -84,11 +84,13 @@ wp_reset_postdata();
 
 ?>
 
-<div id="content">
+<div id="content" class="fixed-header-bg">
 
 	<header class="article-header">
 		<div class="page-header" style="background-image: url('<?php echo $header['url'] ?>')"></div>
 	</header>
+
+	<div class="wrap-wrap cf">
 
 	<div id="inner-content" class="wrap cf">
 
@@ -149,6 +151,8 @@ wp_reset_postdata();
 			</article>
 
 		</div>
+
+	</div>
 
 	</div>
 
