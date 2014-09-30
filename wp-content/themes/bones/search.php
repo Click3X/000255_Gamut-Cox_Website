@@ -28,7 +28,7 @@
 
 								<footer class="article-footer">
 
-                  <?php printf( __( 'Filed under: %1$s', 'bonestheme' ), get_the_category_list(', ') ); ?>
+                  <?php printf( __( 'Category: %1$s', 'bonestheme' ), get_the_category_list(', ') ); ?>
 
                   <?php the_tags( '<p class="tags"><span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ', ', '</p>' ); ?>
 
@@ -47,7 +47,7 @@
 											<h1><?php _e( 'Sorry, No Results.', 'bonestheme' ); ?></h1>
 										</header>
 										<section class="entry-content">
-											<p><?php _e( 'Try your search again.', 'bonestheme' ); ?></p>
+											<h2><?php _e( 'Try your search again.', 'bonestheme' ); ?></h2>
 										</section>
 <!-- 										<footer class="article-footer">
 												<p><?php _e( 'This is the error message in the search.php template.', 'bonestheme' ); ?></p>
