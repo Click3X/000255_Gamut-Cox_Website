@@ -20,6 +20,7 @@
     }
 }
 
+
 .home-para, .page-id-107 {
     @media(min-width: 811px) {
         overflow: hidden;
@@ -28,4 +29,8 @@
 
 .subpage-wrap {
     border-bottom: 2px dashed #d8d8d8;
+
+    &:last-of-type {
+        border: 0;
+    }
 }

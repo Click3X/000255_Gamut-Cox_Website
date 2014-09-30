@@ -32,7 +32,7 @@
   --------------------------------------------- */
 @media(min-width: 811px) {
   .parallax-kieth {
-    height: 500px; /* fallback for older browsers */
+    height: 800px; /* fallback for older browsers */
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
@@ -609,12 +609,20 @@
       display: none;
     }
   }
+
+  .subpage-wrap {
+    border-bottom: 2px dashed #d8d8d8;
+
+    &:last-of-type {
+      border-bottom:0;
+    }
+  }
+
   .subpage {
       background-color: white;
       width: 90%;
       max-width: 1300px;
       margin: 0 auto;
-
     }
 
    p {

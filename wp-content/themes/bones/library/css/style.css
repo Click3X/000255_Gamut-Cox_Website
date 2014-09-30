@@ -2979,7 +2979,6 @@ html {
 
 /* line 32, ../scss/partials/_who-we-are.scss */
 body.page-id-48 {
-  overflow: scroll;
   overflow-x: hidden;
 }
 
@@ -4758,7 +4757,7 @@ a {
 @media (min-width: 811px) {
   /* line 34, ../scss/modules/_parallax-kieth.scss */
   .parallax-kieth {
-    height: 500px;
+    height: 800px;
     /* fallback for older browsers */
     height: 100vh;
     overflow-x: hidden;
@@ -5370,54 +5369,62 @@ a {
     display: none;
   }
 }
-/* line 612, ../scss/modules/_parallax-kieth.scss */
+/* line 613, ../scss/modules/_parallax-kieth.scss */
+#parallax-kieth .subpage-wrap {
+  border-bottom: 2px dashed #d8d8d8;
+}
+/* line 616, ../scss/modules/_parallax-kieth.scss */
+#parallax-kieth .subpage-wrap:last-of-type {
+  border-bottom: 0;
+}
+/* line 621, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth .subpage {
   background-color: white;
   width: 90%;
   max-width: 1300px;
   margin: 0 auto;
 }
-/* line 620, ../scss/modules/_parallax-kieth.scss */
+/* line 628, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth p {
   font-size: 1.1em;
   line-height: 1.15em;
 }
 @media (min-width: 811px) {
-  /* line 620, ../scss/modules/_parallax-kieth.scss */
+  /* line 628, ../scss/modules/_parallax-kieth.scss */
   #parallax-kieth p {
     font-size: 1.4em;
   }
 }
 @media (min-width: 1200px) {
-  /* line 620, ../scss/modules/_parallax-kieth.scss */
+  /* line 628, ../scss/modules/_parallax-kieth.scss */
   #parallax-kieth p {
     font-size: 1.6em;
   }
 }
-/* line 632, ../scss/modules/_parallax-kieth.scss */
+/* line 640, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth h1 {
   font-size: 1.9em;
 }
 @media (min-width: 400px) {
-  /* line 632, ../scss/modules/_parallax-kieth.scss */
+  /* line 640, ../scss/modules/_parallax-kieth.scss */
   #parallax-kieth h1 {
     font-size: 2.5em;
   }
 }
 @media (min-width: 811px) {
-  /* line 632, ../scss/modules/_parallax-kieth.scss */
+  /* line 640, ../scss/modules/_parallax-kieth.scss */
   #parallax-kieth h1 {
     font-size: 2.8em;
   }
 }
 @media (min-width: 1200px) {
-  /* line 632, ../scss/modules/_parallax-kieth.scss */
+  /* line 640, ../scss/modules/_parallax-kieth.scss */
   #parallax-kieth h1 {
     font-size: 4em;
   }
 }
 @media (min-width: 1300px) {
-  /* line 632, ../scss/modules/_parallax-kieth.scss */
+  /* line 640, ../scss/modules/_parallax-kieth.scss */
   #parallax-kieth h1 {
     font-size: 4.5em;
   }
@@ -5447,15 +5454,19 @@ a {
 }
 
 @media (min-width: 811px) {
-  /* line 23, ../scss/modules/_parallax-kieth-addons.scss */
+  /* line 24, ../scss/modules/_parallax-kieth-addons.scss */
   .home-para, .page-id-107 {
     overflow: hidden;
   }
 }
 
-/* line 29, ../scss/modules/_parallax-kieth-addons.scss */
+/* line 30, ../scss/modules/_parallax-kieth-addons.scss */
 .subpage-wrap {
   border-bottom: 2px dashed #d8d8d8;
+}
+/* line 33, ../scss/modules/_parallax-kieth-addons.scss */
+.subpage-wrap:last-of-type {
+  border: 0;
 }
 
 /* line 2, ../scss/modules/_home-slider.scss */
@@ -6662,6 +6673,54 @@ form label {
 /* line 693, ../scss/partials/_wen.scss */
 .no-found-msg {
   color: #ed228b;
+}
+
+/* line 698, ../scss/partials/_wen.scss */
+.sroll-top-container {
+  background-color: white;
+  position: relative;
+  top: 300px;
+}
+@media (min-width: 768px) {
+  /* line 698, ../scss/partials/_wen.scss */
+  .sroll-top-container {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  /* line 698, ../scss/partials/_wen.scss */
+  .sroll-top-container {
+    width: 100% !important;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+/* line 714, ../scss/partials/_wen.scss */
+.scroll-fix-header {
+  position: fixed;
+  width: 100%;
+  z-index: -1;
+}
+
+/* line 721, ../scss/partials/_wen.scss */
+#searchsubmit {
+  color: white;
+  white-space: nowrap;
+  text-align: center;
+  background-color: #323944;
+  text-decoration: none;
+  padding: 10px 35px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  border: 0 none;
+  width: 100%;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+/* line 734, ../scss/partials/_wen.scss */
+#searchsubmit:hover {
+  background-color: #ed228b;
 }
 
 /* line 3, ../scss/partials/_charles-font.scss */
