@@ -579,27 +579,13 @@
 // VIDEO PLAY BUTTON
 #video-controls {
 	position: absolute;
-	bottom:0;
-	left:10px;
 	background-color: transparent;
 	border-color:transparent;
 	outline-color:transparent;
 	color:transparent;
 
-	@media(min-width: 500px) {
-		bottom:10px;
-	}
-
-
-	@media(min-width:811px) {
-		bottom:0;
-	}
-
-	@media(min-width:1300px) {
-		bottom:auto;
-		top: 660px;
-		left: 10px;
-	}
+	top:20px;
+	right:20px;
 }
 
 // #mute {

@@ -4043,35 +4043,15 @@ a {
 /* line 580, ../scss/partials/_home_addons.scss */
 #video-controls {
   position: absolute;
-  bottom: 0;
-  left: 10px;
   background-color: transparent;
   border-color: transparent;
   outline-color: transparent;
   color: transparent;
-}
-@media (min-width: 500px) {
-  /* line 580, ../scss/partials/_home_addons.scss */
-  #video-controls {
-    bottom: 10px;
-  }
-}
-@media (min-width: 811px) {
-  /* line 580, ../scss/partials/_home_addons.scss */
-  #video-controls {
-    bottom: 0;
-  }
-}
-@media (min-width: 1300px) {
-  /* line 580, ../scss/partials/_home_addons.scss */
-  #video-controls {
-    bottom: auto;
-    top: 660px;
-    left: 10px;
-  }
+  top: 20px;
+  right: 20px;
 }
 
-/* line 650, ../scss/partials/_home_addons.scss */
+/* line 636, ../scss/partials/_home_addons.scss */
 #mute {
   background-color: transparent;
   border: 0;
@@ -4090,13 +4070,13 @@ a {
   transition: all 200ms;
 }
 
-/* line 664, ../scss/partials/_home_addons.scss */
+/* line 650, ../scss/partials/_home_addons.scss */
 #mute.playsound {
   background-image: url("../../../../../img/SOUND_Btn.png");
   outline: 0;
 }
 
-/* line 669, ../scss/partials/_home_addons.scss */
+/* line 655, ../scss/partials/_home_addons.scss */
 #mute.stopsound {
   background-image: url("../../../../../img/SOUND_Btn-mute.png");
   outline: 0;
