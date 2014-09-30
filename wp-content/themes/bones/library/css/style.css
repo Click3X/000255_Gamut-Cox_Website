@@ -5446,6 +5446,18 @@ a {
   }
 }
 
+@media (min-width: 811px) {
+  /* line 23, ../scss/modules/_parallax-kieth-addons.scss */
+  .home-para, .page-id-107 {
+    overflow: hidden;
+  }
+}
+
+/* line 29, ../scss/modules/_parallax-kieth-addons.scss */
+.subpage-wrap {
+  border-bottom: 2px dashed #d8d8d8;
+}
+
 /* line 2, ../scss/modules/_home-slider.scss */
 .contentSlider {
   width: 100%;
