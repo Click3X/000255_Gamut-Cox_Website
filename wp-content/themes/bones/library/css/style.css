@@ -4031,6 +4031,15 @@ a {
     top: 0px;
   }
 }
+@media (max-width: 811px) {
+  /* line 573, ../scss/partials/_home_addons.scss */
+  #home-btn-careers,
+  a#home-btn-difference,
+  #home-btn-service {
+    z-index: 10;
+    position: relative;
+  }
+}
 @media (min-width: 811px) {
   /* line 2, ../scss/modules/_para-friday.scss */
   .page-id-466,
