@@ -2979,7 +2979,6 @@ html {
 
 /* line 32, ../scss/partials/_who-we-are.scss */
 body.page-id-48 {
-  overflow: scroll;
   overflow-x: hidden;
 }
 
@@ -5370,54 +5369,62 @@ a {
     display: none;
   }
 }
-/* line 612, ../scss/modules/_parallax-kieth.scss */
+/* line 613, ../scss/modules/_parallax-kieth.scss */
+#parallax-kieth .subpage-wrap {
+  border-bottom: 2px dashed #d8d8d8;
+}
+/* line 616, ../scss/modules/_parallax-kieth.scss */
+#parallax-kieth .subpage-wrap:last-of-type {
+  border-bottom: 0;
+}
+/* line 621, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth .subpage {
   background-color: white;
   width: 90%;
   max-width: 1300px;
   margin: 0 auto;
 }
-/* line 620, ../scss/modules/_parallax-kieth.scss */
+/* line 628, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth p {
   font-size: 1.1em;
   line-height: 1.15em;
 }
 @media (min-width: 811px) {
-  /* line 620, ../scss/modules/_parallax-kieth.scss */
+  /* line 628, ../scss/modules/_parallax-kieth.scss */
   #parallax-kieth p {
     font-size: 1.4em;
   }
 }
 @media (min-width: 1200px) {
-  /* line 620, ../scss/modules/_parallax-kieth.scss */
+  /* line 628, ../scss/modules/_parallax-kieth.scss */
   #parallax-kieth p {
     font-size: 1.6em;
   }
 }
-/* line 632, ../scss/modules/_parallax-kieth.scss */
+/* line 640, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth h1 {
   font-size: 1.9em;
 }
 @media (min-width: 400px) {
-  /* line 632, ../scss/modules/_parallax-kieth.scss */
+  /* line 640, ../scss/modules/_parallax-kieth.scss */
   #parallax-kieth h1 {
     font-size: 2.5em;
   }
 }
 @media (min-width: 811px) {
-  /* line 632, ../scss/modules/_parallax-kieth.scss */
+  /* line 640, ../scss/modules/_parallax-kieth.scss */
   #parallax-kieth h1 {
     font-size: 2.8em;
   }
 }
 @media (min-width: 1200px) {
-  /* line 632, ../scss/modules/_parallax-kieth.scss */
+  /* line 640, ../scss/modules/_parallax-kieth.scss */
   #parallax-kieth h1 {
     font-size: 4em;
   }
 }
 @media (min-width: 1300px) {
-  /* line 632, ../scss/modules/_parallax-kieth.scss */
+  /* line 640, ../scss/modules/_parallax-kieth.scss */
   #parallax-kieth h1 {
     font-size: 4.5em;
   }
@@ -5444,6 +5451,11 @@ a {
   #group7 .ccc-hbolder .c-career {
     padding-bottom: 0;
   }
+}
+
+/* line 23, ../scss/modules/_parallax-kieth-addons.scss */
+body, html {
+  overflow: hidden;
 }
 
 /* line 2, ../scss/modules/_home-slider.scss */

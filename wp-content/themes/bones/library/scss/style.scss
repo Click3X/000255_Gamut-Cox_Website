@@ -86,6 +86,8 @@ the other stylesheets. Remember, keep it light: Speed is Important.
 // PARALLAX FOR HOME PAGE
 @import "modules/para-friday";
 
+
+// KEY STYLES FILE
 @import "modules/para-all-styles";
 
 // DEV PAGE TEST STYLES
@@ -94,6 +96,10 @@ the other stylesheets. Remember, keep it light: Speed is Important.
 // KEITH PARALLAX -> THE REAL WORKING DEAL
 @import "modules/parallax-kieth";
 @import "modules/parallax-kieth-addons";
+
+// SANDBOX
+// @import "modules/sandbox";
+// @import "modules/sandbox-addons";
 
 // SLIDER
 @import "modules/home-slider";

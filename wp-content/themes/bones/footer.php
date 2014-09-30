@@ -33,12 +33,12 @@
 									$sub_title = get_sub_field('title');
 									if ($sub_title == 'Google Plus') { ?>
 									<li class="social">
-										<a href="<?php the_sub_field('link'); ?>" target="_blank" rel="publisher" title="<?php the_sub_field('title');?>" class="<?php echo $socialTitle; ?>">
+										<a href="<?php echo get_sub_field('link'); ?>" target="_blank" rel="publisher" title="<?php echo get_sub_field('title');?>" class="<?php echo $socialTitle; ?>">
 										</a>
 									</li>
 									<?php } else { ?>
 									<li class="social">
-										<a href="<?php the_sub_field('link'); ?>" target="_blank" title="<?php the_sub_field('title');?>" class="<?php echo $socialTitle; ?>">
+										<a href="<?php echo get_sub_field('link'); ?>" target="_blank" title="<?php echo get_sub_field('title');?>" class="<?php echo $socialTitle; ?>">
 										</a>
 									</li>
 									<?php } ?>
@@ -75,8 +75,8 @@
 												while(has_sub_field('locations', 'options')): ?>
 												<ul class="client-info location">
 													
-													<li class="copy address headquarter-title"><?php the_sub_field('city'); ?></li>
-													<li class="copy address"><?php the_sub_field('address'); ?></li>
+													<li class="copy address headquarter-title"><?php echo get_sub_field('city'); ?></li>
+													<li class="copy address"><?php echo get_sub_field('address'); ?></li>
 												</ul>
 												<?php endwhile; ?>
 
@@ -106,9 +106,9 @@
 										while(has_sub_field('other_businesses_list', 'options')): 
 										$sub_title = get_sub_field('title');
 										if ($sub_title == 'Cox Enterprises') { ?>
-										<li class="copy address other-businesses-content"><a href="<?php the_sub_field('link'); ?>" target="_blank"><?php the_sub_field('title'); ?></a></li>
+										<li class="copy address other-businesses-content"><a href="<?php echo get_sub_field('link'); ?>" target="_blank"><?php echo get_sub_field('title'); ?></a></li>
 										<?php } else { ?>
-										<li class="copy address other-businesses-content"><a href="<?php the_sub_field('link'); ?>"><?php the_sub_field('title'); ?></a></li>
+										<li class="copy address other-businesses-content"><a href="<?php echo get_sub_field('link'); ?>"><?php echo get_sub_field('title'); ?></a></li>
 										<?php } ?>
 									<?php endwhile; ?>
 
@@ -141,7 +141,7 @@
 								<?php // EACH LOCATION ('City-Address combo') GETS ITS OWN UL
 									while(has_sub_field('policy_links', 'options')): ?>
 									<?php //if () ?>
-									<li class="copy link"><a class="policy-links" href="<?php the_sub_field('link'); ?>"><?php the_sub_field('title'); ?></a></li>
+									<li class="copy link"><a class="policy-links" href="<?php echo get_sub_field('link'); ?>"><?php echo get_sub_field('title'); ?></a></li>
 								<?php endwhile; ?>
 
 								</ul>
@@ -192,8 +192,9 @@
 
 		<?php 
 
-		if( is_page(472) || is_home() ) {
+		if( is_page(472) || is_page(107) || is_home() ) {
 			echo '</div>';
+			// echo '<h1>We are home</h1>';
 			// echo '<script>
 			//     var debugInput = document.querySelector("input");
 			//     function updateDebugState() {
