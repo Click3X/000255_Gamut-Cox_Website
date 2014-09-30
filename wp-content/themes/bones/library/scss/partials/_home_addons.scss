@@ -565,4 +565,13 @@
 	.header {
 		top:0px;
 	}
+}
+
+@media (max-width: 811px) {
+	#home-btn-careers,
+	a#home-btn-difference,
+	#home-btn-service {
+		z-index: 10;
+		position: relative;
 	}
+}

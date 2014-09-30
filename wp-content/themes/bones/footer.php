@@ -194,15 +194,6 @@
 
 		if( is_page(472) || is_page(107) || is_home() ) {
 			echo '</div>';
-			// echo '<h1>We are home</h1>';
-			// echo '<script>
-			//     var debugInput = document.querySelector("input");
-			//     function updateDebugState() {
-			//         document.body.classList.toggle("debug-on", debugInput.checked);
-			//     }
-			//     debugInput.addEventListener("click", updateDebugState);
-			//     updateDebugState();
-			//   </script>';
 		}
 
 		?>
