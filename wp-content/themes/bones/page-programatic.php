@@ -9,7 +9,7 @@ get_header();
 
 ?>
 
-<div id="content">
+<div id="content" class="fixed-header-bg">
 	
 <?php
 
@@ -26,6 +26,8 @@ get_header();
 	<header class="article-header">
 		<div class="page-header" style="background-image: url('<?php echo $header['url'] ?>')"></div>
 	</header>
+
+	<div class="wrap-wrap cf">
 
 	<div id="inner-content" class="wrap cf">
 
@@ -175,6 +177,7 @@ get_header();
 
 		</div>
 
+	</div>
 	</div>
 
 </div>

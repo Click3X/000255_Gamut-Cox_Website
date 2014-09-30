@@ -15,7 +15,7 @@
 
 <?php get_header(); ?>
 
-			<div id="content">
+			<div id="content" class="fixed-header-bg">
 
 			<?php $header_image = get_field('header-image');
 					$sub_page_content = get_field('sub-page-content');
@@ -25,6 +25,8 @@
 				<header class="clearfix article-header">
 					<div class="page-header" style="background-image: url('<?php echo $header_image['url'] ?>')"></div>					
 				</header>
+
+				<div class="wrap-wrap cf">
 
 				<div id="inner-content" class="wrap cf">
 
@@ -131,6 +133,8 @@
 						<!-- end of content wrapper with formatting -->
 
 					</div>
+
+				</div>
 
 				</div>
 
