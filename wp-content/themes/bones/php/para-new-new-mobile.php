@@ -237,7 +237,3 @@
 
   <div id="group7" class="parallax__group">
     <div class="parallax__layer parallax__layer--base">
-      <!-- <div class="title">Base Layer</div> -->
-    <!-- </div>
-  </div>
-</div> -->
