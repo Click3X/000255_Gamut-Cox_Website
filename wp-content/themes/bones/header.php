@@ -156,13 +156,13 @@
                 marker = new google.maps.Marker({
                     position: nycLatLong,
                     map: map,
-                    icon: iconBase + ""
+                    icon: iconBase + "/img/map-marker.png"
                 });
 
 				sfMarker = new google.maps.Marker({
                     position: sfLatLong,
                     map: map,
-                    icon: iconBase + ""
+                    icon: iconBase + "/img/map-marker.png"
                 });
 
             }
