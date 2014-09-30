@@ -8,13 +8,13 @@
 
 						<article id="post-not-found" class="hentry cf">
 
-<!-- 							<header class="article-header" style="margin-bottom: 100px">
+							<header class="article-header">
 
-								<h2><?php _e( 'The article you were looking for was not found, but maybe try looking again!', 'bonestheme' ); ?></h2>
+								<h1><?php _e( '404 - Page Not Found.', 'bonestheme' ); ?></h1>
 
-							</header> -->
+							</header>
 
-							<section class="entry-content" style="margin-bottom: 80px; margin-top: 100px">
+							<section class="entry-content" style="margin-bottom: 60px; ">
 
 								<h2><?php _e( 'The article you were looking for was not found, but maybe try looking again!', 'bonestheme' ); ?></h2>
 
