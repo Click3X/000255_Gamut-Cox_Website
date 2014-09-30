@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-			<div id="content">
+			<div id="content" class="fixed-header-bg">
 			<?php
 				$header_image = get_field('header-image');
 				$sub_page_title = get_field('sub-page-title');
@@ -15,9 +15,9 @@
 					<div class="page-header" style="background-image: url('<?php echo $header_image['url'] ?>')"></div>
 				</header>
 
-				<div id="inner-content" class="wrap cf">
+				<div class="wrap-wrap cf">
 
-					<!-- <div class="sroll-top-wrapper wrap"> -->
+					<div id="inner-content" class="wrap cf">
 
 						<?php get_sidebar(); ?>
 
@@ -127,8 +127,8 @@
 							<?php endif; ?>
 
 						</div>
-
-						<!-- </div> -->
+						
+					</div>						
 
 				</div>
 

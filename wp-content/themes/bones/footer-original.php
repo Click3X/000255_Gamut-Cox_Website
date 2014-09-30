@@ -30,18 +30,12 @@
 
 								while(has_sub_field('social_media_links', 'options')): 
 									$socialTitle = cleanString(get_sub_field('title'));
-									$sub_title = get_sub_field('title');
-									if ($sub_title == 'Google Plus') { ?>
+
+									?>
 									<li class="social">
-										<a href="<?php echo get_sub_field('link'); ?>" target="_blank" rel="publisher" title="<?php echo get_sub_field('title');?>" class="<?php echo $socialTitle; ?>">
+										<a href="<?php the_sub_field('link'); ?>" target="_blank" title="<?php the_sub_field('title');?>" class="<?php echo $socialTitle; ?>">
 										</a>
 									</li>
-									<?php } else { ?>
-									<li class="social">
-										<a href="<?php echo get_sub_field('link'); ?>" target="_blank" title="<?php echo get_sub_field('title');?>" class="<?php echo $socialTitle; ?>">
-										</a>
-									</li>
-									<?php } ?>
 								<?php endwhile;
 								echo '</ul>';
 							endif; 
@@ -75,8 +69,8 @@
 												while(has_sub_field('locations', 'options')): ?>
 												<ul class="client-info location">
 													
-													<li class="copy address headquarter-title"><?php echo get_sub_field('city'); ?></li>
-													<li class="copy address"><?php echo get_sub_field('address'); ?></li>
+													<li class="copy address headquarter-title"><?php the_sub_field('city'); ?></li>
+													<li class="copy address"><?php the_sub_field('address'); ?></li>
 												</ul>
 												<?php endwhile; ?>
 
@@ -103,13 +97,8 @@
 									<ul>
 										
 									<?php // EACH LOCATION ('City-Address combo') GETS ITS OWN UL
-										while(has_sub_field('other_businesses_list', 'options')): 
-										$sub_title = get_sub_field('title');
-										if ($sub_title == 'Cox Enterprises') { ?>
-										<li class="copy address other-businesses-content"><a href="<?php echo get_sub_field('link'); ?>" target="_blank"><?php echo get_sub_field('title'); ?></a></li>
-										<?php } else { ?>
-										<li class="copy address other-businesses-content"><a href="<?php echo get_sub_field('link'); ?>"><?php echo get_sub_field('title'); ?></a></li>
-										<?php } ?>
+										while(has_sub_field('other_businesses_list', 'options')): ?>
+										<li class="copy address other-businesses-content"><a href="<?php the_sub_field('link'); ?>"><?php the_sub_field('title'); ?></a></li>
 									<?php endwhile; ?>
 
 									</ul>
@@ -140,9 +129,7 @@
 									
 								<?php // EACH LOCATION ('City-Address combo') GETS ITS OWN UL
 									while(has_sub_field('policy_links', 'options')): ?>
-									<?php //if () ?>
-									<li class="copy link"><a class="policy-links" href="<?php echo get_sub_field('link'); ?>"><?php echo get_sub_field('title'); ?></a></li>
-
+									<li class="copy link"><a class="policy-links" href="<?php the_sub_field('link'); ?>"><?php the_sub_field('title'); ?></a></li>
 								<?php endwhile; ?>
 
 								</ul>
@@ -173,19 +160,6 @@
 				echo '</div>'; // END PARALLAX
 			}
 
-
-			// if( is_page(472) || is_home() || is_page_template('Dev Fix Overflow') ) {
-				echo '</div>'; // ADDED TO FIX HTML VALIDATION
-			// 	// echo '<script>
-			// 	//     var debugInput = document.querySelector("input");
-			// 	//     function updateDebugState() {
-			// 	//         document.body.classList.toggle("debug-on", debugInput.checked);
-			// 	//     }
-			// 	//     debugInput.addEventListener("click", updateDebugState);
-			// 	//     updateDebugState();
-			// 	//   </script>';
-			// }
-
 			?>
 
 		</div> <!-- END CONTAINER -->
@@ -206,16 +180,16 @@
 
 		<?php 
 
-
-		if (  is_page_template('Dev Fix Overflow') ) {
-			echo '<script>
-			    var debugInput = document.querySelector("input");
-			    function updateDebugState() {
-			        document.body.classList.toggle("debug-on", debugInput.checked);
-			    }
-			    debugInput.addEventListener("click", updateDebugState);
-			    updateDebugState();
-			  </script>';
+		if( is_page(472) || is_home() ) {
+			echo '</div>';
+			// echo '<script>
+			//     var debugInput = document.querySelector("input");
+			//     function updateDebugState() {
+			//         document.body.classList.toggle("debug-on", debugInput.checked);
+			//     }
+			//     debugInput.addEventListener("click", updateDebugState);
+			//     updateDebugState();
+			//   </script>';
 		}
 
 		?>

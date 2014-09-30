@@ -171,54 +171,7 @@
 
 
 		?>
-        <style>
 
-        @media(min-width: 811px) {
-            .home-para, .page-id-107 {
-                overflow: hidden;
-            }
-            
-            .fixed-header-bg {
-                padding-top:300px;
-            }
-
-            .fixed-header-bg > .article-header {
-                position: fixed;
-                top:62.5px;
-                width:100%;
-                z-index: -1;
-            }
-        }
-
-        .wrap-wrap {
-            width: 100%;
-        }
-
-        .wrap-wrap,
-        #sidebar1 {
-            background-color: white;
-        }
-
-
-        @media(max-width: 811px) {
-            #home-btn-careers,
-            a#home-btn-difference,
-            #home-btn-service {
-                z-index: 10;
-                position: relative;
-                white-space: nowrap;
-            }
-        }
-
-        .subpage-wrap {
-            border-bottom: 2px dashed #d8d8d8;
-        }
-
-        .subpage-wrap:last-of-type {
-            border-bottom:0;
-        }
-
-        </style>
 
 	</head>
 

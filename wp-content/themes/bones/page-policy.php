@@ -39,25 +39,25 @@ get_header(); ?>
 								<!-- adding opt-out policy -->
 								<?php if (is_page(275) || is_page(278)) { ?>
 
-							    <div id="opt">
-                    <h6>Your browser&#8217;s current status</h6>
-                    <div id="opt-out-status">
-                      <iframe id="ooStatusFrame" src="http://oo.afy11.net/NAIIsOptOut.aspx?nocache=0.2900599" width="259" height="60" style="overflow:hidden;border:none;border:solid 1px #eee;" scrolling="no"></iframe>
-                    </div>
-                    <div class="opt_btn_wrapper">
-                      <a name="oo" id="ooButton" class="button opt_btn" id="btn-opt-out" href="http://www.coxdigitalsolutions.com/privacy-policy/consumer-opt-out-program/#">Opt-Out</a><br />
-                      <iframe id="ooResponseFrame" src="" width="30" height="30" style="border:none;position:relative;top:10px;margin-top:-30px;" ></iframe>
-                    </div>
-                    <p>
-                        <script language="JavaScript" type="text/javascript">
-                               document.getElementById('ooButton').onclick = function () {
-                                   document.getElementById('ooResponseFrame').src = 'http://oo.afy11.net/NAIOptOut.aspx';
-                                   setTimeout(function () { document.getElementById('ooStatusFrame').src = 'http://oo.afy11.net/NAIIsOptOut.aspx?nocache=0.2900600'; }, 200);
-                                   return false;
-                               } 
-                        </script>
-                    </p>
-                  </div>
+							<div id="opt">
+					            <h6>Your browser&#8217;s current status</h6>
+					            <div id="opt-out-status">
+					              <iframe id="ooStatusFrame" src="http://oo.afy11.net/NAIIsOptOut.aspx?nocache=0.2900599" width="259" height="60" style="overflow:hidden;border:none;border:solid 1px #eee;" scrolling="no"></iframe>
+					            </div>
+					            <div class="opt_btn_wrapper">
+					              <a name="oo" id="ooButton" class="button opt_btn" id="btn-opt-out">Opt-Out</a><br />
+					              <iframe id="ooResponseFrame" src="" width="30" height="30" style="border:none;position:relative;top:10px;margin-top:-30px;" ></iframe>
+					            </div>
+					            <p>
+					                <script language="JavaScript" type="text/javascript">
+					                       document.getElementById('ooButton').onclick = function () {
+					                           document.getElementById('ooResponseFrame').src = 'http://oo.afy11.net/NAIOptOut.aspx';
+					                           setTimeout(function () { document.getElementById('ooStatusFrame').src = 'http://oo.afy11.net/NAIIsOptOut.aspx?nocache=0.2900600'; }, 200);
+					                           return false;
+					                       } 
+					                </script>
+					            </p>
+					        </div>
 
 					        <?php } ?>
 								<!-- end of content wrapper -->
