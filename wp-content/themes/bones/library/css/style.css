@@ -6082,7 +6082,7 @@ img.rsImg {
 
 /* line 112, ../scss/partials/_wen.scss */
 .entry-content a {
-  color: #ed228b !important;
+  color: #ed228b;
 }
 /* line 115, ../scss/partials/_wen.scss */
 .entry-content a:hover {

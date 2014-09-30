@@ -107,10 +107,10 @@
 
 }
 
-// policy pages link styling
+//policy pages link styling
 .entry-content {
 	a {
-		color: $brand-color !important;
+		color: $brand-color;
 
 		&:hover {
 		text-decoration: underline;
