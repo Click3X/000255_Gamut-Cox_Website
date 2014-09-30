@@ -1,0 +1,32 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Desktop Stylsheet
+
+This is the desktop size. It's larger than an iPad so it will only
+be seen on the Desktop.
+
+******************************************************************/
+
+.wrap {
+  // width: 1040px;
+  width: 1000px;
+}
+
+.lower-columns ul li{
+	width: 27%;
+}
+
+.lower-contact li {
+	width: 27%;
+}
+
+.footer-links-content {
+	width: 95%;
+}
+
+// #main > section > div > div > div
+.lower-columns ul li ul li {
+	width: 100%;
+}
