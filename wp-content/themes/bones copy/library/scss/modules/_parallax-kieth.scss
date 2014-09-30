@@ -1,0 +1,659 @@
+// html.home-para, body.home {height:100%; overflow-x:hidden; width:100%;}
+// * html.home-para .clearfix { height: 1%; }
+
+// body.home {
+//   // overflow-y:auto;
+//   // overflow-y:hidden;
+// }
+
+
+.home #container {
+    overflow-x:hidden;
+  }
+// @media(max-width:811px) {
+//   .home #container {
+//     overflow-x:hidden;
+//   }
+// }
+
+#inner-header{
+  position: relative;
+}
+
+#group1 {
+  // background-color: white;
+  margin-bottom: -10px;
+}
+
+/// WORD BREAK STYLES IN IE
+
+
+  /* Parallax-kieth base styles
+  --------------------------------------------- */
+@media(min-width: 811px) {
+  .parallax-kieth {
+    height: 800px; /* fallback for older browsers */
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 300px;
+    perspective: 300px;
+  }
+}
+
+.mobile #group4 .subpage .blue, .mobile #group4 .subpage .red, {
+   @media(min-width: 1200px) {
+    padding-bottom: 100px;
+  }
+}
+
+
+  
+#parallax-kieth {
+  .blue,
+  .red {
+    @media(min-width: 1200px) {
+      padding-bottom: 100px;
+    }
+  }
+
+  @media(min-width: 811px) {
+    .parallax__group {
+      position: relative;
+      height: 500px; /* fallback for older browsers */
+      height: 100vh;
+      -webkit-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+    }
+  
+
+    .parallax__layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+  
+    .parallax__layer--fore {
+      -webkit-transform: translateZ(90px) scale(.7);
+      transform: translateZ(90px) scale(.7);
+      z-index: 1;
+    }
+
+    .parallax__layer--base {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      z-index: 4;
+    }
+
+    .parallax__layer--back {
+      -webkit-transform: translateZ(-300px) scale(2);
+      transform: translateZ(-300px) scale(2);
+      z-index: 3;
+    }
+
+    .parallax__layer--deep {
+      -webkit-transform: translateZ(-600px) scale(3);
+      transform: translateZ(-600px) scale(3);
+      z-index: 2;
+    }
+
+    .parallax__group {
+      -webkit-transition: -webkit-transform 0.5s;
+      transition: transform 0.5s;
+    }
+  }
+
+  .title {
+    text-align: center;
+
+    @media(min-width: 811px) {
+      position: absolute;
+      left: 50%;
+      top:54%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  /* style the groups
+  --------------------------------------------- */
+
+  #group1 { 
+      @media(min-width:811px) { 
+        z-index: 5; /* slide over group 2 */ 
+      }
+    }
+  #group1 .parallax__layer--base { }
+
+  #group2 { 
+      @media(min-width:811px) { 
+        z-index: 3; /* slide under groups 1 and 3 */ 
+      }
+    }
+  #group2 .parallax__layer--back { }
+
+  #group3 { 
+      @media(min-width:811px) { 
+        z-index: 4; /* slide over group 2 and 4 */ 
+      }
+    }
+  #group3 .parallax__layer--base { background: rgb(61,61,61); }
+
+  #group4 { 
+      @media(min-width:811px) { 
+        z-index: 2; /* slide under group 3 and 5 */ 
+      }
+    }
+  #group4 .parallax__layer--deep { background:#fff; }
+
+  #group5 { 
+      @media(min-width:811px) { 
+        z-index: 3; /* slide over group 4 and 6 */ 
+      }
+    }
+  #group5 .parallax__layer--base { background: rgb(61,61,61); }
+
+  #group6 {
+    @media(min-width:811px) { 
+      z-index: 2; /* slide under group 5 and 7 */
+    }
+
+    #smart-service-bg {
+      position: absolute;
+      // z-index: 1;
+      z-index: 20;
+      height: 740px;
+      top: -100px;
+      background-position: 40% 0;
+    }
+
+    #careers-bg {
+      height: 672px;
+      position: absolute;
+      z-index: 100;
+      right: 0;
+      top: 170px;
+      background-position: 0% 0;
+
+      @media(min-width: 1200px) {
+        top:190px;
+        height: 691px;
+      }
+    }
+  }
+
+  #group6 .parallax__layer--back { }
+
+  #group7 {
+    @media(min-width:811px) { 
+      z-index: 3; /* slide over group 7 */
+    }
+  }
+  #group7 .parallax__layer--base { }
+
+#group2 .parallax__layer--back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    // padding-bottom:50%;
+    padding-bottom: 80%;
+    z-index: -1;
+  }
+
+  @media(min-width: 811px) {
+    #group1 { height: 736px; }
+    #group2 { height: 467px; }
+    #group2 .parallax__layer--back {
+      padding-bottom: 700px;
+      top: -50px;
+      z-index:3;
+    }
+    #group3 { height: 504px; }
+    #group4 { height: 1387px; }
+    #group5 { height: 536px; }
+    #group6 { height: 522px; }
+    #group7 { height: 510px; }
+
+    .clearfix.new-b {
+      width: 50%;
+      padding-bottom: 440px;
+      position: absolute;
+      left: 0;
+      background:rgb(248,248,239);
+    }
+
+    #group6,
+    #group7 {
+      .ccc-holder {
+        width:100%;
+        max-width: none;
+        .gamut-btn {
+          margin-left:0;
+          margin-top:2rem;
+        }
+      }
+    }
+
+    .p-holder p {
+      max-width: 27em;
+      text-align: left;
+    }
+
+    #group6 {
+      .c-smart {
+      background-color: #ffffff;
+      max-width:none;
+      width: 50%;
+      float: right;
+      position: absolute;
+      left: 50%;
+      top:0;
+      height: 521px;
+
+      .h1-hold {
+        padding-top: 100px;
+        padding-left:1em;
+      }
+
+      p {
+          max-width: 20em;
+        }
+      }
+    }
+
+    #group7 {
+      .h1-hold {
+        max-width: 650px;
+        width: 100%;
+        float: right;
+      }
+    }
+  }
+
+
+  .no-vis {
+    opacity: 0;
+  }
+
+  #group6 {
+    h1, p {
+      width: 100%;
+    }
+    h1, p, .c-btn-hold {
+        // max-width: 681px;
+        width:100%;
+        max-width: 651px;
+        float:left;
+      }
+  }
+
+  .smart-service-bag,
+  .careers-bag {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:50%;
+    // padding-bottom:590px;
+    padding-bottom:440px;
+  }
+
+  .smart-service-bag {
+    clear:left;
+  }
+
+  .careers-bag {
+    float: right;
+  }
+
+
+  .ccc-holder {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+  .c-career {
+    background: rGB(248,248,239);
+    height:auto;
+    padding-bottom: 2rem;
+    width:100%;
+    @media(min-width: 811px) {
+      width:50%;
+      height: 510px;
+      padding-bottom:0;
+    }
+
+    .h1-hold {
+      padding-right: 1em;
+    }
+
+    h1, p {
+      width:100%;
+    }
+    
+    h1 {
+      max-width: 651px;
+    }
+
+    p {
+      max-width:19.5em;
+    }
+
+    .gamut-btn {
+      margin-top:2rem;
+      margin-left:0;
+    }
+  }
+
+  .c-smart {
+    max-width: 615px;
+    width:100%;
+    @media(min-width: 811px) {
+      width:50%;
+      float: right;
+    }
+  }
+
+  .footer {
+    z-index: 1000;
+  }
+}
+
+
+
+
+
+
+.debug {
+  position: fixed;
+  top: 100px;
+  left: .5em;
+  z-index: 999;
+  background: rgba(0,0,0,.85);
+  color: #fff;
+  padding: .5em;
+  border-radius: 0 0 5px 5px;
+}
+.debug-on .parallax__group {
+  -webkit-transform: translate3d(800px, 0, -800px) rotateY(30deg);
+  transform: translate3d(700px, 0, -800px) rotateY(30deg);
+}
+.debug-on .parallax__layer {
+  box-shadow: 0 0 0 2px #000;
+  opacity: 0.9;
+}
+.parallax__group {
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+}
+
+
+.c-career {
+  p {
+    max-width: 19.5em;
+  }
+
+  h1 {
+    position: relative;
+   &:before {
+      content: "";
+      display: block;
+      background-image: url("../../../../../img/new-beams/our-solutions.png");
+      background-size: cover;
+      position: absolute;
+      margin:auto;
+      
+      right: 0;
+      width: 783px;
+
+      top: -1.5em;
+      bottom: 0;
+      left: -1320px;
+
+      height: 100%;
+      max-height: 5px;
+      z-index: 10;
+
+      @media(min-width: 811px) {
+       right: 0;
+        left: -1450px;
+        top: .5em;
+        bottom: auto;
+
+      }
+    }
+  }
+}
+
+
+
+
+#group3,
+#group5 {
+  h1 {
+    position: relative;
+
+    &:before {
+      content: "";
+      display: block;
+      background-image: url("../../../../../img/new-beams/our-solutions.png");
+      background-size: cover;
+      position: absolute;
+      // top: .5em;
+      bottom: 0;
+      right: 0;
+      width: 783px;
+
+      top: -.5em;
+      bottom: 0;
+      left: -762px;
+
+      height: 100%;
+      max-height: 5px;
+      z-index: 10;
+
+      @media(min-width: 811px) {
+        top: .5em;
+        bottom: 0;
+        left: -812px;
+      }
+    }
+  }
+  p {
+    position: relative;
+    &:after {
+      content: "";
+      display: block;
+      background-image: url("../../../../../img/new-beams/diff-right.png");
+      background-size: cover;
+      position: absolute;
+
+      width: 842px;
+      height: 100%;
+      max-height: 5px;
+      margin: auto;
+      z-index: 10;
+      right: -802px;
+
+      @media(min-width: 811px) {
+        right: -862px;
+        top:0;
+        bottom:0;
+      }
+    }
+  }
+}
+
+
+
+
+.gamut-btn {
+    background-color: black;
+    border-color:black;
+    color:white !important;
+    margin-left: 0;
+    margin-top:2em;
+  }
+
+.plus-sign {
+  position: relative;
+  max-width: 7.5em;
+  margin-left: .8em;
+}
+
+.plus-sign:after {
+  content: "";
+  display: block;
+  background-image: url('../../../../../img/plus-sign.png');
+  width: 1.25rem;
+  height: 1.25rem;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  margin: auto;
+  left: -.8em;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media(min-width:400px) {
+    width: 1.65rem;
+    height: 1.65rem;
+  }
+
+  @media(min-width:1040px) {
+     width: 2.15rem;
+    height: 2.15rem;
+  }
+
+  @media(min-width: 1340px) { 
+    width: 2.65rem;
+    height: 2.65rem;
+  }
+}
+
+
+#parallax-kieth #group4 {
+  @media(min-width: 900px) {
+    height: 1430px; 
+  }
+
+  @media(min-width: 1040px) {
+    // height: 1540px;
+    height: 1860px;
+  }
+
+  // @media(min-width: 1200px) {
+  //   height: 1600px;
+  // }
+}
+
+
+
+#group6 {
+  .parallax__layer--back {
+    .cc-bg-holder {
+      background: rgb(248,248,239);
+      height: 170%;
+
+      @media(min-width: 960px) {
+        height: 160%;
+      }
+    }
+  }
+}
+
+.blue,
+.red > img {
+  // z-index: 100;
+  z-index:20;
+  background-color: white;
+}
+
+#parallax-kieth {
+  #group4 .subpage .red,
+  #group4 .subpage .blue {
+    padding-bottom: 70px;
+    @media(min-width:811px) {
+      padding-bottom: 100px;
+    }
+  }
+
+  #fly-it {
+    // top: -34px;
+    height: 4px;
+    width:382px;
+
+    top: -19px;
+
+    @media(min-width: 980px) {
+      height: 3px;
+      width: 1070px;
+      top: -24px;
+    }
+
+  }
+}
+
+.ss-bg-mobile {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding-bottom: 50%;
+}
+
+#parallax-kieth {
+  .c-mobile {
+    @media(min-width: 811px) {
+      display: none;
+    }
+  }
+
+  .subpage-wrap {
+    border-bottom: 2px dashed #d8d8d8;
+
+    &:last-of-type {
+      border-bottom:0;
+    }
+  }
+
+  .subpage {
+      background-color: white;
+      width: 90%;
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+
+   p {
+      font-size: 1.1em;
+      line-height: 1.15em;
+      @media(min-width: 811px) {
+        font-size: 1.4em;
+      }
+
+      @media(min-width: 1200px) {
+        font-size: 1.6em;
+      }
+    }
+    
+    h1 {
+      font-size: 1.9em;
+      
+      @media(min-width:400px) {
+        font-size: 2.5em;
+      }
+
+      @media(min-width: 811px) {
+        font-size: 2.8em;
+      }
+
+      @media(min-width: 1200px) {
+        font-size: 4em;
+      }
+
+      @media(min-width: 1300px) {
+        font-size: 4.5em;
+      }
+    }
+  }
