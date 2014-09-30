@@ -34,7 +34,8 @@
         ?>
         <?php if ( $detect->isMobile() ) : ?>
 
-          <img src="<?php echo $images[0]; ?>" width="100%"/>
+          <!-- <img src="<?php echo $images[0]; ?>" width="100%"/> -->
+          <img src="<?php bloginfo('url'); ?>/wp-content/videos/gamut_intro_1.gif" width="100%"/>
           <?php  else : ?>
 <!--           <img src="<?php echo $images[0]; ?>" width="100%"/> -->
           <video width="100%" style="width:100%; height:auto;" loop autoplay muted>
@@ -42,7 +43,7 @@
             
             <source src="<?php bloginfo('url'); ?>/wp-content/videos/GAMUT_new.mp4" type="video/mp4">
             <source src="<?php bloginfo('url'); ?>/wp-content/videos/GAMUT_new.ogv" type="video/ogg">
-              <source src="<?php bloginfo('url'); ?>/wp-content/videos/GAMUT_new.webm" type="video/webm">
+            <source src="<?php bloginfo('url'); ?>/wp-content/videos/GAMUT_new.webm" type="video/webm">
             
             <img src="<?php bloginfo('url'); ?>/wp-content/videos/gamut_intro_1.gif" width="100%"/>
           </video>
