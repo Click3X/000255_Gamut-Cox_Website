@@ -202,7 +202,7 @@ function bones_scripts_and_styles() {
         wp_register_script( 'hide-scroll' , get_stylesheet_directory_uri() . '/library/js/hide-scroll.js', array('jquery'), '', true );
 
         // PLAY SOUND
-        wp_register_script( 'play-sound' , get_stylesheet_directory_uri() . '/library/js/play-sound.js', array(), '', true );
+        wp_register_script( 'play-sound' , get_stylesheet_directory_uri() . '/library/js/play-sound.js', array('jquery'), '', true );
 
 
         // enqueue styles and scripts

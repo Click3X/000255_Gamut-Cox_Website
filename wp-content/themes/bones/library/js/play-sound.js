@@ -23,13 +23,20 @@ window.onload = function() {
 
 			// Update the button text
 			// muteButton.innerHTML = "Unmute";
-			muteButton.innerHTML = "Play Sound";
+			// muteButton.innerHTML = "Play Sound";
+			jQuery(muteButton).removeClass('playsound');
+			jQuery(muteButton).addClass('stopsound');
+
 		} else {
 			// Unmute the video
 			video.muted = false;
 
 			// Update the button text
-			muteButton.innerHTML = "Stop Sound";
+			// muteButton.innerHTML = "Stop Sound";
+
+			jQuery(muteButton).addClass('playsound');
+			jQuery(muteButton).removeClass('stopsound');
+			
 		}
 	});
 
