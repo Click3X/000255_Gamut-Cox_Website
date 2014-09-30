@@ -577,6 +577,82 @@
 }
 
 // VIDEO PLAY BUTTON
-#video-play {
-	
+#video-controls {
+	position: absolute;
+	background-color: transparent;
+	border-color:transparent;
+	outline-color:transparent;
+	color:transparent;
+
+	top:20px;
+	right:20px;
+}
+
+// #mute {
+// 	text-transform: uppercase;
+// 	letter-spacing: .07em;
+// 	font-size: .82em;
+// 	border: 0;
+// 	font-weight: normal;
+
+// 	line-height: 1.5em;
+// 	padding: .7em 2em .5em 1.85em;
+// 	font-size: .82rem;
+// 	letter-spacing: .07rem;
+// 	font-weight: normal;
+// 	position: relative;
+
+// 	outline:none;
+
+// 	@include prefix(transition, all 500ms);
+
+// 	&:after {
+// 		content: "";
+// 		display: block;
+// 		width: 6px;
+// 		height: 6px;
+// 		position: absolute;
+// 		top: 0;
+// 		bottom: 0;
+// 		right: .75rem;
+// 		border-left: 6px solid #ed228b;
+// 		border-top: 6px solid transparent;
+// 		border-bottom: 6px solid transparent;
+// 		margin: auto;
+
+// 		@include prefix(transition, all 500ms);
+// 	}
+
+// 	&:hover {
+// 		outline: none;
+// 		background-color: #ed228b;
+
+// 		&:after {
+// 			border-left: 6px solid #FFF;
+// 		}
+// 	}
+// }
+
+#mute {
+	background-color: transparent;
+	border:0;
+	width: 52px; height: 50px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	outline: 0;
+	border-color:transparent;
+	outline-color:transparent;
+	color:transparent;
+
+	@include prefix(transition, all 200ms);
+}
+
+#mute.playsound {
+	background-image:url('../../../../../img/SOUND_Btn.png');
+	outline: 0;
+}
+
+#mute.stopsound {
+	background-image:url('../../../../../img/SOUND_Btn-mute.png');
+	outline: 0;
 }

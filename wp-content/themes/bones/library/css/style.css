@@ -4040,6 +4040,48 @@ a {
     position: relative;
   }
 }
+/* line 580, ../scss/partials/_home_addons.scss */
+#video-controls {
+  position: absolute;
+  background-color: transparent;
+  border-color: transparent;
+  outline-color: transparent;
+  color: transparent;
+  top: 20px;
+  right: 20px;
+}
+
+/* line 636, ../scss/partials/_home_addons.scss */
+#mute {
+  background-color: transparent;
+  border: 0;
+  width: 52px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  outline: 0;
+  border-color: transparent;
+  outline-color: transparent;
+  color: transparent;
+  -webkit-transition: all 200ms;
+  -moz-transition: all 200ms;
+  -o-transition: all 200ms;
+  -ms-transition: all 200ms;
+  transition: all 200ms;
+}
+
+/* line 650, ../scss/partials/_home_addons.scss */
+#mute.playsound {
+  background-image: url("../../../../../img/SOUND_Btn.png");
+  outline: 0;
+}
+
+/* line 655, ../scss/partials/_home_addons.scss */
+#mute.stopsound {
+  background-image: url("../../../../../img/SOUND_Btn-mute.png");
+  outline: 0;
+}
+
 @media (min-width: 811px) {
   /* line 2, ../scss/modules/_para-friday.scss */
   .page-id-466,

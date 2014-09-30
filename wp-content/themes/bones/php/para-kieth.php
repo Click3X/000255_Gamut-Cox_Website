@@ -41,7 +41,8 @@
 
             <!-- VIDEO CONTROLS -->
             <div id="video-controls">
-              <button id="video-play" class="gamut-btn" type="button" id="mute">Play Sound</button>
+              <button id="mute" class="stopsound" type="button"></button>
+              <!-- <button class="gamut-btn" type="button" id="mute">Play Sound</button> -->
             </div>
 
         <?php endif; ?>
