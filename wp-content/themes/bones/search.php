@@ -49,16 +49,16 @@
 										<section class="entry-content">
 											<h2><?php _e( 'Try your search again.', 'bonestheme' ); ?></h2>
 										</section>
-										<footer class="article-footer">
+<!-- 										<footer class="article-footer">
 												<p><?php _e( 'This is the error message in the search.php template.', 'bonestheme' ); ?></p>
-										</footer>
+										</footer> -->
 									</article>
 
 							<?php endif; ?>
 
 						</div>
 
-							<?php get_sidebar(); ?>
+							<?php //get_sidebar(); ?>
 
 					</div>
 
