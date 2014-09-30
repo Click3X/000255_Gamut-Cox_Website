@@ -488,10 +488,15 @@ h1 {
 
 // PUSH FOOTER DOWN TO NOT HAVE COLOR BEAM INTERFERE
 // body:not(.home) #content {
-body #content {
-	margin-bottom: 80px;
+// body #content {
+// 	// margin-bottom: 80px;
+// }
+body #content + div {
+	clear: both;
+	width: 100%;
+	height: 80px;
+	background: white;
 }
-
 
 
 // BULLETS ON COLUMNS

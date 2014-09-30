@@ -7250,12 +7250,15 @@ h1 {
 
   /* end .nav */
 }
-/* line 491, ../scss/partials/_charles-font.scss */
-body #content {
-  margin-bottom: 80px;
+/* line 494, ../scss/partials/_charles-font.scss */
+body #content + div {
+  clear: both;
+  width: 100%;
+  height: 80px;
+  background: white;
 }
 
-/* line 498, ../scss/partials/_charles-font.scss */
+/* line 503, ../scss/partials/_charles-font.scss */
 .lower-columns ul li ul li {
   line-height: 1.1rem;
   padding: .2rem 0;
@@ -7263,7 +7266,7 @@ body #content {
   padding-left: 1.25em;
 }
 
-/* line 507, ../scss/partials/_charles-font.scss */
+/* line 512, ../scss/partials/_charles-font.scss */
 .lower-columns ul li ul li:before {
   color: #ed228b;
   content: "\2022";
@@ -7278,39 +7281,39 @@ body #content {
   height: 1em;
 }
 
-/* line 522, ../scss/partials/_charles-font.scss */
+/* line 527, ../scss/partials/_charles-font.scss */
 .page-id-13 .lower-columns ul li ul li:before {
   color: #fba211;
 }
 
-/* line 528, ../scss/partials/_charles-font.scss */
+/* line 533, ../scss/partials/_charles-font.scss */
 .page-id-15 .lower-columns ul li ul li:before {
   color: #039fd3;
 }
 
-/* line 534, ../scss/partials/_charles-font.scss */
+/* line 539, ../scss/partials/_charles-font.scss */
 .page-id-24 .lower-columns ul li ul li:before {
   color: #8fc73e;
 }
 
-/* line 540, ../scss/partials/_charles-font.scss */
+/* line 545, ../scss/partials/_charles-font.scss */
 .page-id-11 .lower-columns ul li ul li:before {
   color: #dd1420;
 }
 
-/* line 548, ../scss/partials/_charles-font.scss */
+/* line 553, ../scss/partials/_charles-font.scss */
 #sidebar1 {
   padding-left: 0;
   position: relative;
 }
 @media (min-width: 811px) {
-  /* line 548, ../scss/partials/_charles-font.scss */
+  /* line 553, ../scss/partials/_charles-font.scss */
   #sidebar1 {
     padding-left: 10px;
   }
 }
 
-/* line 557, ../scss/partials/_charles-font.scss */
+/* line 562, ../scss/partials/_charles-font.scss */
 .sidebar-selected {
   color: #ed228b;
 }

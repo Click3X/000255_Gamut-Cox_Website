@@ -122,7 +122,6 @@
 								<div class="iab_logo_container">
 								<a href="http://www.iab.net/about_the_iab/recent_press_releases/press_release_archive/press_release/pr-051314?gko=96140" target="blank" class="iab_logo">
 									<img src="<?php bloginfo('url'); ?>/img/iab_logo.png">
-									<!-- <div class="iab_learn_more">Learn More</div> -->
 								</a>
 								</div>				
 
@@ -172,23 +171,13 @@
 					echo '</div>'; // END GROUP 7
 				echo '</div>'; // END PARALLAX
 			}
-
-
-			// if( is_page(472) || is_home() || is_page_template('Dev Fix Overflow') ) {
+			else {
 				echo '</div>'; // ADDED TO FIX HTML VALIDATION
-			// 	// echo '<script>
-			// 	//     var debugInput = document.querySelector("input");
-			// 	//     function updateDebugState() {
-			// 	//         document.body.classList.toggle("debug-on", debugInput.checked);
-			// 	//     }
-			// 	//     debugInput.addEventListener("click", updateDebugState);
-			// 	//     updateDebugState();
-			// 	//   </script>';
-			// }
+			}
 
 			?>
 
-		</div> <!-- END CONTAINER -->
+		</div>
 
 		<?php // all js scripts are loaded in library/bones.php ?>
 		<?php wp_footer(); ?>
