@@ -1,9 +1,4 @@
-<?php get_header();
-
-// GET PAGE ID;
-// $page_id = get_queried_object_id();
-
- ?>
+<?php get_header(); ?>
 
 	<div id="content" class="fixed-header-bg">
 	<?php
