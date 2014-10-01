@@ -85,6 +85,7 @@ add_image_size( 'para-bg', 800, 533, true );
 
 // SET IMAGE SIZES FOR MOBILE
 add_image_size( 'mobile', 480, 119, true );
+add_image_size( 'mobile-crop', 480, 200, false );
 add_image_size( 'tablet', 960, 237, true );
 
 /*
