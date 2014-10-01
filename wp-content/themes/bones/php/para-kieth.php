@@ -96,7 +96,8 @@
               <?php echo $reps_intro_content; ?>
             </div>
             <div class="clearfix half blue">
-              <a href="<?php echo get_permalink(15);?>" class="gamut-btn abs-center" id="home-btn-rep">LEARN HOW&nbsp;&nbsp;<span class="arrow-right" id="home-btn-rep-arrow"></span></a>
+            <a href="<?php echo get_permalink(15);?>" class="gamut-btn abs-center" id="home-btn-rep">LEARN HOW&nbsp;&nbsp;<span class="arrow-right" id="home-btn-rep-arrow"></span></a>
+
             </div>
             <div class="clearfix half red">
               <img id="rep-logo" src="<?php bloginfo('url'); ?>/img/home-logos/reps-logo.png" alt="reps">
@@ -112,7 +113,8 @@
               <?php echo $reach_intro_content; ?>
             </div>
             <div class="clearfix half blue">
-              <a href="<?php echo get_permalink(24);?>" class="gamut-btn abs-center" id="home-btn-rea">LEARN HOW&nbsp;&nbsp;<span class="arrow-right" id="home-btn-rea-arrow"></span></a>
+<!--               <a href="<?php echo get_permalink(24);?>" class="gamut-btn abs-center" id="home-btn-rea">LEARN HOW&nbsp;&nbsp;<span class="arrow-right" id="home-btn-rea-arrow"></span></a> -->
+              <a href="<?php echo get_permalink(45);?>" id="home-btn-rep"><button>LEARN HOW&nbsp;&nbsp;<span class="arrow-right" id="home-btn-rea-arrow"></span></button></a>
             </div>
             <div class="clearfix half red">
               <img id="reach-logo" src="<?php bloginfo('url'); ?>/img/home-logos/reach-logo.png" alt="reach">
