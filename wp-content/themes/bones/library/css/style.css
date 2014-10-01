@@ -2860,7 +2860,6 @@ hr {
 @media (max-width: 1200px) {
   /* line 465, ../scss/partials/_custom.scss */
   .page-header {
-    background-size: 100% auto;
     background-repeat: no-repeat;
   }
 }
