@@ -114,7 +114,7 @@
             </div>
             <div class="clearfix half blue">
 <!--               <a href="<?php echo get_permalink(24);?>" class="gamut-btn abs-center" id="home-btn-rea">LEARN HOW&nbsp;&nbsp;<span class="arrow-right" id="home-btn-rea-arrow"></span></a> -->
-              <a href="<?php echo get_permalink(45);?>" id="home-btn-rep"><button>LEARN HOW&nbsp;&nbsp;<span class="arrow-right" id="home-btn-rea-arrow"></span></button></a>
+              <a href="<?php echo get_permalink(24);?>"><button class="home-btn-test">LEARN HOW&nbsp;&nbsp;<span class="arrow-right" id="home-btn-rea-arrow"></span></button></a>
             </div>
             <div class="clearfix half red">
               <img id="reach-logo" src="<?php bloginfo('url'); ?>/img/home-logos/reach-logo.png" alt="reach">
