@@ -10,7 +10,7 @@ echo '<style>';
         if($home_img == 'gamut-defined-bg') {
             $img_sizes = array('home-p-mobile','home-p-tablet','full');
         } else {
-            $img_sizes = array('para-bg-tablet','para-bg-mobile','para-bg');
+            $img_sizes = array('para-bg-tablet','para-bg','para-bg');
         }
 
         $meta_values = get_post_meta( $post_id, $home_img, $single );
@@ -34,7 +34,7 @@ echo '<style>';
                     background-image:url("'.$tablet.'");
                 }
             }
-            @media(min-width:768px) {
+            @media(min-width:811px) {
                 .'. $home_img .' {
                     background-image:url("'.$desk.'");
                 }

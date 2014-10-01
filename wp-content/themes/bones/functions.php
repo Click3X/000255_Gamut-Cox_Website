@@ -81,7 +81,7 @@ add_image_size( 'emp-large', 250, 250, true );
 add_image_size( 'emp-individual', 290, 440, true );
 
 // SET IMAGE SIZE FOR PARALLAX BACKGROUND
-add_image_size( 'para-bg-mobile', 240, 160, array( 'center', 'center' ) );
+// add_image_size( 'para-bg-mobile', 240, 160, array( 'center', 'center' ) );
 add_image_size( 'para-bg-tablet', 480, 320, array( 'center', 'center' ) );
 add_image_size( 'para-bg', 800, 533, true );
 
