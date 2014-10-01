@@ -95,6 +95,7 @@
                         background-image:url("'.$mobile.'");
                         background-repeat:no-repeat;
                         background-size:cover; 
+                        background-position:50% 50%; 
                         height:auto;
                     }
                     @media(min-width:481px) {
