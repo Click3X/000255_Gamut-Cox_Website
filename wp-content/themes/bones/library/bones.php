@@ -228,10 +228,10 @@ function bones_scripts_and_styles() {
 		wp_enqueue_script( 'fancyboxpack-js' );
 
 		// CONDITIONAL SCRIPT TO ONLY LOAD EXP-GRID-JS AND EXP-GRID-CSS ON 'WHO-WE-ARE' PAGE id = 45
-		if( is_page(45) || is_page(48)) {
-			// wp_enqueue_style( 'exp-grid-css' );
-			wp_enqueue_script( 'exp-grid-js' );
-		}
+		// if( is_page(45) || is_page(48)) {
+		// 	// wp_enqueue_style( 'exp-grid-css' );
+		// 	wp_enqueue_script( 'exp-grid-js' );
+		// }
 
 		// CONDITIONAL SCRIPT TO LOAD GOOGLE MAPS ON CONTACT PAGE
 		if(is_page(9)) {
