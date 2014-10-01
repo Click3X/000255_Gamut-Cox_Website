@@ -7519,6 +7519,24 @@ body #content + div {
   line-height: 1.5em;
 }
 
+/* line 22, ../scss/partials/_contact-addons.scss */
+.city-map-link {
+  text-decoration: none;
+}
+/* line 25, ../scss/partials/_contact-addons.scss */
+.city-map-link .city {
+  color: #323944;
+  -webkit-transition: all 400ms;
+  -moz-transition: all 400ms;
+  -o-transition: all 400ms;
+  -ms-transition: all 400ms;
+  transition: all 400ms;
+}
+/* line 29, ../scss/partials/_contact-addons.scss */
+.city-map-link .city:hover {
+  color: #eb0a8d;
+}
+
 /* line 2, ../scss/partials/_contact-maps.scss */
 #map-canvas {
   background-size: cover;

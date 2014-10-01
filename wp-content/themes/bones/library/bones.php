@@ -204,6 +204,8 @@ function bones_scripts_and_styles() {
         // PLAY SOUND
         wp_register_script( 'play-sound' , get_stylesheet_directory_uri() . '/library/js/play-sound.js', array('jquery'), '', true );
 
+        // PAN TO MARKER
+        wp_register_script( 'pan-to-marker' , get_stylesheet_directory_uri() . '/library/js/pan-to-marker.js', array('jquery'), '', true );
 
         // enqueue styles and scripts
 		wp_enqueue_script( 'bones-modernizr' );
@@ -233,8 +235,7 @@ function bones_scripts_and_styles() {
 
 		// CONDITIONAL SCRIPT TO LOAD GOOGLE MAPS ON CONTACT PAGE
 		if(is_page(9)) {
-			// wp_enqueue_script( 'google-maps' );
-			// wp_enqueue_script( 'g-maps' );
+            wp_enqueue_script( 'pan-to-marker' );
 		}
 
 		// CONDITIONAL SCRIPT TO LOAD ROYALSLIDER ON HOME PAGE
@@ -243,15 +244,6 @@ function bones_scripts_and_styles() {
 			wp_enqueue_script( 'jq-easing' );
 			wp_enqueue_script( 'rs-js' );
 			wp_enqueue_script( 'rs-slider' );
-			// wp_enqueue_style( 'scroll-css' );
-			
-			// wp_enqueue_script( 'tweenMax' );
-			// wp_enqueue_script( 'timelineMax' );
-			// wp_enqueue_script( 'scrollorama' );
-			// wp_enqueue_script( 'scroll' );
-
-			// wp_enqueue_script( 'in-view' );
-			// wp_enqueue_script( 'in-view-page' );
 
             wp_enqueue_script( 'hide-scroll' );
 

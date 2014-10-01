@@ -51,21 +51,25 @@ endif;
 											
 									<ul>
 
-										<?php while(has_sub_field('location-list')): ?>
+										<?php while(has_sub_field('location-list')): 
+											$city_title = get_sub_field('city');
+										?>
 
 											<li class="location">
-												<ul class="clearfix city">
-													<li><h3 class="gothic"><?php the_sub_field('city'); ?></h3></li>
-													<li><?php the_sub_field('street_address'); ?></li>
-													<?php if( get_sub_field('additional_address_info') ) {
-														echo '<li>'.get_sub_field('additional_address_info').'</li>';
-													} ?>
-													<li><?php the_sub_field('city'); ?>,&nbsp;<?php the_sub_field('state'); ?>&nbsp;<?php the_sub_field('zip'); ?></li>
-													<li>t: <?php the_sub_field('phone'); ?></li>
-													<?php if( get_sub_field('additional_info') ) {
-														echo '<li>'.get_sub_field('additional_info').'</li>';
-													} ?>
-												</ul>
+												<a id="<?php echo cleanAddress($city_title);?>" href="#" class="clearfix city-map-link">
+													<ul class="clearfix city">
+														<li><h3 class="gothic"><?php the_sub_field('city'); ?></h3></li>
+														<li><?php the_sub_field('street_address'); ?></li>
+														<?php if( get_sub_field('additional_address_info') ) {
+															echo '<li>'.get_sub_field('additional_address_info').'</li>';
+														} ?>
+														<li><?php the_sub_field('city'); ?>,&nbsp;<?php the_sub_field('state'); ?>&nbsp;<?php the_sub_field('zip'); ?></li>
+														<li>t: <?php the_sub_field('phone'); ?></li>
+														<?php if( get_sub_field('additional_info') ) {
+															echo '<li>'.get_sub_field('additional_info').'</li>';
+														} ?>
+													</ul>
+												</a>
 											</li>
 
 										<?php endwhile; ?>
@@ -75,6 +79,8 @@ endif;
 						<?php endif;
 
 						wp_reset_postdata();
+
+						// echo '<script>console.log("These are the locations: "); console.dir(locations); </script>';
 
 						// insert tabs first
 						// insert contact forms

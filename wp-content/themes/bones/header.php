@@ -47,35 +47,7 @@
 		<?php // end of wordpress head ?>
 
 		<?php // drop Google Analytics Here ?>
-		<?php // end analytics 
 
-	
-
-			// if(get_field('social_media_links', 'options')):
-			// 	// SOCIAL MEDIA LINKS
-			// 	echo '<style>';
-
-			// 	while(has_sub_field('social_media_links', 'options')):
-					
-			// 		 $icon = get_sub_field('icon');
-			// 		 $hover = get_sub_field('hover');
-
-			// 		 $class = '.'.cleanString(get_sub_field('title'));
-			// 		 $class_hover = '.'.cleanString(get_sub_field('title')).':hover';
-					 
-			// 		 echo $class.' {background-image:url("'.$hover.'"); background-image:url("'.$icon.'"); background-repeat:no-repeat; display:block; width:44px; height:44px; background-size:cover; }'."\n";
-
-			// 		 echo $class_hover.' {background-image:url("'.$hover.'"); background-repeat:no-repeat; display:block; width:44px; height:44px; background-size:cover; transition: background-image 0.2s; }'."\n";
-
-			// 	endwhile;
-
-			// 	echo '</style>';
-				
-			// endif;
-
-			// wp_reset_postdata();
-
-		?>
 
 		<style>
 
@@ -98,81 +70,85 @@
         <?php
 
         if(is_page(9)) {
-        echo '<script>var iconBase ="'; echo bloginfo('url'); echo '"</script>';
-		echo '<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
-        <script>
-            var nycLatLong = new google.maps.LatLng(40.753519, -73.969971),
-            sfLatLong = new google.maps.LatLng(37.794108,-122.39511),
-            cenUs = new google.maps.LatLng(40.753519, -100.969971),
-            map,
-            mapOptions,
-            marker,
-            sfMarker;
 
-            function initialize() {
+            include('php/LatLong.php');
+            include('php/parseAddress.php');
 
-                mapOptions = {
-                    zoom: 17,
-                    zoomControl: true,
-                    scaleControl: false,
-                    scrollwheel: false,
-                    disableDoubleClickZoom: true,
-                    center:nycLatLong,
-                    disableDefaultUI: true,
-                    styles: [
-                        {"stylers":[
-                            {"hue":"#ff1a00"},
-                            {"invert_lightness":false},
-                            {"saturation":-100},
-                            {"lightness":33},
-                            {"gamma":0.5}
-                            ]
-                        },
-                        {"featureType":"water",
-                        "elementType":"geometry",
-                        "stylers":[
-                            {"color":"#9ba0a5"}
-                            ]
-                        },
-                        {
-                            "featureType": "road.arterial",
-                            "stylers": [
-                              { "visibility": "on" },
-                              { "color": "#ffffff" }
-                            ]
-                          },
-                          {
-                            "featureType": "road.local",
-                            "stylers": [
-                              { "color": "#ffffff" },
-                              { "visibility": "on" }
-                            ]
-                          }
-                    ]
-                };
+            echo '<script>var iconBase ="'; echo bloginfo('url'); echo '"</script>';
+    		echo '<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+            <script>
+                var nycLatLong = new google.maps.LatLng(40.753519, -73.969971),
+                sfLatLong = new google.maps.LatLng(37.794108,-122.39511),
+                cenUs = new google.maps.LatLng(40.753519, -100.969971),
+                map,
+                mapOptions,
+                marker,
+                sfMarker;
 
-                map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+                function initialize() {
 
-                marker = new google.maps.Marker({
-                    position: nycLatLong,
-                    map: map,
-                    icon: iconBase + "/img/map-marker.png"
-                });
+                    mapOptions = {
+                        zoom: 17,
+                        zoomControl: true,
+                        scaleControl: false,
+                        scrollwheel: false,
+                        disableDoubleClickZoom: true,
+                        center:nycLatLong,
+                        disableDefaultUI: true,
+                        styles: [
+                            {"stylers":[
+                                {"hue":"#ff1a00"},
+                                {"invert_lightness":false},
+                                {"saturation":-100},
+                                {"lightness":33},
+                                {"gamma":0.5}
+                                ]
+                            },
+                            {"featureType":"water",
+                            "elementType":"geometry",
+                            "stylers":[
+                                {"color":"#9ba0a5"}
+                                ]
+                            },
+                            {
+                                "featureType": "road.arterial",
+                                "stylers": [
+                                  { "visibility": "on" },
+                                  { "color": "#ffffff" }
+                                ]
+                              },
+                              {
+                                "featureType": "road.local",
+                                "stylers": [
+                                  { "color": "#ffffff" },
+                                  { "visibility": "on" }
+                                ]
+                              }
+                        ]
+                    };
 
-				sfMarker = new google.maps.Marker({
-                    position: sfLatLong,
-                    map: map,
-                    icon: iconBase + "/img/map-marker.png"
-                });
+                    map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+                    
+                    function newMapMarker(location) {
+                        var latlng = new google.maps.LatLng(location["lat"], location["lng"]);
+                        var newMarker = new google.maps.Marker({
+                            position: latlng,
+                            map: map,
+                            icon: iconBase + "/img/map-marker.png"
+                        });
+                        return newMarker;
+                    }
 
-            }
+                    locations.forEach(newMapMarker);
 
-            google.maps.event.addDomListener(window, "load", initialize);
+                }
 
-        </script>';
-		}
+                google.maps.event.addDomListener(window, "load", initialize);
 
+            </script>';
+    		}
 
+            // END GOOGLE SCRIPS CODE
 		?>
         <style>
 

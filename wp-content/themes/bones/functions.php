@@ -252,6 +252,21 @@ function cleanString($string){
 
 }
 
+// CLEAN ADDRESS
+function cleanAddress($string){
+  $search = '/[^[:alpha:]]/';
+  $space = ' ';
+  $replace = '-';
+  $newString = str_replace($search, $replace, $string);
+  $newString = strtolower($newString);
+  $newString = str_replace($space, $replace, $newString);
+
+  return $newString;
+
+}
+
+// $pg_url = preg_replace("/[^a-zA-Z 0-9]+/", " ", $pg_url);
+
 
 
 // EMAIL ADDRESS ANTI-SPAM

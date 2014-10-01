@@ -18,3 +18,16 @@
 		line-height: 1.5em;
 	 }
 }
+
+.city-map-link {
+	text-decoration: none;
+
+	.city {
+		color:rgb(50, 57, 68);
+		@include prefix(transition, all 400ms);
+
+		&:hover {
+			color:#eb0a8d;
+		}
+	}
+}
