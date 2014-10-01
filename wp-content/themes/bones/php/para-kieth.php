@@ -51,7 +51,8 @@
         </div>
 
     </div>
-    <div id="gamut-defined-bg" class="parallax__layer parallax__layer--back" style="background-image: url('<?php echo $bg_img['url'] ?>');background-size: cover; background-repeat:no-repeat;"></div>
+    <!-- <div id="gamut-defined-bg" class="parallax__layer parallax__layer--back gamut-defined-bg" style="background-image: url('<?php echo $bg_img['url'] ?>');background-size: cover; background-repeat:no-repeat;"></div> -->
+    <div id="gamut-defined-bg" class="parallax__layer parallax__layer--back gamut-defined-bg"></div>
   </div>
 
 
@@ -94,15 +95,17 @@
         <div class="clearfix subpage">
           <div class="p-holder">
               <?php echo $reps_intro_content; ?>
-            </div>
-            <div class="clearfix half blue">
+          </div>
+            
+          <div class="clearfix half blue">
             <a href="<?php echo get_permalink(15);?>" class="gamut-btn abs-center" id="home-btn-rep">LEARN HOW&nbsp;&nbsp;<span class="arrow-right" id="home-btn-rep-arrow"></span></a>
+          </div>
 
-            </div>
-            <div class="clearfix half red">
-              <img id="rep-logo" src="<?php bloginfo('url'); ?>/img/home-logos/reps-logo.png" alt="reps">
-              <div id="fly-it-2" class="bg-img reps"></div>
-            </div>
+          <div class="clearfix half red">
+            <img id="rep-logo" src="<?php bloginfo('url'); ?>/img/home-logos/reps-logo.png" alt="reps">
+            <div id="fly-it-2" class="bg-img reps"></div>
+          </div>
+
         </div>
       </div>
 
@@ -170,20 +173,20 @@
     <div class="parallax__layer parallax__layer--back no-vis">
       <!-- SERVICES -->
       <div class="clearfix ss-bg-holder">
-        <div id="smart-service-bg" class="smart-service-bag" style="background-image:url('<?php echo $smart_service_image['sizes']['para-bg']; ?>');"></div>
+        <div id="smart-service-bg" class="smart-service-bag smart-service-image" style="background-image:url('<?php echo $smart_service_image['sizes']['para-bg']; ?>');"></div>
       </div>
 
       <!-- CAREERS -->
       <div class="clearfix new-b"></div>
       <div class="clearfix cc-bg-holder">
-        <div id="careers-bg" class="careers-bag" style="background-image:url('<?php echo $careers_image['sizes']['para-bg']; ?>');"></div>
+        <div id="careers-bg" class="careers-bag careers-image" style="background-image:url('<?php echo $careers_image['sizes']['para-bg']; ?>');"></div>
       </div>
 
 
     </div>
 
     <div class="parallax__layer parallax__layer--base">
-      <div id="ss-bg-mobile" class="clearfix ss-bg-mobile c-mobile" style="background-image:url('<?php echo $smart_service_image['sizes']['para-bg']; ?>');"></div>
+      <div id="ss-bg-mobile" class="clearfix ss-bg-mobile c-mobile smart-service-image" style="background-image:url('<?php echo $smart_service_image['sizes']['para-bg']; ?>');"></div>
 
       <div class="clearfix ccc-holder">
         <div class="clearfix c-smart">
@@ -203,7 +206,7 @@
 
   <div id="group7" class="parallax__group">
     <div class="parallax__layer parallax__layer--base">
-      <div id="cc-bg-mobile" class="clearfix ss-bg-mobile c-mobile" style="background-image:url('<?php echo $careers_image['sizes']['para-bg']; ?>');"></div>
+      <div id="cc-bg-mobile" class="clearfix ss-bg-mobile c-mobile careers-image" style="background-image:url('<?php echo $careers_image['sizes']['para-bg']; ?>');"></div>
       
       <div class="clearfix ccc-holder">
         <div class="clearfix c-career">

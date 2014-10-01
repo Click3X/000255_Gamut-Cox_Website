@@ -62,8 +62,15 @@
                 include('php/parseAddress.php');
             }
 
-            // SERVE SMALLER IMAGES FOR MOBILE
-            include('php/serve-mobile-images.php');
+            // SERVE SMALLER IMAGES FOR MOBILE 
+            // HOME PAGE
+            if(is_page(107)) {
+                include('php/home-mobile-images.php');
+            } else {
+                // ALL OTHER PAGES
+                include('php/serve-mobile-images.php');
+            }
+
 		?>
 
         <style>
