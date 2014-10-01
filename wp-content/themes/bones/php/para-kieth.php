@@ -173,20 +173,23 @@
     <div class="parallax__layer parallax__layer--back no-vis">
       <!-- SERVICES -->
       <div class="clearfix ss-bg-holder">
-        <div id="smart-service-bg" class="smart-service-bag smart-service-image" style="background-image:url('<?php echo $smart_service_image['sizes']['para-bg']; ?>');"></div>
+        <!-- <div id="smart-service-bg" class="smart-service-bag smart-service-image" style="background-image:url('<?php echo $smart_service_image['sizes']['para-bg']; ?>');"></div> -->
+        <div id="smart-service-bg" class="smart-service-bag smart-service-image"></div>
       </div>
 
       <!-- CAREERS -->
       <div class="clearfix new-b"></div>
       <div class="clearfix cc-bg-holder">
-        <div id="careers-bg" class="careers-bag careers-image" style="background-image:url('<?php echo $careers_image['sizes']['para-bg']; ?>');"></div>
+        <!-- <div id="careers-bg" class="careers-bag careers-image" style="background-image:url('<?php echo $careers_image['sizes']['para-bg']; ?>');"></div> -->
+        <div id="careers-bg" class="careers-bag careers-image"></div>
       </div>
 
 
     </div>
 
     <div class="parallax__layer parallax__layer--base">
-      <div id="ss-bg-mobile" class="clearfix ss-bg-mobile c-mobile smart-service-image" style="background-image:url('<?php echo $smart_service_image['sizes']['para-bg']; ?>');"></div>
+      <!-- <div id="ss-bg-mobile" class="clearfix ss-bg-mobile c-mobile smart-service-image" style="background-image:url('<?php echo $smart_service_image['sizes']['para-bg']; ?>');"></div> -->
+      <div id="ss-bg-mobile" class="clearfix ss-bg-mobile c-mobile smart-service-image"></div>
 
       <div class="clearfix ccc-holder">
         <div class="clearfix c-smart">
@@ -206,7 +209,8 @@
 
   <div id="group7" class="parallax__group">
     <div class="parallax__layer parallax__layer--base">
-      <div id="cc-bg-mobile" class="clearfix ss-bg-mobile c-mobile careers-image" style="background-image:url('<?php echo $careers_image['sizes']['para-bg']; ?>');"></div>
+      <!-- <div id="cc-bg-mobile" class="clearfix ss-bg-mobile c-mobile careers-image" style="background-image:url('<?php echo $careers_image['sizes']['para-bg']; ?>');"></div> -->
+      <div id="cc-bg-mobile" class="clearfix ss-bg-mobile c-mobile careers-image"></div>
       
       <div class="clearfix ccc-holder">
         <div class="clearfix c-career">

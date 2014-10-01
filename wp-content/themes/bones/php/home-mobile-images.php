@@ -2,7 +2,6 @@
 echo '<style>';
     $img_sizes = array();
     $post_id = get_queried_object_id();
-    // $key = 'header-image';
     $single = false;
     $home_imgs = array('careers-image', 'gamut-defined-bg', 'smart-service-image');
 
