@@ -12,6 +12,7 @@ if (have_posts()) : while (have_posts()) : the_post();
 $header_image = get_field('header-image');
 $contact_title = get_field('contact-title');
 $locations_title = get_field('locations-title');
+$locations_list = get_field('locations-list');
 $header_image = get_field('header-image');
 
 endwhile;
@@ -53,8 +54,18 @@ endif;
 										<?php while(has_sub_field('location-list')): ?>
 
 											<li class="location">
-												<h3 class="gothic"><?php the_sub_field('city'); ?></h3>
-												<?php the_sub_field('address'); ?>
+												<ul class="clearfix city">
+													<li><h3 class="gothic"><?php the_sub_field('city'); ?></h3></li>
+													<li><?php the_sub_field('street_address'); ?></li>
+													<?php if( get_sub_field('additional_address_info') ) {
+														echo '<li>'.get_sub_field('additional_address_info').'</li>';
+													} ?>
+													<li><?php the_sub_field('city'); ?>,&nbsp;<?php the_sub_field('state'); ?>&nbsp;<?php the_sub_field('zip'); ?></li>
+													<li>t: <?php the_sub_field('phone'); ?></li>
+													<?php if( get_sub_field('additional_info') ) {
+														echo '<li>'.get_sub_field('additional_info').'</li>';
+													} ?>
+												</ul>
 											</li>
 
 										<?php endwhile; ?>
