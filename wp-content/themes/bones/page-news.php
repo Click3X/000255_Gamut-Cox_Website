@@ -23,7 +23,8 @@
 			?>
 
 				<header class="clearfix article-header">
-					<div class="page-header" style="background-image: url('<?php echo $header_image['url'] ?>')"></div>					
+					<!-- <div class="page-header" style="background-image: url('<?php echo $header_image['url'] ?>')"></div> -->
+					<div id="page-header-<?php echo get_queried_object_id(); ?>" class="page-header"></div>
 				</header>
 
 				<div class="wrap-wrap cf">
