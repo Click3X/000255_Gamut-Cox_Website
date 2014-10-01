@@ -171,7 +171,7 @@
 					echo '</div>'; // END GROUP 7
 				echo '</div>'; // END PARALLAX
 			}
-			else {
+			elseif( is_page(107) ) {
 				echo '</div>'; // ADDED TO FIX HTML VALIDATION
 			}
 
