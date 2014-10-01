@@ -95,7 +95,7 @@
                         background-image:url("'.$mobile.'");
                         background-repeat:no-repeat;
                         background-size:cover; 
-                        height:150px;
+                        height:auto;
                     }
                     @media(min-width:481px) {
                         #page-header-'.$post_id .' {
