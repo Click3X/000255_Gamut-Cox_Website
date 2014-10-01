@@ -67,7 +67,7 @@
 
 
             // SERVE SMALLER IMAGES FOR MOBILE
-            include('php/serve-mobile-images');
+            include('php/serve-mobile-images.php');
 
             // // HEADER IMAGE STYLES 
             // echo '<style>';
