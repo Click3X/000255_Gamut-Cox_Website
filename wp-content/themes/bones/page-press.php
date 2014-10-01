@@ -78,9 +78,8 @@
 										</div>
 										<?php } ?>
 
-										
+										<?php the_excerpt()?>
 
-										<p><?php the_excerpt()?></p>
 										<?php //endwhile; else: endif; 
 
 

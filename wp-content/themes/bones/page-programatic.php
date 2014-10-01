@@ -63,7 +63,7 @@ get_header();
 						<?php } ?> -->
 
 							<p class="first-p"><?php echo $main_first_p; ?></p>
-							<p><?php echo $main_p; ?></p>
+							<?php echo $main_p; ?>
 
 						<!-- if statements -->
 						<!-- adding lower part on 4 product pages -->
@@ -91,7 +91,7 @@ get_header();
 										<h3 class="cro-color"><?php the_sub_field('column-title'); ?></h3>
 									<?php } ?>
 										
-										<p><?php the_sub_field('column-content'); ?></p>
+										<?php the_sub_field('column-content'); ?>
 									</li>
 
 								<?php endwhile; ?>

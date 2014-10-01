@@ -79,7 +79,7 @@
 										<?php } ?>
 
 
-										<p><?php the_content()?></p>
+										<?php the_content()?>
 										<!-- <p><?php the_excerpt()?></p> -->
 										<?php //endwhile; else: endif; 
 

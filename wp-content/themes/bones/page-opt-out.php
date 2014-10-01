@@ -46,7 +46,7 @@
                                                   <div id="statusDiv">
                                                   </div>
                                     </div>
-                                    <p>
+                                  
                                         <script language="JavaScript" type="text/javascript">
                                                                                                 document.getElementById('ooButton').onclick = function () {
                                                                                                                 var statusDiv = document.getElementById('opt-out-status');
@@ -100,7 +100,7 @@
                                                                                                                 document.getElementsByTagName('head')[0].appendChild(style);
                                                                                    }
                                         </script>
-                                    </p>
+
                                 </div>
  
                 </div>
