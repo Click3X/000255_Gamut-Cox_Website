@@ -11,15 +11,11 @@
 		<?php // Google Chrome Frame for IE ?>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-		<title><?php //wp_title(''); ?>
-
-		<?php
-			echo empty( $post->post_parent ) ? 'Gamut | '. get_the_title( $post->ID ) : 'Gamut | '. get_the_title( $post->post_parent ).' | ' .get_the_title( $post->ID ) ;
-		?>
-
-
+		<title>
+    		<?php
+    			echo empty( $post->post_parent ) ? 'Gamut | '. get_the_title( $post->ID ) : 'Gamut | '. get_the_title( $post->post_parent ).' | ' .get_the_title( $post->ID ) ;
+    		?>
 		</title>
-
 
 		<!-- LOAD TYPEKIT FONTS -->
 		<script src="//use.typekit.net/mno4etl.js"></script>
@@ -62,12 +58,58 @@
 
         <?php
 
-        // IF CONTACT PAGE, LOAD CONTACT PAGE PHP SCRIPTS
-        // FOR GOOGLE MAPS
-        if(is_page(9)) {
-            include('php/LatLong.php');
-            include('php/parseAddress.php');
-        }
+            // IF CONTACT PAGE, LOAD CONTACT PAGE PHP SCRIPTS
+            // FOR GOOGLE MAPS
+            if(is_page(9)) {
+                include('php/LatLong.php');
+                include('php/parseAddress.php');
+            }
+
+
+            // HEADER IMAGE STYLES 
+            echo '<style>';
+                $post_id = get_queried_object_id();
+                $key = 'header-image';
+                $single = false;
+                $meta_values = get_post_meta( $post_id, $key, $single );
+                // echo 'Here are our Header values: ';
+                // helper($meta_values);
+
+                $mobile = wp_get_attachment_image_src( $meta_values[0], 'mobile');
+                $mobile = $mobile[0];
+                $tablet = wp_get_attachment_image_src( $meta_values[0], 'tablet');
+                $tablet = $tablet[0];
+                $desk = wp_get_attachment_image_src( $meta_values[0], 'full');
+                $desk = $desk[0];
+
+                if($meta_values) {
+                    echo '#page-header-'.$post_id .' {
+                        background-image:url("'.$mobile.'");
+                        background-repeat:no-repeat;
+                        background-size: 152%;
+                        height:150px;
+                    }
+                    @media(min-width:481px) {
+                        #page-header-'.$post_id .' {
+                            background-image:url("'.$tablet.'");
+                            background-size:cover;
+                            height:200px;
+                        }
+                    }
+                    @media(min-width:768px) {
+                        #page-header-'.$post_id .' {
+                            height:300px;
+                        }
+                    }
+                    @media(min-width:961px) {
+                        #page-header-'.$post_id .' {
+                            background-image:url("'.$desk.'");
+                        }
+                    }
+                    ';
+                }
+
+            echo '</style>';
 
 		?>
 
@@ -173,39 +215,28 @@
 
 				<div id="inner-header" class="wrap cf">
 
-					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
 					<div class="logo-holder clearfix">
-						<!-- <div class="logo-holder-new"> -->
-							<a id="logo" href="<?php echo home_url(); ?>" rel="nofollow">
-								<img src="<?php echo bloginfo('url').'/img/gamut_logo.png' ;?>" alt="logo">
-							</a>
-						<!-- </div> -->
+						<a id="logo" href="<?php echo home_url(); ?>" rel="nofollow">
+							<img src="<?php echo bloginfo('url').'/img/gamut_logo.png' ;?>" alt="logo">
+						</a>
 						<!-- // mobile nav -->
 						<a id="mobile-btn" class="mobile-btn" href="#" rel="nofollow">&#9776;</a>
-						<!-- <h2 id="tagline">SMART MEDIA FROM COX</h2> -->
 					</div>
 
-
-
-					<?php // if you'd like to use the site description you can un-comment it below ?>
-					<?php // bloginfo('description'); ?>
-					
-
 					<nav id="main-nav" class="main-nav clearfix" role="navigation">
-					<?php wp_nav_menu(array(
-	    					'container' => false,                           // remove nav container
-	    					'container_class' => 'menu cf',                 // class of container (should you choose to use it)
-	    					'menu' => __( 'The Main Menu', 'bonestheme' ),  // nav name
-	    					'menu_class' => 'nav top-nav cf',               // adding custom nav class
-	    					'theme_location' => 'main-nav',                 // where it's located in the theme
-	    					'before' => '',                                 // before the menu
-	        			'after' => '',                                  // after the menu
-	        			'link_before' => '',                            // before each link
-	        			'link_after' => '',                             // after each link
-	        			'depth' => 0,                                   // limit the depth of the nav
-	    					'fallback_cb' => ''                             // fallback function (if there is one)
-							)); ?>
-
+    					<?php wp_nav_menu(array(
+    	    					'container' => false,                           // remove nav container
+    	    					'container_class' => 'menu cf',                 // class of container (should you choose to use it)
+    	    					'menu' => __( 'The Main Menu', 'bonestheme' ),  // nav name
+    	    					'menu_class' => 'nav top-nav cf',               // adding custom nav class
+    	    					'theme_location' => 'main-nav',                 // where it's located in the theme
+    	    					'before' => '',                                 // before the menu
+    	        			'after' => '',                                  // after the menu
+    	        			'link_before' => '',                            // before each link
+    	        			'link_after' => '',                             // after each link
+    	        			'depth' => 0,                                   // limit the depth of the nav
+    	    					'fallback_cb' => ''                             // fallback function (if there is one)
+    							)); ?>
 					</nav>
 
 				</div>

@@ -3,6 +3,9 @@
 
 // VARIABLE TO HOLD TEAM MEMBERS
 $locations = array();
+$additional_info = '';
+$additional_address_info='';
+$phone='';
 
 if (have_posts()) : while (have_posts()) : the_post();
     
@@ -81,12 +84,12 @@ echo '<script>var iconBase ="'; echo bloginfo('url'); echo '"</script>';
                 function initialize() {
 
                     mapOptions = {
-                        zoom: 4,
+                        zoom: 17,
                         zoomControl: true,
                         scaleControl: false,
                         scrollwheel: false,
                         disableDoubleClickZoom: true,
-                        center:cenUs,
+                        center:nycLatLong,
                         disableDefaultUI: true,
                         styles: [
                             {"stylers":[

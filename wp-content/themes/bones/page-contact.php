@@ -97,7 +97,8 @@ endif;
 						[contact-form-7 id="286" title="Publishers"]
 						[tabbyending]');
 
-							?>
+						?>
+						
 				</section> <?php // end article section ?>
 
 			</article>
