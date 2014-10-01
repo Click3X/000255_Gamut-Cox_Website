@@ -2863,77 +2863,82 @@ hr {
     background-repeat: no-repeat;
   }
 }
+/* line 471, ../scss/partials/_custom.scss */
+.page-header {
+  background-position: 0 50%;
+}
+
 @media (max-width: 767px) {
-  /* line 472, ../scss/partials/_custom.scss */
+  /* line 476, ../scss/partials/_custom.scss */
   .page-header {
     height: 200px;
     background-size: cover;
   }
 
-  /* line 477, ../scss/partials/_custom.scss */
+  /* line 481, ../scss/partials/_custom.scss */
   #inner-content {
     width: 80%;
   }
 
-  /* line 481, ../scss/partials/_custom.scss */
+  /* line 485, ../scss/partials/_custom.scss */
   #sidebar1 {
     float: none;
     margin-top: 80px;
     text-align: center;
   }
 
-  /* line 487, ../scss/partials/_custom.scss */
+  /* line 491, ../scss/partials/_custom.scss */
   #sidebar-beam-container {
     left: -600px;
     top: -30px;
   }
 
-  /* line 494, ../scss/partials/_custom.scss */
+  /* line 498, ../scss/partials/_custom.scss */
   .sub-page-content-wrapper {
     margin-top: 0px;
   }
 
-  /* line 498, ../scss/partials/_custom.scss */
+  /* line 502, ../scss/partials/_custom.scss */
   .footer-links-content {
     width: 95%;
   }
 }
 @media (max-width: 500px) {
-  /* line 508, ../scss/partials/_custom.scss */
+  /* line 512, ../scss/partials/_custom.scss */
   .our-solutions-list img {
     height: 2.5em;
   }
 }
-/* line 514, ../scss/partials/_custom.scss */
+/* line 518, ../scss/partials/_custom.scss */
 .first-p-text {
   font-weight: 500;
   max-width: 26em;
   line-height: 1.45em;
 }
 
-/* line 520, ../scss/partials/_custom.scss */
+/* line 524, ../scss/partials/_custom.scss */
 .secondary li.page_item {
   line-height: 2.2em;
   font-size: .85em;
 }
 
-/* line 533, ../scss/partials/_custom.scss */
+/* line 537, ../scss/partials/_custom.scss */
 .contact-container h2 {
   padding: .65em 0;
 }
 
-/* line 538, ../scss/partials/_custom.scss */
+/* line 542, ../scss/partials/_custom.scss */
 .contact-container hr + h3 {
   margin-top: 3.4em;
 }
-/* line 542, ../scss/partials/_custom.scss */
+/* line 546, ../scss/partials/_custom.scss */
 .contact-container .location p {
   margin: .5em 0 1.5em;
   font-size: .87em;
   line-height: 1.5em;
 }
 
-/* line 549, ../scss/partials/_custom.scss */
+/* line 553, ../scss/partials/_custom.scss */
 .sub-title {
   text-transform: uppercase;
   margin-top: -1.5em;

@@ -468,6 +468,10 @@ hr {
     }
 }
 
+.page-header {
+  background-position: 0 50%;
+}
+
 @media(max-width: 767px) {
     .page-header {
       height: 200px;
