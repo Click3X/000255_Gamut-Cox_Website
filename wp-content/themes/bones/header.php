@@ -72,21 +72,29 @@
                 $key = 'header-image';
                 $single = false;
                 $meta_values = get_post_meta( $post_id, $key, $single );
+
+                // SOME PAGES USE A DIFFERENT FIELD
+                if(!$meta_values) {
+                    // echo 'We have no meta values for header-image';
+                    $key = 'header';
+                    $meta_values = get_post_meta( $post_id, $key, $single );                    
+                }
+
                 // echo 'Here are our Header values: ';
                 // helper($meta_values);
 
-                $mobile = wp_get_attachment_image_src( $meta_values[0], 'mobile');
-                $mobile = $mobile[0];
-                $tablet = wp_get_attachment_image_src( $meta_values[0], 'tablet');
-                $tablet = $tablet[0];
-                $desk = wp_get_attachment_image_src( $meta_values[0], 'full');
-                $desk = $desk[0];
-
                 if($meta_values) {
+                    $mobile = wp_get_attachment_image_src( $meta_values[0], 'mobile-crop');
+                    $mobile = $mobile[0];
+                    $tablet = wp_get_attachment_image_src( $meta_values[0], 'tablet');
+                    $tablet = $tablet[0];
+                    $desk = wp_get_attachment_image_src( $meta_values[0], 'full');
+                    $desk = $desk[0];
+
                     echo '#page-header-'.$post_id .' {
                         background-image:url("'.$mobile.'");
                         background-repeat:no-repeat;
-                        background-size: 152%;
+                        background-size:cover;
                         height:150px;
                     }
                     @media(min-width:481px) {
