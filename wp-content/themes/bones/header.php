@@ -48,13 +48,6 @@
 
 		<?php // drop Google Analytics Here ?>
 
-
-		<style>
-
-			
-
-		</style>
-
 		<script>
             // TEST FOR MOBILE DEVICE / TABLET
             var device;
@@ -69,176 +62,104 @@
 
         <?php
 
+        // IF CONTACT PAGE, LOAD CONTACT PAGE PHP SCRIPTS
+        // FOR GOOGLE MAPS
         if(is_page(9)) {
-
             include('php/LatLong.php');
             include('php/parseAddress.php');
+        }
 
-            echo '<script>var iconBase ="'; echo bloginfo('url'); echo '"</script>';
-    		echo '<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
-            <script>
-                var nycLatLong = new google.maps.LatLng(40.753519, -73.969971),
-                sfLatLong = new google.maps.LatLng(37.794108,-122.39511),
-                cenUs = new google.maps.LatLng(40.753519, -100.969971),
-                map,
-                mapOptions,
-                marker,
-                sfMarker;
-
-                function initialize() {
-
-                    mapOptions = {
-                        zoom: 17,
-                        zoomControl: true,
-                        scaleControl: false,
-                        scrollwheel: false,
-                        disableDoubleClickZoom: true,
-                        center:nycLatLong,
-                        disableDefaultUI: true,
-                        styles: [
-                            {"stylers":[
-                                {"hue":"#ff1a00"},
-                                {"invert_lightness":false},
-                                {"saturation":-100},
-                                {"lightness":33},
-                                {"gamma":0.5}
-                                ]
-                            },
-                            {"featureType":"water",
-                            "elementType":"geometry",
-                            "stylers":[
-                                {"color":"#9ba0a5"}
-                                ]
-                            },
-                            {
-                                "featureType": "road.arterial",
-                                "stylers": [
-                                  { "visibility": "on" },
-                                  { "color": "#ffffff" }
-                                ]
-                              },
-                              {
-                                "featureType": "road.local",
-                                "stylers": [
-                                  { "color": "#ffffff" },
-                                  { "visibility": "on" }
-                                ]
-                              }
-                        ]
-                    };
-
-                    map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
-                    
-                    function newMapMarker(location) {
-                        var latlng = new google.maps.LatLng(location["lat"], location["lng"]);
-                        var newMarker = new google.maps.Marker({
-                            position: latlng,
-                            map: map,
-                            icon: iconBase + "/img/map-marker.png"
-                        });
-                        return newMarker;
-                    }
-
-                    locations.forEach(newMapMarker);
-
-                }
-
-                google.maps.event.addDomListener(window, "load", initialize);
-
-            </script>';
-    		}
-
-            // END GOOGLE SCRIPS CODE
 		?>
+
         <style>
 
-        @media(min-width: 811px) {
-            .home-para, .page-id-107 {
-                overflow: hidden;
+            @media(min-width: 811px) {
+                .home-para, .page-id-107 {
+                    overflow: hidden;
+                }
+                
+                .fixed-header-bg {
+                    padding-top:300px;
+                }
+
+                .fixed-header-bg > .article-header {
+                    position: fixed;
+                    top:62.5px;
+                    width:100%;
+                    z-index: -1;
+                }
             }
-            
-            .fixed-header-bg {
-                padding-top:300px;
+
+            .wrap-wrap {
+                width: 100%;
             }
 
-            .fixed-header-bg > .article-header {
-                position: fixed;
-                top:62.5px;
-                width:100%;
-                z-index: -1;
+            .wrap-wrap,
+            #sidebar1 {
+                background-color: white;
             }
-        }
 
-        .wrap-wrap {
-            width: 100%;
-        }
+            .arrow-right:hover,
+            .arrow-right {
+                white-space: nowrap;
+            }
 
-        .wrap-wrap,
-        #sidebar1 {
-            background-color: white;
-        }
-
-        .arrow-right:hover,
-        .arrow-right {
-            white-space: nowrap;
-        }
-
-        #home-btn-careers,
-        #home-btn-careers:hover,
-        a#home-btn-difference,
-        a#home-btn-difference:hover,
-        #home-btn-service,
-        #home-btn-service:hover,
-        #group4 .subpage .gamut-btn,
-        #group4 .subpage .gamut-btn:hover {
-            white-space: nowrap;
-            border: 0;
-        }
-
-        .subpage-wrap {
-            border-bottom: 2px dashed #d8d8d8;
-        }
-
-        .subpage-wrap:last-of-type {
-            border-bottom:0;
-        }
-
-
-        @media(max-width: 811px) {
             #home-btn-careers,
+            #home-btn-careers:hover,
             a#home-btn-difference,
-            #home-btn-service {
-                z-index: 10;
-                position: relative;
+            a#home-btn-difference:hover,
+            #home-btn-service,
+            #home-btn-service:hover,
+            #group4 .subpage .gamut-btn,
+            #group4 .subpage .gamut-btn:hover {
+                white-space: nowrap;
+                border: 0;
             }
-        }
 
-
-        @media(min-width: 811px) {
-            #parallax-kieth .footer {
-                height:600px;
+            .subpage-wrap {
+                border-bottom: 2px dashed #d8d8d8;
             }
-        }
 
-        @media (min-width: 1200px) {
-            #parallax-kieth #group6 #careers-bg {
-                /*top: 174px;*/
-                top: 144px;
+            .subpage-wrap:last-of-type {
+                border-bottom:0;
             }
-        }
 
-        @media (min-width: 1040px) {
-            #parallax-kieth #group4 {
-                height: 1650px;
+
+            @media(max-width: 811px) {
+                #home-btn-careers,
+                a#home-btn-difference,
+                #home-btn-service {
+                    z-index: 10;
+                    position: relative;
+                }
             }
-        }
 
 
-        @media (min-width: 1060px) {
-            #parallax-kieth .footer {
-                height: 530px;
+            @media(min-width: 811px) {
+                #parallax-kieth .footer {
+                    height:600px;
+                }
             }
-        }
+
+            @media (min-width: 1200px) {
+                #parallax-kieth #group6 #careers-bg {
+                    /*top: 174px;*/
+                    top: 144px;
+                }
+            }
+
+            @media (min-width: 1040px) {
+                #parallax-kieth #group4 {
+                    height: 1650px;
+                }
+            }
+
+
+            @media (min-width: 1060px) {
+                #parallax-kieth .footer {
+                    height: 530px;
+                }
+            }
 
         </style>
 
