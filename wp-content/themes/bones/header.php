@@ -97,6 +97,7 @@
                         background-size:cover; 
                         background-position:50% 50%; 
                         height:auto;
+                        min-height:119px;
                     }
                     @media(min-width:481px) {
                         #page-header-'.$post_id .' {
