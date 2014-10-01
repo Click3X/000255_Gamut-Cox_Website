@@ -84,7 +84,7 @@
                 // helper($meta_values);
 
                 if($meta_values) {
-                    $mobile = wp_get_attachment_image_src( $meta_values[0], 'mobile-crop');
+                    $mobile = wp_get_attachment_image_src( $meta_values[0], 'mobile');
                     $mobile = $mobile[0];
                     $tablet = wp_get_attachment_image_src( $meta_values[0], 'tablet');
                     $tablet = $tablet[0];
