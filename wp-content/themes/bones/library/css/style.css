@@ -7472,6 +7472,28 @@ body #content + div {
     clear: left;
   }
 }
+/* line 2, ../scss/partials/_contact-addons.scss */
+.city {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1.5em;
+}
+/* line 7, ../scss/partials/_contact-addons.scss */
+.city h3 {
+  text-transform: uppercase;
+  margin-top: .6em;
+  margin-bottom: .6em;
+  letter-spacing: .1em;
+  font-size: .91rem;
+}
+/* line 14, ../scss/partials/_contact-addons.scss */
+.city li {
+  display: block;
+  width: 100%;
+  font-size: .87em;
+  line-height: 1.5em;
+}
+
 /* line 2, ../scss/partials/_contact-maps.scss */
 #map-canvas {
   background-size: cover;

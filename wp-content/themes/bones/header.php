@@ -98,7 +98,8 @@
         <?php
 
         if(is_page(9)) {
-			echo '<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+        echo '<script>var iconBase ="'; echo bloginfo('url'); echo '"</script>';
+		echo '<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
         <script>
             var nycLatLong = new google.maps.LatLng(40.753519, -73.969971),
             sfLatLong = new google.maps.LatLng(37.794108,-122.39511),
@@ -154,12 +155,14 @@
 
                 marker = new google.maps.Marker({
                     position: nycLatLong,
-                    map: map
+                    map: map,
+                    icon: iconBase + "/img/map-marker.png"
                 });
 
 				sfMarker = new google.maps.Marker({
                     position: sfLatLong,
-                    map: map
+                    map: map,
+                    icon: iconBase + "/img/map-marker.png"
                 });
 
             }
