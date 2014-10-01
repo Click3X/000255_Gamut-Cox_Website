@@ -72,7 +72,7 @@ echo '<script>var iconBase ="'; echo bloginfo('url'); echo '"</script>';
             <script>
                 var nycLatLong = new google.maps.LatLng(40.753519, -73.969971),
                 sfLatLong = new google.maps.LatLng(37.794108,-122.39511),
-                cenUs = new google.maps.LatLng(40.753519, -100.969971),
+                cenUs = new google.maps.LatLng(40.753519, -90.969971),
                 map,
                 mapOptions,
                 marker,
@@ -81,12 +81,12 @@ echo '<script>var iconBase ="'; echo bloginfo('url'); echo '"</script>';
                 function initialize() {
 
                     mapOptions = {
-                        zoom: 17,
+                        zoom: 4,
                         zoomControl: true,
                         scaleControl: false,
                         scrollwheel: false,
                         disableDoubleClickZoom: true,
-                        center:nycLatLong,
+                        center:cenUs,
                         disableDefaultUI: true,
                         styles: [
                             {"stylers":[
