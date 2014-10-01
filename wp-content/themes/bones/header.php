@@ -99,6 +99,7 @@
                     @media(min-width:768px) {
                         #page-header-'.$post_id .' {
                             height:300px;
+                            background-position: 0 50%;
                         }
                     }
                     @media(min-width:961px) {
