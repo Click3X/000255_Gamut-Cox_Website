@@ -10,7 +10,7 @@ echo '<style>';
         if($home_img == 'gamut-defined-bg') {
             $img_sizes = array('home-p-mobile','home-p-tablet','full');
         } else {
-            $img_sizes = array('para-bg-mobile','para-bg-tablet','para-bg');
+            $img_sizes = array('para-bg-tablet','para-bg-mobile','para-bg');
         }
 
         $meta_values = get_post_meta( $post_id, $home_img, $single );
