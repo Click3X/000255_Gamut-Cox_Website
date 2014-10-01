@@ -6773,31 +6773,6 @@ form label {
   display: none;
 }
 
-/* line 1, ../scss/partials/_home-btns.scss */
-.home-btn-test {
-  border: 0 none;
-  padding: 10px 20px;
-  color: white;
-  font-size: 0.88em;
-  letter-spacing: 0.12em;
-  background-color: black;
-}
-/* line 9, ../scss/partials/_home-btns.scss */
-.home-btn-test:hover {
-  background-color: #ed228b;
-  transition: all 0.2s;
-}
-/* line 12, ../scss/partials/_home-btns.scss */
-.home-btn-test:hover span {
-  border-left: 6px solid white;
-}
-
-/* line 18, ../scss/partials/_home-btns.scss */
-.home-btn-test:active {
-  outline: none;
-  border: none;
-}
-
 /* line 3, ../scss/partials/_charles-font.scss */
 #sidebar1 .sidebar-intro li {
   list-style-position: outside;
