@@ -51,7 +51,7 @@
         </div>
 
     </div>
-    <div class="parallax__layer parallax__layer--back" style="background-image: url('<?php echo $bg_img['url'] ?>');background-size: cover; background-repeat:no-repeat;"></div>
+    <div id="gamut-defined-bg" class="parallax__layer parallax__layer--back" style="background-image: url('<?php echo $bg_img['url'] ?>');background-size: cover; background-repeat:no-repeat;"></div>
   </div>
 
 
