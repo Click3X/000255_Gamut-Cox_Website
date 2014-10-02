@@ -1,0 +1,559 @@
+// CHARLES PARALLAX ADD ONS
+.charles-parallax__group {
+    p {
+        font-size: 1em;
+        line-height: 1.15em;
+    }
+    h1 {
+        font-size: 1.75em;
+        line-height: 1.05em;
+    }
+
+    @media(min-width: 480px) {
+        h1 { font-size: 2.15em; }
+        p {font-size: 1.1em;}
+    }
+    
+    @media(min-width: 768px) {
+        p {
+            font-size: 1.2em;
+        }
+        h1 {
+            font-size: 2.8em;
+        }
+    }
+
+    @media(min-width:1060px) {
+        p {
+            // font-size: 1.6em;
+            font-size: 1.4em;
+        }
+        h1 {
+            // font-size: 4.5em;
+            font-size: 3.75em;
+        }
+    }
+
+    @media(min-width:124    0px) {
+        p {
+            font-size: 1.6em;
+        }
+        h1 {
+            font-size: 4.5em;
+        }
+    }
+}
+
+.charles-gamut-btn {
+    color:#ffffff;
+    text-align: center;
+    display: inline-block;
+    padding:0;
+    padding-left:2em;
+    margin-top:1em;
+    margin-bottom: 1em;
+    line-height: 38px;
+    vertical-align: middle;
+    font-size: .82em;
+    letter-spacing: .07em;
+    font-weight: 500;
+    background-color:#000;
+    box-sizing:border-box;
+    border:0;
+    outline: 0;
+
+    @media(min-width: 811px) {
+        margin-top:31px ;
+        margin-bottom: 0;
+    }
+
+
+    .arrow-right {
+        padding-right: 1.5em;
+    }
+
+    &:hover {
+        border:0;
+        outline: 0;
+        color:#ffffff;
+        line-height: 38px;
+    }
+
+    @include prefix(transition, all 400ms);
+}
+
+.grey-block,
+#difference-title,
+#solutions-title { color:white; }
+
+.grey-block-bg { background-color:#3D3D3D; }
+
+.float-middle {
+    width:90%;
+    max-width: 1300px;
+    margin:0 auto;
+}
+
+#charles-group6,
+#charles-group7 {
+    .float-middle {
+        width:100%;
+
+        .charles-txt-careers,
+        .charles-txt-smart {
+            padding:0 1em;
+        }
+
+        @media(min-width: 811px) {
+            .charles-txt-careers {padding: 0 0 0 2em; }
+            .charles-txt-smart {padding: 0 0 0 2em; }
+        }
+    }
+    @media(min-width: 1300px) {
+        .float-middle {
+            width:90%;
+        }
+    }
+}
+
+.charles-txt {
+    // padding: 2em 0;
+    padding: 12.5% 0;
+
+    .difference { 
+        margin-left:11%;
+    } 
+}
+
+.charles-subpage-wrap { 
+    background-color: #ffffff; 
+    border-bottom-color: rgb(216, 216, 216);
+    border-bottom-style: dashed;
+    border-bottom-width: 2px;
+
+    padding-top: 35px;
+    padding-bottom: 35px;
+
+    &:last-of-type {
+        border-bottom-color: none;
+        border-bottom-style: dashed;
+        border-bottom-width: 0;
+    }
+
+    @media(min-width: 811px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    @media(min-width: 1060px) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+
+.charles-subpage {
+    background-color: #ffffff;
+
+    .charles-p-holder p {
+        max-width:27em;
+        margin-top:1em;
+        margin-bottom: 1em;
+    }
+    .charles-blue,
+    .charles-red {
+        position: relative;
+    }
+
+    .charles-blue {
+    }
+
+    .charles-red {
+        max-width: 768px;
+        img {
+            
+        }
+    }
+
+    @media(min-width: 500px) {
+        .charles-red { 
+            width: 58%;
+            float: left;
+            text-align: left;
+            height: 100px;
+        }
+        .charles-blue { 
+            width: 42%;
+            float: left;
+            text-align: right;
+            height: 100px;
+        }
+    }
+
+    
+}
+
+#charles-group4 {
+    #crossmedia-logo, #rep-logo, #reach-logo, #pro-logo {
+        position: static;
+        top:auto; bottom:auto; left:auto; right:auto;
+
+        @media(min-width: 500px) {
+            position:absolute;
+            top:0; bottom:0; left:1em; right:auto;
+        }
+    }
+}
+
+
+@media(min-width: 480px) {
+    #charles-group1 #home-slider-holder {
+        margin-bottom:0;
+    }
+}
+
+
+.careers-image,
+.smart-service-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    // padding-bottom: 50%;
+    padding-bottom: 41%;
+
+    @media(min-width: 811px) {
+        width:50%;
+    }
+
+    @media(min-width:1300px) {
+        // padding-bottom: 651.5px;
+        padding-bottom: 513.5px;
+    }
+}  
+
+
+.charles-txt-careers { 
+    p { max-width: 19.5em; } 
+
+    @media(min-width: 811px) {
+        width: 50%;
+        float: left;
+    }
+}
+
+.charles-txt-smart { 
+    p { max-width: 20em; } 
+    
+    @media(min-width: 811px) {
+        width: 50%;
+        float: right;
+    }
+}
+    
+#charles-group3,
+#charles-group5 {
+    background-color:rgb(61,61,61);
+    @media(min-width: 811px) {
+        background-color:transparent;
+    }
+}
+
+@media(min-width: 811px) {
+    .charles-parallax__group {
+        // min-height: 600px;
+        // min-height: 400px;
+    }
+
+    #charles-group2,
+    #charles-group3,
+    #charles-group5 {
+        max-height: 600px;
+    }
+
+    #charles-group6 {
+        max-height: 500px;
+
+        .charles-parallax__layer.charles-parallax__layer--back {
+            // bottom: auto;
+            width: 100%;
+            padding-bottom: 67%;
+            height: 200%;
+            width: 150%;
+
+            // background-image: url("http://gamut.dev/wp-content/uploads/2014/09/check_ur_phone_new-800x533.png");
+            // background-size: cover;
+            // background-repeat: no-repeat;
+
+            height: 205%;
+            width: 150%;
+            background-image: url("http://gamut.dev/wp-content/uploads/2014/09/rgb_Gamut_teachingbright-800x533.jpg"), url("http://gamut.dev/wp-content/uploads/2014/09/check_ur_phone_new-800x533.png");
+            background-repeat: no-repeat, no-repeat;
+            background-position: 417% 71%, -186.6% 10%;
+            background-size: 90%, 90%;
+
+            // height: 205%;
+            // width: 150%;
+            // background-image: url("http://gamut.dev/wp-content/uploads/2014/09/check_ur_phone_new-800x533.png"), url("http://gamut.dev/wp-content/uploads/2014/09/rgb_Gamut_teachingbright-800x533.jpg");
+            // background-repeat: no-repeat, no-repeat;
+            // background-position: -16.6% 0%, 70% 70%;
+            // background-size: 50%, 60%;
+
+            @media(min-width: 1060px) {
+                height: 200%;
+                background-position:416% 71%, -186.6% 0%;
+            }
+
+            @media(min-width: 1150px) {
+                background-size: 65%, 75%;
+                background-position: 119.1% 71%, -30.6% 15%;
+            }
+
+            @media(min-width: 1300px) {
+                padding-bottom: 870px;
+            }
+        }
+    }
+
+    #charles-group7 {
+        .footer {
+            position: absolute;
+            width: 100%;
+            bottom: 62.5px;
+        }
+    }
+
+    .c-gam-holder {
+        position: absolute;
+        top:0; bottom:0; left:auto; right:1em;
+        margin:auto;
+        height: 22px;
+    }
+
+    #charles-group4 {
+        min-height: 1325px;
+        @media(min-width: 1060px) {
+            min-height: 1550px;
+        }
+    }
+
+    .careers-image {
+        margin-left: 50%;
+    }
+}
+
+@media(min-width:1700px) {
+    #charles-group2,
+    #charles-group3,
+    #charles-group5 {
+        max-height:none;
+    }
+
+}
+
+// .move-up {
+//     top: -50%;
+//     height: 150%;
+// }
+
+// #charles-group2 {
+//     max-height: 600px;
+// }
+
+#charles-group3,
+#charles-group5 {
+    // max-height: 500px;
+    max-height: 550px;
+} 
+
+@media(min-width:1060px) {
+    #charles-group7 {
+        max-height: 1040px;
+        min-height: 1000px;
+    }
+}
+
+@media(min-width: 811px) {
+    #charles-group2 {
+        .charles-txt {
+            height: 236px;
+        }
+    }
+
+    #charles-group3 {
+        .charles-txt {
+            height: 323px;
+        }
+    }
+}
+
+#charles-group2 {
+    @media(max-width: 810px) {
+        position: relative;
+
+        #gamut-defined-bg {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            padding-bottom: 90%;
+            z-index: -1;
+        }    
+    }
+}
+
+.charles-txt-careers {
+    background-color: rgb(248, 248, 239);
+}
+
+
+
+.c-ab-center {
+    @media(min-width: 811px) {
+        position: absolute;
+        top:0; bottom:0; left:0; right:0;
+        margin:auto;
+    }
+}
+
+#charles-group6,
+#charles-group7 .charles-txt-careers {
+    .gamut-btn { margin-bottom: 1em; }
+}
+
+.charles-parallax__layer {
+    h1 { margin-bottom:.4em; }
+    .difference + a {
+        margin-left: 11%;
+    }
+}
+
+#charles-group3,
+#charles-group5,
+#charles-group6,
+#charles-group7 {
+    p,
+    h1 { position: relative; }
+}
+
+// BEAMS
+#charles-group3, 
+#charles-group5 { 
+    h1:before {
+        content: "";
+        display: block;
+        background-image: url("../../../../../img/new-beams/our-solutions.png");
+        background-size: cover;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 783px;
+        top: -.5em;
+        bottom: 0;
+        left: -762px;
+        height: 100%;
+        max-height: 5px;
+        z-index: 10;
+        
+        @media (min-width: 811px) {
+            top: .5em;
+            bottom: 0;
+            left: -812px;
+        }
+    }
+    p:after {
+        content: "";
+        display: block;
+        background-image: url("../../../../../img/new-beams/diff-right.png");
+        background-size: cover;
+        position: absolute;
+        width: 842px;
+        height: 100%;
+        max-height: 5px;
+        margin: auto;
+        z-index: 10;
+        right: -802px;
+
+        @media (min-width: 811px) {
+            right: -862px;
+            top: 0;
+            bottom: 0;
+        }
+    }
+}
+
+
+.charles-txt-careers h1:before {
+    content: "";
+    display: block;
+    background-image: url("../../../../../img/new-beams/our-solutions.png");
+    background-size: cover;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    width: 783px;
+    top: -1.5em;
+    bottom: 0;
+    left: -1320px;
+    height: 100%;
+    max-height: 5px;
+    z-index: 10;
+
+    @media (min-width: 811px) {
+        right: 0;
+        left: -1450px;
+        top: .5em;
+        bottom: auto;
+    }
+}
+
+// BOTTOM COLORS
+.charles-cc-bg-holder {
+    background-color: rgb(248,248,239);
+}
+
+@media(min-width: 811px) {
+    #charles-group7 {
+        .charles-txt-holder.float-middle:before {
+            content: "";
+            display: block;
+            width: 50%;
+            padding-bottom: 500px;
+            background:rgb(248,248,239);
+            position: absolute;
+            left: 0;
+            z-index: -1;
+        }
+    }
+    #charles-group6 {
+        .charles-parallax__layer.charles-parallax__layer--base:before {
+            content: "";
+            display: block;
+            width: 50%;
+            padding-bottom: 500px;
+            background:#ffffff  ;
+            position: absolute;
+            right:0;
+            z-index: -1;
+        }
+    }
+}
+#charles-group7 {
+    @media(min-width: 811px) {
+        height: 1300px;
+    }   
+    @media(min-width: 890px) {
+        height:1128px;
+    }
+    @media(min-width: 1060px) {
+        height:100vh;
+    }
+}
+
+#charles-group6 {
+    @media(min-width: 811px) {
+        margin-top:0;
+    }
+    .charles-txt-smart {
+        margin-top: 6.5em;
+        @media(min-width: 1060px) {
+            margin-top:4.5em;
+        }
+    }
+}
