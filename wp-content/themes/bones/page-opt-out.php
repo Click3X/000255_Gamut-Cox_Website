@@ -51,6 +51,12 @@
                                                                                                 document.getElementById('ooButton').onclick = function () {
                                                                                                                 var statusDiv = document.getElementById('opt-out-status');
                                                                                                                 var responseDiv = document.getElementById('statusDiv');
+
+
+                                                                                                                // if initial status frame has already been hidden, it means this
+                                                                                                                // function has already been called.  Exit.
+                                                                                                                statusFrame = document.getElementById('ooStatusFrame');
+                                                                                                                if (statusFrame.style.display == 'none') { return false; }
                                                                                                                
                                                                                                                 // create css classes for the new iframes
                                                                                                                 addClass('statusClass', 'overflow:hidden;border:none;border:solid 1px #eee;');
@@ -73,7 +79,7 @@
                                                                                                                                 'statusClass');
                                                                                                                
                                                                                                                 // hide the old status frame
-                                                                                                                statusFrame = document.getElementById('ooStatusFrame');
+                                                                                                                //statusFrame = document.getElementById('ooStatusFrame');
                                                                                                                 statusFrame.style.display = 'none';
                                                                                                                
                                                    return false;
