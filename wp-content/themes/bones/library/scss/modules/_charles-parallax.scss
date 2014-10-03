@@ -135,10 +135,12 @@
   }
 
   #charles-group4 {
-    z-index: 2; /* slide under group 3 and 5 */
+    // z-index: 2; 
+    z-index: 3; 
+    /* slide under group 3 and 5 */
   }
   #charles-group4 .charles-parallax__layer--deep {
-    background: rgb(184,223,101);
+    // background: rgb(184,223,101);
   }
 
   #charles-group5 {
