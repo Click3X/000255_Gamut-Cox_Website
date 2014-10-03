@@ -5662,28 +5662,23 @@ a {
 
   /* line 137, ../scss/modules/_charles-parallax.scss */
   #charles-group4 {
-    z-index: 2;
+    z-index: 3;
     /* slide under group 3 and 5 */
   }
 
-  /* line 140, ../scss/modules/_charles-parallax.scss */
-  #charles-group4 .charles-parallax__layer--deep {
-    background: #b8df65;
-  }
-
-  /* line 144, ../scss/modules/_charles-parallax.scss */
+  /* line 146, ../scss/modules/_charles-parallax.scss */
   #charles-group5 {
     z-index: 3;
     /* slide over group 4 and 6 */
   }
 
-  /* line 151, ../scss/modules/_charles-parallax.scss */
+  /* line 153, ../scss/modules/_charles-parallax.scss */
   #charles-group6 {
     z-index: 2;
     /* slide under group 5 and 7 */
   }
 
-  /* line 158, ../scss/modules/_charles-parallax.scss */
+  /* line 160, ../scss/modules/_charles-parallax.scss */
   #charles-group7 {
     z-index: 3;
     /* slide over group 7 */
@@ -5714,33 +5709,33 @@ a {
   .charles-parallax__group p {
     font-size: 1.2em;
   }
-  /* line 21, ../scss/modules/_charles-parallax-addons.scss */
+  /* line 19, ../scss/modules/_charles-parallax-addons.scss */
   .charles-parallax__group h1 {
     font-size: 2.8em;
   }
 }
 @media (min-width: 1060px) {
-  /* line 27, ../scss/modules/_charles-parallax-addons.scss */
+  /* line 23, ../scss/modules/_charles-parallax-addons.scss */
   .charles-parallax__group p {
     font-size: 1.4em;
   }
-  /* line 31, ../scss/modules/_charles-parallax-addons.scss */
+  /* line 24, ../scss/modules/_charles-parallax-addons.scss */
   .charles-parallax__group h1 {
     font-size: 3.75em;
   }
 }
 @media (min-width: 124 0px) {
-  /* line 38, ../scss/modules/_charles-parallax-addons.scss */
+  /* line 28, ../scss/modules/_charles-parallax-addons.scss */
   .charles-parallax__group p {
     font-size: 1.6em;
   }
-  /* line 41, ../scss/modules/_charles-parallax-addons.scss */
+  /* line 29, ../scss/modules/_charles-parallax-addons.scss */
   .charles-parallax__group h1 {
     font-size: 4.5em;
   }
 }
 
-/* line 47, ../scss/modules/_charles-parallax-addons.scss */
+/* line 33, ../scss/modules/_charles-parallax-addons.scss */
 .charles-gamut-btn {
   color: #ffffff;
   text-align: center;
@@ -5765,17 +5760,17 @@ a {
   transition: all 400ms;
 }
 @media (min-width: 811px) {
-  /* line 47, ../scss/modules/_charles-parallax-addons.scss */
+  /* line 33, ../scss/modules/_charles-parallax-addons.scss */
   .charles-gamut-btn {
     margin-top: 31px;
     margin-bottom: 0;
   }
 }
-/* line 71, ../scss/modules/_charles-parallax-addons.scss */
+/* line 56, ../scss/modules/_charles-parallax-addons.scss */
 .charles-gamut-btn .arrow-right {
   padding-right: 1.5em;
 }
-/* line 75, ../scss/modules/_charles-parallax-addons.scss */
+/* line 60, ../scss/modules/_charles-parallax-addons.scss */
 .charles-gamut-btn:hover {
   border: 0;
   outline: 0;
@@ -5783,31 +5778,31 @@ a {
   line-height: 38px;
 }
 
-/* line 87, ../scss/modules/_charles-parallax-addons.scss */
+/* line 72, ../scss/modules/_charles-parallax-addons.scss */
 .grey-block,
 #difference-title,
 #solutions-title {
   color: white;
 }
 
-/* line 89, ../scss/modules/_charles-parallax-addons.scss */
+/* line 74, ../scss/modules/_charles-parallax-addons.scss */
 .grey-block-bg {
   background-color: #3D3D3D;
 }
 
-/* line 91, ../scss/modules/_charles-parallax-addons.scss */
+/* line 76, ../scss/modules/_charles-parallax-addons.scss */
 .float-middle {
   width: 90%;
   max-width: 1300px;
   margin: 0 auto;
 }
 
-/* line 99, ../scss/modules/_charles-parallax-addons.scss */
+/* line 84, ../scss/modules/_charles-parallax-addons.scss */
 #charles-group6 .float-middle,
 #charles-group7 .float-middle {
   width: 100%;
 }
-/* line 103, ../scss/modules/_charles-parallax-addons.scss */
+/* line 88, ../scss/modules/_charles-parallax-addons.scss */
 #charles-group6 .float-middle .charles-txt-careers,
 #charles-group6 .float-middle .charles-txt-smart,
 #charles-group7 .float-middle .charles-txt-careers,
@@ -5815,35 +5810,41 @@ a {
   padding: 0 1em;
 }
 @media (min-width: 811px) {
-  /* line 108, ../scss/modules/_charles-parallax-addons.scss */
+  /* line 93, ../scss/modules/_charles-parallax-addons.scss */
   #charles-group6 .float-middle .charles-txt-careers,
   #charles-group7 .float-middle .charles-txt-careers {
     padding: 0 0 0 2em;
   }
-  /* line 109, ../scss/modules/_charles-parallax-addons.scss */
+  /* line 94, ../scss/modules/_charles-parallax-addons.scss */
   #charles-group6 .float-middle .charles-txt-smart,
   #charles-group7 .float-middle .charles-txt-smart {
     padding: 0 0 0 2em;
   }
 }
 @media (min-width: 1300px) {
-  /* line 113, ../scss/modules/_charles-parallax-addons.scss */
+  /* line 98, ../scss/modules/_charles-parallax-addons.scss */
   #charles-group6 .float-middle,
   #charles-group7 .float-middle {
     width: 90%;
   }
 }
 
-/* line 119, ../scss/modules/_charles-parallax-addons.scss */
+/* line 104, ../scss/modules/_charles-parallax-addons.scss */
 .charles-txt {
   padding: 12.5% 0;
 }
-/* line 123, ../scss/modules/_charles-parallax-addons.scss */
+@media (min-width: 811px) {
+  /* line 104, ../scss/modules/_charles-parallax-addons.scss */
+  .charles-txt {
+    padding: 0;
+  }
+}
+/* line 109, ../scss/modules/_charles-parallax-addons.scss */
 .charles-txt .difference {
   margin-left: 11%;
 }
 
-/* line 128, ../scss/modules/_charles-parallax-addons.scss */
+/* line 112, ../scss/modules/_charles-parallax-addons.scss */
 .charles-subpage-wrap {
   background-color: #ffffff;
   border-bottom-color: #d8d8d8;
@@ -5852,55 +5853,55 @@ a {
   padding-top: 35px;
   padding-bottom: 35px;
 }
-/* line 137, ../scss/modules/_charles-parallax-addons.scss */
+/* line 121, ../scss/modules/_charles-parallax-addons.scss */
 .charles-subpage-wrap:last-of-type {
   border-bottom-color: none;
   border-bottom-style: dashed;
   border-bottom-width: 0;
 }
 @media (min-width: 811px) {
-  /* line 128, ../scss/modules/_charles-parallax-addons.scss */
+  /* line 112, ../scss/modules/_charles-parallax-addons.scss */
   .charles-subpage-wrap {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
 @media (min-width: 1060px) {
-  /* line 128, ../scss/modules/_charles-parallax-addons.scss */
+  /* line 112, ../scss/modules/_charles-parallax-addons.scss */
   .charles-subpage-wrap {
     padding-top: 80px;
     padding-bottom: 80px;
   }
 }
 
-/* line 153, ../scss/modules/_charles-parallax-addons.scss */
+/* line 137, ../scss/modules/_charles-parallax-addons.scss */
 .charles-subpage {
   background-color: #ffffff;
 }
-/* line 156, ../scss/modules/_charles-parallax-addons.scss */
+/* line 140, ../scss/modules/_charles-parallax-addons.scss */
 .charles-subpage .charles-p-holder p {
   max-width: 27em;
   margin-top: 1em;
   margin-bottom: 1em;
 }
-/* line 162, ../scss/modules/_charles-parallax-addons.scss */
+/* line 146, ../scss/modules/_charles-parallax-addons.scss */
 .charles-subpage .charles-blue,
 .charles-subpage .charles-red {
   position: relative;
 }
-/* line 169, ../scss/modules/_charles-parallax-addons.scss */
+/* line 148, ../scss/modules/_charles-parallax-addons.scss */
 .charles-subpage .charles-red {
   max-width: 768px;
 }
 @media (min-width: 500px) {
-  /* line 177, ../scss/modules/_charles-parallax-addons.scss */
+  /* line 151, ../scss/modules/_charles-parallax-addons.scss */
   .charles-subpage .charles-red {
     width: 58%;
     float: left;
     text-align: left;
     height: 100px;
   }
-  /* line 183, ../scss/modules/_charles-parallax-addons.scss */
+  /* line 157, ../scss/modules/_charles-parallax-addons.scss */
   .charles-subpage .charles-blue {
     width: 42%;
     float: left;
@@ -5908,8 +5909,14 @@ a {
     height: 100px;
   }
 }
+@media (min-width: 811px) {
+  /* line 166, ../scss/modules/_charles-parallax-addons.scss */
+  .charles-subpage .charles-red {
+    max-width: 424px;
+  }
+}
 
-/* line 195, ../scss/modules/_charles-parallax-addons.scss */
+/* line 171, ../scss/modules/_charles-parallax-addons.scss */
 #charles-group4 #crossmedia-logo, #charles-group4 #rep-logo, #charles-group4 #reach-logo, #charles-group4 #pro-logo {
   position: static;
   top: auto;
@@ -5918,23 +5925,25 @@ a {
   right: auto;
 }
 @media (min-width: 500px) {
-  /* line 195, ../scss/modules/_charles-parallax-addons.scss */
+  /* line 171, ../scss/modules/_charles-parallax-addons.scss */
   #charles-group4 #crossmedia-logo, #charles-group4 #rep-logo, #charles-group4 #reach-logo, #charles-group4 #pro-logo {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 1em;
+    left: 0;
     right: auto;
+    padding-left: 1em;
+    z-index: 1;
   }
 }
 
 @media (min-width: 480px) {
-  /* line 208, ../scss/modules/_charles-parallax-addons.scss */
+  /* line 186, ../scss/modules/_charles-parallax-addons.scss */
   #charles-group1 #home-slider-holder {
     margin-bottom: 0;
   }
 }
-/* line 215, ../scss/modules/_charles-parallax-addons.scss */
+/* line 191, ../scss/modules/_charles-parallax-addons.scss */
 .careers-image,
 .smart-service-image {
   background-size: cover;
@@ -5943,51 +5952,51 @@ a {
   padding-bottom: 41%;
 }
 @media (min-width: 811px) {
-  /* line 215, ../scss/modules/_charles-parallax-addons.scss */
+  /* line 191, ../scss/modules/_charles-parallax-addons.scss */
   .careers-image,
   .smart-service-image {
     width: 50%;
   }
 }
 @media (min-width: 1300px) {
-  /* line 215, ../scss/modules/_charles-parallax-addons.scss */
+  /* line 191, ../scss/modules/_charles-parallax-addons.scss */
   .careers-image,
   .smart-service-image {
     padding-bottom: 513.5px;
   }
 }
 
-/* line 234, ../scss/modules/_charles-parallax-addons.scss */
+/* line 203, ../scss/modules/_charles-parallax-addons.scss */
 .charles-txt-careers p {
   max-width: 19.5em;
 }
 @media (min-width: 811px) {
-  /* line 233, ../scss/modules/_charles-parallax-addons.scss */
+  /* line 202, ../scss/modules/_charles-parallax-addons.scss */
   .charles-txt-careers {
     width: 50%;
     float: left;
   }
 }
 
-/* line 243, ../scss/modules/_charles-parallax-addons.scss */
+/* line 212, ../scss/modules/_charles-parallax-addons.scss */
 .charles-txt-smart p {
   max-width: 20em;
 }
 @media (min-width: 811px) {
-  /* line 242, ../scss/modules/_charles-parallax-addons.scss */
+  /* line 211, ../scss/modules/_charles-parallax-addons.scss */
   .charles-txt-smart {
     width: 50%;
     float: right;
   }
 }
 
-/* line 252, ../scss/modules/_charles-parallax-addons.scss */
+/* line 221, ../scss/modules/_charles-parallax-addons.scss */
 #charles-group3,
 #charles-group5 {
   background-color: #3d3d3d;
 }
 @media (min-width: 811px) {
-  /* line 252, ../scss/modules/_charles-parallax-addons.scss */
+  /* line 221, ../scss/modules/_charles-parallax-addons.scss */
   #charles-group3,
   #charles-group5 {
     background-color: transparent;
@@ -5995,23 +6004,20 @@ a {
 }
 
 @media (min-width: 811px) {
-  /* line 267, ../scss/modules/_charles-parallax-addons.scss */
+  /* line 231, ../scss/modules/_charles-parallax-addons.scss */
   #charles-group2,
   #charles-group3,
   #charles-group5 {
-    max-height: 600px;
+    max-height: 500px;
   }
 
-  /* line 271, ../scss/modules/_charles-parallax-addons.scss */
+  /* line 236, ../scss/modules/_charles-parallax-addons.scss */
   #charles-group6 {
     max-height: 500px;
   }
-  /* line 274, ../scss/modules/_charles-parallax-addons.scss */
+  /* line 239, ../scss/modules/_charles-parallax-addons.scss */
   #charles-group6 .charles-parallax__layer.charles-parallax__layer--back {
-    width: 100%;
     padding-bottom: 67%;
-    height: 200%;
-    width: 150%;
     height: 205%;
     width: 150%;
     background-image: url("http://gamut.dev/wp-content/uploads/2014/09/rgb_Gamut_teachingbright-800x533.jpg"), url("http://gamut.dev/wp-content/uploads/2014/09/check_ur_phone_new-800x533.png");
@@ -6019,14 +6025,14 @@ a {
     background-position: 417% 71%, -186.6% 10%;
     background-size: 90%, 90%;
   }
-  /* line 316, ../scss/modules/_charles-parallax-addons.scss */
+  /* line 280, ../scss/modules/_charles-parallax-addons.scss */
   #charles-group7 .footer {
     position: absolute;
     width: 100%;
     bottom: 62.5px;
   }
 
-  /* line 323, ../scss/modules/_charles-parallax-addons.scss */
+  /* line 287, ../scss/modules/_charles-parallax-addons.scss */
   .c-gam-holder {
     position: absolute;
     top: 0;
@@ -6037,81 +6043,98 @@ a {
     height: 22px;
   }
 
-  /* line 330, ../scss/modules/_charles-parallax-addons.scss */
+  /* line 294, ../scss/modules/_charles-parallax-addons.scss */
   #charles-group4 {
     min-height: 1325px;
   }
-  /* line 337, ../scss/modules/_charles-parallax-addons.scss */
+  /* line 299, ../scss/modules/_charles-parallax-addons.scss */
   .careers-image {
     margin-left: 50%;
   }
 }
 @media (min-width: 811px) and (min-width: 1060px) {
-  /* line 274, ../scss/modules/_charles-parallax-addons.scss */
+  /* line 239, ../scss/modules/_charles-parallax-addons.scss */
   #charles-group6 .charles-parallax__layer.charles-parallax__layer--back {
     height: 200%;
-    background-position: 416% 71%, -186.6% 0%;
+    background-position: 416.5% 71%, -186.6% 0%;
   }
 }
 @media (min-width: 811px) and (min-width: 1150px) {
-  /* line 274, ../scss/modules/_charles-parallax-addons.scss */
+  /* line 239, ../scss/modules/_charles-parallax-addons.scss */
   #charles-group6 .charles-parallax__layer.charles-parallax__layer--back {
     background-size: 65%, 75%;
     background-position: 119.1% 71%, -30.6% 15%;
   }
 }
 @media (min-width: 811px) and (min-width: 1300px) {
-  /* line 274, ../scss/modules/_charles-parallax-addons.scss */
+  /* line 239, ../scss/modules/_charles-parallax-addons.scss */
   #charles-group6 .charles-parallax__layer.charles-parallax__layer--back {
-    padding-bottom: 870px;
+    bottom: 0px;
+    box-sizing: border-box;
+    height: auto;
+    padding-bottom: 900px;
+    width: 100%;
+    background-position: 200% 100%, -30.6000003814697% 15%;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 75%, 75%;
   }
 }
 
 @media (min-width: 811px) and (min-width: 1060px) {
-  /* line 330, ../scss/modules/_charles-parallax-addons.scss */
+  /* line 294, ../scss/modules/_charles-parallax-addons.scss */
   #charles-group4 {
     min-height: 1550px;
   }
 }
 
-@media (min-width: 1700px) {
-  /* line 345, ../scss/modules/_charles-parallax-addons.scss */
-  #charles-group2,
+@media (min-width: 1450px) {
+  /* line 304, ../scss/modules/_charles-parallax-addons.scss */
   #charles-group3,
   #charles-group5 {
     max-height: none;
   }
 }
-/* line 361, ../scss/modules/_charles-parallax-addons.scss */
+@media (min-width: 1500px) {
+  /* line 308, ../scss/modules/_charles-parallax-addons.scss */
+  #charles-group2 {
+    max-height: none;
+  }
+}
+/* line 313, ../scss/modules/_charles-parallax-addons.scss */
+.move-up {
+  top: -50%;
+}
+
+/* line 316, ../scss/modules/_charles-parallax-addons.scss */
 #charles-group3,
 #charles-group5 {
   max-height: 550px;
 }
 
 @media (min-width: 1060px) {
-  /* line 367, ../scss/modules/_charles-parallax-addons.scss */
+  /* line 319, ../scss/modules/_charles-parallax-addons.scss */
   #charles-group7 {
     max-height: 1040px;
     min-height: 1000px;
   }
 }
 @media (min-width: 811px) {
-  /* line 375, ../scss/modules/_charles-parallax-addons.scss */
+  /* line 326, ../scss/modules/_charles-parallax-addons.scss */
   #charles-group2 .charles-txt {
     height: 236px;
   }
 
-  /* line 381, ../scss/modules/_charles-parallax-addons.scss */
+  /* line 327, ../scss/modules/_charles-parallax-addons.scss */
   #charles-group3 .charles-txt {
     height: 323px;
   }
 }
 @media (max-width: 810px) {
-  /* line 387, ../scss/modules/_charles-parallax-addons.scss */
+  /* line 330, ../scss/modules/_charles-parallax-addons.scss */
   #charles-group2 {
     position: relative;
   }
-  /* line 391, ../scss/modules/_charles-parallax-addons.scss */
+  /* line 334, ../scss/modules/_charles-parallax-addons.scss */
   #charles-group2 #gamut-defined-bg {
     position: absolute;
     top: 0;
@@ -6121,13 +6144,13 @@ a {
   }
 }
 
-/* line 401, ../scss/modules/_charles-parallax-addons.scss */
+/* line 344, ../scss/modules/_charles-parallax-addons.scss */
 .charles-txt-careers {
   background-color: #f8f8ef;
 }
 
 @media (min-width: 811px) {
-  /* line 407, ../scss/modules/_charles-parallax-addons.scss */
+  /* line 346, ../scss/modules/_charles-parallax-addons.scss */
   .c-ab-center {
     position: absolute;
     top: 0;
@@ -6138,22 +6161,22 @@ a {
   }
 }
 
-/* line 417, ../scss/modules/_charles-parallax-addons.scss */
+/* line 356, ../scss/modules/_charles-parallax-addons.scss */
 #charles-group6 .gamut-btn,
 #charles-group7 .charles-txt-careers .gamut-btn {
   margin-bottom: 1em;
 }
 
-/* line 421, ../scss/modules/_charles-parallax-addons.scss */
+/* line 360, ../scss/modules/_charles-parallax-addons.scss */
 .charles-parallax__layer h1 {
   margin-bottom: .4em;
 }
-/* line 422, ../scss/modules/_charles-parallax-addons.scss */
+/* line 361, ../scss/modules/_charles-parallax-addons.scss */
 .charles-parallax__layer .difference + a {
   margin-left: 11%;
 }
 
-/* line 432, ../scss/modules/_charles-parallax-addons.scss */
+/* line 369, ../scss/modules/_charles-parallax-addons.scss */
 #charles-group3 p,
 #charles-group3 h1,
 #charles-group5 p,
@@ -6165,7 +6188,7 @@ a {
   position: relative;
 }
 
-/* line 438, ../scss/modules/_charles-parallax-addons.scss */
+/* line 375, ../scss/modules/_charles-parallax-addons.scss */
 #charles-group3 h1:before,
 #charles-group5 h1:before {
   content: "";
@@ -6184,7 +6207,7 @@ a {
   z-index: 10;
 }
 @media (min-width: 811px) {
-  /* line 438, ../scss/modules/_charles-parallax-addons.scss */
+  /* line 375, ../scss/modules/_charles-parallax-addons.scss */
   #charles-group3 h1:before,
   #charles-group5 h1:before {
     top: .5em;
@@ -6192,7 +6215,7 @@ a {
     left: -812px;
   }
 }
-/* line 460, ../scss/modules/_charles-parallax-addons.scss */
+/* line 397, ../scss/modules/_charles-parallax-addons.scss */
 #charles-group3 p:after,
 #charles-group5 p:after {
   content: "";
@@ -6208,7 +6231,7 @@ a {
   right: -802px;
 }
 @media (min-width: 811px) {
-  /* line 460, ../scss/modules/_charles-parallax-addons.scss */
+  /* line 397, ../scss/modules/_charles-parallax-addons.scss */
   #charles-group3 p:after,
   #charles-group5 p:after {
     right: -862px;
@@ -6217,7 +6240,7 @@ a {
   }
 }
 
-/* line 482, ../scss/modules/_charles-parallax-addons.scss */
+/* line 419, ../scss/modules/_charles-parallax-addons.scss */
 .charles-txt-careers h1:before {
   content: "";
   display: block;
@@ -6235,7 +6258,7 @@ a {
   z-index: 10;
 }
 @media (min-width: 811px) {
-  /* line 482, ../scss/modules/_charles-parallax-addons.scss */
+  /* line 419, ../scss/modules/_charles-parallax-addons.scss */
   .charles-txt-careers h1:before {
     right: 0;
     left: -1450px;
@@ -6244,13 +6267,18 @@ a {
   }
 }
 
-/* line 507, ../scss/modules/_charles-parallax-addons.scss */
+/* line 444, ../scss/modules/_charles-parallax-addons.scss */
 .charles-cc-bg-holder {
   background-color: #f8f8ef;
 }
 
 @media (min-width: 811px) {
-  /* line 513, ../scss/modules/_charles-parallax-addons.scss */
+  /* line 449, ../scss/modules/_charles-parallax-addons.scss */
+  #charles-group4 {
+    z-index: 3;
+  }
+
+  /* line 454, ../scss/modules/_charles-parallax-addons.scss */
   #charles-group7 .charles-txt-holder.float-middle:before {
     content: "";
     display: block;
@@ -6262,7 +6290,7 @@ a {
     z-index: -1;
   }
 
-  /* line 525, ../scss/modules/_charles-parallax-addons.scss */
+  /* line 466, ../scss/modules/_charles-parallax-addons.scss */
   #charles-group6 .charles-parallax__layer.charles-parallax__layer--base:before {
     content: "";
     display: block;
@@ -6275,39 +6303,138 @@ a {
   }
 }
 @media (min-width: 811px) {
-  /* line 537, ../scss/modules/_charles-parallax-addons.scss */
+  /* line 478, ../scss/modules/_charles-parallax-addons.scss */
   #charles-group7 {
     height: 1300px;
   }
 }
 @media (min-width: 890px) {
-  /* line 537, ../scss/modules/_charles-parallax-addons.scss */
+  /* line 478, ../scss/modules/_charles-parallax-addons.scss */
   #charles-group7 {
     height: 1128px;
   }
 }
 @media (min-width: 1060px) {
-  /* line 537, ../scss/modules/_charles-parallax-addons.scss */
+  /* line 478, ../scss/modules/_charles-parallax-addons.scss */
   #charles-group7 {
     height: 100vh;
   }
 }
 
 @media (min-width: 811px) {
-  /* line 549, ../scss/modules/_charles-parallax-addons.scss */
+  /* line 484, ../scss/modules/_charles-parallax-addons.scss */
   #charles-group6 {
     margin-top: 0;
   }
 }
-/* line 553, ../scss/modules/_charles-parallax-addons.scss */
+/* line 486, ../scss/modules/_charles-parallax-addons.scss */
 #charles-group6 .charles-txt-smart {
   margin-top: 6.5em;
 }
 @media (min-width: 1060px) {
-  /* line 553, ../scss/modules/_charles-parallax-addons.scss */
+  /* line 486, ../scss/modules/_charles-parallax-addons.scss */
   #charles-group6 .charles-txt-smart {
     margin-top: 4.5em;
   }
+}
+
+@media (min-width: 1650px) {
+  /* line 493, ../scss/modules/_charles-parallax-addons.scss */
+  #charles-group2 .charles-parallax__layer.charles-parallax__layer--base .charles-txt.float-middle {
+    bottom: -50%;
+  }
+}
+/* line 501, ../scss/modules/_charles-parallax-addons.scss */
+.charles-red img {
+  background: white;
+  -webkit-transform: translateZ(1);
+  -moz-transform: translateZ(1);
+  -o-transform: translateZ(1);
+  -ms-transform: translateZ(1);
+  transform: translateZ(1);
+}
+
+/* line 506, ../scss/modules/_charles-parallax-addons.scss */
+.charles-bg-img {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 2502px;
+  height: 3.75px;
+  position: absolute;
+}
+
+/* line 515, ../scss/modules/_charles-parallax-addons.scss */
+.charles-crossmedia {
+  background-image: url("../../../../../img/oct-beams/crossmedia.png");
+}
+
+/* line 519, ../scss/modules/_charles-parallax-addons.scss */
+.charles-reps {
+  background-image: url("../../../../../img/oct-beams/reps.png");
+}
+
+/* line 523, ../scss/modules/_charles-parallax-addons.scss */
+.charles-reach {
+  background-image: url("../../../../../img/oct-beams/reach.png");
+}
+
+/* line 527, ../scss/modules/_charles-parallax-addons.scss */
+.charles-programmatic {
+  background-image: url("../../../../../img/oct-beams/programmatic.png");
+}
+
+/* line 531, ../scss/modules/_charles-parallax-addons.scss */
+.flyout {
+  -webkit-transition: all 400ms;
+  -moz-transition: all 400ms;
+  -o-transition: all 400ms;
+  -ms-transition: all 400ms;
+  transition: all 400ms;
+}
+
+/* line 535, ../scss/modules/_charles-parallax-addons.scss */
+#charles-fly-it {
+  top: 39px;
+  left: 308px;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-transition: transform 400ms;
+  -moz-transition: transform 400ms;
+  -o-transition: transform 400ms;
+  -ms-transition: transform 400ms;
+  transition: transform 400ms;
+}
+
+/* line 543, ../scss/modules/_charles-parallax-addons.scss */
+#charles-fly-it.flyout {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -o-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* line 546, ../scss/modules/_charles-parallax-addons.scss */
+#charles-fly-it-2 {
+  top: 39.2px;
+}
+
+/* line 549, ../scss/modules/_charles-parallax-addons.scss */
+#charles-fly-it-3 {
+  top: 41px;
+}
+
+/* line 552, ../scss/modules/_charles-parallax-addons.scss */
+#charles-fly-it-4 {
+  top: 40px;
 }
 
 /* line 2, ../scss/modules/_home-slider.scss */
