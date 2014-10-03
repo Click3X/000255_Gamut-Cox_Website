@@ -2,9 +2,7 @@
 	<label><input type="checkbox"> Debug</label>
 </div>
 
-<p id="scrollPercentLabel" style="z-index:1000; font-family: Impact; font-size: 50px; color: #2B2B2B; background: rgba(255, 255, 255, 0.5); padding: 20px; position: absolute; top: 50%; left: 50%; box-shadow: 8px 8px 5px rgba(20, 20, 20, 1); border-radius: 15px;">Scroll Percentage: <span>0</span>%</p>
-
-<div id="charles-parallax" class="charles-parallax">
+<div class="charles-parallax">
 
 	<div id="charles-group1" class="charles-parallax__group">
 		<div class="charles-parallax__layer charles-parallax__layer--base">
@@ -25,7 +23,7 @@
 			</div>
 		</div>
 		<div id="gamut-defined-bg" class="charles-parallax__layer charles-parallax__layer--back gamut-defined-bg move-up">
-			<!-- <div class="title">Background Layer</div> -->
+			<div class="title">Background Layer</div>
 		</div>
 	</div>
 
@@ -41,7 +39,7 @@
 			</div>
 		</div>
 		<div class="charles-parallax__layer charles-parallax__layer--base grey-block-bg">
-			<!-- <div class="title">Base Layer</div> -->
+			<div class="title">Base Layer</div>
 		</div>
 	</div>
 
@@ -64,7 +62,7 @@
 					</div>
 					<div class="clearfix charles-red">
 						<img id="pro-logo" src="<?php bloginfo('url'); ?>/img/home-logos/programmatic-logo.png" alt="programmatic">
-						<div id="charles-fly-it" class="charles-bg-img charles-programmatic"></div>
+						<!-- <div id="fly-it" class="bg-img programmatic"></div> -->
 					</div>
 
 				</div>
@@ -85,7 +83,7 @@
 
 					<div class="clearfix charles-red">
 						<img id="rep-logo" src="<?php bloginfo('url'); ?>/img/home-logos/reps-logo.png" alt="reps">
-						<div id="charles-fly-it-2" class="charles-bg-img charles-reps"></div>
+						<!-- <div id="fly-it-2" class="bg-img reps"></div> -->
 					</div>
 				</div>
 			</div>
@@ -106,7 +104,7 @@
 
 					<div class="clearfix charles-red">
 						<img id="reach-logo" src="<?php bloginfo('url'); ?>/img/home-logos/reach-logo.png" alt="reach">
-						<div id="charles-fly-it-3" class="charles-bg-img charles-reach"></div>
+						<!-- <div id="fly-it-3" class="bg-img reach"></div> -->
 					</div>
 				</div>
 			</div>
@@ -126,7 +124,7 @@
 
 					<div class="clearfix charles-red">
 						<img id="crossmedia-logo" src="<?php bloginfo('url'); ?>/img/home-logos/crossmedia-logo.png" alt="crossmedia">
-						<div id="charles-fly-it-4" class="charles-bg-img charles-crossmedia"></div>
+						<!-- <div id="fly-it-4" class="bg-img crossmedia"></div> -->
 					</div>
 				</div>
 			</div>
@@ -134,10 +132,10 @@
 		</div>
 
 		<div class="charles-parallax__layer charles-parallax__layer--back">
-			<!-- <div class="title">Background Layer</div> -->
+			<div class="title">Background Layer</div>
 		</div>
 		<div class="charles-parallax__layer charles-parallax__layer--deep">
-			<!-- <div class="title">Deep Background Layer</div> -->
+			<div class="title">Deep Background Layer</div>
 		</div>
 	</div>
 
@@ -154,18 +152,27 @@
 			</div>
 		</div>
 		<div class="charles-parallax__layer charles-parallax__layer--base grey-block-bg">
-			<!-- <div class="title">Base Layer</div> -->
+			<div class="title">Base Layer</div>
 		</div>
 	</div>
 
 	
 	<div id="charles-group6" class="charles-parallax__group">
-		<div id="career-smart-bg" class="charles-parallax__layer charles-parallax__layer--back">
-			<!-- <div class="title">Background Layer</div> -->
+		<div class="charles-parallax__layer charles-parallax__layer--back">
+			<div class="title">Background Layer</div>
+			
+<!-- 			<div class="clearfix charles-ss-bg-holder">
+				<div id="smart-service-bg" class="smart-service-image charles-ss-image"></div>
+			</div>
+
+			<div class="clearfix charles-cc-bg-holder">
+				<div id="careers-bg" class="careers-image charles-cc-image"></div>
+			</div> -->
+
 		</div>
 
 		<div class="charles-parallax__layer charles-parallax__layer--base">
-			<!-- <div class="title">Base Layer</div> -->
+			<div class="title">Base Layer</div>
 			
 			<div class="clearfix charles-txt-holder float-middle">
 				<div class="clearfix charles-txt-smart">
@@ -185,7 +192,7 @@
 	
 	<div id="charles-group7" class="charles-parallax__group">
 		<div class="charles-parallax__layer charles-parallax__layer--base">
-			<!-- <div class="title">Base Layer</div> -->
+			<div class="title">Base Layer</div>
 			
 			<div class="clearfix charles-txt-holder float-middle">
 				<div class="clearfix charles-txt-careers">
