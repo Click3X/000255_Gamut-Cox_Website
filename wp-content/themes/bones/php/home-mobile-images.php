@@ -44,6 +44,18 @@ echo '<style>';
 
     } // END FOREACH LOOP
 
+    // NEW BACKGROUND IMAGES LOADED AS MULTIPLE BACKGROUNDS
+    $smart_meta_values = get_post_meta( $post_id, 'smart-service-image', $single );
+    $smart = wp_get_attachment_image_src( $smart_meta_values[0], 'para-bg' );
+    $smart = $smart[0];
+
+    $career_meta_values = get_post_meta( $post_id, 'careers-image', $single );
+    $career = wp_get_attachment_image_src( $career_meta_values[0], 'para-bg' );
+    $career = $career[0];
+
+    echo '#charles-group6 .charles-parallax__layer.charles-parallax__layer--back {
+        background-image: url('.$career.'), url('.$smart.');
+    }';
 
 echo '</style>';
 ?>

@@ -1,4 +1,4 @@
-			<div style="clear: both"></div>
+			<!-- <div style="clear: both"></div> -->
 			<footer class="footer" role="contentinfo">
 
 				<div id="footer-beam-container">
@@ -163,51 +163,3 @@
 				</div>
 
 			</footer>
-
-			<?php 
-			// IF IS HOME PAGE, CLOSE PARALLAX GROUP 7 WRAP
-			if( is_page(466) || is_page(393) ) {
-						echo '</div>'; //  END PARALLAX GROUP
-					echo '</div>'; // END GROUP 7
-				echo '</div>'; // END PARALLAX
-			}
-			elseif( is_page(107) ) {
-				echo '</div>'; // ADDED TO FIX HTML VALIDATION
-			}
-
-			?>
-
-		</div>
-
-		<?php // all js scripts are loaded in library/bones.php ?>
-		<?php wp_footer(); ?>
-		
-		<script>
-		// GOOGLE ANALYTICS SCRIPT FROM OLD WEBSITE
-		 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-		  ga('create', 'UA-55177925-1', 'auto');
-		  ga('send', 'pageview');
-		</script>
-
-		<?php 
-
-
-		if (  is_page_template('Dev Fix Overflow') ) {
-			echo '<script>
-			    var debugInput = document.querySelector("input");
-			    function updateDebugState() {
-			        document.body.classList.toggle("debug-on", debugInput.checked);
-			    }
-			    debugInput.addEventListener("click", updateDebugState);
-			    updateDebugState();
-			  </script>';
-		}
-
-		?>
-	</body>
-
-</html> <!-- end of site. what a ride! -->
