@@ -133,7 +133,7 @@
 
 							<!-- repeater starts -->
 							<?php 
-							if(get_field('3_column_contact')): ?>
+							if(get_field('t_column_contact')): ?>
 
 							<div class="lower-columns">
 
@@ -141,14 +141,12 @@
 								
 								<ul>
 
-								<?php while(has_sub_field('3_column_contact')): ?>
+								<?php while(has_sub_field('t_column_contact')): ?>
 									<li>
 
-									<h3><?php the_sub_field('purpose'); ?></h3>
-
-									<p>										
-										<?php the_sub_field('content'); ?>
-									</p>
+									<h3><?php echo get_sub_field('purpose'); ?></h3>
+																		
+										<?php echo get_sub_field('content'); ?>
 
 									</li>
 
