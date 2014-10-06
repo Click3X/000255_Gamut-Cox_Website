@@ -19,6 +19,7 @@
 
 			<?php $header_image = get_field('header-image');
 					$sub_page_content = get_field('sub-page-content');
+					//$three_column_purpose = get_sub_field('purpose');
 
 			?>
 
@@ -110,28 +111,7 @@
 							</article>
 
 
-
-
-							<?php endwhile; else: ?>
-								<article id="post-not-found" class="hentry cf">
-									<header class="article-header">
-										<!-- <h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1> -->
-										<h3 class="no-found-msg">No news has been posted.</h3>
-									</header>
-									<!-- <section class="entry-content">
-										<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'bonestheme' ); ?></p>
-									</section>
-									<footer class="article-footer">
-										<p><?php _e( 'This is the error message in the page-custom.php template.', 'bonestheme' ); ?></p>
-									</footer> -->
-								</article> 
-							<?php endif;  ?>
-
-							<!-- MEDIA INQUIRY INFO -->
-
-							<div class="media-inquiry-info"><?php echo $sub_page_content  ?></div>
-
-							<!-- repeater starts -->
+														<!-- repeater starts -->
 							<?php 
 							if(get_field('t_column_contact')): ?>
 
@@ -159,6 +139,27 @@
 
 							<?php endif; ?>
 							<!-- end of repeater -->
+
+							<?php endwhile; else: ?>
+								<article id="post-not-found" class="hentry cf">
+									<header class="article-header">
+										<!-- <h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1> -->
+										<h3 class="no-found-msg">No news has been posted.</h3>
+									</header>
+									<!-- <section class="entry-content">
+										<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'bonestheme' ); ?></p>
+									</section>
+									<footer class="article-footer">
+										<p><?php _e( 'This is the error message in the page-custom.php template.', 'bonestheme' ); ?></p>
+									</footer> -->
+								</article> 
+							<?php endif;  ?>
+
+							<!-- MEDIA INQUIRY INFO -->
+
+							<div class="media-inquiry-info"><?php echo $sub_page_content  ?></div>
+
+
 
 						</div> 
 						<!-- end of content wrapper with formatting -->
