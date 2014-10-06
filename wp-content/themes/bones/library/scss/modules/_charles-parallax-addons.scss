@@ -163,8 +163,13 @@
     }
 
     @media(min-width: 811px) {
-        .charles-red { max-width: 424px; }
+        .charles-red { max-width: 424px; background-color: #ffffff; }
+        .charles-blue { z-index: 3; @include prefix(transform, translateZ(3)); background-color: #ffffff; }
     }
+
+    @media (min-width: 980px) {
+        .charles-red { max-width: 500px; }
+    }   
 }
 
 #charles-group4 {
@@ -220,18 +225,14 @@
 #charles-group3,
 #charles-group5 {
     background-color:rgb(61,61,61);
-    @media(min-width: 811px) {
-        background-color:transparent;
-    }
+    
+    @media(min-width: 811px) { background-color:transparent; }
 }
 
 @media(min-width: 811px) {
     #charles-group2,
     #charles-group3,
-    #charles-group5 { 
-        // max-height: 600px; 
-        max-height: 500px; 
-    }
+    #charles-group5 { max-height: 500px; }
 
     #charles-group6 {
         max-height: 500px;
@@ -240,13 +241,10 @@
             padding-bottom: 67%;
             height: 205%;
             width: 150%;
-            background-image: url("http://gamut.dev/wp-content/uploads/2014/09/rgb_Gamut_teachingbright-800x533.jpg"), url("http://gamut.dev/wp-content/uploads/2014/09/check_ur_phone_new-800x533.png");
+        //    background-image: url("http://gamut.dev/wp-content/uploads/2014/09/rgb_Gamut_teachingbright-800x533.jpg"), url("http://gamut.dev/wp-content/uploads/2014/09/check_ur_phone_new-800x533.png");
             background-repeat: no-repeat, no-repeat;
             background-position: 417% 71%, -186.6% 10%;
             background-size: 90%, 90%;
-
-
-
 
             @media(min-width: 1060px) {
                 height: 200%;
@@ -259,10 +257,6 @@
             }
 
             @media(min-width: 1300px) {
-                // background-position: 143% 71%, -30.6000003814697% 15%;
-                // background-repeat: no-repeat, no-repeat;
-                // background-size: 65%, 75%;
-                // webkit-background-size: 65%, 75%;
                 bottom: 0px;
                 box-sizing: border-box;
                 height: auto;
@@ -304,10 +298,9 @@
     #charles-group5 { max-height:none; }
 }
 
-@media(min-width:1500px) {
-    #charles-group2 {
-        max-height: none;
-    }
+#charles-group2 { 
+    @media(min-width:1500px) { max-height: 700px; }
+    @media(min-width:1900px) { max-height: 900px; }
 }
 
 .move-up { top: -50%; }
@@ -507,48 +500,129 @@
     background-repeat: no-repeat;
     background-size: contain;
     width:2502px;
-    // height: 7px;
-    height: 3.75px;
+    height: 3px;
+    position: absolute;
+
+    @media(min-width: 980px) {
+        // height: 3.75px;
+        height: 4px;
+    }
+}
+
+.charles-crossmedia { background-image:url('../../../../../img/oct-beams/crossmedia.png'); }
+.charles-reps { background-image:url('../../../../../img/oct-beams/reps.png'); }
+.charles-reach { background-image:url('../../../../../img/oct-beams/reach.png'); }
+.charles-programmatic { background-image:url('../../../../../img/oct-beams/programmatic.png'); }
+
+
+.charles-blue:before {
+    content: "";
+    display: block;
+    background:white;
+    width: 200%;
+    height: 100px;
+    left: -200%;
     position: absolute;
 }
 
-.charles-crossmedia {
-    background-image:url('../../../../../img/oct-beams/crossmedia.png');
+
+
+// FLY OUT
+#charles-fly-it,
+#charles-fly-it-2,
+#charles-fly-it-3,
+#charles-fly-it-4 {
+    display: none;
+    z-index: 0;
+    @include prefix(transform, translateZ(0));
+    @include prefix(transition, transform 400ms);
+
+    @media(min-width: 811px) {
+        display: block;
+    }
 }
 
-.charles-reps {
-    background-image:url('../../../../../img/oct-beams/reps.png');
-}
-
-.charles-reach {
-    background-image:url('../../../../../img/oct-beams/reach.png');
-}
-
-.charles-programmatic {
-    background-image:url('../../../../../img/oct-beams/programmatic.png');
-}
-// FLY OUTS
-.flyout {
-    @include prefix(transition, all 400ms);
-}
 
 #charles-fly-it {
     top: 39px;
-    left: 308px;
+    // left: -2600px;
     @include prefix(transform, translateZ(0));
-    @include prefix(transform, translateX(-100%));
-
-    @include prefix(transition, transform 400ms);
+    @include prefix(transform, translateX(-2600px));
+    @include prefix(transition, all 400ms);
+    @media(min-width: 980px) { top: 37px; }
 }
 #charles-fly-it.flyout {
-    @include prefix(transform, translateX(0));
+    // left: 305px;
+    @include prefix(transform, translateZ(0));
+    @include prefix(transform, translateX(305px));
+    @include prefix(transition, all 400ms);
+    @media(min-width: 980px) { 
+        // left: 360px; 
+        @include prefix(transform, translateX(360px));
+    }
 }
+
 #charles-fly-it-2 {
-    top: 39.2px;
+    top: 39.5px;
+    // left: -2600px;
+    @include prefix(transform, translateZ(0));
+    @include prefix(transform, translateX(-2600px));
+    @include prefix(transition, all 400ms);
+
+    @media(min-width: 980px) { top: 37.2px; }
 }
+
+#charles-fly-it-2.flyout {
+    // left: 111px;
+    @include prefix(transform, translateZ(0));
+    @include prefix(transform, translateX(111px));
+    @include prefix(transition, all 400ms);
+    @media(min-width: 980px) { 
+        // left: 132px; 
+        @include prefix(transform, translateX(132px));
+    }
+}
+
 #charles-fly-it-3 {
-    top: 41px;   
+    top: 41.5px;
+    // left: -2600px;
+    @include prefix(transform, translateZ(0));
+    @include prefix(transform, translateX(-2600px));
+    @include prefix(transition, all 400ms);
+    @media(min-width: 980px) { top: 39px; }
 }
+
+#charles-fly-it-3.flyout {
+    // left: 134px;
+    // left:0;
+    // z-index: 0;
+    @include prefix(transform, translateZ(0));
+    @include prefix(transform, translateX(134px));
+    @include prefix(transition, all 400ms);
+    @media(min-width: 980px) { 
+        // left: 158px; 
+        @include prefix(transform, translateX(158px));
+    }
+}
+
 #charles-fly-it-4 {
-    top: 40px;
+    top: 41px;
+    // left: -2600px;
+    @include prefix(transform, translateZ(0));
+    @include prefix(transform, translateX(-2600px));
+    @include prefix(transition, all 400ms);
+    @media(min-width: 980px) { top: 38.8px; }
 }
+
+
+#charles-fly-it-4.flyout {
+    // left: 253px;
+    @include prefix(transform, translateZ(0));
+    @include prefix(transform, translateX(253px));
+    @include prefix(transition, all 400ms);
+    @media(min-width: 980px) { 
+        // left: 300px; 
+        @include prefix(transform, translateX(300px));
+    }
+}
+

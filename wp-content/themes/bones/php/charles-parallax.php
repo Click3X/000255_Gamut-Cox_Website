@@ -1,8 +1,8 @@
-<div class="debug">
+<!-- <div class="debug">
 	<label><input type="checkbox"> Debug</label>
 </div>
-
-<p id="scrollPercentLabel" style="z-index:1000; font-family: Impact; font-size: 50px; color: #2B2B2B; background: rgba(255, 255, 255, 0.5); padding: 20px; position: absolute; top: 50%; left: 50%; box-shadow: 8px 8px 5px rgba(20, 20, 20, 1); border-radius: 15px;">Scroll Percentage: <span>0</span>%</p>
+ -->
+<!-- <p id="scrollPercentLabel" style="z-index:1000; font-family: Impact; font-size: 50px; color: #2B2B2B; background: rgba(255, 255, 255, 0.5); padding: 20px; position: absolute; top: 50%; left: 50%; box-shadow: 8px 8px 5px rgba(20, 20, 20, 1); border-radius: 15px;">Scroll Percentage: <span>0</span>%</p> -->
 
 <div id="charles-parallax" class="charles-parallax">
 
@@ -209,10 +209,10 @@
 </div>
 
 <script>
-	var debugInput = document.querySelector("input");
-	function updateDebugState() {
-			document.body.classList.toggle('debug-on', debugInput.checked);
-	}
-	debugInput.addEventListener("click", updateDebugState);
-	updateDebugState();
+	// var debugInput = document.querySelector("input");
+	// function updateDebugState() {
+	// 		document.body.classList.toggle('debug-on', debugInput.checked);
+	// }
+	// debugInput.addEventListener("click", updateDebugState);
+	// updateDebugState();
 </script>
