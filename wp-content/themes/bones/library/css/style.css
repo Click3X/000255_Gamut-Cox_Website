@@ -6773,6 +6773,11 @@ form label {
   display: none;
 }
 
+/* line 744, ../scss/partials/_wen.scss */
+.various:hover {
+  text-decoration: none !important;
+}
+
 /* line 3, ../scss/partials/_charles-font.scss */
 #sidebar1 .sidebar-intro li {
   list-style-position: outside;
