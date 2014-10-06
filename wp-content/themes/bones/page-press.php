@@ -127,7 +127,40 @@
 								</article> 
 							<?php endif;  ?>
 
+							<!-- MEDIA INQUIRY INFO -->
+
 							<div class="media-inquiry-info"><?php echo $sub_page_content  ?></div>
+
+							<!-- repeater starts -->
+							<?php 
+							if(get_field('3_column_contact')): ?>
+
+							<div class="lower-columns">
+
+								
+								
+								<ul>
+
+								<?php while(has_sub_field('3_column_contact')): ?>
+									<li>
+
+									<h3><?php the_sub_field('purpose'); ?></h3>
+
+									<p>										
+										<?php the_sub_field('content'); ?>
+									</p>
+
+									</li>
+
+								<?php endwhile; ?>
+
+								</ul>
+								
+
+							</div>
+
+							<?php endif; ?>
+							<!-- end of repeater -->
 
 						</div> 
 						<!-- end of content wrapper with formatting -->
