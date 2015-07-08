@@ -81,17 +81,7 @@ add_image_size( 'emp-large', 250, 250, true );
 add_image_size( 'emp-individual', 290, 440, true );
 
 // SET IMAGE SIZE FOR PARALLAX BACKGROUND
-// add_image_size( 'para-bg-mobile', 240, 160, array( 'center', 'center' ) );
-add_image_size( 'para-bg-tablet', 480, 320, array( 'center', 'center' ) );
 add_image_size( 'para-bg', 800, 533, true );
-
-add_image_size( 'home-p-mobile', 480 );
-add_image_size( 'home-p-tablet', 960 );
-
-// SET IMAGE SIZES FOR MOBILE
-add_image_size( 'mobile', 480, 119, false);
-add_image_size( 'mobile-crop', 480, 200, array( 'center', 'center' ) );
-add_image_size( 'tablet', 960, 237, false );
 
 /*
 to add more sizes, simply copy a line from above
@@ -261,21 +251,6 @@ function cleanString($string){
   return $newString;
 
 }
-
-// CLEAN ADDRESS
-function cleanAddress($string){
-  $search = '/[^[:alpha:]]/';
-  $space = ' ';
-  $replace = '-';
-  $newString = str_replace($search, $replace, $string);
-  $newString = strtolower($newString);
-  $newString = str_replace($space, $replace, $newString);
-
-  return $newString;
-
-}
-
-// $pg_url = preg_replace("/[^a-zA-Z 0-9]+/", " ", $pg_url);
 
 
 

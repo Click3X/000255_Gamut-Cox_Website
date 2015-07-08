@@ -87,8 +87,7 @@ wp_reset_postdata();
 <div id="content" class="fixed-header-bg">
 
 	<header class="article-header">
-		<!-- <div class="page-header" style="background-image: url('<?php echo $header['url'] ?>')"></div> -->
-		<div id="page-header-<?php echo get_queried_object_id(); ?>" class="page-header"></div>
+		<div class="page-header" style="background-image: url('<?php echo $header['url'] ?>')"></div>
 	</header>
 
 	<div class="wrap-wrap cf">
@@ -121,7 +120,7 @@ wp_reset_postdata();
 									<?php 
 										// echo '<img src="'.$teamMember['newHoverThumb'].'" alt="'.$teamMember['name'].'" class="grid-thumb">';
 
-										echo '<img src="'.$teamMember['new-thumb'].'" alt="'.$teamMember['name'].'" class="grid-thumb">';
+										echo '<img src="'.$teamMember['new-thumb'].'" alt="'.$teamMember['name'].'" class="grid-thumb grayscale">';
 										echo '<h2 class="small-name gothic">'.$teamMember['name'].'</h2>';
 										echo '<h3 class="small-title gothic">'.$teamMember['emp_title'].'</h3>';
 									?>
@@ -134,7 +133,7 @@ wp_reset_postdata();
 									<div class="bio-right-column-container">
 									<h3 class="bio-name"><?php echo $teamMember['name']; ?></h3><br />	
 									<h3 class="bio-title"><?php echo $teamMember['emp_title']; ?></h3>	
-									<?php echo $teamMember['add_info']; ?>
+									<p><?php echo $teamMember['add_info']; ?></p>
 									</div>
 									
 								</div> 

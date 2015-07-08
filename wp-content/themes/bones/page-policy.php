@@ -46,16 +46,17 @@ get_header(); ?>
 					            </div>
 					            <div class="opt_btn_wrapper">
 					              <a name="oo" id="ooButton" class="button opt_btn" id="btn-opt-out">Opt-Out</a><br />
-					              <iframe id="ooResponseFrame" src="" width="30" height="30" style="border:none;position:relative;top:10px;margin-top:-30px;" ></iframe>
+					              <!-- <iframe id="ooResponseFrame" src="" width="30" height="30" style="border:none;position:relative;top:10px;margin-top:-30px;" ></iframe> -->
 					            </div>
 					            <p>
-					                <script language="JavaScript" type="text/javascript">
-					                       document.getElementById('ooButton').onclick = function () {
-					                           document.getElementById('ooResponseFrame').src = 'http://oo.afy11.net/NAIOptOut.aspx';
-					                           setTimeout(function () { document.getElementById('ooStatusFrame').src = 'http://oo.afy11.net/NAIIsOptOut.aspx?nocache=0.2900600'; }, 200);
-					                           return false;
-					                       } 
-					                </script>
+                                        <script language="JavaScript" type="text/javascript">
+                                              document.getElementById('ooButton').onclick = function () {
+                                                var statusFrame = document.getElementById('ooStatusFrame');
+                                                statusFrame.src = "http://oo.afy11.net/NAIOptOut.aspx";
+                                                                statusFrame.width = 401;
+                                                return false;
+                                              }
+                                        </script>
 					            </p>
 					        </div>
 

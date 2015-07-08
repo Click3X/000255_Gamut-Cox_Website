@@ -146,6 +146,9 @@ function bones_scripts_and_styles() {
 		// Lightbox
 		wp_register_style( 'fancybox', get_stylesheet_directory_uri() . '/library/css/jquery.fancybox.css', array(), '' );
 
+		// GREY FALLBACK FOR IE11
+		// wp_register_style( 'greyscale-stylesheet', get_stylesheet_directory_uri() . '/library/css/gray.css', array(), '' );
+
 
     // comment reply script for threaded comments
     if ( is_singular() AND comments_open() AND (get_option('thread_comments') == 1)) {
@@ -204,14 +207,16 @@ function bones_scripts_and_styles() {
         // PLAY SOUND
         wp_register_script( 'play-sound' , get_stylesheet_directory_uri() . '/library/js/play-sound.js', array('jquery'), '', true );
 
-        // PAN TO MARKER
-        wp_register_script( 'pan-to-marker' , get_stylesheet_directory_uri() . '/library/js/pan-to-marker.js', array('jquery'), '', true );
+        // GREY FALLBACK FOR IE11
+        // wp_register_script( 'grey-scale' , get_stylesheet_directory_uri() . '/library/js/libs/jquery.gray.min.js', array('jquery'), '', true );
+
 
         // enqueue styles and scripts
 		wp_enqueue_script( 'bones-modernizr' );
 		wp_enqueue_style( 'bones-stylesheet' );
 		wp_enqueue_style( 'bones-ie-only' );
 		wp_enqueue_style( 'fancybox' );
+		// wp_enqueue_style( 'greyscale-stylesheet' );
 
 
 		$wp_styles->add_data( 'bones-ie-only', 'conditional', 'lt IE 9' ); // add conditional wrapper around ie stylesheet
@@ -226,17 +231,19 @@ function bones_scripts_and_styles() {
 		wp_enqueue_script( 'bones-jqueryui' );
 		wp_enqueue_script( 'fancybox-js' );
 		wp_enqueue_script( 'fancyboxpack-js' );
+		// wp_enqueue_script( 'grey-scale' );
 
 		// CONDITIONAL SCRIPT TO ONLY LOAD EXP-GRID-JS AND EXP-GRID-CSS ON 'WHO-WE-ARE' PAGE id = 45
-		// if( is_page(45) || is_page(48)) {
-		// 	// wp_enqueue_style( 'exp-grid-css' );
-		// 	wp_enqueue_script( 'exp-grid-js' );
-		// }
+		if( is_page(45) || is_page(48)) {
+			// wp_enqueue_style( 'exp-grid-css' );
+			wp_enqueue_script( 'exp-grid-js' );
+		}
 
 		// CONDITIONAL SCRIPT TO LOAD GOOGLE MAPS ON CONTACT PAGE
-		if(is_page(9)) {
-            wp_enqueue_script( 'pan-to-marker' );
-		}
+		// if(is_page(9)) {
+		// 	wp_enqueue_script( 'google-maps' );
+		// 	wp_enqueue_script( 'g-maps' );
+		// }
 
 		// CONDITIONAL SCRIPT TO LOAD ROYALSLIDER ON HOME PAGE
 		if( is_page(107) || is_page(466) || is_page(393) || is_page(472) ) {
@@ -244,6 +251,15 @@ function bones_scripts_and_styles() {
 			wp_enqueue_script( 'jq-easing' );
 			wp_enqueue_script( 'rs-js' );
 			wp_enqueue_script( 'rs-slider' );
+			// wp_enqueue_style( 'scroll-css' );
+			
+			// wp_enqueue_script( 'tweenMax' );
+			// wp_enqueue_script( 'timelineMax' );
+			// wp_enqueue_script( 'scrollorama' );
+			// wp_enqueue_script( 'scroll' );
+
+			// wp_enqueue_script( 'in-view' );
+			// wp_enqueue_script( 'in-view-page' );
 
             wp_enqueue_script( 'hide-scroll' );
 

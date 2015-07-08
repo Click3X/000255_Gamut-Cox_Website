@@ -33,12 +33,31 @@
 									$sub_title = get_sub_field('title');
 									if ($sub_title == 'Google Plus') { ?>
 									<li class="social">
-										<a href="<?php echo get_sub_field('link'); ?>" target="_blank" rel="publisher" title="<?php echo get_sub_field('title');?>" class="<?php echo $socialTitle; ?>">
+										<a href="<?php echo get_sub_field('link'); ?>" target="_blank" rel="publisher" title="<?php echo get_sub_field('title');?>" class="<?php echo $socialTitle; ?>" onClick="_gaq.push(['_trackEvent', 'Social Media', 'click', 'Google Plus']);">
 										</a>
 									</li>
-									<?php } else { ?>
+
+									<?php } else if ($sub_title == 'Twitter') { ?>
 									<li class="social">
-										<a href="<?php echo get_sub_field('link'); ?>" target="_blank" title="<?php echo get_sub_field('title');?>" class="<?php echo $socialTitle; ?>">
+										<a href="<?php echo get_sub_field('link'); ?>" target="_blank" title="<?php echo get_sub_field('title');?>" class="<?php echo $socialTitle; ?>" onClick="_gaq.push(['_trackEvent', 'Social Media', 'click', 'Twitter']);">
+										</a>
+									</li>
+
+									<?php } else if ($sub_title == 'Facebook') { ?>
+									<li class="social">
+										<a href="<?php echo get_sub_field('link'); ?>" target="_blank" title="<?php echo get_sub_field('title');?>" class="<?php echo $socialTitle; ?>" onClick="_gaq.push(['_trackEvent', 'Social Media', 'click', 'Facebook']);">
+										</a>
+									</li>
+
+									<?php } else if ($sub_title == 'Youtube') { ?>
+									<li class="social">
+										<a href="<?php echo get_sub_field('link'); ?>" target="_blank" title="<?php echo get_sub_field('title');?>" class="<?php echo $socialTitle; ?>" onClick="_gaq.push(['_trackEvent', 'Social Media', 'click', 'Youtube']);">
+										</a>
+									</li>
+
+									<?php } else if ($sub_title == 'Linked In') { ?>
+									<li class="social">
+										<a href="<?php echo get_sub_field('link'); ?>" target="_blank" title="<?php echo get_sub_field('title');?>" class="<?php echo $socialTitle; ?>" onClick="_gaq.push(['_trackEvent', 'Social Media', 'click', 'Linked In']);">
 										</a>
 									</li>
 									<?php } ?>
@@ -123,6 +142,10 @@
 								<a href="http://www.iab.net/about_the_iab/recent_press_releases/press_release_archive/press_release/pr-051314?gko=96140" target="blank" class="iab_logo">
 									<img src="<?php bloginfo('url'); ?>/img/iab_logo.png" alt="iab-logo">
 								</a>
+
+								<a href="http://www.networkadvertising.org/choices/#completed" target="blank" class="nai_logo">
+									<img src="<?php bloginfo('url'); ?>/img/nai_logo.png" alt="nai-logo">
+								</a>
 								</div>				
 
 							<?php echo '</div>'; // .wrap
@@ -184,13 +207,24 @@
 		
 		<script>
 		// GOOGLE ANALYTICS SCRIPT FROM OLD WEBSITE
-		 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		 // (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		 //  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		 //  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		 //  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-		  ga('create', 'UA-55177925-1', 'auto');
-		  ga('send', 'pageview');
+		 //  ga('create', 'UA-55177925-1', 'auto');
+		 //  ga('send', 'pageview');
+
+		var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-55177925-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
 		</script>
 
 		<?php 

@@ -11,24 +11,30 @@
 
 					</div>
 
-					<?php //$parent_title = get_the_title($post->post_parent); ?>
+					<?php $parentpage = get_page(63); ?>
 
-					<!-- check which category the post belongs to, and go back to it's category list -->
-					<?php 
+					<a class="page-link" href="<?php echo get_page_link(63);?>"><h2 id="sidebar-title"><?php echo $parentpage->post_title; ?></h2></a>
 
-					// $category = get_the_category();
+					<?php $defaults = array(
+						'theme_location'  => '',
+						'menu'            => 'Watch & Read',
+						'container'       => 'div',
+						'container_class' => '',
+						'container_id'    => '',
+						'menu_class'      => 'secondary',
+						'menu_id'         => '',
+						'echo'            => true,
+						'fallback_cb'     => 'wp_page_menu',
+						'before'          => '',
+						'after'           => '',
+						'link_before'     => '',
+						'link_after'      => '',
+						'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+						'depth'           => 0,
+						'walker'          => ''
+					);
 
-					$cat_event = 18; // or could be category id: 634 
-					$cat_press = 19;  
-					if(in_category( $cat_event )) { ?>
-						<a class="page-link" href="<?php echo get_page_link(298);?>"><h2 id="sidebar-title">Back</h2></a>
-					<?php } elseif (in_category( $cat_press )) { ?>
-						<a class="page-link" href="<?php echo get_page_link(65);?>"><h2 id="sidebar-title">Back</h2></a>
-					<?php } else { ?>
-						<a class="page-link" href="<?php echo get_page_link(63);?>"><h2 id="sidebar-title">Back</h2></a>
-					<?php }?> 
-
-					
+					wp_nav_menu( $defaults ); ?>
 
 				</div>
 
@@ -43,6 +49,15 @@
 
 
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
+							<!-- Media logo -->
+<!-- 							<?php $media_logo = get_field('media_logo');
+
+							if( !empty($media_logo) ): ?>
+
+								<img src="<?php echo $media_logo['url']; ?>" />
+
+							<?php endif; ?> -->
 
 							<?php
 								/*
@@ -59,6 +74,7 @@
 								 * replace the function below with the contents of the "format.php" file.
 								*/
 								get_template_part( 'post-formats/format', get_post_format() );
+
 							?>
 
 						<?php endwhile; ?>

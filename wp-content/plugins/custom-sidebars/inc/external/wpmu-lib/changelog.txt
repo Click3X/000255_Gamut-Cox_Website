@@ -4,11 +4,43 @@ Author:      Philipp Stracker
 Change Log:
 ----------------------------------------------------------------------
 
+1.0.17
+----------------------------------------------------------------------
+- Fix issue where scripts were not loaded in some cases
+
+1.0.16
+----------------------------------------------------------------------
+- Fix error on servers that run older version than PHP 5.3
+
+1.0.15
+----------------------------------------------------------------------
+- Add new session storage functions: WDev()->store_add(), store_get()
+- Add JS wpmUi.binary object to base-64 encode/decode data
+
+1.0.14
+----------------------------------------------------------------------
+- Add support for popup-classes (JS)
+- Add JS confirmation dialog: wpmUi.confirm()
+- Add new PHP functions to sanitize missing array keys: WDev()->load_fields()
+- Add new PHP debugging function: WDev()->debug()
+
+1.0.13
+----------------------------------------------------------------------
+- Migrate project to grunt
+- Add support for wp-config option: define('WDEV_UNMINIFIED', true)
+- Fix javascript issue with dynamic form submit in WpmUiAjaxData
+
+1.0.12
+----------------------------------------------------------------------
+- Fix issue with duplicate markup of cloned multiselect elements.
+- Make JS auto-init optional by checking body class 'no-auto-init'.
+
 1.0.11
 ----------------------------------------------------------------------
 - Fixed z-index of overlay and popup window (fixes issues in Firefox)
 - Fixed issue with dropdown lists that didn't close properly.
 - Fixed loading of plugin translations.
+- Add support for multiselect lists with ajax source.
 
 1.0.10
 ----------------------------------------------------------------------

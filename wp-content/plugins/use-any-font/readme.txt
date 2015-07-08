@@ -2,8 +2,8 @@
 Contributors: dnesscarkey
 Tags: use any font, any font, embed any font, font embed, font uploader, css3 font embed, @font-face embed, font conversion, webfont, ttf, opentype, custom fonts
 Requires at least: 3.0
-Tested up to: 3.9.1
-Stable tag: 4.2.1
+Tested up to: 4.2.2
+Stable tag: 4.3.2
 
 Embed any font in your website
 
@@ -12,7 +12,7 @@ Use any font you wish and give your site a elegant look. No css knowledge requir
 
 Click <a href="http://dineshkarki.com.np/use-any-font/demo" target="_blank">here</a> for Use Any Font working demo.
 
-Use Any Font gives you freedom to use any font in your website. It is not like other font embed services which gives you countable number of fonts to select from neither the one that stores your font in remote server. You can use any font if you have its font format (ttf,otf,eot,woff,svg,dfont,suit) without being dependent to other's server uptime.
+Use Any Font gives you freedom to use any font in your website. It is not like other font embed services which gives you countable number of fonts to select from neither the one that stores your font in remote server. You can use any font if you have its font format (ttf,otf) without being dependent to other's server uptime.
 
 Features
 
@@ -20,7 +20,8 @@ Features
 * Support all major browsers including IE 6+, Firefox, Chrome, Safari, IOS, Andriod, Opera and more.
 * Font conversion within the plugin interface font uploader.
 * Use uploaded font directly from Editor
-* Supports font format including ttf, otf, eot, woff, svg, dfont, suit (Will continue adding more). The required fonts are converted automatically.
+* Supports font format including ttf, otf. The required fonts are converted automatically.
+* Accepts font file upto 10 MB.
 * Embed fonts using @font-face css. SEO friendly and quick loading.
 * Multiple fonts can be used.
 * Faster load time as your custom fonts are stored on your own server.
@@ -30,7 +31,10 @@ Features
 
 You need API key to connect to our server for font conversion. Our server converts your font and sends it back. 
 
-Offer your contribution (Free, $10 to $100) and get the API key from <a href="http://dnesscarkey.com/font-convertor/api/" target="_blank">here</a>.
+Offer your contribution (Free for 1 font, $10 to $100) and get the API key from <a href="http://dnesscarkey.com/font-convertor/api/" target="_blank">here</a>.
+
+<strong>Installation Video</strong>
+[youtube http://www.youtube.com/watch?v=QzGaWIPVwEk]
 
 Note : We don't store your fonts in our server neither any of your information except the API key details. Our server deletes the temporary file after the conversion is done.
 
@@ -52,11 +56,15 @@ We don't respond to support tickets created here. Please visit our <a href="http
 
 = Which font format does plugin accepts ? =
 
-Currently, ttf, otf, eot, woff, svg, dfont, suit font format are accepted.
+Currently, ttf, otf font format are accepted.
 
 = What is the max font file size ? =
 
-Font file upto 2MB is acceptable. However, we suggest you to use smaller ones as far as possible. The font file size directly affects your site load time. 
+Font file upto 10MB is acceptable. However, we suggest you to use smaller ones as far as possible. The font file size directly affects your site load time. 
+
+= Mentioned 10 MB here but in font upload section it says less. Why ? =
+
+Ya, our plugin accept upto 10 MB font file but your wordpress installation have limitation for file size. Please check this link to increase it http://www.wpbeginner.com/wp-tutorials/how-to-increase-the-maximum-file-upload-size-in-wordpress/
 
 = Does it works with multiple fonts ? =
 
@@ -78,6 +86,14 @@ Please check screenshot #5 in Screenshots tab.
 
 The plugin is still searching font from your old path. You can delete your old uploaded font and re-upload and re-assign it.
 
+= Where are my fonts stored ? =
+
+All the fonts are stored in your own server. Our server only convert the fonts and sends back. 
+
+= Does my font depends upon plugin's server uptime ? =
+
+No, our server is needed during font conversion only. After that all fonts are served from your own server. 
+
 = Not working for me. What can i do ? =
 
 You can check our <a href="http://dineshkarki.com.np/forums/forum/use-any-fonts" target="_blank">support forum</a>, or check <a href="http://dineshkarki.com.np/use-any-font/use-any-font-known-issues" target="_blank">known issues</a> or ask to <a href="http://dineshkarki.com.np/rectify-my-problem" target="_blank">Rectify Your Problem</a> 
@@ -92,6 +108,30 @@ You can check our <a href="http://dineshkarki.com.np/forums/forum/use-any-fonts"
 1. Screenshot #5. Disable font list in editor.
 
 == Changelog ==
+
+= 4.3.2 =
+* Added relative font path settings. 
+* Added Css version system.
+
+= 4.3.1 =
+* Add js extension validation for font file.
+
+= 4.3 =
+* Ajax Font Upload
+* Fixed Couldn't receive font file for conversion issue.
+
+= 4.2.4 =
+* Font size increase to 10 MB
+* Fixed js validation issue.
+* Add server side validation for font file.
+
+= 4.2.3 =
+* Removed rarely used font formats from being upload. They were making font onvertor server down repeatedly.
+* Fixed name validation issue
+
+= 4.2.2 =
+* Tested to work with wordpress 4.0
+* Jquery Validation Plugin Updated
 
 = 4.2.1 =
 * Using wp_remote_get inplace of wp_remove_fopen for API Key

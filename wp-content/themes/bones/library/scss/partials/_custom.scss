@@ -521,9 +521,16 @@ hr {
   line-height: 1.45em;
 }
 
-.secondary li.page_item {
+.secondary li {
   line-height: 2.2em;
   font-size: .85em;
+  
+  ul.children, ul.sub-menu{
+    margin:0 0 0 0;
+    @media(min-width: 768px) {
+      margin:0 0 0 10px;
+    }
+  }
 
 //   a {
 //     color:  rgb(98,98,98);

@@ -2,8 +2,8 @@
 Contributors: Tibor
 Tags: admin, email, spam, shortcode
 Requires at least: 3.0.1
-Tested up to: 3.9
-Stable tag: 0.1
+Tested up to: 4.1
+Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -37,6 +37,9 @@ Find it on [GitHub](https://github.com/tiborp/email-shortcode-button "Plugin cod
 
 
 == Changelog ==
+
+= 1.0 =
+* Version bump for WordPress 4.1 support
 
 = 0.1 =
 * First release in the wild

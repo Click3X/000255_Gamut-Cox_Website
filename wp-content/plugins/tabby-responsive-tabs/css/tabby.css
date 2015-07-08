@@ -38,7 +38,7 @@
 .responsive-tabs ul.responsive-tabs__list {
 	font-size: 18px;
 	line-height: 18px;
-	margin: 20px 0 0 0px;	
+	margin: 20px 0 0 12px;	
 	padding: 0;
 }
 
@@ -52,11 +52,11 @@
 	-moz-border-radius-topright: 3px;
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
-	color: black;
+	color: #999;
 	font-size: 18px;
 	line-height: 19px;
-	text-transform: uppercase;
-	margin: 1px 0px 0 0;
+	text-transform: inherit;
+	margin: 1px 12px 0 0;
 	padding: 10px 12px 10px;
 	white-space: nowrap;
 	float: left;
@@ -64,9 +64,6 @@
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-	font-weight: 500;
-	width: 33.333%;
-	text-align: center;
 }
 
 .responsive-tabs .responsive-tabs__list__item .fa {
@@ -75,7 +72,7 @@
 }
 
 .responsive-tabs .responsive-tabs__list__item:hover {
-	color: #eb0a8d;
+	color: #333;
 	background: transparent;
 }
 
@@ -83,7 +80,7 @@
 .responsive-tabs .responsive-tabs__list__item--active:hover {
 	background: #fff;
 	border-color: #ddd;
-	color: #eb0a8d;
+	color: #666;
 	padding-bottom: 11px;
 	margin-top: 0;
 	position: relative;
@@ -136,19 +133,17 @@
 	}
 		
 	.responsive-tabs .responsive-tabs__heading {
-		background: white;
+		background: #fff;
 		border: 1px solid #ccc;
 		border-top: none;
-		color: black;
+		color: #777;
 		font-size: 18px;
-		font-weight: 500;
-		text-transform: uppercase;
+		font-weight: normal;
+		text-transform: inherit;
 		margin: 0;
 		padding: 10px 0;
 		padding-left: 20px;
 		position: relative;
-		width: 100%;
-		font-family: "franklin-gothic-urw",sans-serif;
 	}
 
 	.responsive-tabs .responsive-tabs__heading .fa {
@@ -170,7 +165,8 @@
 	}
 
 	.responsive-tabs .responsive-tabs__heading:hover {
-		color: #eb0a8d;
+		background: #eee;
+		color: #777;
 	}
 	
 	.responsive-tabs .responsive-tabs__heading:hover:after {	
@@ -179,8 +175,8 @@
 
 	.responsive-tabs .responsive-tabs__heading--active,
 	.responsive-tabs .responsive-tabs__heading--active:hover {
-
-		color: #eb0a8d;
+		background: #ccc;
+		color: #fff;
 	}
 
 	.responsive-tabs .responsive-tabs__heading--active:after,

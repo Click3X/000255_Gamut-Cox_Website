@@ -41,17 +41,6 @@ if (isset($_POST['test_server']) || empty($server_status)){
 $server_status 	= get_option('uaf_server_status');
 $server_message = get_option('uaf_server_msg');
 
-// SETTINGS
-if (isset($_POST['submit-uaf-settings'])){
-	if (isset($_POST['uaf_disbale_editor_font_list'])){
-		$uaf_disbale_editor_font_list = 1;
-	} else {
-		$uaf_disbale_editor_font_list = '';
-	}
-	update_option('uaf_disbale_editor_font_list', $uaf_disbale_editor_font_list);
-	$settings_message = 'Settings Saved';
-}
-$uaf_disbale_editor_font_list_value = get_option('uaf_disbale_editor_font_list');
 ?>
 
 <?php if (!empty($settings_message)):?>
@@ -71,6 +60,18 @@ $uaf_disbale_editor_font_list_value = get_option('uaf_disbale_editor_font_list')
                 <tr>
                 	<td>
                     	<input type="checkbox" name="uaf_disbale_editor_font_list" value="1" <?php echo $uaf_disbale_editor_font_list_value == 1?'checked=checked':''; ?> /> Disable Font list in wordpress editor.                        
+                    </td>
+                </tr>
+                
+                 <tr>
+                	<td>
+                    	<input type="checkbox" name="uaf_use_curl_uploader" value="1" <?php echo $uaf_use_curl_uploader_value == 1?'checked=checked':''; ?> /> Use alternative uploader (Need PHP Curl).
+                    </td>
+                </tr>
+                
+                <tr>
+                	<td>
+                    	<input type="checkbox" name="uaf_use_relative_font_path" value="1" <?php echo $uaf_use_relative_font_path == 1?'checked=checked':''; ?> /> Use relative path for font (Needed when you have domain mapping).
                     </td>
                 </tr>
                 
@@ -118,7 +119,8 @@ $uaf_disbale_editor_font_list_value = get_option('uaf_disbale_editor_font_list')
         </td>
         <td width="15">&nbsp;</td>
         <td width="250" valign="top">
-        	<table class="wp-list-table widefat fixed bookmarks">
+        	<?php if ($uaf_use_curl_uploader_value == 1): ?>
+            <table class="wp-list-table widefat fixed bookmarks">
             	<thead>
                 <tr>
                 	<th>Server Connectivity Test</th>
@@ -136,7 +138,7 @@ $uaf_disbale_editor_font_list_value = get_option('uaf_disbale_editor_font_list')
                         <?php endif; ?>
                         
                         
-                        <form action="options-general.php?page=use-any-font/plugin_interface.php" method="post">
+                        <form action="admin.php?page=uaf_settings_page" method="post">
                         	<p align="center">
                             <input type="submit" value="Test Again" class="button-primary" name="test_server" />
                             </p>
@@ -146,6 +148,7 @@ $uaf_disbale_editor_font_list_value = get_option('uaf_disbale_editor_font_list')
                 </tbody>
             </table>
             <br/>
+            <?php endif; ?>
             <table class="wp-list-table widefat fixed bookmarks">
             	<thead>
                 <tr>
@@ -156,11 +159,11 @@ $uaf_disbale_editor_font_list_value = get_option('uaf_disbale_editor_font_list')
                 <tr>
                 	<td>
                     <ul class="uaf_list">
-                    	<li><a href="http://dineshkarki.com.np/use-any-font/instructions" target="_blank">View Setup Instructions</a></li>
-                        <li><a href="http://dineshkarki.com.np/forums/forum/use-any-fonts" target="_blank">View Support Forum</a></li>
-                        <li><a href="http://dineshkarki.com.np/rectify-my-problem" target="_blank">Rectify My Problem</a></li>
-                        <li><a href="http://dineshkarki.com.np/use-any-font/use-any-font-known-issues" target="_blank">Check Known Issues</a></li>
-                        <li><a href="http://dineshkarki.com.np/contact" target="_blank">Contact Us</a></li>
+                    	<li><a href="http://goo.gl/NYtZsX" target="_blank">Setup Instructions</a></li>
+                        <li><a href="http://goo.gl/FcC7EL" target="_blank">Quick Virtual Support</a></li>
+                        <li><a href="http://goo.gl/XgEqzn" target="_blank">Support Forum</a></li>
+                        <li><a href="http://goo.gl/MKg7VS" target="_blank">Rectify My Problem</a></li>
+                        <li><a href="http://goo.gl/Id7yAo" target="_blank">Contact Us</a></li>
                     </ul>
                     </td>
                 </tr>

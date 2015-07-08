@@ -3,9 +3,9 @@
 /**
  * Plugin Name: Anti SpamBot Email Links
  * Description: Adds a shortcode button to the WordPress TinyMCE editor for easy anti spambot email links.
- * Version: 0.1
+ * Version: 1.0
  * Author: Tibor Paulsch
- * Author URI: http://i-tibor.nl/
+ * Author URI: http://tiborpaulsch.nl/
  *
  * This program is free software; you can redistribute it and/or modify it under the terms of the GNU 
  * General Public License version 2, as published by the Free Software Foundation.  You may NOT assume 

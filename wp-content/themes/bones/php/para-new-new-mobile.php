@@ -66,6 +66,8 @@
 
   <div id="group2" class="parallax__group" style="background-image: url('<?php echo $bg_img['url'] ?>');">
     <div class="parallax__layer parallax__layer--base">
+      <!-- <div class="title">Base Layer</div> -->
+
 
       <div class="txt-holder-holder">
         <div class="clearfix txt-holder">
@@ -76,8 +78,11 @@
         </div>
       </div>
 
+
     </div>
-    <div class="parallax__layer parallax__layer--deep"  style="background-image: url('<?php echo $bg_img['url'] ?>');"></div>
+    <div class="parallax__layer parallax__layer--deep"  style="background-image: url('<?php echo $bg_img['url'] ?>');">
+      <!-- <div class="title">Background Layer</div> -->
+    </div>
   </div>
 
 
@@ -90,7 +95,9 @@
         <div class="difference"><?php echo $our_solutions_content ?></div>
       </div>
     </div>
-    <div class="parallax__layer parallax__layer--base" style="background-color:rgb(61,61,61);"></div>
+    <div class="parallax__layer parallax__layer--base" style="background-color:rgb(61,61,61);">
+      <!-- <div class="title">Base Layer</div> -->
+    </div>
   </div>
 
 
@@ -133,7 +140,7 @@
           </div>
 
           <!-- REACH -->
-         <div class="clearfix subpage-wrap">
+<!--          <div class="clearfix subpage-wrap">
           <div class="clearfix subpage">
             <div class="p-holder">
                 <?php echo $reach_intro_content; ?>
@@ -146,10 +153,10 @@
                 <div id="fly-it-3" class="bg-img reach"></div>
               </div>
           </div>
-          </div>
+          </div> -->
 
           <!-- CROSSMEDIA -->
-         <div class="clearfix subpage-wrap">
+<!--          <div class="clearfix subpage-wrap">
           <div class="clearfix subpage">
             <div class="p-holder">
                 <?php echo $convergence_intro_content; ?>
@@ -162,7 +169,7 @@
               <div id="fly-it-4" class="bg-img crossmedia"></div>
             </div>
           </div>
-          </div>
+          </div> -->
 
     </div>
 
@@ -200,7 +207,7 @@
       <!-- <div class="title">Base Layer</div> -->
 
       <!-- <div class="clearfix cs-holder"> -->
-        <div class="clearfix cc-holder c-smart-bg c-bg-mobile" style="background-image:url('<?php echo $smart_service_image['sizes']['para-bg']; ?>');"></div>
+        <div class="clearfix cc-holder c-smart-bg c-bg-mobile" style="background-image:url('<?php echo $smart_service_image['url']; ?>');"></div>
         <div class="clearfix cc-holder c-smart-bg" style="background-image:url('<?php echo $smart_service_image['sizes']['para-bg']; ?>');">
           <div class="clearfix ccc-holder">
             <div class="clearfix c-smart">
@@ -213,7 +220,7 @@
       <!-- </div> -->
 
       <div class="clearfix cc-holder c-career-bg c-bg-mobile" style="background-image:url('<?php echo $careers_image['sizes']['para-bg']; ?>');"></div>
-      <div class="clearfix cc-holder c-career-bg" style="background-color:rgb(248,248,239); background-image:url('<?php echo $careers_image['sizes']['para-bg']; ?>');">
+      <div class="clearfix cc-holder c-career-bg" style="background-color:rgb(248,248,239); background-image:url('<?php echo $careers_image['url']; ?>');">
         <div class="clearfix ccc-holder">
           <div class="clearfix c-career">
             <h1><?php echo $careers_title; ?></h1>

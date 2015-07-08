@@ -24,9 +24,7 @@ get_header();
 
 ?>
 	<header class="article-header">
-		<!-- <div class="page-header" style="background-image: url('<?php echo $header['url'] ?>')"></div> -->
-		<div id="page-header-<?php echo get_queried_object_id(); ?>" class="page-header"></div>
-		
+		<div class="page-header" style="background-image: url('<?php echo $header['url'] ?>')"></div>
 	</header>
 
 	<div class="wrap-wrap cf">
@@ -63,7 +61,7 @@ get_header();
 						<?php } ?> -->
 
 							<p class="first-p"><?php echo $main_first_p; ?></p>
-							<?php echo $main_p; ?>
+							<p><?php echo $main_p; ?></p>
 
 						<!-- if statements -->
 						<!-- adding lower part on 4 product pages -->
@@ -91,7 +89,7 @@ get_header();
 										<h3 class="cro-color"><?php the_sub_field('column-title'); ?></h3>
 									<?php } ?>
 										
-										<?php the_sub_field('column-content'); ?>
+										<p><?php the_sub_field('column-content'); ?></p>
 									</li>
 
 								<?php endwhile; ?>

@@ -12,7 +12,6 @@ if (have_posts()) : while (have_posts()) : the_post();
 $header_image = get_field('header-image');
 $contact_title = get_field('contact-title');
 $locations_title = get_field('locations-title');
-$locations_list = get_field('locations-list');
 $header_image = get_field('header-image');
 
 endwhile;
@@ -51,25 +50,11 @@ endif;
 											
 									<ul>
 
-										<?php while(has_sub_field('location-list')): 
-											$city_title = get_sub_field('city');
-										?>
+										<?php while(has_sub_field('location-list')): ?>
 
 											<li class="location">
-												<a id="<?php echo cleanAddress($city_title);?>" href="#" class="clearfix city-map-link">
-													<ul class="clearfix city">
-														<li><h3 class="gothic"><?php the_sub_field('city'); ?></h3></li>
-														<li><?php the_sub_field('street_address'); ?></li>
-														<?php if( get_sub_field('additional_address_info') ) {
-															echo '<li>'.get_sub_field('additional_address_info').'</li>';
-														} ?>
-														<li><?php the_sub_field('city'); ?>,&nbsp;<?php the_sub_field('state'); ?>&nbsp;<?php the_sub_field('zip'); ?></li>
-														<li>t: <?php the_sub_field('phone'); ?></li>
-														<?php if( get_sub_field('additional_info') ) {
-															echo '<li>'.get_sub_field('additional_info').'</li>';
-														} ?>
-													</ul>
-												</a>
+												<h3 class="gothic"><?php the_sub_field('city'); ?></h3>
+												<?php the_sub_field('address'); ?>
 											</li>
 
 										<?php endwhile; ?>
@@ -79,8 +64,6 @@ endif;
 						<?php endif;
 
 						wp_reset_postdata();
-
-						// echo '<script>console.log("These are the locations: "); console.dir(locations); </script>';
 
 						// insert tabs first
 						// insert contact forms
@@ -97,17 +80,13 @@ endif;
 						[contact-form-7 id="286" title="Publishers"]
 						[tabbyending]');
 
-						?>
-						
-					</div>
-						
+							?>
 				</section> <?php // end article section ?>
 
-				<!-- CONTACT LIST -->
-				<section class="clearfix contact-container division-list">
+			<!-- 	<section class="clearfix contact-container division-list">
 					<?php			
 						//get all categories then display all posts in each term
-
+						//get all categories then display all posts in each term
 						$taxonomy = 'division';
 						$term_args=array(
 						  'orderby' => 'name',
@@ -147,7 +126,6 @@ endif;
 						       <ul class="team-member">
 							        <li class="address"><h3 class="gothic"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3></li>
 							        <li class="emp-title"><?php echo $title; ?></li>
-							        <!-- add antispambot function -->
 							        <li class="email"><a class="page-link" href="mailto: <?php echo antispambot($email); ?>"><?php echo antispambot($email); ?></a></li>
 							        <li class="telephone"><a href="tel:<?php echo $telephone; ?>"></a><?php echo $telephone; ?></li>
 						        </ul>
@@ -163,7 +141,7 @@ endif;
 						wp_reset_query();  // Restore global post data stomped by the_post().
 						?>
 				</section>
-
+ -->
 			</article>
 
 		</div>

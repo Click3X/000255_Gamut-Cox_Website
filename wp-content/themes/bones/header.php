@@ -58,22 +58,120 @@
         <?php
             // IF CONTACT PAGE, LOAD CONTACT PAGE PHP SCRIPTS FOR GOOGLE MAPS
             if(is_page(9)) {
-                include('php/LatLong.php');
-                include('php/parseAddress.php');
+                // include('php/LatLong.php');
+                // include('php/parseAddress.php');
+                echo '<script>var iconBase ="'; echo bloginfo('url'); echo '"</script>';
+                echo '<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+        <script>
+            var nycLatLong = new google.maps.LatLng(40.753519, -73.969971),
+            sfLatLong = new google.maps.LatLng(37.794108,-122.39511),
+            cenUs = new google.maps.LatLng(40.753519, -100.969971),
+            map,
+            mapOptions,
+            marker,
+            sfMarker;
+
+            function initialize() {
+
+                mapOptions = {
+                    zoom: 17,
+                    zoomControl: true,
+                    scaleControl: false,
+                    scrollwheel: false,
+                    disableDoubleClickZoom: true,
+                    center:nycLatLong,
+                    disableDefaultUI: true,
+                    styles: [
+                        {"stylers":[
+                            {"hue":"#ff1a00"},
+                            {"invert_lightness":false},
+                            {"saturation":-100},
+                            {"lightness":33},
+                            {"gamma":0.5}
+                            ]
+                        },
+                        {"featureType":"water",
+                        "elementType":"geometry",
+                        "stylers":[
+                            {"color":"#9ba0a5"}
+                            ]
+                        },
+                        {
+                            "featureType": "road.arterial",
+                            "stylers": [
+                              { "visibility": "on" },
+                              { "color": "#ffffff" }
+                            ]
+                          },
+                          {
+                            "featureType": "road.local",
+                            "stylers": [
+                              { "color": "#ffffff" },
+                              { "visibility": "on" }
+                            ]
+                          }
+                    ]
+                };
+
+                map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+
+                marker = new google.maps.Marker({
+                    position: nycLatLong,
+                    map: map,
+                    icon: iconBase + "/img/map-marker.png"
+                });
+
+                sfMarker = new google.maps.Marker({
+                    position: sfLatLong,
+                    map: map,
+                    icon: iconBase + "/img/map-marker.png"
+                });
+
+            }
+
+            google.maps.event.addDomListener(window, "load", initialize);
+
+        </script>';
             }
 
             // SERVE SMALLER IMAGES FOR MOBILE 
             // HOME PAGE
-            if(is_page(107)) {
-                include('php/home-mobile-images.php');
-            } else {
-                // ALL OTHER PAGES
-                include('php/serve-mobile-images.php');
-            }
+            // if(is_page(107)) {
+            //     include('php/home-mobile-images.php');
+            // } else {
+            //     // ALL OTHER PAGES
+            //     include('php/serve-mobile-images.php');
+            // }
+
+            // define sit url variables
+            $root_url = 'http://gamut.media';
 
 		?>
 
         <style>
+
+            /* 0519/2015 ADDING FOOTER STYLE*/
+            #inner-footer {
+                background-color: #202020;
+            }
+
+            /* 0430/2015 ADDING YOUTUBE ICON IN THE FOOTER */
+            .youtube {
+                display: block;
+                background: url("<?php echo $root_url ; ?>/img/youtube_icon.png") center center no-repeat;
+                height: 46px;
+                width: 46px;
+            }
+            .youtube:hover {
+                background: url("<?php echo $root_url ; ?>/img/youtube_icon_hover.png") center center no-repeat;
+            }
+
+            /*TEMPERARY STAGING FOOTER ICONS FIX (DON'T PUSH TO LIVE)*/
+            .facebook, .google-plus, .linked-in, .twitter {
+                height: 46px;
+                width: 46px;
+            }
+
 
             @media(min-width: 811px) {
                 .home-para, .page-id-107 {
@@ -152,7 +250,7 @@
 
             @media (min-width: 1040px) {
                 #parallax-kieth #group4 {
-                    height: 1650px;
+                    height: 850px;
                 }
             }
 
@@ -168,6 +266,9 @@
 	</head>
 
 	<body <?php body_class(); ?>>
+        <!-- PRELOAD YOUTUBE ICONS FOR FOOTER -->
+        <img src="<?php echo bloginfo('url').'/img/youtube_icon.png' ;?>" style="display: none">
+        <img src="<?php echo bloginfo('url').'/img/youtube_icon_hover.png' ;?>" style="display: none">
 
 		<div id="container">
 

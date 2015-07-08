@@ -19,40 +19,54 @@
 
 			<?php $header_image = get_field('header-image');
 					$sub_page_content = get_field('sub-page-content');
-
+					$category_id = get_field("category_id");
 			?>
 
 				<header class="clearfix article-header">
-					<!-- <div class="page-header" style="background-image: url('<?php echo $header_image['url'] ?>')"></div> -->
-					<div id="page-header-<?php echo get_queried_object_id(); ?>" class="page-header"></div>
+					<div class="page-header" style="background-image: url('<?php echo $header_image['url'] ?>')"></div>					
 				</header>
 
 				<div class="wrap-wrap cf">
 
 				<div id="inner-content" class="wrap cf">
 
-				<?php get_sidebar(); ?>
+				<div id="sidebar1" class="sidebar m-all t-1of3 cf d-2of7" role="complementary">
+					<div id="sidebar-beam-container">
+						<div id="sidebar-beam" style="background-image: url(<?php bloginfo('url'); ?>/img/sidebar-beam.png);"></div>
+					</div>
+					<?php $parent_title = get_the_title($post->post_parent); ?>
+					<h2 id="sidebar-title"><?php echo $parent_title; ?></h2>
 
-						<div id="main" class="m-all t-2of3 d-5of7 cf" role="main">
+					<?php $defaults = array(
+						'theme_location'  => '',
+						'menu'            => 'Watch & Read',
+						'container'       => 'div',
+						'container_class' => '',
+						'container_id'    => '',
+						'menu_class'      => 'secondary',
+						'menu_id'         => '',
+						'echo'            => true,
+						'fallback_cb'     => 'wp_page_menu',
+						'before'          => '',
+						'after'           => '',
+						'link_before'     => '',
+						'link_after'      => '',
+						'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+						'depth'           => 0,
+						'walker'          => ''
+					);
+
+					wp_nav_menu( $defaults ); ?>
+				</div>
+
+					<div id="main" class="m-all t-2of3 d-5of7 cf" role="main">
 
 						<div class="sub-page-content-wrapper">
-						<!-- IF Events PAGE -->
-						<?php if (is_page(298)) { ?>
-							<?php query_posts( 'cat=18' ); ?>
-
-							<!-- IF PRESS PAGE -->
-						<?php } elseif (is_page(65)) { ?>
-							<?php query_posts( 'cat=19' ); ?>
-<!-- 							<div class="news-logos-container">
-								<img id="logo-fast" src="<?php bloginfo('url'); ?>/img/fastcompany.png">
-								<img id="logo-nyt" src="<?php bloginfo('url'); ?>/img/nyt.png">
-								<img id="logo-forbes" src="<?php bloginfo('url'); ?>/img/forbes.png">
-							</div> -->
-
-
-						<?php } ?>
-										
-										
+							<?php 
+								if(!empty($category_id)){
+									query_posts( "cat=".$category_id );
+								}
+							?>
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -79,7 +93,7 @@
 										<?php } ?>
 
 
-										<?php the_content()?>
+										<p><?php the_content()?></p>
 										<!-- <p><?php the_excerpt()?></p> -->
 										<?php //endwhile; else: endif; 
 

@@ -128,7 +128,20 @@ class CustomSidebars {
 			// Display a message after import.
 			if ( ! empty( $_GET['cs-msg'] ) ) {
 				$msg = base64_decode( $_GET['cs-msg'] );
-				WDev()->message( $msg );
+
+				// Prevent XSS attacks...
+				$kses_args = array(
+					'br' => array(),
+					'b' => array(),
+					'strong' => array(),
+					'i' => array(),
+					'em' => array(),
+				);
+				$msg = wp_kses( $msg, $kses_args );
+
+				if ( ! empty( $msg ) ) {
+					WDev()->message( $msg );
+				}
 			}
 
 			// Free version only
@@ -805,6 +818,7 @@ class CustomSidebars {
 		ob_start();
 
 		$action = @$_POST['do'];
+		$get_action = @$_GET['do'];
 
 		/**
 		 * Notify all extensions about the ajax call.
@@ -813,5 +827,13 @@ class CustomSidebars {
 		 * @param  string $action The specified ajax action.
 		 */
 		do_action( 'cs_ajax_request', $action );
+
+		/**
+		 * Notify all extensions about the GET ajax call.
+		 *
+		 * @since  2.0.9.7
+		 * @param  string $action The specified ajax action.
+		 */
+		do_action( 'cs_ajax_request_get', $get_action );
 	}
 };

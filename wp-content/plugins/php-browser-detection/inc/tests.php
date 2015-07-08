@@ -12,7 +12,12 @@
  * 
  */
 include_once('../../../../wp-blog-header.php');
-$q = new WP_Query('page_id=2');
+if(array_key_exists('test-id', $_GET) && isset($_GET['test-id'])) {
+	$id = $_GET['test-id'];
+} else {
+	$id = 2;
+}
+$q = new WP_Query('page_id='.$id);
 get_header();
 ?>
 <div id="main" class="site-main">
@@ -153,14 +158,14 @@ get_header();
 							};
 							echo '</pre>';
 
-							echo '<pre>if(is_firefox(24)) = ';
-							if(is_firefox(24)) {
+							echo '<pre>if(is_firefox(35)) = ';
+							if(is_firefox(35)) {
 								echo TRUE;
 							};
 							echo '</pre>';
 
-							echo '<pre>if(is_chrome(32)) = ';
-							if(is_chrome(32)) {
+							echo '<pre>if(is_chrome(37)) = ';
+							if(is_chrome(37)) {
 								echo TRUE;
 							};
 							echo '</pre>';

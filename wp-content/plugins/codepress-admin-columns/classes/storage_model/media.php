@@ -9,13 +9,14 @@ class CPAC_Storage_Model_Media extends CPAC_Storage_Model {
 	 */
 	function __construct() {
 
-		$this->key 		 = 'wp-media';
-		$this->label 	 = __( 'Media Library' );
-		$this->type 	 = 'media';
-		$this->meta_type = 'post';
-		$this->page 	 = 'upload';
-		$this->post_type = 'attachment';
-		$this->menu_type = 'other';
+		$this->key 		 		= 'wp-media';
+		$this->label 	 		= __( 'Media Library' );
+		$this->singular_label 	= __( 'Media' );
+		$this->type 	 		= 'media';
+		$this->meta_type 		= 'post';
+		$this->page 	 		= 'upload';
+		$this->post_type 		= 'attachment';
+		$this->menu_type 		= 'other';
 
 		// headings
         // Increased the priority to overrule 3th party plugins such as Media Tags
@@ -64,7 +65,15 @@ class CPAC_Storage_Model_Media extends CPAC_Storage_Model {
     public function get_meta() {
         global $wpdb;
 
-		return $wpdb->get_results( "SELECT DISTINCT meta_key FROM {$wpdb->postmeta} pm JOIN {$wpdb->posts} p ON pm.post_id = p.ID WHERE p.post_type = 'attachment' ORDER BY 1", ARRAY_N );
+        if ( $cache = wp_cache_get( $this->key, 'cac_columns' ) ) {
+        	$result = $cache;
+        }
+        else {
+			$result = $wpdb->get_results( "SELECT DISTINCT meta_key FROM {$wpdb->postmeta} pm JOIN {$wpdb->posts} p ON pm.post_id = p.ID WHERE p.post_type = 'attachment' ORDER BY 1", ARRAY_N );
+			wp_cache_add( $this->key, $result, 'cac_columns', 10 ); // 10 sec.
+		}
+
+		return $result;
     }
 
 	/**
@@ -77,12 +86,11 @@ class CPAC_Storage_Model_Media extends CPAC_Storage_Model {
 	 */
 	public function manage_value( $column_name, $media_id ) {
 
-		$value = '';
-
-		// get column instance
-		if ( $column = $this->get_column_by_name( $column_name ) ) {
-			$value = $column->get_value( $media_id );
+		if ( ! ( $column = $this->get_column_by_name( $column_name ) ) ) {
+			return false;
 		}
+
+		$value = $column->get_value( $media_id );
 
 		// add hook
 		$value = apply_filters( "cac/column/value", $value, $media_id, $column, $this->key );

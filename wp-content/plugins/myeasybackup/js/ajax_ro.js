@@ -1,0 +1,12 @@
+/**
+ * AJAX caller
+ *
+ * @package myEASYdb
+ * @author Ugo Grandolini
+ * @version 1.0.5.5
+ *///
+//	http://rajshekhar.net/blog/archives/85-Rasmus-30-second-AJAX-Tutorial.html
+//	http://www.openjs.com/articles/ajax_xmlhttp_using_post.php
+//
+//alert('ajax_ro.js');
+function createRequestObject(){var a;a=window.XMLHttpRequest?new XMLHttpRequest:new ActiveXObject("Microsoft.XMLHTTP");return a}function sndReq(a,b,c){if(ajax_ro_item!=""){setTimeout('sndReq("'+a+'","'+b+'","'+c+'");',500);return}ajax_ro_item=a;var d=ajaxURL,e="action="+a+"&tag="+b+"&parms="+c,f="";switch(f){case"production":http.open("get",d+"?"+e);break;default:http.open("post",d,!0);http.setRequestHeader("Content-type","application/x-www-form-urlencoded")}http.onreadystatechange=handleResponse;switch(f){case"production":http.send(null);break;default:http.send(e)}}function handleResponse(){if(http.readyState==4){var response=http.responseText,blocks=new Array,update=new Array,cmd=new Array,i=0,splitter_tag="|-ajax-tag-|",splitter_block="|-ajax-block-|",splitter_cmd="|-ajax-cmd-|";if(response==""||typeof response=="undefined"||response==null)return;var newdiv=document.createElement("ajax");if(response.indexOf(splitter_block)!=-1){blocks=response.split(splitter_block);update=blocks[0].split(splitter_tag);cmd=blocks[1].split(splitter_cmd)}else{update=response.split(splitter_tag);cmd=0}newdiv.innerHTML=update[1];var ready=document.getElementById(update[0]);if(typeof ready!="undefined"&&ready!=null){document.getElementById(update[0]).innerHTML="";document.getElementById(update[0]).appendChild(newdiv)}else if(typeof update[0]!="undefined"&&typeof update[1]!="undefined"&&update[0]!=""&&update[1]!=""){var elId=update[0],elCont=update[1].replace(/\"/g,"@");setTimeout('delayUpdate("'+elId+'","'+elCont+'")',200)}if(cmd!=0){var t=cmd.length;for(i=0;i<t;i++)eval(cmd[i])}ajax_ro_item=""}}function delayUpdate(a,b){var c=document.getElementById(a);if(typeof c!="undefined"&&c!=null){var b=b.replace(/@/g,'"');setTimeout('document.getElementById("'+a+"\").innerHTML = '';"+"var newdiv = document.createElement('ajax');"+"newdiv.innerHTML = '"+b+"';"+'document.getElementById("'+a+'").appendChild(newdiv);',50)}}var ajax_ro_item="",http=createRequestObject();

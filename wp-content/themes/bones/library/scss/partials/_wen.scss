@@ -193,18 +193,16 @@
 
 // news sidebar
 .news-sidebar {
-	margin-left: 5%;
+	margin-left: 20px;
 	margin-top: 40px !important;
-	float: left;
+	position: absolute !important;
+	float:none;
 }
 
 .news-content-wrapper {
 	width: 70%;
 	margin: auto;
-
-
 }
-
 
 // fix main menu highlight
 .current-page-ancestor {

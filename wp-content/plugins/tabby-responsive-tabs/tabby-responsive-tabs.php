@@ -4,13 +4,13 @@ Plugin Name: Tabby Responsive Tabs
 Plugin URI: http://cubecolour.co.uk/tabby-responsive-tabs
 Description: Create responsive tabs inside your posts, pages or custom post types by adding simple shortcodes. An easy to use admin page can be added to customise the tab styles with the optional Tabby Responsive Tabs Customiser add-on plugin.
 Author: cubecolour
-Version: 1.2.0
+Version: 1.2.1
 Author URI: http://cubecolour.co.uk
 
 	Tabby Responsive Tabs WordPress plugin Copyright 2013-2014 Michael Atkins
-	
+
 	Licenced under the GNU GPL:
-		
+
 	This program is free software; you can redistribute it and/or modify
 	it under the terms of the GNU General Public License as published by
 	the Free Software Foundation; either version 2 of the License, or
@@ -24,31 +24,30 @@ Author URI: http://cubecolour.co.uk
 	You should have received a copy of the GNU General Public License
 	along with this program; if not, write to the Free Software
 	Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
-	
-	
+
 	Original version of Responsive Tabs jQuery script by Pete Love:
 	http://www.petelove.co.uk/responsiveTabs/
 	http://codepen.io/petelove666/pen/zbLna
 	MIT license: http://blog.codepen.io/legal/licensing/
 
-	Permission is hereby granted, free of charge, to any person 
-	obtaining a copy of this software and associated documentation 
+	Permission is hereby granted, free of charge, to any person
+	obtaining a copy of this software and associated documentation
 	files (the "Software"), to deal in the Software without restriction,
-	including without limitation the rights to use, copy, modify, 
-	merge, publish, distribute, sublicense, and/or sell copies of 
-	the Software, and to permit persons to whom the Software is 
+	including without limitation the rights to use, copy, modify,
+	merge, publish, distribute, sublicense, and/or sell copies of
+	the Software, and to permit persons to whom the Software is
 	furnished to do so, subject to the following conditions:
 
-	The above copyright notice and this permission notice shall 
+	The above copyright notice and this permission notice shall
 	be included in all copies or substantial portions of the Software.
 
-	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, 
-	EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES 
-	OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND 
-	NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT 
-	HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, 
-	WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
-	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+	EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+	OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+	NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+	HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+	WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 	DEALINGS IN THE SOFTWARE.
 
 */
@@ -74,12 +73,12 @@ function cc_tabby_plugin_version() {
 // ==============================================
 //	Add Links in Plugins Table
 // ==============================================
- 
+
 add_filter( 'plugin_row_meta', 'cc_tabby_meta_links', 10, 2 );
 function cc_tabby_meta_links( $links, $file ) {
 
 	$plugin = plugin_basename(__FILE__);
-	
+
 // create the links
 	if ( $file == $plugin ) {
 
@@ -89,11 +88,11 @@ function cc_tabby_meta_links( $links, $file ) {
 		$twitterlink = 'http://twitter.com/cubecolour';
 		$customiselink = 'http://cubecolour.co.uk/tabby-responsive-tabs-customiser';
 		$iconstyle = 'style="-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;"';
-		
+
 		if ( is_plugin_active( 'tabby-responsive-tabs-customiser/tabby-customiser.php' ) ) {
 			$customiselink = admin_url( 'options-general.php?page=tabby-settings' );
 		}
-		
+
 		return array_merge( $links, array(
 			'<a href="' . $supportlink . '"> <span class="dashicons dashicons-lightbulb" ' . $iconstyle . 'title="Tabby Responsive Tabs Support"></span></a>',
 			'<a href="' . $twitterlink . '"><span class="dashicons dashicons-twitter" ' . $iconstyle . 'title="Cubecolour on Twitter"></span></a>',
@@ -102,7 +101,7 @@ function cc_tabby_meta_links( $links, $file ) {
 			'<a href="' . $customiselink . '"><span class="dashicons dashicons-admin-appearance" ' . $iconstyle . 'title="Tabby Responsive Tabs Customizer"></span></a>'
 		) );
 	}
-	
+
 	return $links;
 }
 
@@ -122,7 +121,7 @@ function cc_tabby_meta_links( $links, $file ) {
 // ==============================================
 
 function cc_tabby_css() {
-	wp_enqueue_style('tabby.css', plugin_dir_url(__FILE__).'css/tabby.css' , false, cc_tabby_plugin_version() );	
+	wp_enqueue_style('tabby.css', plugin_dir_url(__FILE__).'css/tabby.css' , false, cc_tabby_plugin_version() );
 }
 
 add_action('wp_print_styles', 'cc_tabby_css', 30);
@@ -137,7 +136,7 @@ function cc_tabbytrigger() {
 
 	if ($tabbytriggered == FALSE) {
 		echo "\n" . "<script>jQuery(document).ready(function($) { RESPONSIVEUI.responsiveTabs(); })</script>" .  "\n";
-		
+
 		$tabbytriggered = TRUE;
 	}
 }
@@ -167,15 +166,15 @@ if ($GLOBALS["reset_firsttab_flag"] === TRUE) {
 	), $atts, 'tabbytab'));
 
 	$tabtarget = sanitize_title_with_dashes( $title );
-	
+
 	//initialise urltarget
 	$urltarget = '';
-	
+
 	//grab the value of the 'target' url parameter if there is one
 	if ( isset ( $_REQUEST['target'] ) ) {
 		$urltarget = sanitize_title_with_dashes( $_REQUEST['target'] );
 	}
-	
+
 	//	Set Tab Panel Class - add active class if the open attribute is set or the target url parameter matches the dashed version of the tab title
 	$tabcontentclass = "tabcontent";
 
@@ -184,17 +183,17 @@ if ($GLOBALS["reset_firsttab_flag"] === TRUE) {
 	}
 
 	$addtabicon = '';
-	
+
 	if ( $icon ) {
 		$addtabicon = '<span class="fa fa-' . $icon . '"></span>';
 	}
-	
+
 // test whether this is the first tab in the group
 	if ( $firsttab ) {
-	
+
 // Set flag so we know subsequent tabs are not the first in the tab group
 		$firsttab = FALSE;
-	
+
 // Build output if we are making the first tab
 		return '<div class="responsive-tabs">' . "\n" . '<h2 class="tabtitle">' . $addtabicon . $title . '</h2>' . "\n" . '<div class="' . $tabcontentclass . '">' . "\n";
 	}
@@ -206,7 +205,7 @@ if ($GLOBALS["reset_firsttab_flag"] === TRUE) {
 }
 
 add_shortcode('tabby', 'cc_shortcode_tabby');
-	
+
 // ==============================================
 //	SHORTCODE TO BE USED AFTER FINAL TABBY TAB
 //	use [tabbyending]
@@ -217,9 +216,9 @@ function cc_shortcode_tabbyending( $atts, $content = null ) {
 	wp_enqueue_script('tabby', plugins_url('js/tabby.js', __FILE__), array('jquery'), cc_tabby_plugin_version(), true);
 
 	add_action('wp_footer', 'cc_tabbytrigger', 20);
-	
+
 	$GLOBALS["reset_firsttab_flag"] = TRUE;
-	
+
 	global $cc_add_tabby_css;
 	$cc_add_tabby_css = true;
 
