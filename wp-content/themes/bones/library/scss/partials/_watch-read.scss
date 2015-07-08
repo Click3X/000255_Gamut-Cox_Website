@@ -5,3 +5,22 @@
 	margin-top: 1em;
 	display: block;	
 }
+
+// GAMUT NAVIGATION
+.gamut-navigation {
+	margin-top:40px;
+
+	a[rel="prev"] {
+		float:left;
+	}
+
+	a[rel="next"] {
+		float:right;	
+	}
+
+}
+
+.addthis_sharing_toolbox {
+	margin-top:0.5em;
+	margin-bottom: 0;
+}

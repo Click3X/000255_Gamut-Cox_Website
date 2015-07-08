@@ -1,5 +1,4 @@
-
-              <?php
+<?php
                 /*
                  * This is the default post format.
                  *
@@ -15,6 +14,13 @@
               ?>
 
               <article id="post-<?php the_ID(); ?>" <?php post_class('cf'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+
+                <!-- ADDING IN NEW REQUESTED NEXT/PREV POST ARROWS -->
+                <div class="gamut-navigation cf">
+                  <?php previous_post_link( '%link', 'previous post in category', TRUE ); ?>
+                  <?php next_post_link( '%link', 'Next post in category', TRUE ); ?>
+                </div>
+                
 
                 <header class="article-header">
 

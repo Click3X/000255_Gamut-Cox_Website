@@ -112,7 +112,7 @@
 																	</div>
 																<?php } ?>
 
-																<p><?php the_content()?></p>
+																<p><?php the_excerpt(); ?></p>
 																<?php
 
 																wp_link_pages( array(

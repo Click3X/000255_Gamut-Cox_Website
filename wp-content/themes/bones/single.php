@@ -2,13 +2,10 @@
 
 			<div id="content">
 
-
 				<div id="sidebar1" class="news-sidebar sidebar m-all cf <?php echo $sidebar_class; ?>" role="complementary">
 
 					<div id="sidebar-beam-container">
-
 						<div id="sidebar-beam" style="background-image: url(<?php bloginfo('url'); ?>/img/sidebar-beam.png);"></div>
-
 					</div>
 
 					<?php $parentpage = get_page(63); ?>
@@ -34,48 +31,64 @@
 						'walker'          => ''
 					);
 
-					wp_nav_menu( $defaults ); ?>
+					wp_nav_menu( $defaults ); 
+
+					wp_reset_postdata();
+
+					?>
 
 				</div>
 
 				<div id="inner-content" class="wrap cf">
 
-
-
-
-
 					<div id="main" class="news-content-wrapper cf" role="main">
-
-
 
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-							<!-- Media logo -->
-<!-- 							<?php $media_logo = get_field('media_logo');
+							<article id="post-<?php the_ID(); ?>" <?php post_class('cf'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
-							if( !empty($media_logo) ): ?>
+								<h1>
+									<?php
+									$category = get_the_category(); 
+									// echo $category[0]->cat_name;		
+									?>
+								</h1>
 
-								<img src="<?php echo $media_logo['url']; ?>" />
+				                <!-- ADDING IN NEW REQUESTED NEXT/PREV POST ARROWS -->
+				                <div class="gamut-navigation cf">
+				                  <?php previous_post_link( '%link', 'previous post in category', true ); ?>
+				                  <?php next_post_link( '%link', 'Next post in category', true ); ?>
+				                </div>
+				                
 
-							<?php endif; ?> -->
+				                <header class="article-header">
+				                	<!-- Go to www.addthis.com/dashboard to customize your tools -->
+									<div class="addthis_sharing_toolbox"></div>
 
-							<?php
-								/*
-								 * Ah, post formats. Nature's greatest mystery (aside from the sloth).
-								 *
-								 * So this function will bting in the needed template file depending on what the post
-								 * format is. The different post formats are located in the post-formats folder.
-								 *
-								 *
-								 * REMEMBER TO ALWAYS HAVE A DEFAULT ONE NAMED "format.php" FOR POSTS THAT AREN'T
-								 * A SPECIFIC POST FORMAT.
-								 *
-								 * If you want to remove post formats, just delete the post-formats folder and
-								 * replace the function below with the contents of the "format.php" file.
-								*/
-								get_template_part( 'post-formats/format', get_post_format() );
+				                  <h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
 
-							?>
+				                  <h2 class="entry-subtitle"><?php the_field('title'); ?></h2>
+
+				                </header> <?php // end article header ?>
+
+				                <section class="entry-content cf" itemprop="articleBody">
+				                  
+				                  <?php
+				                    // GET TEAM MEMBER IMAGE (FEATURED IMAGE)
+				                    $size = 'thumb';
+				                    the_post_thumbnail( $size);
+
+				                    // the content (pretty self explanatory huh)
+				                    the_content(); 
+				                  ?>
+
+				                </section> <?php // end article section ?>
+
+				                <footer class="article-footer">
+
+				                </footer> <?php // end article footer ?>
+
+				              </article> <?php // end article ?>
 
 						<?php endwhile; ?>
 
@@ -96,8 +109,6 @@
 						<?php endif; ?>
 
 					</div>
-
-					
 
 				</div>
 
