@@ -8803,6 +8803,12 @@ body #content + div {
   color: #ed228b;
 }
 
+/* line 4, ../scss/partials/_watch-read.scss */
+.gamut-cat-title {
+  margin-top: 1em;
+  display: block;
+}
+
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
