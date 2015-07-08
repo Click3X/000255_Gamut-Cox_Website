@@ -19,7 +19,42 @@
 
 					<div id="inner-content" class="wrap cf">
 
+						<?php if( is_page(1079)) : ?>
+
+						<div id="sidebar1" class="sidebar m-all t-1of3 cf d-2of7" role="complementary">
+							<div id="sidebar-beam-container">
+								<div id="sidebar-beam" style="background-image: url(<?php bloginfo('url'); ?>/img/sidebar-beam.png);"></div>
+							</div>
+							<?php $parent_title = get_the_title($post->post_parent); ?>
+							<h2 id="sidebar-title"><?php echo $parent_title; ?></h2>
+
+							<?php $defaults = array(
+								'theme_location'  => '',
+								'menu'            => 'Watch & Read',
+								'container'       => 'div',
+								'container_class' => '',
+								'container_id'    => '',
+								'menu_class'      => 'secondary',
+								'menu_id'         => '',
+								'echo'            => true,
+								'fallback_cb'     => 'wp_page_menu',
+								'before'          => '',
+								'after'           => '',
+								'link_before'     => '',
+								'link_after'      => '',
+								'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+								'depth'           => 0,
+								'walker'          => ''
+							);
+
+							wp_nav_menu( $defaults ); ?>
+						</div>
+						
+						<?php else: ?>
+
 						<?php get_sidebar(); ?>
+
+						<?php endif; ?>
 
 						<div id="main" class="m-all t-2of3 d-5of7 cf" role="main">
 

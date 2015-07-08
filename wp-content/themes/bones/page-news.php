@@ -34,8 +34,12 @@
 					<div id="sidebar-beam-container">
 						<div id="sidebar-beam" style="background-image: url(<?php bloginfo('url'); ?>/img/sidebar-beam.png);"></div>
 					</div>
-					<?php $parent_title = get_the_title($post->post_parent); ?>
-					<h2 id="sidebar-title"><?php echo $parent_title; ?></h2>
+					<?php 
+						$parent = array_reverse(get_post_ancestors($post->ID));
+						$first_parent = get_page($parent[0]);
+						$parent_title = $first_parent->post_title;
+					?>
+					<h2 id="sidebar-title"><a href="<?php echo get_permalink($first_parent->ID); ?>"><?php echo $parent_title; ?></a></h2>
 
 					<?php $defaults = array(
 						'theme_location'  => '',

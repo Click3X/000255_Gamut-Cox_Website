@@ -31,7 +31,47 @@ get_header();
 
 	<div id="inner-content" class="wrap cf">
 
-		<?php get_sidebar(); ?>						
+		<div id="sidebar1" class="sidebar m-all t-1of3 cf d-2of7" role="complementary">
+			<div id="sidebar-beam-container">
+				<div id="sidebar-beam" style="background-image: url(<?php bloginfo('url'); ?>/img/sidebar-beam.png);"></div>
+			</div>
+			<?php 
+				$parent = array_reverse(get_post_ancestors($post->ID));
+				$first_parent = get_page($parent[0]);
+				$parent_title = $first_parent->post_title;
+
+				$sidebar_intro = get_field('sidebar-intro');
+			?>
+			<h2 id="sidebar-title"><a href="<?php echo get_permalink(184); ?>"><?php echo $parent_title; ?></a></h2>
+
+			<?php $defaults = array(
+				'theme_location'  => '',
+				'menu'            => 'Our Solutions',
+				'container'       => 'div',
+				'container_class' => '',
+				'container_id'    => '',
+				'menu_class'      => 'secondary',
+				'menu_id'         => '',
+				'echo'            => true,
+				'fallback_cb'     => 'wp_page_menu',
+				'before'          => '',
+				'after'           => '',
+				'link_before'     => '',
+				'link_after'      => '',
+				'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+				'depth'           => 0,
+				'walker'          => ''
+			);
+
+			wp_nav_menu( $defaults ); ?>
+
+			<?php if ($sidebar_intro) :?>
+			<div id="sidebar-intro" class="sidebar-intro"><?php echo $sidebar_intro; ?></div>
+			<?php endif; ?>	
+		</div>	
+
+
+				
 
 		<div id="main" class="m-all t-2of3 d-5of7 cf" role="main">
 
