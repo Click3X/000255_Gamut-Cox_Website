@@ -33,7 +33,7 @@
 
 					wp_nav_menu( $defaults ); 
 
-					// wp_reset_postdata();
+					wp_reset_postdata();
 
 					?>
 
@@ -49,17 +49,16 @@
 
 								<h1>
 									<?php
-									$category = get_the_category(); 
+									// $category = get_the_category(); 
 									// echo $category[0]->cat_name;		
 									?>
 								</h1>
 
 				                <!-- ADDING IN NEW REQUESTED NEXT/PREV POST ARROWS -->
 				                <div class="gamut-navigation cf">
-				                  <?php previous_post_link( '%link', 'previous post in category', TRUE); ?>
-				                  <?php next_post_link( '%link', 'Next post in category', TRUE); ?>
+				                  <?php previous_post_link( '%link', 'Previous post', TRUE ); ?>
+				                  <?php next_post_link( '%link', 'Next post', TRUE ); ?>
 				                </div>
-				                
 
 				                <header class="article-header">
 
