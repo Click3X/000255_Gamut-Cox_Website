@@ -219,26 +219,6 @@
 
 		</script>
 
-		<?php 
-
-			if (  is_page_template('Dev Fix Overflow') ) {
-				echo '<script>
-				    var debugInput = document.querySelector("input");
-				    function updateDebugState() {
-				        document.body.classList.toggle("debug-on", debugInput.checked);
-				    }
-				    debugInput.addEventListener("click", updateDebugState);
-				    updateDebugState();
-				  </script>';
-			}
-
-
-			// IF SINGLE POST PAGE, ADD 'ADD THIS' SCRIPT
-			if ( is_singular('post') ) {
-				echo '<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-559d8d525f091896" async="async"></script>';
-			};
-
-		?>
 	</body>
 
 </html> <!-- end of site. what a ride! -->

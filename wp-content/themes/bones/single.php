@@ -33,7 +33,7 @@
 
 					wp_nav_menu( $defaults ); 
 
-					wp_reset_postdata();
+					// wp_reset_postdata();
 
 					?>
 
@@ -56,14 +56,12 @@
 
 				                <!-- ADDING IN NEW REQUESTED NEXT/PREV POST ARROWS -->
 				                <div class="gamut-navigation cf">
-				                  <?php previous_post_link( '%link', 'previous post in category', true ); ?>
-				                  <?php next_post_link( '%link', 'Next post in category', true ); ?>
+				                  <?php previous_post_link( '%link', 'previous post in category', TRUE); ?>
+				                  <?php next_post_link( '%link', 'Next post in category', TRUE); ?>
 				                </div>
 				                
 
 				                <header class="article-header">
-				                	<!-- Go to www.addthis.com/dashboard to customize your tools -->
-									<div class="addthis_sharing_toolbox"></div>
 
 				                  <h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
 

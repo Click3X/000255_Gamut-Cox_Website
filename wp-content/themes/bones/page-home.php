@@ -59,32 +59,15 @@
 
 	endif;
 
-	function ae_detect_ie()
-	{
-	    if (isset($_SERVER['HTTP_USER_AGENT']) && 
-	    (strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE') !== false))
-	        return true;
-	    else
-	        return false;
+	// CHECK FOR IE
+	if( ae_detect_ie() ) {
+		// IF IE - GET FILE WITH NO PARALLAX
+		include('php/para-new-new-mobile.php'); 
+	} else {
+		// OTHERWISE GET PARALLAX FILE
+		include('php/para-kieth.php');
+		// echo '</div>';
 	}
-
-	// CHECK FOR PHP BROWSER DETECTION PLUGIN - FOR IE	
-	// $myUrl = get_bloginfo('url');
-	// $path = $myUrl .'/wp-content/plugins/php-browser-detection/php-browser-detection.php';
-	// if ( is_plugin_active( $path ) ) {
-		// if( is_ie() ) {
-		if( ae_detect_ie() ) {
-			// IF IE - GET FILE WITH NO PARALLAX
-			include('php/para-new-new-mobile.php'); 
-		} else {
-			// OTHERWISE GET PARALLAX FILE
-			include('php/para-kieth.php');
-			// echo '</div>';
-		}
-	// } else {
-	// 	// IF THERE IS NO PLUGIN, JUST GET PARALLAX FILE
-		// include('php/para-kieth.php');
-	// }
 
 ?>	
 

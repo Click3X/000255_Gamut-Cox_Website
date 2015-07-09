@@ -20,7 +20,11 @@
 
 }
 
-.addthis_sharing_toolbox {
-	margin-top:0.5em;
-	margin-bottom: 0;
+
+#main .addtoany_share_save_container {
+	text-align: right;
+	a { 
+		padding: 0 0.25em 0 0;
+		font-size: 1.25em;
+	}
 }
