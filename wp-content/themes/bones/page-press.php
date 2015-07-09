@@ -39,7 +39,7 @@
 						$first_parent = get_page($parent[0]);
 						$parent_title = $first_parent->post_title;
 					?>
-					<h2 id="sidebar-title"><?php echo $parent_title; ?></h2>
+					<h2 id="sidebar-title"><a href="<?php echo get_permalink($first_parent->ID); ?>"><?php echo $parent_title; ?></a></h2>
 
 					<?php $defaults = array(
 						'theme_location'  => '',
