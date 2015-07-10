@@ -69,7 +69,7 @@
 							<div class="sub-page-content-wrapper">
 
 								<h1><?php the_title(); ?></h1>
-								
+
 								<?php
 									// FEATURED CATEGORY ID STORED IN VAR FOR LATER USE IN FILTERING CATEGORIES
 									$feat_id = 31;
@@ -93,8 +93,24 @@
 											
 											$posts=get_posts($args);
 											if ($posts) {
+
+												$cat_link = get_category_link( $category->term_id );	
+												// FORMAT CORRECT LINKS FOR GAMUT-CAT-TITLE LINK
+												if( $category->name == 'In the Media' ) {
+													$cat_link = get_the_permalink(874);
+												} elseif( $category->name == 'Events' ) {
+													$cat_link = get_the_permalink(298);
+												} elseif( $category->name == 'Press Releases' ) {
+													$cat_link = get_the_permalink(65);
+												} elseif( $category->name == "In the Media" ) {
+													$cat_link = get_the_permalink(65);
+												} elseif( $category->name == "What We're Reading" ) {
+													$cat_link = get_the_permalink(63);
+												} elseif( $category->name == "Uncategorized" ) {
+													$cat_link = get_the_permalink(63);
+												}
 												
-												echo '<h2 class="gamut-cat-title"><a href="' . get_category_link( $category->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $category->name ) . '" ' . '>' . $category->name.'</a> </h2> ';
+												echo '<h2 class="gamut-cat-title"><a href="' . $cat_link . '" title="' . sprintf( __( "View all posts in %s" ), $category->name ) . '" ' . '>' . $category->name.'</a> </h2> ';
 												
 												foreach($posts as $post) {
 													setup_postdata($post); ?>
