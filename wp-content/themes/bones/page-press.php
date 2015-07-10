@@ -103,6 +103,11 @@
 
 										<p><?php the_excerpt()?></p>
 										
+										<!-- FEAT IMG FPO -->
+										<!-- UPDATE LATER WITH REAL FEAT IMG -->
+										<div class="feat-img-holder cf">
+											<img src="<?php echo get_bloginfo('url');?>/img/fpo.png" class="feat-img-fpo">
+										</div>
 										<?php 
 
 										wp_link_pages( array(
