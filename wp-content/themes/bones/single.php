@@ -90,11 +90,11 @@ $next_cat = "";
 										}
 
 				                		if ( (is_a( $prev_post, 'WP_Post' )) && ($pre_cat == $cat_id) ) { ?>
-									 		<a href="<?php echo get_permalink( $prev_post->ID ); ?>" rel="prev">Previous Post in Category</a>
+									 		<a href="<?php echo get_permalink( $prev_post->ID ); ?>" rel="prev">&laquo; Previous Post</a>
 									 <?php } 
 
 									 	if ( (is_a( $next_post, 'WP_Post' )) && ($next_cat == $cat_id) ) { ?>
-									 		<a href="<?php echo get_permalink( $next_post->ID ); ?>" rel="next">Next Post in Category</a>
+									 		<a href="<?php echo get_permalink( $next_post->ID ); ?>" rel="next">Next Post &raquo;</a>
 									 <?php } ?>
 								
 				                </div>
