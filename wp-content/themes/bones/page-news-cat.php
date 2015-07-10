@@ -67,6 +67,9 @@
 						<div id="main" class="m-all t-2of3 d-5of7 cf" role="main">
 
 							<div class="sub-page-content-wrapper">
+
+								<h1><?php the_title(); ?></h1>
+								
 								<?php
 									// FEATURED CATEGORY ID STORED IN VAR FOR LATER USE IN FILTERING CATEGORIES
 									$feat_id = 31;
