@@ -92,8 +92,8 @@
                 <a href="<?php echo get_permalink(11);?>" class="gamut-btn abs-center" id="home-btn-pro">LEARN HOW&nbsp;&nbsp;<span id="home-btn-pro-arrow" class="arrow-right"></span></a>
               </div>
               <div class="clearfix half red">
+                <h1 class="sub-page-title"><?php echo get_the_title(11);?><span class="title-plus">+</span></h1>
                 <!-- <img id="pro-logo" src="<?php bloginfo('url'); ?>/img/home-logos/programmatic-logo.png" alt="programmatic"> -->
-                <h1 class="sub-page-title"><?php echo get_the_title(11);?></h1>
                 <div id="fly-it" class="bg-img programmatic"></div>
               </div>
           </div>
@@ -109,8 +109,8 @@
                 <a href="<?php echo get_permalink(15);?>" class="gamut-btn abs-center" id="home-btn-rep">LEARN HOW&nbsp;&nbsp;<span id="home-btn-rep-arrow" class="arrow-right"></span></a>
               </div>
               <div class="clearfix half red">
+                <h1 class="sub-page-title"><?php echo get_the_title(15);?><span class="title-plus">+</span></h1>
                 <!-- <img id="rep-logo" src="<?php bloginfo('url'); ?>/img/home-logos/reps-logo.png" alt="reps"> -->
-                <h1 class="sub-page-title"><?php echo get_the_title(15);?></h1>
                 <div id="fly-it-2" class="bg-img reps"></div>
               </div>
           </div>
