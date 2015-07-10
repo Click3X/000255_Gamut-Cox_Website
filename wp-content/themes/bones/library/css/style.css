@@ -3587,38 +3587,38 @@ a {
   position: absolute;
   max-width: 90%;
   height: 0;
-  padding-bottom: .95%;
+  padding-bottom: 4px;
   margin: auto;
   top: -33%;
   bottom: 0px;
 }
 
-/* line 237, ../scss/partials/_home_addons.scss */
+/* line 239, ../scss/partials/_home_addons.scss */
 .programmatic {
   background-image: url("../../../../../img/home-beams/programmatic-beam.png");
 }
 
-/* line 238, ../scss/partials/_home_addons.scss */
+/* line 240, ../scss/partials/_home_addons.scss */
 .crossmedia {
   background-image: url("../../../../../img/home-beams/crossmedia-beam.png");
 }
 
-/* line 239, ../scss/partials/_home_addons.scss */
+/* line 241, ../scss/partials/_home_addons.scss */
 .reach {
   background-image: url("../../../../../img/home-beams/reach-beam.png");
 }
 
-/* line 240, ../scss/partials/_home_addons.scss */
+/* line 242, ../scss/partials/_home_addons.scss */
 .reps {
   background-image: url("../../../../../img/home-beams/reps-beam.png");
 }
 
-/* line 243, ../scss/partials/_home_addons.scss */
+/* line 245, ../scss/partials/_home_addons.scss */
 #fly-it {
   position: absolute;
-  top: -71%;
-  right: 30%;
+  right: 40%;
   z-index: 10;
+  top: -1.38em;
   -webkit-transform: translateZ(10);
   -moz-transform: translateZ(10);
   -o-transform: translateZ(10);
@@ -3631,13 +3631,13 @@ a {
   transition: all 500ms;
 }
 @media (min-width: 480px) {
-  /* line 243, ../scss/partials/_home_addons.scss */
+  /* line 245, ../scss/partials/_home_addons.scss */
   #fly-it {
     top: -34%;
   }
 }
 
-/* line 262, ../scss/partials/_home_addons.scss */
+/* line 269, ../scss/partials/_home_addons.scss */
 .flyout {
   -webkit-transition: all 500ms;
   -moz-transition: all 500ms;
@@ -3646,18 +3646,25 @@ a {
   transition: all 500ms;
 }
 
-/* line 266, ../scss/partials/_home_addons.scss */
+/* line 273, ../scss/partials/_home_addons.scss */
 #fly-it.flyout {
-  right: -63%;
+  right: -60.5%;
+}
+@media (min-width: 980px) {
+  /* line 273, ../scss/partials/_home_addons.scss */
+  #fly-it.flyout {
+    right: -50.5%;
+  }
 }
 
-/* line 271, ../scss/partials/_home_addons.scss */
+/* line 283, ../scss/partials/_home_addons.scss */
 #fly-it-2 {
   position: absolute;
-  top: -23px;
+  top: -1.38em;
   right: 82%;
   height: 4.031px;
   width: 383px;
+  height: 3px;
   -webkit-transform: translateZ(10);
   -moz-transform: translateZ(10);
   -o-transform: translateZ(10);
@@ -3670,28 +3677,24 @@ a {
   transition: all 500ms;
 }
 @media (min-width: 980px) {
-  /* line 271, ../scss/partials/_home_addons.scss */
+  /* line 283, ../scss/partials/_home_addons.scss */
   #fly-it-2 {
-    height: 4px;
     width: 1070px;
-    top: -25px;
   }
 }
 
-/* line 291, ../scss/partials/_home_addons.scss */
+/* line 302, ../scss/partials/_home_addons.scss */
 #fly-it-2.flyout {
-  right: -17%;
+  right: -18.5%;
 }
 @media (min-width: 980px) {
-  /* line 291, ../scss/partials/_home_addons.scss */
+  /* line 302, ../scss/partials/_home_addons.scss */
   #fly-it-2.flyout {
-    height: 4px;
     width: 1070px;
-    top: -25px;
   }
 }
 
-/* line 301, ../scss/partials/_home_addons.scss */
+/* line 309, ../scss/partials/_home_addons.scss */
 #fly-it-3 {
   position: absolute;
   right: 78%;
@@ -3708,7 +3711,7 @@ a {
   transition: all 500ms;
 }
 @media (min-width: 980px) {
-  /* line 301, ../scss/partials/_home_addons.scss */
+  /* line 309, ../scss/partials/_home_addons.scss */
   #fly-it-3 {
     height: 4px;
     width: 1070px;
@@ -3716,12 +3719,12 @@ a {
   }
 }
 
-/* line 317, ../scss/partials/_home_addons.scss */
+/* line 325, ../scss/partials/_home_addons.scss */
 #fly-it-3.flyout {
   right: -22%;
 }
 @media (min-width: 980px) {
-  /* line 317, ../scss/partials/_home_addons.scss */
+  /* line 325, ../scss/partials/_home_addons.scss */
   #fly-it-3.flyout {
     height: 4px;
     width: 1070px;
@@ -3729,7 +3732,7 @@ a {
   }
 }
 
-/* line 327, ../scss/partials/_home_addons.scss */
+/* line 334, ../scss/partials/_home_addons.scss */
 #fly-it-4 {
   position: absolute;
   right: 50%;
@@ -3746,7 +3749,7 @@ a {
   transition: all 500ms;
 }
 @media (min-width: 980px) {
-  /* line 327, ../scss/partials/_home_addons.scss */
+  /* line 334, ../scss/partials/_home_addons.scss */
   #fly-it-4 {
     height: 4px;
     width: 1070px;
@@ -3754,12 +3757,12 @@ a {
   }
 }
 
-/* line 343, ../scss/partials/_home_addons.scss */
+/* line 350, ../scss/partials/_home_addons.scss */
 #fly-it-4.flyout {
   right: -51%;
 }
 @media (min-width: 980px) {
-  /* line 343, ../scss/partials/_home_addons.scss */
+  /* line 350, ../scss/partials/_home_addons.scss */
   #fly-it-4.flyout {
     height: 4px;
     width: 1070px;
@@ -3767,56 +3770,56 @@ a {
   }
 }
 
-/* line 356, ../scss/partials/_home_addons.scss */
+/* line 363, ../scss/partials/_home_addons.scss */
 .charles-home #homeSliderContainer {
   background-color: #ffffff;
   width: 100%;
   max-width: none;
 }
 
-/* line 363, ../scss/partials/_home_addons.scss */
+/* line 370, ../scss/partials/_home_addons.scss */
 .difference {
   margin-left: 11%;
 }
-/* line 365, ../scss/partials/_home_addons.scss */
+/* line 372, ../scss/partials/_home_addons.scss */
 .difference p {
   max-width: 38.5em;
   margin-bottom: 1em;
 }
 
-/* line 371, ../scss/partials/_home_addons.scss */
+/* line 378, ../scss/partials/_home_addons.scss */
 .diff {
   margin-left: 11%;
 }
 
-/* line 377, ../scss/partials/_home_addons.scss */
+/* line 384, ../scss/partials/_home_addons.scss */
 #content {
   position: relative;
   overflow-x: hidden;
 }
 
-/* line 382, ../scss/partials/_home_addons.scss */
+/* line 389, ../scss/partials/_home_addons.scss */
 .bg-i {
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-/* line 389, ../scss/partials/_home_addons.scss */
+/* line 396, ../scss/partials/_home_addons.scss */
 .smart-copy {
   width: 90%;
   margin: 0 auto;
   position: relative;
 }
 @media (min-width: 768px) {
-  /* line 389, ../scss/partials/_home_addons.scss */
+  /* line 396, ../scss/partials/_home_addons.scss */
   .smart-copy {
     float: right;
     width: 50%;
   }
 }
 
-/* line 400, ../scss/partials/_home_addons.scss */
+/* line 407, ../scss/partials/_home_addons.scss */
 .copy-holder {
   max-width: 800px;
   float: left;
@@ -3824,23 +3827,23 @@ a {
   margin-top: 20%;
 }
 @media (min-width: 1600px) {
-  /* line 400, ../scss/partials/_home_addons.scss */
+  /* line 407, ../scss/partials/_home_addons.scss */
   .copy-holder {
     margin-top: 160px;
     margin-left: 64px;
   }
 }
-/* line 411, ../scss/partials/_home_addons.scss */
+/* line 418, ../scss/partials/_home_addons.scss */
 .copy-holder h1 {
   display: block;
   float: left;
   font-size: 4.5em;
 }
-/* line 417, ../scss/partials/_home_addons.scss */
+/* line 424, ../scss/partials/_home_addons.scss */
 .copy-holder p {
   max-width: 22em;
 }
-/* line 421, ../scss/partials/_home_addons.scss */
+/* line 428, ../scss/partials/_home_addons.scss */
 .copy-holder img {
   width: 48px;
   height: 49px;
@@ -3850,19 +3853,19 @@ a {
   float: left;
 }
 
-/* line 432, ../scss/partials/_home_addons.scss */
+/* line 439, ../scss/partials/_home_addons.scss */
 .career-copy-c {
   width: 90%;
   margin: 0 auto;
 }
 @media (min-width: 768px) {
-  /* line 432, ../scss/partials/_home_addons.scss */
+  /* line 439, ../scss/partials/_home_addons.scss */
   .career-copy-c {
     width: 60%;
     float: left;
   }
 }
-/* line 441, ../scss/partials/_home_addons.scss */
+/* line 448, ../scss/partials/_home_addons.scss */
 .career-copy-c p {
   max-width: 21em;
   font-size: 1.5em;
@@ -3870,7 +3873,7 @@ a {
   letter-spacing: .03em;
 }
 
-/* line 449, ../scss/partials/_home_addons.scss */
+/* line 456, ../scss/partials/_home_addons.scss */
 .smart-pic {
   height: auto;
   width: 100%;
@@ -3879,19 +3882,19 @@ a {
   padding-bottom: 41.54%;
 }
 @media (min-width: 768px) {
-  /* line 449, ../scss/partials/_home_addons.scss */
+  /* line 456, ../scss/partials/_home_addons.scss */
   .smart-pic {
     width: 50%;
   }
 }
 @media (min-width: 1600px) {
-  /* line 449, ../scss/partials/_home_addons.scss */
+  /* line 456, ../scss/partials/_home_addons.scss */
   .smart-pic {
     padding-bottom: 644px;
   }
 }
 
-/* line 468, ../scss/partials/_home_addons.scss */
+/* line 475, ../scss/partials/_home_addons.scss */
 .career-pic-c {
   height: auto;
   background-size: cover;
@@ -3901,43 +3904,43 @@ a {
   min-height: 340px;
 }
 @media (min-width: 768px) {
-  /* line 468, ../scss/partials/_home_addons.scss */
+  /* line 475, ../scss/partials/_home_addons.scss */
   .career-pic-c {
     width: 40%;
   }
 }
 @media (min-width: 1600px) {
-  /* line 468, ../scss/partials/_home_addons.scss */
+  /* line 475, ../scss/partials/_home_addons.scss */
   .career-pic-c {
     padding-bottom: 644px;
   }
 }
 
-/* line 485, ../scss/partials/_home_addons.scss */
+/* line 492, ../scss/partials/_home_addons.scss */
 .defined-pic {
   padding-bottom: 37.5%;
   min-height: 340px;
 }
 @media (min-width: 1600px) {
-  /* line 485, ../scss/partials/_home_addons.scss */
+  /* line 492, ../scss/partials/_home_addons.scss */
   .defined-pic {
     padding-bottom: 600px;
   }
 }
 
-/* line 494, ../scss/partials/_home_addons.scss */
+/* line 501, ../scss/partials/_home_addons.scss */
 .h-slider-pic {
   padding-bottom: 55.5%;
   min-height: 340px;
 }
 @media (min-width: 1600px) {
-  /* line 494, ../scss/partials/_home_addons.scss */
+  /* line 501, ../scss/partials/_home_addons.scss */
   .h-slider-pic {
     padding-bottom: 887px;
   }
 }
 
-/* line 503, ../scss/partials/_home_addons.scss */
+/* line 510, ../scss/partials/_home_addons.scss */
 .our-sol-pic {
   position: relative;
   background-color: #3d3d3d;
@@ -3945,13 +3948,13 @@ a {
   padding-bottom: 32.75%;
 }
 @media (min-width: 1600px) {
-  /* line 503, ../scss/partials/_home_addons.scss */
+  /* line 510, ../scss/partials/_home_addons.scss */
   .our-sol-pic {
     padding-bottom: 524px;
   }
 }
 
-/* line 512, ../scss/partials/_home_addons.scss */
+/* line 519, ../scss/partials/_home_addons.scss */
 .grey-bg-box {
   position: relative;
   background-color: #3d3d3d;
@@ -3960,72 +3963,72 @@ a {
   padding-bottom: 31.5%;
 }
 @media (min-width: 1600px) {
-  /* line 512, ../scss/partials/_home_addons.scss */
+  /* line 519, ../scss/partials/_home_addons.scss */
   .grey-bg-box {
     padding-bottom: 503px;
   }
 }
 
-/* line 524, ../scss/partials/_home_addons.scss */
+/* line 531, ../scss/partials/_home_addons.scss */
 .home #content {
   font-size: 60%;
 }
 @media (min-width: 768px) {
-  /* line 524, ../scss/partials/_home_addons.scss */
+  /* line 531, ../scss/partials/_home_addons.scss */
   .home #content {
     font-size: 80%;
   }
 }
 @media (min-width: 960px) {
-  /* line 524, ../scss/partials/_home_addons.scss */
+  /* line 531, ../scss/partials/_home_addons.scss */
   .home #content {
     font-size: 100%;
   }
 }
 
-/* line 537, ../scss/partials/_home_addons.scss */
+/* line 544, ../scss/partials/_home_addons.scss */
 .footer {
   position: relative;
   margin-top: 0;
 }
 
-/* line 542, ../scss/partials/_home_addons.scss */
+/* line 549, ../scss/partials/_home_addons.scss */
 .copy-c-2 {
   float: right;
   margin-right: 8%;
   margin-top: 10%;
 }
 @media (min-width: 1600px) {
-  /* line 542, ../scss/partials/_home_addons.scss */
+  /* line 549, ../scss/partials/_home_addons.scss */
   .copy-c-2 {
     margin-top: 80px;
     margin-right: 64px;
   }
 }
 
-/* line 552, ../scss/partials/_home_addons.scss */
+/* line 559, ../scss/partials/_home_addons.scss */
 .home #content {
   overflow-x: hidden;
 }
 
-/* line 556, ../scss/partials/_home_addons.scss */
+/* line 563, ../scss/partials/_home_addons.scss */
 .home #inner-content {
   width: 100%;
 }
 
 @media (min-width: 811px) {
-  /* line 562, ../scss/partials/_home_addons.scss */
+  /* line 569, ../scss/partials/_home_addons.scss */
   body #container {
     padding-top: 62.5px;
   }
 
-  /* line 565, ../scss/partials/_home_addons.scss */
+  /* line 572, ../scss/partials/_home_addons.scss */
   .header {
     top: 0px;
   }
 }
 @media (max-width: 811px) {
-  /* line 571, ../scss/partials/_home_addons.scss */
+  /* line 578, ../scss/partials/_home_addons.scss */
   #home-btn-careers,
   a#home-btn-difference,
   #home-btn-service {
@@ -4033,7 +4036,7 @@ a {
     position: relative;
   }
 }
-/* line 580, ../scss/partials/_home_addons.scss */
+/* line 587, ../scss/partials/_home_addons.scss */
 #video-controls {
   position: absolute;
   background-color: transparent;
@@ -4044,7 +4047,7 @@ a {
   right: 20px;
 }
 
-/* line 636, ../scss/partials/_home_addons.scss */
+/* line 643, ../scss/partials/_home_addons.scss */
 #mute {
   background-color: transparent;
   border: 0;
@@ -4063,13 +4066,13 @@ a {
   transition: all 200ms;
 }
 
-/* line 650, ../scss/partials/_home_addons.scss */
+/* line 657, ../scss/partials/_home_addons.scss */
 #mute.playsound {
   background-image: url("../../../../../img/SOUND_Btn.png");
   outline: 0;
 }
 
-/* line 655, ../scss/partials/_home_addons.scss */
+/* line 662, ../scss/partials/_home_addons.scss */
 #mute.stopsound {
   background-image: url("../../../../../img/SOUND_Btn-mute.png");
   outline: 0;
@@ -4632,7 +4635,7 @@ a {
 @media (min-width: 811px) {
   /* line 367, ../scss/modules/_para-all-styles.scss */
   #group4 .subpage .red {
-    width: 425px;
+    width: 423px;
   }
 }
 @media (min-width: 980px) {
@@ -5385,20 +5388,18 @@ a {
 }
 /* line 584, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth #fly-it {
-  height: 4px;
+  height: 3px;
   width: 382px;
-  top: -19px;
+  top: -1.38em;
 }
 @media (min-width: 980px) {
   /* line 584, ../scss/modules/_parallax-kieth.scss */
   #parallax-kieth #fly-it {
-    height: 3px;
     width: 1070px;
-    top: -24px;
   }
 }
 
-/* line 600, ../scss/modules/_parallax-kieth.scss */
+/* line 597, ../scss/modules/_parallax-kieth.scss */
 .ss-bg-mobile {
   background-size: cover;
   background-repeat: no-repeat;
@@ -5407,67 +5408,67 @@ a {
 }
 
 @media (min-width: 811px) {
-  /* line 608, ../scss/modules/_parallax-kieth.scss */
+  /* line 605, ../scss/modules/_parallax-kieth.scss */
   #parallax-kieth .c-mobile {
     display: none;
   }
 }
-/* line 614, ../scss/modules/_parallax-kieth.scss */
+/* line 611, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth .subpage-wrap {
   border-bottom: 2px dashed #d8d8d8;
 }
-/* line 617, ../scss/modules/_parallax-kieth.scss */
+/* line 614, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth .subpage-wrap:last-of-type {
   border-bottom: 0;
 }
-/* line 622, ../scss/modules/_parallax-kieth.scss */
+/* line 619, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth .subpage {
   background-color: white;
   width: 90%;
   max-width: 1300px;
   margin: 0 auto;
 }
-/* line 629, ../scss/modules/_parallax-kieth.scss */
+/* line 626, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth p {
   font-size: 1.1em;
   line-height: 1.15em;
 }
 @media (min-width: 811px) {
-  /* line 629, ../scss/modules/_parallax-kieth.scss */
+  /* line 626, ../scss/modules/_parallax-kieth.scss */
   #parallax-kieth p {
     font-size: 1.4em;
   }
 }
 @media (min-width: 1200px) {
-  /* line 629, ../scss/modules/_parallax-kieth.scss */
+  /* line 626, ../scss/modules/_parallax-kieth.scss */
   #parallax-kieth p {
     font-size: 1.6em;
   }
 }
-/* line 641, ../scss/modules/_parallax-kieth.scss */
+/* line 638, ../scss/modules/_parallax-kieth.scss */
 #parallax-kieth h1 {
   font-size: 1.9em;
 }
 @media (min-width: 400px) {
-  /* line 641, ../scss/modules/_parallax-kieth.scss */
+  /* line 638, ../scss/modules/_parallax-kieth.scss */
   #parallax-kieth h1 {
     font-size: 2.5em;
   }
 }
 @media (min-width: 811px) {
-  /* line 641, ../scss/modules/_parallax-kieth.scss */
+  /* line 638, ../scss/modules/_parallax-kieth.scss */
   #parallax-kieth h1 {
     font-size: 2.8em;
   }
 }
 @media (min-width: 1200px) {
-  /* line 641, ../scss/modules/_parallax-kieth.scss */
+  /* line 638, ../scss/modules/_parallax-kieth.scss */
   #parallax-kieth h1 {
     font-size: 4em;
   }
 }
 @media (min-width: 1300px) {
-  /* line 641, ../scss/modules/_parallax-kieth.scss */
+  /* line 638, ../scss/modules/_parallax-kieth.scss */
   #parallax-kieth h1 {
     font-size: 4.5em;
   }
@@ -8835,6 +8836,42 @@ body #content + div {
 #main .addtoany_share_save_container a {
   padding: 0 0.25em 0 0;
   font-size: 1.25em;
+}
+
+/* line 34, ../scss/partials/_watch-read.scss */
+#parallax-kieth h1.sub-page-title {
+  display: inline-block;
+  background: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: block;
+  float: none;
+  z-index: 1000;
+  text-transform: lowercase;
+  font-size: 3em;
+  padding-right: 0.55em;
+}
+@media (min-width: 811px) {
+  /* line 34, ../scss/partials/_watch-read.scss */
+  #parallax-kieth h1.sub-page-title {
+    height: 1.2em;
+    font-size: 3.5em;
+  }
+}
+/* line 52, ../scss/partials/_watch-read.scss */
+#parallax-kieth h1.sub-page-title span.title-plus {
+  background: white;
+  position: absolute;
+  right: 0em;
+  top: -0.14em;
+  display: block;
+}
+/* line 60, ../scss/partials/_watch-read.scss */
+#parallax-kieth h1.sub-page-title + img {
+  display: none;
 }
 
 /*********************

@@ -79,26 +79,21 @@ get_header();
 
 					<div class="sub-page-content-wrapper">
 						<!-- different pages different logos -->
-						<?php if (is_page(11)) { ?>
-							<img src="<?php bloginfo('url'); ?>/img/our-solutions/pro-logo.png">
-						<?php } elseif (is_page(15)) { ?>
-							<img src="<?php bloginfo('url'); ?>/img/our-solutions/rep-logo.png">
-						<?php } elseif (is_page(24)) { ?>
-							<img src="<?php bloginfo('url'); ?>/img/our-solutions/rea-logo.png">
-						<?php } elseif (is_page(13)) { ?>
-							<img src="<?php bloginfo('url'); ?>/img/our-solutions/cro-logo.png">
-						<?php } ?>
+						<?php 
+							// // PAGE LOGOS
+							// if (is_page(11)) { 
+							// 	echo '<img src="'.get_bloginfo('url').'/img/our-solutions/pro-logo.png">';
+							// } elseif (is_page(15)) {
+							// 	echo '<img src="'.get_bloginfo('url').'/img/our-solutions/rep-logo.png">';
+							// } elseif (is_page(24)) {
+							// 	echo '<img src="'.get_bloginfo('url').'/img/our-solutions/rea-logo.png">';
+							// } elseif (is_page(13)) {
+							// 	echo '<img src="'.get_bloginfo('url').'/img/our-solutions/cro-logo.png">';
+							// }
 
-						<!-- different pages different sub title colors -->
-<!-- 									<?php if (is_page(11)) { ?>
-							<h2 class="sub-title pro-color"><?php echo $main_sub_title; ?></h2>
-						<?php } elseif (is_page(15)) { ?>
-							<h2 class="sub-title rep-color"><?php echo $main_sub_title; ?></h2>
-						<?php } elseif (is_page(24)) { ?>
-							<h2 class="sub-title rea-color"><?php echo $main_sub_title; ?></h2>
-						<?php } elseif (is_page(13)) { ?>
-							<h2 class="sub-title cro-color"><?php echo $main_sub_title; ?></h2>
-						<?php } ?> -->
+							// TAKE OUT PAGE LOGOS AND REPLACE WITH TITLE TEXT
+							echo '<h1>'.get_the_title().'</h1>';
+						?>
 
 							<p class="first-p"><?php echo $main_first_p; ?></p>
 							<p><?php echo $main_p; ?></p>

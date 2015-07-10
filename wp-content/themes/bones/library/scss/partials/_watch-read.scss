@@ -28,3 +28,35 @@
 		font-size: 1.25em;
 	}
 }
+
+
+// HOME PAGE TITLE ADJUSTMENTS
+#parallax-kieth h1.sub-page-title {
+	display: inline-block;
+	background: white;
+	position: absolute;
+	top: 0; bottom: 0; left: 0;
+	margin: auto;
+	display: block;
+	float: none;
+	z-index: 1000;
+	text-transform: lowercase;
+	font-size: 3em;
+	padding-right: 0.55em;
+
+	@media(min-width: 811px) {
+		height: 1.2em;
+  		font-size: 3.5em;
+	}
+
+	span.title-plus {
+		background: white;
+	  	position: absolute;
+	  	right: 0em; top: -0.14em;
+	  	display: block;
+	}
+
+	// HIDE OLD IMAGE LOGO
+	+ img { display: none; }
+}
+

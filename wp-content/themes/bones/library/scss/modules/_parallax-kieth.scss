@@ -582,16 +582,13 @@
   }
 
   #fly-it {
-    // top: -34px;
-    height: 4px;
-    width:382px;
-
-    top: -19px;
+    height: 3px;
+    width: 382px;
+    // top: -22px;
+    top: -1.38em;
 
     @media(min-width: 980px) {
-      height: 3px;
       width: 1070px;
-      top: -24px;
     }
 
   }

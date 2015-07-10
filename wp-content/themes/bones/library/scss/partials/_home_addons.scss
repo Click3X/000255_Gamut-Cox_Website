@@ -229,9 +229,11 @@
 	position: absolute;
 	max-width: 90%;
 	height: 0;
-	padding-bottom: .95%;
+	// padding-bottom: .95%;
+	padding-bottom:4px;
 	margin: auto;
 	top: -33%; bottom: 0px;
+
 }
 
 .programmatic { background-image:url('../../../../../img/home-beams/programmatic-beam.png'); }
@@ -242,11 +244,12 @@
 // CHARLE SCSS
 #fly-it {
 	position: absolute;
-	top: -71%;
+	// top: -71%;
 	// right: -63%;
-	right: 30%;
+	right: 40%;
 
 	z-index: 10;
+	top: -1.38em;
 
 	// @include prefix(transform, translateX(30%));
 
@@ -256,6 +259,10 @@
 	@media(min-width: 480px) {
 		top: -34%;
 	}
+
+	@media(min-width: 980px) {
+		// right: 40%;
+	}
 	// @include prefix(transform, translateX(200%));
 }
 
@@ -264,37 +271,38 @@
 }
 
 #fly-it.flyout {
-	right: -63%;
+	// right: -63%;
+	right: -60.5%;
 	// @include prefix(transform, translateX(-63%));
+
+	@media(min-width: 980px) {
+		right: -50.5%;
+	}
 
 }
 #fly-it-2 {
 	position: absolute;
-	top: -23px;
+	// top: -23px;
+	  top: -1.38em;
 	right: 82%;
 
 	height:4.031px;
 	width:383px;
-
+	height: 3px;
 	@include prefix(transform, translateZ(10));
 
 	@include prefix(transition, all 500ms);
 
-
 	@media(min-width: 980px) {
-      height: 4px;
       width: 1070px;
-      top: -25px;
+      // top: -25px;
     }
 }
 
 #fly-it-2.flyout {
-	right: -17%;
-	// @include prefix(transform, translateX(-17%));
+	right: -18.5%;
 	@media(min-width: 980px) {
-		height: 4px;
 		width: 1070px;
-		top: -25px;
 	}
 }
 
@@ -316,7 +324,6 @@
 
 #fly-it-3.flyout {
 	right: -22%;
-	// @include prefix(transform, translateX(-22%));
 	@media(min-width: 980px) {
       	height: 4px;
 		width: 1070px;

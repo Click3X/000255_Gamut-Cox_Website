@@ -1,33 +1,10 @@
-<!-- <div class="debug">
-  <label><input type="checkbox"> Debug</label>
-</div> -->
 <div class="parallax">
-
 
   <div id="group1" class="parallax__group">
     
     <div class="parallax__layer parallax__layer--base">
-      <!-- <div class="title">Base Layer</div> -->
-      <!-- <div id="home-slider-holder" class="container clearfix">
-        <ul id="marquee-slider" class="royalSlider contentSlider rsDefault js-show">
-          <?php
-          foreach ($images as $key => $image) { ?>
-            <li class="marquee-slide" style="background-image:url('<?php echo $image;?>');"></li>
-          <?php 
-            }
-          ?>
-        </ul>
-      </div> -->
 
       <div id="home-slider-holder" class="container clearfix">
-        <!-- <ul id="marquee-slider" class="royalSlider contentSlider rsDefault js-show">
-          <?php
-          foreach ($images as $key => $image) { ?>
-            <li class="marquee-slide" style="background-image:url('<?php echo $image;?>');"></li>
-          <?php 
-            }
-          ?>
-        </ul> -->
         <?php 
           require_once 'Mobile_Detect.php'; 
           $detect = new Mobile_Detect;
@@ -41,7 +18,6 @@
       
             <!-- VIDEO -->
             <video id="video" width="100%" loop autoplay muted>
-              <!-- poster="<?php bloginfo('url'); ?>/wp-content/videos/GAMUT_h264.png" -->
               <source src="<?php bloginfo('url'); ?>/wp-content/videos/GAMUT_new.mp4" type="video/mp4">
               <source src="<?php bloginfo('url'); ?>/wp-content/videos/GAMUT_new.ogv" type="video/ogg">
               <source src="<?php bloginfo('url'); ?>/wp-content/videos/GAMUT_new.webm" type="video/webm">
@@ -67,7 +43,6 @@
   <div id="group2" class="parallax__group" style="background-image: url('<?php echo $bg_img['url'] ?>');">
     <div class="parallax__layer parallax__layer--base">
       <!-- <div class="title">Base Layer</div> -->
-
 
       <div class="txt-holder-holder">
         <div class="clearfix txt-holder">
@@ -117,7 +92,8 @@
                 <a href="<?php echo get_permalink(11);?>" class="gamut-btn abs-center" id="home-btn-pro">LEARN HOW&nbsp;&nbsp;<span id="home-btn-pro-arrow" class="arrow-right"></span></a>
               </div>
               <div class="clearfix half red">
-                <img id="pro-logo" src="<?php bloginfo('url'); ?>/img/home-logos/programmatic-logo.png" alt="programmatic">
+                <!-- <img id="pro-logo" src="<?php bloginfo('url'); ?>/img/home-logos/programmatic-logo.png" alt="programmatic"> -->
+                <h1 class="sub-page-title"><?php echo get_the_title(11);?></h1>
                 <div id="fly-it" class="bg-img programmatic"></div>
               </div>
           </div>
@@ -133,7 +109,8 @@
                 <a href="<?php echo get_permalink(15);?>" class="gamut-btn abs-center" id="home-btn-rep">LEARN HOW&nbsp;&nbsp;<span id="home-btn-rep-arrow" class="arrow-right"></span></a>
               </div>
               <div class="clearfix half red">
-                <img id="rep-logo" src="<?php bloginfo('url'); ?>/img/home-logos/reps-logo.png" alt="reps">
+                <!-- <img id="rep-logo" src="<?php bloginfo('url'); ?>/img/home-logos/reps-logo.png" alt="reps"> -->
+                <h1 class="sub-page-title"><?php echo get_the_title(15);?></h1>
                 <div id="fly-it-2" class="bg-img reps"></div>
               </div>
           </div>
@@ -159,10 +136,10 @@
 <!--          <div class="clearfix subpage-wrap">
           <div class="clearfix subpage">
             <div class="p-holder">
-                <?php echo $convergence_intro_content; ?>
+                <?php // echo $convergence_intro_content; ?>
             </div>
             <div class="clearfix half blue">
-              <a href="<?php echo get_permalink(13);?>" class="gamut-btn abs-center" id="home-btn-cro">LEARN HOW&nbsp;&nbsp;<span id="home-btn-cro-arrow" class="arrow-right"></span></a>
+              <a href="<?php // echo get_permalink(13);?>" class="gamut-btn abs-center" id="home-btn-cro">LEARN HOW&nbsp;&nbsp;<span id="home-btn-cro-arrow" class="arrow-right"></span></a>
             </div>
             <div class="clearfix half red">
               <img id="crossmedia-logo" src="<?php bloginfo('url'); ?>/img/home-logos/crossmedia-logo.png" alt="crossmedia">
@@ -198,7 +175,7 @@
 
   <!-- CAREERS AND SMART -->
   <div id="group6" class="parallax__group">
-<!--       <?php echo $careers_image['url'];?> -->
+<!--       <?php // echo $careers_image['url'];?> -->
     <div class="parallax__layer parallax__layer--back">
       <!-- <div class="title">Background Layer</div> -->
     </div>
@@ -206,7 +183,6 @@
     <div class="parallax__layer parallax__layer--base">
       <!-- <div class="title">Base Layer</div> -->
 
-      <!-- <div class="clearfix cs-holder"> -->
         <div class="clearfix cc-holder c-smart-bg c-bg-mobile" style="background-image:url('<?php echo $smart_service_image['url']; ?>');"></div>
         <div class="clearfix cc-holder c-smart-bg" style="background-image:url('<?php echo $smart_service_image['sizes']['para-bg']; ?>');">
           <div class="clearfix ccc-holder">
@@ -217,7 +193,6 @@
             </div>
           </div>
         </div>
-      <!-- </div> -->
 
       <div class="clearfix cc-holder c-career-bg c-bg-mobile" style="background-image:url('<?php echo $careers_image['sizes']['para-bg']; ?>');"></div>
       <div class="clearfix cc-holder c-career-bg" style="background-color:rgb(248,248,239); background-image:url('<?php echo $careers_image['url']; ?>');">
@@ -232,7 +207,6 @@
 
 
     </div>
-
   </div>
 
   <div id="group7" class="parallax__group">

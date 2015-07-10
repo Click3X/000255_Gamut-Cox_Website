@@ -83,6 +83,7 @@
             <a href="<?php echo get_permalink(11);?>" class="gamut-btn abs-center" id="home-btn-pro">LEARN HOW&nbsp;&nbsp;<span class="arrow-right" id="home-btn-pro-arrow"></span></a>
           </div>
           <div class="clearfix half red">
+            <h1 class="sub-page-title"><?php echo get_the_title(11);?><span class="title-plus">+</span></h1>
             <img id="pro-logo" src="<?php bloginfo('url'); ?>/img/home-logos/programmatic-logo.png" alt="programmatic">
             <div id="fly-it" class="bg-img programmatic"></div>
           </div>
@@ -99,6 +100,7 @@
               <a href="<?php echo get_permalink(15);?>" class="gamut-btn abs-center" id="home-btn-rep">LEARN HOW&nbsp;&nbsp;<span class="arrow-right" id="home-btn-rep-arrow"></span></a>
             </div>
             <div class="clearfix half red">
+              <h1 class="sub-page-title"><?php echo get_the_title(15);?><span class="title-plus">+</span></h1>
               <img id="rep-logo" src="<?php bloginfo('url'); ?>/img/home-logos/reps-logo.png" alt="reps">
               <div id="fly-it-2" class="bg-img reps"></div>
             </div>
