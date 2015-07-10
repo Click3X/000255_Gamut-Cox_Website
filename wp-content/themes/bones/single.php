@@ -1,4 +1,10 @@
-<?php get_header(); ?>
+<?php get_header(); 
+
+$cat_id = "";
+$pre_cat = "";
+$next_cat = "";
+
+?>
 
 			<div id="content">
 
@@ -33,7 +39,7 @@
 
 					wp_nav_menu( $defaults ); 
 
-					wp_reset_postdata();
+					wp_reset_query();
 
 					?>
 
@@ -46,18 +52,50 @@
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class('cf'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
-
-								<h1>
-									<?php
-									// $category = get_the_category(); 
-									// echo $category[0]->cat_name;		
-									?>
-								</h1>
-
 				                <!-- ADDING IN NEW REQUESTED NEXT/PREV POST ARROWS -->
+
 				                <div class="gamut-navigation cf">
-				                  <?php previous_post_link( '%link', 'Previous post', TRUE ); ?>
-				                  <?php next_post_link( '%link', 'Next post', TRUE ); ?>
+				                	 <?php 
+				                	 	// FEATURED IS ID 31
+				                	 	// $exes = array(31);
+				                	 	$exes = '';
+				                	 	// GET CURRENT CAT, NOT FEATURED
+				                	 	foreach((get_the_category()) as $category) {
+											if ($category->category_parent == 0) {
+												if($category->term_id != 31) {
+													$cat_id = $category->term_id;	
+												}
+											}
+										}
+
+				                	 	// PREVIOUS CAT
+				                	 	$prev_post = get_adjacent_post( true, $exes, true); 
+				                	 	foreach((get_the_category($prev_post->ID)) as $category) {
+											if ($category->category_parent == 0) {
+												if($category->term_id != 31) {
+													$pre_cat = $category->term_id;	
+												}
+											}
+										}
+
+										// NEXT CAT
+										$next_post = get_adjacent_post( true, $exes, false); 
+										foreach((get_the_category($next_post->ID)) as $category) {
+											if ($category->category_parent == 0) {
+												if($category->term_id != 31) {
+													$next_cat = $category->term_id;	
+												}
+											}
+										}
+
+				                		if ( (is_a( $prev_post, 'WP_Post' )) && ($pre_cat == $cat_id) ) { ?>
+									 		<a href="<?php echo get_permalink( $prev_post->ID ); ?>" rel="prev">Previous Post in Category</a>
+									 <?php } 
+
+									 	if ( (is_a( $next_post, 'WP_Post' )) && ($next_cat == $cat_id) ) { ?>
+									 		<a href="<?php echo get_permalink( $next_post->ID ); ?>" rel="next">Next Post in Category</a>
+									 <?php } ?>
+								
 				                </div>
 
 				                <header class="article-header">
