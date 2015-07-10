@@ -101,6 +101,8 @@ $next_cat = "";
 
 				                <header class="article-header">
 
+				                	<?php if ( function_exists( 'ADDTOANY_SHARE_SAVE_KIT' ) ) { ADDTOANY_SHARE_SAVE_KIT(); } ?>
+
 				                  <h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
 
 				                  <h2 class="entry-subtitle"><?php the_field('title'); ?></h2>

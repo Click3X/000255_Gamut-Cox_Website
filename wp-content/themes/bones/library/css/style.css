@@ -8829,20 +8829,34 @@ body #content + div {
 }
 
 /* line 24, ../scss/partials/_watch-read.scss */
+#main .addtoany_list,
 #main .addtoany_share_save_container {
   text-align: left;
   text-transform: uppercase;
   font-size: 0.7em;
   font-weight: 500;
-  margin: 0;
+  display: block;
+  margin: 40px 0 0;
 }
-/* line 30, ../scss/partials/_watch-read.scss */
+/* line 32, ../scss/partials/_watch-read.scss */
+#main .addtoany_list a,
 #main .addtoany_share_save_container a {
   padding: 0 0.25em 0 0;
   font-size: 1.25em;
+  color: #323944;
+}
+/* line 36, ../scss/partials/_watch-read.scss */
+#main .addtoany_list a:hover,
+#main .addtoany_share_save_container a:hover {
+  color: #ed228b;
+}
+/* line 41, ../scss/partials/_watch-read.scss */
+#main .addtoany_list + .single-title,
+#main .addtoany_share_save_container + .single-title {
+  margin-top: 0;
 }
 
-/* line 38, ../scss/partials/_watch-read.scss */
+/* line 46, ../scss/partials/_watch-read.scss */
 #parallax-kieth h1.sub-page-title {
   display: inline-block;
   background: white;
@@ -8859,13 +8873,13 @@ body #content + div {
   padding-right: 0.55em;
 }
 @media (min-width: 811px) {
-  /* line 38, ../scss/partials/_watch-read.scss */
+  /* line 46, ../scss/partials/_watch-read.scss */
   #parallax-kieth h1.sub-page-title {
     height: 1.2em;
     font-size: 3.5em;
   }
 }
-/* line 56, ../scss/partials/_watch-read.scss */
+/* line 64, ../scss/partials/_watch-read.scss */
 #parallax-kieth h1.sub-page-title span.title-plus {
   background: white;
   position: absolute;
@@ -8873,7 +8887,7 @@ body #content + div {
   top: -0.14em;
   display: block;
 }
-/* line 64, ../scss/partials/_watch-read.scss */
+/* line 72, ../scss/partials/_watch-read.scss */
 #parallax-kieth h1.sub-page-title + img {
   display: none;
 }
