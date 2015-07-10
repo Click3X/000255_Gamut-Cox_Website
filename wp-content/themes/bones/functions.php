@@ -261,6 +261,25 @@ function ae_detect_ie() {
         return false;
 }
 
+// PRINT CAT TITLE
+function printCatTitle() {
+  // GET GLOBAL POST VAR TO GET CAT VALUES
+  Global $post;
+  $post_cats = array();
+  $post_cats = wp_get_post_categories($post->ID);
+
+  // TAKE OUT FEATURED CATEGORY (31) FROM OUR POST CATS VAR
+  $del_val = 31;
+  if(($key = array_search($del_val, $post_cats)) !== false) {
+    unset($post_cats[$key]);
+  }
+  // RESET INDEX IN ARRAY
+  $post_cats = array_values($post_cats);
+  // GET FIST INDEX FORT CAT TITLE
+  $cat_title = get_cat_name( $post_cats[0] );
+
+  echo '<a class="page-link" href="'.get_category_link( $post_cats[0] ).'"><h2 id="sidebar-title">'.$cat_title.'</h2></a>';
+}
 
 
 // EMAIL ADDRESS ANTI-SPAM

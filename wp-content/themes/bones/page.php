@@ -25,8 +25,13 @@
 							<div id="sidebar-beam-container">
 								<div id="sidebar-beam" style="background-image: url(<?php bloginfo('url'); ?>/img/sidebar-beam.png);"></div>
 							</div>
-							<?php $parent_title = get_the_title($post->post_parent); ?>
-							<h2 id="sidebar-title"><?php echo $parent_title; ?></h2>
+							
+							<?php 
+								// $parent_title = get_the_title($post->post_parent); 
+								// echo '<h2 id="sidebar-title">'. $parent_title . '</h2>';
+							?>
+							<h2 id="sidebar-title"><?php echo the_title(); ?></h2>
+							
 
 							<?php $defaults = array(
 								'theme_location'  => '',

@@ -17,9 +17,11 @@
 
 			<div id="content" class="fixed-header-bg">
 
-			<?php $header_image = get_field('header-image');
-					$sub_page_content = get_field('sub-page-content');
-					$category_id = get_field("category_id");
+			<?php 
+				$header_image = get_field('header-image');
+				$sub_page_content = get_field('sub-page-content');
+				$category_id = get_field("category_id");
+				$cat_title = get_cat_name( $category_id );
 			?>
 
 				<header class="clearfix article-header">
@@ -34,12 +36,9 @@
 					<div id="sidebar-beam-container">
 						<div id="sidebar-beam" style="background-image: url(<?php bloginfo('url'); ?>/img/sidebar-beam.png);"></div>
 					</div>
-					<?php 
-						$parent = array_reverse(get_post_ancestors($post->ID));
-						$first_parent = get_page($parent[0]);
-						$parent_title = $first_parent->post_title;
-					?>
-					<h2 id="sidebar-title"><a href="<?php echo get_permalink($first_parent->ID); ?>"><?php echo $parent_title; ?></a></h2>
+
+					<h2 id="sidebar-title"><a href="<?php echo get_category_link( $category_id ); ?>"><?php echo $cat_title; ?></a></h2>
+
 
 					<?php $defaults = array(
 						'theme_location'  => '',
@@ -73,27 +72,25 @@
 							}
 						?>
 
-						<!-- Media Logos -->
-						<?php if(get_field('logo_list')): ?>
+						<?php 
+							// MEDIA LOGOS 
+							//
+							// if(get_field('logo_list')) {
+							// 	echo '<ul>';
+							// 	while(has_sub_field('logo_list')) {
+							// 		$logo = get_sub_field('logo'); 
+							// 		$logo_url = $logo['url']; 
+							// 		echo '<li style=" display: inline-block; padding: 0 10px;"><img style="height: 30px;" src="'. $logo_url .'"></li>';
+							// 	}
+							// 	echo '</ul>';	
+							// }
+						?>
 
-							<ul>
+						<?php 
+							echo '<h1>'.$cat_title.'</h1>';
+						?>
 
-							<?php while(has_sub_field('logo_list')): 
-
-								$logo = get_sub_field('logo'); 
-
-								$logo_url = $logo['url']; ?>
-
-								<li style=" display: inline-block; padding: 0 10px;"><img style="height: 30px;" src="<?php echo $logo_url; ?>"></li>
-
-							<?php endwhile; ?>
-
-							</ul>
-
-						<?php endif; ?>
-										
-
-							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 							<article class="news-post-wrapper" id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 

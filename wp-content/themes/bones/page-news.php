@@ -17,9 +17,11 @@
 
 			<div id="content" class="fixed-header-bg">
 
-			<?php $header_image = get_field('header-image');
-					$sub_page_content = get_field('sub-page-content');
-					$category_id = get_field("category_id");
+			<?php 
+				$header_image = get_field('header-image');
+				$sub_page_content = get_field('sub-page-content');
+				$category_id = get_field("category_id");
+				$cat_title = get_cat_name( $category_id );
 			?>
 
 				<header class="clearfix article-header">
@@ -34,12 +36,29 @@
 					<div id="sidebar-beam-container">
 						<div id="sidebar-beam" style="background-image: url(<?php bloginfo('url'); ?>/img/sidebar-beam.png);"></div>
 					</div>
+					
+					
+
 					<?php 
-						$parent = array_reverse(get_post_ancestors($post->ID));
-						$first_parent = get_page($parent[0]);
-						$parent_title = $first_parent->post_title;
+
+						// echo '<h2 id="sidebar-title"><a href="'.get_category_link( $category_id ).'">'. $cat_title .'</a></h2>';
+
+						if($cat_title == 'Uncategorized') {
+							$parent_title = get_the_title($post->post_parent);
+							echo '<h2 id="sidebar-title">'.$parent_title.'</h2>';
+						} else {
+							echo '<h2 id="sidebar-title"><a href="'.get_category_link( $category_id ).'">'. $cat_title .'</a></h2>';							
+						}
+
+						// if( is_page() && $post->post_parent > 0 ) { 
+						// 	$parent_title = get_the_title($post->post_parent);
+						// 	echo '<h2 id="sidebar-title">'.$parent_title.'</h2>';
+						// } else {
+						// 	echo '<h1>Hey</h1>';
+						// 	// echo '<h2 id="sidebar-title"><a href="'.get_category_link( $category_id ).'">'. $cat_title .'</a></h2>'		
+						// }
 					?>
-					<h2 id="sidebar-title"><a href="<?php echo get_permalink($first_parent->ID); ?>"><?php echo $parent_title; ?></a></h2>
+
 
 					<?php $defaults = array(
 						'theme_location'  => '',
