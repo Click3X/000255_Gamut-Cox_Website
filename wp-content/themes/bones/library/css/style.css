@@ -8674,12 +8674,12 @@ body #content + div {
   height: auto;
   margin: auto;
   min-height: 150px;
-  padding-bottom: 50%;
+  padding-bottom: 20%;
 }
 @media (min-width: 1600px) {
   /* line 2, ../scss/partials/_contact-maps.scss */
   #map-canvas {
-    padding-bottom: 800px;
+    padding-bottom: 300px;
   }
 }
 
