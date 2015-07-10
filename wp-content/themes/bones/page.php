@@ -84,21 +84,19 @@
 									<!-- adding content on Our Solutions page -->
 									<?php if (is_page(184)) { ?>
 
-									<div class="our-solutions-list-wrapper">
+									<!-- <div class="our-solutions-list-wrapper">
 									   
 									   <div class="our-solutions-list">
 									   		<a href="<?php echo get_permalink(11); ?>">
 										   		<img src="<?php bloginfo('url'); ?>/img/our-solutions/pro-logo.png">
 										   	</a>
-										   <!-- 	<h2 class="pro-color"><?php echo $pro_caption ?></h2> -->
-									   </div>
+									   </div> -->
 
-									   <div class="our-solutions-list">
+									   <!-- <div class="our-solutions-list">
 									   		<a href="<?php echo get_permalink(15); ?>">
 										   		<img src="<?php bloginfo('url'); ?>/img/our-solutions/rep-logo.png">
 										   	</a>
-										   	<!-- <h2 class="rep-color"><?php echo $rep_caption ?></h2> -->
-									   </div>
+									   </div> -->
 
 									   <!-- <div class="our-solutions-list">
 									   		<a href="<?php echo get_permalink(24); ?>">
@@ -114,7 +112,7 @@
 										   	<!-- <h2 class="cro-color"><?php echo $cro_caption ?></h2> -->
 									   <!-- </div> -->
 
-									 </div>
+									 <!-- </div> -->
 
 
 									<?php } ?>
