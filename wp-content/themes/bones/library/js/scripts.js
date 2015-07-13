@@ -167,14 +167,6 @@ $('.email').each(function() {
   */
   loadGravatars();
 
-  // Debug code
-   // $('head').append('<style>#outline {position:fixed;z-index:1000;bottom:50px;right:50px; width:60px; height:30px;} .outlines {outline:1px solid rgba(255, 0, 0, 0.3);}</style>');
-   //  $('body').append('<input id="outline" type="button">');
-
-   //  $('#outline').click(function() {
-   //      $('*').toggleClass('outlines');
-   // });
-
 
     // PARALLAX WINDOW FUNCITON
     function elementInViewport(el) {
