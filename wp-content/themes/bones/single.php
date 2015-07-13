@@ -19,28 +19,39 @@ $next_cat = "";
 						printCatTitle();
 					?>
 
-					<?php $defaults = array(
-						'theme_location'  => '',
-						'menu'            => 'Watch & Read',
-						'container'       => 'div',
-						'container_class' => '',
-						'container_id'    => '',
-						'menu_class'      => 'secondary',
-						'menu_id'         => '',
-						'echo'            => true,
-						'fallback_cb'     => 'wp_page_menu',
-						'before'          => '',
-						'after'           => '',
-						'link_before'     => '',
-						'link_after'      => '',
-						'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-						'depth'           => 0,
-						'walker'          => ''
+					<?php 
+
+					$args = array(
+						'show_option_all'    => '',
+						'orderby'            => 'name',
+						'order'              => 'ASC',
+						'style'              => 'list',
+						'show_count'         => 0,
+						'hide_empty'         => 1,
+						'use_desc_for_title' => 1,
+						'child_of'           => 0,
+						'feed'               => '',
+						'feed_type'          => '',
+						'feed_image'         => '',
+						'exclude'            => array(1, 31),
+						'exclude_tree'       => '',
+						'include'            => '',
+						'hierarchical'       => 1,
+						'title_li'           => __( '' ),
+						'show_option_none'   => __( '' ),
+						'number'             => null,
+						'echo'               => 1,
+						'depth'              => 0,
+						'current_category'   => 0,
+						'pad_counts'         => 0,
+						'taxonomy'           => 'category',
+						'walker'             => null
 					);
 
-					wp_nav_menu( $defaults ); 
-
-					wp_reset_query();
+					// wp_nav_menu( $defaults ); 
+					echo '<ul id="cat-menu" class="secondary">';
+						wp_list_categories($args);
+					echo '</ul>';
 
 					?>
 

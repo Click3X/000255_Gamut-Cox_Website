@@ -298,6 +298,30 @@ function cleanAddress($string){
 }
 
 
+// HIGHLIGHT CATEGORY IN SIDEBAR MENU ON SINGLE PAGES
+function sgr_show_current_cat_on_single($output) {
+
+  global $post;
+
+  if( is_single() ) {
+
+    $categories = wp_get_post_categories($post->ID);
+
+    foreach( $categories as $catid ) {
+      $cat = get_category($catid);
+      // Find cat-item-ID in the string
+      if(preg_match('#cat-item-' . $cat->cat_ID . '#', $output)) {
+        $output = str_replace('cat-item-'.$cat->cat_ID, 'cat-item-'.$cat->cat_ID . ' current-cat', $output);
+      }
+    }
+
+  }
+  return $output;
+}
+
+add_filter('wp_list_categories', 'sgr_show_current_cat_on_single');
+
+
 // EMAIL ADDRESS ANTI-SPAM
 // function email_encode_function( $atts, $content ){
 //   return '<a href="'.antispambot("mailto:".$content).'">'.antispambot($content).'</a>';

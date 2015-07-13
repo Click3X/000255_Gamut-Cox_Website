@@ -8496,7 +8496,7 @@ body #content + div {
 }
 
 /* line 25, ../scss/partials/_contact.scss */
-.category {
+.page-id-19 .category {
   display: block;
   vertical-align: top;
   float: left;
@@ -8505,21 +8505,21 @@ body #content + div {
 }
 @media (min-width: 480px) {
   /* line 25, ../scss/partials/_contact.scss */
-  .category {
+  .page-id-19 .category {
     width: 45%;
     margin-right: 5%;
   }
 }
 @media (min-width: 768px) {
   /* line 25, ../scss/partials/_contact.scss */
-  .category {
+  .page-id-19 .category {
     width: 30%;
     margin-right: 3.333333%;
   }
 }
 @media (min-width: 1040px) {
   /* line 25, ../scss/partials/_contact.scss */
-  .category {
+  .page-id-19 .category {
     width: 20%;
     margin-right: 5%;
   }
@@ -8890,6 +8890,11 @@ body #content + div {
 /* line 72, ../scss/partials/_watch-read.scss */
 #parallax-kieth h1.sub-page-title + img {
   display: none;
+}
+
+/* line 79, ../scss/partials/_watch-read.scss */
+#cat-menu .current-cat a {
+  color: #ed228b;
 }
 
 /*********************
