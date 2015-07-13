@@ -83,6 +83,9 @@ add_image_size( 'emp-individual', 290, 440, true );
 // SET IMAGE SIZE FOR PARALLAX BACKGROUND
 add_image_size( 'para-bg', 800, 533, true );
 
+// FEAT IMG PREVIEW NEXT TO EXCERPTS
+add_image_size( 'feat-excerpt', 800, 200, array('center', 'center') );
+
 /*
 to add more sizes, simply copy a line from above
 and change the dimensions & name. As long as you

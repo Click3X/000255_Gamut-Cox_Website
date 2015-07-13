@@ -102,12 +102,23 @@
 										</p>
 
 										<p><?php the_excerpt()?></p>
-										
-										<!-- FEAT IMG FPO -->
-										<!-- UPDATE LATER WITH REAL FEAT IMG -->
-										<div class="feat-img-holder cf">
-											<img src="<?php echo get_bloginfo('url');?>/img/fpo.png" class="feat-img-fpo">
-										</div>
+
+										<?php
+											// IF HAS POST THUMBMIAL, PRINT POST THUMBNAIL, ELSE PRINT FPo 
+											if ( has_post_thumbnail() ) {
+												$img_id = get_post_thumbnail_id();
+												$size = 'feat-excerpt';
+												$src = wp_get_attachment_image_src( $img_id, $size );
+												echo '<div class="feat-img-holder cf">';
+													echo '<img src="'. $src[0] .'" class="feat-img-fpo">';
+												echo '</div>';
+											} else {
+												// FEAT IMG FPO
+												echo '<div class="feat-img-holder cf">
+													<img src="'. get_bloginfo('url') .'/img/fpo.png" class="feat-img-fpo">
+												</div>';
+											}
+										?>
 										<?php 
 
 										wp_link_pages( array(
