@@ -22,7 +22,9 @@
 	font-weight: 600;
 }
 
-.page-id-19 .category {
+
+.page-id-19 .category,
+.page-id-9 .category {
 	display: block;
 	vertical-align: top;
 	float: left;
@@ -54,6 +56,10 @@
 	ul {
 		margin-top:.5em;
 		margin-bottom:1.5em;
+
+		.email {
+			a { color:#ed228b;}
+		}
 
 		.address {
 			.gothic {
