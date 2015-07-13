@@ -8,60 +8,62 @@ $next_cat = "";
 
 			<div id="content">
 
-				<div id="sidebar1" class="news-sidebar sidebar m-all cf <?php echo $sidebar_class; ?>" role="complementary">
+				<div class="wrap-wrap cf">
 
-					<div id="sidebar-beam-container">
-						<div id="sidebar-beam" style="background-image: url(<?php bloginfo('url'); ?>/img/sidebar-beam.png);"></div>
-					</div>
+					<div id="inner-content" class="wrap cf">
 
-					<?php 
-						// PRINT POST CATEGORY (BUT NOT FEATURED CAT)
-						printCatTitle();
-					?>
+						<div id="sidebar1" class="sidebar m-all t-1of3 cf d-2of7" role="complementary">
+							<div id="sidebar-beam-container">
+								<div id="sidebar-beam" style="background-image: url(<?php bloginfo('url'); ?>/img/sidebar-beam.png);"></div>
+							</div>
 
-					<?php 
+							<?php 
+								// PRINT POST CATEGORY (BUT NOT FEATURED CAT)
+								printCatTitle();
+							?>
 
-					$args = array(
-						'show_option_all'    => '',
-						'orderby'            => 'name',
-						'order'              => 'ASC',
-						'style'              => 'list',
-						'show_count'         => 0,
-						'hide_empty'         => 1,
-						'use_desc_for_title' => 1,
-						'child_of'           => 0,
-						'feed'               => '',
-						'feed_type'          => '',
-						'feed_image'         => '',
-						'exclude'            => array(1, 31),
-						'exclude_tree'       => '',
-						'include'            => '',
-						'hierarchical'       => 1,
-						'title_li'           => __( '' ),
-						'show_option_none'   => __( '' ),
-						'number'             => null,
-						'echo'               => 1,
-						'depth'              => 0,
-						'current_category'   => 0,
-						'pad_counts'         => 0,
-						'taxonomy'           => 'category',
-						'walker'             => null
-					);
+							<?php 
 
-					// wp_nav_menu( $defaults ); 
-					echo '<ul id="cat-menu" class="secondary">';
-						wp_list_categories($args);
-					echo '</ul>';
+							$args = array(
+								'show_option_all'    => '',
+								'orderby'            => 'name',
+								'order'              => 'ASC',
+								'style'              => 'list',
+								'show_count'         => 0,
+								'hide_empty'         => 1,
+								'use_desc_for_title' => 1,
+								'child_of'           => 0,
+								'feed'               => '',
+								'feed_type'          => '',
+								'feed_image'         => '',
+								'exclude'            => array(1, 31),
+								'exclude_tree'       => '',
+								'include'            => '',
+								'hierarchical'       => 1,
+								'title_li'           => __( '' ),
+								'show_option_none'   => __( '' ),
+								'number'             => null,
+								'echo'               => 1,
+								'depth'              => 0,
+								'current_category'   => 0,
+								'pad_counts'         => 0,
+								'taxonomy'           => 'category',
+								'walker'             => null
+							);
 
-					?>
+							// wp_nav_menu( $defaults ); 
+							echo '<ul id="cat-menu" class="secondary">';
+								wp_list_categories($args);
+							echo '</ul>';
 
-				</div>
+							?>
+						</div>
 
-				<div id="inner-content" class="wrap cf">
+						<div id="main" class="m-all t-2of3 d-5of7 cf" role="main">
 
-					<div id="main" class="news-content-wrapper cf" role="main">
+							<div class="sub-page-content-wrapper">
 
-						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class('cf'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 				                <!-- ADDING IN NEW REQUESTED NEXT/PREV POST ARROWS -->
@@ -121,41 +123,45 @@ $next_cat = "";
 				                </header> <?php // end article header ?>
 
 				                <section class="entry-content cf" itemprop="articleBody">
-				                  
-				                  <?php
-				                    // GET TEAM MEMBER IMAGE (FEATURED IMAGE)
-				                    $size = 'thumb';
-				                    the_post_thumbnail( $size);
+						                  
+						                  <?php
+						                    // GET TEAM MEMBER IMAGE (FEATURED IMAGE)
+						                    $size = 'thumb';
+						                    the_post_thumbnail( $size);
 
-				                    // the content (pretty self explanatory huh)
-				                    the_content(); 
-				                  ?>
+						                    // the content (pretty self explanatory huh)
+						                    the_content(); 
+						                  ?>
 
-				                </section> <?php // end article section ?>
+						                </section> <?php // end article section ?>
 
-				                <footer class="article-footer">
+						                <footer class="article-footer">
 
-				                </footer> <?php // end article footer ?>
+						                </footer> <?php // end article footer ?>
 
-				              </article> <?php // end article ?>
+						              </article> <?php // end article ?>
 
-						<?php endwhile; ?>
+								<?php endwhile; ?>
 
-						<?php else : ?>
+								<?php else : ?>
 
-							<article id="post-not-found" class="hentry cf">
-									<header class="article-header">
-										<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
-									</header>
-									<section class="entry-content">
-										<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'bonestheme' ); ?></p>
-									</section>
-									<footer class="article-footer">
-											<p><?php _e( 'This is the error message in the single.php template.', 'bonestheme' ); ?></p>
-									</footer>
-							</article>
+									<article id="post-not-found" class="hentry cf">
+											<header class="article-header">
+												<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
+											</header>
+											<section class="entry-content">
+												<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'bonestheme' ); ?></p>
+											</section>
+											<footer class="article-footer">
+													<p><?php _e( 'This is the error message in the single.php template.', 'bonestheme' ); ?></p>
+											</footer>
+									</article>
 
-						<?php endif; ?>
+								<?php endif; ?>
+
+							</div> 
+							<!-- end of content wrapper with formatting -->
+						</div>
 
 					</div>
 
