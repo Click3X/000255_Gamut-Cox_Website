@@ -284,6 +284,19 @@ function printCatTitle() {
   echo '<a class="page-link" href="'.get_category_link( $post_cats[0] ).'"><h2 id="sidebar-title">'.$cat_title.'</h2></a>';
 }
 
+// CLEAN ADDRESS
+function cleanAddress($string){
+  $search = '/[^[:alpha:]]/';
+  $space = ' ';
+  $replace = '-';
+  $newString = str_replace($search, $replace, $string);
+  $newString = strtolower($newString);
+  $newString = str_replace($space, $replace, $newString);
+
+  return $newString;
+
+}
+
 
 // EMAIL ADDRESS ANTI-SPAM
 // function email_encode_function( $atts, $content ){

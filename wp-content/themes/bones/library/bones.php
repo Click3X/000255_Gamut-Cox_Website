@@ -210,6 +210,9 @@ function bones_scripts_and_styles() {
         // GREY FALLBACK FOR IE11
         // wp_register_script( 'grey-scale' , get_stylesheet_directory_uri() . '/library/js/libs/jquery.gray.min.js', array('jquery'), '', true );
 
+        // PAN TO MARKER
+        wp_register_script( 'pan-to-marker' , get_stylesheet_directory_uri() . '/library/js/pan-to-marker.js', array('jquery'), '', true );
+
 
         // enqueue styles and scripts
 		wp_enqueue_script( 'bones-modernizr' );
@@ -240,10 +243,11 @@ function bones_scripts_and_styles() {
 		}
 
 		// CONDITIONAL SCRIPT TO LOAD GOOGLE MAPS ON CONTACT PAGE
-		// if(is_page(9)) {
+		if(is_page(9)) {
 		// 	wp_enqueue_script( 'google-maps' );
 		// 	wp_enqueue_script( 'g-maps' );
-		// }
+			wp_enqueue_script( 'pan-to-marker' );
+		}
 
 		// CONDITIONAL SCRIPT TO LOAD ROYALSLIDER ON HOME PAGE
 		if( is_page(107) || is_page(466) || is_page(393) || is_page(472) ) {
