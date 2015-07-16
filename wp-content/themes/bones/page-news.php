@@ -37,26 +37,13 @@
 						<div id="sidebar-beam" style="background-image: url(<?php bloginfo('url'); ?>/img/sidebar-beam.png);"></div>
 					</div>
 					
-					
-
 					<?php 
-
-						// echo '<h2 id="sidebar-title"><a href="'.get_category_link( $category_id ).'">'. $cat_title .'</a></h2>';
-
 						if($cat_title == 'Uncategorized') {
 							$parent_title = get_the_title($post->post_parent);
 							echo '<h2 id="sidebar-title">'.$parent_title.'</h2>';
 						} else {
 							echo '<h2 id="sidebar-title"><a href="'.get_category_link( $category_id ).'">'. $cat_title .'</a></h2>';							
 						}
-
-						// if( is_page() && $post->post_parent > 0 ) { 
-						// 	$parent_title = get_the_title($post->post_parent);
-						// 	echo '<h2 id="sidebar-title">'.$parent_title.'</h2>';
-						// } else {
-						// 	echo '<h1>Hey</h1>';
-						// 	// echo '<h2 id="sidebar-title"><a href="'.get_category_link( $category_id ).'">'. $cat_title .'</a></h2>'		
-						// }
 					?>
 
 
@@ -100,15 +87,10 @@
 
 								<section class="entry-content cf news-post-inner" itemprop="articleBody">
 										
-
-
 										<h1 class="post-header"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-										<p class="byline vcard">
-											<?php //printf( __( '<time class="updated" datetime="%1$s" pubdate>%2$s</time>', 'bonestheme' ), get_the_time('Y-m-j'), get_the_time(get_option('date_format'))); ?>
-										</p>
 
-
-										<?php if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+										<?php if ( has_post_thumbnail() ) { 
+											// check if the post has a Post Thumbnail assigned to it.
 											//the_post_thumbnail( 'news-post-thumbnail' );
 											$post_thumbnail_id = get_post_thumbnail_id();
 										    $post_thumbnail_url = wp_get_attachment_url( $post_thumbnail_id );										 
@@ -120,51 +102,24 @@
 
 
 										<p><?php the_content()?></p>
-										<!-- <p><?php the_excerpt()?></p> -->
-										<?php //endwhile; else: endif; 
-
-
-
-
-										/*
-										 * Link Pages is used in case you have posts that are set to break into
-										 * multiple pages. You can remove this if you don't plan on doing that.
-										 *
-										 * Also, breaking content up into multiple pages is a horrible experience,
-										 * so don't do it. While there are SOME edge cases where this is useful, it's
-										 * mostly used for people to get more ad views. It's up to you but if you want
-										 * to do it, you're wrong and I hate you. (Ok, I still love you but just not as much)
-										 *
-										 * http://gizmodo.com/5841121/google-wants-to-help-you-avoid-stupid-annoying-multiple-page-articles
-										 *
-										*/
-										wp_link_pages( array(
-											'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'bonestheme' ) . '</span>',
-											'after'       => '</div>',
-											'link_before' => '<span>',
-											'link_after'  => '</span>',
-										) );
-									?>
+										
+										<?php
+											wp_link_pages( array(
+												'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'bonestheme' ) . '</span>',
+												'after'       => '</div>',
+												'link_before' => '<span>',
+												'link_after'  => '</span>',
+											) );
+										?>
 								</section>
-
-
 							</article>
-
-
 
 
 							<?php endwhile; else: ?>
 								<article id="post-not-found" class="hentry cf">
 									<header class="article-header">
-										<!-- <h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1> -->
 										<h3 class="no-found-msg">No news has been posted.</h3>
 									</header>
-									<!-- <section class="entry-content">
-										<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'bonestheme' ); ?></p>
-									</section>
-									<footer class="article-footer">
-										<p><?php _e( 'This is the error message in the page-custom.php template.', 'bonestheme' ); ?></p>
-									</footer> -->
 								</article> 
 							<?php endif;  ?>
 

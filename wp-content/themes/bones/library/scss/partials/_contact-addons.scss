@@ -47,3 +47,13 @@
 .responsive-tabs__list__item--active {
 	color: #ed228b !important;
 }
+
+// HIDE EXTRA GRAY LINE ADDED ON OVERVIEW PAGES
+// PROBABLY INSERTED FROM WITHIN WYSIWYG IN WP ADMIN
+.events-break {
+	display: none;
+}
+
+.feat-img-holder {
+	margin-bottom: 1em;
+}
