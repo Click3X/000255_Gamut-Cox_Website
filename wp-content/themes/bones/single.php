@@ -114,19 +114,48 @@ $next_cat = "";
 
 				                <header class="article-header">
 
-				                	<?php if ( function_exists( 'ADDTOANY_SHARE_SAVE_KIT' ) ) { ADDTOANY_SHARE_SAVE_KIT(); } ?>
-
 				                  <h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
 
 				                  <h2 class="entry-subtitle"><?php the_field('title'); ?></h2>
+
+				                  	<?php 
+				                		if ( function_exists( 'ADDTOANY_SHARE_SAVE_KIT' ) ) { 
+				                			// ADDTOANY_SHARE_SAVE_KIT(); 
+				                		} 
+
+				                		echo '<div class="a2a_kit cf">
+				                			<span class="share-text">Share:</span>
+				                			<a class="a2a_button_twitter twitter">
+										        <img src="//farm3.staticflickr.com/2886/12004329883_8daa4af904_o.png" border="0" alt="Twitter" width="54" height="55"/>
+										    </a>
+										    <a class="a2a_button_facebook facebook">
+										        <img src="//farm3.staticflickr.com/2863/12004329833_ddcd67ff4a_o.png" border="0" alt="Facebook" width="54" height="55"/>
+										    </a>
+										    <!--
+										    <a class="a2a_button_google_plus google-plus">
+										        <img src="//farm4.staticflickr.com/3774/12004033365_8965d86637_o.png" border="0" alt="Google+" width="54" height="55"/>
+										    </a>
+										    -->
+										    <a class="a2a_button_linkedin linked-in">
+										        <img src="//farm4.staticflickr.com/3774/12004033365_8965d86637_o.png" border="0" alt="Linked In" width="54" height="55"/>
+										    </a>
+										    <a class="a2a_dd more" href="https://www.addtoany.com/share_save">
+										        <!--
+										        <img src="//farm8.staticflickr.com/7326/12005120763_a44dc82111_o.png" border="0" alt="Share" width="54" height="55"/>
+										        -->
+										        <span class="more-text">More</span>
+										    </a>
+										</div>';
+				                	?>
 
 				                </header> <?php // end article header ?>
 
 				                <section class="entry-content cf" itemprop="articleBody">
 						                  
 						                  <?php
-						                    // GET TEAM MEMBER IMAGE (FEATURED IMAGE)
-						                    $size = 'thumb';
+						                    // GET FEATURED IMAGE
+						                    // $size = 'thumb';
+						                  	$size = 'full';
 						                    the_post_thumbnail( $size);
 
 						                    // the content (pretty self explanatory huh)

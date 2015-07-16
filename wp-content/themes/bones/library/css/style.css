@@ -8735,6 +8735,7 @@ body #content + div {
 }
 
 /* line 9, ../scss/partials/_social.scss */
+.a2a_kit .facebook,
 .facebook:hover {
   background-position: -176px -79px;
   width: 45px;
@@ -8742,14 +8743,16 @@ body #content + div {
 }
 
 /*.fb-hover{*/
-/* line 16, ../scss/partials/_social.scss */
+/* line 17, ../scss/partials/_social.scss */
+.a2a_kit .facebook:hover,
 .facebook {
   background-position: -176px -28px;
   width: 45px;
   height: 45px;
 }
 
-/* line 23, ../scss/partials/_social.scss */
+/* line 25, ../scss/partials/_social.scss */
+.a2a_kit .google-plus,
 .google-plus:hover {
   background-position: -126px -79px;
   width: 45px;
@@ -8757,28 +8760,32 @@ body #content + div {
 }
 
 /*.g-hover{*/
-/* line 30, ../scss/partials/_social.scss */
+/* line 33, ../scss/partials/_social.scss */
+.a2a_kit .google-plus:hover,
 .google-plus {
   background-position: -126px -28px;
   width: 45px;
   height: 45px;
 }
 
-/* line 36, ../scss/partials/_social.scss */
+/* line 40, ../scss/partials/_social.scss */
+.a2a_kit .linked-in,
 .linked-in:hover {
   background-position: -77px -79px;
   width: 45px;
   height: 45px;
 }
 
-/* line 42, ../scss/partials/_social.scss */
+/* line 47, ../scss/partials/_social.scss */
+.a2a_kit .linked-in:hover,
 .linked-in {
   background-position: -77px -28px;
   width: 45px;
   height: 45px;
 }
 
-/* line 48, ../scss/partials/_social.scss */
+/* line 54, ../scss/partials/_social.scss */
+.a2a_kit .twitter,
 .twitter:hover {
   background-position: -24px -79px;
   width: 45px;
@@ -8786,11 +8793,59 @@ body #content + div {
 }
 
 /*.tw-hover{*/
-/* line 55, ../scss/partials/_social.scss */
+/* line 62, ../scss/partials/_social.scss */
+.a2a_kit .twitter:hover,
 .twitter {
   background-position: -24px -28px;
   width: 45px;
   height: 45px;
+}
+
+/* line 70, ../scss/partials/_social.scss */
+.a2a_kit {
+  margin-bottom: 1.5em;
+}
+/* line 74, ../scss/partials/_social.scss */
+.a2a_kit .share-text {
+  display: block;
+  color: #ed228b;
+  font-size: 1.2em;
+  margin-bottom: 0.25em;
+}
+/* line 81, ../scss/partials/_social.scss */
+.a2a_kit > a {
+  display: block;
+  float: left;
+  width: 46px !important;
+  height: 46px !important;
+  margin-right: 1em;
+}
+/* line 87, ../scss/partials/_social.scss */
+.a2a_kit > a:hover {
+  width: 46px !important;
+  height: 46px !important;
+}
+/* line 90, ../scss/partials/_social.scss */
+.a2a_kit > a > img {
+  display: none;
+}
+
+/* line 96, ../scss/partials/_social.scss */
+.more {
+  position: relative;
+}
+/* line 97, ../scss/partials/_social.scss */
+.more .more-text {
+  color: #ed228b;
+  display: block;
+  float: left;
+  position: absolute;
+  bottom: 0;
+  font-size: 1.2em;
+}
+/* line 105, ../scss/partials/_social.scss */
+.more .more-text:hover {
+  color: black;
 }
 
 /* line 4, ../scss/partials/_data-partners.scss */

@@ -6,6 +6,7 @@
 	// @include prefix(transition, all 200ms);
 }
 
+.a2a_kit .facebook,
 .facebook:hover {
 	background-position: -176px -79px ;
 	width: 45px;
@@ -13,6 +14,7 @@
 }
 
 /*.fb-hover{*/
+.a2a_kit .facebook:hover,
 .facebook {
 	background-position: -176px -28px ;
 	width: 45px;
@@ -20,6 +22,7 @@
 }
 
 
+.a2a_kit .google-plus,
 .google-plus:hover {
 	background-position: -126px -79px ;
 	width: 45px;
@@ -27,24 +30,28 @@
 }
 
 /*.g-hover{*/
+.a2a_kit .google-plus:hover,
 .google-plus {
 	background-position: -126px -28px ;
 	width: 45px;
 	height: 45px;
 }
 
+.a2a_kit .linked-in,
 .linked-in:hover {
 	background-position: -77px -79px ;
 	width: 45px;
 	height: 45px;
 }
 
+.a2a_kit .linked-in:hover,
 .linked-in {
 	background-position: -77px -28px ;
 	width: 45px;
 	height: 45px;
 }
 
+.a2a_kit .twitter,
 .twitter:hover {
 	background-position: -24px -79px ;
 	width: 45px;
@@ -52,8 +59,51 @@
 }
 
 /*.tw-hover{*/
+.a2a_kit .twitter:hover,
 .twitter {
 	background-position: -24px -28px ;
 	width: 45px;
 	height: 45px;
+}
+
+// HIDE ADD TO ANY IMG
+.a2a_kit {
+	margin-bottom: 1.5em;
+	
+	.share-text {
+		display: block;
+		color: #ed228b;
+		font-size: 1.2em;
+		margin-bottom: 0.25em;
+	}
+
+	> a {
+		display:block;
+		float: left;
+		width: 46px !important; height: 46px !important;	
+		margin-right: 1em;
+
+		&:hover {
+			width: 46px !important; height: 46px !important;
+		}
+		> img {
+			display: none;
+		}
+	}
+}
+
+.more {
+	.more-text {
+		color: #ed228b;
+		display: block;
+		float: left;
+		position: absolute;
+		bottom: 0;
+		font-size: 1.2em;
+		
+		&:hover {
+			color: black;
+		}
+	}
+	position: relative;
 }
