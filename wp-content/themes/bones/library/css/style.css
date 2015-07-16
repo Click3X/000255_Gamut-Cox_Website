@@ -8697,6 +8697,11 @@ body #content + div {
   position: absolute;
 }
 
+/* line 47, ../scss/partials/_contact-addons.scss */
+.responsive-tabs__list__item--active {
+  color: #ed228b !important;
+}
+
 /* line 2, ../scss/partials/_contact-maps.scss */
 #map-canvas {
   background-size: cover;

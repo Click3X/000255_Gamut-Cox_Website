@@ -42,3 +42,8 @@
 	width: 17px;
 	position: absolute;
 }
+
+// OVERRIDE TABBY.CSS FOR ACTIVE TAB TEXT COLOR
+.responsive-tabs__list__item--active {
+	color: #ed228b !important;
+}
