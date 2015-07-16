@@ -190,69 +190,11 @@ $('.email').each(function() {
     }
 
 
-
-
-
   // Beam slide animation
   $('.home-beam').hide();
   $('#pro-logo').click(function (){
     $('.home-beam').show('slide', {direction:'left'}, 200);
   });
-
-// home slide
-// load gif
-// $('fg').hide();
-// $('#bg>img').attr('src', 'img/home-animation.gif');
-
-// load images
-// setTimeout(function (){
-//   // $('#bg>img').css('opacity', 0);
-//   $('#bg>img').attr('src', 'img/bg-long-copy.png');
-//   // $('#bg>img').css('opacity', 1);
-//   $('fg').show();
-// }, 2000);
-
-
-
- // control gif
- // frame=7;
- //  var sup1 = new SuperGif({ gif: document.getElementById('marquee') } );
- //  sup1.load();
- //  sup1.move_to(frame);
-
-
-
-
-// var $bg = $('#bg');
-// var $fg = $('#fg');
-
-// var bgImageWidth = 1600;
-// var bgNumberOfImages = 4;
-// var bgWidth = bgImageWidth * bgNumberOfImages;
-
-// var bgShift = 0;
-// var bgShiftDesired = 0;
-
-// setInterval(function(){ 
-//   bgShift += (bgShiftDesired-bgShift)/8;
-//   $bg.css({left:-bgShift});
-//   $fg.css({left:-bgShift*1.5});
-// },30);
-
-
-
-// function forward(){
-//   bgShiftDesired += bgImageWidth;
-//   if (bgShiftDesired>bgWidth){
-//     bgShiftDesired -= bgWidth;
-//     bgShift -= bgWidth;
-//   }
-// }
-
-// setInterval(function(){ 
-//   forward();
-// },5000);
-
 
 // highlight selected menu item
 

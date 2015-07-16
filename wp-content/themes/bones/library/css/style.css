@@ -9456,6 +9456,8 @@ be set to display none.
 /* line 103, ../scss/partials/_footer.scss */
 .social {
   margin: .5rem;
+  width: 46px;
+  height: 46px;
 }
 @media (max-width: 530px) {
   /* line 103, ../scss/partials/_footer.scss */
@@ -9464,62 +9466,62 @@ be set to display none.
   }
 }
 
-/* line 110, ../scss/partials/_footer.scss */
+/* line 112, ../scss/partials/_footer.scss */
 .footer {
   background-color: #202020;
 }
 
-/* line 114, ../scss/partials/_footer.scss */
+/* line 116, ../scss/partials/_footer.scss */
 .footer-links {
   background-color: #000000;
 }
 
-/* line 120, ../scss/partials/_footer.scss */
+/* line 122, ../scss/partials/_footer.scss */
 .logo-social {
   background-color: #3d3d3d;
 }
 
-/* line 129, ../scss/partials/_footer.scss */
+/* line 131, ../scss/partials/_footer.scss */
 #policy-links {
   color: white;
 }
 
-/* line 134, ../scss/partials/_footer.scss */
+/* line 136, ../scss/partials/_footer.scss */
 .policy-links > .copy {
   margin-top: 0;
   font-weight: 500;
 }
 
-/* line 140, ../scss/partials/_footer.scss */
+/* line 142, ../scss/partials/_footer.scss */
 #policy-links:hover {
   color: #ed228b;
 }
 
-/* line 144, ../scss/partials/_footer.scss */
+/* line 146, ../scss/partials/_footer.scss */
 .address {
   color: #bdbdbd;
 }
 
-/* line 149, ../scss/partials/_footer.scss */
+/* line 151, ../scss/partials/_footer.scss */
 .footer-bottom {
   height: 50px;
   color: #585858 !important;
   margin: auto;
 }
 @media (max-width: 890px) {
-  /* line 149, ../scss/partials/_footer.scss */
+  /* line 151, ../scss/partials/_footer.scss */
   .footer-bottom {
     padding-top: 20px;
   }
 }
-/* line 158, ../scss/partials/_footer.scss */
+/* line 160, ../scss/partials/_footer.scss */
 .footer-bottom li {
   float: left;
   margin-right: 15px;
   font-size: 0.8em;
   letter-spacing: 0;
 }
-/* line 165, ../scss/partials/_footer.scss */
+/* line 167, ../scss/partials/_footer.scss */
 .footer-bottom .copyright {
   display: inline-block;
   float: right;
@@ -9528,7 +9530,7 @@ be set to display none.
   margin-top: 12px;
 }
 @media (max-width: 890px) {
-  /* line 165, ../scss/partials/_footer.scss */
+  /* line 167, ../scss/partials/_footer.scss */
   .footer-bottom .copyright {
     float: left;
     margin-bottom: 25px;
@@ -9536,18 +9538,18 @@ be set to display none.
   }
 }
 
-/* line 180, ../scss/partials/_footer.scss */
+/* line 182, ../scss/partials/_footer.scss */
 .footer-left-column, .other-businesses-container {
   display: inline-block;
   vertical-align: top;
 }
 
-/* line 185, ../scss/partials/_footer.scss */
+/* line 187, ../scss/partials/_footer.scss */
 .headquarters-container {
   border-bottom: 1px dashed #565656;
 }
 
-/* line 190, ../scss/partials/_footer.scss */
+/* line 192, ../scss/partials/_footer.scss */
 .other-businesses-container {
   padding-left: 70px;
   padding-right: 70px;
@@ -9557,7 +9559,7 @@ be set to display none.
   padding-bottom: 140px;
 }
 @media (max-width: 1033px) {
-  /* line 190, ../scss/partials/_footer.scss */
+  /* line 192, ../scss/partials/_footer.scss */
   .other-businesses-container {
     padding-bottom: 30px;
     border-bottom: 1px solid #565656;
@@ -9565,7 +9567,7 @@ be set to display none.
   }
 }
 @media (max-width: 890px) {
-  /* line 190, ../scss/partials/_footer.scss */
+  /* line 192, ../scss/partials/_footer.scss */
   .other-businesses-container {
     padding-bottom: 60px;
     border: none;
@@ -9577,104 +9579,104 @@ be set to display none.
   }
 }
 
-/* line 218, ../scss/partials/_footer.scss */
+/* line 220, ../scss/partials/_footer.scss */
 .headquarter-title {
   text-transform: uppercase;
 }
 
-/* line 223, ../scss/partials/_footer.scss */
+/* line 225, ../scss/partials/_footer.scss */
 .other-businesses-content a {
   color: #bdbdbd;
 }
-/* line 226, ../scss/partials/_footer.scss */
+/* line 228, ../scss/partials/_footer.scss */
 .other-businesses-content a:hover {
   color: #ed228b;
 }
 
-/* line 234, ../scss/partials/_footer.scss */
+/* line 236, ../scss/partials/_footer.scss */
 .footer-contact-container {
   text-transform: uppercase;
   margin-top: 20px;
   display: inline-block;
   color: white;
 }
-/* line 240, ../scss/partials/_footer.scss */
+/* line 242, ../scss/partials/_footer.scss */
 .footer-contact-container:hover {
   color: #ed228b;
 }
 @media (max-width: 1033px) {
-  /* line 234, ../scss/partials/_footer.scss */
+  /* line 236, ../scss/partials/_footer.scss */
   .footer-contact-container {
     padding-bottom: 30px;
     margin-top: 30px;
   }
 }
 @media (max-width: 890px) {
-  /* line 234, ../scss/partials/_footer.scss */
+  /* line 236, ../scss/partials/_footer.scss */
   .footer-contact-container {
     display: block;
   }
 }
 
-/* line 255, ../scss/partials/_footer.scss */
+/* line 257, ../scss/partials/_footer.scss */
 .headquarters-wrapper {
   margin-bottom: 20px;
 }
 
-/* line 259, ../scss/partials/_footer.scss */
+/* line 261, ../scss/partials/_footer.scss */
 .footer-links-content {
   margin: auto;
 }
 
-/* line 263, ../scss/partials/_footer.scss */
+/* line 265, ../scss/partials/_footer.scss */
 .footer-left-column {
   padding-top: 60px;
 }
 @media (max-width: 890px) {
-  /* line 263, ../scss/partials/_footer.scss */
+  /* line 265, ../scss/partials/_footer.scss */
   .footer-left-column {
     display: block;
   }
 }
 
-/* line 271, ../scss/partials/_footer.scss */
+/* line 273, ../scss/partials/_footer.scss */
 .footer-contact-link {
   cursor: pointer;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   color: white;
 }
-/* line 277, ../scss/partials/_footer.scss */
+/* line 279, ../scss/partials/_footer.scss */
 .footer-contact-link:hover .arrow-right {
   border-left: 6px solid #ed228b !important;
 }
 
-/* line 283, ../scss/partials/_footer.scss */
+/* line 285, ../scss/partials/_footer.scss */
 .footer-contact-wrapper {
   display: block;
 }
 @media (max-width: 890px) {
-  /* line 283, ../scss/partials/_footer.scss */
+  /* line 285, ../scss/partials/_footer.scss */
   .footer-contact-wrapper {
     border-bottom: 1px solid #565656;
   }
 }
-/* line 289, ../scss/partials/_footer.scss */
+/* line 291, ../scss/partials/_footer.scss */
 .footer-contact-wrapper a {
   display: inline-block;
 }
 
-/* line 295, ../scss/partials/_footer.scss */
+/* line 297, ../scss/partials/_footer.scss */
 .iab_logo_container {
   display: inline-block;
 }
 @media (max-width: 1033px) {
-  /* line 295, ../scss/partials/_footer.scss */
+  /* line 297, ../scss/partials/_footer.scss */
   .iab_logo_container {
     display: block;
   }
 }
-/* line 301, ../scss/partials/_footer.scss */
+/* line 303, ../scss/partials/_footer.scss */
 .iab_logo_container a {
   display: inline-block;
   margin-left: 50px;
@@ -9682,14 +9684,14 @@ be set to display none.
   display: inline-block;
 }
 @media (max-width: 1033px) {
-  /* line 301, ../scss/partials/_footer.scss */
+  /* line 303, ../scss/partials/_footer.scss */
   .iab_logo_container a {
     margin-left: 0;
     margin-top: 20px;
     margin-bottom: 20px;
   }
 }
-/* line 315, ../scss/partials/_footer.scss */
+/* line 317, ../scss/partials/_footer.scss */
 .iab_logo_container img {
   width: 80px;
 }
