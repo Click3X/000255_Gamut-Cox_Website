@@ -55,9 +55,10 @@ endif;
 											$city_title = get_sub_field('city');
 										?>
 
-											<li class="location">
+											<li class="location cf">
 												<a id="<?php echo cleanAddress($city_title);?>" href="#" class="clearfix city-map-link">
-													<ul class="clearfix city">
+													<div class="location-pin"><img src="<?php echo get_bloginfo('url'); ?>/img/map-marker.png"></div>
+													<ul class="clearfix city cf">
 														<li><h3 class="gothic"><?php the_sub_field('city'); ?></h3></li>
 														<li><?php the_sub_field('street_address'); ?></li>
 														<?php if( get_sub_field('additional_address_info') ) {

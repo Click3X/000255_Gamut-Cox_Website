@@ -14,7 +14,6 @@
 	color:#aeaeae;
 	font-weight: 500;
 	font-size: .91rem;
-	// max-width: 19em;
 	padding:0;
 	line-height: 1.5em;
 	letter-spacing: .05em;
@@ -96,24 +95,20 @@
 .contact-container li {
 	display: block;
 	vertical-align: top;
-	margin-right: 5%;
 	float: left;
-
+	margin-right:0;
 	width: 100%;
 
 	@media(min-width: 480px) {
-		width: 45%;
-		margin-right: 5%;
+		width: 50%;
 	}
 
 	@media(min-width: 768px) {
-		width: 30%;
-		margin-right: 3.333333%;
+		width: 33.333333%;
 	}
 
 	@media(min-width: 1040px) {
-		width: 20%;
-		margin-right: 5%;
+		width: 25%;
 	}
 }
 
@@ -147,3 +142,4 @@
 		clear: left;
 	}
 }
+

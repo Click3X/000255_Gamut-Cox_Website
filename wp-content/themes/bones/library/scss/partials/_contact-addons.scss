@@ -13,9 +13,14 @@
 	}
 	 li {
 	 	display: block;
-	 	width: 100%;
+	 	width:auto;
 	 	font-size: .87em;
 		line-height: 1.5em;
+
+		float: left;
+		clear: left;
+		margin-left: 24px;
+		margin-top:0.25em;
 	 }
 }
 
@@ -30,4 +35,10 @@
 			color:#eb0a8d;
 		}
 	}
+}
+
+.location-pin {
+	float: left;
+	width: 17px;
+	position: absolute;
 }
