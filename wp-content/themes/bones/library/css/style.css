@@ -8805,14 +8805,14 @@ body #content + div {
 .a2a_kit {
   margin-bottom: 1.5em;
 }
-/* line 74, ../scss/partials/_social.scss */
+/* line 73, ../scss/partials/_social.scss */
 .a2a_kit .share-text {
   display: block;
   color: #ed228b;
   font-size: 1.2em;
   margin-bottom: 0.25em;
 }
-/* line 81, ../scss/partials/_social.scss */
+/* line 80, ../scss/partials/_social.scss */
 .a2a_kit > a {
   display: block;
   float: left;
@@ -8820,21 +8820,21 @@ body #content + div {
   height: 46px !important;
   margin-right: 1em;
 }
-/* line 87, ../scss/partials/_social.scss */
+/* line 86, ../scss/partials/_social.scss */
 .a2a_kit > a:hover {
   width: 46px !important;
   height: 46px !important;
 }
-/* line 90, ../scss/partials/_social.scss */
+/* line 89, ../scss/partials/_social.scss */
 .a2a_kit > a > img {
   display: none;
 }
 
-/* line 96, ../scss/partials/_social.scss */
+/* line 95, ../scss/partials/_social.scss */
 .more {
   position: relative;
 }
-/* line 97, ../scss/partials/_social.scss */
+/* line 96, ../scss/partials/_social.scss */
 .more .more-text {
   color: #ed228b;
   display: block;
@@ -8843,9 +8843,11 @@ body #content + div {
   bottom: 0;
   font-size: 1.2em;
 }
-/* line 105, ../scss/partials/_social.scss */
-.more .more-text:hover {
-  color: black;
+
+/* line 109, ../scss/partials/_social.scss */
+img.more-inside {
+  padding-left: 0.25em;
+  vertical-align: baseline;
 }
 
 /* line 4, ../scss/partials/_data-partners.scss */

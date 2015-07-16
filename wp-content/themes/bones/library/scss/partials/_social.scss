@@ -101,9 +101,12 @@
 		bottom: 0;
 		font-size: 1.2em;
 		
-		&:hover {
-			color: black;
-		}
+		// &:hover { color: black; }
 	}
 	position: relative;
+}
+
+img.more-inside {
+	padding-left:0.25em;
+	vertical-align: baseline;
 }

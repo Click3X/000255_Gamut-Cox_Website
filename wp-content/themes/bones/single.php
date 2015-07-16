@@ -139,11 +139,11 @@ $next_cat = "";
 										    <a class="a2a_button_linkedin linked-in">
 										        <img src="//farm4.staticflickr.com/3774/12004033365_8965d86637_o.png" border="0" alt="Linked In" width="54" height="55"/>
 										    </a>
-										    <a class="a2a_dd more" href="https://www.addtoany.com/share_save">
+										    <a class="a2a_dd more cf" href="https://www.addtoany.com/share_save">
 										        <!--
 										        <img src="//farm8.staticflickr.com/7326/12005120763_a44dc82111_o.png" border="0" alt="Share" width="54" height="55"/>
 										        -->
-										        <span class="more-text">More</span>
+										        <span class="more-text"><span class="more-inside">More</span><img src="'.get_bloginfo('url' ).'/img/flip-arrow.png" class="more-inside" alt="more"></span>
 										    </a>
 										</div>';
 				                	?>
