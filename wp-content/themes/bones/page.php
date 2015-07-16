@@ -73,6 +73,12 @@
 										<?php echo $sub_page_title 
 										// in back-end the title is wrapped with <h1> already
 										?> 
+
+										<?php
+											// PRINT SOCIAL ICONS
+											printCustomIcons();
+										?>
+
 										<div>
 											<!-- in back-end the title is wrapped with <p> already -->
 											<?php echo $sub_page_content ?>

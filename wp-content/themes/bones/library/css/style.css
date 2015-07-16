@@ -8829,12 +8829,16 @@ body #content + div {
 .a2a_kit > a > img {
   display: none;
 }
+/* line 94, ../scss/partials/_social.scss */
+.a2a_kit > a.more {
+  width: 5em !important;
+}
 
-/* line 95, ../scss/partials/_social.scss */
+/* line 99, ../scss/partials/_social.scss */
 .more {
   position: relative;
 }
-/* line 96, ../scss/partials/_social.scss */
+/* line 100, ../scss/partials/_social.scss */
 .more .more-text {
   color: #ed228b;
   display: block;
@@ -8844,7 +8848,7 @@ body #content + div {
   font-size: 1.2em;
 }
 
-/* line 109, ../scss/partials/_social.scss */
+/* line 113, ../scss/partials/_social.scss */
 img.more-inside {
   padding-left: 0.25em;
   vertical-align: baseline;

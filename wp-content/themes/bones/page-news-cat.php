@@ -122,6 +122,8 @@
 																
 																<h1 class="post-header"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 
+																<p><?php the_excerpt(); ?></p>
+
 																<?php if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
 																	$post_thumbnail_id = get_post_thumbnail_id();
 																    $post_thumbnail_url = wp_get_attachment_url( $post_thumbnail_id );										 
@@ -131,7 +133,11 @@
 																	</div>
 																<?php } ?>
 
-																<p><?php the_excerpt(); ?></p>
+																<?php 
+											                		// PRINT CUSTOM ICONS FROM ADD TO ANY
+											                		printCustomIcons();
+											                	?>
+
 																<?php
 
 																wp_link_pages( array(

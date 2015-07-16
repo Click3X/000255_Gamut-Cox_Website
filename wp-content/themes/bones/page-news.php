@@ -102,6 +102,11 @@
 
 
 										<p><?php the_content()?></p>
+
+										<?php 
+					                		// PRINT CUSTOM ICONS FROM ADD TO ANY
+					                		printCustomIcons();
+					                	?>
 										
 										<?php
 											wp_link_pages( array(
