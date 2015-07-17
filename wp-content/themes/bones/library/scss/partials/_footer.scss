@@ -135,6 +135,8 @@
 
 .address {
 	color: $light-grey;
+
+
 }
 
 
@@ -294,6 +296,7 @@
 		display: inline-block;
 		margin-left: 50px;
 		margin-top: 60px;
+		margin-right: 20px;
 		display: inline-block;
 
 		@media(max-width: 1033px) {
@@ -309,3 +312,16 @@
 	}
 
 }
+
+#parallax-kieth .footer-links,
+.footer-links {
+	.copy p {
+		line-height: 1.5em;
+
+		@media (min-width: 811px) {
+			font-size: 1.1em;
+		}
+	}
+}
+
+

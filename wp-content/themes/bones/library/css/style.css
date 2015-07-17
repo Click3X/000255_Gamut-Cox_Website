@@ -9581,26 +9581,26 @@ be set to display none.
   color: #bdbdbd;
 }
 
-/* line 141, ../scss/partials/_footer.scss */
+/* line 143, ../scss/partials/_footer.scss */
 .footer-bottom {
   height: 50px;
   color: #585858 !important;
   margin: auto;
 }
 @media (max-width: 890px) {
-  /* line 141, ../scss/partials/_footer.scss */
+  /* line 143, ../scss/partials/_footer.scss */
   .footer-bottom {
     padding-top: 20px;
   }
 }
-/* line 150, ../scss/partials/_footer.scss */
+/* line 152, ../scss/partials/_footer.scss */
 .footer-bottom li {
   float: left;
   margin-right: 15px;
   font-size: 0.8em;
   letter-spacing: 0;
 }
-/* line 157, ../scss/partials/_footer.scss */
+/* line 159, ../scss/partials/_footer.scss */
 .footer-bottom .copyright {
   display: inline-block;
   float: right;
@@ -9609,7 +9609,7 @@ be set to display none.
   margin-top: 12px;
 }
 @media (max-width: 890px) {
-  /* line 157, ../scss/partials/_footer.scss */
+  /* line 159, ../scss/partials/_footer.scss */
   .footer-bottom .copyright {
     float: left;
     margin-bottom: 25px;
@@ -9617,18 +9617,18 @@ be set to display none.
   }
 }
 
-/* line 172, ../scss/partials/_footer.scss */
+/* line 174, ../scss/partials/_footer.scss */
 .footer-left-column, .other-businesses-container {
   display: inline-block;
   vertical-align: top;
 }
 
-/* line 177, ../scss/partials/_footer.scss */
+/* line 179, ../scss/partials/_footer.scss */
 .headquarters-container {
   border-bottom: 1px dashed #565656;
 }
 
-/* line 182, ../scss/partials/_footer.scss */
+/* line 184, ../scss/partials/_footer.scss */
 .other-businesses-container {
   padding-left: 70px;
   padding-right: 70px;
@@ -9638,7 +9638,7 @@ be set to display none.
   padding-bottom: 140px;
 }
 @media (max-width: 1033px) {
-  /* line 182, ../scss/partials/_footer.scss */
+  /* line 184, ../scss/partials/_footer.scss */
   .other-businesses-container {
     padding-bottom: 30px;
     border-bottom: 1px solid #565656;
@@ -9646,7 +9646,7 @@ be set to display none.
   }
 }
 @media (max-width: 890px) {
-  /* line 182, ../scss/partials/_footer.scss */
+  /* line 184, ../scss/partials/_footer.scss */
   .other-businesses-container {
     padding-bottom: 60px;
     border: none;
@@ -9658,119 +9658,133 @@ be set to display none.
   }
 }
 
-/* line 210, ../scss/partials/_footer.scss */
+/* line 212, ../scss/partials/_footer.scss */
 .headquarter-title {
   text-transform: uppercase;
 }
 
-/* line 215, ../scss/partials/_footer.scss */
+/* line 217, ../scss/partials/_footer.scss */
 .other-businesses-content a {
   color: #bdbdbd;
 }
-/* line 218, ../scss/partials/_footer.scss */
+/* line 220, ../scss/partials/_footer.scss */
 .other-businesses-content a:hover {
   color: #ed228b;
 }
 
-/* line 226, ../scss/partials/_footer.scss */
+/* line 228, ../scss/partials/_footer.scss */
 .footer-contact-container {
   text-transform: uppercase;
   margin-top: 20px;
   display: inline-block;
   color: white;
 }
-/* line 232, ../scss/partials/_footer.scss */
+/* line 234, ../scss/partials/_footer.scss */
 .footer-contact-container:hover {
   color: #ed228b;
 }
 @media (max-width: 1033px) {
-  /* line 226, ../scss/partials/_footer.scss */
+  /* line 228, ../scss/partials/_footer.scss */
   .footer-contact-container {
     padding-bottom: 30px;
     margin-top: 30px;
   }
 }
 @media (max-width: 890px) {
-  /* line 226, ../scss/partials/_footer.scss */
+  /* line 228, ../scss/partials/_footer.scss */
   .footer-contact-container {
     display: block;
   }
 }
 
-/* line 247, ../scss/partials/_footer.scss */
+/* line 249, ../scss/partials/_footer.scss */
 .headquarters-wrapper {
   margin-bottom: 20px;
 }
 
-/* line 251, ../scss/partials/_footer.scss */
+/* line 253, ../scss/partials/_footer.scss */
 .footer-links-content {
   margin: auto;
 }
 
-/* line 255, ../scss/partials/_footer.scss */
+/* line 257, ../scss/partials/_footer.scss */
 .footer-left-column {
   padding-top: 60px;
 }
 @media (max-width: 890px) {
-  /* line 255, ../scss/partials/_footer.scss */
+  /* line 257, ../scss/partials/_footer.scss */
   .footer-left-column {
     display: block;
   }
 }
 
-/* line 263, ../scss/partials/_footer.scss */
+/* line 265, ../scss/partials/_footer.scss */
 .footer-contact-link {
   cursor: pointer;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   color: white;
 }
-/* line 269, ../scss/partials/_footer.scss */
+/* line 271, ../scss/partials/_footer.scss */
 .footer-contact-link:hover .arrow-right {
   border-left: 6px solid #ed228b !important;
 }
 
-/* line 275, ../scss/partials/_footer.scss */
+/* line 277, ../scss/partials/_footer.scss */
 .footer-contact-wrapper {
   display: block;
 }
 @media (max-width: 890px) {
-  /* line 275, ../scss/partials/_footer.scss */
+  /* line 277, ../scss/partials/_footer.scss */
   .footer-contact-wrapper {
     border-bottom: 1px solid #565656;
   }
 }
-/* line 281, ../scss/partials/_footer.scss */
+/* line 283, ../scss/partials/_footer.scss */
 .footer-contact-wrapper a {
   display: inline-block;
 }
 
-/* line 287, ../scss/partials/_footer.scss */
+/* line 289, ../scss/partials/_footer.scss */
 .iab_logo_container {
   display: inline-block;
 }
 @media (max-width: 1033px) {
-  /* line 287, ../scss/partials/_footer.scss */
+  /* line 289, ../scss/partials/_footer.scss */
   .iab_logo_container {
     display: block;
   }
 }
-/* line 293, ../scss/partials/_footer.scss */
+/* line 295, ../scss/partials/_footer.scss */
 .iab_logo_container a {
   display: inline-block;
   margin-left: 50px;
   margin-top: 60px;
+  margin-right: 20px;
   display: inline-block;
 }
 @media (max-width: 1033px) {
-  /* line 293, ../scss/partials/_footer.scss */
+  /* line 295, ../scss/partials/_footer.scss */
   .iab_logo_container a {
     margin-left: 0;
     margin-top: 20px;
     margin-bottom: 20px;
   }
 }
-/* line 307, ../scss/partials/_footer.scss */
+/* line 310, ../scss/partials/_footer.scss */
 .iab_logo_container img {
   width: 80px;
+}
+
+/* line 318, ../scss/partials/_footer.scss */
+#parallax-kieth .footer-links .copy p,
+.footer-links .copy p {
+  line-height: 1.5em;
+}
+@media (min-width: 811px) {
+  /* line 318, ../scss/partials/_footer.scss */
+  #parallax-kieth .footer-links .copy p,
+  .footer-links .copy p {
+    font-size: 1.1em;
+  }
 }

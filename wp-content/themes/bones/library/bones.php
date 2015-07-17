@@ -213,7 +213,6 @@ function bones_scripts_and_styles() {
         // PAN TO MARKER
         wp_register_script( 'pan-to-marker' , get_stylesheet_directory_uri() . '/library/js/pan-to-marker.js', array('jquery'), '', true );
 
-
         // enqueue styles and scripts
 		wp_enqueue_script( 'bones-modernizr' );
 		wp_enqueue_style( 'bones-stylesheet' );

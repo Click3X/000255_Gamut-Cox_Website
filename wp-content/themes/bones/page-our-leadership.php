@@ -71,6 +71,17 @@ if (have_posts()) : while (have_posts()) : the_post();
 
 			// hover 
 			$teamMembers[$key]['newHoverThumb'] = $newHoverThumb;
+
+			// GET THE TEAM FOR EACH MEMBER
+			$tm_terms = wp_get_post_terms( $team_member->ID, 'team' );
+
+			foreach ($tm_terms as $nkey => $tm_term) {
+				// helper($tm_term);
+				if( isset( $tm_term->slug ) ) {
+					$teamMembers[$key]['terms'][$nkey] = $tm_term->slug;	
+				}
+				
+			}
 		}
 	}
 	endwhile;
@@ -111,15 +122,28 @@ wp_reset_postdata();
 
 								<li id="post-<?php echo $teamMember['id']; ?>" role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
-									<a class="fancybox various" href="<?php echo '#' . $teamMember['id']; ?>">
-
 									<?php 
+										echo '<a class="fancybox various" href="#'.$teamMember['id'].'"';
+											if( $teamMember['terms'] ) { 
+												$len = count($teamMember['terms']);
+												echo 'data-team="';
+													foreach ($teamMember['terms'] as $key => $term) {
+														echo $term;
+														if($key < $len-1 ) {
+															echo ' ';
+														}
+													}
+												echo '"';
+											}
+										echo '>';
+
 										echo '<img src="'.$teamMember['new-thumb'].'" alt="'.$teamMember['name'].'" class="grid-thumb grayscale">';
 										echo '<h2 class="small-name gothic">'.$teamMember['name'].'</h2>';
 										echo '<h3 class="small-title gothic">'.$teamMember['emp_title'].'</h3>';
+
+										echo '</a>';
 									?>
 										
-									</a>
 								</li>
 
 								<div id="<?php echo $teamMember['id']; ?>" style="width:100%;display: none;">
@@ -129,7 +153,6 @@ wp_reset_postdata();
 									<h3 class="bio-title"><?php echo $teamMember['emp_title']; ?></h3>	
 									<p><?php echo $teamMember['add_info']; ?></p>
 									</div>
-									
 								</div> 
 							
 							<?php
