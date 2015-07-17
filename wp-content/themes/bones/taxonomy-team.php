@@ -11,7 +11,6 @@ $tax_title = $term->name;
 // GET HEADER FROM OUR LEADERSHIP PAGE
 $headerId = get_post_custom_values( 'header-image', 48 );
 $header = wp_get_attachment_image_src( $headerId[0], 'full' );
-helper($header);
 
 ?>
 
