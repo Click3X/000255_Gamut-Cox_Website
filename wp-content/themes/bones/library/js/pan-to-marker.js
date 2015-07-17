@@ -1,10 +1,6 @@
 // pan-to-marker
 jQuery(document).ready(function($) {
-	// console.log('Hello from pan-to-marker');
-	// console.log('These are the locations: ');
-	// console.dir(locations);
 
-	// GOTO MARKER FUNCTION
 	function goToMarker(event) {
 		event.preventDefault();
 

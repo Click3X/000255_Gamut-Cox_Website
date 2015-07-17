@@ -97,10 +97,13 @@ h3 {
 
 	@media(min-width: 811px) {
 		padding: 20px 8% 20px 8%;
-		// margin-top: -150px;
-		// h1 {
-		// 	margin-top:.67em;
-		// }
+	}
+}
+
+.archive .sub-page-content-wrapper {
+
+	@media(min-width: 768px) {
+		margin-top: -190px;
 	}
 }
 
