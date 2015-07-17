@@ -183,7 +183,8 @@
 
 .other-businesses-container {
 	padding-left: 70px;
-	padding-right: 70px;
+	// padding-right: 70px;
+	padding-right: 40px;
 	border-left: 1px solid #565656;
 	border-right: 1px solid #565656;
 	// vertical-align: middle;
@@ -204,7 +205,9 @@
 		padding-top: 30px;
 		padding-bottom: 30px;
 		border-bottom: 1px solid #565656;
-
+	}
+	@media(min-width: 811px) {
+	  	min-height: 240px;
 	}
 }
 
@@ -305,6 +308,18 @@
 			margin-bottom: 20px;
 		}
 
+		@media(min-width: 1033px) {
+		  margin-right:0;
+		  float: left;
+		  clear: left;
+		}
+
+	}
+
+	a.nai_logo {
+		@media(min-width: 1033px) {
+			margin-top:20px;
+		}
 	}
 
 	img {

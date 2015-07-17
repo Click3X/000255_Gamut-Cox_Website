@@ -9631,7 +9631,7 @@ be set to display none.
 /* line 184, ../scss/partials/_footer.scss */
 .other-businesses-container {
   padding-left: 70px;
-  padding-right: 70px;
+  padding-right: 40px;
   border-left: 1px solid #565656;
   border-right: 1px solid #565656;
   padding-top: 60px;
@@ -9657,105 +9657,111 @@ be set to display none.
     border-bottom: 1px solid #565656;
   }
 }
+@media (min-width: 811px) {
+  /* line 184, ../scss/partials/_footer.scss */
+  .other-businesses-container {
+    min-height: 240px;
+  }
+}
 
-/* line 212, ../scss/partials/_footer.scss */
+/* line 215, ../scss/partials/_footer.scss */
 .headquarter-title {
   text-transform: uppercase;
 }
 
-/* line 217, ../scss/partials/_footer.scss */
+/* line 220, ../scss/partials/_footer.scss */
 .other-businesses-content a {
   color: #bdbdbd;
 }
-/* line 220, ../scss/partials/_footer.scss */
+/* line 223, ../scss/partials/_footer.scss */
 .other-businesses-content a:hover {
   color: #ed228b;
 }
 
-/* line 228, ../scss/partials/_footer.scss */
+/* line 231, ../scss/partials/_footer.scss */
 .footer-contact-container {
   text-transform: uppercase;
   margin-top: 20px;
   display: inline-block;
   color: white;
 }
-/* line 234, ../scss/partials/_footer.scss */
+/* line 237, ../scss/partials/_footer.scss */
 .footer-contact-container:hover {
   color: #ed228b;
 }
 @media (max-width: 1033px) {
-  /* line 228, ../scss/partials/_footer.scss */
+  /* line 231, ../scss/partials/_footer.scss */
   .footer-contact-container {
     padding-bottom: 30px;
     margin-top: 30px;
   }
 }
 @media (max-width: 890px) {
-  /* line 228, ../scss/partials/_footer.scss */
+  /* line 231, ../scss/partials/_footer.scss */
   .footer-contact-container {
     display: block;
   }
 }
 
-/* line 249, ../scss/partials/_footer.scss */
+/* line 252, ../scss/partials/_footer.scss */
 .headquarters-wrapper {
   margin-bottom: 20px;
 }
 
-/* line 253, ../scss/partials/_footer.scss */
+/* line 256, ../scss/partials/_footer.scss */
 .footer-links-content {
   margin: auto;
 }
 
-/* line 257, ../scss/partials/_footer.scss */
+/* line 260, ../scss/partials/_footer.scss */
 .footer-left-column {
   padding-top: 60px;
 }
 @media (max-width: 890px) {
-  /* line 257, ../scss/partials/_footer.scss */
+  /* line 260, ../scss/partials/_footer.scss */
   .footer-left-column {
     display: block;
   }
 }
 
-/* line 265, ../scss/partials/_footer.scss */
+/* line 268, ../scss/partials/_footer.scss */
 .footer-contact-link {
   cursor: pointer;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   color: white;
 }
-/* line 271, ../scss/partials/_footer.scss */
+/* line 274, ../scss/partials/_footer.scss */
 .footer-contact-link:hover .arrow-right {
   border-left: 6px solid #ed228b !important;
 }
 
-/* line 277, ../scss/partials/_footer.scss */
+/* line 280, ../scss/partials/_footer.scss */
 .footer-contact-wrapper {
   display: block;
 }
 @media (max-width: 890px) {
-  /* line 277, ../scss/partials/_footer.scss */
+  /* line 280, ../scss/partials/_footer.scss */
   .footer-contact-wrapper {
     border-bottom: 1px solid #565656;
   }
 }
-/* line 283, ../scss/partials/_footer.scss */
+/* line 286, ../scss/partials/_footer.scss */
 .footer-contact-wrapper a {
   display: inline-block;
 }
 
-/* line 289, ../scss/partials/_footer.scss */
+/* line 292, ../scss/partials/_footer.scss */
 .iab_logo_container {
   display: inline-block;
 }
 @media (max-width: 1033px) {
-  /* line 289, ../scss/partials/_footer.scss */
+  /* line 292, ../scss/partials/_footer.scss */
   .iab_logo_container {
     display: block;
   }
 }
-/* line 295, ../scss/partials/_footer.scss */
+/* line 298, ../scss/partials/_footer.scss */
 .iab_logo_container a {
   display: inline-block;
   margin-left: 50px;
@@ -9764,25 +9770,39 @@ be set to display none.
   display: inline-block;
 }
 @media (max-width: 1033px) {
-  /* line 295, ../scss/partials/_footer.scss */
+  /* line 298, ../scss/partials/_footer.scss */
   .iab_logo_container a {
     margin-left: 0;
     margin-top: 20px;
     margin-bottom: 20px;
   }
 }
-/* line 310, ../scss/partials/_footer.scss */
+@media (min-width: 1033px) {
+  /* line 298, ../scss/partials/_footer.scss */
+  .iab_logo_container a {
+    margin-right: 0;
+    float: left;
+    clear: left;
+  }
+}
+@media (min-width: 1033px) {
+  /* line 319, ../scss/partials/_footer.scss */
+  .iab_logo_container a.nai_logo {
+    margin-top: 20px;
+  }
+}
+/* line 325, ../scss/partials/_footer.scss */
 .iab_logo_container img {
   width: 80px;
 }
 
-/* line 318, ../scss/partials/_footer.scss */
+/* line 333, ../scss/partials/_footer.scss */
 #parallax-kieth .footer-links .copy p,
 .footer-links .copy p {
   line-height: 1.5em;
 }
 @media (min-width: 811px) {
-  /* line 318, ../scss/partials/_footer.scss */
+  /* line 333, ../scss/partials/_footer.scss */
   #parallax-kieth .footer-links .copy p,
   .footer-links .copy p {
     font-size: 1.1em;
