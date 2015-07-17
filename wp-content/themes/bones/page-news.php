@@ -47,7 +47,9 @@
 					?>
 
 
-					<?php $defaults = array(
+					<?php 
+
+					$defaults = array(
 						'theme_location'  => '',
 						'menu'            => 'Watch & Read',
 						'container'       => 'div',
@@ -66,7 +68,9 @@
 						'walker'          => ''
 					);
 
-					wp_nav_menu( $defaults ); ?>
+					wp_nav_menu( $defaults ); 
+
+					?>
 				</div>
 
 					<div id="main" class="m-all t-2of3 d-5of7 cf" role="main">

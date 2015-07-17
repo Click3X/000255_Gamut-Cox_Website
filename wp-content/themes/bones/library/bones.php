@@ -213,6 +213,9 @@ function bones_scripts_and_styles() {
         // PAN TO MARKER
         wp_register_script( 'pan-to-marker' , get_stylesheet_directory_uri() . '/library/js/pan-to-marker.js', array('jquery'), '', true );
 
+        // PAN TO MARKER
+        wp_register_script( 'side-bar-highlight' , get_stylesheet_directory_uri() . '/library/js/side-bar-highlight.js', array('jquery'), '', true );
+
         // enqueue styles and scripts
 		wp_enqueue_script( 'bones-modernizr' );
 		wp_enqueue_style( 'bones-stylesheet' );
@@ -247,6 +250,10 @@ function bones_scripts_and_styles() {
 		// 	wp_enqueue_script( 'g-maps' );
 			wp_enqueue_script( 'pan-to-marker' );
 		}
+
+        if(is_single()) {
+            wp_enqueue_script( 'side-bar-highlight' );   
+        }
 
 		// CONDITIONAL SCRIPT TO LOAD ROYALSLIDER ON HOME PAGE
 		if( is_page(107) || is_page(466) || is_page(393) || is_page(472) ) {
