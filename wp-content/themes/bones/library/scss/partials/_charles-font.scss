@@ -90,14 +90,17 @@ h3 {
 	@media(min-width: 768px) {
 		padding: 20px 0 20px 20px;
 		margin-top: -150px;
+		h1 {
+			margin-top:.67em;
+		}
 	}
 
 	@media(min-width: 811px) {
 		padding: 20px 8% 20px 8%;
 		// margin-top: -150px;
-		h1 {
-			margin-top:.67em;
-		}
+		// h1 {
+		// 	margin-top:.67em;
+		// }
 	}
 }
 

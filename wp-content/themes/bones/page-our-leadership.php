@@ -51,8 +51,6 @@ if (have_posts()) : while (have_posts()) : the_post();
 
 			$bwThumb = wp_get_attachment_image_src($empId , 'emp-thumb');
 			$newThumb = $bwThumb[0];
-
-
 			
 			// ADD VALUES TO EACH TEAM MEMBER IN ARRAY
 			$teamMembers[$key]['id'] = $id;
@@ -80,7 +78,6 @@ if (have_posts()) : while (have_posts()) : the_post();
 endif;
 
 wp_reset_postdata();
-
 
 ?>
 
@@ -116,10 +113,7 @@ wp_reset_postdata();
 
 									<a class="fancybox various" href="<?php echo '#' . $teamMember['id']; ?>">
 
-									<!-- <div class="grid-thumb imgOverlay" style="background-image: url(<?php echo $teamMember['new-thumb'] ?>);"></div> -->
 									<?php 
-										// echo '<img src="'.$teamMember['newHoverThumb'].'" alt="'.$teamMember['name'].'" class="grid-thumb">';
-
 										echo '<img src="'.$teamMember['new-thumb'].'" alt="'.$teamMember['name'].'" class="grid-thumb grayscale">';
 										echo '<h2 class="small-name gothic">'.$teamMember['name'].'</h2>';
 										echo '<h3 class="small-title gothic">'.$teamMember['emp_title'].'</h3>';
