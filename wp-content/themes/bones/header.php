@@ -58,19 +58,9 @@
         <?php
             // IF CONTACT PAGE, LOAD CONTACT PAGE PHP SCRIPTS FOR GOOGLE MAPS
             if(is_page(9)) {
-                include('php/LatLong.php');
+                // include('php/LatLong.php');
                 include('php/parseAddress.php');
             }
-
-            // SERVE SMALLER IMAGES FOR MOBILE 
-            // HOME PAGE
-            // if(is_page(107)) {
-            //     include('php/home-mobile-images.php');
-            // } else {
-            //     // ALL OTHER PAGES
-            //     include('php/serve-mobile-images.php');
-            // }
-
             // define sit url variables
             $root_url = 'http://gamut.media';
 

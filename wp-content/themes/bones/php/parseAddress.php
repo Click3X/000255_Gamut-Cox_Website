@@ -37,6 +37,8 @@ if (have_posts()) : while (have_posts()) : the_post();
             $locations[$k]['zip'] = $zip;
             $locations[$k]['phone'] = $phone;
             $locations[$k]['additional_info'] = $additional_info;
+            $locations[$k]['lat'] = get_sub_field('latitude');
+            $locations[$k]['lng'] = get_sub_field('longitude');
 
 
             $locations[$k]['address'] = $address;
@@ -53,21 +55,21 @@ endif;
 
 wp_reset_postdata();
 
-// GET LAT LONG FOR EACH CITY
-foreach ($locations as $key => $location) {
-    // $latlong = Get_LatLng_From_Google_Maps($location['address']);
-    // $locations[$key]['lat'] = $latlong['lat'];
-    // $locations[$key]['lng'] = $latlong['lng'];
+// // GET LAT LONG FOR EACH CITY
+// foreach ($locations as $key => $location) {
+//     // $latlong = Get_LatLng_From_Google_Maps($location['address']);
+//     // $locations[$key]['lat'] = $latlong['lat'];
+//     // $locations[$key]['lng'] = $latlong['lng'];
 
-    if($locations[$key]['title'] == 'New York') {
-        $locations[$key]['lat'] = 40.753519;
-        $locations[$key]['lng'] = -73.969971;
-    } elseif($locations[$key]['title'] == 'San Francisco') {
-        $locations[$key]['lat'] = 37.794108;
-        $locations[$key]['lng'] = -122.39511;
-    }
+//     if($locations[$key]['title'] == 'New York') {
+//         $locations[$key]['lat'] = 40.753519;
+//         $locations[$key]['lng'] = -73.969971;
+//     } elseif($locations[$key]['title'] == 'San Francisco') {
+//         $locations[$key]['lat'] = 37.794108;
+//         $locations[$key]['lng'] = -122.39511;
+//     }
 
-}
+// }
 
 
 // JSON ENCODE LOCATIONS TO USE ON FRONT END

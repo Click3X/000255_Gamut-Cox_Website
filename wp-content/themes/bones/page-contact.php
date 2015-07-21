@@ -37,9 +37,7 @@ endif;
 					<div class="contact-container">
 
 						<div id="contact-beam-container">
-
 							<div id="contact-beam" style="background-image: url(<?php bloginfo('url'); ?>/img/contact-beam.png);"></div>
-
 						</div>
 
 						<h1 class="contact-title"><?php echo $contact_title; ?></h1>
@@ -80,8 +78,6 @@ endif;
 						<?php endif;
 
 						wp_reset_postdata();
-
-						// echo '<script>console.log("These are the locations: "); console.dir(locations); </script>';
 
 						// insert tabs first
 						// insert contact forms
