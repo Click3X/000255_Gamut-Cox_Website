@@ -92,7 +92,10 @@ get_header();
 							// }
 
 							// TAKE OUT PAGE LOGOS AND REPLACE WITH TITLE TEXT
-							echo '<h1>'.get_the_title().'</h1>';
+							
+							// OVERRIDE PAGE TITLE IF TITLE OVERRIDE FIELD IS NOT EMPTY
+							// echo '<h1>'.get_the_title().'</h1>';
+							titleOverride();
 						?>
 
 							<p class="first-p"><?php echo $main_first_p; ?></p>

@@ -68,7 +68,11 @@
 
 							<div class="sub-page-content-wrapper">
 
-								<h1><?php the_title(); ?></h1>
+								<?php 
+								// OVERRIDE PAGE TITLE IF TITLE OVERRIDE FIELD IS NOT EMPTY
+								// echo '<h1>'.get_the_title().'</h1>';
+								titleOverride();
+								?>
 
 								<?php
 									// FEATURED CATEGORY ID STORED IN VAR FOR LATER USE IN FILTERING CATEGORIES

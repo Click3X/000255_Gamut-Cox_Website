@@ -27,7 +27,13 @@
 
 								<header class="article-header">
 
-									<h1 class="page-title"><?php the_title(); ?></h1>
+									
+									<?php 
+									
+									// OVERRIDE PAGE TITLE IF TITLE OVERRIDE FIELD IS NOT EMPTY
+									// echo '<h1>'.get_the_title().'</h1>';
+									titleOverride();
+									?>
 
 									<p class="byline vcard">
 										<?php printf( __( 'Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span>', 'bonestheme' ), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), get_the_author_link( get_the_author_meta( 'ID' ) )); ?>

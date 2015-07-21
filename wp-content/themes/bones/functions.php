@@ -354,4 +354,13 @@ function printCustomIcons() {
 // }
 // add_shortcode( 'email', 'email_encode_function' );
 
+// TESTS FOR 'TITLE LABEL OVERRIDE FIELD', IF PRESENT, THE 'TITLE OVERRIDE FIELD' IS USED INSTEAD OF THE_TITLE() FUNCTION WHICH PRINTS OUT PAGE TITLE
+function titleOverride() {
+  if( get_field('title_label_override') ) {
+    echo '<h1>'.get_field('title_label_override').'</h1>';
+  } else {
+    echo '<h1>'.get_the_title().'</h1>';
+  }
+}
+
 /* DON'T DELETE THIS CLOSING TAG */ ?>

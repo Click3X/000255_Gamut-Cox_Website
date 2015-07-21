@@ -111,7 +111,11 @@ wp_reset_postdata();
 				<section class="entry-content cf" itemprop="articleBody">
 
 					<div class="sub-page-content-wrapper" style="">
-						<h1><?php the_title(); ?></h1>
+						<?php 
+							// OVERRIDE PAGE TITLE IF TITLE OVERRIDE FIELD IS NOT EMPTY
+							// echo '<h1>'.get_the_title().'</h1>';
+							titleOverride();
+						?>
 					</div>
 
 					<ul id="og-grid" class="og-grid">
