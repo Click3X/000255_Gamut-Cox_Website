@@ -2758,26 +2758,6 @@ hr {
   margin-top: 30px;
 }
 
-/* line 353, ../scss/partials/_custom.scss */
-.pro-color {
-  color: #dd1420;
-}
-
-/* line 357, ../scss/partials/_custom.scss */
-.rep-color {
-  color: #039fd3;
-}
-
-/* line 361, ../scss/partials/_custom.scss */
-.rea-color {
-  color: #8fc73e;
-}
-
-/* line 365, ../scss/partials/_custom.scss */
-.cro-color {
-  color: #fba211;
-}
-
 /* line 372, ../scss/partials/_custom.scss */
 .lower-columns ul li {
   display: inline-block;
@@ -8080,7 +8060,6 @@ h1 {
 }
 /* line 148, ../scss/partials/_charles-font.scss */
 .page-id-11 #main a {
-  color: #dd1420;
   -webkit-transition: all 200ms;
   -moz-transition: all 200ms;
   -o-transition: all 200ms;
@@ -8091,27 +8070,16 @@ h1 {
 .page-id-11 #main a:hover {
   text-decoration: underline;
 }
-/* line 161, ../scss/partials/_charles-font.scss */
-.page-id-11 .secondary li.page_item a {
-  color: #626262;
-}
 /* line 170, ../scss/partials/_charles-font.scss */
 .page-id-11 .secondary .page_item.page-item-11 a:hover {
-  color: #dd1420;
   text-decoration: underline;
-}
-/* line 176, ../scss/partials/_charles-font.scss */
-.page-id-11 .secondary .current_page_item a {
-  color: #dd1420 !important;
 }
 /* line 178, ../scss/partials/_charles-font.scss */
 .page-id-11 .secondary .current_page_item a:hover {
-  color: #dd1420;
   text-decoration: underline;
 }
 /* line 184, ../scss/partials/_charles-font.scss */
 .page-id-11 .secondary a {
-  color: #dd1420;
   -webkit-transition: all 200ms;
   -moz-transition: all 200ms;
   -o-transition: all 200ms;
@@ -8125,7 +8093,6 @@ h1 {
 
 /* line 196, ../scss/partials/_charles-font.scss */
 .page-item-11 a {
-  color: #626262;
   -webkit-transition: all 200ms;
   -moz-transition: all 200ms;
   -o-transition: all 200ms;
@@ -8134,13 +8101,11 @@ h1 {
 }
 /* line 201, ../scss/partials/_charles-font.scss */
 .page-item-11 a:hover {
-  color: #dd1420;
   text-decoration: underline;
 }
 
 /* line 212, ../scss/partials/_charles-font.scss */
 .page-id-13 #main a {
-  color: #fba211;
   -webkit-transition: all 200ms;
   -moz-transition: all 200ms;
   -o-transition: all 200ms;
@@ -8151,27 +8116,16 @@ h1 {
 .page-id-13 #main a:hover {
   text-decoration: underline;
 }
-/* line 224, ../scss/partials/_charles-font.scss */
-.page-id-13 .secondary li.page_item a {
-  color: #626262;
-}
 /* line 232, ../scss/partials/_charles-font.scss */
 .page-id-13 .secondary .page_item.page-item-13 a:hover {
-  color: #fba211;
   text-decoration: underline;
-}
-/* line 238, ../scss/partials/_charles-font.scss */
-.page-id-13 .secondary .current_page_item a {
-  color: #fba211 !important;
 }
 /* line 240, ../scss/partials/_charles-font.scss */
 .page-id-13 .secondary .current_page_item a:hover {
-  color: #fba211;
   text-decoration: underline;
 }
 /* line 246, ../scss/partials/_charles-font.scss */
 .page-id-13 .secondary a {
-  color: #fba211;
   -webkit-transition: all 200ms;
   -moz-transition: all 200ms;
   -o-transition: all 200ms;
@@ -8180,13 +8134,11 @@ h1 {
 }
 /* line 249, ../scss/partials/_charles-font.scss */
 .page-id-13 .secondary a:hover {
-  color: #fba211;
   text-decoration: underline;
 }
 
 /* line 258, ../scss/partials/_charles-font.scss */
 .page-item-13 a {
-  color: #626262;
   -webkit-transition: all 200ms;
   -moz-transition: all 200ms;
   -o-transition: all 200ms;
@@ -8200,7 +8152,6 @@ h1 {
 
 /* line 273, ../scss/partials/_charles-font.scss */
 .page-id-24 #main a {
-  color: #8fc73e;
   -webkit-transition: all 200ms;
   -moz-transition: all 200ms;
   -o-transition: all 200ms;
@@ -8211,27 +8162,16 @@ h1 {
 .page-id-24 #main a:hover {
   text-decoration: underline;
 }
-/* line 285, ../scss/partials/_charles-font.scss */
-.page-id-24 .secondary li.page_item a {
-  color: #626262;
-}
 /* line 294, ../scss/partials/_charles-font.scss */
 .page-id-24 .secondary .page_item.page-item-24 a:hover {
-  color: #8fc73e;
   text-decoration: underline;
-}
-/* line 300, ../scss/partials/_charles-font.scss */
-.page-id-24 .secondary .current_page_item a {
-  color: #8fc73e !important;
 }
 /* line 302, ../scss/partials/_charles-font.scss */
 .page-id-24 .secondary .current_page_item a:hover {
-  color: #8fc73e;
   text-decoration: underline;
 }
 /* line 308, ../scss/partials/_charles-font.scss */
 .page-id-24 .secondary a {
-  color: #8fc73e;
   -webkit-transition: all 200ms;
   -moz-transition: all 200ms;
   -o-transition: all 200ms;
@@ -8240,13 +8180,11 @@ h1 {
 }
 /* line 311, ../scss/partials/_charles-font.scss */
 .page-id-24 .secondary a:hover {
-  color: #8fc73e;
   text-decoration: underline;
 }
 
 /* line 320, ../scss/partials/_charles-font.scss */
 .page-item-24 a {
-  color: #626262;
   -webkit-transition: all 200ms;
   -moz-transition: all 200ms;
   -o-transition: all 200ms;
@@ -8260,7 +8198,6 @@ h1 {
 
 /* line 334, ../scss/partials/_charles-font.scss */
 .page-id-15 #main a {
-  color: #039fd3;
   -webkit-transition: all 200ms;
   -moz-transition: all 200ms;
   -o-transition: all 200ms;
@@ -8271,27 +8208,16 @@ h1 {
 .page-id-15 #main a:hover {
   text-decoration: underline;
 }
-/* line 347, ../scss/partials/_charles-font.scss */
-.page-id-15 .secondary li.page_item a {
-  color: #626262;
-}
 /* line 356, ../scss/partials/_charles-font.scss */
 .page-id-15 .secondary .page_item.page-item-15 a:hover {
-  color: #039fd3;
   text-decoration: underline;
-}
-/* line 363, ../scss/partials/_charles-font.scss */
-.page-id-15 .secondary .current_page_item a {
-  color: #039fd3 !important;
 }
 /* line 365, ../scss/partials/_charles-font.scss */
 .page-id-15 .secondary .current_page_item a:hover {
-  color: #039fd3;
   text-decoration: underline;
 }
 /* line 371, ../scss/partials/_charles-font.scss */
 .page-id-15 .secondary a {
-  color: #039fd3;
   -webkit-transition: all 200ms;
   -moz-transition: all 200ms;
   -o-transition: all 200ms;
@@ -8300,13 +8226,11 @@ h1 {
 }
 /* line 374, ../scss/partials/_charles-font.scss */
 .page-id-15 .secondary a:hover {
-  color: #039fd3;
   text-decoration: underline;
 }
 
 /* line 383, ../scss/partials/_charles-font.scss */
 .page-item-15 a {
-  color: #626262;
   -webkit-transition: all 200ms;
   -moz-transition: all 200ms;
   -o-transition: all 200ms;
@@ -8316,26 +8240,6 @@ h1 {
 /* line 388, ../scss/partials/_charles-font.scss */
 .page-item-15 a:hover {
   text-decoration: underline;
-}
-
-/* line 394, ../scss/partials/_charles-font.scss */
-#sidebar1 > ul > li.page_item.page-item-13 > a:hover {
-  color: #fba211;
-}
-
-/* line 395, ../scss/partials/_charles-font.scss */
-#sidebar1 > ul > li.page_item.page-item-15 > a:hover {
-  color: #039fd3;
-}
-
-/* line 396, ../scss/partials/_charles-font.scss */
-#sidebar1 > ul > li.page_item.page-item-24 > a:hover {
-  color: #8fc73e;
-}
-
-/* line 397, ../scss/partials/_charles-font.scss */
-#sidebar1 > ul > li.page_item.page-item-11 > a:hover {
-  color: #dd1420;
 }
 
 @media (min-width: 811px) {
