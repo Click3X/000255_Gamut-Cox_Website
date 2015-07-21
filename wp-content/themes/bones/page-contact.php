@@ -63,10 +63,16 @@ endif;
 															echo '<li>'.get_sub_field('additional_address_info').'</li>';
 														} ?>
 														<li><?php the_sub_field('city'); ?>,&nbsp;<?php the_sub_field('state'); ?>&nbsp;<?php the_sub_field('zip'); ?></li>
-														<li>t: <?php the_sub_field('phone'); ?></li>
-														<?php if( get_sub_field('additional_info') ) {
+														<?php 
+														
+														if( get_sub_field('phone') ) {
+															echo '<li>t: '.get_sub_field('phone').'</li>';
+														}
+
+														if( get_sub_field('additional_info') ) {
 															echo '<li>'.get_sub_field('additional_info').'</li>';
-														} ?>
+														} 
+														?>
 													</ul>
 												</a>
 											</li>
