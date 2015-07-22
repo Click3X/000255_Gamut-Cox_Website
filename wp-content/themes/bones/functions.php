@@ -337,21 +337,8 @@ function printCustomIcons() {
               <span class="more-text"><span class="more-inside">More</span><img src="'.get_bloginfo('url' ).'/img/flip-arrow.png" class="more-inside" alt="more"></span>
             </a>
       </div>';
-
-  // echo '<i class="sprite sprite-email"></i>
-  // <i class="sprite sprite-email-hover"></i>
-  // <i class="sprite sprite-facebook"></i>
-  // <i class="sprite sprite-facebook-hover"></i>
-  // <i class="sprite sprite-google-plus"></i>
-  // <i class="sprite sprite-google-plus-hover"></i>
-  // <i class="sprite sprite-instagram"></i>
-  // <i class="sprite sprite-instagram-hover"></i>
-  // <i class="sprite sprite-linked-in"></i>
-  // <i class="sprite sprite-linked-in-hover"></i>
-  // <i class="sprite sprite-twitter"></i>
-  // <i class="sprite sprite-twitter-hover"></i>';
-
 }
+
 // EMAIL ADDRESS ANTI-SPAM
 // function email_encode_function( $atts, $content ){
 //   return '<a href="'.antispambot("mailto:".$content).'">'.antispambot($content).'</a>';
