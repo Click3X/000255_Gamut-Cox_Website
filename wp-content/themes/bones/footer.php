@@ -60,8 +60,15 @@
 										<a href="<?php echo get_sub_field('link'); ?>" target="_blank" title="<?php echo get_sub_field('title');?>" class="<?php echo $socialTitle; ?>" onClick="_gaq.push(['_trackEvent', 'Social Media', 'click', 'Linked In']);">
 										</a>
 									</li>
+									<?php } else if ($sub_title == 'Instagram') { ?>
+									<li class="social">
+										<a href="<?php echo get_sub_field('link'); ?>" target="_blank" title="<?php echo get_sub_field('title');?>" class="sprite sprite-instagram" onClick="_gaq.push(['_trackEvent', 'Social Media', 'click', 'Instagram']);">
+										</a>
+									</li>
 									<?php } ?>
+
 								<?php endwhile;
+
 								echo '</ul>';
 							endif; 
 

@@ -73,21 +73,33 @@
 	.share-text {
 		display: block;
 		color: #ed228b;
-		font-size: 1.2em;
-		margin-bottom: 0.25em;
+		// font-size: 1.2em;
+		// margin-bottom: 0.25em;
+		margin-bottom:2px;
 	}
 
 	> a {
 		display:block;
 		float: left;
-		width: 46px !important; height: 46px !important;	
-		margin-right: 1em;
+		// width: 46px !important; height: 46px !important;	
+		// margin-right: 1em;
+		margin-right: 8px;
 
 		&:hover {
-			width: 46px !important; height: 46px !important;
+			// width: 46px !important; height: 46px !important;
 		}
-		> img {
+		> img, > span {
 			display: none;
+		}
+		span {
+			font-size: 15px;
+		}
+		span.more-text {
+			  display: block;
+			  position: absolute;
+			  /* bottom: 0; */
+			  top: 6px;
+			  margin-left:2px;
 		}
 	}
 
@@ -101,10 +113,9 @@
 		color: #ed228b;
 		display: block;
 		float: left;
-		position: absolute;
+		// position: absolute;
 		bottom: 0;
-		font-size: 1.2em;
-		
+		font-size: 1.2em;		
 		// &:hover { color: black; }
 	}
 	position: relative;
@@ -113,4 +124,127 @@
 img.more-inside {
 	padding-left:0.25em;
 	vertical-align: baseline;
+}
+
+
+// .a2a_kit {
+// 	a {
+// 		@include prefix(transform-origin, center);
+// 		@include prefix(transform, scale(0.6));
+// 		margin-right:0;
+// 	}
+// 	a.more  {
+// 		@include prefix(transform-origin, center);
+// 		@include prefix(transform, scale(1));	
+// 	}
+// }
+
+
+
+
+// NEW SOCIAL STYLES - 7-22
+.sprite {
+    background-image: url('../../../../../img/spritesheet-new.png');
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-email {
+    width: 30px;
+    height: 30px;
+    background-position: -2px -2px;
+}
+
+.sprite-email:hover,
+.sprite-email-hover {
+    width: 30px;
+    height: 30px;
+    background-position: -36px -2px;
+}
+
+.sprite-facebook {
+    width: 30px;
+    height: 30px;
+    background-position: -70px -2px;
+}
+
+.sprite-facebook:hover,
+.sprite-facebook-hover {
+    width: 30px;
+    height: 30px;
+    background-position: -2px -36px;
+}
+
+.sprite-google-plus {
+    width: 30px;
+    height: 30px;
+    background-position: -36px -36px;
+}
+
+.sprite-google-plus:hover,
+.sprite-google-plus-hover {
+    width: 30px;
+    height: 30px;
+    background-position: -70px -36px;
+}
+
+.sprite-instagram {
+    width: 30px;
+    height: 30px;
+    background-position: -2px -70px;
+}
+
+.sprite-instagram:hover,
+.sprite-instagram-hover {
+    width: 30px;
+    height: 30px;
+    background-position: -36px -70px;
+}
+
+.sprite-linked-in {
+    width: 30px;
+    height: 30px;
+    background-position: -70px -70px;
+}
+
+.sprite-linked-in:hover,
+.sprite-linked-in-hover {
+    width: 30px;
+    height: 30px;
+    background-position: -104px -2px;
+}
+
+.sprite-twitter {
+    width: 30px;
+    height: 30px;
+    background-position: -104px -36px;
+}
+
+.sprite-twitter:hover,
+.sprite-twitter-hover {
+    width: 30px;
+    height: 30px;
+    background-position: -104px -70px;
+}
+
+// NEW INSTAGRAM SPRITE AT THE BOTTOM OF THE FOOTER
+.footer {
+	.sprite {
+	    background-image: url('../../../../../img/spritesheet-inst.png');
+	    background-repeat: no-repeat;
+	    display: block;
+	}
+
+	.sprite-instagram {
+	    width: 45px;
+	    height: 45px;
+	    background-position: -2px -2px;
+	}
+
+	.sprite-instagram:hover,
+	.sprite-instagram-hover {
+	    width: 45px;
+	    height: 45px;
+	    background-position: -51px -2px;
+	}
 }

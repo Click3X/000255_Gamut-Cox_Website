@@ -326,27 +326,31 @@ add_filter('wp_list_categories', 'sgr_show_current_cat_on_single');
 function printCustomIcons() {
   echo '<div class="a2a_kit cf">
             <span class="share-text">Share:</span>
-            <a class="a2a_button_twitter twitter">
-          <img src="//farm3.staticflickr.com/2886/12004329883_8daa4af904_o.png" border="0" alt="Twitter" width="54" height="55"/>
-      </a>
-      <a class="a2a_button_facebook facebook">
-          <img src="//farm3.staticflickr.com/2863/12004329833_ddcd67ff4a_o.png" border="0" alt="Facebook" width="54" height="55"/>
-      </a>
-      <!--
-      <a class="a2a_button_google_plus google-plus">
-          <img src="//farm4.staticflickr.com/3774/12004033365_8965d86637_o.png" border="0" alt="Google+" width="54" height="55"/>
-      </a>
-      -->
-      <a class="a2a_button_linkedin linked-in">
-          <img src="//farm4.staticflickr.com/3774/12004033365_8965d86637_o.png" border="0" alt="Linked In" width="54" height="55"/>
-      </a>
-      <a class="a2a_dd more cf" href="https://www.addtoany.com/share_save">
-          <!--
-          <img src="//farm8.staticflickr.com/7326/12005120763_a44dc82111_o.png" border="0" alt="Share" width="54" height="55"/>
-          -->
-          <span class="more-text"><span class="more-inside">More</span><img src="'.get_bloginfo('url' ).'/img/flip-arrow.png" class="more-inside" alt="more"></span>
-      </a>
-  </div>';
+            <a class="a2a_button_twitter sprite sprite-twitter"></a>
+            <a class="a2a_button_facebook sprite sprite-facebook"></a>
+            <!--
+            <a class="a2a_button_google_plus sprite sprite-google-plus"></a>
+            -->
+            <a class="a2a_button_linkedin sprite sprite-linked-in"></a>
+            <a class="a2a_button_email sprite sprite-email"></a>
+            <a class="a2a_dd more cf" href="https://www.addtoany.com/share_save">
+              <span class="more-text"><span class="more-inside">More</span><img src="'.get_bloginfo('url' ).'/img/flip-arrow.png" class="more-inside" alt="more"></span>
+            </a>
+      </div>';
+
+  // echo '<i class="sprite sprite-email"></i>
+  // <i class="sprite sprite-email-hover"></i>
+  // <i class="sprite sprite-facebook"></i>
+  // <i class="sprite sprite-facebook-hover"></i>
+  // <i class="sprite sprite-google-plus"></i>
+  // <i class="sprite sprite-google-plus-hover"></i>
+  // <i class="sprite sprite-instagram"></i>
+  // <i class="sprite sprite-instagram-hover"></i>
+  // <i class="sprite sprite-linked-in"></i>
+  // <i class="sprite sprite-linked-in-hover"></i>
+  // <i class="sprite sprite-twitter"></i>
+  // <i class="sprite sprite-twitter-hover"></i>';
+
 }
 // EMAIL ADDRESS ANTI-SPAM
 // function email_encode_function( $atts, $content ){

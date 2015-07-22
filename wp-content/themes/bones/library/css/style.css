@@ -8720,49 +8720,169 @@ body #content + div {
 .a2a_kit .share-text {
   display: block;
   color: #ed228b;
-  font-size: 1.2em;
-  margin-bottom: 0.25em;
+  margin-bottom: 2px;
 }
-/* line 80, ../scss/partials/_social.scss */
+/* line 81, ../scss/partials/_social.scss */
 .a2a_kit > a {
   display: block;
   float: left;
-  width: 46px !important;
-  height: 46px !important;
-  margin-right: 1em;
+  margin-right: 8px;
 }
-/* line 86, ../scss/partials/_social.scss */
-.a2a_kit > a:hover {
-  width: 46px !important;
-  height: 46px !important;
-}
-/* line 89, ../scss/partials/_social.scss */
-.a2a_kit > a > img {
+/* line 91, ../scss/partials/_social.scss */
+.a2a_kit > a > img, .a2a_kit > a > span {
   display: none;
 }
 /* line 94, ../scss/partials/_social.scss */
+.a2a_kit > a span {
+  font-size: 15px;
+}
+/* line 97, ../scss/partials/_social.scss */
+.a2a_kit > a span.more-text {
+  display: block;
+  position: absolute;
+  /* bottom: 0; */
+  top: 6px;
+  margin-left: 2px;
+}
+/* line 106, ../scss/partials/_social.scss */
 .a2a_kit > a.more {
   width: 5em !important;
 }
 
-/* line 99, ../scss/partials/_social.scss */
+/* line 111, ../scss/partials/_social.scss */
 .more {
   position: relative;
 }
-/* line 100, ../scss/partials/_social.scss */
+/* line 112, ../scss/partials/_social.scss */
 .more .more-text {
   color: #ed228b;
   display: block;
   float: left;
-  position: absolute;
   bottom: 0;
   font-size: 1.2em;
 }
 
-/* line 113, ../scss/partials/_social.scss */
+/* line 124, ../scss/partials/_social.scss */
 img.more-inside {
   padding-left: 0.25em;
   vertical-align: baseline;
+}
+
+/* line 146, ../scss/partials/_social.scss */
+.sprite {
+  background-image: url("../../../../../img/spritesheet-new.png");
+  background-repeat: no-repeat;
+  display: block;
+}
+
+/* line 152, ../scss/partials/_social.scss */
+.sprite-email {
+  width: 30px;
+  height: 30px;
+  background-position: -2px -2px;
+}
+
+/* line 158, ../scss/partials/_social.scss */
+.sprite-email:hover,
+.sprite-email-hover {
+  width: 30px;
+  height: 30px;
+  background-position: -36px -2px;
+}
+
+/* line 165, ../scss/partials/_social.scss */
+.sprite-facebook {
+  width: 30px;
+  height: 30px;
+  background-position: -70px -2px;
+}
+
+/* line 171, ../scss/partials/_social.scss */
+.sprite-facebook:hover,
+.sprite-facebook-hover {
+  width: 30px;
+  height: 30px;
+  background-position: -2px -36px;
+}
+
+/* line 178, ../scss/partials/_social.scss */
+.sprite-google-plus {
+  width: 30px;
+  height: 30px;
+  background-position: -36px -36px;
+}
+
+/* line 184, ../scss/partials/_social.scss */
+.sprite-google-plus:hover,
+.sprite-google-plus-hover {
+  width: 30px;
+  height: 30px;
+  background-position: -70px -36px;
+}
+
+/* line 191, ../scss/partials/_social.scss */
+.sprite-instagram {
+  width: 30px;
+  height: 30px;
+  background-position: -2px -70px;
+}
+
+/* line 197, ../scss/partials/_social.scss */
+.sprite-instagram:hover,
+.sprite-instagram-hover {
+  width: 30px;
+  height: 30px;
+  background-position: -36px -70px;
+}
+
+/* line 204, ../scss/partials/_social.scss */
+.sprite-linked-in {
+  width: 30px;
+  height: 30px;
+  background-position: -70px -70px;
+}
+
+/* line 210, ../scss/partials/_social.scss */
+.sprite-linked-in:hover,
+.sprite-linked-in-hover {
+  width: 30px;
+  height: 30px;
+  background-position: -104px -2px;
+}
+
+/* line 217, ../scss/partials/_social.scss */
+.sprite-twitter {
+  width: 30px;
+  height: 30px;
+  background-position: -104px -36px;
+}
+
+/* line 223, ../scss/partials/_social.scss */
+.sprite-twitter:hover,
+.sprite-twitter-hover {
+  width: 30px;
+  height: 30px;
+  background-position: -104px -70px;
+}
+
+/* line 232, ../scss/partials/_social.scss */
+.footer .sprite {
+  background-image: url("../../../../../img/spritesheet-inst.png");
+  background-repeat: no-repeat;
+  display: block;
+}
+/* line 238, ../scss/partials/_social.scss */
+.footer .sprite-instagram {
+  width: 45px;
+  height: 45px;
+  background-position: -2px -2px;
+}
+/* line 244, ../scss/partials/_social.scss */
+.footer .sprite-instagram:hover,
+.footer .sprite-instagram-hover {
+  width: 45px;
+  height: 45px;
+  background-position: -51px -2px;
 }
 
 /* line 4, ../scss/partials/_data-partners.scss */
