@@ -88,8 +88,8 @@
 										
 										foreach($categories as $category) {
 											$args=array(
-												'orderby' => 'title',
-												'order' => 'ASC',
+												'orderby' => 'date',
+												'order' => 'DESC',
 												'showposts' => -1,
 												'category__and' => array( $feat_id, $category->term_id ),
 												'caller_get_posts'=>1

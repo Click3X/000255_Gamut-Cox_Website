@@ -88,21 +88,30 @@
 											<p><?php the_excerpt()?></p>
 
 											<?php
-												// IF HAS POST THUMBMIAL, PRINT POST THUMBNAIL, ELSE PRINT FPo 
-												if ( has_post_thumbnail() ) {
-													$img_id = get_post_thumbnail_id();
-													$size = 'feat-excerpt';
-													$src = wp_get_attachment_image_src( $img_id, $size );
-													echo '<div class="feat-img-holder cf">';
-														echo '<img src="'. $src[0] .'" class="feat-img-fpo">';
-													echo '</div>';
-												} else {
-													// FEAT IMG FPO
-													echo '<div class="feat-img-holder cf">
-														<img src="'. get_bloginfo('url') .'/img/fpo.png" class="feat-img-fpo">
-													</div>';
-												}
+												// // IF HAS POST THUMBMIAL, PRINT POST THUMBNAIL, ELSE PRINT FPo 
+												// if ( has_post_thumbnail() ) {
+												// 	$img_id = get_post_thumbnail_id();
+												// 	$size = 'feat-excerpt';
+												// 	$src = wp_get_attachment_image_src( $img_id, $size );
+												// 	echo '<div class="feat-img-holder cf">';
+												// 		echo '<img src="'. $src[0] .'" class="feat-img-fpo">';
+												// 	echo '</div>';
+												// } else {
+												// 	// FEAT IMG FPO
+												// 	echo '<div class="feat-img-holder cf">
+												// 		<img src="'. get_bloginfo('url') .'/img/fpo.png" class="feat-img-fpo">
+												// 	</div>';
+												// }
 											?>
+
+											<?php if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+												$post_thumbnail_id = get_post_thumbnail_id();
+											    $post_thumbnail_url = wp_get_attachment_url( $post_thumbnail_id );										 
+											?>
+												<div class="post-image">
+												    <img title="image title" alt="thumb image" class="wp-post-image" src="<?php echo $post_thumbnail_url; ?>" style="width:100%; height:auto;">
+												</div>
+											<?php } ?>
 
 											<?php 
 						                		// PRINT CUSTOM ICONS FROM ADD TO ANY
