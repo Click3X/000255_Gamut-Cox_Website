@@ -1,7 +1,7 @@
 // home page btn transitions
 // PROGRAMMATIC BTN
 #home-btn-pro:hover {
-		background-color: $programmatic;
+		// background-color: $programmatic;
 		// border-color: $programmatic;
 
 		#home-btn-pro-arrow {
@@ -10,21 +10,24 @@
 }
 
 #home-btn-pro-arrow {
-	border-left: 6px solid #dd1420;
+	// border-left: 6px solid #dd1420;
+	border-left: 6px solid #ed228b;
 }
 
 // REPS BTN
 #home-btn-rep:hover {
-	background-color: $reps;
+	// background-color: $reps;
 	// border-color: $reps;
 
 	#home-btn-rep-arrow {
-		border-left: 6px solid $white;
+		// border-left: 6px solid $white;
+		// border-left: 6px solid #ed228b;
 	}
 }
 
 #home-btn-rep-arrow {
-	border-left: 6px solid #039fd3;
+	// border-left: 6px solid #039fd3;
+	border-left: 6px solid #ed228b;
 }
 
 // REACH
@@ -55,6 +58,8 @@
 
 // end
 // home general btn
+#home-btn-rep:hover,
+#home-btn-pro:hover,
 #home-btn-difference:hover, #home-btn-service:hover, #home-btn-careers:hover {
 	background-color: $brand-color;
 	// border-color: $brand-color;

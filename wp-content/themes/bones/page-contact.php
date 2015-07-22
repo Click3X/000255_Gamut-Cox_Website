@@ -45,41 +45,41 @@ endif;
 					
 						<?php if(get_field('location-list')): ?>
 
-								<h3 class="gothic"><?php echo $locations_title; ?></h3>
+							<h3 class="gothic"><?php echo $locations_title; ?></h3>
+										
+							<ul>
+
+								<?php while(has_sub_field('location-list')): 
+									$city_title = get_sub_field('city');
+								?>
+
+								<li class="location cf">
+									<a id="<?php echo cleanAddress($city_title);?>" href="#" class="clearfix city-map-link">
+										<div class="location-pin"><img src="<?php echo get_bloginfo('url'); ?>/img/map-marker.png"></div>
+										<ul class="clearfix city cf">
+											<li><h3 class="gothic"><?php the_sub_field('city'); ?></h3></li>
+											<li><?php the_sub_field('street_address'); ?></li>
+											<?php if( get_sub_field('additional_address_info') ) {
+												echo '<li>'.get_sub_field('additional_address_info').'</li>';
+											} ?>
+											<li><?php the_sub_field('city'); ?>,&nbsp;<?php the_sub_field('state'); ?>&nbsp;<?php the_sub_field('zip'); ?></li>
+											<?php 
 											
-									<ul>
+											if( get_sub_field('phone') ) {
+												echo '<li>t: '.get_sub_field('phone').'</li>';
+											}
 
-										<?php while(has_sub_field('location-list')): 
-											$city_title = get_sub_field('city');
-										?>
+											if( get_sub_field('additional_info') ) {
+												echo '<li>'.get_sub_field('additional_info').'</li>';
+											} 
+											?>
+										</ul>
+									</a>
+								</li>
 
-											<li class="location cf">
-												<a id="<?php echo cleanAddress($city_title);?>" href="#" class="clearfix city-map-link">
-													<div class="location-pin"><img src="<?php echo get_bloginfo('url'); ?>/img/map-marker.png"></div>
-													<ul class="clearfix city cf">
-														<li><h3 class="gothic"><?php the_sub_field('city'); ?></h3></li>
-														<li><?php the_sub_field('street_address'); ?></li>
-														<?php if( get_sub_field('additional_address_info') ) {
-															echo '<li>'.get_sub_field('additional_address_info').'</li>';
-														} ?>
-														<li><?php the_sub_field('city'); ?>,&nbsp;<?php the_sub_field('state'); ?>&nbsp;<?php the_sub_field('zip'); ?></li>
-														<?php 
-														
-														if( get_sub_field('phone') ) {
-															echo '<li>t: '.get_sub_field('phone').'</li>';
-														}
+								<?php endwhile; ?>
 
-														if( get_sub_field('additional_info') ) {
-															echo '<li>'.get_sub_field('additional_info').'</li>';
-														} 
-														?>
-													</ul>
-												</a>
-											</li>
-
-										<?php endwhile; ?>
-
-									</ul>
+							</ul>
 
 						<?php endif;
 
@@ -101,7 +101,7 @@ endif;
 						[tabbyending]');
 
 						?>
-						
+							
 					</div>
 						
 				</section> <?php // end article section ?>
