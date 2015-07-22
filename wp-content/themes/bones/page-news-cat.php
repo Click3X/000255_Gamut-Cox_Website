@@ -114,7 +114,8 @@
 													$cat_link = get_the_permalink(63);
 												}
 												
-												echo '<h2 class="gamut-cat-title"><a href="' . $cat_link . '" title="' . sprintf( __( "View all posts in %s" ), $category->name ) . '" ' . '>' . $category->name.'</a> </h2> ';
+												// echo '<h2 class="gamut-cat-title"><a href="' . $cat_link . '" title="' . sprintf( __( "View all posts in %s" ), $category->name ) . '" ' . '>' . $category->name.'</a> </h2> ';
+												echo '<h2 class="gamut-cat-title">' . $category->name . '</h2> ';
 												
 												foreach($posts as $post) {
 													setup_postdata($post); ?>

@@ -347,8 +347,9 @@ function printCustomIcons() {
 
 // TESTS FOR 'TITLE LABEL OVERRIDE FIELD', IF PRESENT, THE 'TITLE OVERRIDE FIELD' IS USED INSTEAD OF THE_TITLE() FUNCTION WHICH PRINTS OUT PAGE TITLE
 function titleOverride() {
-  if( get_field('title_label_override') ) {
-    echo '<h1>'.get_field('title_label_override').'</h1>';
+  // if( get_field('title_label_override') ) {
+  if( get_field('sub-page-title') ) {
+    echo get_field('sub-page-title');
   } else {
     echo '<h1>'.get_the_title().'</h1>';
   }

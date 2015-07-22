@@ -97,9 +97,11 @@ get_header();
 							// echo '<h1>'.get_the_title().'</h1>';
 							titleOverride();
 						?>
-
-							<p class="first-p"><?php echo $main_first_p; ?></p>
-							<p><?php echo $main_p; ?></p>
+						<!-- <p class="first-p"></p> -->
+							<div class="main-p-first-wrap">
+								<?php echo $main_first_p; ?>
+							</div>
+							<?php echo $main_p; ?>
 
 						<!-- if statements -->
 						<!-- adding lower part on 4 product pages -->

@@ -2937,6 +2937,12 @@ hr {
   margin: 0;
 }
 
+/* line 561, ../scss/partials/_custom.scss */
+.main-p-first-wrap {
+  padding-top: 1.3em;
+  padding-bottom: 1em;
+}
+
 /* General Demo Style */
 /*@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);*/
 /* line 5, ../scss/partials/_who-we-are.scss */
