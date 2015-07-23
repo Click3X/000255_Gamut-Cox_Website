@@ -67,11 +67,15 @@
 						<div id="main" class="m-all t-2of3 d-5of7 cf" role="main">
 
 							<div class="sub-page-content-wrapper">
+								<?php
+									// GET PAGE VARS FOR LATER USE
+									$wp_pages = get_pages();
+								?>
 
 								<?php 
-								// OVERRIDE PAGE TITLE IF TITLE OVERRIDE FIELD IS NOT EMPTY
-								// echo '<h1>'.get_the_title().'</h1>';
-								titleOverride();
+									// OVERRIDE PAGE TITLE IF TITLE OVERRIDE FIELD IS NOT EMPTY
+									// echo '<h1>'.get_the_title().'</h1>';
+									titleOverride();
 								?>
 
 								<?php
@@ -114,34 +118,40 @@
 												
 												$posts=get_posts($args);
 												if ($posts) {
-													echo '<h2 class="gamut-cat-title">' . $category->name . '</h2> ';
-												
-												foreach($posts as $post) {
-													setup_postdata($post); ?>
 
-													<!-- // POS DATA GOES HERE -->
-													<article class="news-post-wrapper" id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
-														<section class="entry-content cf news-post-inner" itemprop="articleBody">
-																<h1 class="post-header"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+													// GET PAGE THAT CORRESPONDS WITH THE SAME CATEGORY NAME
+													foreach ($wp_pages as $key => $wp_page) {
+														if($category->name == $wp_page->post_title) {
+															echo '<h2 class="gamut-cat-title"><a href="'.get_the_permalink($wp_page->ID).'">' . $category->name . '</a></h2> ';
+														}
+													}
 
-																<p><?php the_excerpt(); ?></p>
+													foreach($posts as $post) {
+														setup_postdata($post); ?>
 
-																<?php if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
-																	$post_thumbnail_id = get_post_thumbnail_id();
-																    $post_thumbnail_url = wp_get_attachment_url( $post_thumbnail_id );										 
-																?>
-																	<div class="post-image">
-																	    <img title="image title" alt="thumb image" class="wp-post-image" src="<?php echo $post_thumbnail_url; ?>" style="width:100%; height:auto;">
-																	</div>
-																<?php } ?>
+														<!-- // POS DATA GOES HERE -->
+														<article class="news-post-wrapper" id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+															<section class="entry-content cf news-post-inner" itemprop="articleBody">
+																	<h1 class="post-header"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 
-																<?php 
-											                		// PRINT CUSTOM ICONS FROM ADD TO ANY
-											                		printCustomIcons();
-											                	?>
-														</section>
-													</article>													
-													<!-- END POST DATA -->
+																	<p><?php the_excerpt(); ?></p>
+
+																	<?php if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+																		$post_thumbnail_id = get_post_thumbnail_id();
+																	    $post_thumbnail_url = wp_get_attachment_url( $post_thumbnail_id );										 
+																	?>
+																		<div class="post-image">
+																		    <img title="image title" alt="thumb image" class="wp-post-image" src="<?php echo $post_thumbnail_url; ?>" style="width:100%; height:auto;">
+																		</div>
+																	<?php } ?>
+
+																	<?php 
+												                		// PRINT CUSTOM ICONS FROM ADD TO ANY
+												                		printCustomIcons();
+												                	?>
+															</section>
+														</article>													
+														<!-- END POST DATA -->
 													<?php
 													} // foreach($posts
 												} // END POSTS
@@ -162,6 +172,5 @@
 				</div>
 
 			</div>
-
 
 <?php get_footer(); ?>
