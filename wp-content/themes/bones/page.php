@@ -73,10 +73,14 @@
 										<?php 
 											echo $sub_page_title 
 											// in back-end the title is wrapped with <h1> already
-
-											// PRINT SOCIAL ICONS
-											// printCustomIcons();
 										?> 
+										
+										<?php 
+											if (is_page(1079)) { 
+												// PRINT SOCIAL ICONS
+												printCustomIcons();
+											} 
+										?>
 										<div>
 											<!-- in back-end the title is wrapped with <p> already -->
 											<?php echo $sub_page_content ?>
@@ -84,64 +88,7 @@
 									</div>
 
 
-									<!-- if statements -->
-									<!-- adding content on Our Solutions page -->
-									<?php if (is_page(184)) { ?>
-
-									<!-- <div class="our-solutions-list-wrapper">
-									   
-									   <div class="our-solutions-list">
-									   		<a href="<?php echo get_permalink(11); ?>">
-										   		<img src="<?php bloginfo('url'); ?>/img/our-solutions/pro-logo.png">
-										   	</a>
-									   </div> -->
-
-									   <!-- <div class="our-solutions-list">
-									   		<a href="<?php echo get_permalink(15); ?>">
-										   		<img src="<?php bloginfo('url'); ?>/img/our-solutions/rep-logo.png">
-										   	</a>
-									   </div> -->
-
-									   <!-- <div class="our-solutions-list">
-									   		<a href="<?php echo get_permalink(24); ?>">
-										   		<img class="logo-smaller" src="<?php bloginfo('url'); ?>/img/our-solutions/rea-logo.png">
-										   	</a> -->
-										   <!-- 	<h2 class="rea-color"><?php echo $rea_caption ?></h2> -->
-									   <!-- </div> -->
-
-									   <!-- <div class="our-solutions-list">
-									   		<a href="<?php echo get_permalink(13); ?>">
-										   		<img class="logo-smaller" src="<?php bloginfo('url'); ?>/img/our-solutions/cro-logo.png">
-										   	</a> -->
-										   	<!-- <h2 class="cro-color"><?php echo $cro_caption ?></h2> -->
-									   <!-- </div> -->
-
-									 <!-- </div> -->
-
-
-									<?php } ?>
-
-									<?php
-
-										/*
-										 * Link Pages is used in case you have posts that are set to break into
-										 * multiple pages. You can remove this if you don't plan on doing that.
-										 *
-										 * Also, breaking content up into multiple pages is a horrible experience,
-										 * so don't do it. While there are SOME edge cases where this is useful, it's
-										 * mostly used for people to get more ad views. It's up to you but if you want
-										 * to do it, you're wrong and I hate you. (Ok, I still love you but just not as much)
-										 *
-										 * http://gizmodo.com/5841121/google-wants-to-help-you-avoid-stupid-annoying-multiple-page-articles
-										 *
-										*/
-										wp_link_pages( array(
-											'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'bonestheme' ) . '</span>',
-											'after'       => '</div>',
-											'link_before' => '<span>',
-											'link_after'  => '</span>',
-										) );
-									?>
+			
 								</section> <?php // end article section ?>
 
 								<footer class="article-footer cf">
