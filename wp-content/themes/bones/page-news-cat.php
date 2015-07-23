@@ -75,56 +75,53 @@
 								?>
 
 								<?php
-									// FEATURED CATEGORY ID STORED IN VAR FOR LATER USE IN FILTERING CATEGORIES
+									// ORDER POSTS BY CATEGORY - MOST RECENTLY UPDATED
+									$cat_array = array();
+									$args=array(
+									  'post_type' => 'post',
+									  'post_status' => 'publish',
+									  'posts_per_page' => -1
+									  );
+									$my_query = null;
+
 									$feat_id = 31;
-									//for each category, show posts
-									$cat_args=array(
-										'orderby' => 'name',
-										'order' => 'DESC',
-										'exclude' => array( 1, $feat_id )
-									);
 
-									$categories=get_categories($cat_args);
-										
-										foreach($categories as $category) {
-											$args=array(
-												'orderby' => 'date',
-												'order' => 'DESC',
-												'showposts' => -1,
-												'category__and' => array( $feat_id, $category->term_id ),
-												'caller_get_posts'=>1
-											);
-											
-											$posts=get_posts($args);
-											if ($posts) {
+									$my_query = new WP_Query($args);
+										if( $my_query->have_posts() ) {
+										  while ($my_query->have_posts()) : $my_query->the_post();
+										    $cat_args=array('orderby' => 'none');
+										    $cats = wp_get_post_terms( $post->ID , 'category', $cat_args);
+										    foreach($cats as $cat) {
+										      $cat_array[$cat->term_id] = $cat->term_id;
+										    }
+										  endwhile;
+										}
 
-												$cat_link = get_category_link( $category->term_id );	
-												// FORMAT CORRECT LINKS FOR GAMUT-CAT-TITLE LINK
-												if( $category->name == 'In the Media' ) {
-													$cat_link = get_the_permalink(874);
-												} elseif( $category->name == 'Events' ) {
-													$cat_link = get_the_permalink(298);
-												} elseif( $category->name == 'Press Releases' ) {
-													$cat_link = get_the_permalink(65);
-												} elseif( $category->name == "In the Media" ) {
-													$cat_link = get_the_permalink(65);
-												} elseif( $category->name == "What We're Reading" ) {
-													$cat_link = get_the_permalink(63);
-												} elseif( $category->name == "Uncategorized" ) {
-													$cat_link = get_the_permalink(63);
-												}
+										if ($cat_array) {
+										  foreach($cat_array as $cat)  {	  
+
+										    $category = get_term_by('ID',$cat, 'category');
+											if ( $category->name != 'Uncategorized' && $category->name != 'Featured'){
+
+										    	// START POSTS
+										    	$args=array(
+													'orderby' => 'date',
+													'order' => 'DESC',
+													'showposts' => -1,
+													'category__and' => array( $feat_id, $cat ),
+													'caller_get_posts'=>1
+												);
 												
-												// echo '<h2 class="gamut-cat-title"><a href="' . $cat_link . '" title="' . sprintf( __( "View all posts in %s" ), $category->name ) . '" ' . '>' . $category->name.'</a> </h2> ';
-												echo '<h2 class="gamut-cat-title">' . $category->name . '</h2> ';
+												$posts=get_posts($args);
+												if ($posts) {
+													echo '<h2 class="gamut-cat-title">' . $category->name . '</h2> ';
 												
 												foreach($posts as $post) {
 													setup_postdata($post); ?>
 
 													<!-- // POS DATA GOES HERE -->
 													<article class="news-post-wrapper" id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
-
 														<section class="entry-content cf news-post-inner" itemprop="articleBody">
-																
 																<h1 class="post-header"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 
 																<p><?php the_excerpt(); ?></p>
@@ -142,26 +139,17 @@
 											                		// PRINT CUSTOM ICONS FROM ADD TO ANY
 											                		printCustomIcons();
 											                	?>
-
-																<?php
-
-																wp_link_pages( array(
-																	'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'bonestheme' ) . '</span>',
-																	'after'       => '</div>',
-																	'link_before' => '<span>',
-																	'link_after'  => '</span>',
-																) );
-															?>
 														</section>
 													</article>													
 													<!-- END POST DATA -->
-
-												<?php
-												} // foreach($posts
-
-											} // if ($posts
-										} // foreach($categories
-									?>
+													<?php
+													} // foreach($posts
+												} // END POSTS
+											}
+										}
+									}
+									wp_reset_query();  // Restore global post data stomped by the_post().
+								?>
 
 								<div class="media-inquiry-info"><?php echo $sub_page_content; ?></div>
 
