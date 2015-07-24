@@ -90,60 +90,15 @@ $next_cat = "";
 				                <!-- ADDING IN NEW REQUESTED NEXT/PREV POST ARROWS -->
 
 				                <div class="gamut-navigation cf">
-				                	 <?php 
-				                	 	// FEATURED IS ID 31
-				                	 	$myCats = get_the_category();
-				                	 	helper($myCats);
-				                	 	foreach ($myCats as $key => $myCat) {
-				                	 		if($myCat->term_id != 31) {
-				                	 			echo '<h1>'.$myCat->name.'</h1>';
-				                	 		}
-				                	 	}
-				                	 	// $exes = array(31);
-				                	 	$exes = '';
-				                	 	// GET CURRENT CAT, NOT FEATURED
-				                	 	foreach((get_the_category()) as $category) {
-											if ($category->category_parent == 0) {
-												if($category->term_id != 31) {
-													$cat_id = $category->term_id;	
-												}
-											}
-										}
+				                	
+									<?php
+									$args = [
+									    'post_types'       => ['post'],
+									    'in_same_term'     => true
+									];
 
-				                	 	// PREVIOUS CAT
-				                	 	
-					                	 $prev_post = get_adjacent_post( true, $exes, true); 
-					                	 if($prev_post) {
-					                	 	foreach((get_the_category($prev_post->ID)) as $category) {
-												if ($category->category_parent == 0) {
-													if($category->term_id != 31) {
-														$pre_cat = $category->term_id;	
-													}
-												}
-											}
-										}
-
-										// NEXT CAT
-										$next_post = get_adjacent_post( true, $exes, false); 
-										if($next_post) {
-											foreach((get_the_category($next_post->ID)) as $category) {
-												if ($category->category_parent == 0) {
-													if($category->term_id != 31) {
-														$next_cat = $category->term_id;	
-													}
-												}
-											}											
-										}
-										
-
-				                		if ( (is_a( $prev_post, 'WP_Post' )) && ($pre_cat == $cat_id) ) { ?>
-									 		<a href="<?php echo get_permalink( $prev_post->ID ); ?>" rel="prev">&laquo; Previous Post</a>
-									 <?php } 
-
-									 	if ( (is_a( $next_post, 'WP_Post' )) && ($next_cat == $cat_id) ) { ?>
-									 		<a href="<?php echo get_permalink( $next_post->ID ); ?>" rel="next">Next Post &raquo;</a>
-									 <?php } ?>
-								
+									single_post_navigation( $args );
+									?>
 				                </div>
 
 				                <header class="article-header">

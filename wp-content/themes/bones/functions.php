@@ -282,6 +282,8 @@ function printCatTitle() {
   $cat_title = get_cat_name( $post_cats[0] );
 
   echo '<a class="page-link" href="'.get_category_link( $post_cats[0] ).'"><h2 id="sidebar-title">'.$cat_title.'</h2></a>';
+
+  wp_reset_query();
 }
 
 // CLEAN ADDRESS
@@ -353,6 +355,509 @@ function titleOverride() {
   } else {
     echo '<h1>'.get_the_title().'</h1>';
   }
+}
+
+
+/**
+ * @author Pieter Goosen
+ * @license GPLv2 
+ * @link http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * The functions on this page returns the next and previous post links
+ * depending what is been set
+ *
+ * @return function single_post_navigation()
+*/ 
+
+/**
+ * Register six new query variables aq, ,cq, tq, ttq, taq, and sq set by 
+ * the term_referer_link function
+ *
+ * @see http://codex.wordpress.org/WordPress_Query_Vars
+ *
+*/ 
+add_filter( 'query_vars', function ( $vars ) {
+
+    $vars[] = 'cq'; // Will hold category ID
+    $vars[] = 'tq'; // Will hold taxonomy name
+    $vars[] = 'ttq'; // Will hold term slug
+    $vars[] = 'sq'; // Will hold search query
+    $vars[] = 'aq'; // Will hold author name
+    $vars[] = 'taq'; // Will hold tag id
+
+
+    return $vars;
+
+}, 10, 3 );
+
+/**
+ * Conditional tag to check whether or not a query_var has been set
+ *
+ * @param string $query_var query_var to check
+ * @return (bool) true if query_var exists, false on failure
+ *
+*/
+function has_query_var( $query_var ) {
+
+    $array = $GLOBALS['wp_query']->query_vars;
+
+    return array_key_exists( $query_var, $array );
+
+}
+
+/**
+ * For posts being clicked from a category page, the query_var, 'cq' is set. 
+ * 'cq' holds the category ID
+ *
+ * Set two query_var, 'tq' and 'ttq' to single posts that was clicked on from 
+ * taxonomy pages. 'tq' holds the taxonomy name while 'ttq' holds the term name
+ *
+ * For search queries, the query_var, 'sq' is set to single posts that was clicked on from 
+ * the search page. 'sq' holds the search query value
+ *
+ * For posts being clicked from an author page, the query_var, 'aq' is set. 
+ * 'aq' holds the author ID
+ *
+ * For posts being clicked from a tag page, the query_var, 'taq' is set. 
+ * 'taq' holds the tag ID
+ *
+ * This function replaces the wp_get_referer() and $_SERVER['HTTP_REFERER']
+ * functions that are not very reliable
+ * @see php.net manual $_SERVER['HTTP_REFERER']
+ * @link http://php.net/manual/en/reserved.variables.server.php
+ *
+ * @uses add_query_arg()
+ * @uses post_link
+ * @uses post_type_link
+ *
+*/
+add_filter( 'post_type_link', 'term_referer_link', 10, 3 );
+add_filter( 'post_link', 'term_referer_link', 10, 3 );
+
+function term_referer_link( $permalink, $post ) {
+
+    switch ( true ) {
+
+        case ( is_category() ):
+
+            $category = get_queried_object_id();
+
+            $args = [
+                'cq'    => $category, 
+            ];
+
+            break;
+        case ( is_tax() ):
+
+            $term = get_queried_object();
+
+            $args = [
+                'tq'    => $term->taxonomy, 
+                'ttq'   => $term->slug
+            ];
+
+            break;
+
+        case ( is_search() ):
+
+            $search = get_search_query();
+
+            $args = [
+                'sq'    => $search, 
+            ];
+
+            break;
+
+        case ( is_author() ):
+
+            $author = get_queried_object_id();
+
+            $args = [
+                'aq'    => $author,
+            ];
+
+            break;
+
+        case ( is_tag() ):
+
+            $tag = get_queried_object_id();
+
+            $args = [
+                'taq'   => $tag,
+            ];
+
+            break;
+
+    }
+
+    if( isset( $args ) ) { 
+
+        $permalink  = add_query_arg( $args, $permalink );
+
+    }
+
+    return $permalink;
+
+}
+
+/**
+ * @access private
+ * This function is marked private and should not be used in any other functions
+ *
+ * This is a helper function for the main navigation function 
+ * 
+ * This function checks if any of the query variables is set in the single
+ * post page URL. If they exists, the values are retrieved that was set
+ * by the query variables
+ *
+ * This query variables is converted into query arguments for the query that will
+ * be used to determine the current post position and the posts adjacent to the
+ * current post which will translate in the next and previous post. 
+ * 
+ * When no query variables are present, and empty array of argument is returned
+ * 
+ * @uses has_query_var()
+ * @return (array) $add_query_args_to_args Query variable to determine the next/previous post links
+ * @see http://codex.wordpress.org/Function_Reference/add_query_arg
+ *
+*/
+function _query_vars_to_query_args() {
+
+    switch ( true ) {
+
+        case ( has_query_var( 'cq' ) ): // For category referrer
+
+            $category = get_query_var( 'cq' );
+
+            $add_query_args_to_args = [
+                'cat' => $category,
+            ];
+
+            break;
+
+        case ( has_query_var( 'tq' ) && has_query_var( 'ttq' ) ): // For taxonomy term referrer
+
+            $taxonomy   = get_query_var( 'tq' );
+            $term       = get_query_var( 'ttq' );
+
+            $add_query_args_to_args = [
+                'tax_query' => [
+                    [
+                        'taxonomy'          => $taxonomy,
+                        'field'             => 'slug',
+                        'terms'             => $term,
+                        'include_children'  => false,
+                    ],
+                ],
+            ];
+
+            break;
+
+        case ( has_query_var( 'sq' ) ): // For search referrer
+
+            $search = get_query_var( 'sq' );
+
+            $add_query_args_to_args = [
+                's' => $search,
+            ];
+
+            break;
+
+        case ( has_query_var( 'aq' ) ): // For author referrer
+
+            $author = get_query_var( 'aq' );
+
+            $add_query_args_to_args = [
+                'author' => $author,
+            ];
+
+            break;
+
+        case ( has_query_var( 'taq' ) ): // For tag referrer
+
+            $tag = get_query_var( 'taq' );
+
+            $add_query_args_to_args = [
+                'tag_id' => $tag,
+            ];
+
+            break;
+
+        default: // Default: returns empty array on any other archive or homepage
+
+            $add_query_args_to_args = [];
+
+            break;
+
+    }
+
+    return $add_query_args_to_args;
+
+}
+/**
+ * @access private
+ * This function is marked private and should not be used in any other functions
+ *
+ * This is a helper function for the main pagination function. This function 
+ * checks if the defined query variables has been set in the URL of a single
+ * post
+ * 
+ * If any of the query variables are found on any given single post page, then 
+ * these query variables will be set to the next and previous post links according
+ * to the single post's query variables
+ * 
+ * This way, next and previous posts will be shown from the same category, term, 
+ * search query or author archive from which the original single post was referred 
+ * from. 
+ *
+ * If a single post was referred from any other archive or main page, these query 
+ * variables will not be set, and function will default to an empty array and no
+ * query variables will be set to the next and previous post links
+ *
+ * @uses has_query_var()
+ * @return (array) $qv Query variable to add to next/previous post links
+ * @see http://codex.wordpress.org/Function_Reference/add_query_arg
+ *
+ * @todo Other archives can be added later
+*/
+function _add_query_vars_to_nav_links() {
+
+    switch ( true ) {
+
+        case ( has_query_var( 'cq' ) ): // For category referrer
+
+            $category = get_query_var( 'cq' );
+
+            $qv = [
+                'cq'    => $category, 
+            ];
+
+            break;
+
+        case ( has_query_var( 'tq' ) && has_query_var( 'ttq' ) ): // For taxonomy term referrer
+
+            $taxonomy   = get_query_var( 'tq' );
+            $term       = get_query_var( 'ttq' );
+
+            $qv = [
+                'tq'    => $term->taxonomy, 
+                'ttq'   => $term->slug
+            ];
+
+            break;
+
+        case ( has_query_var( 'sq' ) ): // For search referrer
+
+            $search = get_query_var( 'sq' );
+
+            $qv = [
+                'sq'    => $search, 
+            ];
+
+            break;
+
+        case ( has_query_var( 'aq' ) ): // For author referrer
+
+            $author = get_query_var( 'aq' );
+
+            $qv = [
+                'aq'    => $author,
+            ];
+
+            break;
+
+        case ( has_query_var( 'taq' ) ): // For tag referrer
+
+            $tag = get_query_var( 'taq' );
+
+            $qv = [
+                'taq'   => $tag,
+            ];
+
+            break;
+
+
+        default: // Default: returns empty array on any other archive or homepage
+
+            $qv = [];
+
+            break;
+
+    }
+
+    return $qv;
+
+}
+
+/**
+ * This function returns navigation links to the next/previous single post
+ * There are choices to which taxonomy to use, and whether adjacent posts should
+ * be of the same term or not
+ * 
+ * When in_same_term is set to true, you have a choice to use the parent term or
+ * child term if a post belongs to both. If the parent term is not available, the child term 
+ * is automatically used
+ *
+ * @param array $defaults An array of key => value arguments. Defaults below 
+ * - bool in_same_term      Whether or not next/previous post should be in the same term Default true
+ * - bool parent_term       If in_same_term is true, should the parent or child terms be used Default true
+ * - string/array taxonomy  The taxonomy from which terms to use Default category
+ * - string previous_text   Text to display with previous post Default 'Previous post'
+ * - string next_text       Text to display with next post Default 'Next post'
+ *
+ * @return string $links
+*/ 
+function get_single_post_navigation( $args = [] ) {
+
+    // Sets the default arguments for default usage
+    $defaults = [
+        'in_same_term'      => true,
+        'parent_term'       => true,
+        'post_types'         => '',
+        'taxonomy'          => 'category',
+        'previous_text'     => __( 'Previous post' ),
+        'next_text'         => __( 'Next post' ),
+    ];
+
+    // Merges the default arguments with user defined variables
+    $args = wp_parse_args( $args, $defaults );
+
+    /**
+     * Get the currently displayed single post. For this use 
+     * get_queried_object() as this is more safe than the global $post
+     *
+     * The $post global is very easily changed by any poorly written custom query
+     * or function, and is there for not reliable
+     *
+     * @see Post below on WPSE for explanation
+     * @link http://wordpress.stackexchange.com/q/167706/31545
+    */ 
+    $single_post = get_queried_object();
+
+    /**
+     * Use the post type of the current post or post types entered in args
+     *
+    */ 
+    $post_type   = ( empty( $args['post_types'] ) ) ? $single_post->post_type : $args['post_types'];
+
+
+    // Set the variable query variables according to condition
+    if( !empty( _query_vars_to_query_args() ) ) {
+
+        $query_args = _query_vars_to_query_args(); 
+
+    }elseif( true === $args['in_same_term'] ) {
+
+        $terms =  wp_get_post_terms( $single_post->ID, $args['taxonomy'] ); 
+
+        if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
+
+            foreach ( $terms as $term ) {
+                if( $term->parent === 0 ) {
+                    $parent[] = $term;
+                }else{
+                    $child[] = $term;
+                }
+            }   
+
+            $term_id = ( $args['parent_term'] === true && isset( $parent ) ) ? $parent[0]->term_id : $child[0]->term_id;
+
+            $query_args = [ 
+                'tax_query' => [
+                    [
+                        'taxonomy'          => $args['taxonomy'],
+                        'field'             => 'term_id',
+                        'terms'             => $term_id,
+                        'include_children'  => false,
+                    ],
+                ],
+            ];
+        }
+
+    }else{
+
+        $query_args = [];
+
+    }
+
+    // Default arguments to use with all the conditional statements above
+    $default_query_args = [ 
+        'post_type'         => $post_type,
+        'fields'            => 'ids',
+        'posts_per_page'    => -1,
+    ];
+
+    // Merges the default arguments with the arguments from the conditional statement
+    $combined_args = wp_parse_args( $query_args, $default_query_args );
+
+    $q = new WP_Query( $combined_args );
+
+    // Get the current post position. Will be used to determine adjacent posts
+    $current_post_position = array_search( $single_post->ID, $q->posts );
+
+    // Get the returned values from '_add_query_vars_to_nav_links()' to build links
+    $get_qv = _add_query_vars_to_nav_links(); 
+
+    // Get the next/older post ID
+    if ( array_key_exists( $current_post_position + 1 , $q->posts ) ) {
+        $next = $q->posts[$current_post_position + 1];
+    }
+
+    // Get post title link to the next post
+    if( isset( $next ) ) {
+
+        $next_post      = get_post( $next );
+        $next_post_link = ( !empty( $get_qv ) ) ? add_query_arg( $get_qv, get_permalink( $next ) ) : get_permalink( $next );
+        // $next_title     = '<span class="meta-nav">' . $args['next_text'] . ': </span><a href="' . $next_post_link . '">' . $next_post->post_title . '</a></br>';
+        $next_title     = '<a href="' . $next_post_link . '" rel="next">Next Post</a>';
+
+    }else{
+
+        $next_title     = '';
+
+    }
+
+    // Get the previous/newer post ID
+    if ( array_key_exists( $current_post_position - 1 , $q->posts ) ) {
+        $previous = $q->posts[$current_post_position - 1];
+    }
+
+    // Get post title link to the previous post
+    if( isset( $previous ) ) {
+
+        $previous_post      = get_post( $previous );
+        $previous_post_link = ( !empty( $get_qv ) ) ? add_query_arg( $get_qv, get_permalink( $previous ) ) : get_permalink( $previous );
+        // $previous_title     = '<span class="meta-nav">' . $args['previous_text'] . ': </span><a href="' . $previous_post_link . '">' . $previous_post->post_title . '</a></br>';
+        $previous_title     = '<a href="' . $previous_post_link . '" rel="prev">Previous Post</a>';
+
+    }else{
+
+        $previous_title     = '';
+
+    }
+
+    // Create the next/previous post links
+    $links  = '<nav class="navigation post-navigation" role="navigation">';
+    $links .= '<div class="nav-links">';
+    $links .= $previous_title;
+    $links .= $next_title;
+    $links .= '</div><!-- .nav-links -->';
+    $links .= '</nav><!-- .navigation -->';
+
+    // Returns the post links with HTML mark-up
+    return $links;
+
+}
+
+/** 
+ * This function is simply just a wrapper for the main navigation
+ * function and echo's the returned values from the main navigation
+ * function
+*/ 
+function single_post_navigation( $args = [] ) {
+
+    echo get_single_post_navigation( $args );
+
 }
 
 /* DON'T DELETE THIS CLOSING TAG */ ?>
