@@ -90,15 +90,8 @@ $next_cat = "";
 				                <!-- ADDING IN NEW REQUESTED NEXT/PREV POST ARROWS -->
 
 				                <div class="gamut-navigation cf">
-				                	
-									<?php
-									$args = [
-									    'post_types'       => ['post'],
-									    'in_same_term'     => true
-									];
-
-									single_post_navigation( $args );
-									?>
+				                	<?php previous_post_link('%link', 'Previous Post', TRUE); ?> 
+									<?php next_post_link('%link', 'Next Post', TRUE ); ?> 
 				                </div>
 
 				                <header class="article-header">
