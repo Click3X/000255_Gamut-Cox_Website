@@ -215,6 +215,8 @@ function bones_scripts_and_styles() {
 
         // PAN TO MARKER
         wp_register_script( 'side-bar-highlight' , get_stylesheet_directory_uri() . '/library/js/side-bar-highlight.js', array('jquery'), '', true );
+        // CONTACT FORM FIX
+        wp_register_script( 'contact-form-resize-fix' , get_stylesheet_directory_uri() . '/library/js/contact-form-resize-fix.js', array('jquery'), '', true );
 
         // enqueue styles and scripts
 		wp_enqueue_script( 'bones-modernizr' );
@@ -249,6 +251,7 @@ function bones_scripts_and_styles() {
 		// 	wp_enqueue_script( 'google-maps' );
 		// 	wp_enqueue_script( 'g-maps' );
 			wp_enqueue_script( 'pan-to-marker' );
+            wp_enqueue_script( 'contact-form-resize-fix' );
 		}
 
         if(is_single()) {

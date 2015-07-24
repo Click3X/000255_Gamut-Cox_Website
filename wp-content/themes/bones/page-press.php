@@ -37,9 +37,14 @@
 								<div id="sidebar-beam" style="background-image: url(<?php bloginfo('url'); ?>/img/sidebar-beam.png);"></div>
 							</div>
 
-							<h2 id="sidebar-title"><a href="<?php echo get_category_link( $category_id ); ?>"><?php echo $cat_title; ?></a></h2>
-
-
+							<!-- <h2 id="sidebar-title"><a href="<?php echo get_category_link( $category_id ); ?>"><?php //echo $cat_title; ?></a></h2> -->
+							<h2 id="sidebar-title">
+								<a href="<?php echo empty( $post->post_parent ) ? get_the_title( $post->ID ) : get_the_title( $post->post_permailnk ); ?>">
+								<?php 
+									echo empty( $post->post_parent ) ? get_the_title( $post->ID ) : get_the_title( $post->post_parent );
+								?></a>
+							</h2>
+							
 							<?php $defaults = array(
 								'theme_location'  => '',
 								'menu'            => 'Watch & Read',

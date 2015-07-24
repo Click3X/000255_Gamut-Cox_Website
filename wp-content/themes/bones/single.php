@@ -24,32 +24,32 @@ $next_cat = "";
 
 							<?php 
 
-							$args = array(
-								'show_option_all'    => '',
-								'orderby'            => 'name',
-								'order'              => 'ASC',
-								'style'              => 'list',
-								'show_count'         => 0,
-								'hide_empty'         => 1,
-								'use_desc_for_title' => 1,
-								'child_of'           => 0,
-								'feed'               => '',
-								'feed_type'          => '',
-								'feed_image'         => '',
-								'exclude'            => array(1, 31),
-								'exclude_tree'       => '',
-								'include'            => '',
-								'hierarchical'       => 1,
-								'title_li'           => __( '' ),
-								'show_option_none'   => __( '' ),
-								'number'             => null,
-								'echo'               => 1,
-								'depth'              => 0,
-								'current_category'   => 0,
-								'pad_counts'         => 0,
-								'taxonomy'           => 'category',
-								'walker'             => null
-							);
+							// $args = array(
+							// 	'show_option_all'    => '',
+							// 	'orderby'            => 'name',
+							// 	'order'              => 'ASC',
+							// 	'style'              => 'list',
+							// 	'show_count'         => 0,
+							// 	'hide_empty'         => 1,
+							// 	'use_desc_for_title' => 1,
+							// 	'child_of'           => 0,
+							// 	'feed'               => '',
+							// 	'feed_type'          => '',
+							// 	'feed_image'         => '',
+							// 	'exclude'            => array(1, 31),
+							// 	'exclude_tree'       => '',
+							// 	'include'            => '',
+							// 	'hierarchical'       => 1,
+							// 	'title_li'           => __( '' ),
+							// 	'show_option_none'   => __( '' ),
+							// 	'number'             => null,
+							// 	'echo'               => 1,
+							// 	'depth'              => 0,
+							// 	'current_category'   => 0,
+							// 	'pad_counts'         => 0,
+							// 	'taxonomy'           => 'category',
+							// 	'walker'             => null
+							// );
 
 							// wp_nav_menu( $defaults ); 
 							// echo '<ul id="cat-menu" class="secondary">';
@@ -91,14 +91,18 @@ $next_cat = "";
 
 				                <div class="gamut-navigation cf">
 				                	 <?php 
+				                	 	$myCat = get_the_category();
+				                	 	// helper($myCat);
+				                	 	// echo '<h1>'.$myCat[0]->name.'</h1>';
 				                	 	// FEATURED IS ID 31
-				                	 	// $exes = array(31);
-				                	 	$exes = '';
+				                	 	$exes = array(31);
+				                	 	// $exes = '';
 				                	 	// GET CURRENT CAT, NOT FEATURED
 				                	 	foreach((get_the_category()) as $category) {
 											if ($category->category_parent == 0) {
 												if($category->term_id != 31) {
 													$cat_id = $category->term_id;	
+				                	 				echo '<h1>'.$category->name.'</h1>';
 												}
 											}
 										}
@@ -106,12 +110,16 @@ $next_cat = "";
 				                	 	// PREVIOUS CAT
 				                	 	$prev_post = get_adjacent_post( true, $exes, true); 
 				                	 	foreach((get_the_category($prev_post->ID)) as $category) {
-											if ($category->category_parent == 0) {
-												if($category->term_id != 31) {
-													$pre_cat = $category->term_id;	
-												}
-											}
+											// if ($category->category_parent == 0) {
+											// 	if($category->term_id != 31) {
+				                	 			if($category->term_id == $cat_id) {
+				                	 				$pre_cat = $category->term_id;	
+													echo '<h1>'.$category->name.'</h1>';
+				                	 			}
+											// 	}
+											// }
 										}
+										// helper($prev_post);
 
 										// NEXT CAT
 										$next_post = get_adjacent_post( true, $exes, false); 
@@ -130,6 +138,8 @@ $next_cat = "";
 									 	if ( (is_a( $next_post, 'WP_Post' )) && ($next_cat == $cat_id) ) { ?>
 									 		<a href="<?php echo get_permalink( $next_post->ID ); ?>" rel="next">Next Post &raquo;</a>
 									 <?php } ?>
+
+									 <?php next_post_link( '%link &raquo;', 'NEXT POST', $in_same_term = TRUE); ?>
 								
 				                </div>
 

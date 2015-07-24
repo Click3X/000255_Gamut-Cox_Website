@@ -38,13 +38,19 @@
 					</div>
 					
 					<?php 
-						if($cat_title == 'Uncategorized') {
-							$parent_title = get_the_title($post->post_parent);
-							echo '<h2 id="sidebar-title">'.$parent_title.'</h2>';
-						} else {
-							echo '<h2 id="sidebar-title"><a href="'.get_category_link( $category_id ).'">'. $cat_title .'</a></h2>';							
-						}
+						// if($cat_title == 'Uncategorized') {
+						// 	$parent_title = get_the_title($post->post_parent);
+						// 	echo '<h2 id="sidebar-title">'.$parent_title.'</h2>';
+						// } else {
+						// 	echo '<h2 id="sidebar-title"><a href="'.get_category_link( $category_id ).'">'. $cat_title .'</a></h2>';							
+						// }
 					?>
+					<h2 id="sidebar-title">
+						<a href="<?php echo empty( $post->post_parent ) ? get_the_title( $post->ID ) : get_the_title( $post->post_permailnk ); ?>">
+						<?php 
+							echo empty( $post->post_parent ) ? get_the_title( $post->ID ) : get_the_title( $post->post_parent );
+						?></a>
+					</h2>
 
 
 					<?php 

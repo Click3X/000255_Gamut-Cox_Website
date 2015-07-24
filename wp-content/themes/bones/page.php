@@ -26,11 +26,12 @@
 								<div id="sidebar-beam" style="background-image: url(<?php bloginfo('url'); ?>/img/sidebar-beam.png);"></div>
 							</div>
 							
-							<?php 
-								// $parent_title = get_the_title($post->post_parent); 
-								// echo '<h2 id="sidebar-title">'. $parent_title . '</h2>';
-							?>
-							<h2 id="sidebar-title"><?php echo the_title(); ?></h2>
+							<h2 id="sidebar-title">
+								<a href="<?php echo empty( $post->post_parent ) ? get_the_title( $post->ID ) : get_the_title( $post->post_permailnk ); ?>">
+								<?php 
+									echo empty( $post->post_parent ) ? get_the_title( $post->ID ) : get_the_title( $post->post_parent );
+								?></a>
+							</h2>
 							
 
 							<?php $defaults = array(
