@@ -10,25 +10,40 @@
 
 					if($single_cat_title == 'In the Media') {
 						$cat_id = 874;
+						$cat_page = get_post($cat_id);
+						$postid = $cat_page->ID;
+						$category_id = get_post_meta($postid, 'category_id', true);
+						$header_image = get_post_meta($postid, 'header-image', true);
+						$header_image = wp_get_attachment_image_src( $header_image, 'full' );
 					} elseif($single_cat_title == 'Events') {
 						$cat_id = 298;
+						$cat_page = get_post($cat_id);
+						$postid = $cat_page->ID;
+						$category_id = get_post_meta($postid, 'category_id', true);
+						$header_image = get_post_meta($postid, 'header-image', true);
+						$header_image = wp_get_attachment_image_src( $header_image, 'full' );
 					} elseif($single_cat_title == 'Press Releases') {
 						$cat_id = 65;
+						$cat_page = get_post($cat_id);
+						$postid = $cat_page->ID;
+						$category_id = get_post_meta($postid, 'category_id', true);
+						$header_image = get_post_meta($postid, 'header-image', true);
+						$header_image = wp_get_attachment_image_src( $header_image, 'full' );
 					} else {
 						$cat_id = 874;
+						$myCats = get_the_category();
+						foreach ($myCats as $key => $myCat) {
+							if($myCat->term_id != 31) {
+								$cat_id = $myCat->term_id;
+								$postid = $cat_id;
+								$category_id = get_post_meta($postid, 'category_id', true);
+								$header_image = array( 
+									get_bloginfo('url').'/wp-content/uploads/2014/09/Solutions_programmatic.jpg'
+								);
+							}
+						}
 					}
-
-					$cat_page = get_post($cat_id);
-					$postid = $cat_page->ID;
-
-					$header_image = get_post_meta($postid, 'header-image', true);
-					$sub_page_content = get_post_meta($postid, 'sub-page-content', true);
-					$category_id = get_post_meta($postid, 'category_id', true);
-
 					
-					$header_image = wp_get_attachment_image_src( $header_image, 'full' );
-					$cat_title = get_cat_name( $category_id );
-
 					wp_reset_query();
 				?>
 
@@ -45,7 +60,9 @@
 								<div id="sidebar-beam" style="background-image: url(<?php bloginfo('url'); ?>/img/sidebar-beam.png);"></div>
 							</div>
 
-							<h2 id="sidebar-title"><a href="<?php echo get_category_link( $category_id ); ?>"><?php single_cat_title(); ?></a></h2>
+							<h2 id="sidebar-title"><a href="<?php echo get_category_link( $category_id ); ?>">
+								<?php single_cat_title(); ?>
+							</a></h2>
 
 							<?php 
 
@@ -93,7 +110,10 @@
 									query_posts( "cat=".$category_id );
 								}
 			
-								echo '<h1>'.$cat_title.'</h1>';
+								// echo '<h1>'.$cat_title.'</h1>';
+								echo '<h1>';
+								single_cat_title();
+								echo '</h1>';
 							?>
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -108,23 +128,6 @@
 											</p>
 
 											<p><?php the_excerpt()?></p>
-
-											<?php
-												// IF HAS POST THUMBMIAL, PRINT POST THUMBNAIL, ELSE PRINT FPo 
-												// if ( has_post_thumbnail() ) {
-												// 	$img_id = get_post_thumbnail_id();
-												// 	$size = 'feat-excerpt';
-												// 	$src = wp_get_attachment_image_src( $img_id, $size );
-												// 	echo '<div class="feat-img-holder cf">';
-												// 		echo '<img src="'. $src[0] .'" class="feat-img-fpo">';
-												// 	echo '</div>';
-												// } else {
-												// 	// FEAT IMG FPO
-												// 	echo '<div class="feat-img-holder cf">
-												// 		<img src="'. get_bloginfo('url') .'/img/fpo.png" class="feat-img-fpo">
-												// 	</div>';
-												// }
-											?>
 
 											<?php 
 												if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
