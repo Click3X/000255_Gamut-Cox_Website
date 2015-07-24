@@ -18,9 +18,10 @@
 
 			<div id="content" class="fixed-header-bg">
 
-			<?php $header_image = get_field('header-image');
-					$sub_page_content = get_field('sub-page-content');
-					$category_id = get_field("category_id");
+			<?php 
+				$header_image = get_field('header-image');
+				$sub_page_content = get_field('sub-page-content');
+				$category_id = get_field("category_id");
 			?>
 
 				<header class="clearfix article-header">
@@ -37,7 +38,7 @@
 							</div>
 							<?php 
 								$parent = array_reverse(get_post_ancestors($post->ID));
-								$first_parent = get_page($parent[0]);
+								$first_parent = get_page($parent);
 								$parent_title = $first_parent->post_title;
 							?>
 							<h2 id="sidebar-title"><a href="<?php echo get_permalink($first_parent->ID); ?>"><?php echo $parent_title; ?></a></h2>
@@ -112,8 +113,7 @@
 													'orderby' => 'date',
 													'order' => 'DESC',
 													'showposts' => -1,
-													'category__and' => array( $feat_id, $cat ),
-													'caller_get_posts'=>1
+													'category__and' => array( $feat_id, $cat )
 												);
 												
 												$posts=get_posts($args);
