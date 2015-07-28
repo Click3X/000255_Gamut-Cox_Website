@@ -281,7 +281,7 @@ function printCatTitle() {
   // GET FIST INDEX FORT CAT TITLE
   $cat_title = get_cat_name( $post_cats[0] );
 
-  echo '<a class="page-link" href="'.get_category_link( $post_cats[0] ).'"><h2 id="sidebar-title">'.$cat_title.'</h2></a>';
+  echo '<h2 id="sidebar-title"><a href="'.get_category_link( $post_cats[0] ).'">'.$cat_title.'</a></h2>';
 }
 
 // CLEAN ADDRESS

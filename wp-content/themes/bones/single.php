@@ -19,7 +19,9 @@ $next_cat = "";
 
 							<?php 
 								// PRINT POST CATEGORY (BUT NOT FEATURED CAT)
-								printCatTitle();
+								// printCatTitle();
+								// CHANGE TO WATCH AND READ
+								echo '<h2 id="sidebar-title"><a href="'.get_the_permalink(63).'">Watch + Read</a></h2>';
 							?>
 
 							<?php 
