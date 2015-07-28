@@ -154,13 +154,13 @@ jQuery(document).ready(function($) {
   // EMAIL SCRAMBLE
 
     //email spam protection - Example Markup: <span class="email">name[at]domain[dot]com</span>
-$('.email').each(function() {
-    var $email = $(this);
-    var address = $email.text()
-    .replace(/s*[at]s*/, '@')
-    .replace(/s*[dot]s*/g, '.');
-    $email.html('<a href="mailto:' + address + '">'+ address +'</a>');
-});
+// $('.email').each(function() {
+//     var $email = $(this);
+//     var address = $email.text()
+//     .replace(/s*[at]s*/, '@')
+//     .replace(/s*[dot]s*/g, '.');
+//     $email.html('<a href="mailto:' + address + '">'+ address +'</a>');
+// });
   /*
    * Let's fire off the gravatar function
    * You can remove this if you don't need it

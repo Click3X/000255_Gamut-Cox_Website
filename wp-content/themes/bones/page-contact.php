@@ -123,7 +123,7 @@ endif;
 						      'post_type' => 'team_members',
 						      'post_status' => 'publish',
 						      'posts_per_page' => -1,
-						      'caller_get_posts'=> 1,
+						      // 'caller_get_posts'=> 1,
 							  'tax_query' => array(
 									array(
 										'taxonomy' => 'division',
