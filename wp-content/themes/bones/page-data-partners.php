@@ -1,4 +1,10 @@
-<?php // DATA PARTNERS
+<?php 
+
+ /* 
+
+Template Name: Data Partners
+
+ */
 	
 get_header();
 
