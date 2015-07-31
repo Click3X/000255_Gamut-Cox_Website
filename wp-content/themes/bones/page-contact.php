@@ -14,6 +14,7 @@ $contact_title = get_field('contact-title');
 $locations_title = get_field('locations-title');
 $locations_list = get_field('locations-list');
 $header_image = get_field('header-image');
+$contact_columns = get_field('contact_columns');
 
 endwhile;
 
@@ -109,6 +110,8 @@ endif;
 				<?php 
 					// CONTACT LIST
 					// include('php/contact-list.php');
+
+					include('php/contact-list-wysiwyg.php');
 				?>
 
 			</article>

@@ -9039,6 +9039,21 @@ img.more-inside {
   color: #ed228b;
 }
 
+/* line 4, ../scss/partials/_contact-columns.scss */
+.team-member.horizontal {
+  border-bottom: 2px solid #999999;
+  margin-bottom: 1.25em;
+}
+/* line 9, ../scss/partials/_contact-columns.scss */
+.team-member p {
+  margin-bottom: 1.6em;
+  line-height: 1.36em;
+}
+/* line 15, ../scss/partials/_contact-columns.scss */
+.team-member:last-of-type {
+  border-bottom: 0;
+}
+
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's

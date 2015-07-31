@@ -1,0 +1,18 @@
+// CONTACT COLUMNS
+
+.team-member {
+    &.horizontal {
+        border-bottom:2px solid #999999;
+        margin-bottom: 1.25em;
+    }
+
+    p {
+        // margin-bottom: 1.25em;
+        margin-bottom: 1.6em;
+        line-height: 1.36em;
+    }
+
+    &:last-of-type {
+        border-bottom:0;
+    }
+}

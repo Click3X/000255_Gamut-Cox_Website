@@ -355,4 +355,69 @@ function titleOverride() {
   }
 }
 
+
+// CUSTOM FONTS IN WP WYSIWYG
+function my_theme_add_editor_styles() {
+    add_editor_style( 'custom-editor-style.css' );
+}
+add_action( 'admin_init', 'my_theme_add_editor_styles' );
+
+/**
+ * Override the default font-family loaded into tinymce editor. We did this
+ * because we needed to add the 'Wendy' fonts.
+ */
+// function confit_child_register_tinymce_fonts( $settings ) {
+//     $settings['theme_advanced_fonts'] =
+//         'franklin-gothic=franklin-gothic-urw, sans-serif;'.
+//         // (more are added here but excluded for brevity)
+//         '';
+//     return $settings;
+// }
+// add_filter('tiny_mce_before_init', 'confit_child_register_tinymce_fonts');
+
+
+function my_mce4_options($init) {
+  $default_colours = '"000000", "Black",
+                      "000080", "Navy Blue",
+                      "333333", "Very dark gray",
+                      "800000", "Maroon",
+                      "FF6600", "Orange",
+                      "008000", "Green",
+                      "0000FF", "Blue",
+                      "666699", "Grayish blue",
+                      "808080", "Gray",
+                      "FF0000", "Red",
+                      "FF9900", "Amber",
+                      "339966", "Sea green",
+                      "33CCCC", "Turquoise",
+                      "3366FF", "Royal blue",
+                      "800080", "Purple",
+                      "999999", "Medium gray",
+                      "FF00FF", "Magenta",
+                      "FFCC00", "Gold",
+                      "FFFF00", "Yellow",
+                      "00CCFF", "Sky blue",
+                      "993366", "Red violet",
+                      "FFFFFF", "White",
+                      "FF99CC", "Pink",
+                      "CCFFCC", "Pale green",
+                      "CCFFFF", "Pale cyan",
+                      "99CCFF", "Light sky blue",
+                      "CC99FF", "Plum"';
+
+  $custom_colours =  '"555555", "Gamut Grey",
+                      "ed228b", "Gamut Pink",
+                      "323944", "Gamut Black"';
+
+  // build colour grid default+custom colors
+  $init['textcolor_map'] = '['.$default_colours.','.$custom_colours.']';
+
+  // enable 6th row for custom colours in grid
+  $init['textcolor_rows'] = 6;
+
+  return $init;
+}
+add_filter('tiny_mce_before_init', 'my_mce4_options');
+
+
 /* DON'T DELETE THIS CLOSING TAG */ ?>
