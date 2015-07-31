@@ -9041,7 +9041,7 @@ img.more-inside {
 
 /* line 4, ../scss/partials/_contact-columns.scss */
 .team-member.horizontal {
-  border-bottom: 2px solid #999999;
+  border-bottom: 1px solid #999999;
   margin-bottom: 1.25em;
 }
 /* line 9, ../scss/partials/_contact-columns.scss */

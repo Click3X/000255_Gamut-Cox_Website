@@ -128,7 +128,7 @@ wp_reset_postdata();
 
 									<?php 
 										echo '<a class="fancybox various" href="#'.$teamMember['id'].'"';
-											if( $teamMember['terms'] ) { 
+											if( isset($teamMember['terms']) ) { 
 												$len = count($teamMember['terms']);
 												echo 'data-team="';
 													foreach ($teamMember['terms'] as $key => $term) {
