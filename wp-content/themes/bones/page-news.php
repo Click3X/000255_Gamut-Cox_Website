@@ -37,19 +37,13 @@
 						<div id="sidebar-beam" style="background-image: url(<?php bloginfo('url'); ?>/img/sidebar-beam.png);"></div>
 					</div>
 					
-					<?php 
-						// if($cat_title == 'Uncategorized') {
-						// 	$parent_title = get_the_title($post->post_parent);
-						// 	echo '<h2 id="sidebar-title">'.$parent_title.'</h2>';
-						// } else {
-						// 	echo '<h2 id="sidebar-title"><a href="'.get_category_link( $category_id ).'">'. $cat_title .'</a></h2>';							
-						// }
-					?>
 					<h2 id="sidebar-title">
-						<a href="<?php echo empty( $post->post_parent ) ? get_the_title( $post->ID ) : get_the_title( $post->post_permailnk ); ?>">
-						<?php 
+						<?php $permalink = get_permalink($post->post_parent); ?>
+						<a href="<?php echo $permalink; ?>">
+							<?php 
 							echo empty( $post->post_parent ) ? get_the_title( $post->ID ) : get_the_title( $post->post_parent );
-						?></a>
+							?>
+						</a>
 					</h2>
 
 

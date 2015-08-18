@@ -90,7 +90,12 @@
 												<?php printf( __( '<time class="updated" datetime="%1$s" pubdate>%2$s</time>', 'bonestheme' ), get_the_time('Y-m-j'), get_the_time(get_option('date_format'))); ?>
 											</p>
 
-											<p><?php the_excerpt()?></p>
+											<p><?php
+												$ex = get_the_excerpt();
+												helper($ex);
+												echo $ex;
+											 	// the_excerpt(); 
+											?></p>
 
 											<?php
 												// // IF HAS POST THUMBMIAL, PRINT POST THUMBNAIL, ELSE PRINT FPo 

@@ -27,10 +27,12 @@
 							</div>
 							
 							<h2 id="sidebar-title">
-								<a href="<?php echo empty( $post->post_parent ) ? get_the_title( $post->ID ) : get_the_title( $post->post_permailnk ); ?>">
-								<?php 
+								<?php $permalink = get_permalink($post->post_parent); ?>
+								<a href="<?php echo $permalink; ?>">
+									<?php 
 									echo empty( $post->post_parent ) ? get_the_title( $post->ID ) : get_the_title( $post->post_parent );
-								?></a>
+									?>
+								</a>
 							</h2>
 							
 
