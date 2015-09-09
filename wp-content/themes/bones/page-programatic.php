@@ -127,8 +127,9 @@ get_header();
 										<h3 class="rea-color"><?php the_sub_field('column-title'); ?></h3>
 									<?php } elseif (is_page(13)) { ?>
 										<h3 class="cro-color"><?php the_sub_field('column-title'); ?></h3>
+									<?php } else  { ?>
+										<h3><?php the_sub_field('column-title'); ?></h3>
 									<?php } ?>
-										
 										<p><?php the_sub_field('column-content'); ?></p>
 									</li>
 

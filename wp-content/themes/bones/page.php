@@ -74,31 +74,35 @@
 
 									<div class="sub-page-content-wrapper" style="">
 										<?php 
-											echo $sub_page_title 
 											// in back-end the title is wrapped with <h1> already
+											echo $sub_page_title;
 										?> 
-										
+
 										<?php 
+											// PRINT SOCIAL ICONS
 											if (is_page(1079)) { 
-												// PRINT SOCIAL ICONS
 												printCustomIcons();
 											} 
 										?>
-										<div>
-											<!-- in back-end the title is wrapped with <p> already -->
-											<?php echo $sub_page_content ?>
-										</div>
+
+										<?php 
+											// in back-end the title is wrapped with <p> already
+											echo '<div>';
+												echo $sub_page_content;
+											echo '</div>';
+										?>
+
+										<?php 
+											// ADDING 3 COLUMN FIELD IN BACKEND
+											printThreeColumnContent(); 
+										?>
 									</div>
-
-
 			
 								</section> <?php // end article section ?>
 
 								<footer class="article-footer cf">
 
 								</footer>
-
-								
 
 							</article>
 

@@ -118,7 +118,10 @@ $next_cat = "";
 						                    the_post_thumbnail( $size);
 
 						                    // the content (pretty self explanatory huh)
-						                    the_content(); 
+						                    the_content();
+
+											// ADDING 3 COLUMN FIELD IN BACKEND
+											printThreeColumnContent(); 
 						                  ?>
 
 						                </section> <?php // end article section ?>

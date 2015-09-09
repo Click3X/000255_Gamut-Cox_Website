@@ -420,4 +420,23 @@ function my_mce4_options($init) {
 add_filter('tiny_mce_before_init', 'my_mce4_options');
 
 
+function printThreeColumnContent() {
+  if(get_field('three-column-content')) {
+    echo '<div class="lower-content">';
+      echo '<div class="lower-columns">';
+        echo '<ul>';
+          while(has_sub_field('three-column-content')) {
+            echo '<li>';
+            if(get_sub_field('column-title') ) { echo '<h3>'.get_sub_field('column-title').'</h3>'; }
+            if(get_sub_field('column-content') ) { echo '<p>'.get_sub_field('column-content').'</p>'; }
+            echo '</li>';
+          }
+        echo '</ul>';
+      echo '</div>';
+    echo '</div>';
+  }
+}
+
+
+
 /* DON'T DELETE THIS CLOSING TAG */ ?>

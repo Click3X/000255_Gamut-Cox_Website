@@ -123,7 +123,10 @@
 												</div>
 											<?php } ?>
 
-											<?php 
+											<?php
+												// ADDING 3 COLUMN FIELD IN BACKEND
+												printThreeColumnContent(); 
+
 						                		// PRINT CUSTOM ICONS FROM ADD TO ANY
 						                		printCustomIcons();
 						                	?>
