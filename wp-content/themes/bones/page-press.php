@@ -92,7 +92,7 @@
 
 											<p><?php
 												$ex = get_the_excerpt();
-												helper($ex);
+												// helper($ex);
 												echo $ex;
 											 	// the_excerpt(); 
 											?></p>
