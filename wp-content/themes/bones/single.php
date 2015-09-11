@@ -117,11 +117,14 @@ $next_cat = "";
 						                  	$size = 'full';
 						                    the_post_thumbnail( $size);
 
+						                    // the content (pretty self explanatory huh)
+						                    the_content();
+
 						                    // ADDING 3 COLUMN FIELD IN BACKEND
 											printThreeColumnContent(); 
 
-						                    // the content (pretty self explanatory huh)
-						                    the_content();
+						                    // PRINT NEW SUB PAGE CONTENT FIELD BELOW THREE COLUMN CONTENT
+											printSubPageContent2();
 						                  ?>
 
 						                </section> <?php // end article section ?>

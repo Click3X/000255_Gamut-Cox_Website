@@ -127,6 +127,9 @@
 												// ADDING 3 COLUMN FIELD IN BACKEND
 												printThreeColumnContent(); 
 
+												// PRINT NEW SUB PAGE CONTENT FIELD BELOW THREE COLUMN CONTENT
+												printSubPageContent2();
+
 						                		// PRINT CUSTOM ICONS FROM ADD TO ANY
 						                		printCustomIcons();
 						                	?>

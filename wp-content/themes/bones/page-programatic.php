@@ -183,6 +183,11 @@ get_header();
 
 							<?php endif; ?>
 
+							<?php 
+								// PRINT NEW SUB PAGE CONTENT FIELD BELOW THREE COLUMN CONTENT
+								printSubPageContent2();
+							?>
+
 						</div> 
 						<!-- end of lower content -->
 

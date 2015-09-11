@@ -437,6 +437,13 @@ function printThreeColumnContent() {
   }
 }
 
+function printSubPageContent2() {
+  if( get_field('sub_page_content_2') ) {
+    echo '<div>';
+      echo get_field('sub_page_content_2');
+    echo '</div>';
+  }
+}
 
 
 /* DON'T DELETE THIS CLOSING TAG */ ?>

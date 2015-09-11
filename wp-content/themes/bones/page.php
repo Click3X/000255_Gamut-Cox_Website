@@ -86,15 +86,16 @@
 										?>
 
 										<?php 
-											// ADDING 3 COLUMN FIELD IN BACKEND
-											printThreeColumnContent(); 
-										?>
-
-										<?php 
 											// in back-end the title is wrapped with <p> already
 											echo '<div>';
 												echo $sub_page_content;
 											echo '</div>';
+
+											// ADDING 3 COLUMN FIELD IN BACKEND
+											printThreeColumnContent(); 
+
+											// PRINT NEW SUB PAGE CONTENT FIELD BELOW THREE COLUMN CONTENT
+											printSubPageContent2();
 										?>
 									</div>
 			
