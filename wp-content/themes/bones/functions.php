@@ -424,6 +424,11 @@ function printThreeColumnContent() {
   if(get_field('three-column-content')) {
     echo '<div class="lower-content">';
       echo '<div class="lower-columns">';
+      if( get_field('three-column-header') ) {
+        echo '<h2>';
+        echo get_field('three-column-header');
+        echo '</h2>';
+      }
         echo '<ul>';
           while(has_sub_field('three-column-content')) {
             echo '<li>';
