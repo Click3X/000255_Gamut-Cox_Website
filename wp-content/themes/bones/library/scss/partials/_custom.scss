@@ -344,15 +344,21 @@ hr {
 }
 
 .lower-columns {
-  padding: 20px 0 40px 0;
+  // padding: 20px 0 40px 0;
+  padding: 20px 0;
   border-top: 1px dashed #aaa;
+  border-bottom: 1px dashed #aaa;
   margin-top: 30px;
 }
 
-.new-content .lower-columns {
-  padding: 20px 0;
-  border-bottom: 1px dashed #aaa;
-}
+// NEW CONTENT ADDED FOR NEW BORDER, BUT
+// CURRENT USING NORMAL LOWER-COLUMNS TO 
+// ATTACH THE NEW REQUESTED STYLES
+// .new-content .lower-columns {
+//   padding: 20px 0;
+//   border-bottom: 1px dashed #aaa;
+// }
+
 
 // four different colors
 // .pro-color {
