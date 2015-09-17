@@ -422,7 +422,7 @@ add_filter('tiny_mce_before_init', 'my_mce4_options');
 
 function printThreeColumnContent() {
   if(get_field('three-column-content')) {
-    echo '<div class="lower-content">';
+    echo '<div class="lower-content new-content">';
       echo '<div class="lower-columns">';
       if( get_field('three-column-header') ) {
         echo '<h2>';
